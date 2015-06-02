@@ -17,13 +17,13 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "parsers/functiondeclnode.h"
+#include "parsers/functiontypenode.h"
 
 #include "logger.h"
 
 #include "parsers/generic.h"
 
-#include "nodes/functiondeclnode.h"
+#include "nodes/functiontypenode.h"
 
 #include "localconsts.h"
 
@@ -32,13 +32,11 @@ extern int plugin_is_GPL_compatible;
 namespace Generic
 {
 
-void parseFunctionDeclNode(Node *node)
+void parseFunctionTypeNode(Node *node)
 {
     fillType(node);
-    fillLocation(node);
     Log::log(node);
-    Node *typeNode = createEmptyNode(node, TREE_TYPE(node->gccNode));
-    parseNode(typeNode);
+//    createEmptyNode(node, TREE_TYPE(node))
 }
 
 }

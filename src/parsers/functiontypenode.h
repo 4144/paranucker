@@ -17,28 +17,18 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "parsers/functiondeclnode.h"
+#ifndef PARSERS_FUNCTIONTYPENODE_H
+#define PARSERS_FUNCTIONTYPENODE_H
 
-#include "logger.h"
+#include "includes.h"
 
-#include "parsers/generic.h"
+#include <string>
 
-#include "nodes/functiondeclnode.h"
-
-#include "localconsts.h"
-
-extern int plugin_is_GPL_compatible;
+struct Node;
 
 namespace Generic
 {
-
-void parseFunctionDeclNode(Node *node)
-{
-    fillType(node);
-    fillLocation(node);
-    Log::log(node);
-    Node *typeNode = createEmptyNode(node, TREE_TYPE(node->gccNode));
-    parseNode(typeNode);
+    void parseFunctionTypeNode(Node *parent);
 }
 
-}
+#endif // PARSERS_FUNCTIONTYPENODE_H

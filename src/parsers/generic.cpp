@@ -22,9 +22,10 @@
 #include "logger.h"
 
 #include "nodes/functiondeclnode.h"
-#include "nodes/node.h"
+#include "nodes/functiontypenode.h"
 
 #include "parsers/functiondeclnode.h"
+#include "parsers/functiontypenode.h"
 
 #include "localconsts.h"
 
@@ -46,10 +47,20 @@ Node *createEmptyNode(Node *parent, tree gccNode)
         case FUNCTION_DECL:
             node = new FunctionDeclNode;
             break;
+        case FUNCTION_TYPE:
+            node = new FunctionTypeNode;
+            break;
         default:
             Log::log(parent, "Not supported node type: %s",
                 get_tree_code_name(TREE_CODE(node->gccNode)));
             break;
+    }
+    if (node)
+    {
+        node->parent = parent;
+        node->gccNode = gccNode;
+        if (parent)
+            node->indent  = parent->indent + 1;
     }
     return node;
 }
@@ -66,6 +77,9 @@ void parseNode(Node *node)
         case FUNCTION_DECL:
             parseFunctionDeclNode(node);
             break;
+        case FUNCTION_TYPE:
+            parseFunctionTypeNode(node);
+            break;
         default:
             Log::log(node, "Not supported node type: %s",
                 get_tree_code_name(TREE_CODE(node->gccNode)));
@@ -77,8 +91,6 @@ void parseNodes(tree gccNode)
 {
     //Node *rootNode = new Node;
     Node *node = createEmptyNode(nullptr, gccNode);
-    //node->parent = rootNode;
-    node->gccNode = gccNode;
     parseNode(node);
 }
 
