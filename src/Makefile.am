@@ -1,14 +1,14 @@
 AUTOMAKE_OPTIONS = subdir-objects
 
-SRC = nodes/create.h \
-      nodes/functiondeclnode.h \
+SRC = nodes/functiondeclnode.h \
       nodes/node.h \
       parsers/functiondeclnode.cpp \
       parsers/functiondeclnode.h \
       parsers/generic.cpp \
       parsers/generic.h \
-      plugin.cpp \
-      plugin.h
+      includes.h \
+      localconsts.h \
+      plugin.cpp
 CXX := g++
 
 # in future need remove -Wno-switch

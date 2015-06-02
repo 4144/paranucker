@@ -20,7 +20,7 @@
 #ifndef PARSERS_GENERIC_H
 #define PARSERS_GENERIC_H
 
-#include "plugin.h"
+#include "includes.h"
 
 #include <string>
 
@@ -30,13 +30,11 @@ namespace Generic
 {
     void parseNodes(tree gccNode);
 
-    void parseNode(Node *parent, tree gccNode);
+    void parseNode(Node *parent);
 
-    void parseFunctionDeclNode(Node *parent,
-                               tree gccNode);
+    void fillType(Node *node);
 
-    void fillType(Node *node,
-                  tree gccNode);
+    void fillLocation(Node *node);
 }
 
 #endif // PARSERS_GENERIC_H

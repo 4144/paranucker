@@ -20,7 +20,7 @@
 #ifndef PARSERS_FUNCTIONDECLNODE_H
 #define PARSERS_FUNCTIONDECLNODE_H
 
-#include "plugin.h"
+#include "includes.h"
 
 #include <string>
 
@@ -28,8 +28,7 @@ struct Node;
 
 namespace Generic
 {
-    void parseFunctionDeclNode(Node *parent,
-                               tree gccNode);
+    void parseFunctionDeclNode(Node *parent);
 }
 
 #endif // PARSERS_FUNCTIONDECLNODE_H

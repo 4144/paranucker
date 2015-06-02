@@ -20,7 +20,7 @@
 #ifndef NODES_NODE_H
 #define NODES_NODE_H
 
-#include "plugin.h"
+#include "includes.h"
 
 #include <string>
 
@@ -33,6 +33,7 @@ struct Node
         file(),
         gccNode(nullptr),
         line(-1),
+        column(-1),
         treeNumber(0)
     {
     }
@@ -43,6 +44,7 @@ struct Node
     std::string file;
     tree gccNode;
     int line;
+    int column;
     int treeNumber;
 };
 

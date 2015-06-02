@@ -20,7 +20,6 @@
 #include "parsers/functiondeclnode.h"
 #include "parsers/generic.h"
 
-#include "nodes/create.h"
 #include "nodes/functiondeclnode.h"
 
 #include "localconsts.h"
@@ -30,11 +29,10 @@ extern int plugin_is_GPL_compatible;
 namespace Generic
 {
 
-void parseFunctionDeclNode(Node *parent,
-                           tree gccNode)
+void parseFunctionDeclNode(Node *node)
 {
-    createNode(node, parent, FunctionDeclNode);
-    fillType(node, gccNode);
+    fillType(node);
+    fillLocation(node);
 }
 
 }

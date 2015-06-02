@@ -19,7 +19,7 @@
 
 #include "parsers/generic.h"
 
-#include "nodes/create.h"
+#include "nodes/functiondeclnode.h"
 #include "nodes/node.h"
 
 #include "parsers/functiondeclnode.h"
@@ -31,38 +31,67 @@ extern int plugin_is_GPL_compatible;
 namespace Generic
 {
 
-void parseNode(Node *parent,
-               tree gccNode)
+Node *createEmptyNode(tree gccNode)
 {
-    if (!parent || gccNode == NULL_TREE)
+    if (gccNode == NULL_TREE)
+    {
+        return nullptr;
+    }
+
+    Node *node = nullptr;
+    switch (TREE_CODE(gccNode))
+    {
+        case FUNCTION_DECL:
+            node = new FunctionDeclNode;
+    }
+    return node;
+}
+
+void parseNode(Node *node)
+{
+    if (!node || node->gccNode == NULL_TREE)
     {
         return;
     }
 
-    switch (TREE_CODE(gccNode))
+    switch (TREE_CODE(node->gccNode))
     {
         case FUNCTION_DECL:
-            parseFunctionDeclNode(parent, gccNode);
+            parseFunctionDeclNode(node);
     }
 }
 
 void parseNodes(tree gccNode)
 {
-    Node *node = new Node;
-    parseNode(node, gccNode);
+    //Node *rootNode = new Node;
+    Node *node = createEmptyNode(gccNode);
+    //node->parent = rootNode;
+    node->gccNode = gccNode;
+    parseNode(node);
 }
 
-void fillType(Node *node,
-              tree gccNode)
+void fillType(Node *node)
 {
-    if (!node || gccNode == NULL_TREE)
+    if (!node || node->gccNode == NULL_TREE)
     {
         return;
     }
 
-    location_t loc = DECL_SOURCE_LOCATION(gccNode);
-    node->treeNumber = static_cast<int>(TREE_CODE(gccNode));
-    node->nodeType = get_tree_code_name(TREE_CODE(gccNode));
+    node->treeNumber = static_cast<int>(TREE_CODE(node->gccNode));
+    node->nodeType = get_tree_code_name(TREE_CODE(node->gccNode));
+}
+
+void fillLocation(Node *node)
+{
+    if (!node || node->gccNode == NULL_TREE)
+    {
+        return;
+    }
+
+    location_t loc = DECL_SOURCE_LOCATION(node->gccNode);
+    node->file = LOCATION_FILE(loc);
+    node->line = LOCATION_LINE(loc);
+    node->column = LOCATION_COLUMN(loc);
 }
 
 }
