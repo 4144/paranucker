@@ -17,26 +17,24 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PARSERS_GENERIC_H
-#define PARSERS_GENERIC_H
+#include "parsers/functiondeclnode.h"
+#include "parsers/generic.h"
 
-#include "plugin.h"
+#include "nodes/create.h"
+#include "nodes/functiondeclnode.h"
 
-#include <string>
+#include "localconsts.h"
 
-struct Node;
+extern int plugin_is_GPL_compatible;
 
 namespace Generic
 {
-    void parseNodes(tree gccNode);
 
-    void parseNode(Node *parent, tree gccNode);
-
-    void parseFunctionDeclNode(Node *parent,
-                               tree gccNode);
-
-    void fillType(Node *node,
-                  tree gccNode);
+void parseFunctionDeclNode(Node *parent,
+                           tree gccNode)
+{
+    createNode(node, parent, FunctionDeclNode);
+    fillType(node, gccNode);
 }
 
-#endif // PARSERS_GENERIC_H
+}

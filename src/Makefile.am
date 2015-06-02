@@ -1,14 +1,20 @@
 AUTOMAKE_OPTIONS = subdir-objects
 
-SRC = nodes/node.h \
+SRC = nodes/create.h \
+      nodes/functiondeclnode.h \
+      nodes/node.h \
+      parsers/functiondeclnode.cpp \
+      parsers/functiondeclnode.h \
       parsers/generic.cpp \
       parsers/generic.h \
-      plugin.cpp
+      plugin.cpp \
+      plugin.h
 CXX := g++
 
+# in future need remove -Wno-switch
 SHARED_CXXFLAGS = -pipe -ffast-math -Wall -Wextra \
 -std=gnu++1y -Wc++14-compat \
--Wno-literal-suffix \
+-Wno-literal-suffix -Wno-switch \
 -I$(shell $(CC) -print-file-name=plugin)/include
 
 SHARED_LDFLAGS = -avoid-version -lgcc_s

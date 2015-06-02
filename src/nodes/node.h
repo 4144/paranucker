@@ -20,18 +20,30 @@
 #ifndef NODES_NODE_H
 #define NODES_NODE_H
 
+#include "plugin.h"
+
 #include <string>
 
 struct Node
 {
     Node() :
-        parent(nullptr)
+        parent(nullptr),
+        nodeType(),
+        label(),
+        file(),
+        gccNode(nullptr),
+        line(-1),
+        treeNumber(0)
     {
     }
 
     Node *parent;
+    std::string nodeType;
+    std::string label;
     std::string file;
+    tree gccNode;
     int line;
+    int treeNumber;
 };
 
 #endif // NODES_NODE_H

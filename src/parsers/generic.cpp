@@ -19,6 +19,11 @@
 
 #include "parsers/generic.h"
 
+#include "nodes/create.h"
+#include "nodes/node.h"
+
+#include "parsers/functiondeclnode.h"
+
 #include "localconsts.h"
 
 extern int plugin_is_GPL_compatible;
@@ -26,8 +31,38 @@ extern int plugin_is_GPL_compatible;
 namespace Generic
 {
 
-void parseNodes(tree node)
+void parseNode(Node *parent,
+               tree gccNode)
 {
+    if (!parent || gccNode == NULL_TREE)
+    {
+        return;
+    }
+
+    switch (TREE_CODE(gccNode))
+    {
+        case FUNCTION_DECL:
+            parseFunctionDeclNode(parent, gccNode);
+    }
+}
+
+void parseNodes(tree gccNode)
+{
+    Node *node = new Node;
+    parseNode(node, gccNode);
+}
+
+void fillType(Node *node,
+              tree gccNode)
+{
+    if (!node || gccNode == NULL_TREE)
+    {
+        return;
+    }
+
+    location_t loc = DECL_SOURCE_LOCATION(gccNode);
+    node->treeNumber = static_cast<int>(TREE_CODE(gccNode));
+    node->nodeType = get_tree_code_name(TREE_CODE(gccNode));
 }
 
 }

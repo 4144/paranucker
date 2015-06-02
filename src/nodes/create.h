@@ -17,26 +17,12 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PARSERS_GENERIC_H
-#define PARSERS_GENERIC_H
+#ifndef NODES_CREATE_H
+#define NODES_CREATE_H
 
-#include "plugin.h"
+#define createNode(node, parentNode, type) \
+    type *node = new type; \
+    node->parent = parentNode; \
+    node->gccNode = gccNode
 
-#include <string>
-
-struct Node;
-
-namespace Generic
-{
-    void parseNodes(tree gccNode);
-
-    void parseNode(Node *parent, tree gccNode);
-
-    void parseFunctionDeclNode(Node *parent,
-                               tree gccNode);
-
-    void fillType(Node *node,
-                  tree gccNode);
-}
-
-#endif // PARSERS_GENERIC_H
+#endif // NODES_CREATE_H

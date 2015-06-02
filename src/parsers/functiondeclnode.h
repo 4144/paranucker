@@ -17,8 +17,8 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PARSERS_GENERIC_H
-#define PARSERS_GENERIC_H
+#ifndef PARSERS_FUNCTIONDECLNODE_H
+#define PARSERS_FUNCTIONDECLNODE_H
 
 #include "plugin.h"
 
@@ -28,15 +28,8 @@ struct Node;
 
 namespace Generic
 {
-    void parseNodes(tree gccNode);
-
-    void parseNode(Node *parent, tree gccNode);
-
     void parseFunctionDeclNode(Node *parent,
                                tree gccNode);
-
-    void fillType(Node *node,
-                  tree gccNode);
 }
 
-#endif // PARSERS_GENERIC_H
+#endif // PARSERS_FUNCTIONDECLNODE_H
