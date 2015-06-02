@@ -17,27 +17,11 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "plugin.h"
+#ifndef PLUGIN_H
+#define PLUGIN_H
 
-#include "parsers/generic.h"
+#include "gcc-plugin.h"
+#include "print-tree.h"
+#include "tree.h"
 
-#include "localconsts.h"
-
-int plugin_is_GPL_compatible = 1;
-
-static void pre_generic(void *gcc_data,
-                        void *user_data A_UNUSED)
-{
-    Generic::parseNodes((tree)gcc_data);
-}
-
-int plugin_init (struct plugin_name_args *plugin_info,
-                 struct plugin_gcc_version *version A_UNUSED)
-{
-    register_callback(plugin_info->base_name,
-        PLUGIN_PRE_GENERICIZE,
-        &pre_generic,
-        0);
-
-    return 0;
-}
+#endif // PLUGIN_H

@@ -17,27 +17,16 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#ifndef PARSERS_GENERIC_H
+#define PARSERS_GENERIC_H
+
 #include "plugin.h"
 
-#include "parsers/generic.h"
+#include <string>
 
-#include "localconsts.h"
-
-int plugin_is_GPL_compatible = 1;
-
-static void pre_generic(void *gcc_data,
-                        void *user_data A_UNUSED)
+namespace Generic
 {
-    Generic::parseNodes((tree)gcc_data);
+    void parseNodes(tree node);
 }
 
-int plugin_init (struct plugin_name_args *plugin_info,
-                 struct plugin_gcc_version *version A_UNUSED)
-{
-    register_callback(plugin_info->base_name,
-        PLUGIN_PRE_GENERICIZE,
-        &pre_generic,
-        0);
-
-    return 0;
-}
+#endif // PARSERS_GENERIC_H
