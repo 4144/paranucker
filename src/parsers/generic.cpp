@@ -19,6 +19,8 @@
 
 #include "parsers/generic.h"
 
+#include "logger.h"
+
 #include "nodes/functiondeclnode.h"
 #include "nodes/node.h"
 
@@ -31,7 +33,7 @@ extern int plugin_is_GPL_compatible;
 namespace Generic
 {
 
-Node *createEmptyNode(tree gccNode)
+Node *createEmptyNode(Node *parent, tree gccNode)
 {
     if (gccNode == NULL_TREE)
     {
@@ -43,6 +45,11 @@ Node *createEmptyNode(tree gccNode)
     {
         case FUNCTION_DECL:
             node = new FunctionDeclNode;
+            break;
+        default:
+            Log::log(parent, "Not supported node type: %s",
+                get_tree_code_name(TREE_CODE(node->gccNode)));
+            break;
     }
     return node;
 }
@@ -58,13 +65,18 @@ void parseNode(Node *node)
     {
         case FUNCTION_DECL:
             parseFunctionDeclNode(node);
+            break;
+        default:
+            Log::log(node, "Not supported node type: %s",
+                get_tree_code_name(TREE_CODE(node->gccNode)));
+            break;
     }
 }
 
 void parseNodes(tree gccNode)
 {
     //Node *rootNode = new Node;
-    Node *node = createEmptyNode(gccNode);
+    Node *node = createEmptyNode(nullptr, gccNode);
     //node->parent = rootNode;
     node->gccNode = gccNode;
     parseNode(node);

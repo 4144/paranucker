@@ -17,45 +17,20 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_NODE_H
-#define NODES_NODE_H
-
-#include "includes.h"
+#ifndef LOGGER_H
+#define LOGGER_H
 
 #include <string>
 
-struct Node
+struct Node;
+
+namespace Log
 {
-    Node() :
-        parent(nullptr),
-        nodeType(),
-        label(),
-        file(),
-        gccNode(nullptr),
-        line(-1),
-        column(-1),
-        treeNumber(0),
-        indent(0)
-    {
-    }
+    void log(const Node *const node,
+             const char *const text,
+             ...);
 
-    std::string getIndent() const
-    {
-        std::string str;
-        for (int f = 0; f < indent; f ++)
-            str.append("  ");
-        return str;
-    }
+    void log(const Node *const node);
+}
 
-    Node *parent;
-    std::string nodeType;
-    std::string label;
-    std::string file;
-    tree gccNode;
-    int line;
-    int column;
-    int treeNumber;
-    int indent;
-};
-
-#endif // NODES_NODE_H
+#endif  // LOGGER_H

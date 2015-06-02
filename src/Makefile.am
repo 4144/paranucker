@@ -8,6 +8,8 @@ SRC = nodes/functiondeclnode.h \
       parsers/generic.h \
       includes.h \
       localconsts.h \
+      logger.cpp \
+      logger.h \
       plugin.cpp
 CXX := g++
 

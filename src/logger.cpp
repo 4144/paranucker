@@ -17,26 +17,44 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "parsers/functiondeclnode.h"
-
 #include "logger.h"
 
-#include "parsers/generic.h"
-
-#include "nodes/functiondeclnode.h"
+#include "nodes/node.h"
 
 #include "localconsts.h"
 
-extern int plugin_is_GPL_compatible;
-
-namespace Generic
+namespace Log
 {
 
-void parseFunctionDeclNode(Node *node)
+void log(const Node *const node,
+         const char *const text,
+         ...
+         )
 {
-    fillType(node);
-    fillLocation(node);
-    Log::log(node);
+    va_list ap;
+    va_start(ap, text);
+
+    if (node)
+        fprintf(stderr, "%s", node->getIndent().c_str());
+    vfprintf(stderr, text, ap);
+    fprintf(stderr, "\n");
+
+    va_end(ap);
+}
+
+void log(const Node *const node)
+{
+    if (!node)
+    {
+        fprintf(stderr, "node is null\n");
+        return;
+    }
+    fprintf(stderr, "%s", node->getIndent().c_str());
+    if (!node->label.empty())
+        fprintf(stderr, "%s ", node->label.c_str());
+    if (!node->file.empty())
+        fprintf(stderr, "%s %d:%d ", node->file.c_str(), node->line, node->column);
+    fprintf(stderr, "%s\n", node->nodeType.c_str());
 }
 
 }

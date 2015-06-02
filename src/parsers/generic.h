@@ -35,6 +35,8 @@ namespace Generic
     void fillType(Node *node);
 
     void fillLocation(Node *node);
+
+    Node *createEmptyNode(Node *parent, tree gccNode);
 }
 
 #endif // PARSERS_GENERIC_H
