@@ -24,6 +24,8 @@
 
 #include "nodes/declnode.h"
 
+#include "parsers/generic.h"
+
 #include "localconsts.h"
 
 namespace Generic
@@ -45,6 +47,10 @@ void fillDeclAttributes(DeclNode *node)
     {
         return;
     }
+    node->attribute = createParseNode(
+        node,
+        DECL_ATTRIBUTES(node->gccNode),
+        "attribute");
 }
 
 }
