@@ -43,7 +43,7 @@ struct Node
     {
         std::string str;
         for (int f = 0; f < indent; f ++)
-            str.append("  ");
+            str.append(" ");
         return str;
     }
 

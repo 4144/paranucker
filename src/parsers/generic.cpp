@@ -58,7 +58,9 @@ Node *createParseNode(Node *parent, tree gccNode, tree_code wantType)
             node = new Node;
             break;
         default:
-            Log::log(parent, "Not supported node type: %s",
+            Log::log(parent,
+                1,
+                "Not supported node type: %s",
                 get_tree_code_name(TREE_CODE(gccNode)));
             break;
     }
@@ -86,7 +88,8 @@ Node *createParseNode(Node *parent, tree gccNode, tree_code wantType)
         if (wantType != ERROR_MARK &&
             node->nodeType != get_tree_code_name(wantType))
         {
-            Log::log(node, "Wrong node type. Want %s but get %s",
+            Log::log(node,
+                "Wrong node type. Want %s but get %s",
                 get_tree_code_name(wantType),
                 node->nodeType.c_str());
         }

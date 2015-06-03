@@ -30,6 +30,11 @@ namespace Log
              const char *const text,
              ...);
 
+    void log(const Node *const node,
+             const int indent,
+             const char *const text,
+             ...);
+
     void log(const Node *const node);
 }
 

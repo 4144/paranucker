@@ -42,6 +42,29 @@ void log(const Node *const node,
     va_end(ap);
 }
 
+void log(const Node *const node,
+         const int indent,
+         const char *const text,
+         ...
+         )
+{
+    va_list ap;
+    va_start(ap, text);
+
+    std::string str;
+    for (int f = 0; f < indent; f ++)
+        str.append(" ");
+
+    if (node)
+        fprintf(stderr, "%s%s", str.c_str(), node->getIndent().c_str());
+    else
+        fprintf(stderr, "%s", str.c_str());
+    vfprintf(stderr, text, ap);
+    fprintf(stderr, "\n");
+
+    va_end(ap);
+}
+
 void log(const Node *const node)
 {
     if (!node)
