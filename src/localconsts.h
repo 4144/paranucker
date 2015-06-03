@@ -36,3 +36,6 @@
 
 #define FOR_EACHP(type, iter, array) for (type iter = array->begin(), \
     iter##_end = array->end(); iter != iter##_end; ++ iter)
+
+#define FOR_CHAIN(node, var) \
+    for (tree var = DECL_ARGUMENTS(node); var; var = DECL_CHAIN(var))

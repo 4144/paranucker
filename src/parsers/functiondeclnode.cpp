@@ -24,19 +24,28 @@
 #include "parsers/generic.h"
 
 #include "nodes/functiondeclnode.h"
+#include "nodes/resultdeclnode.h"
 
 #include "localconsts.h"
 
 namespace Generic
 {
 
-void parseFunctionDeclNode(Node *node)
+void parseFunctionDeclNode(FunctionDeclNode *node)
 {
     fillType(node);
     fillLocation(node);
     Log::log(node);
-    Node *typeNode = createParseNode(node, TREE_TYPE(node->gccNode));
-    Node *resultNode = createParseNode(node, DECL_RESULT(node->gccNode));
+    node->functionType = static_cast<FunctionTypeNode*>(
+        createParseNode(node, TREE_TYPE(node->gccNode), FUNCTION_TYPE));
+    node->result = static_cast<ResultDeclNode*>(
+        createParseNode(node, DECL_RESULT(node->gccNode), RESULT_DECL));
+    FOR_CHAIN(node->gccNode, it)
+    {
+        node->args.push_back(static_cast<ParmDeclNode*>(
+            createParseNode(node, it, PARM_DECL)));
+    }
+    node->code = createParseNode(node, DECL_SAVED_TREE(node->gccNode));
 }
 
 }

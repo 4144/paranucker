@@ -20,12 +20,28 @@
 #ifndef NODES_FUNCTIONDECLNODE_H
 #define NODES_FUNCTIONDECLNODE_H
 
-#include "nodes/node.h"
+#include "nodes/functiontypenode.h"
+#include "nodes/parmdeclnode.h"
+#include "nodes/resultdeclnode.h"
 
 #include <string>
+#include <vector>
 
 struct FunctionDeclNode : public Node
 {
+    FunctionDeclNode() :
+        Node(),
+        functionType(nullptr),
+        result(nullptr),
+        code(nullptr),
+        args()
+    {
+    }
+
+    FunctionTypeNode *functionType;
+    ResultDeclNode *result;
+    Node *code;
+    std::vector<ParmDeclNode*> args;
 };
 
 #endif // NODES_FUNCTIONDECLNODE_H

@@ -35,6 +35,11 @@ namespace Generic
 
 Node *createParseNode(Node *parent, tree gccNode)
 {
+    return createParseNode(parent, gccNode, ERROR_MARK);
+}
+
+Node *createParseNode(Node *parent, tree gccNode, tree_code wantType)
+{
     if (gccNode == NULL_TREE)
     {
         return nullptr;
@@ -54,7 +59,7 @@ Node *createParseNode(Node *parent, tree gccNode)
             break;
         default:
             Log::log(parent, "Not supported node type: %s",
-                get_tree_code_name(TREE_CODE(node->gccNode)));
+                get_tree_code_name(TREE_CODE(gccNode)));
             break;
     }
     if (node)
@@ -67,7 +72,7 @@ Node *createParseNode(Node *parent, tree gccNode)
         switch (TREE_CODE(node->gccNode))
         {
             case FUNCTION_DECL:
-                parseFunctionDeclNode(node);
+                parseFunctionDeclNode(static_cast<FunctionDeclNode*>(node));
                 break;
             case FUNCTION_TYPE:
                 parseFunctionTypeNode(node);
@@ -76,9 +81,14 @@ Node *createParseNode(Node *parent, tree gccNode)
                 parseResultDeclNode(node);
                 break;
             default:
-                Log::log(node, "Not supported node type: %s",
-                    get_tree_code_name(TREE_CODE(node->gccNode)));
                 break;
+        }
+        if (wantType != ERROR_MARK &&
+            node->nodeType != get_tree_code_name(wantType))
+        {
+            Log::log(node, "Wrong node type. Want %s but get %s",
+                get_tree_code_name(wantType),
+                node->nodeType.c_str());
         }
     }
     return node;
@@ -86,7 +96,7 @@ Node *createParseNode(Node *parent, tree gccNode)
 
 void parseNodes(tree gccNode)
 {
-    createParseNode(nullptr, gccNode);
+    createParseNode(nullptr, gccNode, FUNCTION_DECL);
 }
 
 void fillType(Node *node)
@@ -98,6 +108,7 @@ void fillType(Node *node)
 
     node->treeNumber = static_cast<int>(TREE_CODE(node->gccNode));
     node->nodeType = get_tree_code_name(TREE_CODE(node->gccNode));
+//    Log::log(node);
 }
 
 void fillLocation(Node *node)
