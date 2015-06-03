@@ -24,11 +24,11 @@
 
 #include <string>
 
-struct Node;
+struct ResultDeclNode;
 
 namespace Generic
 {
-    void parseResultDeclNode(Node *parent);
+    void parseResultDeclNode(ResultDeclNode *parent);
 }
 
 #endif // PARSERS_RESULTDECLNODE_H

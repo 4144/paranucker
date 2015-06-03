@@ -20,12 +20,21 @@
 #ifndef NODES_RESULTDECLNODE_H
 #define NODES_RESULTDECLNODE_H
 
-#include "nodes/node.h"
+#include "nodes/declnode.h"
 
 #include <string>
 
-struct ResultDeclNode : public Node
+struct TypeNode;
+
+struct ResultDeclNode : public DeclNode
 {
+    ResultDeclNode() :
+        DeclNode(),
+        resultType(nullptr)
+    {
+    }
+
+    TypeNode *resultType;
 };
 
 #endif // NODES_RESULTDECLNODE_H
