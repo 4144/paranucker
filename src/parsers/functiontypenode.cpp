@@ -27,8 +27,6 @@
 
 #include "localconsts.h"
 
-extern int plugin_is_GPL_compatible;
-
 namespace Generic
 {
 

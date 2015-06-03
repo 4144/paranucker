@@ -26,10 +26,9 @@
 
 #include "parsers/functiondeclnode.h"
 #include "parsers/functiontypenode.h"
+#include "parsers/resultdeclnode.h"
 
 #include "localconsts.h"
-
-extern int plugin_is_GPL_compatible;
 
 namespace Generic
 {
@@ -49,6 +48,9 @@ Node *createEmptyNode(Node *parent, tree gccNode)
             break;
         case FUNCTION_TYPE:
             node = new FunctionTypeNode;
+            break;
+        case RESULT_DECL:
+            node = new Node;
             break;
         default:
             Log::log(parent, "Not supported node type: %s",
@@ -79,6 +81,9 @@ void parseNode(Node *node)
             break;
         case FUNCTION_TYPE:
             parseFunctionTypeNode(node);
+            break;
+        case RESULT_DECL:
+            parseResultDeclNode(node);
             break;
         default:
             Log::log(node, "Not supported node type: %s",

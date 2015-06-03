@@ -50,11 +50,12 @@ void log(const Node *const node)
         return;
     }
     fprintf(stderr, "%s", node->getIndent().c_str());
+    fprintf(stderr, "%s ", node->nodeType.c_str());
     if (!node->label.empty())
         fprintf(stderr, "%s ", node->label.c_str());
     if (!node->file.empty())
         fprintf(stderr, "%s %d:%d ", node->file.c_str(), node->line, node->column);
-    fprintf(stderr, "%s\n", node->nodeType.c_str());
+    fprintf(stderr, "\n");
 }
 
 }

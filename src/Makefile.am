@@ -7,6 +7,8 @@ SRC = nodes/functiondeclnode.h \
       parsers/functiondeclnode.h \
       parsers/functiontypenode.cpp \
       parsers/functiontypenode.h \
+      parsers/resultdeclnode.cpp \
+      parsers/resultdeclnode.h \
       parsers/generic.cpp \
       parsers/generic.h \
       includes.h \
