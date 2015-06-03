@@ -20,6 +20,7 @@
 #ifndef NODES_FUNCTIONTYPENODE_H
 #define NODES_FUNCTIONTYPENODE_H
 
+#include "nodes/treelistnode.h"
 #include "nodes/typenode.h"
 
 #include <string>
@@ -27,9 +28,14 @@
 struct FunctionTypeNode : public TypeNode
 {
     FunctionTypeNode() :
-        TypeNode()
+        TypeNode(),
+        returnType(nullptr),
+        argTypes(nullptr)
     {
     }
+
+    TypeNode *returnType;
+    TreeListNode *argTypes;
 };
 
 #endif // NODES_FUNCTIONTYPENODE_H

@@ -17,38 +17,15 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "parsers/functiontypenode.h"
+#ifndef NODES_TREELISTNODE_H
+#define NODES_TREELISTNODE_H
 
-#include "logger.h"
+#include "nodes/node.h"
 
-#include "parsers/generic.h"
-#include "parsers/typenode.h"
+#include <string>
 
-#include "nodes/functiontypenode.h"
-
-#include "localconsts.h"
-
-namespace Generic
+struct TreeListNode : public Node
 {
+};
 
-void parseFunctionTypeNode(FunctionTypeNode *node)
-{
-    fillType(node);
-    Log::log(node);
-    fillTypeName(node);
-
-    node->returnType = static_cast<TypeNode*>(createParseNode(
-        node,
-        TREE_TYPE(node->gccNode),
-        "function return type"));
-
-    fillTypeAttributes(node);
-
-    node->argTypes = static_cast<TreeListNode*>(createParseNode(
-        node,
-        TYPE_ARG_TYPES(node->gccNode),
-        TREE_LIST,
-        "arg types"));
-}
-
-}
+#endif // NODES_TREELISTNODE_H

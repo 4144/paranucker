@@ -6,6 +6,7 @@ SRC = nodes/declnode.h \
       nodes/node.h \
       nodes/parmdeclnode.h \
       nodes/resultdeclnode.h \
+      nodes/treelistnode.h \
       nodes/typenode.h \
       parsers/declnode.cpp \
       parsers/declnode.h \
