@@ -6,16 +6,19 @@ SRC = nodes/declnode.h \
       nodes/node.h \
       nodes/parmdeclnode.h \
       nodes/resultdeclnode.h \
+      nodes/typenode.h \
       parsers/declnode.cpp \
       parsers/declnode.h \
       parsers/functiondeclnode.cpp \
       parsers/functiondeclnode.h \
       parsers/functiontypenode.cpp \
       parsers/functiontypenode.h \
-      parsers/resultdeclnode.cpp \
-      parsers/resultdeclnode.h \
       parsers/generic.cpp \
       parsers/generic.h \
+      parsers/resultdeclnode.cpp \
+      parsers/resultdeclnode.h \
+      parsers/typenode.cpp \
+      parsers/typenode.h \
       includes.h \
       localconsts.h \
       logger.cpp \

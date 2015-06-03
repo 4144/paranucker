@@ -20,12 +20,16 @@
 #ifndef NODES_FUNCTIONTYPENODE_H
 #define NODES_FUNCTIONTYPENODE_H
 
-#include "nodes/node.h"
+#include "nodes/typenode.h"
 
 #include <string>
 
-struct FunctionTypeNode : public Node
+struct FunctionTypeNode : public TypeNode
 {
+    FunctionTypeNode() :
+        TypeNode()
+    {
+    }
 };
 
 #endif // NODES_FUNCTIONTYPENODE_H

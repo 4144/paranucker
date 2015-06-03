@@ -24,11 +24,11 @@
 
 #include <string>
 
-struct Node;
+struct FunctionTypeNode;
 
 namespace Generic
 {
-    void parseFunctionTypeNode(Node *parent);
+    void parseFunctionTypeNode(FunctionTypeNode *parent);
 }
 
 #endif // PARSERS_FUNCTIONTYPENODE_H

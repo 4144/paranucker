@@ -96,7 +96,7 @@ Node *createParseNode(Node *parent,
                 parseFunctionDeclNode(static_cast<FunctionDeclNode*>(node));
                 break;
             case FUNCTION_TYPE:
-                parseFunctionTypeNode(node);
+                parseFunctionTypeNode(static_cast<FunctionTypeNode*>(node));
                 break;
             case RESULT_DECL:
                 parseResultDeclNode(node);

@@ -17,26 +17,16 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "parsers/functiontypenode.h"
+#ifndef PARSERS_TYPENODE_H
+#define PARSERS_TYPENODE_H
 
-#include "logger.h"
-
-#include "parsers/generic.h"
-#include "parsers/typenode.h"
-
-#include "nodes/functiontypenode.h"
-
-#include "localconsts.h"
+struct TypeNode;
 
 namespace Generic
 {
+    void fillTypeAttributes(TypeNode *node);
 
-void parseFunctionTypeNode(FunctionTypeNode *node)
-{
-    fillType(node);
-    Log::log(node);
-    fillTypeName(node);
-    fillTypeAttributes(node);
+    void fillTypeName(TypeNode *node);
 }
 
-}
+#endif // PARSERS_TYPENODE_H
