@@ -35,10 +35,8 @@ void parseFunctionDeclNode(Node *node)
     fillType(node);
     fillLocation(node);
     Log::log(node);
-    Node *typeNode = createEmptyNode(node, TREE_TYPE(node->gccNode));
-    parseNode(typeNode);
-    Node *resultNode = createEmptyNode(node, DECL_RESULT(node->gccNode));
-    parseNode(resultNode);
+    Node *typeNode = createParseNode(node, TREE_TYPE(node->gccNode));
+    Node *resultNode = createParseNode(node, DECL_RESULT(node->gccNode));
 }
 
 }

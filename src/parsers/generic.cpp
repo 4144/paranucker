@@ -33,7 +33,7 @@
 namespace Generic
 {
 
-Node *createEmptyNode(Node *parent, tree gccNode)
+Node *createParseNode(Node *parent, tree gccNode)
 {
     if (gccNode == NULL_TREE)
     {
@@ -63,40 +63,30 @@ Node *createEmptyNode(Node *parent, tree gccNode)
         node->gccNode = gccNode;
         if (parent)
             node->indent  = parent->indent + 1;
+
+        switch (TREE_CODE(node->gccNode))
+        {
+            case FUNCTION_DECL:
+                parseFunctionDeclNode(node);
+                break;
+            case FUNCTION_TYPE:
+                parseFunctionTypeNode(node);
+                break;
+            case RESULT_DECL:
+                parseResultDeclNode(node);
+                break;
+            default:
+                Log::log(node, "Not supported node type: %s",
+                    get_tree_code_name(TREE_CODE(node->gccNode)));
+                break;
+        }
     }
     return node;
 }
 
-void parseNode(Node *node)
-{
-    if (!node || node->gccNode == NULL_TREE)
-    {
-        return;
-    }
-
-    switch (TREE_CODE(node->gccNode))
-    {
-        case FUNCTION_DECL:
-            parseFunctionDeclNode(node);
-            break;
-        case FUNCTION_TYPE:
-            parseFunctionTypeNode(node);
-            break;
-        case RESULT_DECL:
-            parseResultDeclNode(node);
-            break;
-        default:
-            Log::log(node, "Not supported node type: %s",
-                get_tree_code_name(TREE_CODE(node->gccNode)));
-            break;
-    }
-}
-
 void parseNodes(tree gccNode)
 {
-    //Node *rootNode = new Node;
-    Node *node = createEmptyNode(nullptr, gccNode);
-    parseNode(node);
+    createParseNode(nullptr, gccNode);
 }
 
 void fillType(Node *node)
