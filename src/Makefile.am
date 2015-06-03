@@ -1,10 +1,13 @@
 AUTOMAKE_OPTIONS = subdir-objects
 
-SRC = nodes/functiondeclnode.h \
+SRC = nodes/declnode.h \
+      nodes/functiondeclnode.h \
       nodes/functiontypenode.h \
       nodes/node.h \
       nodes/parmdeclnode.h \
       nodes/resultdeclnode.h \
+      parsers/declnode.cpp \
+      parsers/declnode.h \
       parsers/functiondeclnode.cpp \
       parsers/functiondeclnode.h \
       parsers/functiontypenode.cpp \

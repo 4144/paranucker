@@ -21,6 +21,7 @@
 
 #include "logger.h"
 
+#include "parsers/declnode.h"
 #include "parsers/generic.h"
 
 #include "nodes/functiondeclnode.h"
@@ -35,6 +36,8 @@ void parseFunctionDeclNode(FunctionDeclNode *node)
 {
     fillType(node);
     fillLocation(node);
+    fillDeclLabel(node);
+    fillDeclAttributes(node);
     Log::log(node);
     node->functionType = static_cast<FunctionTypeNode*>(createParseNode(
         node,
@@ -60,13 +63,15 @@ void parseFunctionDeclNode(FunctionDeclNode *node)
         node,
         DECL_FUNCTION_SPECIFIC_TARGET(node->gccNode),
         "target");
-    node->hasTargets = DECL_FUNCTION_VERSIONED(node->gccNode) ? true : false;
+    node->hasTargets = DECL_FUNCTION_VERSIONED(node->gccNode);
     node->optimisation = createParseNode(
         node,
         DECL_FUNCTION_SPECIFIC_OPTIMIZATION(node->gccNode),
         "optiomisations");
     node->isVirtual = DECL_VIRTUAL_P(node->gccNode);
     node->isFinal = DECL_FINAL_P(node->gccNode);
+    node->isConst = TREE_READONLY(node->gccNode);
+    node->isPure = DECL_PURE_P(node->gccNode);
 }
 
 }
