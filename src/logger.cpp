@@ -37,6 +37,8 @@ void log(const Node *const node,
     if (node)
         fprintf(stderr, "%s", node->getIndent().c_str());
     vfprintf(stderr, text, ap);
+    if (node && !node->tag.empty())
+        fprintf(stderr, " - %s", node->tag.c_str());
     fprintf(stderr, "\n");
 
     va_end(ap);
@@ -60,6 +62,8 @@ void log(const Node *const node,
     else
         fprintf(stderr, "%s", str.c_str());
     vfprintf(stderr, text, ap);
+    if (node && !node->tag.empty())
+        fprintf(stderr, " - %s", node->tag.c_str());
     fprintf(stderr, "\n");
 
     va_end(ap);
@@ -73,11 +77,19 @@ void log(const Node *const node)
         return;
     }
     fprintf(stderr, "%s", node->getIndent().c_str());
-    fprintf(stderr, "%s ", node->nodeType.c_str());
+    fprintf(stderr, "%s", node->nodeType.c_str());
     if (!node->label.empty())
-        fprintf(stderr, "%s ", node->label.c_str());
+        fprintf(stderr, " %s", node->label.c_str());
     if (!node->file.empty())
-        fprintf(stderr, "%s %d:%d ", node->file.c_str(), node->line, node->column);
+    {
+        fprintf(stderr, " %s %d:%d",
+            node->file.c_str(),
+            node->line,
+            node->column);
+    }
+    if (!node->tag.empty())
+        fprintf(stderr, " - %s", node->tag.c_str());
+
     fprintf(stderr, "\n");
 }
 

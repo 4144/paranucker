@@ -33,12 +33,20 @@
 namespace Generic
 {
 
-Node *createParseNode(Node *parent, tree gccNode)
+Node *createParseNode(Node *parent,
+                      tree gccNode,
+                      std::string tag)
 {
-    return createParseNode(parent, gccNode, ERROR_MARK);
+    return createParseNode(parent,
+        gccNode,
+        ERROR_MARK,
+        tag);
 }
 
-Node *createParseNode(Node *parent, tree gccNode, tree_code wantType)
+Node *createParseNode(Node *parent,
+                      tree gccNode,
+                      tree_code wantType,
+                      std::string tag)
 {
     if (gccNode == NULL_TREE)
     {
@@ -55,13 +63,14 @@ Node *createParseNode(Node *parent, tree gccNode, tree_code wantType)
             node = new FunctionTypeNode;
             break;
         case RESULT_DECL:
-            node = new Node;
+            node = new ResultDeclNode;
             break;
         default:
             Log::log(parent,
                 1,
-                "Not supported node type: %s",
-                get_tree_code_name(TREE_CODE(gccNode)));
+                "Not supported node type: %s - %s",
+                get_tree_code_name(TREE_CODE(gccNode)),
+                tag.c_str());
             break;
     }
     if (node)
@@ -69,7 +78,17 @@ Node *createParseNode(Node *parent, tree gccNode, tree_code wantType)
         node->parent = parent;
         node->gccNode = gccNode;
         if (parent)
+        {
             node->indent  = parent->indent + 1;
+            if (tag.empty())
+                node->tag = parent->tag;
+            else
+                node->tag = tag;
+        }
+        else
+        {
+            node->tag = tag;
+        }
 
         switch (TREE_CODE(node->gccNode))
         {
@@ -88,10 +107,21 @@ Node *createParseNode(Node *parent, tree gccNode, tree_code wantType)
         if (wantType != ERROR_MARK &&
             node->nodeType != get_tree_code_name(wantType))
         {
-            Log::log(node,
-                "Wrong node type. Want %s but get %s",
-                get_tree_code_name(wantType),
-                node->nodeType.c_str());
+            if (tag.empty())
+            {
+                Log::log(node,
+                    "Wrong node type. Want %s but get %s",
+                    get_tree_code_name(wantType),
+                    node->nodeType.c_str());
+            }
+            else
+            {
+                Log::log(node,
+                    "Wrong node type. Want %s but get %s - %s",
+                    get_tree_code_name(wantType),
+                    node->nodeType.c_str(),
+                    tag.c_str());
+            }
         }
     }
     return node;

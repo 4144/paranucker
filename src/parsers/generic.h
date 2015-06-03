@@ -37,11 +37,13 @@ namespace Generic
     void fillLocation(Node *node);
 
     Node *createParseNode(Node *parent,
-                          tree gccNode);
+                          tree gccNode,
+                          std::string tag = "");
 
     Node *createParseNode(Node *parent,
                           tree gccNode,
-                          tree_code wantType);
+                          tree_code wantType,
+                          std::string tag = "");
 }
 
 #endif // PARSERS_GENERIC_H
