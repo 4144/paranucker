@@ -20,11 +20,9 @@
 #ifndef NODES_PARMDECLNODE_H
 #define NODES_PARMDECLNODE_H
 
-#include "nodes/base/node.h"
+#include "nodes/base/declnode.h"
 
-#include <string>
-
-struct ParmDeclNode : public Node
+struct ParmDeclNode : public DeclNode
 {
 };
 
