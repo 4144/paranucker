@@ -17,18 +17,18 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PARSERS_FUNCTIONTYPENODE_H
-#define PARSERS_FUNCTIONTYPENODE_H
+#ifndef PARSERS_FUNCTION_DECL_H
+#define PARSERS_FUNCTION_DECL_H
 
 #include "includes.h"
 
 #include <string>
 
-struct FunctionTypeNode;
+struct FunctionDeclNode;
 
 namespace Generic
 {
-    void parseFunctionTypeNode(FunctionTypeNode *parent);
+    void parseFunctionDeclNode(FunctionDeclNode *node);
 }
 
-#endif // PARSERS_FUNCTIONTYPENODE_H
+#endif // PARSERS_FUNCTION_DECL_H

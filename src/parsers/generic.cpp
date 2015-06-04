@@ -24,9 +24,9 @@
 #include "nodes/functiondeclnode.h"
 #include "nodes/functiontypenode.h"
 
-#include "parsers/functiondeclnode.h"
-#include "parsers/functiontypenode.h"
-#include "parsers/resultdeclnode.h"
+#include "parsers/function_decl.h"
+#include "parsers/function_type.h"
+#include "parsers/result_decl.h"
 
 #include "localconsts.h"
 

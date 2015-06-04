@@ -17,42 +17,37 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "parsers/typenode.h"
+#include "parsers/function_type.h"
 
-#include "includes.h"
 #include "logger.h"
 
-#include "nodes/typenode.h"
-
 #include "parsers/generic.h"
+
+#include "parsers/base/type.h"
+
+#include "nodes/functiontypenode.h"
 
 #include "localconsts.h"
 
 namespace Generic
 {
 
-void fillTypeAttributes(TypeNode *node)
+void parseFunctionTypeNode(FunctionTypeNode *node)
 {
-    if (!node || node->gccNode == NULL_TREE)
-    {
-        return;
-    }
-    node->attribute = createParseNode(
-        node,
-        TYPE_ATTRIBUTES(node->gccNode),
-        "attribute");
-}
+    fillType(node);
+    Log::log(node);
 
-void fillTypeName(TypeNode *node)
-{
-    if (!node || node->gccNode == NULL_TREE)
-    {
-        return;
-    }
-    node->typeName = static_cast<DeclNode*>(createParseNode(
+    fillTypeName(node);
+    node->returnType = static_cast<TypeNode*>(createParseNode(
         node,
-        TYPE_NAME(node->gccNode),
-        "type name"));
+        TREE_TYPE(node->gccNode),
+        "function return type"));
+    fillTypeAttributes(node);
+    node->argTypes = static_cast<TreeListNode*>(createParseNode(
+        node,
+        TYPE_ARG_TYPES(node->gccNode),
+        TREE_LIST,
+        "arg types"));
 }
 
 }

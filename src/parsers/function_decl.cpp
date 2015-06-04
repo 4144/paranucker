@@ -17,12 +17,13 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "parsers/functiondeclnode.h"
+#include "parsers/function_decl.h"
 
 #include "logger.h"
 
-#include "parsers/declnode.h"
 #include "parsers/generic.h"
+
+#include "parsers/base/decl.h"
 
 #include "nodes/functiondeclnode.h"
 #include "nodes/resultdeclnode.h"

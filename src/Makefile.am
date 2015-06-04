@@ -8,18 +8,18 @@ SRC = nodes/declnode.h \
       nodes/resultdeclnode.h \
       nodes/treelistnode.h \
       nodes/typenode.h \
-      parsers/declnode.cpp \
-      parsers/declnode.h \
-      parsers/functiondeclnode.cpp \
-      parsers/functiondeclnode.h \
-      parsers/functiontypenode.cpp \
-      parsers/functiontypenode.h \
+      parsers/function_decl.cpp \
+      parsers/function_decl.h \
+      parsers/function_type.cpp \
+      parsers/function_type.h \
       parsers/generic.cpp \
       parsers/generic.h \
-      parsers/resultdeclnode.cpp \
-      parsers/resultdeclnode.h \
-      parsers/typenode.cpp \
-      parsers/typenode.h \
+      parsers/result_decl.cpp \
+      parsers/result_decl.h \
+      parsers/base/decl.cpp \
+      parsers/base/decl.h \
+      parsers/base/type.cpp \
+      parsers/base/type.h \
       includes.h \
       localconsts.h \
       logger.cpp \

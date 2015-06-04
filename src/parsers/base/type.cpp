@@ -17,18 +17,42 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PARSERS_RESULTDECLNODE_H
-#define PARSERS_RESULTDECLNODE_H
+#include "parsers/base/type.h"
 
 #include "includes.h"
+#include "logger.h"
 
-#include <string>
+#include "nodes/typenode.h"
 
-struct ResultDeclNode;
+#include "parsers/generic.h"
+
+#include "localconsts.h"
 
 namespace Generic
 {
-    void parseResultDeclNode(ResultDeclNode *parent);
+
+void fillTypeAttributes(TypeNode *node)
+{
+    if (!node || node->gccNode == NULL_TREE)
+    {
+        return;
+    }
+    node->attribute = createParseNode(
+        node,
+        TYPE_ATTRIBUTES(node->gccNode),
+        "attribute");
 }
 
-#endif // PARSERS_RESULTDECLNODE_H
+void fillTypeName(TypeNode *node)
+{
+    if (!node || node->gccNode == NULL_TREE)
+    {
+        return;
+    }
+    node->typeName = static_cast<DeclNode*>(createParseNode(
+        node,
+        TYPE_NAME(node->gccNode),
+        "type name"));
+}
+
+}

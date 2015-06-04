@@ -17,8 +17,8 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PARSERS_TYPENODE_H
-#define PARSERS_TYPENODE_H
+#ifndef PARSERS_TYPE_H
+#define PARSERS_TYPE_H
 
 struct TypeNode;
 
@@ -29,4 +29,4 @@ namespace Generic
     void fillTypeName(TypeNode *node);
 }
 
-#endif // PARSERS_TYPENODE_H
+#endif // PARSERS_TYPE_H
