@@ -34,6 +34,17 @@ parserDefine(TypeDecl);
 
 #include "localconsts.h"
 
+#define createNodeType(code, type) \
+    case code: \
+        node = new type; \
+        break
+
+#define parseNodeType(code, type) \
+    case code: \
+        parse##type##Node(static_cast<type##Node*>(node)); \
+        break
+
+
 namespace Generic
 {
 
@@ -60,21 +71,11 @@ Node *createParseNode(Node *parent,
     Node *node = nullptr;
     switch (TREE_CODE(gccNode))
     {
-        case FUNCTION_DECL:
-            node = new FunctionDeclNode;
-            break;
-        case RESULT_DECL:
-            node = new ResultDeclNode;
-            break;
-        case TYPE_DECL:
-            node = new TypeDeclNode;
-            break;
-        case FUNCTION_TYPE:
-            node = new FunctionTypeNode;
-            break;
-        case VOID_TYPE:
-            node = new VoidTypeNode;
-            break;
+        createNodeType(FUNCTION_DECL, FunctionDeclNode);
+        createNodeType(RESULT_DECL, ResultDeclNode);
+        createNodeType(TYPE_DECL, TypeDeclNode);
+        createNodeType(FUNCTION_TYPE, FunctionTypeNode);
+        createNodeType(VOID_TYPE, VoidTypeNode);
         default:
             Log::log(parent,
                 1,
@@ -102,21 +103,11 @@ Node *createParseNode(Node *parent,
 
         switch (TREE_CODE(node->gccNode))
         {
-            case FUNCTION_DECL:
-                parseFunctionDeclNode(static_cast<FunctionDeclNode*>(node));
-                break;
-            case RESULT_DECL:
-                parseResultDeclNode(static_cast<ResultDeclNode*>(node));
-                break;
-            case TYPE_DECL:
-                parseTypeDeclNode(static_cast<TypeDeclNode*>(node));
-                break;
-            case FUNCTION_TYPE:
-                parseFunctionTypeNode(static_cast<FunctionTypeNode*>(node));
-                break;
-            case VOID_TYPE:
-                parseVoidTypeNode(static_cast<VoidTypeNode*>(node));
-                break;
+            parseNodeType(FUNCTION_DECL, FunctionDecl);
+            parseNodeType(RESULT_DECL, ResultDecl);
+            parseNodeType(TYPE_DECL, TypeDecl);
+            parseNodeType(FUNCTION_TYPE, FunctionType);
+            parseNodeType(VOID_TYPE, VoidType);
             default:
                 break;
         }
