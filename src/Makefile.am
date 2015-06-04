@@ -1,11 +1,13 @@
 AUTOMAKE_OPTIONS = subdir-objects
 
-SRC = nodes/base/declnode.h \
+SRC = nodes/base/cstnode.h \
+      nodes/base/declnode.h \
       nodes/base/node.h \
       nodes/base/typenode.h \
       nodes/functiondeclnode.h \
       nodes/functiontypenode.h \
       nodes/identifiernode.h \
+      nodes/integercstnode.h \
       nodes/parmdeclnode.h \
       nodes/resultdeclnode.h \
       nodes/treelistnode.h \
@@ -16,6 +18,7 @@ SRC = nodes/base/declnode.h \
       parsers/generic.cpp \
       parsers/generic.h \
       parsers/identifier_node.cpp \
+      parsers/integer_cst.cpp \
       parsers/parserincludes.h \
       parsers/result_decl.cpp \
       parsers/tree_list.cpp \
@@ -29,7 +32,10 @@ SRC = nodes/base/declnode.h \
       localconsts.h \
       logger.cpp \
       logger.h \
-      plugin.cpp
+      plugin.cpp \
+      stringutils.cpp \
+      stringutils.h
+
 CXX := g++
 
 # in future need remove -Wno-switch
