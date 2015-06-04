@@ -26,6 +26,10 @@
 
 struct TreeListNode : public Node
 {
+    TreeListNode() :
+        Node()
+    {
+    }
 };
 
 #endif // NODES_TREELISTNODE_H

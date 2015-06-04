@@ -31,6 +31,7 @@ parserDefine(FunctionType);
 parserDefine(ResultDecl);
 parserDefine(VoidType);
 parserDefine(TypeDecl);
+parserDefine(TreeList);
 
 #include "localconsts.h"
 
@@ -76,6 +77,7 @@ Node *createParseNode(Node *parent,
         createNodeType(TYPE_DECL, TypeDeclNode);
         createNodeType(FUNCTION_TYPE, FunctionTypeNode);
         createNodeType(VOID_TYPE, VoidTypeNode);
+        createNodeType(TREE_LIST, TreeListNode);
         default:
             Log::log(parent,
                 1,
@@ -108,6 +110,7 @@ Node *createParseNode(Node *parent,
             parseNodeType(TYPE_DECL, TypeDecl);
             parseNodeType(FUNCTION_TYPE, FunctionType);
             parseNodeType(VOID_TYPE, VoidType);
+            parseNodeType(TREE_LIST, TreeList);
             default:
                 break;
         }

@@ -16,6 +16,7 @@ SRC = nodes/base/declnode.h \
       parsers/generic.h \
       parsers/parserincludes.h \
       parsers/result_decl.cpp \
+      parsers/tree_list.cpp \
       parsers/type_decl.cpp \
       parsers/void_type.cpp \
       parsers/base/decl.cpp \

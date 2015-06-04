@@ -54,7 +54,7 @@ void parseFunctionDeclNode(FunctionDeclNode *node)
         DECL_RESULT(node->gccNode),
         RESULT_DECL,
         "function result"));
-    FOR_CHAIN(node->gccNode, it)
+    FOR_CHAIN(node->gccNode, it, DECL_ARGUMENTS, DECL_CHAIN)
     {
         node->args.push_back(static_cast<ParmDeclNode*>(
             createParseNode(node, it, PARM_DECL, "argument")));
