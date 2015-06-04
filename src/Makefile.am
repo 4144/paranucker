@@ -8,6 +8,7 @@ SRC = nodes/base/declnode.h \
       nodes/parmdeclnode.h \
       nodes/resultdeclnode.h \
       nodes/treelistnode.h \
+      nodes/voidtypenode.h \
       parsers/function_decl.cpp \
       parsers/function_decl.h \
       parsers/function_type.cpp \
@@ -16,6 +17,8 @@ SRC = nodes/base/declnode.h \
       parsers/generic.h \
       parsers/result_decl.cpp \
       parsers/result_decl.h \
+      parsers/void_type.cpp \
+      parsers/void_type.h \
       parsers/base/decl.cpp \
       parsers/base/decl.h \
       parsers/base/type.cpp \
