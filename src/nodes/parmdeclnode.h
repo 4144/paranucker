@@ -20,7 +20,7 @@
 #ifndef NODES_PARMDECLNODE_H
 #define NODES_PARMDECLNODE_H
 
-#include "nodes/node.h"
+#include "nodes/base/node.h"
 
 #include <string>
 

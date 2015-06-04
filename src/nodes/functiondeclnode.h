@@ -20,10 +20,11 @@
 #ifndef NODES_FUNCTIONDECLNODE_H
 #define NODES_FUNCTIONDECLNODE_H
 
-#include "nodes/declnode.h"
 #include "nodes/functiontypenode.h"
 #include "nodes/parmdeclnode.h"
 #include "nodes/resultdeclnode.h"
+
+#include "nodes/base/declnode.h"
 
 #include <string>
 #include <vector>

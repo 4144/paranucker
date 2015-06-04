@@ -19,7 +19,7 @@
 
 #include "logger.h"
 
-#include "nodes/node.h"
+#include "nodes/base/node.h"
 
 #include "localconsts.h"
 

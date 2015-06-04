@@ -21,7 +21,8 @@
 #define NODES_FUNCTIONTYPENODE_H
 
 #include "nodes/treelistnode.h"
-#include "nodes/typenode.h"
+
+#include "nodes/base/typenode.h"
 
 #include <string>
 

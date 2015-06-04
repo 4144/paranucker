@@ -20,7 +20,7 @@
 #ifndef NODES_TREELISTNODE_H
 #define NODES_TREELISTNODE_H
 
-#include "nodes/node.h"
+#include "nodes/base/node.h"
 
 #include <string>
 

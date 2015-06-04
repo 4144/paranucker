@@ -26,7 +26,8 @@
 #include "parsers/base/decl.h"
 
 #include "nodes/resultdeclnode.h"
-#include "nodes/typenode.h"
+
+#include "nodes/base/typenode.h"
 
 #include "localconsts.h"
 
