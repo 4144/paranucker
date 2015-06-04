@@ -17,17 +17,13 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "parsers/type_decl.h"
+#include "parsers/parserincludes.h"
 
-#include "logger.h"
-
-#include "parsers/generic.h"
+parserDefine(TypeDecl);
 
 #include "parsers/base/decl.h"
 
 #include "nodes/typedeclnode.h"
-
-#include "localconsts.h"
 
 namespace Generic
 {

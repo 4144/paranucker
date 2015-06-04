@@ -17,17 +17,13 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "parsers/void_type.h"
+#include "parsers/parserincludes.h"
 
-#include "logger.h"
-
-#include "parsers/generic.h"
+parserDefine(VoidType);
 
 #include "parsers/base/type.h"
 
 #include "nodes/voidtypenode.h"
-
-#include "localconsts.h"
 
 namespace Generic
 {

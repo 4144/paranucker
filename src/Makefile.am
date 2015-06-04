@@ -11,17 +11,13 @@ SRC = nodes/base/declnode.h \
       nodes/typedeclnode.h \
       nodes/voidtypenode.h \
       parsers/function_decl.cpp \
-      parsers/function_decl.h \
       parsers/function_type.cpp \
-      parsers/function_type.h \
       parsers/generic.cpp \
       parsers/generic.h \
+      parsers/parserincludes.h \
       parsers/result_decl.cpp \
-      parsers/result_decl.h \
       parsers/type_decl.cpp \
-      parsers/type_decl.h \
       parsers/void_type.cpp \
-      parsers/void_type.h \
       parsers/base/decl.cpp \
       parsers/base/decl.h \
       parsers/base/type.cpp \

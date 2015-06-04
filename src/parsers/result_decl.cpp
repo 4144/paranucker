@@ -17,19 +17,15 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "parsers/result_decl.h"
+#include "parsers/parserincludes.h"
 
-#include "logger.h"
-
-#include "parsers/generic.h"
+parserDefine(ResultDecl);
 
 #include "parsers/base/decl.h"
 
 #include "nodes/resultdeclnode.h"
 
 #include "nodes/base/typenode.h"
-
-#include "localconsts.h"
 
 namespace Generic
 {

@@ -19,18 +19,18 @@
 
 #include "parsers/generic.h"
 
-#include "logger.h"
-
 #include "nodes/functiondeclnode.h"
 #include "nodes/functiontypenode.h"
 #include "nodes/voidtypenode.h"
 #include "nodes/typedeclnode.h"
 
-#include "parsers/function_decl.h"
-#include "parsers/function_type.h"
-#include "parsers/result_decl.h"
-#include "parsers/void_type.h"
-#include "parsers/type_decl.h"
+#include "parsers/parserincludes.h"
+
+parserDefine(FunctionDecl);
+parserDefine(FunctionType);
+parserDefine(ResultDecl);
+parserDefine(VoidType);
+parserDefine(TypeDecl);
 
 #include "localconsts.h"
 

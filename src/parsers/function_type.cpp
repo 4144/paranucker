@@ -17,17 +17,13 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "parsers/function_type.h"
+#include "parsers/parserincludes.h"
 
-#include "logger.h"
-
-#include "parsers/generic.h"
-
-#include "parsers/base/type.h"
+parserDefine(FunctionType);
 
 #include "nodes/functiontypenode.h"
 
-#include "localconsts.h"
+#include "parsers/base/type.h"
 
 namespace Generic
 {

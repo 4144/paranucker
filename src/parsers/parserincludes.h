@@ -17,16 +17,23 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PARSERS_VOID_TYPE_H
-#define PARSERS_VOID_TYPE_H
+#ifndef PARSERS_PARSERINCLUDES_H
+#define PARSERS_PARSERINCLUDES_H
 
 #include "includes.h"
+#include "logger.h"
 
-struct VoidTypeNode;
+#include "parsers/generic.h"
 
-namespace Generic
-{
-    void parseVoidTypeNode(VoidTypeNode *parent);
-}
+#include <string>
 
-#endif // PARSERS_VOID_TYPE_H
+#include "localconsts.h"
+
+#define parserDefine(type) \
+    struct type##Node; \
+    namespace Generic \
+    { \
+        void parse##type##Node(type##Node *parent); \
+    }
+
+#endif // PARSERS_PARSERINCLUDES_H
