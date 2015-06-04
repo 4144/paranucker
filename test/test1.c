@@ -2,11 +2,12 @@
 int fun1(const int x,int*** y);
 int c=1;
 
-void func3(int *ptr) __attribute__((nonnull (1)));
+void func3(int *ptr) __attribute__((nonnull (1))) __attribute__ ((noreturn));
 
 void func3(int *ptr)
 {
     *ptr=10;
+    while(true);
 }
 
 int main()
