@@ -39,3 +39,9 @@
 
 #define FOR_CHAIN(node, var) \
     for (tree var = DECL_ARGUMENTS(node); var; var = DECL_CHAIN(var))
+
+#define setPrintField(node, macro, method) \
+    node->method = macro(node->gccNode); \
+    Log::logInt(node, \
+        "- "#method": %d", \
+        node->method)

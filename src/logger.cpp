@@ -28,8 +28,7 @@ namespace Log
 
 void log(const Node *const node,
          const char *const text,
-         ...
-         )
+         ...)
 {
     va_list ap;
     va_start(ap, text);
@@ -42,6 +41,18 @@ void log(const Node *const node,
     fprintf(stderr, "\n");
 
     va_end(ap);
+}
+
+void logInt(const Node *const node,
+            const char *const text,
+            const int val)
+{
+    if (!val || !node)
+        return;
+
+    fprintf(stderr, "%s", node->getIndent().c_str());
+    fprintf(stderr, text, val);
+    fprintf(stderr, "\n");
 }
 
 void log(const Node *const node,
