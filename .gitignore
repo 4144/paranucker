@@ -80,6 +80,7 @@ run/*
 my/*
 win/*
 test/*.out
+test.txt
 
 # debian
 debian/*
