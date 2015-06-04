@@ -23,6 +23,7 @@
 #include "nodes/functiontypenode.h"
 #include "nodes/voidtypenode.h"
 #include "nodes/typedeclnode.h"
+#include "nodes/identifiernode.h"
 
 #include "parsers/parserincludes.h"
 
@@ -32,6 +33,7 @@ parserDefine(ResultDecl);
 parserDefine(VoidType);
 parserDefine(TypeDecl);
 parserDefine(TreeList);
+parserDefine(Identifier);
 
 #include "localconsts.h"
 
@@ -78,6 +80,7 @@ Node *createParseNode(Node *parent,
         createNodeType(FUNCTION_TYPE, FunctionTypeNode);
         createNodeType(VOID_TYPE, VoidTypeNode);
         createNodeType(TREE_LIST, TreeListNode);
+        createNodeType(IDENTIFIER_NODE, IdentifierNode);
         default:
             Log::log(parent,
                 1,
@@ -111,6 +114,7 @@ Node *createParseNode(Node *parent,
             parseNodeType(FUNCTION_TYPE, FunctionType);
             parseNodeType(VOID_TYPE, VoidType);
             parseNodeType(TREE_LIST, TreeList);
+            parseNodeType(IDENTIFIER_NODE, Identifier);
             default:
                 break;
         }

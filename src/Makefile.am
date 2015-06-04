@@ -5,6 +5,7 @@ SRC = nodes/base/declnode.h \
       nodes/base/typenode.h \
       nodes/functiondeclnode.h \
       nodes/functiontypenode.h \
+      nodes/identifiernode.h \
       nodes/parmdeclnode.h \
       nodes/resultdeclnode.h \
       nodes/treelistnode.h \
@@ -14,6 +15,7 @@ SRC = nodes/base/declnode.h \
       parsers/function_type.cpp \
       parsers/generic.cpp \
       parsers/generic.h \
+      parsers/identifier_node.cpp \
       parsers/parserincludes.h \
       parsers/result_decl.cpp \
       parsers/tree_list.cpp \
