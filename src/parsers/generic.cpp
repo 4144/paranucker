@@ -24,11 +24,13 @@
 #include "nodes/functiondeclnode.h"
 #include "nodes/functiontypenode.h"
 #include "nodes/voidtypenode.h"
+#include "nodes/typedeclnode.h"
 
 #include "parsers/function_decl.h"
 #include "parsers/function_type.h"
 #include "parsers/result_decl.h"
 #include "parsers/void_type.h"
+#include "parsers/type_decl.h"
 
 #include "localconsts.h"
 
@@ -63,6 +65,9 @@ Node *createParseNode(Node *parent,
             break;
         case RESULT_DECL:
             node = new ResultDeclNode;
+            break;
+        case TYPE_DECL:
+            node = new TypeDeclNode;
             break;
         case FUNCTION_TYPE:
             node = new FunctionTypeNode;
@@ -102,6 +107,9 @@ Node *createParseNode(Node *parent,
                 break;
             case RESULT_DECL:
                 parseResultDeclNode(static_cast<ResultDeclNode*>(node));
+                break;
+            case TYPE_DECL:
+                parseTypeDeclNode(static_cast<TypeDeclNode*>(node));
                 break;
             case FUNCTION_TYPE:
                 parseFunctionTypeNode(static_cast<FunctionTypeNode*>(node));
