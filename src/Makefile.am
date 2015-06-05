@@ -22,6 +22,7 @@ SRC = nodes/base/cstnode.h \
       parsers/identifier_node.cpp \
       parsers/integer_cst.cpp \
       parsers/integer_type.cpp \
+      parsers/parm_decl.cpp \
       parsers/parserincludes.h \
       parsers/pointer_type.cpp \
       parsers/result_decl.cpp \

@@ -22,6 +22,7 @@
 #include "nodes/functiondeclnode.h"
 #include "nodes/functiontypenode.h"
 #include "nodes/integertypenode.h"
+#include "nodes/parmdeclnode.h"
 #include "nodes/pointertypenode.h"
 #include "nodes/voidtypenode.h"
 #include "nodes/typedeclnode.h"
@@ -31,6 +32,7 @@
 #include "parsers/parserincludes.h"
 
 parserDefine(FunctionDecl);
+parserDefine(ParmDecl);
 parserDefine(ResultDecl);
 parserDefine(TypeDecl);
 
@@ -83,6 +85,7 @@ Node *createParseNode(Node *parent,
     switch (TREE_CODE(gccNode))
     {
         createNodeType(FUNCTION_DECL, FunctionDeclNode);
+        createNodeType(PARM_DECL, ParmDeclNode);
         createNodeType(RESULT_DECL, ResultDeclNode);
         createNodeType(TYPE_DECL, TypeDeclNode);
         createNodeType(FUNCTION_TYPE, FunctionTypeNode);
@@ -120,6 +123,7 @@ Node *createParseNode(Node *parent,
         switch (TREE_CODE(node->gccNode))
         {
             parseNodeType(FUNCTION_DECL, FunctionDecl);
+            parseNodeType(PARM_DECL, ParmDecl);
             parseNodeType(RESULT_DECL, ResultDecl);
             parseNodeType(TYPE_DECL, TypeDecl);
             parseNodeType(FUNCTION_TYPE, FunctionType);
