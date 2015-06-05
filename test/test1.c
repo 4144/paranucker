@@ -2,18 +2,20 @@
 int fun1(const int x,int*** y);
 int c=1;
 
-void func3(int *ptr) __attribute__((nonnull (1))) __attribute__ ((noreturn));
+void func3(int *ptr, char *ptr2) __attribute__((nonnull (1, 2))) __attribute__ ((noreturn));
 
-void func3(int *ptr)
+void func3(int *ptr, char *ptr2)
 {
-    *ptr=10;
+    *ptr = 10;
+    *ptr2 = 20;
     while(true);
 }
 
 int main()
 {
 	fun1(1,(int***)2);
-        func3(0);
+        char k;
+        func3(0, &k);
 	return 1;
 }
 void fun(int a , int b)
