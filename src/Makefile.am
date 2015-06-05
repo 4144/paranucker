@@ -9,6 +9,7 @@ SRC = nodes/base/cstnode.h \
       nodes/identifiernode.h \
       nodes/integercstnode.h \
       nodes/parmdeclnode.h \
+      nodes/pointertypernode.h \
       nodes/resultdeclnode.h \
       nodes/treelistnode.h \
       nodes/typedeclnode.h \
@@ -20,6 +21,7 @@ SRC = nodes/base/cstnode.h \
       parsers/identifier_node.cpp \
       parsers/integer_cst.cpp \
       parsers/parserincludes.h \
+      parsers/pointer_type.cpp \
       parsers/result_decl.cpp \
       parsers/tree_list.cpp \
       parsers/type_decl.cpp \
