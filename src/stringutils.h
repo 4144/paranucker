@@ -22,6 +22,6 @@
 
 #include <string>
 
-std::string toString(const int num);
+std::string toString(const unsigned int num);
 
 #endif  // STRINGUTILS_H

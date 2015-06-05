@@ -21,7 +21,7 @@
 
 #include "localconsts.h"
 
-std::string toString(const int num)
+std::string toString(const unsigned int num)
 {
     static char str[100];
     snprintf(str, sizeof(str), "%u", num);

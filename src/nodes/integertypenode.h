@@ -17,36 +17,36 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "parsers/parserincludes.h"
-
-#include "stringutils.h"
-
-parserDefine(IntegerCst);
-
-#include "parsers/base/type.h"
+#ifndef NODES_INTEGERTYPENODE_H
+#define NODES_INTEGERTYPENODE_H
 
 #include "nodes/integercstnode.h"
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "nodes/base/typenode.h"
 
-namespace Generic
+#include <string>
+
+struct IntegerTypeNode : public TypeNode
 {
-
-void parseIntegerCstNode(IntegerCstNode *node)
-{
-    fillType(node);
-    if (tree_int_cst_sgn(node->gccNode) < 0)
+    IntegerTypeNode() :
+        TypeNode(),
+        typeSize(nullptr),
+        minValue(nullptr),
+        maxValue(nullptr),
+        precisionBits(0),
+        sizeBits(0),
+        isChar(false),
+        isUnsigned(false)
     {
-        node->label = "-";
-        node->label.append(toString(-(unsigned HOST_WIDE_INT)
-            tree_to_shwi(node->gccNode)));
     }
-    else
-    {
-        node->label.append(toString(tree_to_shwi(node->gccNode)));
-    }
-    Log::log(node);
-}
 
-}
+    IntegerCstNode *typeSize;
+    IntegerCstNode *minValue;
+    IntegerCstNode *maxValue;
+    int precisionBits;
+    int sizeBits;
+    bool isChar;
+    bool isUnsigned;
+};
+
+#endif // NODES_INTEGERTYPENODE_H

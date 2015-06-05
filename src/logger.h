@@ -30,6 +30,10 @@ namespace Log
              const char *const text,
              ...);
 
+    void logRaw(const Node *const node,
+                const char *const text,
+                ...);
+
     void logInt(const Node *const node,
                 const char *const text,
                 const int val);

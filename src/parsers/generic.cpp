@@ -21,6 +21,7 @@
 
 #include "nodes/functiondeclnode.h"
 #include "nodes/functiontypenode.h"
+#include "nodes/integertypenode.h"
 #include "nodes/pointertypenode.h"
 #include "nodes/voidtypenode.h"
 #include "nodes/typedeclnode.h"
@@ -32,9 +33,12 @@
 parserDefine(FunctionDecl);
 parserDefine(ResultDecl);
 parserDefine(TypeDecl);
+
 parserDefine(FunctionType);
+parserDefine(IntegerType);
 parserDefine(PointerType);
 parserDefine(VoidType);
+
 parserDefine(TreeList);
 parserDefine(Identifier);
 parserDefine(IntegerCst);
@@ -82,6 +86,7 @@ Node *createParseNode(Node *parent,
         createNodeType(RESULT_DECL, ResultDeclNode);
         createNodeType(TYPE_DECL, TypeDeclNode);
         createNodeType(FUNCTION_TYPE, FunctionTypeNode);
+        createNodeType(INTEGER_TYPE, IntegerTypeNode);
         createNodeType(VOID_TYPE, VoidTypeNode);
         createNodeType(POINTER_TYPE, PointerTypeNode);
         createNodeType(TREE_LIST, TreeListNode);
@@ -118,6 +123,7 @@ Node *createParseNode(Node *parent,
             parseNodeType(RESULT_DECL, ResultDecl);
             parseNodeType(TYPE_DECL, TypeDecl);
             parseNodeType(FUNCTION_TYPE, FunctionType);
+            parseNodeType(INTEGER_TYPE, IntegerType);
             parseNodeType(VOID_TYPE, VoidType);
             parseNodeType(POINTER_TYPE, PointerType);
             parseNodeType(TREE_LIST, TreeList);
