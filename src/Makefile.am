@@ -39,6 +39,7 @@ SRC = nodes/base/cst.h \
       parsers/type/integer_type.cpp \
       parsers/type/pointer_type.cpp \
       parsers/type/void_type.cpp \
+      includes/nodeincludes.h \
       includes/parserdefines.inc \
       includes/parserincludes.h \
       includes.h \

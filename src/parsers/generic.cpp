@@ -19,21 +19,7 @@
 
 #include "parsers/generic.h"
 
-#include "nodes/identifier.h"
-#include "nodes/expr/return_expr.h"
-#include "nodes/list/statement_list.h"
-
-#include "nodes/cst/integer_cst.h"
-
-#include "nodes/decl/function_decl.h"
-#include "nodes/decl/parm_decl.h"
-#include "nodes/decl/type_decl.h"
-
-#include "nodes/type/function_type.h"
-#include "nodes/type/integer_type.h"
-#include "nodes/type/pointer_type.h"
-#include "nodes/type/void_type.h"
-
+#include "includes/nodeincludes.h"
 #include "includes/parserincludes.h"
 #include "includes/parserdefines.inc"
 
