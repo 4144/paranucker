@@ -65,23 +65,23 @@ else:
 
 word1 = nodeName[0 : len(nodeName) - suffixSize]
 word2 = nodeName[- suffixSize:]
-nodeInclude = ""
 if dirName != "":
     fileName = word1 + "_" + word2
     guardHeader = (dirName + "_" + nodeName).upper()
     baseName = dirName
     baseTypeName = firstBigLetter(dirName)
     nodeInclude = dirName + "/" + fileName
-    nodeFileName = "../src/nodes/{0}/{1}.h".format(dirName, fileName)
-    parserFileName = "../src/parsers/{0}/{1}.cpp".format(dirName, fileName)
+    enumValue = (word1 + "_" + word2).upper()
 else:
     fileName = word1
     guardHeader = nodeName.upper()
     baseName = "node"
     baseTypeName = ""
     nodeInclude = fileName
-    nodeFileName = "../src/nodes/{0}.h".format(fileName)
-    parserFileName = "../src/parsers/{0}.cpp".format(fileName)
+    enumValue = word1.upper()
+
+nodeFileName = "../src/nodes/{0}.h".format(nodeInclude)
+parserFileName = "../src/parsers/{0}.cpp".format(nodeInclude)
 
 writeFile(nodeFileName,
     nodeTemplate.format(guardHeader, baseName, typeName, baseTypeName))
@@ -90,6 +90,8 @@ writeFile(parserFileName,
 writeFile("../src/includes/nodeincludes.h",
     "#include \"nodes/{0}.h\"\n".format(nodeInclude), "a");
 writeFile("../src/includes/nodeshandling.inc",
-    "handleNodeType({0}, {1})\n".format(guardHeader, typeName), "a");
+    "handleNodeType({0}, {1})\n".format(enumValue, typeName), "a");
 writeFile("../src/includes/parserdefines.inc",
     "parserDefine({0});\n".format(typeName), "a");
+writeFile("../src/Makefile.files",
+    " \\\n      nodes/{0}.h \\\n      parsers/{0}.cpp".format(nodeInclude, nodeInclude), "a");
