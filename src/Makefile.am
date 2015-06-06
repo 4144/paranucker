@@ -45,7 +45,7 @@ CC := gcc-5
 CXX := g++-5
 
 # in future need remove -Wno-switch
-SHARED_CXXFLAGS = -pipe -ffast-math -Wall -Wextra \
+SHARED_CXXFLAGS = -fPIC -fno-rtti -O2 -pipe -ffast-math -Wall -Wextra \
 -std=gnu++1y -Wc++14-compat \
 -Wno-literal-suffix -Wno-switch \
 -I$(shell $(CC) -print-file-name=plugin)/include
