@@ -15,3 +15,4 @@
 #include "nodes/expr/bind_expr.h"
 #include "nodes/expr/decl_expr.h"
 #include "nodes/expr/init_expr.h"
+#include "nodes/expr/convert_expr.h"

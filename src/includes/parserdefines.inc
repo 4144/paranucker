@@ -14,3 +14,4 @@ parserDefine(StatementList);
 parserDefine(BindExpr);
 parserDefine(DeclExpr);
 parserDefine(InitExpr);
+parserDefine(ConvertExpr);
