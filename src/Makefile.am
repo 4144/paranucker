@@ -41,7 +41,8 @@ SRC = nodes/base/cstnode.h \
       stringutils.cpp \
       stringutils.h
 
-CXX := g++
+CC := gcc-5
+CXX := g++-5
 
 # in future need remove -Wno-switch
 SHARED_CXXFLAGS = -pipe -ffast-math -Wall -Wextra \
