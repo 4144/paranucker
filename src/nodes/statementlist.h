@@ -17,27 +17,23 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_PARMDECLNODE_H
-#define NODES_PARMDECLNODE_H
+#ifndef NODES_STATEMENTLISTNODE_H
+#define NODES_STATEMENTLISTNODE_H
 
-#include "nodes/integercstnode.h"
+#include "nodes/base/type.h"
 
-#include "nodes/base/declnode.h"
-#include "nodes/base/typenode.h"
+#include <vector>
+#include <string>
 
-struct ParmDeclNode : public DeclNode
+struct StatementListNode : public Node
 {
-    ParmDeclNode() :
-        DeclNode(),
-        declType(nullptr),
-        parmSize(nullptr),
-        isRegister(false)
+    StatementListNode() :
+        Node(),
+        statements()
     {
     }
 
-    TypeNode *declType;
-    IntegerCstNode *parmSize;
-    bool isRegister;
+    std::vector<Node*> statements;
 };
 
-#endif // NODES_PARMDECLNODE_H
+#endif // NODES_STATEMENTLISTNODE_H

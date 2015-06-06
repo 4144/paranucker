@@ -23,7 +23,7 @@ parserDefine(TypeDecl);
 
 #include "parsers/base/decl.h"
 
-#include "nodes/typedeclnode.h"
+#include "nodes/typedecl.h"
 
 namespace Generic
 {

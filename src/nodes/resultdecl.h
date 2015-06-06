@@ -20,7 +20,7 @@
 #ifndef NODES_RESULTDECLNODE_H
 #define NODES_RESULTDECLNODE_H
 
-#include "nodes/base/declnode.h"
+#include "nodes/base/decl.h"
 
 #include <string>
 

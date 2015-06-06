@@ -20,7 +20,7 @@
 #ifndef NODES_POINTERTYPENODE_H
 #define NODES_POINTERTYPENODE_H
 
-#include "nodes/base/typenode.h"
+#include "nodes/base/type.h"
 
 #include <string>
 

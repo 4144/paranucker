@@ -22,7 +22,7 @@
 #include "includes.h"
 #include "logger.h"
 
-#include "nodes/base/typenode.h"
+#include "nodes/base/type.h"
 
 #include "parsers/generic.h"
 

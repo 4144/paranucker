@@ -17,26 +17,19 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_FUNCTIONTYPENODE_H
-#define NODES_FUNCTIONTYPENODE_H
+#ifndef NODES_VOIDTYPENODE_H
+#define NODES_VOIDTYPENODE_H
 
-#include "nodes/treelistnode.h"
-
-#include "nodes/base/typenode.h"
+#include "nodes/base/type.h"
 
 #include <string>
 
-struct FunctionTypeNode : public TypeNode
+struct VoidTypeNode : public TypeNode
 {
-    FunctionTypeNode() :
-        TypeNode(),
-        returnType(nullptr),
-        argTypes(nullptr)
+    VoidTypeNode() :
+        TypeNode()
     {
     }
-
-    TypeNode *returnType;
-    TreeListNode *argTypes;
 };
 
-#endif // NODES_FUNCTIONTYPENODE_H
+#endif // NODES_VOIDTYPENODE_H

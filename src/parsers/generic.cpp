@@ -19,17 +19,17 @@
 
 #include "parsers/generic.h"
 
-#include "nodes/functiondeclnode.h"
-#include "nodes/functiontypenode.h"
-#include "nodes/integertypenode.h"
-#include "nodes/parmdeclnode.h"
-#include "nodes/pointertypenode.h"
-#include "nodes/voidtypenode.h"
-#include "nodes/typedeclnode.h"
-#include "nodes/identifiernode.h"
-#include "nodes/integercstnode.h"
-#include "nodes/returnexprnode.h"
-#include "nodes/statementlistnode.h"
+#include "nodes/functiondecl.h"
+#include "nodes/functiontype.h"
+#include "nodes/integertype.h"
+#include "nodes/parmdecl.h"
+#include "nodes/pointertype.h"
+#include "nodes/voidtype.h"
+#include "nodes/typedecl.h"
+#include "nodes/identifier.h"
+#include "nodes/integercst.h"
+#include "nodes/returnexpr.h"
+#include "nodes/statementlist.h"
 
 #include "parsers/parserincludes.h"
 

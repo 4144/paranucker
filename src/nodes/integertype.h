@@ -17,17 +17,36 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_BASE_INTEGERCSTNODE_H
-#define NODES_BASE_INTEGERCSTNODE_H
+#ifndef NODES_INTEGERTYPENODE_H
+#define NODES_INTEGERTYPENODE_H
 
-#include "nodes/base/cstnode.h"
+#include "nodes/integercst.h"
 
-struct IntegerCstNode : public CstNode
+#include "nodes/base/type.h"
+
+#include <string>
+
+struct IntegerTypeNode : public TypeNode
 {
-    IntegerCstNode() :
-        CstNode()
+    IntegerTypeNode() :
+        TypeNode(),
+        typeSize(nullptr),
+        minValue(nullptr),
+        maxValue(nullptr),
+        precisionBits(0),
+        sizeBits(0),
+        isChar(false),
+        isUnsigned(false)
     {
     }
+
+    IntegerCstNode *typeSize;
+    IntegerCstNode *minValue;
+    IntegerCstNode *maxValue;
+    int precisionBits;
+    int sizeBits;
+    bool isChar;
+    bool isUnsigned;
 };
 
-#endif // NODES_BASE_INTEGERCSTNODE_H
+#endif // NODES_INTEGERTYPENODE_H

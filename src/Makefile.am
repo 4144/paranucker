@@ -1,23 +1,23 @@
 AUTOMAKE_OPTIONS = subdir-objects
 
-SRC = nodes/base/cstnode.h \
-      nodes/base/declnode.h \
-      nodes/base/exprnode.h \
+SRC = nodes/base/cst.h \
+      nodes/base/decl.h \
+      nodes/base/expr.h \
       nodes/base/node.h \
-      nodes/base/typenode.h \
-      nodes/functiondeclnode.h \
-      nodes/functiontypenode.h \
-      nodes/identifiernode.h \
-      nodes/integercstnode.h \
-      nodes/integertypenode.h \
-      nodes/parmdeclnode.h \
-      nodes/pointertypernode.h \
-      nodes/resultdeclnode.h \
-      nodes/returnexprnode.h \
-      nodes/statementlistnode.h \
-      nodes/treelistnode.h \
-      nodes/typedeclnode.h \
-      nodes/voidtypenode.h \
+      nodes/base/type.h \
+      nodes/functiondecl.h \
+      nodes/functiontype.h \
+      nodes/identifier.h \
+      nodes/integercst.h \
+      nodes/integertype.h \
+      nodes/parmdecl.h \
+      nodes/pointertyper.h \
+      nodes/resultdecl.h \
+      nodes/returnexpr.h \
+      nodes/statementlist.h \
+      nodes/treelist.h \
+      nodes/typedecl.h \
+      nodes/voidtype.h \
       parsers/function_decl.cpp \
       parsers/function_type.cpp \
       parsers/generic.cpp \

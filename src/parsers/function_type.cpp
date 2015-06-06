@@ -21,7 +21,7 @@
 
 parserDefine(FunctionType);
 
-#include "nodes/functiontypenode.h"
+#include "nodes/functiontype.h"
 
 #include "parsers/base/type.h"
 

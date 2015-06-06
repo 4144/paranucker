@@ -17,19 +17,17 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_VOIDTYPENODE_H
-#define NODES_VOIDTYPENODE_H
+#ifndef NODES_BASE_INTEGERCSTNODE_H
+#define NODES_BASE_INTEGERCSTNODE_H
 
-#include "nodes/base/typenode.h"
+#include "nodes/base/cst.h"
 
-#include <string>
-
-struct VoidTypeNode : public TypeNode
+struct IntegerCstNode : public CstNode
 {
-    VoidTypeNode() :
-        TypeNode()
+    IntegerCstNode() :
+        CstNode()
     {
     }
 };
 
-#endif // NODES_VOIDTYPENODE_H
+#endif // NODES_BASE_INTEGERCSTNODE_H

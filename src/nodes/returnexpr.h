@@ -17,23 +17,19 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_STATEMENTLISTNODE_H
-#define NODES_STATEMENTLISTNODE_H
+#ifndef NODES_RETURNEXPRNODE_H
+#define NODES_RETURNEXPRNODE_H
 
-#include "nodes/base/typenode.h"
+#include "nodes/base/expr.h"
 
-#include <vector>
 #include <string>
 
-struct StatementListNode : public Node
+struct ReturnExprNode : public ExprNode
 {
-    StatementListNode() :
-        Node(),
-        statements()
+    ReturnExprNode() :
+        ExprNode()
     {
     }
-
-    std::vector<Node*> statements;
 };
 
-#endif // NODES_STATEMENTLISTNODE_H
+#endif // NODES_RETURNEXPRNODE_H

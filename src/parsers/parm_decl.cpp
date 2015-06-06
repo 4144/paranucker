@@ -23,7 +23,7 @@ parserDefine(ParmDecl);
 
 #include "parsers/base/decl.h"
 
-#include "nodes/parmdeclnode.h"
+#include "nodes/parmdecl.h"
 
 namespace Generic
 {

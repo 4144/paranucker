@@ -23,7 +23,7 @@ parserDefine(ReturnExpr);
 
 #include "parsers/base/expr.h"
 
-#include "nodes/returnexprnode.h"
+#include "nodes/returnexpr.h"
 
 namespace Generic
 {

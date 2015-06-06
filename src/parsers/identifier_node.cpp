@@ -23,7 +23,7 @@ parserDefine(Identifier);
 
 #include "parsers/base/type.h"
 
-#include "nodes/identifiernode.h"
+#include "nodes/identifier.h"
 
 namespace Generic
 {

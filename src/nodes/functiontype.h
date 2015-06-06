@@ -17,36 +17,26 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_INTEGERTYPENODE_H
-#define NODES_INTEGERTYPENODE_H
+#ifndef NODES_FUNCTIONTYPENODE_H
+#define NODES_FUNCTIONTYPENODE_H
 
-#include "nodes/integercstnode.h"
+#include "nodes/treelist.h"
 
-#include "nodes/base/typenode.h"
+#include "nodes/base/type.h"
 
 #include <string>
 
-struct IntegerTypeNode : public TypeNode
+struct FunctionTypeNode : public TypeNode
 {
-    IntegerTypeNode() :
+    FunctionTypeNode() :
         TypeNode(),
-        typeSize(nullptr),
-        minValue(nullptr),
-        maxValue(nullptr),
-        precisionBits(0),
-        sizeBits(0),
-        isChar(false),
-        isUnsigned(false)
+        returnType(nullptr),
+        argTypes(nullptr)
     {
     }
 
-    IntegerCstNode *typeSize;
-    IntegerCstNode *minValue;
-    IntegerCstNode *maxValue;
-    int precisionBits;
-    int sizeBits;
-    bool isChar;
-    bool isUnsigned;
+    TypeNode *returnType;
+    TreeListNode *argTypes;
 };
 
-#endif // NODES_INTEGERTYPENODE_H
+#endif // NODES_FUNCTIONTYPENODE_H

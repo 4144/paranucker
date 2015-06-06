@@ -21,7 +21,7 @@
 
 #include "includes.h"
 
-#include "nodes/base/exprnode.h"
+#include "nodes/base/expr.h"
 
 #include "parsers/generic.h"
 

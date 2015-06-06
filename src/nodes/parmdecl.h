@@ -17,19 +17,27 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_RETURNEXPRNODE_H
-#define NODES_RETURNEXPRNODE_H
+#ifndef NODES_PARMDECLNODE_H
+#define NODES_PARMDECLNODE_H
 
-#include "nodes/base/exprnode.h"
+#include "nodes/integercst.h"
 
-#include <string>
+#include "nodes/base/decl.h"
+#include "nodes/base/type.h"
 
-struct ReturnExprNode : public ExprNode
+struct ParmDeclNode : public DeclNode
 {
-    ReturnExprNode() :
-        ExprNode()
+    ParmDeclNode() :
+        DeclNode(),
+        declType(nullptr),
+        parmSize(nullptr),
+        isRegister(false)
     {
     }
+
+    TypeNode *declType;
+    IntegerCstNode *parmSize;
+    bool isRegister;
 };
 
-#endif // NODES_RETURNEXPRNODE_H
+#endif // NODES_PARMDECLNODE_H

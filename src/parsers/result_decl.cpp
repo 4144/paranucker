@@ -23,9 +23,9 @@ parserDefine(ResultDecl);
 
 #include "parsers/base/decl.h"
 
-#include "nodes/resultdeclnode.h"
+#include "nodes/resultdecl.h"
 
-#include "nodes/base/typenode.h"
+#include "nodes/base/type.h"
 
 namespace Generic
 {

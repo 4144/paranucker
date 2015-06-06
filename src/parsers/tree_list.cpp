@@ -21,7 +21,7 @@
 
 parserDefine(TreeList);
 
-#include "nodes/treelistnode.h"
+#include "nodes/treelist.h"
 
 namespace Generic
 {

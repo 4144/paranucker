@@ -17,15 +17,24 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_TYPEDECLNODE_H
-#define NODES_TYPEDECLNODE_H
+#ifndef NODES_BASE_TYPENODE_H
+#define NODES_BASE_TYPENODE_H
 
-#include "nodes/base/declnode.h"
+#include "nodes/base/decl.h"
 
 #include <string>
 
-struct TypeDeclNode : public DeclNode
+struct TypeNode : public Node
 {
+    TypeNode() :
+        Node(),
+        attribute(nullptr),
+        typeName(nullptr)
+    {
+    }
+
+    Node *attribute;
+    DeclNode *typeName;
 };
 
-#endif // NODES_TYPEDECLNODE_H
+#endif // NODES_BASE_TYPENODE_H
