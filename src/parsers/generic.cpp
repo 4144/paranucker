@@ -83,6 +83,7 @@ Node *createParseNode(Node *parent,
 
         switch (TREE_CODE(node->gccNode))
         {
+#undef handleNodeType
 #define handleNodeType(code, type) \
     case code: \
         parse##type##Node(static_cast<type##Node*>(node)); \
