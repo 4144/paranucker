@@ -57,4 +57,6 @@ SRC = nodes/base/cst.h \
       nodes/expr/convert_expr.h \
       parsers/expr/convert_expr.cpp \
       nodes/expr/cleanuppoint_expr.h \
-      parsers/expr/cleanuppoint_expr.cpp
+      parsers/expr/cleanuppoint_expr.cpp \
+      nodes/decl/var_decl.h \
+      parsers/decl/var_decl.cpp

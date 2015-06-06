@@ -17,3 +17,4 @@
 #include "nodes/expr/init_expr.h"
 #include "nodes/expr/convert_expr.h"
 #include "nodes/expr/cleanuppoint_expr.h"
+#include "nodes/decl/var_decl.h"
