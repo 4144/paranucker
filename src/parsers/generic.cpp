@@ -54,7 +54,7 @@ parserDefine(StatementList);
 
 #define createNodeType(code, type) \
     case code: \
-        node = new type; \
+        node = new type##Node; \
         break
 
 #define parseNodeType(code, type) \
@@ -89,19 +89,19 @@ Node *createParseNode(Node *parent,
     Node *node = nullptr;
     switch (TREE_CODE(gccNode))
     {
-        createNodeType(FUNCTION_DECL, FunctionDeclNode);
-        createNodeType(PARM_DECL, ParmDeclNode);
-        createNodeType(RESULT_DECL, ResultDeclNode);
-        createNodeType(TYPE_DECL, TypeDeclNode);
-        createNodeType(FUNCTION_TYPE, FunctionTypeNode);
-        createNodeType(INTEGER_TYPE, IntegerTypeNode);
-        createNodeType(VOID_TYPE, VoidTypeNode);
-        createNodeType(POINTER_TYPE, PointerTypeNode);
-        createNodeType(RETURN_EXPR, ReturnExprNode);
-        createNodeType(TREE_LIST, TreeListNode);
-        createNodeType(IDENTIFIER_NODE, IdentifierNode);
-        createNodeType(INTEGER_CST, IntegerCstNode);
-        createNodeType(STATEMENT_LIST, StatementListNode);
+        createNodeType(FUNCTION_DECL, FunctionDecl);
+        createNodeType(PARM_DECL, ParmDecl);
+        createNodeType(RESULT_DECL, ResultDecl);
+        createNodeType(TYPE_DECL, TypeDecl);
+        createNodeType(FUNCTION_TYPE, FunctionType);
+        createNodeType(INTEGER_TYPE, IntegerType);
+        createNodeType(VOID_TYPE, VoidType);
+        createNodeType(POINTER_TYPE, PointerType);
+        createNodeType(RETURN_EXPR, ReturnExpr);
+        createNodeType(TREE_LIST, TreeList);
+        createNodeType(IDENTIFIER_NODE, Identifier);
+        createNodeType(INTEGER_CST, IntegerCst);
+        createNodeType(STATEMENT_LIST, StatementList);
         default:
             Log::log(parent,
                 1,
