@@ -15,3 +15,4 @@ parserDefine(BindExpr);
 parserDefine(DeclExpr);
 parserDefine(InitExpr);
 parserDefine(ConvertExpr);
+parserDefine(CleanupPointExpr);
