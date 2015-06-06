@@ -12,3 +12,4 @@ parserDefine(Identifier);
 parserDefine(IntegerCst);
 parserDefine(StatementList);
 parserDefine(BindExpr);
+parserDefine(DeclExpr);

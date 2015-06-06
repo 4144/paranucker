@@ -49,4 +49,6 @@ SRC = nodes/base/cst.h \
       stringutils.cpp \
       stringutils.h \
       nodes/expr/bind_expr.h \
-      parsers/expr/bind_expr.cpp
+      parsers/expr/bind_expr.cpp \
+      nodes/expr/decl_expr.h \
+      parsers/expr/decl_expr.cpp
