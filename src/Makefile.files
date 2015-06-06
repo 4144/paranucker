@@ -47,4 +47,6 @@ SRC = nodes/base/cst.h \
       logger.h \
       plugin.cpp \
       stringutils.cpp \
-      stringutils.h
+      stringutils.h \
+      nodes/expr/bind_expr.h \
+      parsers/expr/bind_expr.cpp

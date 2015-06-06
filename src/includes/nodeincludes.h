@@ -12,3 +12,4 @@
 #include "nodes/type/integer_type.h"
 #include "nodes/type/pointer_type.h"
 #include "nodes/type/void_type.h"
+#include "nodes/expr/bind_expr.h"

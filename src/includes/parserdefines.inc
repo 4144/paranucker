@@ -11,3 +11,4 @@ parserDefine(TreeList);
 parserDefine(Identifier);
 parserDefine(IntegerCst);
 parserDefine(StatementList);
+parserDefine(BindExpr);
