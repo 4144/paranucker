@@ -25,17 +25,6 @@
 
 #include "localconsts.h"
 
-#define createNodeType(code, type) \
-    case code: \
-        node = new type##Node; \
-        break
-
-#define parseNodeType(code, type) \
-    case code: \
-        parse##type##Node(static_cast<type##Node*>(node)); \
-        break
-
-
 namespace Generic
 {
 
@@ -62,19 +51,11 @@ Node *createParseNode(Node *parent,
     Node *node = nullptr;
     switch (TREE_CODE(gccNode))
     {
-        createNodeType(FUNCTION_DECL, FunctionDecl);
-        createNodeType(PARM_DECL, ParmDecl);
-        createNodeType(RESULT_DECL, ResultDecl);
-        createNodeType(TYPE_DECL, TypeDecl);
-        createNodeType(FUNCTION_TYPE, FunctionType);
-        createNodeType(INTEGER_TYPE, IntegerType);
-        createNodeType(VOID_TYPE, VoidType);
-        createNodeType(POINTER_TYPE, PointerType);
-        createNodeType(RETURN_EXPR, ReturnExpr);
-        createNodeType(TREE_LIST, TreeList);
-        createNodeType(IDENTIFIER_NODE, Identifier);
-        createNodeType(INTEGER_CST, IntegerCst);
-        createNodeType(STATEMENT_LIST, StatementList);
+#define handleNodeType(code, type) \
+    case code: \
+        node = new type##Node; \
+        break;
+#include "includes/nodeshandling.inc"
         default:
             Log::log(parent,
                 1,
@@ -102,19 +83,11 @@ Node *createParseNode(Node *parent,
 
         switch (TREE_CODE(node->gccNode))
         {
-            parseNodeType(FUNCTION_DECL, FunctionDecl);
-            parseNodeType(PARM_DECL, ParmDecl);
-            parseNodeType(RESULT_DECL, ResultDecl);
-            parseNodeType(TYPE_DECL, TypeDecl);
-            parseNodeType(FUNCTION_TYPE, FunctionType);
-            parseNodeType(INTEGER_TYPE, IntegerType);
-            parseNodeType(VOID_TYPE, VoidType);
-            parseNodeType(POINTER_TYPE, PointerType);
-            parseNodeType(RETURN_EXPR, ReturnExpr);
-            parseNodeType(TREE_LIST, TreeList);
-            parseNodeType(IDENTIFIER_NODE, Identifier);
-            parseNodeType(INTEGER_CST, IntegerCst);
-            parseNodeType(STATEMENT_LIST, StatementList);
+#define handleNodeType(code, type) \
+    case code: \
+        parse##type##Node(static_cast<type##Node*>(node)); \
+        break;
+#include "includes/nodeshandling.inc"
             default:
                 break;
         }
