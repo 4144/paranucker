@@ -23,7 +23,7 @@ parserDefine(IntegerType);
 
 #include "parsers/base/type.h"
 
-#include "nodes/integertype.h"
+#include "nodes/integer_type.h"
 
 namespace Generic
 {

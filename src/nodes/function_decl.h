@@ -20,9 +20,9 @@
 #ifndef NODES_FUNCTIONDECLNODE_H
 #define NODES_FUNCTIONDECLNODE_H
 
-#include "nodes/functiontype.h"
-#include "nodes/parmdecl.h"
-#include "nodes/resultdecl.h"
+#include "nodes/function_type.h"
+#include "nodes/parm_decl.h"
+#include "nodes/result_decl.h"
 
 #include "nodes/base/decl.h"
 

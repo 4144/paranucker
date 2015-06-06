@@ -20,7 +20,7 @@
 #ifndef NODES_PARMDECLNODE_H
 #define NODES_PARMDECLNODE_H
 
-#include "nodes/integercst.h"
+#include "nodes/integer_cst.h"
 
 #include "nodes/base/decl.h"
 #include "nodes/base/type.h"

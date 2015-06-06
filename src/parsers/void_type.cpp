@@ -23,7 +23,7 @@ parserDefine(VoidType);
 
 #include "parsers/base/type.h"
 
-#include "nodes/voidtype.h"
+#include "nodes/void_type.h"
 
 namespace Generic
 {

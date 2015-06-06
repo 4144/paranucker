@@ -23,7 +23,7 @@ parserDefine(ResultDecl);
 
 #include "parsers/base/decl.h"
 
-#include "nodes/resultdecl.h"
+#include "nodes/result_decl.h"
 
 #include "nodes/base/type.h"
 

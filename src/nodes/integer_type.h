@@ -20,7 +20,7 @@
 #ifndef NODES_INTEGERTYPENODE_H
 #define NODES_INTEGERTYPENODE_H
 
-#include "nodes/integercst.h"
+#include "nodes/integer_cst.h"
 
 #include "nodes/base/type.h"
 

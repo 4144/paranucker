@@ -5,19 +5,19 @@ SRC = nodes/base/cst.h \
       nodes/base/expr.h \
       nodes/base/node.h \
       nodes/base/type.h \
-      nodes/functiondecl.h \
-      nodes/functiontype.h \
+      nodes/function_decl.h \
+      nodes/function_type.h \
       nodes/identifier.h \
-      nodes/integercst.h \
-      nodes/integertype.h \
-      nodes/parmdecl.h \
-      nodes/pointertyper.h \
-      nodes/resultdecl.h \
-      nodes/returnexpr.h \
-      nodes/statementlist.h \
-      nodes/treelist.h \
-      nodes/typedecl.h \
-      nodes/voidtype.h \
+      nodes/integer_cst.h \
+      nodes/integer_type.h \
+      nodes/parm_decl.h \
+      nodes/pointer_type.h \
+      nodes/result_decl.h \
+      nodes/return_expr.h \
+      nodes/statement_list.h \
+      nodes/tree_list.h \
+      nodes/type_decl.h \
+      nodes/void_type.h \
       parsers/function_decl.cpp \
       parsers/function_type.cpp \
       parsers/generic.cpp \

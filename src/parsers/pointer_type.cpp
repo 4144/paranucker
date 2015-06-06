@@ -23,7 +23,7 @@ parserDefine(PointerType);
 
 #include "parsers/base/type.h"
 
-#include "nodes/pointertype.h"
+#include "nodes/pointer_type.h"
 
 namespace Generic
 {

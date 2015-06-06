@@ -20,7 +20,7 @@
 #ifndef NODES_FUNCTIONTYPENODE_H
 #define NODES_FUNCTIONTYPENODE_H
 
-#include "nodes/treelist.h"
+#include "nodes/tree_list.h"
 
 #include "nodes/base/type.h"
 
