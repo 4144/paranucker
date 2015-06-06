@@ -37,7 +37,8 @@
 #endif
 
 #include "gcc-plugin.h"
-#include "print-tree.h"
+#include "vec.h"
 #include "tree.h"
+#include "print-tree.h"
 
 #endif // PLUGIN_H
