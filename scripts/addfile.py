@@ -9,8 +9,8 @@ import sys
 def readFile(path):
     with open(path, "r") as f:
         return f.read()
-def writeFile(fileName, data):
-    with open(fileName, "w") as w:
+def writeFile(fileName, data, opts="w"):
+    with open(fileName, opts) as w:
         w.write(data)
 def firstBigLetter(text):
     return text[0].upper() + text[1:]
@@ -19,6 +19,9 @@ def firstBigLetter(text):
 if len(sys.argv) < 2 or len(sys.argv) > 3:
     print "Usage:"
     print "  addfile.py [dir] nodename"
+    print "Examples:"
+    print "  addfile.py expr TestExpr"
+    print "  addfile.py TestNode"
     exit(1)
 
 nodeTemplate = readFile("tpl/node.tpl")
@@ -84,3 +87,9 @@ writeFile(nodeFileName,
     nodeTemplate.format(guardHeader, baseName, typeName, baseTypeName))
 writeFile(parserFileName,
     parserTemplate.format(typeName, nodeInclude, parserBaseInclude, parserAdditionalCode1, parserAdditionalCode2))
+writeFile("../src/includes/nodeincludes.h",
+    "#include \"nodes/{0}.h\"\n".format(nodeInclude), "a");
+writeFile("../src/includes/nodeshandling.inc",
+    "handleNodeType({0}, {1})\n".format(guardHeader, typeName), "a");
+writeFile("../src/includes/parserdefines.inc",
+    "parserDefine({0});\n".format(typeName), "a");
