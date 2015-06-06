@@ -51,4 +51,6 @@ SRC = nodes/base/cst.h \
       nodes/expr/bind_expr.h \
       parsers/expr/bind_expr.cpp \
       nodes/expr/decl_expr.h \
-      parsers/expr/decl_expr.cpp
+      parsers/expr/decl_expr.cpp \
+      nodes/expr/init_expr.h \
+      parsers/expr/init_expr.cpp

@@ -14,3 +14,4 @@
 #include "nodes/type/void_type.h"
 #include "nodes/expr/bind_expr.h"
 #include "nodes/expr/decl_expr.h"
+#include "nodes/expr/init_expr.h"

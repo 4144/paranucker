@@ -13,3 +13,4 @@ parserDefine(IntegerCst);
 parserDefine(StatementList);
 parserDefine(BindExpr);
 parserDefine(DeclExpr);
+parserDefine(InitExpr);
