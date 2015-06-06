@@ -19,31 +19,21 @@
 
 #include "parsers/parserincludes.h"
 
-parserDefine(FunctionType);
+parserDefine(ReturnExpr);
 
-#include "nodes/function_type.h"
+#include "parsers/base/expr.h"
 
-#include "parsers/base/type.h"
+#include "nodes/expr/return_expr.h"
 
 namespace Generic
 {
 
-void parseFunctionTypeNode(FunctionTypeNode *node)
+void parseReturnExprNode(ReturnExprNode *node)
 {
     fillType(node);
     Log::log(node);
 
-    fillTypeName(node);
-    node->returnType = static_cast<TypeNode*>(createParseNode(
-        node,
-        TREE_TYPE(node->gccNode),
-        "function return type"));
-    fillTypeAttributes(node);
-    node->argTypes = static_cast<TreeListNode*>(createParseNode(
-        node,
-        TYPE_ARG_TYPES(node->gccNode),
-        TREE_LIST,
-        "arg types"));
+    fillExprOperands(node);
 }
 
 }

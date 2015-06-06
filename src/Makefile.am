@@ -5,41 +5,41 @@ SRC = nodes/base/cst.h \
       nodes/base/expr.h \
       nodes/base/node.h \
       nodes/base/type.h \
-      nodes/function_decl.h \
-      nodes/function_type.h \
+      nodes/cst/integer_cst.h \
+      nodes/decl/function_decl.h \
+      nodes/decl/parm_decl.h \
+      nodes/decl/result_decl.h \
+      nodes/decl/type_decl.h \
+      nodes/expr/return_expr.h \
+      nodes/list/statement_list.h \
+      nodes/list/tree_list.h \
+      nodes/type/function_type.h \
+      nodes/type/integer_type.h \
+      nodes/type/pointer_type.h \
+      nodes/type/void_type.h \
       nodes/identifier.h \
-      nodes/integer_cst.h \
-      nodes/integer_type.h \
-      nodes/parm_decl.h \
-      nodes/pointer_type.h \
-      nodes/result_decl.h \
-      nodes/return_expr.h \
-      nodes/statement_list.h \
-      nodes/tree_list.h \
-      nodes/type_decl.h \
-      nodes/void_type.h \
-      parsers/function_decl.cpp \
-      parsers/function_type.cpp \
       parsers/generic.cpp \
       parsers/generic.h \
       parsers/identifier_node.cpp \
-      parsers/integer_cst.cpp \
-      parsers/integer_type.cpp \
-      parsers/parm_decl.cpp \
       parsers/parserincludes.h \
-      parsers/pointer_type.cpp \
-      parsers/result_decl.cpp \
-      parsers/return_expr.cpp \
-      parsers/statement_list.cpp \
-      parsers/tree_list.cpp \
-      parsers/type_decl.cpp \
-      parsers/void_type.cpp \
       parsers/base/decl.cpp \
       parsers/base/decl.h \
       parsers/base/expr.cpp \
       parsers/base/expr.h \
       parsers/base/type.cpp \
       parsers/base/type.h \
+      parsers/cst/integer_cst.cpp \
+      parsers/decl/function_decl.cpp \
+      parsers/decl/parm_decl.cpp \
+      parsers/decl/result_decl.cpp \
+      parsers/decl/type_decl.cpp \
+      parsers/expr/return_expr.cpp \
+      parsers/list/statement_list.cpp \
+      parsers/list/tree_list.cpp \
+      parsers/type/function_type.cpp \
+      parsers/type/integer_type.cpp \
+      parsers/type/pointer_type.cpp \
+      parsers/type/void_type.cpp \
       includes.h \
       localconsts.h \
       logger.cpp \

@@ -19,42 +19,30 @@
 
 #include "parsers/parserincludes.h"
 
-parserDefine(TreeList);
+#include "tree-iterator.h"
 
-#include "nodes/tree_list.h"
+parserDefine(StatementList);
+
+#include "parsers/base/type.h"
+
+#include "nodes/list/statement_list.h"
 
 namespace Generic
 {
 
-void parseTreeListNode(TreeListNode *node)
+void parseStatementListNode(StatementListNode *node)
 {
     fillType(node);
     Log::log(node);
 
-    createParseNode(
-        node,
-        TREE_PURPOSE(node->gccNode),
-        "purpose");
-
-    createParseNode(
-        node,
-        TREE_VALUE(node->gccNode),
-        "value");
-
-/*
-    present in tree.h as supported but really not working
-    node->attribute = createParseNode(
-        node,
-        TYPE_ATTRIBUTES(node->gccNode),
-        "attribute");
-*/
-
-    FOR_CHAIN(node->gccNode, it, TREE_CHAIN, TREE_CHAIN)
+    for (tree_stmt_iterator it = tsi_start (node->gccNode);
+         !tsi_end_p (it);
+         tsi_next (&it))
     {
-        createParseNode(
+        node->statements.push_back(createParseNode(
             node,
-            it,
-            node->tag);
+            tsi_stmt (it),
+            "statement"));
     }
 }
 

@@ -23,8 +23,8 @@ parserDefine(FunctionDecl);
 
 #include "parsers/base/decl.h"
 
-#include "nodes/function_decl.h"
-#include "nodes/result_decl.h"
+#include "nodes/decl/function_decl.h"
+#include "nodes/decl/result_decl.h"
 
 namespace Generic
 {

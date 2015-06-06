@@ -19,31 +19,22 @@
 
 #include "parsers/parserincludes.h"
 
-#include "tree-iterator.h"
-
-parserDefine(StatementList);
+parserDefine(VoidType);
 
 #include "parsers/base/type.h"
 
-#include "nodes/statement_list.h"
+#include "nodes/type/void_type.h"
 
 namespace Generic
 {
 
-void parseStatementListNode(StatementListNode *node)
+void parseVoidTypeNode(VoidTypeNode *node)
 {
     fillType(node);
     Log::log(node);
 
-    for (tree_stmt_iterator it = tsi_start (node->gccNode);
-         !tsi_end_p (it);
-         tsi_next (&it))
-    {
-        node->statements.push_back(createParseNode(
-            node,
-            tsi_stmt (it),
-            "statement"));
-    }
+    fillTypeName(node);
+    fillTypeAttributes(node);
 }
 
 }

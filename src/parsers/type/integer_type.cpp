@@ -19,22 +19,45 @@
 
 #include "parsers/parserincludes.h"
 
-parserDefine(VoidType);
+parserDefine(IntegerType);
 
 #include "parsers/base/type.h"
 
-#include "nodes/void_type.h"
+#include "nodes/type/integer_type.h"
 
 namespace Generic
 {
 
-void parseVoidTypeNode(VoidTypeNode *node)
+void parseIntegerTypeNode(IntegerTypeNode *node)
 {
     fillType(node);
     Log::log(node);
 
+    setPrintField(node, TYPE_PRECISION, precisionBits);
+    setPrintField(node, TYPE_STRING_FLAG, isChar);
+    node->isUnsigned = TYPE_UNSIGNED(node->gccNode);
+    if (node->isUnsigned)
+        Log::logRaw(node, "- unsigned");
+    else
+        Log::logRaw(node, "- signed");
+
     fillTypeName(node);
     fillTypeAttributes(node);
+    node->typeSize = static_cast<IntegerCstNode*>(createParseNode(
+        node,
+        TYPE_SIZE(node->gccNode),
+        INTEGER_CST,
+        "type size"));
+    node->minValue = static_cast<IntegerCstNode*>(createParseNode(
+        node,
+        TYPE_MIN_VALUE(node->gccNode),
+        INTEGER_CST,
+        "min value"));
+    node->maxValue = static_cast<IntegerCstNode*>(createParseNode(
+        node,
+        TYPE_MAX_VALUE(node->gccNode),
+        INTEGER_CST,
+        "max value"));
 }
 
 }

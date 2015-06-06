@@ -25,7 +25,7 @@ parserDefine(IntegerCst);
 
 #include "parsers/base/type.h"
 
-#include "nodes/integer_cst.h"
+#include "nodes/cst/integer_cst.h"
 
 #include <stdio.h>
 #include <stdlib.h>

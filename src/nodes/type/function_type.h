@@ -17,27 +17,26 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_PARMDECLNODE_H
-#define NODES_PARMDECLNODE_H
+#ifndef NODES_FUNCTIONTYPENODE_H
+#define NODES_FUNCTIONTYPENODE_H
 
-#include "nodes/integer_cst.h"
-
-#include "nodes/base/decl.h"
 #include "nodes/base/type.h"
 
-struct ParmDeclNode : public DeclNode
+#include "nodes/list/tree_list.h"
+
+#include <string>
+
+struct FunctionTypeNode : public TypeNode
 {
-    ParmDeclNode() :
-        DeclNode(),
-        declType(nullptr),
-        parmSize(nullptr),
-        isRegister(false)
+    FunctionTypeNode() :
+        TypeNode(),
+        returnType(nullptr),
+        argTypes(nullptr)
     {
     }
 
-    TypeNode *declType;
-    IntegerCstNode *parmSize;
-    bool isRegister;
+    TypeNode *returnType;
+    TreeListNode *argTypes;
 };
 
-#endif // NODES_PARMDECLNODE_H
+#endif // NODES_FUNCTIONTYPENODE_H

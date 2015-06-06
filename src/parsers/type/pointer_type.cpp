@@ -19,21 +19,26 @@
 
 #include "parsers/parserincludes.h"
 
-parserDefine(ReturnExpr);
+parserDefine(PointerType);
 
-#include "parsers/base/expr.h"
+#include "parsers/base/type.h"
 
-#include "nodes/return_expr.h"
+#include "nodes/type/pointer_type.h"
 
 namespace Generic
 {
 
-void parseReturnExprNode(ReturnExprNode *node)
+void parsePointerTypeNode(PointerTypeNode *node)
 {
     fillType(node);
     Log::log(node);
 
-    fillExprOperands(node);
+    fillTypeName(node);
+    fillTypeAttributes(node);
+    node->nestedType = static_cast<TypeNode*>(createParseNode(
+        node,
+        TREE_TYPE(node->gccNode),
+        "nested type"));
 }
 
 }
