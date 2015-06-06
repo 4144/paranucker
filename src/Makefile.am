@@ -12,6 +12,7 @@ SRC = nodes/base/cstnode.h \
       nodes/parmdeclnode.h \
       nodes/pointertypernode.h \
       nodes/resultdeclnode.h \
+      nodes/statementlistnode.h \
       nodes/treelistnode.h \
       nodes/typedeclnode.h \
       nodes/voidtypenode.h \
@@ -26,6 +27,7 @@ SRC = nodes/base/cstnode.h \
       parsers/parserincludes.h \
       parsers/pointer_type.cpp \
       parsers/result_decl.cpp \
+      parsers/statement_list.cpp \
       parsers/tree_list.cpp \
       parsers/type_decl.cpp \
       parsers/void_type.cpp \
