@@ -28,6 +28,7 @@
 #include "nodes/typedeclnode.h"
 #include "nodes/identifiernode.h"
 #include "nodes/integercstnode.h"
+#include "nodes/returnexprnode.h"
 #include "nodes/statementlistnode.h"
 
 #include "parsers/parserincludes.h"
@@ -41,6 +42,8 @@ parserDefine(FunctionType);
 parserDefine(IntegerType);
 parserDefine(PointerType);
 parserDefine(VoidType);
+
+parserDefine(ReturnExpr);
 
 parserDefine(TreeList);
 parserDefine(Identifier);
@@ -94,6 +97,7 @@ Node *createParseNode(Node *parent,
         createNodeType(INTEGER_TYPE, IntegerTypeNode);
         createNodeType(VOID_TYPE, VoidTypeNode);
         createNodeType(POINTER_TYPE, PointerTypeNode);
+        createNodeType(RETURN_EXPR, ReturnExprNode);
         createNodeType(TREE_LIST, TreeListNode);
         createNodeType(IDENTIFIER_NODE, IdentifierNode);
         createNodeType(INTEGER_CST, IntegerCstNode);
@@ -133,6 +137,7 @@ Node *createParseNode(Node *parent,
             parseNodeType(INTEGER_TYPE, IntegerType);
             parseNodeType(VOID_TYPE, VoidType);
             parseNodeType(POINTER_TYPE, PointerType);
+            parseNodeType(RETURN_EXPR, ReturnExpr);
             parseNodeType(TREE_LIST, TreeList);
             parseNodeType(IDENTIFIER_NODE, Identifier);
             parseNodeType(INTEGER_CST, IntegerCst);
