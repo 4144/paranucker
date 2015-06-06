@@ -21,7 +21,6 @@ SRC = nodes/base/cst.h \
       parsers/generic.cpp \
       parsers/generic.h \
       parsers/identifier_node.cpp \
-      parsers/parserincludes.h \
       parsers/base/decl.cpp \
       parsers/base/decl.h \
       parsers/base/expr.cpp \
@@ -41,6 +40,7 @@ SRC = nodes/base/cst.h \
       parsers/type/pointer_type.cpp \
       parsers/type/void_type.cpp \
       includes/parserdefines.inc \
+      includes/parserincludes.h \
       includes.h \
       localconsts.h \
       logger.cpp \
