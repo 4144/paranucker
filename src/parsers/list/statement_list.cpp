@@ -23,8 +23,6 @@
 
 parserDefine(StatementList);
 
-#include "parsers/base/type.h"
-
 #include "nodes/list/statement_list.h"
 
 namespace Generic

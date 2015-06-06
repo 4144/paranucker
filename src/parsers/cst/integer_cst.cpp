@@ -23,8 +23,6 @@
 
 parserDefine(IntegerCst);
 
-#include "parsers/base/type.h"
-
 #include "nodes/cst/integer_cst.h"
 
 #include <stdio.h>

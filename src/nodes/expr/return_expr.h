@@ -17,8 +17,8 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_RETURNEXPRNODE_H
-#define NODES_RETURNEXPRNODE_H
+#ifndef NODES_EXPR_RETURNEXPRNODE_H
+#define NODES_EXPR_RETURNEXPRNODE_H
 
 #include "nodes/base/expr.h"
 
@@ -32,4 +32,4 @@ struct ReturnExprNode : public ExprNode
     }
 };
 
-#endif // NODES_RETURNEXPRNODE_H
+#endif // NODES_EXPR_RETURNEXPRNODE_H
