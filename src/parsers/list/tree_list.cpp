@@ -49,13 +49,22 @@ void parseTreeListNode(TreeListNode *node)
         "attribute");
 */
 
+    createParseNode(
+        node,
+        TREE_CHAIN(node->gccNode),
+        node->tag);
+
+/* look like infinite loop
     FOR_CHAIN(node->gccNode, it, TREE_CHAIN, TREE_CHAIN)
     {
+        if (node->gccNode == it)
+            continue;
         createParseNode(
             node,
             it,
             node->tag);
     }
+*/
 }
 
 }
