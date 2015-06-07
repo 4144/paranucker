@@ -56,7 +56,7 @@ function_decl __bswap_32 crashtest1.h 45:1
      integer_cst 0 - min value
      integer_cst 4294967295 - max value
     integer_cst 32 - decl size
-   Not supported node type: call_expr - operand - operand
+   Unsupported node type: call_expr - operand - operand
 function_decl __bswap_64 crashtest1.h 109:1
  function_type - function type
   integer_type - function return type
@@ -105,4 +105,4 @@ function_decl __bswap_64 crashtest1.h 109:1
      integer_cst 64 - type size
      integer_cst 0 - min value
     integer_cst 64 - decl size
-   Not supported node type: call_expr - operand - operand
+   Unsupported node type: call_expr - operand - operand

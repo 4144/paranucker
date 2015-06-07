@@ -85,6 +85,14 @@
 7 integer_cst 
 7 integer_cst 
 7 integer_cst 
+4 decl_expr 
+5 var_decl test1.c
+6 integer_cst 
+6 integer_type 
+7 type_decl <built-in>
+7 integer_cst 
+7 integer_cst 
+7 integer_cst 
 4 cleanup_point_expr 
 4 return_expr 
 5 init_expr 
@@ -95,6 +103,21 @@
 8 integer_cst 
 8 integer_cst 
 7 integer_cst 
+6 integer_cst 
+3 block 
+4 var_decl test1.c
+5 integer_cst 
+5 integer_type 
+6 type_decl <built-in>
+6 integer_cst 
+6 integer_cst 
+6 integer_cst 
+4 var_decl test1.c
+5 integer_cst 
+5 integer_type 
+6 type_decl <built-in>
+6 integer_cst 
+6 integer_cst 
 6 integer_cst 
 2 return_expr 
 3 init_expr 
@@ -220,6 +243,21 @@
 7 integer_cst 
 3 cleanup_point_expr 
 3 cleanup_point_expr 
+2 block 
+3 var_decl test1.c
+4 integer_cst 
+4 integer_type 
+5 type_decl <built-in>
+5 integer_cst 
+5 integer_cst 
+5 integer_cst 
+3 var_decl test1.c
+4 integer_cst 
+4 integer_type 
+5 type_decl <built-in>
+5 integer_cst 
+5 integer_cst 
+5 integer_cst 
 0 function_decl test1.c
 1 function_type 
 2 integer_type 

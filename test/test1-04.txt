@@ -3,9 +3,7 @@ Unsupported node type: expr_stmt
 Unsupported node type: while_stmt
 Unsupported node type: expr_stmt
 Unsupported node type: expr_stmt
-Unsupported node type: block
 Unsupported node type: if_stmt
 Unsupported node type: expr_stmt
 Unsupported node type: expr_stmt
 Unsupported node type: if_stmt
-Unsupported node type: block
