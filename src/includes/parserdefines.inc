@@ -23,3 +23,4 @@ parserDefine(IfStmt);
 parserDefine(WhileStmt);
 parserDefine(PlusExpr);
 parserDefine(MinusExpr);
+parserDefine(MultExpr);
