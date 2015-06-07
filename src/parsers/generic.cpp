@@ -82,19 +82,8 @@ Node *createParseNode(Node *parent,
             node->tag = tag;
         }
 
-        switch (TREE_CODE(node->gccNode))
-        {
-#undef handleNodeType
-#define handleNodeType(code, type) \
-    case code: \
-        parse##type##Node(static_cast<type##Node*>(node)); \
-        break;
-#include "includes/nodeshandling.inc"
-            default:
-                break;
-        }
         if (wantType != ERROR_MARK &&
-            node->nodeType != get_tree_code_name(wantType))
+            TREE_CODE(node->gccNode) != wantType)
         {
             if (tag.empty())
             {
@@ -111,6 +100,19 @@ Node *createParseNode(Node *parent,
                     node->nodeType.c_str(),
                     tag.c_str());
             }
+            return nullptr;
+        }
+
+        switch (TREE_CODE(node->gccNode))
+        {
+#undef handleNodeType
+#define handleNodeType(code, type) \
+    case code: \
+        parse##type##Node(static_cast<type##Node*>(node)); \
+        break;
+#include "includes/nodeshandling.inc"
+            default:
+                break;
         }
     }
     return node;
