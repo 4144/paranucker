@@ -19,3 +19,4 @@
 #include "nodes/expr/cleanuppoint_expr.h"
 #include "nodes/decl/var_decl.h"
 #include "nodes/blocknode.h"
+#include "nodes/stmt/expr_stmt.h"
