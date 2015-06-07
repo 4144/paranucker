@@ -273,6 +273,21 @@
 8 integer_cst 
 8 integer_cst 
 7 integer_cst 
+6 plus_expr 
+7 var_decl test1.c
+8 integer_cst 
+8 integer_type 
+9 type_decl <built-in>
+9 integer_cst 
+9 integer_cst 
+9 integer_cst 
+7 var_decl test1.c
+8 integer_cst 
+8 integer_type 
+9 type_decl <built-in>
+9 integer_cst 
+9 integer_cst 
+9 integer_cst 
 4 return_expr 
 5 init_expr 
 6 result_decl test1.c
