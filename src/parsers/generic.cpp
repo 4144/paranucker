@@ -61,11 +61,19 @@ Node *createParseNode(Node *parent,
         break;
 #include "includes/nodeshandling.inc"
         default:
-            Log::log(parent,
-                1,
-                "Not supported node type: %s - %s",
-                get_tree_code_name(TREE_CODE(gccNode)),
-                tag.c_str());
+            if (command == Command::DumpUnsupported)
+            {
+                Log::error("Unsupported node type: %s",
+                    get_tree_code_name(TREE_CODE(gccNode)));
+            }
+            else
+            {
+                Log::log(parent,
+                    1,
+                    "Unsupported node type: %s - %s",
+                    get_tree_code_name(TREE_CODE(gccNode)),
+                    tag.c_str());
+            }
             break;
     }
     if (node)

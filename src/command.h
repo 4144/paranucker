@@ -25,6 +25,7 @@ enum Command : int
     Parse = 0,
     Dump,
     SmallDump,
+    DumpUnsupported,
     MemoryUsage
 };
 
