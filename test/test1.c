@@ -14,7 +14,7 @@ void func3(int *ptr, char *ptr2)
 int main()
 {
 	fun1(1,(int***)2);
-        char k;
+        char k, k2;
         func3(0, &k);
 	return 1;
 }
