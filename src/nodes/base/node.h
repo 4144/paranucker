@@ -32,6 +32,7 @@ struct Node
         label(),
         file(),
         tag(),
+        childs(),
         gccNode(nullptr),
         line(-1),
         column(-1),
@@ -53,6 +54,7 @@ struct Node
     std::string label;
     std::string file;
     std::string tag;
+    std::vector<Node*> childs;
     tree gccNode;
     int line;
     int column;

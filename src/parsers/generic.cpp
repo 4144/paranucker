@@ -75,6 +75,7 @@ Node *createParseNode(Node *parent,
                 node->tag = parent->tag;
             else
                 node->tag = tag;
+            parent->childs.push_back(node);
         }
         else
         {
