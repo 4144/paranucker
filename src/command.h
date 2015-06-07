@@ -23,7 +23,8 @@
 enum Command : int
 {
     Parse = 0,
-    Dump
+    Dump,
+    SmallDump
 };
 
 extern Command command;

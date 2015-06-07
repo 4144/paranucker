@@ -108,6 +108,15 @@ void log(const Node *const node,
 
 void log(const Node *const node)
 {
+    if (command == Command::SmallDump)
+    {
+        fprintf(stderr,
+            "%s %s\n",
+            node->nodeType.c_str(),
+            node->file.c_str());
+        return;
+    }
+
     if (command != Command::Dump)
         return;
 
