@@ -70,4 +70,6 @@ SRC = nodes/base/cst.h \
       nodes/stmt/if_stmt.h \
       parsers/stmt/if_stmt.cpp \
       nodes/stmt/while_stmt.h \
-      parsers/stmt/while_stmt.cpp
+      parsers/stmt/while_stmt.cpp \
+      nodes/expr/plus_expr.h \
+      parsers/expr/plus_expr.cpp

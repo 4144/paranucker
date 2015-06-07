@@ -22,3 +22,4 @@
 #include "nodes/stmt/expr_stmt.h"
 #include "nodes/stmt/if_stmt.h"
 #include "nodes/stmt/while_stmt.h"
+#include "nodes/expr/plus_expr.h"
