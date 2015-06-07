@@ -31,12 +31,15 @@
 
 int plugin_is_GPL_compatible = 1;
 
+struct Node;
+
 Command command = Command::Dump;
 
 static void pre_generic(void *gcc_data,
                         void *user_data A_UNUSED)
 {
-    Generic::parseNodes((tree)gcc_data);
+    Node *node = Generic::parseNodes((tree)gcc_data);
+    Generic::cleanNodes(node);
 }
 
 int plugin_init (struct plugin_name_args *plugin_info,

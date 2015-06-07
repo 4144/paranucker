@@ -118,9 +118,18 @@ Node *createParseNode(Node *parent,
     return node;
 }
 
-void parseNodes(tree gccNode)
+Node *parseNodes(tree gccNode)
 {
-    createParseNode(nullptr, gccNode, FUNCTION_DECL);
+    return createParseNode(nullptr, gccNode, FUNCTION_DECL);
+}
+
+void cleanNodes(Node *node)
+{
+    FOR_EACH (std::vector<Node*>::iterator, it, node->childs)
+    {
+        cleanNodes(*it);
+    }
+    delete node;
 }
 
 void fillType(Node *node)

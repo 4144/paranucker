@@ -28,9 +28,11 @@ struct Node;
 
 namespace Generic
 {
-    void parseNodes(tree gccNode);
+    Node *parseNodes(tree gccNode);
 
     void parseNode(Node *parent);
+
+    void cleanNodes(Node *node);
 
     void fillType(Node *node);
 
