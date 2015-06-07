@@ -25,3 +25,4 @@
 #include "nodes/expr/plus_expr.h"
 #include "nodes/expr/minus_expr.h"
 #include "nodes/expr/mult_expr.h"
+#include "nodes/expr/modify_expr.h"
