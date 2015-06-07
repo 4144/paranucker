@@ -24,7 +24,8 @@ enum Command : int
 {
     Parse = 0,
     Dump,
-    SmallDump
+    SmallDump,
+    MemoryUsage
 };
 
 extern Command command;

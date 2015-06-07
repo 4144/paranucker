@@ -19,11 +19,15 @@
 
 #include "parsers/generic.h"
 
+#include "command.h"
+
 #include "includes/nodeincludes.h"
 #include "includes/parserincludes.h"
 #include "includes/parserdefines.inc"
 
 #include "localconsts.h"
+
+int allocations = 0;
 
 namespace Generic
 {
@@ -100,6 +104,8 @@ Node *createParseNode(Node *parent,
                     node->nodeType.c_str(),
                     tag.c_str());
             }
+            if (!parent)
+                delete node;
             return nullptr;
         }
 
@@ -121,6 +127,15 @@ Node *createParseNode(Node *parent,
 Node *parseNodes(tree gccNode)
 {
     return createParseNode(nullptr, gccNode, FUNCTION_DECL);
+}
+
+void cleanAllNodes(Node *node)
+{
+    if (command == Command::MemoryUsage)
+        Log::error("Allocations before cleanup: %d", allocations);
+    cleanNodes(node);
+    if (command == Command::MemoryUsage)
+        Log::error("Allocations after cleanup: %d", allocations);
 }
 
 void cleanNodes(Node *node)

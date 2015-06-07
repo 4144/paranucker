@@ -24,6 +24,8 @@
 
 #include <string>
 
+extern int allocations;
+
 struct Node
 {
     Node() :
@@ -40,6 +42,12 @@ struct Node
         indent(0),
         noLabel(false)
     {
+        allocations ++;
+    }
+
+    ~Node()
+    {
+        allocations --;
     }
 
     std::string getIndent() const

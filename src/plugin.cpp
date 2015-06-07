@@ -39,7 +39,7 @@ static void pre_generic(void *gcc_data,
                         void *user_data A_UNUSED)
 {
     Node *node = Generic::parseNodes((tree)gcc_data);
-    Generic::cleanNodes(node);
+    Generic::cleanAllNodes(node);
 }
 
 int plugin_init (struct plugin_name_args *plugin_info,
@@ -64,6 +64,10 @@ int plugin_init (struct plugin_name_args *plugin_info,
             else if (cmd == "smalldump")
             {
                 command = Command::SmallDump;
+            }
+            else if (cmd == "memoryusage")
+            {
+                command = Command::MemoryUsage;
             }
             else
             {

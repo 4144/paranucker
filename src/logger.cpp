@@ -66,6 +66,18 @@ void logRaw(const Node *const node,
     va_end(ap);
 }
 
+void error(const char *const text,
+           ...)
+{
+    va_list ap;
+    va_start(ap, text);
+
+    vfprintf(stderr, text, ap);
+    fprintf(stderr, "\n");
+
+    va_end(ap);
+}
+
 void logInt(const Node *const node,
             const char *const text,
             const int val)

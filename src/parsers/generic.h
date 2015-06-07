@@ -34,6 +34,8 @@ namespace Generic
 
     void cleanNodes(Node *node);
 
+    void cleanAllNodes(Node *node);
+
     void fillType(Node *node);
 
     void fillLocation(Node *node);
