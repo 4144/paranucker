@@ -41,4 +41,5 @@ libastdumper_la_LDFLAGS = ${SHARED_LDFLAGS}
 libastdumper_la_CXXFLAGS = ${SHARED_CXXFLAGS}
 
 all-local: libastdumper.la
+	cp .libs/libastdumper.so .libs/astdumper.so
 	echo done
