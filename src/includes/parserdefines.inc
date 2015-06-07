@@ -17,3 +17,4 @@ parserDefine(InitExpr);
 parserDefine(ConvertExpr);
 parserDefine(CleanupPointExpr);
 parserDefine(VarDecl);
+parserDefine(Block);
