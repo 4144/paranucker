@@ -6,6 +6,7 @@ SUBDIRS = src
 #EXTRA_DIST = 
 
 test:
-	${CXX} -fplugin=src/.libs/libastdumper.so ../test/test1.c 2>../test.txt
+	cp src/.libs/libastdumper.so src/.libs/astdumper.so
+	cd ../test && make
 
 .PHONY: test

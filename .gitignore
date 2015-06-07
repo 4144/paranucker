@@ -28,7 +28,8 @@ po/remove-potcdate.*
 po/*.po~
 
 # files created by configure
-Makefile
+/Makefile
+/src/Makefile
 config.h
 config.log
 config.status
@@ -81,6 +82,7 @@ my/*
 win/*
 test/*.out
 test.txt
+test/astdumper.so
 
 # debian
 debian/*
