@@ -19,6 +19,8 @@
 
 #include "logger.h"
 
+#include "command.h"
+
 #include "nodes/base/node.h"
 
 #include "localconsts.h"
@@ -30,6 +32,9 @@ void log(const Node *const node,
          const char *const text,
          ...)
 {
+    if (command != Command::Dump)
+        return;
+
     va_list ap;
     va_start(ap, text);
 
@@ -47,6 +52,9 @@ void logRaw(const Node *const node,
             const char *const text,
             ...)
 {
+    if (command != Command::Dump)
+        return;
+
     va_list ap;
     va_start(ap, text);
 
@@ -62,7 +70,7 @@ void logInt(const Node *const node,
             const char *const text,
             const int val)
 {
-    if (!val || !node)
+    if (command != Command::Dump || !val || !node)
         return;
 
     fprintf(stderr, "%s", node->getIndent().c_str());
@@ -76,6 +84,9 @@ void log(const Node *const node,
          ...
          )
 {
+    if (command != Command::Dump)
+        return;
+
     va_list ap;
     va_start(ap, text);
 
@@ -97,6 +108,9 @@ void log(const Node *const node,
 
 void log(const Node *const node)
 {
+    if (command != Command::Dump)
+        return;
+
     if (!node)
     {
         fprintf(stderr, "node is null\n");
