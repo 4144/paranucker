@@ -69,9 +69,13 @@ function_decl func3 test1.c 7:6
   integer_cst 64 - parm size
  statement_list - code
   cleanup_point_expr - statement
-   Unsupported node type: expr_stmt - operand - statement
+   expr_stmt - operand
+    convert_expr - expresssion
+     Unsupported node type: modify_expr - operand - expresssion
   cleanup_point_expr - statement
-   Unsupported node type: expr_stmt - operand - statement
+   expr_stmt - operand
+    convert_expr - expresssion
+     Unsupported node type: modify_expr - operand - expresssion
   Unsupported node type: while_stmt - statement - code
 function_decl main test1.c 14:5
 - isPublic: 1
@@ -115,7 +119,9 @@ function_decl main test1.c 14:5
      integer_cst 127 - max value
    statement_list - operand
     cleanup_point_expr - statement
-     Unsupported node type: expr_stmt - operand - statement
+     expr_stmt - operand
+      convert_expr - expresssion
+       Unsupported node type: call_expr - operand - expresssion
     decl_expr - statement
      var_decl k test1.c 17:14 - operand
      - isUsed: 1
@@ -142,7 +148,8 @@ function_decl main test1.c 14:5
        integer_cst -128 - min value
        integer_cst 127 - max value
     cleanup_point_expr - statement
-     Unsupported node type: expr_stmt - operand - statement
+     expr_stmt - operand
+      Unsupported node type: call_expr - expresssion - operand
     return_expr - statement
      init_expr - operand
       result_decl test1.c 14:10 - operand
@@ -361,9 +368,12 @@ function_decl fun1 test1.c 29:5
        integer_cst -2147483648 - min value
        integer_cst 2147483647 - max value
    cleanup_point_expr - statement
-    Unsupported node type: expr_stmt - operand - statement
+    expr_stmt - operand
+     convert_expr - expresssion
+      Unsupported node type: modify_expr - operand - expresssion
    cleanup_point_expr - statement
-    Unsupported node type: expr_stmt - operand - statement
+    expr_stmt - operand
+     Unsupported node type: call_expr - expresssion - operand
    Unsupported node type: if_stmt - statement - operand
   block - operand
    var_decl a test1.c 31:6 - block vars
