@@ -76,7 +76,9 @@ function_decl func3 test1.c 7:6
    expr_stmt - operand
     convert_expr - expresssion
      Unsupported node type: modify_expr - operand - expresssion
-  Unsupported node type: while_stmt - statement - code
+  while_stmt - statement
+   integer_cst 1 - condition
+   statement_list - body
 function_decl main test1.c 14:5
 - isPublic: 1
  function_type - function type

@@ -53,6 +53,9 @@
 2 cleanup_point_expr 
 3 expr_stmt 
 4 convert_expr 
+2 while_stmt 
+3 integer_cst 
+3 statement_list 
 0 function_decl test1.c
 1 function_type 
 2 integer_type 
