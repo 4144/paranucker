@@ -27,9 +27,16 @@
 struct TreeListNode : public Node
 {
     TreeListNode() :
-        Node()
+        Node(),
+        purpose(nullptr),
+        value(nullptr),
+        chain(nullptr)
     {
     }
+
+    Node *purpose;
+    Node *value;
+    Node *chain;
 };
 
 #endif // NODES_TREELISTNODE_H

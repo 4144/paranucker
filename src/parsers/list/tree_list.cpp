@@ -31,12 +31,12 @@ void parseTreeListNode(TreeListNode *node)
     fillType(node);
     Log::log(node);
 
-    createParseNode(
+    node->purpose = createParseNode(
         node,
         TREE_PURPOSE(node->gccNode),
         "purpose");
 
-    createParseNode(
+    node->value = createParseNode(
         node,
         TREE_VALUE(node->gccNode),
         "value");
@@ -49,7 +49,7 @@ void parseTreeListNode(TreeListNode *node)
         "attribute");
 */
 
-    createParseNode(
+    node->chain = createParseNode(
         node,
         TREE_CHAIN(node->gccNode),
         node->tag);
