@@ -2,6 +2,7 @@ SRC = nodes/base/cst.h \
       nodes/base/decl.h \
       nodes/base/expr.h \
       nodes/base/node.h \
+      nodes/base/stmt.h \
       nodes/base/type.h \
       nodes/cst/integer_cst.h \
       nodes/decl/function_decl.h \
@@ -23,6 +24,8 @@ SRC = nodes/base/cst.h \
       parsers/base/decl.h \
       parsers/base/expr.cpp \
       parsers/base/expr.h \
+      parsers/base/stmt.cpp \
+      parsers/base/stmt.h \
       parsers/base/type.cpp \
       parsers/base/type.h \
       parsers/cst/integer_cst.cpp \
