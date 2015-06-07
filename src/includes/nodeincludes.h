@@ -20,3 +20,4 @@
 #include "nodes/decl/var_decl.h"
 #include "nodes/blocknode.h"
 #include "nodes/stmt/expr_stmt.h"
+#include "nodes/stmt/if_stmt.h"

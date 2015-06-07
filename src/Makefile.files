@@ -66,4 +66,6 @@ SRC = nodes/base/cst.h \
       nodes/blocknode.h \
       parsers/blocknode.cpp \
       nodes/stmt/expr_stmt.h \
-      parsers/stmt/expr_stmt.cpp
+      parsers/stmt/expr_stmt.cpp \
+      nodes/stmt/if_stmt.h \
+      parsers/stmt/if_stmt.cpp
