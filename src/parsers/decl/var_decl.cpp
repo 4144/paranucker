@@ -55,10 +55,13 @@ void parseVarDeclNode(VarDeclNode *node)
         TREE_TYPE(node->gccNode),
         "var type"));
 
+    // not loading because it reference self recursivly
+/*
     node->initial = createParseNode(
         node,
         DECL_INITIAL(node->gccNode),
         "initial");
+*/
 }
 
 }
