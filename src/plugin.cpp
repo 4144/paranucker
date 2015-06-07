@@ -19,11 +19,19 @@
 
 #include "includes.h"
 
+#include "plugin-version.h"
+#include "diagnostic.h"
+#include "intl.h"
+
+#include "command.h"
+
 #include "parsers/generic.h"
 
 #include "localconsts.h"
 
 int plugin_is_GPL_compatible = 1;
+
+Command command = Command::Dump;
 
 static void pre_generic(void *gcc_data,
                         void *user_data A_UNUSED)
@@ -34,6 +42,32 @@ static void pre_generic(void *gcc_data,
 int plugin_init (struct plugin_name_args *plugin_info,
                  struct plugin_gcc_version *version A_UNUSED)
 {
+    const char *const plugin_name = plugin_info->base_name;
+    const int argc = plugin_info->argc;
+    struct plugin_argument *argv = plugin_info->argv;
+    for (int f = 0; f < argc; f ++)
+    {
+        if (!strcmp (argv[f].key, "command"))
+        {
+            const std::string cmd = argv[f].value;
+            if (cmd == "parse")
+            {
+                command = Command::Parse;
+            }
+            else if (cmd == "dump")
+            {
+                command = Command::Dump;
+            }
+            else
+            {
+                error("Plugin %s. Unknown command: %s",
+                    plugin_name,
+                    cmd.c_str());
+                return 0;
+            }
+        }
+    }
+
     register_callback(plugin_info->base_name,
         PLUGIN_PRE_GENERICIZE,
         &pre_generic,
