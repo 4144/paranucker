@@ -37,7 +37,8 @@ struct Node
         line(-1),
         column(-1),
         treeNumber(0),
-        indent(0)
+        indent(0),
+        noLabel(false)
     {
     }
 
@@ -60,6 +61,7 @@ struct Node
     int column;
     int treeNumber;
     int indent;
+    bool noLabel;
 };
 
 #endif // NODES_BASE_NODE_H

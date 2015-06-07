@@ -34,6 +34,11 @@ namespace Generic
 void parseIntegerCstNode(IntegerCstNode *node)
 {
     fillType(node);
+    if (!tree_fits_shwi_p(node->gccNode))
+    {
+        node->noLabel = true;
+        return;
+    }
     if (tree_int_cst_sgn(node->gccNode) < 0)
     {
         node->label = "-";
