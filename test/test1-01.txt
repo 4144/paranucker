@@ -310,7 +310,6 @@ function_decl fun1 test1.c 29:5
     integer_cst 32 - type size
     integer_cst -2147483648 - min value
     integer_cst 2147483647 - max value
-   integer_cst 0 - initial
   statement_list - operand
    cleanup_point_expr - statement
     decl_expr - operand
@@ -325,7 +324,6 @@ function_decl fun1 test1.c 29:5
        integer_cst 32 - type size
        integer_cst -2147483648 - min value
        integer_cst 2147483647 - max value
-      integer_cst 0 - initial
    cleanup_point_expr - statement
     decl_expr - operand
      - isUsed: 1
@@ -339,7 +337,6 @@ function_decl fun1 test1.c 29:5
        integer_cst 32 - type size
        integer_cst -2147483648 - min value
        integer_cst 2147483647 - max value
-      integer_cst 1 - initial
    cleanup_point_expr - statement
     Not supported node type: expr_stmt - operand - statement
    cleanup_point_expr - statement
