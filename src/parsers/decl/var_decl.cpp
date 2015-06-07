@@ -36,6 +36,8 @@ void parseVarDeclNode(VarDeclNode *node)
     fillLocation(node);
     fillDeclLabel(node);
     setPrintField(node, DECL_THIS_STATIC, isStatic);
+    setPrintField(node, DECL_REGISTER, isRegister);
+    setPrintField(node, TREE_USED, isUsed);
 
     Log::log(node);
 
@@ -52,7 +54,6 @@ void parseVarDeclNode(VarDeclNode *node)
         node,
         TREE_TYPE(node->gccNode),
         "var type"));
-
 
     node->initial = createParseNode(
         node,

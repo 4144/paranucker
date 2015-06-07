@@ -34,7 +34,9 @@ struct VarDeclNode : public DeclNode
         declSize(nullptr),
         varType(nullptr),
         initial(nullptr),
-        isStatic(false)
+        isStatic(false),
+        isRegister(false),
+        isUsed(false)
     {
     }
 
@@ -42,6 +44,8 @@ struct VarDeclNode : public DeclNode
     TypeNode *varType;
     Node *initial;
     bool isStatic;
+    bool isRegister;
+    bool isUsed;
 };
 
 #endif // NODES_DECL_VARDECLNODE_H

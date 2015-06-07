@@ -44,6 +44,17 @@ void parseResultDeclNode(ResultDeclNode *node)
         node,
         TREE_TYPE(node->gccNode),
         "result type"));
+
+    node->declSize = static_cast<IntegerCstNode*>(createParseNode(
+        node,
+        DECL_SIZE(node->gccNode),
+        INTEGER_CST,
+        "decl size"));
+
+    node->initial = createParseNode(
+        node,
+        DECL_INITIAL(node->gccNode),
+        "initial");
 }
 
 }

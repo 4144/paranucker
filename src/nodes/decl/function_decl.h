@@ -44,6 +44,8 @@ struct FunctionDeclNode : public DeclNode
         isFinal(false),
         isConst(false),
         isPure(false),
+        isExternal(false),
+        isPublic(false),
         hasTargets(false)
     {
     }
@@ -58,6 +60,8 @@ struct FunctionDeclNode : public DeclNode
     bool isFinal;
     bool isConst;
     bool isPure;
+    bool isExternal;
+    bool isPublic;
     bool hasTargets;
 };
 

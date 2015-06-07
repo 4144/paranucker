@@ -22,6 +22,8 @@
 
 #include "nodes/base/decl.h"
 
+#include "nodes/cst/integer_cst.h"
+
 #include <string>
 
 struct TypeNode;
@@ -30,11 +32,15 @@ struct ResultDeclNode : public DeclNode
 {
     ResultDeclNode() :
         DeclNode(),
-        resultType(nullptr)
+        resultType(nullptr),
+        initial(nullptr),
+        declSize(nullptr)
     {
     }
 
     TypeNode *resultType;
+    Node *initial;
+    IntegerCstNode *declSize;
 };
 
 #endif // NODES_RESULTDECLNODE_H

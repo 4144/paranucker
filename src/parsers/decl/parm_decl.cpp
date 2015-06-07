@@ -34,6 +34,7 @@ void parseParmDeclNode(ParmDeclNode *node)
     fillLocation(node);
     fillDeclLabel(node);
     setPrintField(node, DECL_REGISTER, isRegister);
+    setPrintField(node, TREE_USED, isUsed);
 
     Log::log(node);
 

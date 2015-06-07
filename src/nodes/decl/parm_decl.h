@@ -31,13 +31,15 @@ struct ParmDeclNode : public DeclNode
         DeclNode(),
         declType(nullptr),
         parmSize(nullptr),
-        isRegister(false)
+        isRegister(false),
+        isUsed(false)
     {
     }
 
     TypeNode *declType;
     IntegerCstNode *parmSize;
     bool isRegister;
+    bool isUsed;
 };
 
 #endif // NODES_PARMDECLNODE_H
