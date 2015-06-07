@@ -25,8 +25,6 @@ parserDefine(IfStmt);
 
 #include "nodes/stmt/if_stmt.h"
 
-#include "cp/cp-tree.h"
-
 namespace Generic
 {
 

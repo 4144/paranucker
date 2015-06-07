@@ -21,3 +21,4 @@
 #include "nodes/blocknode.h"
 #include "nodes/stmt/expr_stmt.h"
 #include "nodes/stmt/if_stmt.h"
+#include "nodes/stmt/while_stmt.h"

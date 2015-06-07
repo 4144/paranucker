@@ -25,8 +25,6 @@ parserDefine(VarDecl);
 
 #include "nodes/decl/var_decl.h"
 
-#include "cp/cp-tree.h"
-
 namespace Generic
 {
 

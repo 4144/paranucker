@@ -17,30 +17,31 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PLUGIN_H
-#define PLUGIN_H
+#include "includes/parserincludes.h"
 
-#ifdef PACKAGE_BUGREPORT
-#undef PACKAGE_BUGREPORT
-#endif
-#ifdef PACKAGE_NAME
-#undef PACKAGE_NAME
-#endif
-#ifdef PACKAGE_STRING
-#undef PACKAGE_STRING
-#endif
-#ifdef PACKAGE_TARNAME
-#undef PACKAGE_TARNAME
-#endif
-#ifdef PACKAGE_VERSION
-#undef PACKAGE_VERSION
-#endif
+parserDefine(WhileStmt);
 
-#include "gcc-plugin.h"
-#include "vec.h"
-#include "tree.h"
-#include "print-tree.h"
+#include "parsers/base/stmt.h"
 
-#include "cp/cp-tree.h"
+#include "nodes/stmt/while_stmt.h"
 
-#endif // PLUGIN_H
+namespace Generic
+{
+
+void parseWhileStmtNode(WhileStmtNode *node)
+{
+    fillType(node);
+    Log::log(node);
+
+    node->condition = createParseNode(
+        node,
+        WHILE_COND(node->gccNode),
+        "condition");
+
+    node->body = createParseNode(
+        node,
+        WHILE_BODY(node->gccNode),
+        "body");
+}
+
+}

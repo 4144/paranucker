@@ -17,30 +17,24 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PLUGIN_H
-#define PLUGIN_H
+#ifndef NODES_STMT_WHILESTMTNODE_H
+#define NODES_STMT_WHILESTMTNODE_H
 
-#ifdef PACKAGE_BUGREPORT
-#undef PACKAGE_BUGREPORT
-#endif
-#ifdef PACKAGE_NAME
-#undef PACKAGE_NAME
-#endif
-#ifdef PACKAGE_STRING
-#undef PACKAGE_STRING
-#endif
-#ifdef PACKAGE_TARNAME
-#undef PACKAGE_TARNAME
-#endif
-#ifdef PACKAGE_VERSION
-#undef PACKAGE_VERSION
-#endif
+#include "nodes/base/stmt.h"
 
-#include "gcc-plugin.h"
-#include "vec.h"
-#include "tree.h"
-#include "print-tree.h"
+#include <string>
 
-#include "cp/cp-tree.h"
+struct WhileStmtNode : public StmtNode
+{
+    WhileStmtNode() :
+        StmtNode(),
+        condition(nullptr),
+        body(nullptr)
+    {
+    }
 
-#endif // PLUGIN_H
+    Node *condition;
+    Node *body;
+};
+
+#endif // NODES_STMT_WHILESTMTNODE_H

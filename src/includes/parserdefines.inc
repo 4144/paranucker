@@ -20,3 +20,4 @@ parserDefine(VarDecl);
 parserDefine(Block);
 parserDefine(ExprStmt);
 parserDefine(IfStmt);
+parserDefine(WhileStmt);

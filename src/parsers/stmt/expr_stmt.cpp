@@ -27,8 +27,6 @@ parserDefine(ExprStmt);
 
 #include "nodes/stmt/expr_stmt.h"
 
-#include "cp/cp-tree.h"
-
 namespace Generic
 {
 
