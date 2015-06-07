@@ -1,284 +1,281 @@
-function_decl test1.c
-tree_list 
-identifier_node 
-function_type 
-void_type 
-type_decl <built-in>
-tree_list 
-identifier_node 
-tree_list 
-integer_cst 
-tree_list 
-integer_cst 
-tree_list 
-pointer_type 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-tree_list 
-pointer_type 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-tree_list 
-void_type 
-type_decl <built-in>
-tree_list 
-void_type 
-type_decl <built-in>
-result_decl test1.c
-void_type 
-type_decl <built-in>
-parm_decl test1.c
-pointer_type 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-parm_decl test1.c
-pointer_type 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-statement_list 
-cleanup_point_expr 
-cleanup_point_expr 
-function_decl test1.c
-function_type 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-tree_list 
-void_type 
-type_decl <built-in>
-result_decl test1.c
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-statement_list 
-bind_expr 
-var_decl test1.c
-integer_cst 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-statement_list 
-cleanup_point_expr 
-decl_expr 
-var_decl test1.c
-integer_cst 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-cleanup_point_expr 
-return_expr 
-init_expr 
-result_decl test1.c
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-return_expr 
-init_expr 
-result_decl test1.c
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-function_decl test1.c
-function_type 
-void_type 
-type_decl <built-in>
-tree_list 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-tree_list 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-tree_list 
-void_type 
-type_decl <built-in>
-tree_list 
-void_type 
-type_decl <built-in>
-result_decl test1.c
-void_type 
-type_decl <built-in>
-parm_decl test1.c
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-parm_decl test1.c
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-function_decl test1.c
-function_type 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-tree_list 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-tree_list 
-pointer_type 
-pointer_type 
-pointer_type 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-tree_list 
-void_type 
-type_decl <built-in>
-tree_list 
-void_type 
-type_decl <built-in>
-result_decl test1.c
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-parm_decl test1.c
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-parm_decl test1.c
-pointer_type 
-pointer_type 
-pointer_type 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-bind_expr 
-var_decl test1.c
-integer_cst 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-statement_list 
-cleanup_point_expr 
-decl_expr 
-var_decl test1.c
-integer_cst 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-cleanup_point_expr 
-decl_expr 
-var_decl test1.c
-integer_cst 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-cleanup_point_expr 
-cleanup_point_expr 
-function_decl test1.c
-function_type 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-tree_list 
-pointer_type 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-tree_list 
-void_type 
-type_decl <built-in>
-result_decl test1.c
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-parm_decl test1.c
-pointer_type 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-return_expr 
-init_expr 
-result_decl test1.c
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
-convert_expr 
-parm_decl test1.c
-pointer_type 
-integer_type 
-type_decl <built-in>
-integer_cst 
-integer_cst 
-integer_cst 
-integer_cst 
+0 function_decl test1.c
+1 tree_list 
+2 identifier_node 
+1 function_type 
+2 void_type 
+3 type_decl <built-in>
+2 tree_list 
+3 identifier_node 
+3 tree_list 
+4 integer_cst 
+4 tree_list 
+5 integer_cst 
+2 tree_list 
+3 pointer_type 
+4 integer_type 
+5 type_decl <built-in>
+5 integer_cst 
+5 integer_cst 
+5 integer_cst 
+3 tree_list 
+4 pointer_type 
+5 integer_type 
+6 type_decl <built-in>
+6 integer_cst 
+6 integer_cst 
+6 integer_cst 
+4 tree_list 
+5 void_type 
+6 type_decl <built-in>
+3 tree_list 
+4 void_type 
+5 type_decl <built-in>
+1 result_decl test1.c
+2 void_type 
+3 type_decl <built-in>
+1 parm_decl test1.c
+2 pointer_type 
+3 integer_type 
+4 type_decl <built-in>
+4 integer_cst 
+4 integer_cst 
+4 integer_cst 
+2 integer_cst 
+1 parm_decl test1.c
+2 pointer_type 
+3 integer_type 
+4 type_decl <built-in>
+4 integer_cst 
+4 integer_cst 
+4 integer_cst 
+2 integer_cst 
+1 statement_list 
+2 cleanup_point_expr 
+2 cleanup_point_expr 
+0 function_decl test1.c
+1 function_type 
+2 integer_type 
+3 type_decl <built-in>
+3 integer_cst 
+3 integer_cst 
+3 integer_cst 
+2 tree_list 
+3 void_type 
+4 type_decl <built-in>
+1 result_decl test1.c
+2 integer_type 
+3 type_decl <built-in>
+3 integer_cst 
+3 integer_cst 
+3 integer_cst 
+2 integer_cst 
+1 statement_list 
+2 bind_expr 
+3 var_decl test1.c
+4 integer_cst 
+4 integer_type 
+5 type_decl <built-in>
+5 integer_cst 
+5 integer_cst 
+5 integer_cst 
+3 statement_list 
+4 cleanup_point_expr 
+4 decl_expr 
+5 var_decl test1.c
+6 integer_cst 
+6 integer_type 
+7 type_decl <built-in>
+7 integer_cst 
+7 integer_cst 
+7 integer_cst 
+4 cleanup_point_expr 
+4 return_expr 
+5 init_expr 
+6 result_decl test1.c
+7 integer_type 
+8 type_decl <built-in>
+8 integer_cst 
+8 integer_cst 
+8 integer_cst 
+7 integer_cst 
+6 integer_cst 
+2 return_expr 
+3 init_expr 
+4 result_decl test1.c
+5 integer_type 
+6 type_decl <built-in>
+6 integer_cst 
+6 integer_cst 
+6 integer_cst 
+5 integer_cst 
+4 integer_cst 
+0 function_decl test1.c
+1 function_type 
+2 void_type 
+3 type_decl <built-in>
+2 tree_list 
+3 integer_type 
+4 type_decl <built-in>
+4 integer_cst 
+4 integer_cst 
+4 integer_cst 
+3 tree_list 
+4 integer_type 
+5 type_decl <built-in>
+5 integer_cst 
+5 integer_cst 
+5 integer_cst 
+4 tree_list 
+5 void_type 
+6 type_decl <built-in>
+3 tree_list 
+4 void_type 
+5 type_decl <built-in>
+1 result_decl test1.c
+2 void_type 
+3 type_decl <built-in>
+1 parm_decl test1.c
+2 integer_type 
+3 type_decl <built-in>
+3 integer_cst 
+3 integer_cst 
+3 integer_cst 
+2 integer_cst 
+1 parm_decl test1.c
+2 integer_type 
+3 type_decl <built-in>
+3 integer_cst 
+3 integer_cst 
+3 integer_cst 
+2 integer_cst 
+0 function_decl test1.c
+1 function_type 
+2 integer_type 
+3 type_decl <built-in>
+3 integer_cst 
+3 integer_cst 
+3 integer_cst 
+2 tree_list 
+3 integer_type 
+4 type_decl <built-in>
+4 integer_cst 
+4 integer_cst 
+4 integer_cst 
+3 tree_list 
+4 pointer_type 
+5 pointer_type 
+6 pointer_type 
+7 integer_type 
+8 type_decl <built-in>
+8 integer_cst 
+8 integer_cst 
+8 integer_cst 
+4 tree_list 
+5 void_type 
+6 type_decl <built-in>
+3 tree_list 
+4 void_type 
+5 type_decl <built-in>
+1 result_decl test1.c
+2 integer_type 
+3 type_decl <built-in>
+3 integer_cst 
+3 integer_cst 
+3 integer_cst 
+2 integer_cst 
+1 parm_decl test1.c
+2 integer_type 
+3 type_decl <built-in>
+3 integer_cst 
+3 integer_cst 
+3 integer_cst 
+2 integer_cst 
+1 parm_decl test1.c
+2 pointer_type 
+3 pointer_type 
+4 pointer_type 
+5 integer_type 
+6 type_decl <built-in>
+6 integer_cst 
+6 integer_cst 
+6 integer_cst 
+2 integer_cst 
+1 bind_expr 
+2 var_decl test1.c
+3 integer_cst 
+3 integer_type 
+4 type_decl <built-in>
+4 integer_cst 
+4 integer_cst 
+4 integer_cst 
+2 statement_list 
+3 cleanup_point_expr 
+4 decl_expr 
+5 var_decl test1.c
+6 integer_cst 
+6 integer_type 
+7 type_decl <built-in>
+7 integer_cst 
+7 integer_cst 
+7 integer_cst 
+3 cleanup_point_expr 
+4 decl_expr 
+5 var_decl test1.c
+6 integer_cst 
+6 integer_type 
+7 type_decl <built-in>
+7 integer_cst 
+7 integer_cst 
+7 integer_cst 
+3 cleanup_point_expr 
+3 cleanup_point_expr 
+0 function_decl test1.c
+1 function_type 
+2 integer_type 
+3 type_decl <built-in>
+3 integer_cst 
+3 integer_cst 
+3 integer_cst 
+2 tree_list 
+3 pointer_type 
+4 integer_type 
+5 type_decl <built-in>
+5 integer_cst 
+5 integer_cst 
+5 integer_cst 
+3 tree_list 
+4 void_type 
+5 type_decl <built-in>
+1 result_decl test1.c
+2 integer_type 
+3 type_decl <built-in>
+3 integer_cst 
+3 integer_cst 
+3 integer_cst 
+2 integer_cst 
+1 parm_decl test1.c
+2 pointer_type 
+3 integer_type 
+4 type_decl <built-in>
+4 integer_cst 
+4 integer_cst 
+4 integer_cst 
+2 integer_cst 
+1 return_expr 
+2 init_expr 
+3 result_decl test1.c
+4 integer_type 
+5 type_decl <built-in>
+5 integer_cst 
+5 integer_cst 
+5 integer_cst 
+4 integer_cst 
+3 convert_expr 
+4 parm_decl test1.c
+5 pointer_type 
+6 integer_type 
+7 type_decl <built-in>
+7 integer_cst 
+7 integer_cst 
+7 integer_cst 
+5 integer_cst 
