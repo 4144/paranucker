@@ -123,7 +123,8 @@ void log(const Node *const node)
     if (command == Command::SmallDump)
     {
         fprintf(stderr,
-            "%s %s\n",
+            "%d %s %s\n",
+            node->indent,
             node->nodeType.c_str(),
             node->file.c_str());
         return;
