@@ -1,4 +1,4 @@
-.PHONY: test1 test2 crashtest1 all allcrash clean
+.PHONY: test1 test2 crashtest1 crashtest2 all crashes clean
 .NOTPARALLEL: all allcrash
 
 CC := gcc-5
@@ -7,9 +7,8 @@ CXX := g++-5
 PLUGIN = ../build/src/.libs/astdumper.so
 CMD = ${CXX} -fplugin=${PLUGIN} -fplugin-arg-astdumper-command=${1} ${2} -o a.out 2>${3}
 
-all: test1 test2 allcrash clean
-
-allcrash: crashtest1
+all: test1 test2 clean
+crashes: crashtest1 crashtest2 clean
 
 clean:
 	@rm a.out 2>/dev/null || true
@@ -21,3 +20,5 @@ test2:
 
 crashtest1:
 	$(call CMD,dump,crashtest1.h,crashtest1-01.txt)
+crashtest2:
+	$(call CMD,dump,crashtest2.h,crashtest2-01.txt)
