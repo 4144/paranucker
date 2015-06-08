@@ -28,9 +28,9 @@
 namespace Log
 {
 
-void log(const Node *const node,
-         const char *const text,
-         ...)
+void dump(const Node *const node,
+          const char *const text,
+          ...)
 {
     if (command != Command::Dump)
         return;
@@ -48,9 +48,9 @@ void log(const Node *const node,
     va_end(ap);
 }
 
-void logRaw(const Node *const node,
-            const char *const text,
-            ...)
+void dumpRaw(const Node *const node,
+             const char *const text,
+             ...)
 {
     if (command != Command::Dump)
         return;
@@ -78,9 +78,9 @@ void error(const char *const text,
     va_end(ap);
 }
 
-void logInt(const Node *const node,
-            const char *const text,
-            const int val)
+void dumpInt(const Node *const node,
+             const char *const text,
+             const int val)
 {
     if (command != Command::Dump || !val || !node)
         return;
@@ -90,11 +90,10 @@ void logInt(const Node *const node,
     fprintf(stderr, "\n");
 }
 
-void log(const Node *const node,
-         const int indent,
-         const char *const text,
-         ...
-         )
+void dump(const Node *const node,
+          const int indent,
+          const char *const text,
+          ...)
 {
     if (command != Command::Dump)
         return;
@@ -118,7 +117,7 @@ void log(const Node *const node,
     va_end(ap);
 }
 
-void log(const Node *const node)
+void dump(const Node *const node)
 {
     if (command == Command::SmallDump)
     {

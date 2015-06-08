@@ -31,7 +31,7 @@ namespace Generic
 void parseMultExprNode(MultExprNode *node)
 {
     fillType(node);
-    Log::log(node);
+    Log::dump(node);
 
     fillExprOperands(node);
 }

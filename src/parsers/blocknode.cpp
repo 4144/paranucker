@@ -36,7 +36,7 @@ void parseBlockNode(BlockNode *node)
         node->line = LOCATION_LINE(loc);
         node->column = LOCATION_COLUMN(loc);
     }
-    Log::log(node);
+    Log::dump(node);
 
     FOR_CHAIN(node->gccNode, it, BLOCK_VARS, DECL_CHAIN)
     {

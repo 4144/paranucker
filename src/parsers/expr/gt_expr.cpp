@@ -31,7 +31,7 @@ namespace Generic
 void parseGtExprNode(GtExprNode *node)
 {
     fillType(node);
-    Log::log(node);
+    Log::dump(node);
 
     fillExprOperands(node);
 }

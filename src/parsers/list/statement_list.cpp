@@ -31,7 +31,7 @@ namespace Generic
 void parseStatementListNode(StatementListNode *node)
 {
     fillType(node);
-    Log::log(node);
+    Log::dump(node);
 
     for (tree_stmt_iterator it = tsi_start (node->gccNode);
          !tsi_end_p (it);

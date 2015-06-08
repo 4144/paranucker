@@ -31,15 +31,15 @@ namespace Generic
 void parseIntegerTypeNode(IntegerTypeNode *node)
 {
     fillType(node);
-    Log::log(node);
+    Log::dump(node);
 
     setPrintField(node, TYPE_PRECISION, precisionBits);
     setPrintField(node, TYPE_STRING_FLAG, isChar);
     node->isUnsigned = TYPE_UNSIGNED(node->gccNode);
     if (node->isUnsigned)
-        Log::logRaw(node, "- unsigned");
+        Log::dumpRaw(node, "- unsigned");
     else
-        Log::logRaw(node, "- signed");
+        Log::dumpRaw(node, "- signed");
 
     fillTypeName(node);
     fillTypeAttributes(node);

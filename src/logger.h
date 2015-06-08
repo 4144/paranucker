@@ -26,27 +26,27 @@ struct Node;
 
 namespace Log
 {
-    void log(const Node *const node,
-             const char *const text,
-             ...);
+    void dump(const Node *const node,
+              const char *const text,
+              ...);
 
-    void logRaw(const Node *const node,
-                const char *const text,
-                ...);
+    void dumpRaw(const Node *const node,
+                 const char *const text,
+                 ...);
 
     void error(const char *const text,
                ...);
 
-    void logInt(const Node *const node,
-                const char *const text,
-                const int val);
+    void dumpInt(const Node *const node,
+                 const char *const text,
+                 const int val);
 
-    void log(const Node *const node,
-             const int indent,
-             const char *const text,
-             ...);
+    void dump(const Node *const node,
+              const int indent,
+              const char *const text,
+              ...);
 
-    void log(const Node *const node);
+    void dump(const Node *const node);
 }
 
 #endif  // LOGGER_H

@@ -31,7 +31,7 @@ namespace Generic
 void parseWhileStmtNode(WhileStmtNode *node)
 {
     fillType(node);
-    Log::log(node);
+    Log::dump(node);
 
     node->condition = createParseNode(
         node,

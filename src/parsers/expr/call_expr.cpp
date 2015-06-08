@@ -33,13 +33,13 @@ namespace Generic
 void parseCallExprNode(CallExprNode *node)
 {
     fillType(node);
-    Log::log(node);
+    Log::dump(node);
 
 // not recommended
 //    fillExprOperands(node);
 
     node->functionName = internal_fn_name(CALL_EXPR_IFN (node->gccNode));
-    Log::log(node, "- function: %s", node->functionName.c_str());
+    Log::dump(node, "- function: %s", node->functionName.c_str());
     const int argsCount = call_expr_nargs(node->gccNode);
     for (int f = 0; f < argsCount; f ++)
     {

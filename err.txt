@@ -1,3 +1,0 @@
-mkdir: невозможно создать каталог «build»: Файл существует
-mkdir: невозможно создать каталог «m4»: Файл существует
-ar: `u' modifier ignored since `D' is the default (see `U')

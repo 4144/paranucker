@@ -42,6 +42,6 @@
 
 #define setPrintField(node, macro, method) \
     node->method = macro(node->gccNode); \
-    Log::logInt(node, \
+    Log::dumpInt(node, \
         "- "#method": %d", \
         node->method)

@@ -30,7 +30,7 @@ void parseIdentifierNode(IdentifierNode *node)
 {
     fillType(node);
     node->label = IDENTIFIER_POINTER(node->gccNode);
-    Log::log(node);
+    Log::dump(node);
 }
 
 }

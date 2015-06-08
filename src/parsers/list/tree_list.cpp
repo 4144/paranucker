@@ -29,7 +29,7 @@ namespace Generic
 void parseTreeListNode(TreeListNode *node)
 {
     fillType(node);
-    Log::log(node);
+    Log::dump(node);
 
     node->purpose = createParseNode(
         node,

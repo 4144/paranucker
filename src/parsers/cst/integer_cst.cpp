@@ -49,7 +49,7 @@ void parseIntegerCstNode(IntegerCstNode *node)
     {
         node->label.append(toString(tree_to_shwi(node->gccNode)));
     }
-    Log::log(node);
+    Log::dump(node);
 }
 
 }

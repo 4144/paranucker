@@ -31,7 +31,7 @@ namespace Generic
 void parseFunctionTypeNode(FunctionTypeNode *node)
 {
     fillType(node);
-    Log::log(node);
+    Log::dump(node);
 
     fillTypeName(node);
     node->returnType = static_cast<TypeNode*>(createParseNode(

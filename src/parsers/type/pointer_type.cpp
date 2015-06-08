@@ -31,7 +31,7 @@ namespace Generic
 void parsePointerTypeNode(PointerTypeNode *node)
 {
     fillType(node);
-    Log::log(node);
+    Log::dump(node);
 
     fillTypeName(node);
     fillTypeAttributes(node);

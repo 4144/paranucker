@@ -68,7 +68,7 @@ Node *createParseNode(Node *parent,
             }
             else
             {
-                Log::log(parent,
+                Log::dump(parent,
                     1,
                     "Unsupported node type: %s - %s",
                     get_tree_code_name(TREE_CODE(gccNode)),
@@ -99,14 +99,14 @@ Node *createParseNode(Node *parent,
         {
             if (tag.empty())
             {
-                Log::log(node,
+                Log::dump(node,
                     "Wrong node type. Want %s but get %s",
                     get_tree_code_name(wantType),
                     node->nodeType.c_str());
             }
             else
             {
-                Log::log(node,
+                Log::dump(node,
                     "Wrong node type. Want %s but get %s - %s",
                     get_tree_code_name(wantType),
                     node->nodeType.c_str(),
@@ -164,7 +164,7 @@ void fillType(Node *node)
 
     node->treeNumber = static_cast<int>(TREE_CODE(node->gccNode));
     node->nodeType = get_tree_code_name(TREE_CODE(node->gccNode));
-//    Log::log(node);
+//    Log::dump(node);
 }
 
 void fillLocation(Node *node)

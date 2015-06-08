@@ -31,7 +31,7 @@ namespace Generic
 void parseAddrExprNode(AddrExprNode *node)
 {
     fillType(node);
-    Log::log(node);
+    Log::dump(node);
 
     fillExprOperands(node);
 }

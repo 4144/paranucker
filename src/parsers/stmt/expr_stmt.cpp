@@ -33,7 +33,7 @@ namespace Generic
 void parseExprStmtNode(ExprStmtNode *node)
 {
     fillType(node);
-    Log::log(node);
+    Log::dump(node);
 
     node->expression = static_cast<ExprNode*>(createParseNode(
         node,

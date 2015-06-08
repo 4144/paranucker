@@ -34,7 +34,7 @@ void parseVarDeclNode(VarDeclNode *node)
     fillLocation(node);
     fillDeclLabel(node);
 
-    Log::log(node);
+    Log::dump(node);
 
     setPrintField(node, DECL_THIS_STATIC, isStatic);
     setPrintField(node, DECL_REGISTER, isRegister);
