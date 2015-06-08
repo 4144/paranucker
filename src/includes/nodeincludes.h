@@ -27,3 +27,4 @@
 #include "nodes/expr/mult_expr.h"
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/call_expr.h"
+#include "nodes/expr/addr_expr.h"
