@@ -28,3 +28,4 @@ parserDefine(ModifyExpr);
 parserDefine(CallExpr);
 parserDefine(AddrExpr);
 parserDefine(EqExpr);
+parserDefine(LtExpr);

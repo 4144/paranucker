@@ -29,3 +29,4 @@
 #include "nodes/expr/call_expr.h"
 #include "nodes/expr/addr_expr.h"
 #include "nodes/expr/eq_expr.h"
+#include "nodes/expr/lt_expr.h"
