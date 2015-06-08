@@ -525,6 +525,62 @@
 10 integer_cst 
 10 integer_cst 
 9 integer_cst 
+8 cond_expr 
+9 eq_expr 
+10 parm_decl test1.c
+11 integer_type 
+12 type_decl <built-in>
+12 integer_cst 
+12 integer_cst 
+12 integer_cst 
+11 integer_cst 
+10 integer_cst 
+9 cleanup_point_expr 
+10 expr_stmt 
+11 convert_expr 
+12 modify_expr 
+13 parm_decl test1.c
+14 integer_type 
+15 type_decl <built-in>
+15 integer_cst 
+15 integer_cst 
+15 integer_cst 
+14 integer_cst 
+13 mult_expr 
+14 plus_expr 
+15 parm_decl test1.c
+16 integer_type 
+17 type_decl <built-in>
+17 integer_cst 
+17 integer_cst 
+17 integer_cst 
+16 integer_cst 
+15 parm_decl test1.c
+16 integer_type 
+17 type_decl <built-in>
+17 integer_cst 
+17 integer_cst 
+17 integer_cst 
+16 integer_cst 
+14 var_decl test1.c
+15 integer_cst 
+15 integer_type 
+16 type_decl <built-in>
+16 integer_cst 
+16 integer_cst 
+16 integer_cst 
+9 cleanup_point_expr 
+10 expr_stmt 
+11 convert_expr 
+12 modify_expr 
+13 parm_decl test1.c
+14 integer_type 
+15 type_decl <built-in>
+15 integer_cst 
+15 integer_cst 
+15 integer_cst 
+14 integer_cst 
+13 integer_cst 
 6 integer_cst 
 6 integer_cst 
 3 if_stmt 
