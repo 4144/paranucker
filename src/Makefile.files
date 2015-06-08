@@ -98,4 +98,6 @@ SRC = nodes/base/cst.h \
       nodes/expr/indirect_ref.h \
       parsers/expr/indirect_ref.cpp \
       nodes/expr/loop_expr.h \
-      parsers/expr/loop_expr.cpp
+      parsers/expr/loop_expr.cpp \
+      nodes/expr/nop_expr.h \
+      parsers/expr/nop_expr.cpp
