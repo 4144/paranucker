@@ -31,3 +31,4 @@ parserDefine(EqExpr);
 parserDefine(LtExpr);
 parserDefine(LeExpr);
 parserDefine(GtExpr);
+parserDefine(GeExpr);
