@@ -78,4 +78,6 @@ SRC = nodes/base/cst.h \
       nodes/expr/mult_expr.h \
       parsers/expr/mult_expr.cpp \
       nodes/expr/modify_expr.h \
-      parsers/expr/modify_expr.cpp
+      parsers/expr/modify_expr.cpp \
+      nodes/expr/call_expr.h \
+      parsers/expr/call_expr.cpp

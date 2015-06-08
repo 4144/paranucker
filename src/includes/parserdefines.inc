@@ -25,3 +25,4 @@ parserDefine(PlusExpr);
 parserDefine(MinusExpr);
 parserDefine(MultExpr);
 parserDefine(ModifyExpr);
+parserDefine(CallExpr);
