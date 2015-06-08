@@ -3,6 +3,4 @@ Unsupported node type: indirect_ref
 Unsupported node type: indirect_ref
 Unsupported node type: indirect_ref
 Unsupported node type: loop_expr
-Unsupported node type: eq_expr
 Unsupported node type: cond_expr
-Unsupported node type: eq_expr

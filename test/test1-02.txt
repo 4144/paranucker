@@ -297,6 +297,15 @@
 3 integer_cst 
 2 integer_cst 
 1 if_stmt 
+2 eq_expr 
+3 parm_decl test1.c
+4 integer_type 
+5 type_decl <built-in>
+5 integer_cst 
+5 integer_cst 
+5 integer_cst 
+4 integer_cst 
+3 integer_cst 
 2 cleanup_point_expr 
 3 expr_stmt 
 4 convert_expr 
@@ -480,6 +489,15 @@
 6 integer_cst 
 6 integer_cst 
 3 if_stmt 
+4 eq_expr 
+5 var_decl test1.c
+6 integer_cst 
+6 integer_type 
+7 type_decl <built-in>
+7 integer_cst 
+7 integer_cst 
+7 integer_cst 
+5 integer_cst 
 4 return_expr 
 5 init_expr 
 6 result_decl test1.c
