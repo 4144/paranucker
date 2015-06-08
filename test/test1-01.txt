@@ -127,7 +127,11 @@ function_decl main test1.c 14:5
     cleanup_point_expr - statement
      expr_stmt - operand
       convert_expr - expresssion
-       Unsupported node type: call_expr - operand - expresssion
+       call_expr - operand
+       - function: LOAD_LANES - operand
+        Unsupported node type: addr_expr - function - operand
+        integer_cst 1 - arg
+        integer_cst 2 - arg
     decl_expr - statement
      var_decl k test1.c 17:14 - operand
      - isUsed: 1
@@ -155,7 +159,11 @@ function_decl main test1.c 14:5
        integer_cst 127 - max value
     cleanup_point_expr - statement
      expr_stmt - operand
-      Unsupported node type: call_expr - expresssion - operand
+      call_expr - expresssion
+      - function: LOAD_LANES - expresssion
+       Unsupported node type: addr_expr - function - expresssion
+       integer_cst 0 - arg
+       Unsupported node type: addr_expr - arg - expresssion
     return_expr - statement
      init_expr - operand
       result_decl test1.c 14:10 - operand
@@ -468,7 +476,11 @@ function_decl fun1 test1.c 29:5
          integer_cst 2147483647 - max value
    cleanup_point_expr - statement
     expr_stmt - operand
-     Unsupported node type: call_expr - expresssion - operand
+     call_expr - expresssion
+     - function: LOAD_LANES - expresssion
+      Unsupported node type: addr_expr - function - expresssion
+      integer_cst 0 - arg
+      integer_cst 1 - arg
    if_stmt - statement
     Unsupported node type: eq_expr - condition - statement
     return_expr - then

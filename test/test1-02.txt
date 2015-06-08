@@ -90,6 +90,9 @@
 4 cleanup_point_expr 
 5 expr_stmt 
 6 convert_expr 
+7 call_expr 
+8 integer_cst 
+8 integer_cst 
 4 decl_expr 
 5 var_decl test1.c
 6 integer_cst 
@@ -108,6 +111,8 @@
 7 integer_cst 
 4 cleanup_point_expr 
 5 expr_stmt 
+6 call_expr 
+7 integer_cst 
 4 return_expr 
 5 init_expr 
 6 result_decl test1.c
@@ -322,6 +327,9 @@
 9 integer_cst 
 3 cleanup_point_expr 
 4 expr_stmt 
+5 call_expr 
+6 integer_cst 
+6 integer_cst 
 3 if_stmt 
 4 return_expr 
 5 init_expr 
