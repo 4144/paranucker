@@ -31,3 +31,4 @@
 #include "nodes/expr/eq_expr.h"
 #include "nodes/expr/lt_expr.h"
 #include "nodes/expr/le_expr.h"
+#include "nodes/expr/gt_expr.h"
