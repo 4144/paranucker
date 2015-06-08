@@ -100,4 +100,6 @@ SRC = nodes/base/cst.h \
       nodes/expr/loop_expr.h \
       parsers/expr/loop_expr.cpp \
       nodes/expr/nop_expr.h \
-      parsers/expr/nop_expr.cpp
+      parsers/expr/nop_expr.cpp \
+      nodes/expr/cond_expr.h \
+      parsers/expr/cond_expr.cpp

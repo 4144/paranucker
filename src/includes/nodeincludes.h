@@ -37,3 +37,4 @@
 #include "nodes/expr/indirect_ref.h"
 #include "nodes/expr/loop_expr.h"
 #include "nodes/expr/nop_expr.h"
+#include "nodes/expr/cond_expr.h"

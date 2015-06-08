@@ -36,3 +36,4 @@ parserDefine(NeExpr);
 parserDefine(IndirectRef);
 parserDefine(LoopExpr);
 parserDefine(NopExpr);
+parserDefine(CondExpr);
