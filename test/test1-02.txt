@@ -252,6 +252,7 @@
 16 integer_cst 
 14 integer_cst 
 10 statement_list 
+11 loop_expr 
 7 integer_cst 
 7 addr_expr 
 8 var_decl test1.c

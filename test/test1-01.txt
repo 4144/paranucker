@@ -355,7 +355,8 @@ function_decl main test1.c 14:5
                 integer_cst 64 - parm size
               integer_cst 20 - operand
           statement_list - statement
-           Unsupported node type: loop_expr - statement - statement
+           loop_expr - statement
+            Unsupported node type: nop_expr - body - statement
        integer_cst 0 - arg
        addr_expr - arg
         var_decl k test1.c 17:14 - operand
