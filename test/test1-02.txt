@@ -51,11 +51,29 @@
 3 expr_stmt 
 4 convert_expr 
 5 modify_expr 
+6 indirect_ref 
+7 parm_decl test1.c
+8 pointer_type 
+9 integer_type 
+10 type_decl <built-in>
+10 integer_cst 
+10 integer_cst 
+10 integer_cst 
+8 integer_cst 
 6 integer_cst 
 2 cleanup_point_expr 
 3 expr_stmt 
 4 convert_expr 
 5 modify_expr 
+6 indirect_ref 
+7 parm_decl test1.c
+8 pointer_type 
+9 integer_type 
+10 type_decl <built-in>
+10 integer_cst 
+10 integer_cst 
+10 integer_cst 
+8 integer_cst 
 6 integer_cst 
 2 while_stmt 
 3 integer_cst 
@@ -209,11 +227,29 @@
 11 expr_stmt 
 12 convert_expr 
 13 modify_expr 
+14 indirect_ref 
+15 parm_decl test1.c
+16 pointer_type 
+17 integer_type 
+18 type_decl <built-in>
+18 integer_cst 
+18 integer_cst 
+18 integer_cst 
+16 integer_cst 
 14 integer_cst 
 10 cleanup_point_expr 
 11 expr_stmt 
 12 convert_expr 
 13 modify_expr 
+14 indirect_ref 
+15 parm_decl test1.c
+16 pointer_type 
+17 integer_type 
+18 type_decl <built-in>
+18 integer_cst 
+18 integer_cst 
+18 integer_cst 
+16 integer_cst 
 14 integer_cst 
 10 statement_list 
 7 integer_cst 
