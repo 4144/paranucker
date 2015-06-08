@@ -102,14 +102,14 @@ Node *createParseNode(Node *parent,
                 Log::dump(node,
                     "Wrong node type. Want %s but get %s",
                     get_tree_code_name(wantType),
-                    node->nodeType.c_str());
+                    node->nodeTypeName.c_str());
             }
             else
             {
                 Log::dump(node,
                     "Wrong node type. Want %s but get %s - %s",
                     get_tree_code_name(wantType),
-                    node->nodeType.c_str(),
+                    node->nodeTypeName.c_str(),
                     tag.c_str());
             }
             if (!parent)
@@ -163,7 +163,8 @@ void fillType(Node *node)
     }
 
     node->treeNumber = static_cast<int>(TREE_CODE(node->gccNode));
-    node->nodeType = get_tree_code_name(TREE_CODE(node->gccNode));
+    node->nodeType = TREE_CODE(node->gccNode);
+    node->nodeTypeName = get_tree_code_name(TREE_CODE(node->gccNode));
 //    Log::dump(node);
 }
 

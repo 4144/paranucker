@@ -30,12 +30,13 @@ struct Node
 {
     Node() :
         parent(nullptr),
-        nodeType(),
+        nodeTypeName(),
         label(),
         file(),
         tag(),
         childs(),
         gccNode(nullptr),
+        nodeType(ERROR_MARK),
         line(-1),
         column(-1),
         treeNumber(0),
@@ -59,12 +60,13 @@ struct Node
     }
 
     Node *parent;
-    std::string nodeType;
+    std::string nodeTypeName;
     std::string label;
     std::string file;
     std::string tag;
     std::vector<Node*> childs;
     tree gccNode;
+    tree_code nodeType;
     int line;
     int column;
     int treeNumber;

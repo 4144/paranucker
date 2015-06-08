@@ -1,4 +1,8 @@
-SRC = nodes/base/cst.h \
+SRC = analysis/analysis.cpp \
+      analysis/analysis.h \
+      analysis/function.cpp \
+      analysis/function.h \
+      nodes/base/cst.h \
       nodes/base/decl.h \
       nodes/base/expr.h \
       nodes/base/node.h \

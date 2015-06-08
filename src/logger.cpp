@@ -78,6 +78,15 @@ void error(const char *const text,
     va_end(ap);
 }
 
+void log(const char *const text,
+         ...)
+{
+    va_list ap;
+    va_start(ap, text);
+    vfprintf(stderr, text, ap);
+    va_end(ap);
+}
+
 void dumpInt(const Node *const node,
              const char *const text,
              const int val)
@@ -124,7 +133,7 @@ void dump(const Node *const node)
         fprintf(stderr,
             "%d %s %s\n",
             node->indent,
-            node->nodeType.c_str(),
+            node->nodeTypeName.c_str(),
             node->file.c_str());
         return;
     }
@@ -138,7 +147,7 @@ void dump(const Node *const node)
         return;
     }
     fprintf(stderr, "%s", node->getIndent().c_str());
-    fprintf(stderr, "%s", node->nodeType.c_str());
+    fprintf(stderr, "%s", node->nodeTypeName.c_str());
     if (!node->label.empty())
         fprintf(stderr, " %s", node->label.c_str());
     if (!node->file.empty())

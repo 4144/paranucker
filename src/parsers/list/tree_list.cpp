@@ -52,7 +52,7 @@ void parseTreeListNode(TreeListNode *node)
     node->chain = createParseNode(
         node,
         TREE_CHAIN(node->gccNode),
-        node->tag);
+        "chain");
 
 /* look like infinite loop
     FOR_CHAIN(node->gccNode, it, TREE_CHAIN, TREE_CHAIN)

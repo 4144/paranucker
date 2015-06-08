@@ -17,39 +17,24 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef LOGGER_H
-#define LOGGER_H
+#ifndef ANALYSIS_FUNCTION_H
+#define ANALYSIS_FUNCTION_H
 
-#include <string>
+#include "includes.h"
 
-struct Node;
+struct FunctionDeclNode;
+struct TreeListNode;
+struct TypeNode;
 
-namespace Log
+namespace Analysis
 {
-    void dump(const Node *const node,
-              const char *const text,
-              ...);
+    void analyseFunction(FunctionDeclNode *node);
 
-    void dumpRaw(const Node *const node,
-                 const char *const text,
-                 ...);
+    void getFunctionArgTypes(FunctionDeclNode *node,
+                             std::vector<TypeNode*> &arr);
 
-    void error(const char *const text,
-               ...);
-
-    void log(const char *const text,
-             ...);
-
-    void dumpInt(const Node *const node,
-                 const char *const text,
-                 const int val);
-
-    void dump(const Node *const node,
-              const int indent,
-              const char *const text,
-              ...);
-
-    void dump(const Node *const node);
+    void getTypesFromTreeList(TreeListNode *list,
+                              std::vector<TypeNode*> &arr);
 }
 
-#endif  // LOGGER_H
+#endif // ANALYSIS_FUNCTION_H

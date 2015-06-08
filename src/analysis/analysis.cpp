@@ -17,39 +17,36 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef LOGGER_H
-#define LOGGER_H
+#include "analysis/analysis.h"
 
-#include <string>
+#include "command.h"
 
-struct Node;
+#include "analysis/function.h"
 
-namespace Log
+#include "nodes/decl/function_decl.h"
+
+#include "localconsts.h"
+
+namespace Analysis
 {
-    void dump(const Node *const node,
-              const char *const text,
-              ...);
 
-    void dumpRaw(const Node *const node,
-                 const char *const text,
-                 ...);
+void walkTree(Node *node)
+{
+    analyseNode(node);
 
-    void error(const char *const text,
-               ...);
-
-    void log(const char *const text,
-             ...);
-
-    void dumpInt(const Node *const node,
-                 const char *const text,
-                 const int val);
-
-    void dump(const Node *const node,
-              const int indent,
-              const char *const text,
-              ...);
-
-    void dump(const Node *const node);
+    FOR_EACH (std::vector<Node*>::iterator, it, node->childs)
+    {
+        walkTree(*it);
+    }
 }
 
-#endif  // LOGGER_H
+void analyseNode(Node *node)
+{
+    // searching function declaration
+    if (node->nodeType == FUNCTION_DECL)
+    {
+        analyseFunction(static_cast<FunctionDeclNode*>(node));
+    }
+}
+
+}

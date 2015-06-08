@@ -17,39 +17,18 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef LOGGER_H
-#define LOGGER_H
+#ifndef ANALYSIS_ANALYSIS_H
+#define ANALYSIS_ANALYSIS_H
 
-#include <string>
+#include "includes.h"
 
 struct Node;
 
-namespace Log
+namespace Analysis
 {
-    void dump(const Node *const node,
-              const char *const text,
-              ...);
+    void walkTree(Node *node);
 
-    void dumpRaw(const Node *const node,
-                 const char *const text,
-                 ...);
-
-    void error(const char *const text,
-               ...);
-
-    void log(const char *const text,
-             ...);
-
-    void dumpInt(const Node *const node,
-                 const char *const text,
-                 const int val);
-
-    void dump(const Node *const node,
-              const int indent,
-              const char *const text,
-              ...);
-
-    void dump(const Node *const node);
+    void analyseNode(Node *node);
 }
 
-#endif  // LOGGER_H
+#endif // ANALYSIS_ANALYSIS_H

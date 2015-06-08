@@ -25,6 +25,8 @@
 
 #include "command.h"
 
+#include "analysis/analysis.h"
+
 #include "parsers/generic.h"
 
 #include "localconsts.h"
@@ -39,6 +41,8 @@ static void pre_generic(void *gcc_data,
                         void *user_data A_UNUSED)
 {
     Node *node = Generic::parseNodes((tree)gcc_data);
+    if (command == Command::FindArgs)
+        Analysis::walkTree(node);
     Generic::cleanAllNodes(node);
 }
 
@@ -72,6 +76,10 @@ int plugin_init (struct plugin_name_args *plugin_info,
             else if (cmd == "dumpunsupported")
             {
                 command = Command::DumpUnsupported;
+            }
+            else if (cmd == "findargs")
+            {
+                command = Command::FindArgs;
             }
             else
             {
