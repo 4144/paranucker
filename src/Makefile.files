@@ -94,4 +94,6 @@ SRC = nodes/base/cst.h \
       nodes/expr/ge_expr.h \
       parsers/expr/ge_expr.cpp \
       nodes/expr/ne_expr.h \
-      parsers/expr/ne_expr.cpp
+      parsers/expr/ne_expr.cpp \
+      nodes/expr/indirect_ref.h \
+      parsers/expr/indirect_ref.cpp

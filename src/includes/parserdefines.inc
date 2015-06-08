@@ -33,3 +33,4 @@ parserDefine(LeExpr);
 parserDefine(GtExpr);
 parserDefine(GeExpr);
 parserDefine(NeExpr);
+parserDefine(IndirectRef);
