@@ -40,6 +40,12 @@
 #define FOR_CHAIN(node, var, function, next) \
     for (tree var = function(node); var; var = next(var))
 
+#define FOR_TREE_LIST(node) \
+    for (; node; node = node->chain)
+
+#define FOR_TREE_LIST2(node, start) \
+    for (TreeListNode *node = start; node; node = node->chain)
+
 #define setPrintField(node, macro, method) \
     node->method = macro(node->gccNode); \
     Log::dumpInt(node, \

@@ -32,9 +32,6 @@ namespace Analysis
 
     void getFunctionArgTypes(FunctionDeclNode *node,
                              std::vector<TypeNode*> &arr);
-
-    void getTypesFromTreeList(TreeListNode *list,
-                              std::vector<TypeNode*> &arr);
 }
 
 #endif // ANALYSIS_FUNCTION_H

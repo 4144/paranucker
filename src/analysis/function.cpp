@@ -33,17 +33,6 @@
 namespace Analysis
 {
 
-// walking TREE_LIST and getting all types
-void getTypesFromTreeList(TreeListNode *list,
-                          std::vector<TypeNode*> &arr)
-{
-    while (list)
-    {
-        arr.push_back(static_cast<TypeNode*>(list->value));
-        list = static_cast<TreeListNode*>(list->chain);
-    }
-}
-
 // put arg types into arr
 void getFunctionArgTypes(FunctionDeclNode *node,
                          std::vector<TypeNode*> &arr)
@@ -51,19 +40,24 @@ void getFunctionArgTypes(FunctionDeclNode *node,
     // function not have type
     if (!node->functionType)
         return;
-    getTypesFromTreeList(node->functionType->argTypes, arr);
+
+    // walk in TREE_LIST and get value nodes
+    FOR_TREE_LIST2(list, node->functionType->argTypes)
+    {
+        arr.push_back(static_cast<TypeNode*>(list->value));
+    }
 }
 
+// find in TREE_LIST purpose with given label and get value
 TreeListNode *findTreeListPurposeValue(TreeListNode *list,
                                        const std::string &name)
 {
-    while (list)
+    FOR_TREE_LIST(list)
     {
-        if (list->purpose->label == name)
+        if (list->purpose && list->purpose->label == name)
         {
             return static_cast<TreeListNode*>(list->value);
         }
-        list = static_cast<TreeListNode*>(list->chain);
     }
     return nullptr;
 }
@@ -80,13 +74,15 @@ void getFunctionParamsNonNullAttributes(FunctionDeclNode *node,
     // no attribute nonnull
     if (!list)
         return;
-    while (list)
+
+    // get all labels from TREE_LIST and convert to int.
+    // tree based on constants for attribute nonnull
+    FOR_TREE_LIST(list)
     {
         if (list->value)
         {
             arr.insert(atoi(list->value->label.c_str()));
         }
-        list = static_cast<TreeListNode*>(list->chain);
     }
 }
 
@@ -98,6 +94,7 @@ void analyseFunction(FunctionDeclNode *node)
 
     std::vector<TypeNode*> types;
     std::set<int> nonNull;
+    std::set<std::string> checkNames;
 
     getFunctionArgTypes(node, types);
     getFunctionParamsNonNullAttributes(node, nonNull);
@@ -108,18 +105,15 @@ void analyseFunction(FunctionDeclNode *node)
         for (int f = 0; f < sz; f ++)
         {
             const TypeNode *const type = types[f];
+            if (type->nodeType != POINTER_TYPE)
+                continue;
             const ParmDeclNode *const name = node->args[f];
-            if (nonNull.find(f + 1) != nonNull.end())
-            {
-                Log::log("%s %s nonnull, ",
-                    type->nodeTypeName.c_str(),
-                    name->label.c_str());
-            }
-            else
+            if (nonNull.find(f + 1) == nonNull.end())
             {
                 Log::log("%s %s, ",
                     type->nodeTypeName.c_str(),
                     name->label.c_str());
+                checkNames.insert(name->label);
             }
         }
         Log::log("\n");

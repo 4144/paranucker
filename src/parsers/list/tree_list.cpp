@@ -49,10 +49,11 @@ void parseTreeListNode(TreeListNode *node)
         "attribute");
 */
 
-    node->chain = createParseNode(
+    node->chain = static_cast<TreeListNode*>(createParseNode(
         node,
         TREE_CHAIN(node->gccNode),
-        "chain");
+        TREE_LIST,
+        "chain"));
 
 /* look like infinite loop
     FOR_CHAIN(node->gccNode, it, TREE_CHAIN, TREE_CHAIN)

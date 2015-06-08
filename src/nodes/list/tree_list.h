@@ -36,7 +36,7 @@ struct TreeListNode : public Node
 
     Node *purpose;
     Node *value;
-    Node *chain;
+    TreeListNode *chain;
 };
 
 #endif // NODES_TREELISTNODE_H
