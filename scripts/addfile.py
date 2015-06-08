@@ -55,6 +55,10 @@ if dirName != "":
         suffixSize = 4
         parserAdditionalCode2 = "\n    fillExprOperands(node);\n"
         parserBaseInclude = "#include \"parsers/base/expr.h\"\n"
+    elif nodeName[-3:] == "ref":
+        suffixSize = 3
+        parserAdditionalCode2 = "\n    fillExprOperands(node);\n"
+        parserBaseInclude = "#include \"parsers/base/expr.h\"\n"
     elif nodeName[-4:] == "stmt":
         suffixSize = 4
         parserBaseInclude = "#include \"parsers/base/stmt.h\"\n"
