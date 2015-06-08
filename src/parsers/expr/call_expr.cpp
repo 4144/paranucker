@@ -40,12 +40,6 @@ void parseCallExprNode(CallExprNode *node)
 
     node->functionName = internal_fn_name(CALL_EXPR_IFN (node->gccNode));
     Log::log(node, "- function: %s", node->functionName.c_str());
-
-    node->function = createParseNode(
-        node,
-        CALL_EXPR_FN(node->gccNode),
-        "function");
-
     const int argsCount = call_expr_nargs(node->gccNode);
     for (int f = 0; f < argsCount; f ++)
     {
@@ -59,6 +53,14 @@ void parseCallExprNode(CallExprNode *node)
         node,
         CALL_EXPR_STATIC_CHAIN(node->gccNode),
         "chain");
+
+    if (node->functionName == "LOAD_LANES")
+        return;
+
+    node->function = createParseNode(
+        node,
+        CALL_EXPR_FN(node->gccNode),
+        "function");
 }
 
 }
