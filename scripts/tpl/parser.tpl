@@ -30,7 +30,7 @@ namespace Generic
 void parse{0}Node({0}Node *node)
 {{
     fillType(node);
-{3}    Log::log(node);
+{3}    Log::dump(node);
 {4}}}
 
 }}
