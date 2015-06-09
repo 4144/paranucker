@@ -1,4 +1,3 @@
-main: 
 func4_1: pointer_type b, pointer_type c, 
 func4_2: pointer_type c, 
 func4_3: 
