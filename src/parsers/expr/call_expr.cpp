@@ -42,8 +42,8 @@ void parseCallExprNode(CallExprNode *node)
     node->functionName = internal_fn_name(CALL_EXPR_IFN (node->gccNode));
     Log::dump(node, "- function: %s", node->functionName.c_str());
 
-    if (!node->parseChilds)
-        return;
+//    if (!node->parseChilds)
+//        return;
 
     const int argsCount = call_expr_nargs(node->gccNode);
     for (int f = 0; f < argsCount; f ++)

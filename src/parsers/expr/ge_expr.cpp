@@ -34,8 +34,8 @@ void parseGeExprNode(GeExprNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
-    if (!node->parseChilds)
-        return;
+//    if (!node->parseChilds)
+//        return;
 
     fillExprOperands(node);
 }
