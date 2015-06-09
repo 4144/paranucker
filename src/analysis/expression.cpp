@@ -38,7 +38,7 @@ namespace Analysis
 WalkItem analyseModifyExpr(ModifyExprNode *node, WalkItem wi)
 {
     // need atleast one arg for check
-    if (node->args.empty())
+    if (node->args.empty() || command == FindArgs)
         return wi;
 
     Node *arg = node->args[0];

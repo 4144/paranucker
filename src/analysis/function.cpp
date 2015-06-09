@@ -107,25 +107,28 @@ WalkItem analyseFunction(FunctionDeclNode *node, WalkItem wi)
     // here need check is variables already present in wi2.checkNullVars
 
     if (command == Command::FindArgs)
-    {
         Log::log("%s: ", node->label.c_str());
-        const int sz = node->args.size();
-        for (int f = 0; f < sz; f ++)
+
+    const int sz = node->args.size();
+    for (int f = 0; f < sz; f ++)
+    {
+        const TypeNode *const type = types[f];
+        if (type->nodeType != POINTER_TYPE)
+            continue;
+        const ParmDeclNode *const name = node->args[f];
+        if (nonNull.find(f + 1) == nonNull.end())
         {
-            const TypeNode *const type = types[f];
-            if (type->nodeType != POINTER_TYPE)
-                continue;
-            const ParmDeclNode *const name = node->args[f];
-            if (nonNull.find(f + 1) == nonNull.end())
+            if (command == Command::FindArgs)
             {
                 Log::log("%s %s, ",
                     type->nodeTypeName.c_str(),
                     name->label.c_str());
-                wi2.checkNullVars.insert(name->label);
             }
+            wi2.checkNullVars.insert(name->label);
         }
-        Log::log("\n");
     }
+    if (command == Command::FindArgs)
+        Log::log("\n");
 
     if (!wi2.checkNullVars.empty())
     {

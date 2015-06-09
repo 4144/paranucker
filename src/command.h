@@ -27,7 +27,8 @@ enum Command : int
     SmallDump,
     DumpUnsupported,
     MemoryUsage,
-    FindArgs
+    FindArgs,
+    DetectNullPointers
 };
 
 extern Command command;
