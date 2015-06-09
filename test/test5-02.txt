@@ -1,0 +1,2 @@
+func1: pointer_type b, 
+func2: pointer_type b, 

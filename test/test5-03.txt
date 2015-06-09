@@ -1,0 +1,4 @@
+test5.c: In function 'void func1(int, int*, char)':
+test5.c:6:13: warning: Using variable without check for NULL
+     *b = 100;
+             ^
