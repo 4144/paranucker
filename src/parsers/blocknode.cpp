@@ -35,6 +35,7 @@ void parseBlockNode(BlockNode *node)
         node->file = LOCATION_FILE(loc);
         node->line = LOCATION_LINE(loc);
         node->column = LOCATION_COLUMN(loc);
+        node->location = loc;
     }
     Log::dump(node);
 

@@ -37,6 +37,7 @@ struct Node
         childs(),
         gccNode(nullptr),
         nodeType(ERROR_MARK),
+        location(0),
         line(-1),
         column(-1),
         treeNumber(0),
@@ -67,6 +68,7 @@ struct Node
     std::vector<Node*> childs;
     tree gccNode;
     tree_code nodeType;
+    location_t location;
     int line;
     int column;
     int treeNumber;

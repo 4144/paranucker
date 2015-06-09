@@ -176,6 +176,7 @@ void fillLocation(Node *node)
     }
 
     location_t loc = DECL_SOURCE_LOCATION(node->gccNode);
+    node->location = loc;
     node->file = LOCATION_FILE(loc);
     node->line = LOCATION_LINE(loc);
     node->column = LOCATION_COLUMN(loc);
