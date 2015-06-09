@@ -1,4 +1,4 @@
 main: 
-func4_1: integer_type a, pointer_type b, pointer_type c, 
-func4_2: integer_type a, pointer_type b nonnull, pointer_type c, 
-func4_3: integer_type a, pointer_type b nonnull, pointer_type c nonnull, 
+func4_1: pointer_type b, pointer_type c, 
+func4_2: pointer_type c, 
+func4_3: 
