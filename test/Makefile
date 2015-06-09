@@ -5,7 +5,7 @@ CC := gcc-5
 CXX := g++-5
 
 PLUGIN = ../build/src/.libs/astdumper.so
-CMD = ${CXX} -fplugin=${PLUGIN} -fplugin-arg-astdumper-command=${1} ${2} -o a.out 2>${3}
+CMD = ${CXX} -c -fplugin=${PLUGIN} -fplugin-arg-astdumper-command=${1} ${2} -o a.out 2>${3}
 
 all: test1 test2 test3 test4 clean
 crashes: crashtest1 crashtest2 clean
