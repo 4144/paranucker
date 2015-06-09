@@ -76,7 +76,7 @@ function_decl func4_1 test4.c 5:6
     integer_cst -128 - min value
     integer_cst 127 - max value
   integer_cst 64 - parm size
- return_expr - code
+ return_expr test4.c 7:5 - code
 function_decl func4_2 test4.c 10:6
 - isPublic: 1
  function_type - function type
@@ -159,7 +159,7 @@ function_decl func4_2 test4.c 10:6
     integer_cst -128 - min value
     integer_cst 127 - max value
   integer_cst 64 - parm size
- return_expr - code
+ return_expr test4.c 12:5 - code
 function_decl func4_3 test4.c 15:6
 - isPublic: 1
  function_type - function type
@@ -244,4 +244,4 @@ function_decl func4_3 test4.c 15:6
     integer_cst -128 - min value
     integer_cst 127 - max value
   integer_cst 64 - parm size
- return_expr - code
+ return_expr test4.c 17:5 - code
