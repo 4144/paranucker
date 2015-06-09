@@ -37,3 +37,4 @@ parserDefine(IndirectRef);
 parserDefine(LoopExpr);
 parserDefine(NopExpr);
 parserDefine(CondExpr);
+parserDefine(PointerPlusExpr);
