@@ -31,6 +31,7 @@ namespace Generic
 void parseNeExprNode(NeExprNode *node)
 {
     fillType(node);
+    fillExprLocation(node);
     Log::dump(node);
 
     fillExprOperands(node);

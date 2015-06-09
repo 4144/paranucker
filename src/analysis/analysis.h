@@ -32,6 +32,8 @@ namespace Analysis
     void walkTree(Node *node, WalkItem wi);
 
     WalkItem analyseNode(Node *node, WalkItem wi);
+
+    int findBackLocation(Node *node);
 }
 
 #endif // ANALYSIS_ANALYSIS_H

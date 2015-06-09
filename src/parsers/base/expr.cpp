@@ -30,6 +30,23 @@
 namespace Generic
 {
 
+void fillExprLocation(Node *node)
+{
+    if (!node || node->gccNode == NULL_TREE)
+    {
+        return;
+    }
+
+    if (EXPR_HAS_LOCATION(node->gccNode))
+    {
+        location_t loc = EXPR_LOCATION(node->gccNode);
+        node->location = loc;
+        node->file = LOCATION_FILE(loc);
+        node->line = LOCATION_LINE(loc);
+        node->column = LOCATION_COLUMN(loc);
+    }
+}
+
 void fillExprOperands(ExprNode *node)
 {
     if (!node || node->gccNode == NULL_TREE)

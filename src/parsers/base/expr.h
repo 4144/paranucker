@@ -21,9 +21,12 @@
 #define PARSERS_BASE_EXPR_H
 
 struct ExprNode;
+struct Node;
 
 namespace Generic
 {
+    void fillExprLocation(Node *node);
+
     void fillExprOperands(ExprNode *node);
 }
 

@@ -51,6 +51,17 @@ void walkTree(Node *node, WalkItem wi)
     }
 }
 
+int findBackLocation(Node *node)
+{
+    location_t loc = 0;
+    while(node && !loc)
+    {
+        loc = node->location;
+        node = node->parent;
+    }
+    return loc;
+}
+
 WalkItem analyseNode(Node *node, WalkItem wi)
 {
     // searching function declaration

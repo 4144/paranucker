@@ -33,6 +33,7 @@ namespace Generic
 void parseCallExprNode(CallExprNode *node)
 {
     fillType(node);
+    fillExprLocation(node);
     Log::dump(node);
 
 // not recommended

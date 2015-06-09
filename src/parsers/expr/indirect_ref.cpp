@@ -31,6 +31,7 @@ namespace Generic
 void parseIndirectRefNode(IndirectRefNode *node)
 {
     fillType(node);
+    fillExprLocation(node);
     Log::dump(node);
 
     fillExprOperands(node);

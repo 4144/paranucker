@@ -53,7 +53,8 @@ WalkItem analyseModifyExpr(ModifyExprNode *node, WalkItem wi)
         {
             if (wi.checkNullVars.find(arg->label) != wi.checkNullVars.end())
             {
-                Log::warn(arg->location, "Using variable without check for NULL");
+                Log::warn(findBackLocation(node),
+                    "Using variable without check for NULL");
             }
         }
     }
