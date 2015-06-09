@@ -1,5 +1,7 @@
 SRC = analysis/analysis.cpp \
       analysis/analysis.h \
+      analysis/declaration.cpp \
+      analysis/declaration.h \
       analysis/expression.cpp \
       analysis/expression.h \
       analysis/function.cpp \

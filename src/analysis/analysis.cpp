@@ -20,12 +20,15 @@
 #include "analysis/analysis.h"
 
 #include "command.h"
+#include "logger.h"
 
+#include "analysis/declaration.h"
 #include "analysis/expression.h"
 #include "analysis/function.h"
 #include "analysis/walkitem.h"
 
 #include "nodes/decl/function_decl.h"
+#include "nodes/decl/var_decl.h"
 
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
@@ -74,6 +77,8 @@ WalkItem analyseNode(Node *node, WalkItem wi)
             return analyseModifyExpr(static_cast<ModifyExprNode*>(node), wi);
         case POINTER_PLUS_EXPR:
             return analysePointerPlusExpr(static_cast<PointerPlusExprNode*>(node), wi);
+        case VAR_DECL:
+            return analyseVarDecl(static_cast<VarDeclNode*>(node), wi);
         default:
             break;
     }
