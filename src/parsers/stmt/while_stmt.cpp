@@ -33,6 +33,9 @@ void parseWhileStmtNode(WhileStmtNode *node)
     fillType(node);
     Log::dump(node);
 
+    if (!node->parseChilds)
+        return;
+
     node->condition = createParseNode(
         node,
         WHILE_COND(node->gccNode),

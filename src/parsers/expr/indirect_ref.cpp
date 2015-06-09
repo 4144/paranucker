@@ -34,6 +34,9 @@ void parseIndirectRefNode(IndirectRefNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
+    if (!node->parseChilds)
+        return;
+
     fillExprOperands(node);
 }
 

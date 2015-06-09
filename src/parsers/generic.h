@@ -42,12 +42,14 @@ namespace Generic
 
     Node *createParseNode(Node *parent,
                           tree gccNode,
-                          std::string tag = "");
+                          std::string tag = "",
+                          bool parseChilds = true);
 
     Node *createParseNode(Node *parent,
                           tree gccNode,
                           tree_code wantType,
-                          std::string tag = "");
+                          std::string tag = "",
+                          bool parseChilds = true);
 }
 
 #endif // PARSERS_GENERIC_H

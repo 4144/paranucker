@@ -34,6 +34,9 @@ void parseNopExprNode(NopExprNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
+    if (!node->parseChilds)
+        return;
+
     fillExprOperands(node);
 }
 

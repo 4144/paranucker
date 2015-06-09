@@ -33,6 +33,9 @@ void parseStatementListNode(StatementListNode *node)
     fillType(node);
     Log::dump(node);
 
+    if (!node->parseChilds)
+        return;
+
     for (tree_stmt_iterator it = tsi_start (node->gccNode);
          !tsi_end_p (it);
          tsi_next (&it))

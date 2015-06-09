@@ -39,6 +39,9 @@ void parseBlockNode(BlockNode *node)
     }
     Log::dump(node);
 
+    if (!node->parseChilds)
+        return;
+
     FOR_CHAIN(node->gccNode, it, BLOCK_VARS, DECL_CHAIN)
     {
         node->vars.push_back(static_cast<VarDeclNode*>(createParseNode(

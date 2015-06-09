@@ -42,6 +42,7 @@ struct Node
         column(-1),
         treeNumber(0),
         indent(0),
+        parseChilds(true),
         noLabel(false)
     {
         allocations ++;
@@ -73,6 +74,7 @@ struct Node
     int column;
     int treeNumber;
     int indent;
+    bool parseChilds;
     bool noLabel;
 };
 

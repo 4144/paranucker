@@ -33,6 +33,9 @@ void parseIfStmtNode(IfStmtNode *node)
     fillType(node);
     Log::dump(node);
 
+    if (!node->parseChilds)
+        return;
+
     node->condition = createParseNode(
         node,
         IF_COND(node->gccNode),

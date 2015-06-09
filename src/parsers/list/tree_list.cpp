@@ -31,6 +31,9 @@ void parseTreeListNode(TreeListNode *node)
     fillType(node);
     Log::dump(node);
 
+    if (!node->parseChilds)
+        return;
+
     node->purpose = createParseNode(
         node,
         TREE_PURPOSE(node->gccNode),

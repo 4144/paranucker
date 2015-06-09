@@ -33,6 +33,9 @@ void parsePointerTypeNode(PointerTypeNode *node)
     fillType(node);
     Log::dump(node);
 
+    if (!node->parseChilds)
+        return;
+
     fillTypeName(node);
     fillTypeAttributes(node);
     node->nestedType = static_cast<TypeNode*>(createParseNode(

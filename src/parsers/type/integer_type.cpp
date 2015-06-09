@@ -41,6 +41,9 @@ void parseIntegerTypeNode(IntegerTypeNode *node)
     else
         Log::dumpRaw(node, "- signed");
 
+    if (!node->parseChilds)
+        return;
+
     fillTypeName(node);
     fillTypeAttributes(node);
     node->typeSize = static_cast<IntegerCstNode*>(createParseNode(

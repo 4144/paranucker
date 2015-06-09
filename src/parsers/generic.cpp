@@ -34,18 +34,21 @@ namespace Generic
 
 Node *createParseNode(Node *parent,
                       tree gccNode,
-                      std::string tag)
+                      std::string tag,
+                      bool parseChilds)
 {
     return createParseNode(parent,
         gccNode,
         ERROR_MARK,
-        tag);
+        tag,
+        parseChilds);
 }
 
 Node *createParseNode(Node *parent,
                       tree gccNode,
                       tree_code wantType,
-                      std::string tag)
+                      std::string tag,
+                      bool parseChilds)
 {
     if (gccNode == NULL_TREE)
     {
@@ -80,6 +83,7 @@ Node *createParseNode(Node *parent,
     {
         node->parent = parent;
         node->gccNode = gccNode;
+        node->parseChilds = parseChilds;
         if (parent)
         {
             node->indent  = parent->indent + 1;

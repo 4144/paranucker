@@ -35,6 +35,9 @@ void parseExprStmtNode(ExprStmtNode *node)
     fillType(node);
     Log::dump(node);
 
+    if (!node->parseChilds)
+        return;
+
     node->expression = static_cast<ExprNode*>(createParseNode(
         node,
         EXPR_STMT_EXPR(node->gccNode),

@@ -46,6 +46,9 @@ void parseFunctionDeclNode(FunctionDeclNode *node)
     setPrintField(node, DECL_EXTERNAL, isExternal);
     setPrintField(node, TREE_PUBLIC, isPublic);
 
+    if (!node->parseChilds)
+        return;
+
     fillDeclAttributes(node);
     node->functionType = static_cast<FunctionTypeNode*>(createParseNode(
         node,

@@ -34,6 +34,9 @@ void parseInitExprNode(InitExprNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
+    if (!node->parseChilds)
+        return;
+
     fillExprOperands(node);
 
     // args 0 - left side

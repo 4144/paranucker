@@ -34,6 +34,9 @@ void parseBindExprNode(BindExprNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
+    if (!node->parseChilds)
+        return;
+
     fillExprOperands(node);
 
     // args 0 - BIND_EXPR_VARS
