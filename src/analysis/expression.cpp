@@ -17,52 +17,25 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "analysis/analysis.h"
+#include "analysis/expression.h"
 
 #include "command.h"
+#include "logger.h"
 
-#include "analysis/expression.h"
-#include "analysis/function.h"
+#include "analysis/analysis.h"
 #include "analysis/walkitem.h"
 
-#include "nodes/decl/function_decl.h"
-
 #include "nodes/expr/modify_expr.h"
+
+#include <set>
 
 #include "localconsts.h"
 
 namespace Analysis
 {
 
-void startWalkTree(Node *node)
+WalkItem analyseModifyExpr(ModifyExprNode *node, WalkItem wi)
 {
-    walkTree(node, WalkItem());
-}
-
-void walkTree(Node *node, WalkItem wi)
-{
-    wi = analyseNode(node, wi);
-    if (wi.stopWalking)
-        return;
-
-    FOR_EACH (std::vector<Node*>::iterator, it, node->childs)
-    {
-        walkTree(*it, wi);
-    }
-}
-
-WalkItem analyseNode(Node *node, WalkItem wi)
-{
-    // searching function declaration
-    switch (node->nodeType)
-    {
-        case FUNCTION_DECL:
-            return analyseFunction(static_cast<FunctionDeclNode*>(node), wi);
-        case MODIFY_EXPR:
-            return analyseModifyExpr(static_cast<ModifyExprNode*>(node), wi);
-        default:
-            break;
-    }
     return wi;
 }
 
