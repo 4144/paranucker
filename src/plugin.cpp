@@ -20,7 +20,6 @@
 #include "includes.h"
 
 #include "plugin-version.h"
-#include "diagnostic.h"
 #include "intl.h"
 
 #include "command.h"

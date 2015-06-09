@@ -43,4 +43,6 @@
 
 #include "cp/cp-tree.h"
 
+#include "diagnostic.h"
+
 #endif // PLUGIN_H

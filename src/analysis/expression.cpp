@@ -25,6 +25,7 @@
 #include "analysis/analysis.h"
 #include "analysis/walkitem.h"
 
+#include "nodes/expr/indirect_ref.h"
 #include "nodes/expr/modify_expr.h"
 
 #include <set>
@@ -36,6 +37,27 @@ namespace Analysis
 
 WalkItem analyseModifyExpr(ModifyExprNode *node, WalkItem wi)
 {
+    // need atleast one arg for check
+    if (node->args.empty())
+        return wi;
+
+    Node *arg = node->args[0];
+    if (arg->nodeType == INDIRECT_REF)
+    {
+        IndirectRefNode *refNode = static_cast<IndirectRefNode*>(arg);
+        // need atleast one arg for check
+        if (refNode->args.empty())
+            return wi;
+        arg = refNode->args[0];
+        if (arg->nodeType == PARM_DECL)
+        {
+            if (wi.checkNullVars.find(arg->label) != wi.checkNullVars.end())
+            {
+                Log::warn(arg->location, "Using variable without check for NULL");
+            }
+        }
+    }
+
     return wi;
 }
 
