@@ -53,6 +53,7 @@ if dirName != "":
         suffixSize = 3
     elif nodeName[-4:] == "expr":
         suffixSize = 4
+        parserAdditionalCode1 = "    fillExprLocation(node);\n"
         parserAdditionalCode2 = "\n    fillExprOperands(node);\n"
         parserBaseInclude = "#include \"parsers/base/expr.h\"\n"
     elif nodeName[-3:] == "ref":
