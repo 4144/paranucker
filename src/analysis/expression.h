@@ -22,6 +22,7 @@
 
 #include "includes.h"
 
+struct AddrExprNode;
 struct ModifyExprNode;
 struct PointerPlusExprNode;
 struct WalkItem;
@@ -31,6 +32,8 @@ namespace Analysis
     WalkItem analyseModifyExpr(ModifyExprNode *node, WalkItem wi);
 
     WalkItem analysePointerPlusExpr(PointerPlusExprNode *node, WalkItem wi);
+
+    WalkItem analyseAddrExpr(AddrExprNode *node, WalkItem wi);
 }
 
 #endif // ANALYSIS_EXPRESSION_H

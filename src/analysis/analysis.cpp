@@ -30,6 +30,7 @@
 #include "nodes/decl/function_decl.h"
 #include "nodes/decl/var_decl.h"
 
+#include "nodes/expr/addr_expr.h"
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
 
@@ -73,6 +74,8 @@ WalkItem analyseNode(Node *node, WalkItem wi)
     {
         case FUNCTION_DECL:
             return analyseFunction(static_cast<FunctionDeclNode*>(node), wi);
+        case ADDR_EXPR:
+            return analyseAddrExpr(static_cast<AddrExprNode*>(node), wi);
         case MODIFY_EXPR:
             return analyseModifyExpr(static_cast<ModifyExprNode*>(node), wi);
         case POINTER_PLUS_EXPR:
