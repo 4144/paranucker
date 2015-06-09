@@ -27,6 +27,7 @@
 
 #include "nodes/expr/indirect_ref.h"
 #include "nodes/expr/modify_expr.h"
+#include "nodes/expr/pointerplus_expr.h"
 
 #include <set>
 
@@ -56,6 +57,25 @@ WalkItem analyseModifyExpr(ModifyExprNode *node, WalkItem wi)
                 Log::warn(findBackLocation(node),
                     "Using variable without check for NULL");
             }
+        }
+    }
+
+    return wi;
+}
+
+WalkItem analysePointerPlusExpr(PointerPlusExprNode *node, WalkItem wi)
+{
+    // need atleast one arg for check
+    if (node->args.empty() || command == FindArgs)
+        return wi;
+
+    Node *arg = node->args[0];
+    if (arg->nodeType == PARM_DECL)
+    {
+        if (wi.checkNullVars.find(arg->label) != wi.checkNullVars.end())
+        {
+            Log::warn(findBackLocation(node),
+                "Using variable without check for NULL");
         }
     }
 

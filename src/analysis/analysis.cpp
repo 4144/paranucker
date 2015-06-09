@@ -28,6 +28,7 @@
 #include "nodes/decl/function_decl.h"
 
 #include "nodes/expr/modify_expr.h"
+#include "nodes/expr/pointerplus_expr.h"
 
 #include "localconsts.h"
 
@@ -71,6 +72,8 @@ WalkItem analyseNode(Node *node, WalkItem wi)
             return analyseFunction(static_cast<FunctionDeclNode*>(node), wi);
         case MODIFY_EXPR:
             return analyseModifyExpr(static_cast<ModifyExprNode*>(node), wi);
+        case POINTER_PLUS_EXPR:
+            return analysePointerPlusExpr(static_cast<PointerPlusExprNode*>(node), wi);
         default:
             break;
     }
