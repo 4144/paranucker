@@ -17,45 +17,23 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "analysis/analysis.h"
+#ifndef ANALYSIS_WALKITEM_H
+#define ANALYSIS_WALKITEM_H
 
-#include "command.h"
+#include <set>
+#include <string>
 
-#include "analysis/function.h"
-#include "analysis/walkitem.h"
-
-#include "nodes/decl/function_decl.h"
-
-#include "localconsts.h"
-
-namespace Analysis
+struct WalkItem
 {
-
-void startWalkTree(Node *node)
-{
-    walkTree(node, WalkItem());
-}
-
-void walkTree(Node *node, WalkItem wi)
-{
-    wi = analyseNode(node, wi);
-    if (wi.stopWalking)
-        return;
-
-    FOR_EACH (std::vector<Node*>::iterator, it, node->childs)
+    WalkItem() :
+        checkNullVars(),
+        stopWalking(false)
     {
-        walkTree(*it, wi);
     }
-}
 
-WalkItem analyseNode(Node *node, WalkItem wi)
-{
-    // searching function declaration
-    if (node->nodeType == FUNCTION_DECL)
-    {
-        return analyseFunction(static_cast<FunctionDeclNode*>(node), wi);
-    }
-    return wi;
-}
+    std::set<std::string> checkNullVars;
+    bool stopWalking;
+};
 
-}
+
+#endif // ANALYSIS_WALKITEM_H

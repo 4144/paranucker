@@ -25,10 +25,11 @@
 struct FunctionDeclNode;
 struct TreeListNode;
 struct TypeNode;
+struct WalkItem;
 
 namespace Analysis
 {
-    void analyseFunction(FunctionDeclNode *node);
+    WalkItem analyseFunction(FunctionDeclNode *node, WalkItem wi);
 
     void getFunctionArgTypes(FunctionDeclNode *node,
                              std::vector<TypeNode*> &arr);

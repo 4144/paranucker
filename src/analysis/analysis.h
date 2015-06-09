@@ -23,12 +23,15 @@
 #include "includes.h"
 
 struct Node;
+struct WalkItem;
 
 namespace Analysis
 {
-    void walkTree(Node *node);
+    void startWalkTree(Node *node);
 
-    void analyseNode(Node *node);
+    void walkTree(Node *node, WalkItem wi);
+
+    WalkItem analyseNode(Node *node, WalkItem wi);
 }
 
 #endif // ANALYSIS_ANALYSIS_H

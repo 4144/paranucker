@@ -22,6 +22,9 @@
 #include "command.h"
 #include "logger.h"
 
+#include "analysis/analysis.h"
+#include "analysis/walkitem.h"
+
 #include "nodes/decl/function_decl.h"
 
 #include "nodes/list/tree_list.h"
@@ -86,18 +89,23 @@ void getFunctionParamsNonNullAttributes(FunctionDeclNode *node,
     }
 }
 
-void analyseFunction(FunctionDeclNode *node)
+WalkItem analyseFunction(FunctionDeclNode *node, WalkItem wi)
 {
     // ignore external functions
     if (node->isExternal)
-        return;
+    {
+        wi.stopWalking = true;
+        return wi;
+    }
 
     std::vector<TypeNode*> types;
     std::set<int> nonNull;
-    std::set<std::string> checkNames;
+    WalkItem wi2 = wi;
 
     getFunctionArgTypes(node, types);
     getFunctionParamsNonNullAttributes(node, nonNull);
+    // here need check is variables already present in wi2.checkNullVars
+
     if (command == Command::FindArgs)
     {
         Log::log("%s: ", node->label.c_str());
@@ -113,11 +121,18 @@ void analyseFunction(FunctionDeclNode *node)
                 Log::log("%s %s, ",
                     type->nodeTypeName.c_str(),
                     name->label.c_str());
-                checkNames.insert(name->label);
+                wi2.checkNullVars.insert(name->label);
             }
         }
         Log::log("\n");
     }
+
+    if (!wi2.checkNullVars.empty())
+    {
+        walkTree(node->code, wi2);
+    }
+    wi.stopWalking = true;
+    return wi;
 }
 
 }

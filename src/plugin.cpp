@@ -42,7 +42,7 @@ static void pre_generic(void *gcc_data,
 {
     Node *node = Generic::parseNodes((tree)gcc_data);
     if (command == Command::FindArgs)
-        Analysis::walkTree(node);
+        Analysis::startWalkTree(node);
     Generic::cleanAllNodes(node);
 }
 
