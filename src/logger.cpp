@@ -20,6 +20,7 @@
 #include "logger.h"
 
 #include "command.h"
+#include "includes.h"
 
 #include "nodes/base/node.h"
 
@@ -161,6 +162,11 @@ void dump(const Node *const node)
         fprintf(stderr, " - %s", node->tag.c_str());
 
     fprintf(stderr, "\n");
+}
+
+void warn(int loc, std::string message)
+{
+    warning_at(loc, 0, message.c_str());
 }
 
 }
