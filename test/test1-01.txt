@@ -370,6 +370,7 @@ function_decl fun test1.c 21:6
          integer_cst 32 - type size
          integer_cst -2147483648 - min value
          integer_cst 2147483647 - max value
+        integer_cst 1 - initial
   cleanup_point_expr test1.c 26:6 - else
    expr_stmt - operand
     convert_expr - expresssion
@@ -468,6 +469,7 @@ function_decl fun1 test1.c 29:5
     integer_cst 32 - type size
     integer_cst -2147483648 - min value
     integer_cst 2147483647 - max value
+   integer_cst 0 - initial
   statement_list - operand
    cleanup_point_expr test1.c 31:8 - statement
     decl_expr test1.c 31:8 - operand
@@ -482,6 +484,7 @@ function_decl fun1 test1.c 29:5
        integer_cst 32 - type size
        integer_cst -2147483648 - min value
        integer_cst 2147483647 - max value
+      integer_cst 0 - initial
    cleanup_point_expr test1.c 31:16 - statement
     decl_expr test1.c 31:16 - operand
      var_decl b test1.c 31:14 - operand
@@ -495,6 +498,7 @@ function_decl fun1 test1.c 29:5
        integer_cst 32 - type size
        integer_cst -2147483648 - min value
        integer_cst 2147483647 - max value
+      integer_cst 1 - initial
    cleanup_point_expr test1.c 32:5 - statement
     expr_stmt - operand
      convert_expr - expresssion
@@ -510,6 +514,7 @@ function_decl fun1 test1.c 29:5
          integer_cst 32 - type size
          integer_cst -2147483648 - min value
          integer_cst 2147483647 - max value
+        integer_cst 1 - initial
        var_decl b test1.c 31:14 - operand
        - isUsed: 1
         integer_cst 32 - decl size
@@ -521,6 +526,7 @@ function_decl fun1 test1.c 29:5
          integer_cst 32 - type size
          integer_cst -2147483648 - min value
          integer_cst 2147483647 - max value
+        integer_cst 1 - initial
    cleanup_point_expr test1.c 33:10 - statement
     expr_stmt - operand
      call_expr test1.c 33:5 - expresssion
@@ -540,6 +546,7 @@ function_decl fun1 test1.c 29:5
        integer_cst 32 - type size
        integer_cst -2147483648 - min value
        integer_cst 2147483647 - max value
+      integer_cst 0 - initial
      integer_cst 0 - operand
     return_expr test1.c 35:12 - then
      init_expr - operand
@@ -566,6 +573,7 @@ function_decl fun1 test1.c 29:5
          integer_cst 32 - type size
          integer_cst -2147483648 - min value
          integer_cst 2147483647 - max value
+        integer_cst 0 - initial
        var_decl b test1.c 31:14 - operand
        - isUsed: 1
         integer_cst 32 - decl size
@@ -577,6 +585,7 @@ function_decl fun1 test1.c 29:5
          integer_cst 32 - type size
          integer_cst -2147483648 - min value
          integer_cst 2147483647 - max value
+        integer_cst 1 - initial
     return_expr test1.c 36:14 - else
      init_expr - operand
       result_decl test1.c 29:30 - operand
@@ -603,6 +612,7 @@ function_decl fun1 test1.c 29:5
      integer_cst 32 - type size
      integer_cst -2147483648 - min value
      integer_cst 2147483647 - max value
+    integer_cst 0 - initial
    var_decl b test1.c 31:14 - block vars
    - isUsed: 1
     integer_cst 32 - decl size
@@ -614,6 +624,7 @@ function_decl fun1 test1.c 29:5
      integer_cst 32 - type size
      integer_cst -2147483648 - min value
      integer_cst 2147483647 - max value
+    integer_cst 1 - initial
 function_decl fun2 test1.c 38:6
 - isPublic: 1
  function_type - function type

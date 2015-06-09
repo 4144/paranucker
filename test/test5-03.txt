@@ -1,4 +1,30 @@
 test5.c: In function 'void func1(int, int*, char)':
-test5.c:6:13: warning: Using variable without check for NULL
+test5.c:12:13: warning: Using variable without check for NULL
      *b = 100;
              ^
+test5.c: In function 'void func2(int, int*, char)':
+test5.c:17:9: warning: Using variable without check for NULL
+     *(1 + b) = 200;
+         ^
+test5.c: In function 'void func3(int, int*, char)':
+test5.c:22:9: warning: Using variable without check for NULL
+     *(1 + (1 + b)) = 300;
+         ^
+test5.c: In function 'void func5(int, int*, char)':
+test5.c:28:12: warning: Using variable without check for NULL
+     *(var1 + b) = 400;
+            ^
+test5.c: In function 'void func6(int, int*, char)':
+test5.c:33:10: warning: Using variable without check for NULL
+     int *var2 = b;
+          ^
+test5.c:33:10: warning: Using variable without check for NULL
+test5.c:33:10: warning: Using variable without check for NULL
+test5.c:33:10: warning: Using variable without check for NULL
+test5.c: In function 'void func7(int, int*, char)':
+test5.c:39:20: warning: Using variable without check for NULL
+     int *var3 = 12 + b;
+                    ^
+test5.c:39:20: warning: Using variable without check for NULL
+test5.c:39:20: warning: Using variable without check for NULL
+test5.c:39:20: warning: Using variable without check for NULL

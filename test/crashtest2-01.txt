@@ -7195,12 +7195,16 @@ function_decl _mm_undefined_ps crashtest2.h 107:1
   - isUsed: 1
    integer_cst 128 - decl size
    Unsupported node type: vector_type - var type - operand
+   var_decl __Y crashtest2.h 109:10 - initial
+   - isUsed: 1
   statement_list - operand
    decl_expr crashtest2.h 109:16 - statement
     var_decl __Y crashtest2.h 109:10 - operand
     - isUsed: 1
      integer_cst 128 - decl size
      Unsupported node type: vector_type - var type - operand
+     var_decl __Y crashtest2.h 109:10 - initial
+     - isUsed: 1
    return_expr crashtest2.h 110:10 - statement
     init_expr - operand
      result_decl crashtest2.h 107:23 - operand
@@ -7211,11 +7215,15 @@ function_decl _mm_undefined_ps crashtest2.h 107:1
      - isUsed: 1
       integer_cst 128 - decl size
       Unsupported node type: vector_type - var type - operand
+      var_decl __Y crashtest2.h 109:10 - initial
+      - isUsed: 1
   block - operand
    var_decl __Y crashtest2.h 109:10 - block vars
    - isUsed: 1
     integer_cst 128 - decl size
     Unsupported node type: vector_type - var type - block vars
+    var_decl __Y crashtest2.h 109:10 - initial
+    - isUsed: 1
 function_decl _mm_setzero_ps crashtest2.h 115:1
 - isExternal: 1
 - isPublic: 1
@@ -11339,11 +11347,32 @@ function_decl _mm_cvtpi32x2_ps crashtest2.h 711:1
     - isUsed: 1
      integer_cst 128 - decl size
      Unsupported node type: vector_type - var type - operand
+     call_expr crashtest2.h 714:42 - initial
+     - function: LOAD_LANES - initial
+      var_decl __zero crashtest2.h 713:10 - arg
+      - isUsed: 1
+       integer_cst 128 - decl size
+       Unsupported node type: vector_type - var type - arg
+      Unsupported node type: non_lvalue_expr - arg - initial
    decl_expr crashtest2.h 715:61 - statement
     var_decl __sfb crashtest2.h 715:10 - operand
     - isUsed: 1
      integer_cst 128 - decl size
      Unsupported node type: vector_type - var type - operand
+     call_expr crashtest2.h 715:42 - initial
+     - function: LOAD_LANES - initial
+      var_decl __sfa crashtest2.h 714:10 - arg
+      - isUsed: 1
+       integer_cst 128 - decl size
+       Unsupported node type: vector_type - var type - arg
+       call_expr crashtest2.h 714:42 - initial
+       - function: LOAD_LANES - initial
+        var_decl __zero crashtest2.h 713:10 - arg
+        - isUsed: 1
+         integer_cst 128 - decl size
+         Unsupported node type: vector_type - var type - arg
+        Unsupported node type: non_lvalue_expr - arg - initial
+      Unsupported node type: non_lvalue_expr - arg - initial
    return_expr crashtest2.h 716:55 - statement
     init_expr - operand
      result_decl crashtest2.h 711:38 - operand
@@ -11356,10 +11385,31 @@ function_decl _mm_cvtpi32x2_ps crashtest2.h 711:1
       - isUsed: 1
        integer_cst 128 - decl size
        Unsupported node type: vector_type - var type - arg
+       call_expr crashtest2.h 714:42 - initial
+       - function: LOAD_LANES - initial
+        var_decl __zero crashtest2.h 713:10 - arg
+        - isUsed: 1
+         integer_cst 128 - decl size
+         Unsupported node type: vector_type - var type - arg
+        Unsupported node type: non_lvalue_expr - arg - initial
       var_decl __sfb crashtest2.h 715:10 - arg
       - isUsed: 1
        integer_cst 128 - decl size
        Unsupported node type: vector_type - var type - arg
+       call_expr crashtest2.h 715:42 - initial
+       - function: LOAD_LANES - initial
+        var_decl __sfa crashtest2.h 714:10 - arg
+        - isUsed: 1
+         integer_cst 128 - decl size
+         Unsupported node type: vector_type - var type - arg
+         call_expr crashtest2.h 714:42 - initial
+         - function: LOAD_LANES - initial
+          var_decl __zero crashtest2.h 713:10 - arg
+          - isUsed: 1
+           integer_cst 128 - decl size
+           Unsupported node type: vector_type - var type - arg
+          Unsupported node type: non_lvalue_expr - arg - initial
+        Unsupported node type: non_lvalue_expr - arg - initial
   block - operand
    var_decl __zero crashtest2.h 713:10 - block vars
    - isUsed: 1
@@ -11369,10 +11419,31 @@ function_decl _mm_cvtpi32x2_ps crashtest2.h 711:1
    - isUsed: 1
     integer_cst 128 - decl size
     Unsupported node type: vector_type - var type - block vars
+    call_expr crashtest2.h 714:42 - initial
+    - function: LOAD_LANES - initial
+     var_decl __zero crashtest2.h 713:10 - arg
+     - isUsed: 1
+      integer_cst 128 - decl size
+      Unsupported node type: vector_type - var type - arg
+     Unsupported node type: non_lvalue_expr - arg - initial
    var_decl __sfb crashtest2.h 715:10 - block vars
    - isUsed: 1
     integer_cst 128 - decl size
     Unsupported node type: vector_type - var type - block vars
+    call_expr crashtest2.h 715:42 - initial
+    - function: LOAD_LANES - initial
+     var_decl __sfa crashtest2.h 714:10 - arg
+     - isUsed: 1
+      integer_cst 128 - decl size
+      Unsupported node type: vector_type - var type - arg
+      call_expr crashtest2.h 714:42 - initial
+      - function: LOAD_LANES - initial
+       var_decl __zero crashtest2.h 713:10 - arg
+       - isUsed: 1
+        integer_cst 128 - decl size
+        Unsupported node type: vector_type - var type - arg
+       Unsupported node type: non_lvalue_expr - arg - initial
+     Unsupported node type: non_lvalue_expr - arg - initial
 function_decl _mm_cvtps_pi16 crashtest2.h 721:1
 - isExternal: 1
 - isPublic: 1
@@ -11403,27 +11474,73 @@ function_decl _mm_cvtps_pi16 crashtest2.h 721:1
   - isUsed: 1
    integer_cst 128 - decl size
    Unsupported node type: vector_type - var type - operand
+   - isUsed: 1
+   parm_decl __A crashtest2.h 721:23 - initial
   statement_list - operand
    decl_expr crashtest2.h 723:27 - statement
     var_decl __hisf crashtest2.h 723:10 - operand
     - isUsed: 1
      integer_cst 128 - decl size
      Unsupported node type: vector_type - var type - operand
+     - isUsed: 1
+     parm_decl __A crashtest2.h 721:23 - initial
    decl_expr crashtest2.h 724:57 - statement
     var_decl __losf crashtest2.h 724:10 - operand
     - isUsed: 1
      integer_cst 128 - decl size
      Unsupported node type: vector_type - var type - operand
+     call_expr crashtest2.h 724:42 - initial
+     - function: LOAD_LANES - initial
+      var_decl __hisf crashtest2.h 723:10 - arg
+      - isUsed: 1
+       integer_cst 128 - decl size
+       Unsupported node type: vector_type - var type - arg
+       - isUsed: 1
+       parm_decl __A crashtest2.h 721:23 - initial
+      var_decl __hisf crashtest2.h 723:10 - arg
+      - isUsed: 1
+       integer_cst 128 - decl size
+       Unsupported node type: vector_type - var type - arg
+       - isUsed: 1
+       parm_decl __A crashtest2.h 721:23 - initial
    decl_expr crashtest2.h 725:50 - statement
     var_decl __hisi crashtest2.h 725:10 - operand
     - isUsed: 1
      integer_cst 64 - decl size
      Unsupported node type: vector_type - var type - operand
+     call_expr crashtest2.h 725:43 - initial
+     - function: LOAD_LANES - initial
+      var_decl __hisf crashtest2.h 723:10 - arg
+      - isUsed: 1
+       integer_cst 128 - decl size
+       Unsupported node type: vector_type - var type - arg
+       - isUsed: 1
+       parm_decl __A crashtest2.h 721:23 - initial
    decl_expr crashtest2.h 726:50 - statement
     var_decl __losi crashtest2.h 726:10 - operand
     - isUsed: 1
      integer_cst 64 - decl size
      Unsupported node type: vector_type - var type - operand
+     call_expr crashtest2.h 726:43 - initial
+     - function: LOAD_LANES - initial
+      var_decl __losf crashtest2.h 724:10 - arg
+      - isUsed: 1
+       integer_cst 128 - decl size
+       Unsupported node type: vector_type - var type - arg
+       call_expr crashtest2.h 724:42 - initial
+       - function: LOAD_LANES - initial
+        var_decl __hisf crashtest2.h 723:10 - arg
+        - isUsed: 1
+         integer_cst 128 - decl size
+         Unsupported node type: vector_type - var type - arg
+         - isUsed: 1
+         parm_decl __A crashtest2.h 721:23 - initial
+        var_decl __hisf crashtest2.h 723:10 - arg
+        - isUsed: 1
+         integer_cst 128 - decl size
+         Unsupported node type: vector_type - var type - arg
+         - isUsed: 1
+         parm_decl __A crashtest2.h 721:23 - initial
    return_expr crashtest2.h 727:57 - statement
     init_expr - operand
      result_decl crashtest2.h 721:26 - operand
@@ -11436,18 +11553,62 @@ function_decl _mm_cvtps_pi16 crashtest2.h 721:1
    - isUsed: 1
     integer_cst 128 - decl size
     Unsupported node type: vector_type - var type - block vars
+    - isUsed: 1
+    parm_decl __A crashtest2.h 721:23 - initial
    var_decl __losf crashtest2.h 724:10 - block vars
    - isUsed: 1
     integer_cst 128 - decl size
     Unsupported node type: vector_type - var type - block vars
+    call_expr crashtest2.h 724:42 - initial
+    - function: LOAD_LANES - initial
+     var_decl __hisf crashtest2.h 723:10 - arg
+     - isUsed: 1
+      integer_cst 128 - decl size
+      Unsupported node type: vector_type - var type - arg
+      - isUsed: 1
+      parm_decl __A crashtest2.h 721:23 - initial
+     var_decl __hisf crashtest2.h 723:10 - arg
+     - isUsed: 1
+      integer_cst 128 - decl size
+      Unsupported node type: vector_type - var type - arg
+      - isUsed: 1
+      parm_decl __A crashtest2.h 721:23 - initial
    var_decl __hisi crashtest2.h 725:10 - block vars
    - isUsed: 1
     integer_cst 64 - decl size
     Unsupported node type: vector_type - var type - block vars
+    call_expr crashtest2.h 725:43 - initial
+    - function: LOAD_LANES - initial
+     var_decl __hisf crashtest2.h 723:10 - arg
+     - isUsed: 1
+      integer_cst 128 - decl size
+      Unsupported node type: vector_type - var type - arg
+      - isUsed: 1
+      parm_decl __A crashtest2.h 721:23 - initial
    var_decl __losi crashtest2.h 726:10 - block vars
    - isUsed: 1
     integer_cst 64 - decl size
     Unsupported node type: vector_type - var type - block vars
+    call_expr crashtest2.h 726:43 - initial
+    - function: LOAD_LANES - initial
+     var_decl __losf crashtest2.h 724:10 - arg
+     - isUsed: 1
+      integer_cst 128 - decl size
+      Unsupported node type: vector_type - var type - arg
+      call_expr crashtest2.h 724:42 - initial
+      - function: LOAD_LANES - initial
+       var_decl __hisf crashtest2.h 723:10 - arg
+       - isUsed: 1
+        integer_cst 128 - decl size
+        Unsupported node type: vector_type - var type - arg
+        - isUsed: 1
+        parm_decl __A crashtest2.h 721:23 - initial
+       var_decl __hisf crashtest2.h 723:10 - arg
+       - isUsed: 1
+        integer_cst 128 - decl size
+        Unsupported node type: vector_type - var type - arg
+        - isUsed: 1
+        parm_decl __A crashtest2.h 721:23 - initial
 function_decl _mm_cvtps_pi8 crashtest2.h 732:1
 - isExternal: 1
 - isPublic: 1
@@ -12746,12 +12907,26 @@ function_decl _mm_loadr_ps crashtest2.h 936:1
   - isUsed: 1
    integer_cst 128 - decl size
    Unsupported node type: vector_type - var type - operand
+   indirect_ref - initial
+    nop_expr - operand
+     - isUsed: 1
+     parm_decl __P crashtest2.h 936:28 - operand
+      pointer_type - decl type
+       Unsupported node type: real_type - nested type - decl type
+      integer_cst 64 - parm size
   statement_list - operand
    decl_expr crashtest2.h 938:29 - statement
     var_decl __tmp crashtest2.h 938:10 - operand
     - isUsed: 1
      integer_cst 128 - decl size
      Unsupported node type: vector_type - var type - operand
+     indirect_ref - initial
+      nop_expr - operand
+       - isUsed: 1
+       parm_decl __P crashtest2.h 936:28 - operand
+        pointer_type - decl type
+         Unsupported node type: real_type - nested type - decl type
+        integer_cst 64 - parm size
    return_expr crashtest2.h 939:77 - statement
     init_expr - operand
      result_decl crashtest2.h 936:31 - operand
@@ -12764,16 +12939,37 @@ function_decl _mm_loadr_ps crashtest2.h 936:1
       - isUsed: 1
        integer_cst 128 - decl size
        Unsupported node type: vector_type - var type - arg
+       indirect_ref - initial
+        nop_expr - operand
+         - isUsed: 1
+         parm_decl __P crashtest2.h 936:28 - operand
+          pointer_type - decl type
+           Unsupported node type: real_type - nested type - decl type
+          integer_cst 64 - parm size
       var_decl __tmp crashtest2.h 938:10 - arg
       - isUsed: 1
        integer_cst 128 - decl size
        Unsupported node type: vector_type - var type - arg
+       indirect_ref - initial
+        nop_expr - operand
+         - isUsed: 1
+         parm_decl __P crashtest2.h 936:28 - operand
+          pointer_type - decl type
+           Unsupported node type: real_type - nested type - decl type
+          integer_cst 64 - parm size
       integer_cst 27 - arg
   block - operand
    var_decl __tmp crashtest2.h 938:10 - block vars
    - isUsed: 1
     integer_cst 128 - decl size
     Unsupported node type: vector_type - var type - block vars
+    indirect_ref - initial
+     nop_expr - operand
+      - isUsed: 1
+      parm_decl __P crashtest2.h 936:28 - operand
+       pointer_type - decl type
+        Unsupported node type: real_type - nested type - decl type
+       integer_cst 64 - parm size
 function_decl _mm_set_ps crashtest2.h 944:1
 - isExternal: 1
 - isPublic: 1
@@ -13100,17 +13296,36 @@ function_decl _mm_store1_ps crashtest2.h 985:1
   - isUsed: 1
    integer_cst 128 - decl size
    Unsupported node type: vector_type - var type - operand
+   - isUsed: 1
+   parm_decl __A crashtest2.h 985:35 - initial
   statement_list - operand
    decl_expr crashtest2.h 987:25 - statement
     var_decl __va crashtest2.h 987:10 - operand
     - isUsed: 1
      integer_cst 128 - decl size
      Unsupported node type: vector_type - var type - operand
+     - isUsed: 1
+     parm_decl __A crashtest2.h 985:35 - initial
    decl_expr crashtest2.h 988:74 - statement
     var_decl __tmp crashtest2.h 988:10 - operand
     - isUsed: 1
      integer_cst 128 - decl size
      Unsupported node type: vector_type - var type - operand
+     call_expr crashtest2.h 988:40 - initial
+     - function: LOAD_LANES - initial
+      var_decl __va crashtest2.h 987:10 - arg
+      - isUsed: 1
+       integer_cst 128 - decl size
+       Unsupported node type: vector_type - var type - arg
+       - isUsed: 1
+       parm_decl __A crashtest2.h 985:35 - initial
+      var_decl __va crashtest2.h 987:10 - arg
+      - isUsed: 1
+       integer_cst 128 - decl size
+       Unsupported node type: vector_type - var type - arg
+       - isUsed: 1
+       parm_decl __A crashtest2.h 985:35 - initial
+      integer_cst 0 - arg
    cleanup_point_expr crashtest2.h 989:29 - statement
     expr_stmt - operand
      call_expr crashtest2.h 989:17 - expresssion
@@ -13124,15 +13339,47 @@ function_decl _mm_store1_ps crashtest2.h 985:1
       - isUsed: 1
        integer_cst 128 - decl size
        Unsupported node type: vector_type - var type - arg
+       call_expr crashtest2.h 988:40 - initial
+       - function: LOAD_LANES - initial
+        var_decl __va crashtest2.h 987:10 - arg
+        - isUsed: 1
+         integer_cst 128 - decl size
+         Unsupported node type: vector_type - var type - arg
+         - isUsed: 1
+         parm_decl __A crashtest2.h 985:35 - initial
+        var_decl __va crashtest2.h 987:10 - arg
+        - isUsed: 1
+         integer_cst 128 - decl size
+         Unsupported node type: vector_type - var type - arg
+         - isUsed: 1
+         parm_decl __A crashtest2.h 985:35 - initial
+        integer_cst 0 - arg
   block - operand
    var_decl __va crashtest2.h 987:10 - block vars
    - isUsed: 1
     integer_cst 128 - decl size
     Unsupported node type: vector_type - var type - block vars
+    - isUsed: 1
+    parm_decl __A crashtest2.h 985:35 - initial
    var_decl __tmp crashtest2.h 988:10 - block vars
    - isUsed: 1
     integer_cst 128 - decl size
     Unsupported node type: vector_type - var type - block vars
+    call_expr crashtest2.h 988:40 - initial
+    - function: LOAD_LANES - initial
+     var_decl __va crashtest2.h 987:10 - arg
+     - isUsed: 1
+      integer_cst 128 - decl size
+      Unsupported node type: vector_type - var type - arg
+      - isUsed: 1
+      parm_decl __A crashtest2.h 985:35 - initial
+     var_decl __va crashtest2.h 987:10 - arg
+     - isUsed: 1
+      integer_cst 128 - decl size
+      Unsupported node type: vector_type - var type - arg
+      - isUsed: 1
+      parm_decl __A crashtest2.h 985:35 - initial
+     integer_cst 0 - arg
 function_decl _mm_store_ps1 crashtest2.h 993:1
 - isExternal: 1
 - isPublic: 1
@@ -13223,17 +13470,36 @@ function_decl _mm_storer_ps crashtest2.h 1000:1
   - isUsed: 1
    integer_cst 128 - decl size
    Unsupported node type: vector_type - var type - operand
+   - isUsed: 1
+   parm_decl __A crashtest2.h 1000:35 - initial
   statement_list - operand
    decl_expr crashtest2.h 1002:25 - statement
     var_decl __va crashtest2.h 1002:10 - operand
     - isUsed: 1
      integer_cst 128 - decl size
      Unsupported node type: vector_type - var type - operand
+     - isUsed: 1
+     parm_decl __A crashtest2.h 1000:35 - initial
    decl_expr crashtest2.h 1003:74 - statement
     var_decl __tmp crashtest2.h 1003:10 - operand
     - isUsed: 1
      integer_cst 128 - decl size
      Unsupported node type: vector_type - var type - operand
+     call_expr crashtest2.h 1003:40 - initial
+     - function: LOAD_LANES - initial
+      var_decl __va crashtest2.h 1002:10 - arg
+      - isUsed: 1
+       integer_cst 128 - decl size
+       Unsupported node type: vector_type - var type - arg
+       - isUsed: 1
+       parm_decl __A crashtest2.h 1000:35 - initial
+      var_decl __va crashtest2.h 1002:10 - arg
+      - isUsed: 1
+       integer_cst 128 - decl size
+       Unsupported node type: vector_type - var type - arg
+       - isUsed: 1
+       parm_decl __A crashtest2.h 1000:35 - initial
+      integer_cst 27 - arg
    cleanup_point_expr crashtest2.h 1004:28 - statement
     expr_stmt - operand
      call_expr crashtest2.h 1004:16 - expresssion
@@ -13247,15 +13513,47 @@ function_decl _mm_storer_ps crashtest2.h 1000:1
       - isUsed: 1
        integer_cst 128 - decl size
        Unsupported node type: vector_type - var type - arg
+       call_expr crashtest2.h 1003:40 - initial
+       - function: LOAD_LANES - initial
+        var_decl __va crashtest2.h 1002:10 - arg
+        - isUsed: 1
+         integer_cst 128 - decl size
+         Unsupported node type: vector_type - var type - arg
+         - isUsed: 1
+         parm_decl __A crashtest2.h 1000:35 - initial
+        var_decl __va crashtest2.h 1002:10 - arg
+        - isUsed: 1
+         integer_cst 128 - decl size
+         Unsupported node type: vector_type - var type - arg
+         - isUsed: 1
+         parm_decl __A crashtest2.h 1000:35 - initial
+        integer_cst 27 - arg
   block - operand
    var_decl __va crashtest2.h 1002:10 - block vars
    - isUsed: 1
     integer_cst 128 - decl size
     Unsupported node type: vector_type - var type - block vars
+    - isUsed: 1
+    parm_decl __A crashtest2.h 1000:35 - initial
    var_decl __tmp crashtest2.h 1003:10 - block vars
    - isUsed: 1
     integer_cst 128 - decl size
     Unsupported node type: vector_type - var type - block vars
+    call_expr crashtest2.h 1003:40 - initial
+    - function: LOAD_LANES - initial
+     var_decl __va crashtest2.h 1002:10 - arg
+     - isUsed: 1
+      integer_cst 128 - decl size
+      Unsupported node type: vector_type - var type - arg
+      - isUsed: 1
+      parm_decl __A crashtest2.h 1000:35 - initial
+     var_decl __va crashtest2.h 1002:10 - arg
+     - isUsed: 1
+      integer_cst 128 - decl size
+      Unsupported node type: vector_type - var type - arg
+      - isUsed: 1
+      parm_decl __A crashtest2.h 1000:35 - initial
+     integer_cst 27 - arg
 function_decl _mm_move_ss crashtest2.h 1009:1
 - isExternal: 1
 - isPublic: 1
@@ -14584,12 +14882,16 @@ function_decl _mm_undefined_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin
   - isUsed: 1
    integer_cst 128 - decl size
    Unsupported node type: vector_type - var type - operand
+   var_decl __Y /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 97:11 - initial
+   - isUsed: 1
   statement_list - operand
    decl_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 97:17 - statement
     var_decl __Y /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 97:11 - operand
     - isUsed: 1
      integer_cst 128 - decl size
      Unsupported node type: vector_type - var type - operand
+     var_decl __Y /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 97:11 - initial
+     - isUsed: 1
    return_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 98:10 - statement
     init_expr - operand
      result_decl /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 95:23 - operand
@@ -14600,11 +14902,15 @@ function_decl _mm_undefined_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin
      - isUsed: 1
       integer_cst 128 - decl size
       Unsupported node type: vector_type - var type - operand
+      var_decl __Y /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 97:11 - initial
+      - isUsed: 1
   block - operand
    var_decl __Y /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 97:11 - block vars
    - isUsed: 1
     integer_cst 128 - decl size
     Unsupported node type: vector_type - var type - block vars
+    var_decl __Y /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 97:11 - initial
+    - isUsed: 1
 function_decl _mm_setzero_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 103:1
 - isExternal: 1
 - isPublic: 1
@@ -15984,12 +16290,20 @@ function_decl _mm_sqrt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 29
   - isUsed: 1
    integer_cst 128 - decl size
    Unsupported node type: vector_type - var type - operand
+   call_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 298:39 - initial
+   - function: LOAD_LANES - initial
+    Unsupported node type: non_lvalue_expr - arg - initial
+    Unsupported node type: non_lvalue_expr - arg - initial
   statement_list - operand
    decl_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 298:64 - statement
     var_decl __tmp /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 298:10 - operand
     - isUsed: 1
      integer_cst 128 - decl size
      Unsupported node type: vector_type - var type - operand
+     call_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 298:39 - initial
+     - function: LOAD_LANES - initial
+      Unsupported node type: non_lvalue_expr - arg - initial
+      Unsupported node type: non_lvalue_expr - arg - initial
    return_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 299:55 - statement
     init_expr - operand
      result_decl /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 296:38 - operand
@@ -16004,6 +16318,10 @@ function_decl _mm_sqrt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 29
    - isUsed: 1
     integer_cst 128 - decl size
     Unsupported node type: vector_type - var type - block vars
+    call_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 298:39 - initial
+    - function: LOAD_LANES - initial
+     Unsupported node type: non_lvalue_expr - arg - initial
+     Unsupported node type: non_lvalue_expr - arg - initial
 function_decl _mm_min_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 303:1
 - isExternal: 1
 - isPublic: 1
@@ -20858,12 +21176,16 @@ function_decl _mm_undefined_si128 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmint
   - isUsed: 1
    integer_cst 128 - decl size
    Unsupported node type: vector_type - var type - operand
+   var_decl __Y /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 747:11 - initial
+   - isUsed: 1
   statement_list - operand
    decl_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 747:17 - statement
     var_decl __Y /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 747:11 - operand
     - isUsed: 1
      integer_cst 128 - decl size
      Unsupported node type: vector_type - var type - operand
+     var_decl __Y /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 747:11 - initial
+     - isUsed: 1
    return_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 748:10 - statement
     init_expr - operand
      result_decl /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 745:26 - operand
@@ -20874,11 +21196,15 @@ function_decl _mm_undefined_si128 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmint
      - isUsed: 1
       integer_cst 128 - decl size
       Unsupported node type: vector_type - var type - operand
+      var_decl __Y /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 747:11 - initial
+      - isUsed: 1
   block - operand
    var_decl __Y /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 747:11 - block vars
    - isUsed: 1
     integer_cst 128 - decl size
     Unsupported node type: vector_type - var type - block vars
+    var_decl __Y /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 747:11 - initial
+    - isUsed: 1
 function_decl _mm_setzero_si128 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 753:1
 - isExternal: 1
 - isPublic: 1

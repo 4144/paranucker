@@ -27,10 +27,12 @@ test3:
 test4:
 	$(call CMD,dump,test4.c,test4-01.txt)
 	$(call CMD,findargs,test4.c,test4-02.txt)
+	$(call CMD,detectnullpointers,test4.c,test4-03.txt)
 test5:
 	$(call CMD,dump,test5.c,test5-01.txt)
 	$(call CMD,findargs,test5.c,test5-02.txt)
 	$(call CMD,detectnullpointers,test5.c,test5-03.txt)
+	$(call CMD,dumpunsupported,test5.c,test5-04.txt)
 
 crashtest1:
 	$(call CMD,dump,crashtest1.h,crashtest1-01.txt)
