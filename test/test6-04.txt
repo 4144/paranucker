@@ -1,0 +1,58 @@
+function_decl func1
+cleanup_point_expr 
+expr_stmt 
+convert_expr 
+modify_expr 
+test6.c: In function 'void func1(int*)':
+test6.c:7:13: warning: Using variable without check for NULL
+     *a = 100;
+             ^
+indirect_ref 
+parm_decl a
+pointer_type 
+integer_type 
+type_decl int
+integer_cst 32
+integer_cst -2147483648
+integer_cst 2147483647
+integer_cst 64
+integer_cst 100
+function_decl func2
+if_stmt 
+return_expr 
+cleanup_point_expr 
+expr_stmt 
+convert_expr 
+modify_expr 
+indirect_ref 
+parm_decl a
+pointer_type 
+integer_type 
+type_decl int
+integer_cst 32
+integer_cst -2147483648
+integer_cst 2147483647
+integer_cst 64
+integer_cst 200
+function_decl func3
+statement_list 
+if_stmt 
+return_expr 
+cleanup_point_expr 
+expr_stmt 
+convert_expr 
+modify_expr 
+test6.c: In function 'void func3(int*)':
+test6.c:23:16: warning: Using variable without check for NULL
+     *aptr = 300;
+                ^
+indirect_ref 
+parm_decl aptr
+pointer_type 
+integer_type 
+type_decl int
+integer_cst 32
+integer_cst -2147483648
+integer_cst 2147483647
+integer_cst 64
+integer_cst 300

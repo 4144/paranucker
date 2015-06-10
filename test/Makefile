@@ -37,6 +37,7 @@ test6:
 	$(call CMD,dump,test6.c,test6-01.txt)
 	$(call CMD,dumpunsupported,test6.c,test6-02.txt)
 	$(call CMD,detectnullpointers,test6.c,test6-03.txt)
+	$(call CMD,dumpnullpointers,test6.c,test6-04.txt)
 
 crashtest1:
 	$(call CMD,dump,crashtest1.h,crashtest1-01.txt)
