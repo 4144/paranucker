@@ -1,54 +1,179 @@
-function_decl func1
-cleanup_point_expr 
-expr_stmt 
-convert_expr 
-modify_expr 
+function_decl func1: 
+cleanup_point_expr : a, 
+expr_stmt : a, 
+convert_expr : a, 
+modify_expr : a, 
 test6.c: In function 'void func1(int*)':
-test6.c:7:13: warning: Using variable without check for NULL
+test6.c:10:13: warning: Using variable without check for NULL
      *a = 100;
              ^
-indirect_ref 
-parm_decl a
-pointer_type 
-integer_type 
-type_decl int
-integer_cst 32
-integer_cst -2147483648
-integer_cst 2147483647
-integer_cst 64
-integer_cst 100
-function_decl func2
-if_stmt 
-return_expr 
-cleanup_point_expr 
-expr_stmt 
-convert_expr 
-modify_expr 
-indirect_ref 
-parm_decl a
-pointer_type 
-integer_type 
-type_decl int
-integer_cst 32
-integer_cst -2147483648
-integer_cst 2147483647
-integer_cst 64
-integer_cst 200
-function_decl func3
-statement_list 
-if_stmt 
-return_expr 
-cleanup_point_expr 
-expr_stmt 
-convert_expr 
-modify_expr 
-indirect_ref 
-parm_decl a
-pointer_type 
-integer_type 
-type_decl int
-integer_cst 32
-integer_cst -2147483648
-integer_cst 2147483647
-integer_cst 64
-integer_cst 300
+indirect_ref : a, 
+parm_decl a: a, 
+pointer_type : a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
+integer_cst 64: a, 
+integer_cst 100: a, 
+function_decl func2: 
+if_stmt : a, 
+return_expr : a, 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl a: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 200: 
+function_decl func3: 
+statement_list : a, 
+if_stmt : a, 
+return_expr : a, 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl a: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 300: 
+function_decl func4: 
+if_stmt : a, 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl a: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 400: 
+function_decl func5: 
+statement_list : a, 
+if_stmt : a, 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl a: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 500: 
+cleanup_point_expr : a, 
+expr_stmt : a, 
+convert_expr : a, 
+modify_expr : a, 
+test6.c: In function 'void func5(int*)':
+test6.c:43:13: warning: Using variable without check for NULL
+     *a = 600;
+             ^
+indirect_ref : a, 
+parm_decl a: a, 
+pointer_type : a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
+integer_cst 64: a, 
+integer_cst 600: a, 
+function_decl func6: 
+bind_expr : aptr, 
+statement_list : aptr, 
+bind_expr : aptr, 
+if_stmt : aptr, 
+bind_expr : aptr, 
+var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 10: aptr, 
+statement_list : aptr, 
+cleanup_point_expr : aptr, 
+decl_expr : aptr, 
+var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 10: aptr, 
+return_expr : aptr, 
+block : aptr, 
+var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 10: aptr, 
+block : 
+block : 
+var_decl k: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 10: 
+cleanup_point_expr : aptr, 
+expr_stmt : aptr, 
+convert_expr : aptr, 
+modify_expr : aptr, 
+test6.c: In function 'void func6(int*)':
+test6.c:54:16: warning: Using variable without check for NULL
+     *aptr = 700;
+                ^
+indirect_ref : aptr, 
+parm_decl aptr: aptr, 
+pointer_type : aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 64: aptr, 
+integer_cst 700: aptr, 
+block : aptr, 
+block : aptr, 
+block : aptr, 
+var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 10: aptr, 
