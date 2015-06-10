@@ -87,9 +87,16 @@ WalkItem analyseNode(Node *node, WalkItem wi)
 
     if (command == Command::DumpNullPointers)
     {
-        Log::log("%s %s\n",
+        Log::log("%s %s: ",
             node->nodeTypeName.c_str(),
             node->label.c_str());
+        FOR_EACH (std::set<std::string>::const_iterator,
+                  it,
+                  wi.checkNullVars)
+        {
+            Log::log("%s, ", (*it).c_str());
+        }
+        Log::log("\n");
     }
 
     // searching function declaration
