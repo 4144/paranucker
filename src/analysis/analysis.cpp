@@ -47,20 +47,26 @@ void startWalkTree(Node *node)
     walkTree(node, WalkItem());
 }
 
-void walkTree(Node *node, WalkItem wi)
+WalkItem walkTree(Node *node, WalkItem wi)
 {
     if (!node)
-        return;
+        return wi;
 
     wi = analyseNode(node, wi);
 
     if (wi.stopWalking)
-        return;
+    {
+        wi.stopWalking = false;
+        return wi;
+    }
 
+    WalkItem wi2 = wi;
     FOR_EACH (std::vector<Node*>::iterator, it, node->childs)
     {
-        walkTree(*it, wi);
+        wi2 = walkTree(*it, wi2);
+        wi2.stopWalking = false;
     }
+    return wi;
 }
 
 int findBackLocation(Node *node)

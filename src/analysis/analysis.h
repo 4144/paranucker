@@ -29,7 +29,7 @@ namespace Analysis
 {
     void startWalkTree(Node *node);
 
-    void walkTree(Node *node, WalkItem wi);
+    WalkItem walkTree(Node *node, WalkItem wi);
 
     WalkItem analyseNode(Node *node, WalkItem wi);
 
