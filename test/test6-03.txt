@@ -1,0 +1,8 @@
+test6.c: In function 'void func1(int*)':
+test6.c:7:13: warning: Using variable without check for NULL
+     *a = 100;
+             ^
+test6.c: In function 'void func3(int*)':
+test6.c:23:16: warning: Using variable without check for NULL
+     *aptr = 300;
+                ^
