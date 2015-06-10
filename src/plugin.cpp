@@ -41,7 +41,8 @@ static void pre_generic(void *gcc_data,
 {
     Node *node = Generic::parseNodes((tree)gcc_data);
     if (command == Command::FindArgs ||
-        command == Command::DetectNullPointers)
+        command == Command::DetectNullPointers ||
+        command == Command::DumpNullPointers)
     {
         Analysis::startWalkTree(node);
     }
@@ -86,6 +87,10 @@ int plugin_init (struct plugin_name_args *plugin_info,
             else if (cmd == "detectnullpointers")
             {
                 command = Command::DetectNullPointers;
+            }
+            else if (cmd == "dumpnullpointers")
+            {
+                command = Command::DumpNullPointers;
             }
             else
             {

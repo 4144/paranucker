@@ -79,6 +79,13 @@ WalkItem analyseNode(Node *node, WalkItem wi)
     if (!node)
         return wi;
 
+    if (command == Command::DumpNullPointers)
+    {
+        Log::log("%s %s\n",
+            node->nodeTypeName.c_str(),
+            node->label.c_str());
+    }
+
     // searching function declaration
     switch (node->nodeType)
     {
