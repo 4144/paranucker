@@ -25,6 +25,7 @@
 #include "analysis/declaration.h"
 #include "analysis/expression.h"
 #include "analysis/function.h"
+#include "analysis/statement.h"
 #include "analysis/walkitem.h"
 
 #include "nodes/decl/function_decl.h"
@@ -33,6 +34,8 @@
 #include "nodes/expr/addr_expr.h"
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
+
+#include "nodes/stmt/if_stmt.h"
 
 #include "localconsts.h"
 
@@ -46,7 +49,11 @@ void startWalkTree(Node *node)
 
 void walkTree(Node *node, WalkItem wi)
 {
+    if (!node)
+        return;
+
     wi = analyseNode(node, wi);
+
     if (wi.stopWalking)
         return;
 
@@ -69,6 +76,9 @@ int findBackLocation(Node *node)
 
 WalkItem analyseNode(Node *node, WalkItem wi)
 {
+    if (!node)
+        return wi;
+
     // searching function declaration
     switch (node->nodeType)
     {
@@ -82,6 +92,8 @@ WalkItem analyseNode(Node *node, WalkItem wi)
             return analysePointerPlusExpr(static_cast<PointerPlusExprNode*>(node), wi);
         case VAR_DECL:
             return analyseVarDecl(static_cast<VarDeclNode*>(node), wi);
+        case IF_STMT:
+            return analyseIfStmt(static_cast<IfStmtNode*>(node), wi);
         default:
             break;
     }
