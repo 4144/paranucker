@@ -15,10 +15,10 @@ void func2(int *a)
         *a = 200;
 }
 
-void func3(int *aptr)
+void func3(int *a)
 {
-    if (!aptr)
+    if (!a)
         return;
 
-    *aptr = 300;
+    *a = 300;
 }

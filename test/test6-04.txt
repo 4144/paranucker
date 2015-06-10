@@ -42,12 +42,8 @@ cleanup_point_expr
 expr_stmt 
 convert_expr 
 modify_expr 
-test6.c: In function 'void func3(int*)':
-test6.c:23:16: warning: Using variable without check for NULL
-     *aptr = 300;
-                ^
 indirect_ref 
-parm_decl aptr
+parm_decl a
 pointer_type 
 integer_type 
 type_decl int
