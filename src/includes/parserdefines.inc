@@ -41,3 +41,4 @@ parserDefine(PointerPlusExpr);
 parserDefine(BooleanType);
 parserDefine(NullPtrType);
 parserDefine(RecordType);
+parserDefine(TargetExpr);
