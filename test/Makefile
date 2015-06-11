@@ -33,6 +33,7 @@ test5:
 	$(call CMD,findargs,test5.c,test5-02.txt)
 	$(call CMD,detectnullpointers,test5.c,test5-03.txt)
 	$(call CMD,dumpunsupported,test5.c,test5-04.txt)
+	$(call CMD,dumpnullpointers,test5.c,test5-05.txt)
 test6:
 	$(call CMD,dump,test6.c,test6-01.txt)
 	$(call CMD,dumpunsupported,test6.c,test6-02.txt)
