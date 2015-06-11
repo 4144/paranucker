@@ -55,6 +55,14 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
         return;
 
     WalkItem wi2 = wi;
+    FOR_EACH (std::set<std::string>::const_iterator, it, wi2.removeNullVars)
+    {
+        // found var for deletion
+        if (wi2.checkNullVars.find(*it) != wi2.checkNullVars.end())
+        {
+            wi2.checkNullVars.erase(*it);
+        }
+    }
     analyseNode(node, wi2, wo);
 
     if (wo.stopWalking)
@@ -66,10 +74,11 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     WalkItem wo2 = wo;
     FOR_EACH (std::vector<Node*>::iterator, it, node->childs)
     {
-        wi2 = wi;
         walkTree(*it, wi2, wo2);
+        wi2.removeNullVars = wo2.removeNullVars;
         wo2.stopWalking = false;
     }
+    wo.removeNullVars = wi2.removeNullVars;
 }
 
 int findBackLocation(Node *node)
@@ -103,6 +112,7 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
     }
 
     wo = wi;
+
     // searching function declaration
     switch (node->nodeType)
     {

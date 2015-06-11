@@ -73,7 +73,7 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
             walkTree(node->elseNode, wi2, wo);
             wo.stopWalking = true;
 
-            Log::log("add removeNullVars: %s\n", node1->label.c_str());
+            //Log::log("add removeNullVars: %s\n", node1->label.c_str());
             // add variable for ignore for all parent nodes except special like IF_STMT
             wo.removeNullVars.insert(node1->label);
             wo.checkNullVars.erase(node1->label);
