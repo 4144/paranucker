@@ -57,7 +57,7 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
         Node *node1 = eq->args[0];
         // INTEGER_CST?
         Node *node2 = eq->args[1];
-        // if (var == const)
+        // if (var == 0)
         if (node1->nodeType == PARM_DECL &&
             node2->nodeType == INTEGER_CST &&
             wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
@@ -67,10 +67,13 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
             // found check for parameter and 0.
             // walking to then branch
             walkTree(node->thenNode, wi2, wo);
+            wo.removeNullVars.clear();
+
             // From else branch remove variable what we just found.
             wi2 = wi;
             wi2.checkNullVars.erase(node1->label);
             walkTree(node->elseNode, wi2, wo);
+            wo.removeNullVars.clear();
             wo.stopWalking = true;
 
             //Log::log("add removeNullVars: %s\n", node1->label.c_str());
@@ -79,20 +82,21 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
             wo.checkNullVars.erase(node1->label);
 
             // need check what return present
+            return;
         }
     }
     else if (node->condition->nodeType == NE_EXPR)
     {   // if (... != ..)
-        NeExprNode *eq = static_cast<NeExprNode*>(node->condition);
-        // need atleast two operands for EQ_EXPR node
-        if (eq->args.size() < 2)
+        NeExprNode *ne = static_cast<NeExprNode*>(node->condition);
+        // need atleast two operands for NE_EXPR node
+        if (ne->args.size() < 2)
             return;
 
         // PARM_DECL?
-        Node *node1 = eq->args[0];
+        Node *node1 = ne->args[0];
         // INTEGER_CST?
-        Node *node2 = eq->args[1];
-        // if (var != const)
+        Node *node2 = ne->args[1];
+        // if (var != 0)
         if (node1->nodeType == PARM_DECL &&
             node2->nodeType == INTEGER_CST &&
             wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
@@ -104,13 +108,21 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
             wi2.checkNullVars.erase(node1->label);
             // From then branch remove variable what we just found.
             walkTree(node->thenNode, wi2, wo);
+            wo.removeNullVars.clear();
             wi2 = wi;
             // walking else node with all variables
             walkTree(node->elseNode, wi2, wo);
+            wo.removeNullVars.clear();
             wo.stopWalking = true;
             return;
         }
     }
+
+    // default case
+    walkTree(node->thenNode, wi, wo);
+    walkTree(node->elseNode, wi, wo);
+    wo.removeNullVars.clear();
+    wo.stopWalking = true;
 }
 
 }

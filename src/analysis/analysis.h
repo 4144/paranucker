@@ -34,6 +34,8 @@ namespace Analysis
     void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo);
 
     int findBackLocation(Node *node);
+
+    void removeCheckNullVars(WalkItem &wi);
 }
 
 #endif // ANALYSIS_ANALYSIS_H

@@ -42,6 +42,19 @@
 namespace Analysis
 {
 
+// remove check null vars.
+void removeCheckNullVars(WalkItem &wi)
+{
+    FOR_EACH (std::set<std::string>::const_iterator, it, wi.removeNullVars)
+    {
+        // found var for deletion
+        if (wi.checkNullVars.find(*it) != wi.checkNullVars.end())
+        {
+            wi.checkNullVars.erase(*it);
+        }
+    }
+}
+
 void startWalkTree(Node *node)
 {
     WalkItem wi;
@@ -55,15 +68,8 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
         return;
 
     WalkItem wi2 = wi;
-    FOR_EACH (std::set<std::string>::const_iterator, it, wi2.removeNullVars)
-    {
-        // found var for deletion
-        if (wi2.checkNullVars.find(*it) != wi2.checkNullVars.end())
-        {
-            wi2.checkNullVars.erase(*it);
-        }
-    }
     analyseNode(node, wi2, wo);
+    removeCheckNullVars(wi2);
 
     if (wo.stopWalking)
     {
@@ -111,28 +117,34 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
         Log::log("\n");
     }
 
+    WalkItem wi2 = wi;
     wo = wi;
+
+    // remove check for vars what was requested from some childs.
+    // Except IF_STMT. Removing handled inside analyse function.
+    if (node->nodeType != IF_STMT)
+        removeCheckNullVars(wi2);
 
     // searching function declaration
     switch (node->nodeType)
     {
         case FUNCTION_DECL:
-            analyseFunction(static_cast<FunctionDeclNode*>(node), wi, wo);
+            analyseFunction(static_cast<FunctionDeclNode*>(node), wi2, wo);
             break;
         case ADDR_EXPR:
-            analyseAddrExpr(static_cast<AddrExprNode*>(node), wi, wo);
+            analyseAddrExpr(static_cast<AddrExprNode*>(node), wi2, wo);
             break;
         case MODIFY_EXPR:
-            analyseModifyExpr(static_cast<ModifyExprNode*>(node), wi, wo);
+            analyseModifyExpr(static_cast<ModifyExprNode*>(node), wi2, wo);
             break;
         case POINTER_PLUS_EXPR:
-            analysePointerPlusExpr(static_cast<PointerPlusExprNode*>(node), wi, wo);
+            analysePointerPlusExpr(static_cast<PointerPlusExprNode*>(node), wi2, wo);
             break;
         case VAR_DECL:
-            analyseVarDecl(static_cast<VarDeclNode*>(node), wi, wo);
+            analyseVarDecl(static_cast<VarDeclNode*>(node), wi2, wo);
             break;
         case IF_STMT:
-            analyseIfStmt(static_cast<IfStmtNode*>(node), wi, wo);
+            analyseIfStmt(static_cast<IfStmtNode*>(node), wi2, wo);
             break;
         default:
             break;
