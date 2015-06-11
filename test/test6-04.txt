@@ -4,7 +4,7 @@ expr_stmt : a,
 convert_expr : a, 
 modify_expr : a, 
 test6.c: In function 'void func1(int*)':
-test6.c:10:13: warning: Using variable without check for NULL
+test6.c:12:13: warning: Using variable without check for NULL
      *a = 100;
              ^
 indirect_ref : a, 
@@ -38,7 +38,7 @@ function_decl func3:
 statement_list : a, 
 if_stmt : a, 
 return_expr : a, 
-cleanup_point_expr : 
+cleanup_point_expr : a, 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -90,7 +90,7 @@ expr_stmt : a,
 convert_expr : a, 
 modify_expr : a, 
 test6.c: In function 'void func5(int*)':
-test6.c:43:13: warning: Using variable without check for NULL
+test6.c:45:13: warning: Using variable without check for NULL
      *a = 600;
              ^
 indirect_ref : a, 
@@ -104,8 +104,81 @@ integer_cst 2147483647: a,
 integer_cst 64: a, 
 integer_cst 600: a, 
 function_decl func6: 
+bind_expr : a, 
+statement_list : a, 
+bind_expr : a, 
+if_stmt : a, 
+bind_expr : a, 
+var_decl k: a, 
+integer_cst 32: a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
+integer_cst 10: a, 
+statement_list : a, 
+cleanup_point_expr : a, 
+decl_expr : a, 
+var_decl k: a, 
+integer_cst 32: a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
+integer_cst 10: a, 
+return_expr : a, 
+block : a, 
+var_decl k: a, 
+integer_cst 32: a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
+integer_cst 10: a, 
+block : a, 
+block : 
+var_decl k: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 10: 
+cleanup_point_expr : a, 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl a: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 700: 
+block : a, 
+block : 
+block : 
+var_decl k: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 10: 
+function_decl func7: 
 bind_expr : aptr, 
 statement_list : aptr, 
+bind_expr : aptr, 
+if_stmt : aptr, 
+bind_expr : aptr, 
 bind_expr : aptr, 
 if_stmt : aptr, 
 bind_expr : aptr, 
@@ -138,6 +211,17 @@ integer_cst 32: aptr,
 integer_cst -2147483648: aptr, 
 integer_cst 2147483647: aptr, 
 integer_cst 10: aptr, 
+block : aptr, 
+block : 
+var_decl k: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 10: 
+block : aptr, 
 block : 
 block : 
 var_decl k: 
@@ -148,7 +232,164 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 integer_cst 10: 
-cleanup_point_expr : 
+block : aptr, 
+block : aptr, 
+block : aptr, 
+block : aptr, 
+var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 10: aptr, 
+cleanup_point_expr : aptr, 
+expr_stmt : aptr, 
+convert_expr : aptr, 
+modify_expr : aptr, 
+test6.c: In function 'void func7(int*)':
+test6.c:70:16: warning: Using variable without check for NULL
+     *aptr = 800;
+                ^
+indirect_ref : aptr, 
+parm_decl aptr: aptr, 
+pointer_type : aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 64: aptr, 
+integer_cst 800: aptr, 
+block : aptr, 
+block : aptr, 
+block : aptr, 
+block : aptr, 
+block : aptr, 
+var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 10: aptr, 
+function_decl func8: 
+bind_expr : aptr, 
+statement_list : aptr, 
+bind_expr : aptr, 
+if_stmt : aptr, 
+bind_expr : aptr, 
+statement_list : aptr, 
+bind_expr : aptr, 
+if_stmt : aptr, 
+bind_expr : aptr, 
+var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 10: aptr, 
+statement_list : aptr, 
+cleanup_point_expr : aptr, 
+decl_expr : aptr, 
+var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 10: aptr, 
+cleanup_point_expr : aptr, 
+decl_expr : aptr, 
+var_decl l: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 20: aptr, 
+block : aptr, 
+var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 10: aptr, 
+var_decl l: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 20: aptr, 
+block : aptr, 
+block : aptr, 
+var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 10: aptr, 
+var_decl l: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 20: aptr, 
+return_expr : aptr, 
+block : aptr, 
+block : aptr, 
+block : aptr, 
+var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 10: aptr, 
+var_decl l: aptr, 
+integer_cst 32: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 20: aptr, 
+block : aptr, 
+block : 
+block : 
+block : 
+var_decl k: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 10: 
+var_decl l: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 20: 
+cleanup_point_expr : aptr, 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -161,7 +402,9 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 integer_cst 64: 
-integer_cst 700: 
+integer_cst 900: 
+block : aptr, 
+block : 
 block : 
 block : 
 block : 
@@ -173,3 +416,11 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 integer_cst 10: 
+var_decl l: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 20: 
