@@ -29,11 +29,11 @@ struct WalkItem;
 
 namespace Analysis
 {
-    WalkItem analyseModifyExpr(ModifyExprNode *node, WalkItem wi);
+    void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo);
 
-    WalkItem analysePointerPlusExpr(PointerPlusExprNode *node, WalkItem wi);
+    void analysePointerPlusExpr(PointerPlusExprNode *node, const WalkItem &wi, WalkItem &wo);
 
-    WalkItem analyseAddrExpr(AddrExprNode *node, WalkItem wi);
+    void analyseAddrExpr(AddrExprNode *node, const WalkItem &wi, WalkItem &wo);
 }
 
 #endif // ANALYSIS_EXPRESSION_H

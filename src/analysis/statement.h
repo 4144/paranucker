@@ -27,7 +27,7 @@ struct WalkItem;
 
 namespace Analysis
 {
-    WalkItem analyseIfStmt(IfStmtNode *node, WalkItem wi);
+    void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo);
 }
 
 #endif // ANALYSIS_STATEMENT_H

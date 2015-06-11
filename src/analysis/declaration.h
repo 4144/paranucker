@@ -27,7 +27,7 @@ struct WalkItem;
 
 namespace Analysis
 {
-    WalkItem analyseVarDecl(VarDeclNode *node, WalkItem wi);
+    void analyseVarDecl(VarDeclNode *node, const WalkItem &wi, WalkItem &wo);
 }
 
 #endif // ANALYSIS_DECLARATION_H

@@ -37,11 +37,11 @@
 namespace Analysis
 {
 
-WalkItem analyseModifyExpr(ModifyExprNode *node, WalkItem wi)
+void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need atleast one arg for check
     if (node->args.empty() || command == FindArgs)
-        return wi;
+        return;
 
     Node *arg = node->args[0];
     if (arg->nodeType == INDIRECT_REF)
@@ -49,7 +49,7 @@ WalkItem analyseModifyExpr(ModifyExprNode *node, WalkItem wi)
         IndirectRefNode *refNode = static_cast<IndirectRefNode*>(arg);
         // need atleast one arg for check
         if (refNode->args.empty())
-            return wi;
+            return;
         arg = refNode->args[0];
         if (arg->nodeType == PARM_DECL)
         {
@@ -60,15 +60,13 @@ WalkItem analyseModifyExpr(ModifyExprNode *node, WalkItem wi)
             }
         }
     }
-
-    return wi;
 }
 
-WalkItem analysePointerPlusExpr(PointerPlusExprNode *node, WalkItem wi)
+void analysePointerPlusExpr(PointerPlusExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need atleast one arg for check
     if (node->args.empty() || command == FindArgs)
-        return wi;
+        return;
 
     Node *arg = node->args[0];
     if (arg->nodeType == PARM_DECL)
@@ -79,15 +77,13 @@ WalkItem analysePointerPlusExpr(PointerPlusExprNode *node, WalkItem wi)
                 "Using variable without check for NULL");
         }
     }
-
-    return wi;
 }
 
-WalkItem analyseAddrExpr(AddrExprNode *node, WalkItem wi)
+void analyseAddrExpr(AddrExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need atleast one arg for check
     if (node->args.empty() || command == FindArgs)
-        return wi;
+        return;
 
     Node *arg = node->args[0];
     if (arg->nodeType == PARM_DECL)
@@ -98,8 +94,6 @@ WalkItem analyseAddrExpr(AddrExprNode *node, WalkItem wi)
                 "Using variable without check for NULL");
         }
     }
-
-    return wi;
 }
 
 }

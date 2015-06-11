@@ -34,14 +34,14 @@
 namespace Analysis
 {
 
-WalkItem analyseVarDecl(VarDeclNode *node, WalkItem wi)
+void analyseVarDecl(VarDeclNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need atleast one arg for check
     if (!node->initial || command == FindArgs)
-        return wi;
+        return;
 
     Node *initial = node->initial;
-    if (initial->nodeType == PARM_DECL)
+    if (initial && initial->nodeType == PARM_DECL)
     {
         if (wi.checkNullVars.find(initial->label) != wi.checkNullVars.end())
         {
@@ -50,7 +50,7 @@ WalkItem analyseVarDecl(VarDeclNode *node, WalkItem wi)
         }
     }
 
-    return wi;
+    return;
 }
 
 }

@@ -40,18 +40,18 @@
 namespace Analysis
 {
 
-WalkItem analyseIfStmt(IfStmtNode *node, WalkItem wi)
+void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need condition node
     if (!node->condition || command == FindArgs)
-        return wi;
+        return;
 
     if (node->condition->nodeType == EQ_EXPR)
     {   // if (... == ..)
         EqExprNode *eq = static_cast<EqExprNode*>(node->condition);
         // need atleast two operands for EQ_EXPR node
         if (eq->args.size() < 2)
-            return wi;
+            return;
 
         // PARM_DECL?
         Node *node1 = eq->args[0];
@@ -63,16 +63,22 @@ WalkItem analyseIfStmt(IfStmtNode *node, WalkItem wi)
             wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
             node2->label == "0")
         {
+            WalkItem wi2 = wi;
             // found check for parameter and 0.
             // walking to then branch
-            walkTree(node->thenNode, wi);
+            walkTree(node->thenNode, wi2, wo);
             // From else branch remove variable what we just found.
-            wi.checkNullVars.erase(node1->label);
-            walkTree(node->elseNode, wi);
-            wi.stopWalking = true;
+            wi2 = wi;
+            wi2.checkNullVars.erase(node1->label);
+            walkTree(node->elseNode, wi2, wo);
+            wo.stopWalking = true;
+
+            Log::log("add removeNullVars: %s\n", node1->label.c_str());
+            // add variable for ignore for all parent nodes except special like IF_STMT
+            wo.removeNullVars.insert(node1->label);
+            wo.checkNullVars.erase(node1->label);
 
             // need check what return present
-            return wi;
         }
     }
     else if (node->condition->nodeType == NE_EXPR)
@@ -80,7 +86,7 @@ WalkItem analyseIfStmt(IfStmtNode *node, WalkItem wi)
         NeExprNode *eq = static_cast<NeExprNode*>(node->condition);
         // need atleast two operands for EQ_EXPR node
         if (eq->args.size() < 2)
-            return wi;
+            return;
 
         // PARM_DECL?
         Node *node1 = eq->args[0];
@@ -97,15 +103,14 @@ WalkItem analyseIfStmt(IfStmtNode *node, WalkItem wi)
             WalkItem wi2 = wi;
             wi2.checkNullVars.erase(node1->label);
             // From then branch remove variable what we just found.
-            walkTree(node->thenNode, wi2);
+            walkTree(node->thenNode, wi2, wo);
+            wi2 = wi;
             // walking else node with all variables
-            walkTree(node->elseNode, wi);
-            wi.stopWalking = true;
-            return wi;
+            walkTree(node->elseNode, wi2, wo);
+            wo.stopWalking = true;
+            return;
         }
     }
-
-    return wi;
 }
 
 }

@@ -29,7 +29,7 @@ struct WalkItem;
 
 namespace Analysis
 {
-    WalkItem analyseFunction(FunctionDeclNode *node, WalkItem wi);
+    void analyseFunction(FunctionDeclNode *node, const WalkItem &wi, WalkItem &wo);
 
     void getFunctionArgTypes(FunctionDeclNode *node,
                              std::vector<TypeNode*> &arr);

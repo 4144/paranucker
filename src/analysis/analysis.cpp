@@ -44,29 +44,32 @@ namespace Analysis
 
 void startWalkTree(Node *node)
 {
-    walkTree(node, WalkItem());
+    WalkItem wi;
+    WalkItem wo;
+    walkTree(node, wi, wo);
 }
 
-WalkItem walkTree(Node *node, WalkItem wi)
+void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
 {
     if (!node)
-        return wi;
-
-    wi = analyseNode(node, wi);
-
-    if (wi.stopWalking)
-    {
-        wi.stopWalking = false;
-        return wi;
-    }
+        return;
 
     WalkItem wi2 = wi;
+    analyseNode(node, wi2, wo);
+
+    if (wo.stopWalking)
+    {
+        wo.stopWalking = false;
+        return;
+    }
+
+    WalkItem wo2 = wo;
     FOR_EACH (std::vector<Node*>::iterator, it, node->childs)
     {
-        wi2 = walkTree(*it, wi2);
-        wi2.stopWalking = false;
+        wi2 = wi;
+        walkTree(*it, wi2, wo2);
+        wo2.stopWalking = false;
     }
-    return wi;
 }
 
 int findBackLocation(Node *node)
@@ -80,10 +83,10 @@ int findBackLocation(Node *node)
     return loc;
 }
 
-WalkItem analyseNode(Node *node, WalkItem wi)
+void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
 {
     if (!node)
-        return wi;
+        return;
 
     if (command == Command::DumpNullPointers)
     {
@@ -99,25 +102,31 @@ WalkItem analyseNode(Node *node, WalkItem wi)
         Log::log("\n");
     }
 
+    wo = wi;
     // searching function declaration
     switch (node->nodeType)
     {
         case FUNCTION_DECL:
-            return analyseFunction(static_cast<FunctionDeclNode*>(node), wi);
+            analyseFunction(static_cast<FunctionDeclNode*>(node), wi, wo);
+            break;
         case ADDR_EXPR:
-            return analyseAddrExpr(static_cast<AddrExprNode*>(node), wi);
+            analyseAddrExpr(static_cast<AddrExprNode*>(node), wi, wo);
+            break;
         case MODIFY_EXPR:
-            return analyseModifyExpr(static_cast<ModifyExprNode*>(node), wi);
+            analyseModifyExpr(static_cast<ModifyExprNode*>(node), wi, wo);
+            break;
         case POINTER_PLUS_EXPR:
-            return analysePointerPlusExpr(static_cast<PointerPlusExprNode*>(node), wi);
+            analysePointerPlusExpr(static_cast<PointerPlusExprNode*>(node), wi, wo);
+            break;
         case VAR_DECL:
-            return analyseVarDecl(static_cast<VarDeclNode*>(node), wi);
+            analyseVarDecl(static_cast<VarDeclNode*>(node), wi, wo);
+            break;
         case IF_STMT:
-            return analyseIfStmt(static_cast<IfStmtNode*>(node), wi);
+            analyseIfStmt(static_cast<IfStmtNode*>(node), wi, wo);
+            break;
         default:
             break;
     }
-    return wi;
 }
 
 }

@@ -29,9 +29,9 @@ namespace Analysis
 {
     void startWalkTree(Node *node);
 
-    WalkItem walkTree(Node *node, WalkItem wi);
+    void walkTree(Node *node, const WalkItem &wi, WalkItem &wo);
 
-    WalkItem analyseNode(Node *node, WalkItem wi);
+    void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo);
 
     int findBackLocation(Node *node);
 }
