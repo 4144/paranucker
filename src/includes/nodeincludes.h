@@ -39,3 +39,4 @@
 #include "nodes/expr/nop_expr.h"
 #include "nodes/expr/cond_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
+#include "nodes/type/boolean_type.h"

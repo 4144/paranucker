@@ -485,3 +485,24 @@
 7 integer_cst 
 7 integer_cst 
 5 integer_cst 
+0 function_decl test1.c
+1 function_type 
+2 void_type 
+3 type_decl <built-in>
+2 tree_list 
+3 boolean_type 
+4 type_decl <built-in>
+3 tree_list 
+4 void_type 
+5 type_decl <built-in>
+1 result_decl test1.c
+2 void_type 
+3 type_decl <built-in>
+1 parm_decl test1.c
+2 integer_type 
+3 type_decl <built-in>
+3 integer_cst 
+3 integer_cst 
+3 integer_cst 
+2 integer_cst 
+1 statement_list 

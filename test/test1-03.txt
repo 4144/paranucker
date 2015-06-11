@@ -8,3 +8,5 @@ Allocations before cleanup: 168
 Allocations after cleanup: 0
 Allocations before cleanup: 50
 Allocations after cleanup: 0
+Allocations before cleanup: 21
+Allocations after cleanup: 0

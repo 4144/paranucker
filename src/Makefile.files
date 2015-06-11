@@ -115,4 +115,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/cond_expr.h \
       parsers/expr/cond_expr.cpp \
       nodes/expr/pointerplus_expr.h \
-      parsers/expr/pointerplus_expr.cpp
+      parsers/expr/pointerplus_expr.cpp \
+      nodes/type/boolean_type.h \
+      parsers/type/boolean_type.cpp

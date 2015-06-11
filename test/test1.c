@@ -36,3 +36,6 @@ int fun1(const int x,int*** y)
 	else return MAX123;
 }
 long fun2(const char* zz) { return (long)zz; }
+void funb(bool bool1)
+{
+}
