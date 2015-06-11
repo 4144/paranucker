@@ -6,7 +6,3 @@ test6.c: In function 'void func5(int*)':
 test6.c:43:13: warning: Using variable without check for NULL
      *a = 600;
              ^
-test6.c: In function 'void func6(int*)':
-test6.c:54:16: warning: Using variable without check for NULL
-     *aptr = 700;
-                ^
