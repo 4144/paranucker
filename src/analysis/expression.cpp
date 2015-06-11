@@ -44,7 +44,7 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
         return;
 
     Node *arg = node->args[0];
-    if (arg->nodeType == INDIRECT_REF)
+    if (arg && arg->nodeType == INDIRECT_REF)
     {
         IndirectRefNode *refNode = static_cast<IndirectRefNode*>(arg);
         // need atleast one arg for check
@@ -69,7 +69,7 @@ void analysePointerPlusExpr(PointerPlusExprNode *node, const WalkItem &wi, WalkI
         return;
 
     Node *arg = node->args[0];
-    if (arg->nodeType == PARM_DECL)
+    if (arg && arg->nodeType == PARM_DECL)
     {
         if (wi.checkNullVars.find(arg->label) != wi.checkNullVars.end())
         {
@@ -86,7 +86,7 @@ void analyseAddrExpr(AddrExprNode *node, const WalkItem &wi, WalkItem &wo)
         return;
 
     Node *arg = node->args[0];
-    if (arg->nodeType == PARM_DECL)
+    if (arg && arg->nodeType == PARM_DECL)
     {
         if (wi.checkNullVars.find(arg->label) != wi.checkNullVars.end())
         {

@@ -58,7 +58,9 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
         // INTEGER_CST?
         Node *node2 = eq->args[1];
         // if (var == 0)
-        if (node1->nodeType == PARM_DECL &&
+        if (node1 &&
+            node2 &&
+            node1->nodeType == PARM_DECL &&
             node2->nodeType == INTEGER_CST &&
             wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
             node2->label == "0")
@@ -97,7 +99,9 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
         // INTEGER_CST?
         Node *node2 = ne->args[1];
         // if (var != 0)
-        if (node1->nodeType == PARM_DECL &&
+        if (node1 &&
+            node2 &&
+            node1->nodeType == PARM_DECL &&
             node2->nodeType == INTEGER_CST &&
             wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
             node2->label == "0")
