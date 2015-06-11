@@ -119,4 +119,6 @@ SRC = analysis/analysis.cpp \
       nodes/type/boolean_type.h \
       parsers/type/boolean_type.cpp \
       nodes/type/nullptr_type.h \
-      parsers/type/nullptr_type.cpp
+      parsers/type/nullptr_type.cpp \
+      nodes/type/record_type.h \
+      parsers/type/record_type.cpp

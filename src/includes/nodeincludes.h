@@ -41,3 +41,4 @@
 #include "nodes/expr/pointerplus_expr.h"
 #include "nodes/type/boolean_type.h"
 #include "nodes/type/nullptr_type.h"
+#include "nodes/type/record_type.h"

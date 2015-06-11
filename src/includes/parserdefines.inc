@@ -40,3 +40,4 @@ parserDefine(CondExpr);
 parserDefine(PointerPlusExpr);
 parserDefine(BooleanType);
 parserDefine(NullPtrType);
+parserDefine(RecordType);
