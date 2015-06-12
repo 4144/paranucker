@@ -136,4 +136,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/nonlvalue_expr.h \
       parsers/expr/nonlvalue_expr.cpp \
       nodes/cst/vector_cst.h \
-      parsers/cst/vector_cst.cpp
+      parsers/cst/vector_cst.cpp \
+      nodes/expr/truthorif_expr.h \
+      parsers/expr/truthorif_expr.cpp

@@ -49,3 +49,4 @@
 #include "nodes/expr/viewconvert_expr.h"
 #include "nodes/expr/nonlvalue_expr.h"
 #include "nodes/cst/vector_cst.h"
+#include "nodes/expr/truthorif_expr.h"

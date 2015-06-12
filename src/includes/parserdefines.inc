@@ -48,3 +48,4 @@ parserDefine(VectorType);
 parserDefine(ViewConvertExpr);
 parserDefine(NonLvalueExpr);
 parserDefine(VectorCst);
+parserDefine(TruthOrIfExpr);
