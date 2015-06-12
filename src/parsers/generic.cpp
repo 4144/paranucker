@@ -20,6 +20,7 @@
 #include "parsers/generic.h"
 
 #include "command.h"
+#include "nodesmap.h"
 
 #include "includes/nodeincludes.h"
 #include "includes/parserincludes.h"
@@ -141,8 +142,27 @@ Node *parseNodes(tree gccNode)
     return createParseNode(nullptr, gccNode, FUNCTION_DECL);
 }
 
+typedef std::map<Node*, Node*> NodeNodeMap;
+void parseVarDeclNode(VarDeclNode *node1, VarDeclNode *node2);
+
+void updateNodes()
+{
+    FOR_EACH(NodeNodeMap::iterator, it, updateNodesMap)
+    {
+        Node *node1 = (*it).first;
+        Node *node2 = (*it).second;
+        if (node1->nodeType == VAR_DECL)
+        {
+            parseVarDeclNode(static_cast<VarDeclNode*>(node1),
+                static_cast<VarDeclNode*>(node2));
+        }
+    }
+}
+
 void cleanAllNodes(Node *node)
 {
+    foundNodesMap.clear();
+    updateNodesMap.clear();
     if (command == Command::MemoryUsage)
         Log::error("Allocations before cleanup: %d", allocations);
     cleanNodes(node);

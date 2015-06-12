@@ -30,6 +30,8 @@ namespace Generic
 {
     Node *parseNodes(tree gccNode);
 
+    void updateNodes();
+
     void parseNode(Node *parent);
 
     void cleanNodes(Node *node);

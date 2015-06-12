@@ -28,6 +28,8 @@
 
 #include "parsers/generic.h"
 
+#include <map>
+
 #include "localconsts.h"
 
 int plugin_is_GPL_compatible = 1;
@@ -35,6 +37,8 @@ int plugin_is_GPL_compatible = 1;
 struct Node;
 
 Command command = Command::Dump;
+std::map<tree, Node*> foundNodesMap;
+std::map<Node*, Node*> updateNodesMap;
 
 static void pre_generic(void *gcc_data,
                         void *user_data A_UNUSED)
@@ -44,6 +48,7 @@ static void pre_generic(void *gcc_data,
         command == Command::DetectNullPointers ||
         command == Command::DumpNullPointers)
     {
+        Generic::updateNodes();
         Analysis::startWalkTree(node);
     }
     Generic::cleanAllNodes(node);

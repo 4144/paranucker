@@ -43,7 +43,8 @@ struct Node
         treeNumber(0),
         indent(0),
         parseChilds(true),
-        noLabel(false)
+        noLabel(false),
+        complete(false)
     {
         allocations ++;
     }
@@ -76,6 +77,7 @@ struct Node
     int indent;
     bool parseChilds;
     bool noLabel;
+    bool complete;
 };
 
 #endif // NODES_BASE_NODE_H

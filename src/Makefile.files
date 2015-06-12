@@ -59,6 +59,7 @@ SRC = analysis/analysis.cpp \
       localconsts.h \
       logger.cpp \
       logger.h \
+      nodesmap.h \
       plugin.cpp \
       stringutils.cpp \
       stringutils.h \
