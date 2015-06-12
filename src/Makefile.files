@@ -124,4 +124,6 @@ SRC = analysis/analysis.cpp \
       nodes/type/record_type.h \
       parsers/type/record_type.cpp \
       nodes/expr/target_expr.h \
-      parsers/expr/target_expr.cpp
+      parsers/expr/target_expr.cpp \
+      nodes/block/ehspec_block.h \
+      parsers/block/ehspec_block.cpp

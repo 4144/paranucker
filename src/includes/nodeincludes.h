@@ -43,3 +43,4 @@
 #include "nodes/type/nullptr_type.h"
 #include "nodes/type/record_type.h"
 #include "nodes/expr/target_expr.h"
+#include "nodes/block/ehspec_block.h"
