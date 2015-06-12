@@ -47,3 +47,4 @@
 #include "nodes/decl/field_decl.h"
 #include "nodes/type/vector_type.h"
 #include "nodes/expr/viewconvert_expr.h"
+#include "nodes/expr/nonlvalue_expr.h"

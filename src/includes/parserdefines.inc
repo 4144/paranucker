@@ -46,3 +46,4 @@ parserDefine(EhSpecBlock);
 parserDefine(FieldDecl);
 parserDefine(VectorType);
 parserDefine(ViewConvertExpr);
+parserDefine(NonLvalueExpr);

@@ -132,4 +132,6 @@ SRC = analysis/analysis.cpp \
       nodes/type/vector_type.h \
       parsers/type/vector_type.cpp \
       nodes/expr/viewconvert_expr.h \
-      parsers/expr/viewconvert_expr.cpp
+      parsers/expr/viewconvert_expr.cpp \
+      nodes/expr/nonlvalue_expr.h \
+      parsers/expr/nonlvalue_expr.cpp
