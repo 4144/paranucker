@@ -8,7 +8,7 @@ PLUGIN = ../build/src/.libs/astdumper.so
 CMD = LANG=C ${CXX} -c -fplugin=${PLUGIN} -fplugin-arg-astdumper-command=${1} ${2} -o a.out 2>${3}
 
 all: test1 test2 test3 test4 test5 test6 clean
-crashes: crashtest1 crashtest2 crashtest3 clean
+crashes: crashtest1 crashtest2 crashtest3 crashtest4 clean
 
 clean:
 	@rm a.out 2>/dev/null || true
@@ -46,3 +46,5 @@ crashtest2:
 	$(call CMD,dump,crashtest2.h,crashtest2-01.txt)
 crashtest3:
 	$(call CMD,findargs,crashtest3.h,crashtest3-01.txt)
+crashtest4:
+	$(call CMD,dump,crashtest4.cpp,crashtest4-01.txt)
