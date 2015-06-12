@@ -44,3 +44,4 @@ parserDefine(RecordType);
 parserDefine(TargetExpr);
 parserDefine(EhSpecBlock);
 parserDefine(FieldDecl);
+parserDefine(VectorType);

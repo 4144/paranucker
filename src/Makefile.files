@@ -128,4 +128,6 @@ SRC = analysis/analysis.cpp \
       nodes/block/ehspec_block.h \
       parsers/block/ehspec_block.cpp \
       nodes/decl/field_decl.h \
-      parsers/decl/field_decl.cpp
+      parsers/decl/field_decl.cpp \
+      nodes/type/vector_type.h \
+      parsers/type/vector_type.cpp
