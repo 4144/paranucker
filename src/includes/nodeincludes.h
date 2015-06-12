@@ -44,3 +44,4 @@
 #include "nodes/type/record_type.h"
 #include "nodes/expr/target_expr.h"
 #include "nodes/block/ehspec_block.h"
+#include "nodes/decl/field_decl.h"

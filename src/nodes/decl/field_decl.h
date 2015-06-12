@@ -17,37 +17,40 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_DECL_VARDECLNODE_H
-#define NODES_DECL_VARDECLNODE_H
+#ifndef NODES_DECL_FIELDDECLNODE_H
+#define NODES_DECL_FIELDDECLNODE_H
+
+#include "nodes/base/decl.h"
+
+#include "nodes/base/type.h"
 
 #include "nodes/cst/integer_cst.h"
 
-#include "nodes/base/decl.h"
-#include "nodes/base/type.h"
-
 #include <string>
 
-struct VarDeclNode : public DeclNode
+struct FieldDeclNode : public DeclNode
 {
-    VarDeclNode() :
+    FieldDeclNode() :
         DeclNode(),
         declSize(nullptr),
-        varType(nullptr),
+        declBitType(nullptr),
         initial(nullptr),
-        isStatic(false),
-        isRegister(false),
-        isUsed(false),
-        isVirtual(false)
+        qualifier(nullptr),
+        isBitField(false),
+        isUnsigned(false),
+        isVirtual(false),
+        isBitPacked(false)
     {
     }
 
     IntegerCstNode *declSize;
-    TypeNode *varType;
+    TypeNode *declBitType;
     Node *initial;
-    bool isStatic;
-    bool isRegister;
-    bool isUsed;
+    Node *qualifier;
+    bool isBitField;
+    bool isUnsigned;
     bool isVirtual;
+    bool isBitPacked;
 };
 
-#endif // NODES_DECL_VARDECLNODE_H
+#endif // NODES_DECL_FIELDDECLNODE_H

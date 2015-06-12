@@ -43,3 +43,4 @@ parserDefine(NullPtrType);
 parserDefine(RecordType);
 parserDefine(TargetExpr);
 parserDefine(EhSpecBlock);
+parserDefine(FieldDecl);
