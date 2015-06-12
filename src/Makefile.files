@@ -144,4 +144,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/sizeof_expr.h \
       parsers/expr/sizeof_expr.cpp \
       nodes/errormark.h \
-      parsers/errormark.cpp
+      parsers/errormark.cpp \
+      nodes/type/real_type.h \
+      parsers/type/real_type.cpp

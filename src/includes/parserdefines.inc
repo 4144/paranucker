@@ -52,3 +52,4 @@ parserDefine(TruthOrIfExpr);
 parserDefine(TruthAndIfExpr);
 parserDefine(SizeOfExpr);
 parserDefine(ErrorMark);
+parserDefine(RealType);
