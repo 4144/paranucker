@@ -61,3 +61,4 @@
 #include "nodes/expr/bitior_expr.h"
 #include "nodes/expr/bitxor_expr.h"
 #include "nodes/expr/save_expr.h"
+#include "nodes/type/method_type.h"

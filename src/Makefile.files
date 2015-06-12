@@ -160,4 +160,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/bitxor_expr.h \
       parsers/expr/bitxor_expr.cpp \
       nodes/expr/save_expr.h \
-      parsers/expr/save_expr.cpp
+      parsers/expr/save_expr.cpp \
+      nodes/type/method_type.h \
+      parsers/type/method_type.cpp
