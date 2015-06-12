@@ -54,3 +54,4 @@ parserDefine(SizeOfExpr);
 parserDefine(ErrorMark);
 parserDefine(RealType);
 parserDefine(Constructor);
+parserDefine(RealCst);

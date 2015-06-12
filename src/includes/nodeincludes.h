@@ -55,3 +55,4 @@
 #include "nodes/errormark.h"
 #include "nodes/type/real_type.h"
 #include "nodes/constructor.h"
+#include "nodes/cst/real_cst.h"
