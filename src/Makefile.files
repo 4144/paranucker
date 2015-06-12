@@ -156,4 +156,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/bitand_expr.h \
       parsers/expr/bitand_expr.cpp \
       nodes/expr/bitior_expr.h \
-      parsers/expr/bitior_expr.cpp
+      parsers/expr/bitior_expr.cpp \
+      nodes/expr/bitxor_expr.h \
+      parsers/expr/bitxor_expr.cpp
