@@ -19468,7 +19468,7 @@ function_decl _mm_malloc /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 38:
       eq_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 43:42 - operand
        sizeof_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 43:33 - operand
         nop_expr - operand
-         Unsupported node type: error_mark - operand - operand
+         error_mark - operand
        integer_cst 8 - operand
       eq_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 43:60 - operand
        - isUsed: 1
@@ -19496,7 +19496,7 @@ function_decl _mm_malloc /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 38:
          integer_cst 64 - parm size
         sizeof_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 44:24 - operand
          nop_expr - operand
-          Unsupported node type: error_mark - operand - operand
+          error_mark - operand
    if_stmt - statement
     cleanup_point_expr - condition
      eq_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 45:46 - operand
