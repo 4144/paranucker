@@ -140,4 +140,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/truthorif_expr.h \
       parsers/expr/truthorif_expr.cpp \
       nodes/expr/truthandif_expr.h \
-      parsers/expr/truthandif_expr.cpp
+      parsers/expr/truthandif_expr.cpp \
+      nodes/expr/sizeof_expr.h \
+      parsers/expr/sizeof_expr.cpp

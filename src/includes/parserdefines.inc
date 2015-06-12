@@ -50,3 +50,4 @@ parserDefine(NonLvalueExpr);
 parserDefine(VectorCst);
 parserDefine(TruthOrIfExpr);
 parserDefine(TruthAndIfExpr);
+parserDefine(SizeOfExpr);
