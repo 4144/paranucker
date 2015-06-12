@@ -25,13 +25,7 @@ test5.c: In function 'void func7(int, int*, char)':
 test5.c:39:20: warning: Using variable without check for NULL
      int *var3 = 12 + b;
                     ^
-test5.c:39:20: warning: Using variable without check for NULL
-test5.c:39:20: warning: Using variable without check for NULL
-test5.c:39:20: warning: Using variable without check for NULL
 test5.c: In function 'void func8(int, int*, char)':
 test5.c:45:11: warning: Using variable without check for NULL
      int **var4 = &bptr;
            ^
-test5.c:45:11: warning: Using variable without check for NULL
-test5.c:45:11: warning: Using variable without check for NULL
-test5.c:45:11: warning: Using variable without check for NULL

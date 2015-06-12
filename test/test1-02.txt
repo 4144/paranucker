@@ -113,12 +113,6 @@
 8 integer_cst 
 4 decl_expr test1.c
 5 var_decl test1.c
-6 integer_cst 
-6 integer_type 
-7 type_decl <built-in>
-7 integer_cst 
-7 integer_cst 
-7 integer_cst 
 4 decl_expr test1.c
 5 var_decl test1.c
 6 integer_cst 
@@ -133,12 +127,6 @@
 7 integer_cst 
 7 addr_expr 
 8 var_decl test1.c
-9 integer_cst 
-9 integer_type 
-10 type_decl <built-in>
-10 integer_cst 
-10 integer_cst 
-10 integer_cst 
 4 return_expr test1.c
 5 init_expr 
 6 result_decl test1.c
@@ -151,19 +139,7 @@
 6 integer_cst 
 3 block 
 4 var_decl test1.c
-5 integer_cst 
-5 integer_type 
-6 type_decl <built-in>
-6 integer_cst 
-6 integer_cst 
-6 integer_cst 
 4 var_decl test1.c
-5 integer_cst 
-5 integer_type 
-6 type_decl <built-in>
-6 integer_cst 
-6 integer_cst 
-6 integer_cst 
 2 return_expr test1.c
 3 init_expr 
 4 result_decl test1.c
@@ -249,12 +225,12 @@
 9 integer_cst 
 7 var_decl test1.c
 8 integer_cst 
+8 integer_cst 
 8 integer_type 
 9 type_decl <built-in>
 9 integer_cst 
 9 integer_cst 
 9 integer_cst 
-8 integer_cst 
 2 cleanup_point_expr test1.c
 3 expr_stmt 
 4 convert_expr 
@@ -319,53 +295,39 @@
 1 bind_expr test1.c
 2 var_decl test1.c
 3 integer_cst 
+3 integer_cst 
 3 integer_type 
 4 type_decl <built-in>
 4 integer_cst 
 4 integer_cst 
 4 integer_cst 
-3 integer_cst 
 2 statement_list 
 3 cleanup_point_expr test1.c
 4 decl_expr test1.c
 5 var_decl test1.c
-6 integer_cst 
-6 integer_type 
-7 type_decl <built-in>
-7 integer_cst 
-7 integer_cst 
-7 integer_cst 
-6 integer_cst 
 3 cleanup_point_expr test1.c
 4 decl_expr test1.c
 5 var_decl test1.c
 6 integer_cst 
+6 integer_cst 
 6 integer_type 
 7 type_decl <built-in>
 7 integer_cst 
 7 integer_cst 
 7 integer_cst 
-6 integer_cst 
 3 cleanup_point_expr test1.c
 4 expr_stmt 
 5 convert_expr 
 6 modify_expr 
 7 var_decl test1.c
 8 integer_cst 
+8 integer_cst 
 8 integer_type 
 9 type_decl <built-in>
 9 integer_cst 
 9 integer_cst 
 9 integer_cst 
-8 integer_cst 
 7 var_decl test1.c
-8 integer_cst 
-8 integer_type 
-9 type_decl <built-in>
-9 integer_cst 
-9 integer_cst 
-9 integer_cst 
-8 integer_cst 
 3 cleanup_point_expr test1.c
 4 expr_stmt 
 5 call_expr test1.c
@@ -374,13 +336,6 @@
 3 if_stmt 
 4 eq_expr test1.c
 5 var_decl test1.c
-6 integer_cst 
-6 integer_type 
-7 type_decl <built-in>
-7 integer_cst 
-7 integer_cst 
-7 integer_cst 
-6 integer_cst 
 5 integer_cst 
 4 return_expr test1.c
 5 init_expr 
@@ -393,21 +348,7 @@
 7 integer_cst 
 6 plus_expr test1.c
 7 var_decl test1.c
-8 integer_cst 
-8 integer_type 
-9 type_decl <built-in>
-9 integer_cst 
-9 integer_cst 
-9 integer_cst 
-8 integer_cst 
 7 var_decl test1.c
-8 integer_cst 
-8 integer_type 
-9 type_decl <built-in>
-9 integer_cst 
-9 integer_cst 
-9 integer_cst 
-8 integer_cst 
 4 return_expr test1.c
 5 init_expr 
 6 result_decl test1.c
@@ -420,21 +361,7 @@
 6 integer_cst 
 2 block 
 3 var_decl test1.c
-4 integer_cst 
-4 integer_type 
-5 type_decl <built-in>
-5 integer_cst 
-5 integer_cst 
-5 integer_cst 
-4 integer_cst 
 3 var_decl test1.c
-4 integer_cst 
-4 integer_type 
-5 type_decl <built-in>
-5 integer_cst 
-5 integer_cst 
-5 integer_cst 
-4 integer_cst 
 0 function_decl test1.c
 1 function_type 
 2 integer_type 
