@@ -36,6 +36,9 @@ void parseRecordTypeNode(RecordTypeNode *node)
     fillTypeName(node);
     fillTypeAttributes(node);
 
+    if (!node->parseChilds)
+        return;
+
     FOR_CHAIN(node->gccNode, it, TYPE_FIELDS, DECL_CHAIN)
     {
         node->fields.push_back(static_cast<DeclNode*>(
