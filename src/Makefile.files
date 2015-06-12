@@ -152,4 +152,6 @@ SRC = analysis/analysis.cpp \
       nodes/cst/real_cst.h \
       parsers/cst/real_cst.cpp \
       nodes/expr/rdiv_expr.h \
-      parsers/expr/rdiv_expr.cpp
+      parsers/expr/rdiv_expr.cpp \
+      nodes/expr/bitand_expr.h \
+      parsers/expr/bitand_expr.cpp

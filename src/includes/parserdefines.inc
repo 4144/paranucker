@@ -56,3 +56,4 @@ parserDefine(RealType);
 parserDefine(Constructor);
 parserDefine(RealCst);
 parserDefine(RDivExpr);
+parserDefine(BitAndExpr);
