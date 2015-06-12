@@ -17514,7 +17514,9 @@ function_decl _mm_setzero_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.
       integer_cst -2147483648 - min value
       integer_cst 2147483647 - max value
     integer_cst 64 - decl size
-   Unsupported node type: vector_cst - operand - operand
+   vector_cst - operand
+    integer_cst 0 - element
+    integer_cst 0 - element
 function_decl _mm_set_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 876:1
 - isExternal: 1
 - isPublic: 1
@@ -26757,7 +26759,11 @@ function_decl _mm_cvtpi16_ps crashtest2.h 642:1
        - isUsed: 1
        call_expr crashtest2.h 651:35 - operand
        - function: LOAD_LANES - operand
-        Unsupported node type: vector_cst - arg - operand
+        vector_cst - arg
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
         view_convert_expr - arg
          - isUsed: 1
          parm_decl __A crashtest2.h 642:23 - operand
@@ -27036,7 +27042,11 @@ function_decl _mm_cvtpu16_ps crashtest2.h 667:1
              integer_cst -2147483648 - min value
              integer_cst 2147483647 - max value
            integer_cst 64 - parm size
-         Unsupported node type: vector_cst - arg - operand
+         vector_cst - arg
+          integer_cst 0 - element
+          integer_cst 0 - element
+          integer_cst 0 - element
+          integer_cst 0 - element
    cleanup_point_expr crashtest2.h 674:72 - statement
     expr_stmt - operand
      convert_expr - expresssion
@@ -27063,7 +27073,11 @@ function_decl _mm_cvtpu16_ps crashtest2.h 667:1
              integer_cst -2147483648 - min value
              integer_cst 2147483647 - max value
            integer_cst 64 - parm size
-         Unsupported node type: vector_cst - arg - operand
+         vector_cst - arg
+          integer_cst 0 - element
+          integer_cst 0 - element
+          integer_cst 0 - element
+          integer_cst 0 - element
    cleanup_point_expr crashtest2.h 677:38 - statement
     expr_stmt - operand
      convert_expr - expresssion
@@ -27211,7 +27225,15 @@ function_decl _mm_cvtpi8_ps crashtest2.h 686:1
        - isUsed: 1
        call_expr crashtest2.h 693:35 - operand
        - function: LOAD_LANES - operand
-        Unsupported node type: vector_cst - arg - operand
+        vector_cst - arg
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
         view_convert_expr - arg
          - isUsed: 1
          parm_decl __A crashtest2.h 686:22 - operand
@@ -27404,7 +27426,15 @@ function_decl _mm_cvtpu8_ps crashtest2.h 703:1
             integer_cst -2147483648 - min value
             integer_cst 2147483647 - max value
           integer_cst 64 - parm size
-        Unsupported node type: vector_cst - arg - operand
+        vector_cst - arg
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
+         integer_cst 0 - element
   cleanup_point_expr crashtest2.h 706:28 - statement
    return_expr crashtest2.h 706:28 - operand
     init_expr - operand
@@ -27904,7 +27934,11 @@ function_decl _mm_cvtps_pi8 crashtest2.h 732:1
       - function: LOAD_LANES - operand
        var_decl __tmp crashtest2.h 734:10 - arg
        - isUsed: 1
-       Unsupported node type: vector_cst - arg - operand
+       vector_cst - arg
+        integer_cst 0 - element
+        integer_cst 0 - element
+        integer_cst 0 - element
+        integer_cst 0 - element
   block - operand
    var_decl __tmp crashtest2.h 734:10 - block vars
    - isUsed: 1
@@ -44209,7 +44243,9 @@ function_decl _mm_loadl_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      integer_cst 128 - decl size
     call_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 704:24 - operand
     - function: LOAD_LANES - operand
-     Unsupported node type: vector_cst - arg - operand
+     vector_cst - arg
+      integer_cst 0 - element
+      integer_cst 0 - element
      indirect_ref - arg
       nop_expr - operand
        - isUsed: 1
@@ -44813,7 +44849,9 @@ function_decl _mm_movpi64_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintri
      integer_cst 128 - decl size
     call_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 734:24 - operand
     - function: LOAD_LANES - operand
-     Unsupported node type: vector_cst - arg - operand
+     vector_cst - arg
+      integer_cst 0 - element
+      integer_cst 0 - element
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 732:26 - arg
       vector_type - decl type
