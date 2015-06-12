@@ -58,3 +58,4 @@
 #include "nodes/cst/real_cst.h"
 #include "nodes/expr/rdiv_expr.h"
 #include "nodes/expr/bitand_expr.h"
+#include "nodes/expr/bitior_expr.h"

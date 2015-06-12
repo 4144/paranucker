@@ -154,4 +154,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/rdiv_expr.h \
       parsers/expr/rdiv_expr.cpp \
       nodes/expr/bitand_expr.h \
-      parsers/expr/bitand_expr.cpp
+      parsers/expr/bitand_expr.cpp \
+      nodes/expr/bitior_expr.h \
+      parsers/expr/bitior_expr.cpp
