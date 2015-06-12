@@ -60,3 +60,4 @@
 #include "nodes/expr/bitand_expr.h"
 #include "nodes/expr/bitior_expr.h"
 #include "nodes/expr/bitxor_expr.h"
+#include "nodes/expr/save_expr.h"
