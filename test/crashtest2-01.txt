@@ -19452,7 +19452,33 @@ function_decl _mm_malloc /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 38:
           integer_cst 0 - min value
          integer_cst 64 - parm size
    if_stmt - statement
-    Unsupported node type: truth_orif_expr - condition - statement
+    truth_orif_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 43:22 - condition
+     eq_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 43:17 - operand
+      - isUsed: 1
+      parm_decl alignment /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 38:33 - operand
+       integer_type - decl type
+       - precisionBits: 64
+       - unsigned
+        type_decl size_t /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h 216:23 - type name
+        integer_cst 64 - type size
+        integer_cst 0 - min value
+       integer_cst 64 - parm size
+      integer_cst 2 - operand
+     truth_andif_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 43:47 - operand
+      eq_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 43:42 - operand
+       Unsupported node type: sizeof_expr - operand - operand
+       integer_cst 8 - operand
+      eq_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 43:60 - operand
+       - isUsed: 1
+       parm_decl alignment /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 38:33 - operand
+        integer_type - decl type
+        - precisionBits: 64
+        - unsigned
+         type_decl size_t /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h 216:23 - type name
+         integer_cst 64 - type size
+         integer_cst 0 - min value
+        integer_cst 64 - parm size
+       integer_cst 4 - operand
     cleanup_point_expr /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 44:32 - then
      expr_stmt - operand
       convert_expr - expresssion
