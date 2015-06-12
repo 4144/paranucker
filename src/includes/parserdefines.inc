@@ -55,3 +55,4 @@ parserDefine(ErrorMark);
 parserDefine(RealType);
 parserDefine(Constructor);
 parserDefine(RealCst);
+parserDefine(RDivExpr);

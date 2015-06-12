@@ -150,4 +150,6 @@ SRC = analysis/analysis.cpp \
       nodes/constructor.h \
       parsers/constructor.cpp \
       nodes/cst/real_cst.h \
-      parsers/cst/real_cst.cpp
+      parsers/cst/real_cst.cpp \
+      nodes/expr/rdiv_expr.h \
+      parsers/expr/rdiv_expr.cpp

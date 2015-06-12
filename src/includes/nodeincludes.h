@@ -56,3 +56,4 @@
 #include "nodes/type/real_type.h"
 #include "nodes/constructor.h"
 #include "nodes/cst/real_cst.h"
+#include "nodes/expr/rdiv_expr.h"
