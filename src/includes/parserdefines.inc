@@ -51,3 +51,4 @@ parserDefine(VectorCst);
 parserDefine(TruthOrIfExpr);
 parserDefine(TruthAndIfExpr);
 parserDefine(SizeOfExpr);
+parserDefine(ErrorMark);

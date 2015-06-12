@@ -52,3 +52,4 @@
 #include "nodes/expr/truthorif_expr.h"
 #include "nodes/expr/truthandif_expr.h"
 #include "nodes/expr/sizeof_expr.h"
+#include "nodes/errormark.h"
