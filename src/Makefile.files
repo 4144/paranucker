@@ -138,4 +138,6 @@ SRC = analysis/analysis.cpp \
       nodes/cst/vector_cst.h \
       parsers/cst/vector_cst.cpp \
       nodes/expr/truthorif_expr.h \
-      parsers/expr/truthorif_expr.cpp
+      parsers/expr/truthorif_expr.cpp \
+      nodes/expr/truthandif_expr.h \
+      parsers/expr/truthandif_expr.cpp
