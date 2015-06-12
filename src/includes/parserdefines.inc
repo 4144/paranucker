@@ -47,3 +47,4 @@ parserDefine(FieldDecl);
 parserDefine(VectorType);
 parserDefine(ViewConvertExpr);
 parserDefine(NonLvalueExpr);
+parserDefine(VectorCst);
