@@ -54,3 +54,4 @@
 #include "nodes/expr/sizeof_expr.h"
 #include "nodes/errormark.h"
 #include "nodes/type/real_type.h"
+#include "nodes/constructor.h"
