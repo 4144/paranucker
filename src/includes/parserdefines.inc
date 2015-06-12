@@ -61,3 +61,4 @@ parserDefine(BitIOrExpr);
 parserDefine(BitXorExpr);
 parserDefine(SaveExpr);
 parserDefine(MethodType);
+parserDefine(MustNotThrowExpr);
