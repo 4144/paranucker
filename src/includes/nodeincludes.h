@@ -46,3 +46,4 @@
 #include "nodes/block/ehspec_block.h"
 #include "nodes/decl/field_decl.h"
 #include "nodes/type/vector_type.h"
+#include "nodes/expr/viewconvert_expr.h"
