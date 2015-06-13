@@ -107,3 +107,4 @@ parserDefine(EnumeralType);
 parserDefine(EmptyClassExpr);
 parserDefine(MinExpr);
 parserDefine(FixTruncExpr);
+parserDefine(ObjTypeRef);

@@ -108,3 +108,4 @@
 #include "nodes/expr/emptyclass_expr.h"
 #include "nodes/expr/min_expr.h"
 #include "nodes/expr/fixtrunc_expr.h"
+#include "nodes/ref/objtype_ref.h"

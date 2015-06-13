@@ -260,4 +260,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/min_expr.h \
       parsers/expr/min_expr.cpp \
       nodes/expr/fixtrunc_expr.h \
-      parsers/expr/fixtrunc_expr.cpp
+      parsers/expr/fixtrunc_expr.cpp \
+      nodes/ref/objtype_ref.h \
+      parsers/ref/objtype_ref.cpp
