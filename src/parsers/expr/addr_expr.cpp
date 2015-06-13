@@ -37,7 +37,26 @@ void parseAddrExprNode(AddrExprNode *node)
 //    if (!node->parseChilds)
 //        return;
 
-    fillExprOperands(node);
+//    fillExprOperands(node);
+
+    tree gccNode = TREE_OPERAND (node->gccNode, 0);
+
+    // stop recursion if operand is FUNCTION_DECL
+    if (TREE_CODE(gccNode) == FUNCTION_DECL)
+    {
+        node->args.push_back(createParseNode(
+            node,
+            gccNode,
+            "operand",
+            false));
+    }
+    else
+    {
+        node->args.push_back(createParseNode(
+            node,
+            gccNode,
+            "operand"));
+    }
 }
 
 }
