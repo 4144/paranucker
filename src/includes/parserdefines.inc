@@ -68,3 +68,4 @@ parserDefine(CleanupStmt);
 parserDefine(TryCatchExpr);
 parserDefine(RShiftExpr);
 parserDefine(LShiftExpr);
+parserDefine(PostIncrementExpr);

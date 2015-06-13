@@ -179,4 +179,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/rshift_expr.h \
       parsers/expr/rshift_expr.cpp \
       nodes/expr/lshift_expr.h \
-      parsers/expr/lshift_expr.cpp
+      parsers/expr/lshift_expr.cpp \
+      nodes/expr/postincrement_expr.h \
+      parsers/expr/postincrement_expr.cpp

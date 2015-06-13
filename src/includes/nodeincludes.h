@@ -69,3 +69,4 @@
 #include "nodes/expr/trycatch_expr.h"
 #include "nodes/expr/rshift_expr.h"
 #include "nodes/expr/lshift_expr.h"
+#include "nodes/expr/postincrement_expr.h"
