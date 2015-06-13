@@ -50,7 +50,7 @@ struct FunctionDeclNode : public DeclNode
     {
     }
 
-    FunctionTypeNode *functionType;
+    TypeNode *functionType;
     ResultDeclNode *result;
     Node *code;
     Node *target;

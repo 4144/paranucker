@@ -85,6 +85,29 @@ Node *createParseNode(Node *parent,
         node->parent = parent;
         node->gccNode = gccNode;
         node->parseChilds = parseChilds;
+
+        if (wantType != ERROR_MARK &&
+            TREE_CODE(node->gccNode) != wantType)
+        {
+            if (tag.empty())
+            {
+                Log::dump(node,
+                    "Wrong node type. Want %s but get %s",
+                    get_tree_code_name(wantType),
+                    get_tree_code_name(TREE_CODE(node->gccNode)));
+            }
+            else
+            {
+                Log::dump(node,
+                    "Wrong node type. Want %s but get %s - %s",
+                    get_tree_code_name(wantType),
+                    get_tree_code_name(TREE_CODE(node->gccNode)),
+                    tag.c_str());
+            }
+            delete node;
+            return nullptr;
+        }
+
         if (parent)
         {
             node->indent  = parent->indent + 1;
@@ -97,29 +120,6 @@ Node *createParseNode(Node *parent,
         else
         {
             node->tag = tag;
-        }
-
-        if (wantType != ERROR_MARK &&
-            TREE_CODE(node->gccNode) != wantType)
-        {
-            if (tag.empty())
-            {
-                Log::dump(node,
-                    "Wrong node type. Want %s but get %s",
-                    get_tree_code_name(wantType),
-                    node->nodeTypeName.c_str());
-            }
-            else
-            {
-                Log::dump(node,
-                    "Wrong node type. Want %s but get %s - %s",
-                    get_tree_code_name(wantType),
-                    node->nodeTypeName.c_str(),
-                    tag.c_str());
-            }
-            if (!parent)
-                delete node;
-            return nullptr;
         }
 
         switch (TREE_CODE(node->gccNode))
@@ -200,10 +200,13 @@ void fillLocation(Node *node)
     }
 
     location_t loc = DECL_SOURCE_LOCATION(node->gccNode);
-    node->location = loc;
-    node->file = LOCATION_FILE(loc);
-    node->line = LOCATION_LINE(loc);
-    node->column = LOCATION_COLUMN(loc);
+    if (loc)
+    {
+        node->location = loc;
+        node->file = LOCATION_FILE(loc);
+        node->line = LOCATION_LINE(loc);
+        node->column = LOCATION_COLUMN(loc);
+    }
 }
 
 }

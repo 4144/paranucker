@@ -44,7 +44,8 @@ void parseUnionTypeNode(UnionTypeNode *node)
     node->methods = createParseNode(
         node,
         TYPE_METHODS(node->gccNode),
-        "type methods");
+        "type methods",
+        false);
 }
 
 }

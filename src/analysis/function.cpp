@@ -44,8 +44,12 @@ void getFunctionArgTypes(FunctionDeclNode *node,
     if (!node->functionType)
         return;
 
+    // need impliment also for METHOD_TYPE
+    if (node->functionType->nodeType != FUNCTION_TYPE)
+        return;
+
     // walk in TREE_LIST and get value nodes
-    FOR_TREE_LIST2(list, node->functionType->argTypes)
+    FOR_TREE_LIST2(list, static_cast<FunctionTypeNode*>(node->functionType)->argTypes)
     {
         arr.push_back(static_cast<TypeNode*>(list->value));
     }
@@ -109,7 +113,7 @@ void analyseFunction(FunctionDeclNode *node, const WalkItem &wi, WalkItem &wo)
     if (command == Command::FindArgs)
         Log::log("%s: ", node->label.c_str());
 
-    int sz = node->args.size();
+    size_t sz = node->args.size();
     if (types.size() < sz)
         sz = types.size();
     for (int f = 0; f < sz; f ++)

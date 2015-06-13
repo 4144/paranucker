@@ -50,10 +50,9 @@ void parseFunctionDeclNode(FunctionDeclNode *node)
         return;
 
     fillDeclAttributes(node);
-    node->functionType = static_cast<FunctionTypeNode*>(createParseNode(
+    node->functionType = static_cast<TypeNode*>(createParseNode(
         node,
         TREE_TYPE(node->gccNode),
-        FUNCTION_TYPE,
         "function type"));
     node->result = static_cast<ResultDeclNode*>(createParseNode(
         node,
