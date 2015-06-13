@@ -93,3 +93,4 @@ parserDefine(UnionType);
 parserDefine(AbsExpr);
 parserDefine(VoidCst);
 parserDefine(BreakStmt);
+parserDefine(CompoundExpr);

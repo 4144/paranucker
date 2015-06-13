@@ -229,4 +229,6 @@ SRC = analysis/analysis.cpp \
       nodes/cst/void_cst.h \
       parsers/cst/void_cst.cpp \
       nodes/stmt/break_stmt.h \
-      parsers/stmt/break_stmt.cpp
+      parsers/stmt/break_stmt.cpp \
+      nodes/expr/compound_expr.h \
+      parsers/expr/compound_expr.cpp
