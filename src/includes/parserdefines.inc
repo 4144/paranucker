@@ -66,3 +66,4 @@ parserDefine(ReferenceType);
 parserDefine(ComponentRef);
 parserDefine(CleanupStmt);
 parserDefine(TryCatchExpr);
+parserDefine(RShiftExpr);

@@ -67,3 +67,4 @@
 #include "nodes/ref/component_ref.h"
 #include "nodes/stmt/cleanup_stmt.h"
 #include "nodes/expr/trycatch_expr.h"
+#include "nodes/expr/rshift_expr.h"

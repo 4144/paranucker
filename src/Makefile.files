@@ -175,4 +175,6 @@ SRC = analysis/analysis.cpp \
       nodes/stmt/cleanup_stmt.h \
       parsers/stmt/cleanup_stmt.cpp \
       nodes/expr/trycatch_expr.h \
-      parsers/expr/trycatch_expr.cpp
+      parsers/expr/trycatch_expr.cpp \
+      nodes/expr/rshift_expr.h \
+      parsers/expr/rshift_expr.cpp
