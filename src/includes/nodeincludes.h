@@ -87,3 +87,4 @@
 #include "nodes/expr/roundmod_expr.h"
 #include "nodes/expr/negate_expr.h"
 #include "nodes/stmt/for_stmt.h"
+#include "nodes/expr/label_expr.h"

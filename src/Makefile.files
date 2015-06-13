@@ -215,4 +215,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/negate_expr.h \
       parsers/expr/negate_expr.cpp \
       nodes/stmt/for_stmt.h \
-      parsers/stmt/for_stmt.cpp
+      parsers/stmt/for_stmt.cpp \
+      nodes/expr/label_expr.h \
+      parsers/expr/label_expr.cpp
