@@ -84,3 +84,4 @@ parserDefine(TruncModExpr);
 parserDefine(FloorModExpr);
 parserDefine(CeilModExpr);
 parserDefine(RoundModExpr);
+parserDefine(NegateExpr);

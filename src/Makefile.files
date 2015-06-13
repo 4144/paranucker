@@ -211,4 +211,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/ceilmod_expr.h \
       parsers/expr/ceilmod_expr.cpp \
       nodes/expr/roundmod_expr.h \
-      parsers/expr/roundmod_expr.cpp
+      parsers/expr/roundmod_expr.cpp \
+      nodes/expr/negate_expr.h \
+      parsers/expr/negate_expr.cpp

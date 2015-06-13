@@ -85,3 +85,4 @@
 #include "nodes/expr/floormod_expr.h"
 #include "nodes/expr/ceilmod_expr.h"
 #include "nodes/expr/roundmod_expr.h"
+#include "nodes/expr/negate_expr.h"
