@@ -164,4 +164,6 @@ SRC = analysis/analysis.cpp \
       nodes/type/method_type.h \
       parsers/type/method_type.cpp \
       nodes/expr/mustnotthrow_expr.h \
-      parsers/expr/mustnotthrow_expr.cpp
+      parsers/expr/mustnotthrow_expr.cpp \
+      nodes/type/reference_type.h \
+      parsers/type/reference_type.cpp
