@@ -102,3 +102,4 @@ parserDefine(ExactDivExpr);
 parserDefine(TreeVec);
 parserDefine(TryBlock);
 parserDefine(CastExpr);
+parserDefine(Handler);

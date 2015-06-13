@@ -103,3 +103,4 @@
 #include "nodes/vec/tree_vec.h"
 #include "nodes/block/try_block.h"
 #include "nodes/expr/cast_expr.h"
+#include "nodes/handler.h"
