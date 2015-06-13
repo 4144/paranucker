@@ -97,3 +97,4 @@ parserDefine(CompoundExpr);
 parserDefine(LabelDecl);
 parserDefine(UsingDecl);
 parserDefine(ConstDecl);
+parserDefine(TemplateDecl);

@@ -98,3 +98,4 @@
 #include "nodes/decl/label_decl.h"
 #include "nodes/decl/using_decl.h"
 #include "nodes/decl/const_decl.h"
+#include "nodes/decl/template_decl.h"
