@@ -13,6 +13,7 @@ SRC = analysis/analysis.cpp \
       nodes/base/decl.h \
       nodes/base/expr.h \
       nodes/base/node.h \
+      nodes/base/ref.h \
       nodes/base/stmt.h \
       nodes/base/type.h \
       nodes/cst/integer_cst.h \
@@ -35,6 +36,8 @@ SRC = analysis/analysis.cpp \
       parsers/base/decl.h \
       parsers/base/expr.cpp \
       parsers/base/expr.h \
+      parsers/base/ref.cpp \
+      parsers/base/ref.h \
       parsers/base/stmt.cpp \
       parsers/base/stmt.h \
       parsers/base/type.cpp \
@@ -107,8 +110,8 @@ SRC = analysis/analysis.cpp \
       parsers/expr/ge_expr.cpp \
       nodes/expr/ne_expr.h \
       parsers/expr/ne_expr.cpp \
-      nodes/expr/indirect_ref.h \
-      parsers/expr/indirect_ref.cpp \
+      nodes/ref/indirect_ref.h \
+      parsers/ref/indirect_ref.cpp \
       nodes/expr/loop_expr.h \
       parsers/expr/loop_expr.cpp \
       nodes/expr/nop_expr.h \
@@ -167,7 +170,7 @@ SRC = analysis/analysis.cpp \
       parsers/expr/mustnotthrow_expr.cpp \
       nodes/type/reference_type.h \
       parsers/type/reference_type.cpp \
-      nodes/expr/component_ref.h \
-      parsers/expr/component_ref.cpp \
+      nodes/ref/component_ref.h \
+      parsers/ref/component_ref.cpp \
       nodes/stmt/cleanup_stmt.h \
       parsers/stmt/cleanup_stmt.cpp

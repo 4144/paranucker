@@ -21,11 +21,11 @@
 
 parserDefine(ComponentRef);
 
-#include "parsers/base/expr.h"
+#include "parsers/base/ref.h"
 
 #include "nodes/decl/field_decl.h"
 
-#include "nodes/expr/component_ref.h"
+#include "nodes/ref/component_ref.h"
 
 namespace Generic
 {
@@ -35,11 +35,9 @@ void parseComponentRefNode(ComponentRefNode *node)
     fillType(node);
     Log::dump(node);
 
-    fillExprOperands(node);
-
-    node->object = getExprOperand(node, 0, "object");
+    node->object = getRefOperand(node, 0, "object");
     node->field = static_cast<FieldDeclNode*>(
-        getExprOperand(node, 1, "field"));
+        getRefOperand(node, 1, "field"));
 
     // args 0 object
     // args 1 FIELD_DECL of member

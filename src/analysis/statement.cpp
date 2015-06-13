@@ -26,10 +26,11 @@
 #include "analysis/walkitem.h"
 
 #include "nodes/expr/eq_expr.h"
-#include "nodes/expr/indirect_ref.h"
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/ne_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
+
+#include "nodes/ref/indirect_ref.h"
 
 #include "nodes/stmt/if_stmt.h"
 

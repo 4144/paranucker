@@ -17,19 +17,23 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_EXPR_INDIRECTREFNODE_H
-#define NODES_EXPR_INDIRECTREFNODE_H
-
-#include "nodes/base/expr.h"
+#ifndef PARSERS_BASE_REF_H
+#define PARSERS_BASE_REF_H
 
 #include <string>
 
-struct IndirectRefNode : public ExprNode
-{
-    IndirectRefNode() :
-        ExprNode()
-    {
-    }
-};
+struct RefNode;
+struct Node;
 
-#endif // NODES_EXPR_INDIRECTREFNODE_H
+namespace Generic
+{
+    void fillRefLocation(Node *node);
+
+    void fillRefOperands(RefNode *node);
+
+    Node *getRefOperand(RefNode *node,
+                        const int pos,
+                        const std::string &tag);
+}
+
+#endif // PARSERS_BASE_REF_H

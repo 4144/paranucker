@@ -17,19 +17,19 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NODES_EXPR_COMPONENTREFNODE_H
-#define NODES_EXPR_COMPONENTREFNODE_H
+#ifndef NODES_REF_COMPONENTREFNODE_H
+#define NODES_REF_COMPONENTREFNODE_H
 
-#include "nodes/base/expr.h"
+#include "nodes/base/ref.h"
 
 #include "nodes/decl/field_decl.h"
 
 #include <string>
 
-struct ComponentRefNode : public ExprNode
+struct ComponentRefNode : public RefNode
 {
     ComponentRefNode() :
-        ExprNode(),
+        RefNode(),
         object(nullptr),
         field(nullptr)
     {
@@ -38,4 +38,4 @@ struct ComponentRefNode : public ExprNode
     FieldDeclNode *field;
 };
 
-#endif // NODES_EXPR_COMPONENTREFNODE_H
+#endif // NODES_REF_COMPONENTREFNODE_H

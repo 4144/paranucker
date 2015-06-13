@@ -17,27 +17,19 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "includes/parserincludes.h"
+#ifndef NODES_REF_INDIRECTREFNODE_H
+#define NODES_REF_INDIRECTREFNODE_H
 
-parserDefine(IndirectRef);
+#include "nodes/base/ref.h"
 
-#include "parsers/base/expr.h"
+#include <string>
 
-#include "nodes/expr/indirect_ref.h"
-
-namespace Generic
+struct IndirectRefNode : public RefNode
 {
+    IndirectRefNode() :
+        RefNode()
+    {
+    }
+};
 
-void parseIndirectRefNode(IndirectRefNode *node)
-{
-    fillType(node);
-    fillExprLocation(node);
-    Log::dump(node);
-
-//    if (!node->parseChilds)
-//        return;
-
-    fillExprOperands(node);
-}
-
-}
+#endif // NODES_REF_INDIRECTREFNODE_H
