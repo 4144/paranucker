@@ -71,3 +71,4 @@
 #include "nodes/expr/lshift_expr.h"
 #include "nodes/expr/postincrement_expr.h"
 #include "nodes/type/array_type.h"
+#include "nodes/expr/aggrinit_expr.h"

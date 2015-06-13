@@ -70,3 +70,4 @@ parserDefine(RShiftExpr);
 parserDefine(LShiftExpr);
 parserDefine(PostIncrementExpr);
 parserDefine(ArrayType);
+parserDefine(AggrInitExpr);

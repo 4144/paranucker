@@ -183,4 +183,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/postincrement_expr.h \
       parsers/expr/postincrement_expr.cpp \
       nodes/type/array_type.h \
-      parsers/type/array_type.cpp
+      parsers/type/array_type.cpp \
+      nodes/expr/aggrinit_expr.h \
+      parsers/expr/aggrinit_expr.cpp
