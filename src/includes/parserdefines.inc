@@ -98,3 +98,4 @@ parserDefine(LabelDecl);
 parserDefine(UsingDecl);
 parserDefine(ConstDecl);
 parserDefine(TemplateDecl);
+parserDefine(ExactDivExpr);
