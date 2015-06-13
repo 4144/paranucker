@@ -235,4 +235,6 @@ SRC = analysis/analysis.cpp \
       nodes/decl/label_decl.h \
       parsers/decl/label_decl.cpp \
       nodes/decl/using_decl.h \
-      parsers/decl/using_decl.cpp
+      parsers/decl/using_decl.cpp \
+      nodes/decl/const_decl.h \
+      parsers/decl/const_decl.cpp

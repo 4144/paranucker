@@ -97,3 +97,4 @@
 #include "nodes/expr/compound_expr.h"
 #include "nodes/decl/label_decl.h"
 #include "nodes/decl/using_decl.h"
+#include "nodes/decl/const_decl.h"
