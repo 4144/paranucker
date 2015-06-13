@@ -89,3 +89,4 @@
 #include "nodes/stmt/for_stmt.h"
 #include "nodes/expr/label_expr.h"
 #include "nodes/expr/tryfinally_expr.h"
+#include "nodes/cst/string_cst.h"
