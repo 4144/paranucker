@@ -246,4 +246,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/exactdiv_expr.h \
       parsers/expr/exactdiv_expr.cpp \
       nodes/vec/tree_vec.h \
-      parsers/vec/tree_vec.cpp
+      parsers/vec/tree_vec.cpp \
+      nodes/block/try_block.h \
+      parsers/block/try_block.cpp

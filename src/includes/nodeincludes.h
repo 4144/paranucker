@@ -101,3 +101,4 @@
 #include "nodes/decl/template_decl.h"
 #include "nodes/expr/exactdiv_expr.h"
 #include "nodes/vec/tree_vec.h"
+#include "nodes/block/try_block.h"
