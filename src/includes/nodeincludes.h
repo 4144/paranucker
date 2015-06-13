@@ -74,3 +74,4 @@
 #include "nodes/expr/aggrinit_expr.h"
 #include "nodes/expr/bitnot_expr.h"
 #include "nodes/expr/truthnot_expr.h"
+#include "nodes/expr/preincrement_expr.h"

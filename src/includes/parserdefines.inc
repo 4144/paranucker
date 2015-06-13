@@ -73,3 +73,4 @@ parserDefine(ArrayType);
 parserDefine(AggrInitExpr);
 parserDefine(BitNotExpr);
 parserDefine(TruthNotExpr);
+parserDefine(PreIncrementExpr);
