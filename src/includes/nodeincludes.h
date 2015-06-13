@@ -76,3 +76,4 @@
 #include "nodes/expr/truthnot_expr.h"
 #include "nodes/expr/preincrement_expr.h"
 #include "nodes/expr/predecrement_expr.h"
+#include "nodes/expr/postdecrement_expr.h"
