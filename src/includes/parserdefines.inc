@@ -82,3 +82,4 @@ parserDefine(CeilDivExpr);
 parserDefine(RoundDivExpr);
 parserDefine(TruncModExpr);
 parserDefine(FloorModExpr);
+parserDefine(CeilModExpr);
