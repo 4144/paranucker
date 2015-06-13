@@ -191,4 +191,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/truthnot_expr.h \
       parsers/expr/truthnot_expr.cpp \
       nodes/expr/preincrement_expr.h \
-      parsers/expr/preincrement_expr.cpp
+      parsers/expr/preincrement_expr.cpp \
+      nodes/expr/predecrement_expr.h \
+      parsers/expr/predecrement_expr.cpp
