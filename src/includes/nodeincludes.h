@@ -81,3 +81,4 @@
 #include "nodes/expr/floordiv_expr.h"
 #include "nodes/expr/ceildiv_expr.h"
 #include "nodes/expr/rounddiv_expr.h"
+#include "nodes/expr/truncmod_expr.h"
