@@ -223,4 +223,6 @@ SRC = analysis/analysis.cpp \
       nodes/cst/string_cst.h \
       parsers/cst/string_cst.cpp \
       nodes/type/union_type.h \
-      parsers/type/union_type.cpp
+      parsers/type/union_type.cpp \
+      nodes/expr/abs_expr.h \
+      parsers/expr/abs_expr.cpp

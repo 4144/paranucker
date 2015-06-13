@@ -90,3 +90,4 @@ parserDefine(LabelExpr);
 parserDefine(TryFinallyExpr);
 parserDefine(StringCst);
 parserDefine(UnionType);
+parserDefine(AbsExpr);
