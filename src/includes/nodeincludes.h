@@ -66,3 +66,4 @@
 #include "nodes/type/reference_type.h"
 #include "nodes/ref/component_ref.h"
 #include "nodes/stmt/cleanup_stmt.h"
+#include "nodes/expr/trycatch_expr.h"
