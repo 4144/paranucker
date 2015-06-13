@@ -187,4 +187,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/aggrinit_expr.h \
       parsers/expr/aggrinit_expr.cpp \
       nodes/expr/bitnot_expr.h \
-      parsers/expr/bitnot_expr.cpp
+      parsers/expr/bitnot_expr.cpp \
+      nodes/expr/truthnot_expr.h \
+      parsers/expr/truthnot_expr.cpp

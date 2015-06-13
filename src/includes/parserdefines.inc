@@ -72,3 +72,4 @@ parserDefine(PostIncrementExpr);
 parserDefine(ArrayType);
 parserDefine(AggrInitExpr);
 parserDefine(BitNotExpr);
+parserDefine(TruthNotExpr);
