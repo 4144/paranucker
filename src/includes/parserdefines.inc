@@ -105,3 +105,4 @@ parserDefine(CastExpr);
 parserDefine(Handler);
 parserDefine(EnumeralType);
 parserDefine(EmptyClassExpr);
+parserDefine(MinExpr);

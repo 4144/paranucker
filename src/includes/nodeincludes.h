@@ -106,3 +106,4 @@
 #include "nodes/handler.h"
 #include "nodes/type/enumeral_type.h"
 #include "nodes/expr/emptyclass_expr.h"
+#include "nodes/expr/min_expr.h"

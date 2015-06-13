@@ -256,4 +256,6 @@ SRC = analysis/analysis.cpp \
       nodes/type/enumeral_type.h \
       parsers/type/enumeral_type.cpp \
       nodes/expr/emptyclass_expr.h \
-      parsers/expr/emptyclass_expr.cpp
+      parsers/expr/emptyclass_expr.cpp \
+      nodes/expr/min_expr.h \
+      parsers/expr/min_expr.cpp
