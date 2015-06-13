@@ -258,4 +258,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/emptyclass_expr.h \
       parsers/expr/emptyclass_expr.cpp \
       nodes/expr/min_expr.h \
-      parsers/expr/min_expr.cpp
+      parsers/expr/min_expr.cpp \
+      nodes/expr/fixtrunc_expr.h \
+      parsers/expr/fixtrunc_expr.cpp

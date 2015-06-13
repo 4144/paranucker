@@ -106,3 +106,4 @@ parserDefine(Handler);
 parserDefine(EnumeralType);
 parserDefine(EmptyClassExpr);
 parserDefine(MinExpr);
+parserDefine(FixTruncExpr);
