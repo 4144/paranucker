@@ -213,4 +213,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/roundmod_expr.h \
       parsers/expr/roundmod_expr.cpp \
       nodes/expr/negate_expr.h \
-      parsers/expr/negate_expr.cpp
+      parsers/expr/negate_expr.cpp \
+      nodes/stmt/for_stmt.h \
+      parsers/stmt/for_stmt.cpp

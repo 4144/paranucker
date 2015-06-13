@@ -86,3 +86,4 @@
 #include "nodes/expr/ceilmod_expr.h"
 #include "nodes/expr/roundmod_expr.h"
 #include "nodes/expr/negate_expr.h"
+#include "nodes/stmt/for_stmt.h"
