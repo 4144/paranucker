@@ -199,4 +199,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/truncdiv_expr.h \
       parsers/expr/truncdiv_expr.cpp \
       nodes/expr/floordiv_expr.h \
-      parsers/expr/floordiv_expr.cpp
+      parsers/expr/floordiv_expr.cpp \
+      nodes/expr/ceildiv_expr.h \
+      parsers/expr/ceildiv_expr.cpp

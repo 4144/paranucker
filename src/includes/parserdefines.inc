@@ -78,3 +78,4 @@ parserDefine(PreDecrementExpr);
 parserDefine(PostDecrementExpr);
 parserDefine(TruncDivExpr);
 parserDefine(FloorDivExpr);
+parserDefine(CeilDivExpr);
