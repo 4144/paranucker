@@ -209,4 +209,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/floormod_expr.h \
       parsers/expr/floormod_expr.cpp \
       nodes/expr/ceilmod_expr.h \
-      parsers/expr/ceilmod_expr.cpp
+      parsers/expr/ceilmod_expr.cpp \
+      nodes/expr/roundmod_expr.h \
+      parsers/expr/roundmod_expr.cpp
