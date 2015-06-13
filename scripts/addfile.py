@@ -4,7 +4,7 @@
 # Copyright (C) 2015  Andrei Karas
 
 import sys
-
+import subprocess;
 
 def readFile(path):
     with open(path, "r") as f:
@@ -14,7 +14,8 @@ def writeFile(fileName, data, opts="w"):
         w.write(data)
 def firstBigLetter(text):
     return text[0].upper() + text[1:]
-
+def gitAddFile(path):
+    subprocess.call(["git", "add", path])
 
 if len(sys.argv) < 2 or len(sys.argv) > 3:
     print "Usage:"
@@ -106,6 +107,8 @@ writeFile(nodeFileName,
     nodeTemplate.format(guardHeader, baseName, typeName, baseTypeName))
 writeFile(parserFileName,
     parserTemplate.format(typeName, nodeInclude, parserBaseInclude, parserAdditionalCode1, parserAdditionalCode2))
+gitAddFile(nodeFileName);
+gitAddFile(parserFileName);
 writeFile("../src/includes/nodeincludes.h",
     "#include \"nodes/{0}.h\"\n".format(nodeInclude), "a");
 writeFile("../src/includes/nodeshandling.inc",
