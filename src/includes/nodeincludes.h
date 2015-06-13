@@ -72,3 +72,4 @@
 #include "nodes/expr/postincrement_expr.h"
 #include "nodes/type/array_type.h"
 #include "nodes/expr/aggrinit_expr.h"
+#include "nodes/expr/bitnot_expr.h"

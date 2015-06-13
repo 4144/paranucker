@@ -185,4 +185,6 @@ SRC = analysis/analysis.cpp \
       nodes/type/array_type.h \
       parsers/type/array_type.cpp \
       nodes/expr/aggrinit_expr.h \
-      parsers/expr/aggrinit_expr.cpp
+      parsers/expr/aggrinit_expr.cpp \
+      nodes/expr/bitnot_expr.h \
+      parsers/expr/bitnot_expr.cpp
