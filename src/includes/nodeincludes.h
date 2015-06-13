@@ -100,3 +100,4 @@
 #include "nodes/decl/const_decl.h"
 #include "nodes/decl/template_decl.h"
 #include "nodes/expr/exactdiv_expr.h"
+#include "nodes/vec/tree_vec.h"

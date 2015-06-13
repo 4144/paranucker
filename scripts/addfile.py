@@ -67,13 +67,13 @@ if dirName != "":
         parserAdditionalCode1 = "    fillExprLocation(node);\n"
         parserAdditionalCode2 = "\n    fillExprOperands(node);\n"
         parserBaseInclude = "#include \"parsers/base/expr.h\"\n"
-    elif nodeName[-3:] == "ref":
-        suffixSize = 3
-        parserAdditionalCode2 = "\n    fillExprOperands(node);\n"
-        parserBaseInclude = "#include \"parsers/base/expr.h\"\n"
     elif nodeName[-4:] == "stmt":
         suffixSize = 4
         parserBaseInclude = "#include \"parsers/base/stmt.h\"\n"
+        parserAdditionalCode2 = ""
+    elif nodeName[-3:] == "vec":
+        suffixSize = 3
+        parserBaseInclude = "#include \"parsers/base/vec.h\"\n"
         parserAdditionalCode2 = ""
     elif nodeName[-4:] == "list":
         suffixSize = 4

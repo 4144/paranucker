@@ -16,6 +16,7 @@ SRC = analysis/analysis.cpp \
       nodes/base/ref.h \
       nodes/base/stmt.h \
       nodes/base/type.h \
+      nodes/base/vec.h \
       nodes/cst/integer_cst.h \
       nodes/decl/function_decl.h \
       nodes/decl/parm_decl.h \
@@ -42,6 +43,8 @@ SRC = analysis/analysis.cpp \
       parsers/base/stmt.h \
       parsers/base/type.cpp \
       parsers/base/type.h \
+      parsers/base/vec.cpp \
+      parsers/base/vec.h \
       parsers/cst/integer_cst.cpp \
       parsers/decl/function_decl.cpp \
       parsers/decl/parm_decl.cpp \
@@ -241,4 +244,6 @@ SRC = analysis/analysis.cpp \
       nodes/decl/template_decl.h \
       parsers/decl/template_decl.cpp \
       nodes/expr/exactdiv_expr.h \
-      parsers/expr/exactdiv_expr.cpp
+      parsers/expr/exactdiv_expr.cpp \
+      nodes/vec/tree_vec.h \
+      parsers/vec/tree_vec.cpp
