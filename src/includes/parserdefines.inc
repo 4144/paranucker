@@ -103,3 +103,4 @@ parserDefine(TreeVec);
 parserDefine(TryBlock);
 parserDefine(CastExpr);
 parserDefine(Handler);
+parserDefine(EnumeralType);

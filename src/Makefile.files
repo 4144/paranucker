@@ -252,4 +252,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/cast_expr.h \
       parsers/expr/cast_expr.cpp \
       nodes/handler.h \
-      parsers/handler.cpp
+      parsers/handler.cpp \
+      nodes/type/enumeral_type.h \
+      parsers/type/enumeral_type.cpp

@@ -104,3 +104,4 @@
 #include "nodes/block/try_block.h"
 #include "nodes/expr/cast_expr.h"
 #include "nodes/handler.h"
+#include "nodes/type/enumeral_type.h"
