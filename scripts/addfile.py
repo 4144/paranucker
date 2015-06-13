@@ -56,6 +56,11 @@ if dirName != "":
         parserAdditionalCode1 = "    fillExprLocation(node);\n"
         parserAdditionalCode2 = "\n    fillExprOperands(node);\n"
         parserBaseInclude = "#include \"parsers/base/expr.h\"\n"
+    elif nodeName[-3:] == "ref":
+        suffixSize = 3
+        parserAdditionalCode1 = "    fillRefLocation(node);\n"
+        parserAdditionalCode2 = "\n    fillRefOperands(node);\n"
+        parserBaseInclude = "#include \"parsers/base/ref.h\"\n"
     elif nodeName[-5:] == "block":
         suffixSize = 5
         parserAdditionalCode1 = "    fillExprLocation(node);\n"
