@@ -65,3 +65,4 @@
 #include "nodes/expr/mustnotthrow_expr.h"
 #include "nodes/type/reference_type.h"
 #include "nodes/expr/component_ref.h"
+#include "nodes/stmt/cleanup_stmt.h"

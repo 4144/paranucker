@@ -168,4 +168,6 @@ SRC = analysis/analysis.cpp \
       nodes/type/reference_type.h \
       parsers/type/reference_type.cpp \
       nodes/expr/component_ref.h \
-      parsers/expr/component_ref.cpp
+      parsers/expr/component_ref.cpp \
+      nodes/stmt/cleanup_stmt.h \
+      parsers/stmt/cleanup_stmt.cpp
