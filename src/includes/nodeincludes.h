@@ -95,3 +95,4 @@
 #include "nodes/cst/void_cst.h"
 #include "nodes/stmt/break_stmt.h"
 #include "nodes/expr/compound_expr.h"
+#include "nodes/decl/label_decl.h"

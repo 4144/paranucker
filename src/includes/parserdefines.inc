@@ -94,3 +94,4 @@ parserDefine(AbsExpr);
 parserDefine(VoidCst);
 parserDefine(BreakStmt);
 parserDefine(CompoundExpr);
+parserDefine(LabelDecl);

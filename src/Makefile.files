@@ -231,4 +231,6 @@ SRC = analysis/analysis.cpp \
       nodes/stmt/break_stmt.h \
       parsers/stmt/break_stmt.cpp \
       nodes/expr/compound_expr.h \
-      parsers/expr/compound_expr.cpp
+      parsers/expr/compound_expr.cpp \
+      nodes/decl/label_decl.h \
+      parsers/decl/label_decl.cpp
