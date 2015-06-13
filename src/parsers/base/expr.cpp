@@ -63,4 +63,20 @@ void fillExprOperands(ExprNode *node)
     }
 }
 
+Node *getExprOperand(ExprNode *node,
+                     const int pos,
+                     const std::string &tag)
+{
+    if (!node || node->gccNode == NULL_TREE)
+        return nullptr;
+    const int sz = TREE_OPERAND_LENGTH(node->gccNode);
+    if (sz >= pos)
+        return nullptr;
+
+    return createParseNode(
+        node,
+        TREE_OPERAND (node->gccNode, pos),
+        tag);
+}
+
 }

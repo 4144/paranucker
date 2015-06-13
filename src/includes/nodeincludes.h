@@ -64,3 +64,4 @@
 #include "nodes/type/method_type.h"
 #include "nodes/expr/mustnotthrow_expr.h"
 #include "nodes/type/reference_type.h"
+#include "nodes/expr/component_ref.h"

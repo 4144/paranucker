@@ -17,23 +17,33 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PARSERS_BASE_EXPR_H
-#define PARSERS_BASE_EXPR_H
+#include "includes/parserincludes.h"
 
-#include <string>
+parserDefine(ComponentRef);
 
-struct ExprNode;
-struct Node;
+#include "parsers/base/expr.h"
+
+#include "nodes/decl/field_decl.h"
+
+#include "nodes/expr/component_ref.h"
 
 namespace Generic
 {
-    void fillExprLocation(Node *node);
 
-    void fillExprOperands(ExprNode *node);
+void parseComponentRefNode(ComponentRefNode *node)
+{
+    fillType(node);
+    Log::dump(node);
 
-    Node *getExprOperand(ExprNode *node,
-                         const int pos,
-                         const std::string &tag);
+    fillExprOperands(node);
+
+    node->object = getExprOperand(node, 0, "object");
+    node->field = static_cast<FieldDeclNode*>(
+        getExprOperand(node, 1, "field"));
+
+    // args 0 object
+    // args 1 FIELD_DECL of member
+    // args 2 offset, better use component_ref_field_offset
 }
 
-#endif // PARSERS_BASE_EXPR_H
+}

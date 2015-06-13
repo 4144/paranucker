@@ -63,3 +63,4 @@ parserDefine(SaveExpr);
 parserDefine(MethodType);
 parserDefine(MustNotThrowExpr);
 parserDefine(ReferenceType);
+parserDefine(ComponentRef);
