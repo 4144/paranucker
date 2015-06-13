@@ -262,4 +262,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/fixtrunc_expr.h \
       parsers/expr/fixtrunc_expr.cpp \
       nodes/ref/objtype_ref.h \
-      parsers/ref/objtype_ref.cpp
+      parsers/ref/objtype_ref.cpp \
+      nodes/expr/asm_expr.h \
+      parsers/expr/asm_expr.cpp

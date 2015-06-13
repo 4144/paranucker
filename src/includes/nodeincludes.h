@@ -109,3 +109,4 @@
 #include "nodes/expr/min_expr.h"
 #include "nodes/expr/fixtrunc_expr.h"
 #include "nodes/ref/objtype_ref.h"
+#include "nodes/expr/asm_expr.h"

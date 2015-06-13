@@ -108,3 +108,4 @@ parserDefine(EmptyClassExpr);
 parserDefine(MinExpr);
 parserDefine(FixTruncExpr);
 parserDefine(ObjTypeRef);
+parserDefine(AsmExpr);
