@@ -221,4 +221,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/tryfinally_expr.h \
       parsers/expr/tryfinally_expr.cpp \
       nodes/cst/string_cst.h \
-      parsers/cst/string_cst.cpp
+      parsers/cst/string_cst.cpp \
+      nodes/type/union_type.h \
+      parsers/type/union_type.cpp

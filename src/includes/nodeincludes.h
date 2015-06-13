@@ -90,3 +90,4 @@
 #include "nodes/expr/label_expr.h"
 #include "nodes/expr/tryfinally_expr.h"
 #include "nodes/cst/string_cst.h"
+#include "nodes/type/union_type.h"
