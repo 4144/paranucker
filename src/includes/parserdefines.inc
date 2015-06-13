@@ -87,3 +87,4 @@ parserDefine(RoundModExpr);
 parserDefine(NegateExpr);
 parserDefine(ForStmt);
 parserDefine(LabelExpr);
+parserDefine(TryFinallyExpr);

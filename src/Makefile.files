@@ -217,4 +217,6 @@ SRC = analysis/analysis.cpp \
       nodes/stmt/for_stmt.h \
       parsers/stmt/for_stmt.cpp \
       nodes/expr/label_expr.h \
-      parsers/expr/label_expr.cpp
+      parsers/expr/label_expr.cpp \
+      nodes/expr/tryfinally_expr.h \
+      parsers/expr/tryfinally_expr.cpp
