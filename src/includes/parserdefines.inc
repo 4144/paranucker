@@ -92,3 +92,4 @@ parserDefine(StringCst);
 parserDefine(UnionType);
 parserDefine(AbsExpr);
 parserDefine(VoidCst);
+parserDefine(BreakStmt);
