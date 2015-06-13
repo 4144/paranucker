@@ -68,3 +68,4 @@
 #include "nodes/stmt/cleanup_stmt.h"
 #include "nodes/expr/trycatch_expr.h"
 #include "nodes/expr/rshift_expr.h"
+#include "nodes/expr/lshift_expr.h"

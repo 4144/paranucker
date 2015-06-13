@@ -67,3 +67,4 @@ parserDefine(ComponentRef);
 parserDefine(CleanupStmt);
 parserDefine(TryCatchExpr);
 parserDefine(RShiftExpr);
+parserDefine(LShiftExpr);
