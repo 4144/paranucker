@@ -1,0 +1,4 @@
+func1: pointer_type this, 
+func2: pointer_type this, pointer_type aptr, 
+func3: pointer_type this, pointer_type aptr, 
+func4: pointer_type this, pointer_type aptr, 

@@ -1,0 +1,211 @@
+0 function_decl test7.cpp
+1 method_type 
+2 void_type 
+3 type_decl <built-in>
+2 record_type 
+3 type_decl test7.cpp
+3 field_decl test7.cpp
+4 integer_cst 
+3 type_decl test7.cpp
+2 tree_list 
+3 pointer_type 
+4 record_type 
+5 type_decl test7.cpp
+5 field_decl test7.cpp
+6 integer_cst 
+5 type_decl test7.cpp
+3 tree_list 
+4 void_type 
+5 type_decl <built-in>
+1 result_decl test7.cpp
+2 void_type 
+3 type_decl <built-in>
+1 parm_decl test7.cpp
+2 pointer_type 
+3 record_type 
+4 type_decl test7.cpp
+4 field_decl test7.cpp
+5 integer_cst 
+4 type_decl test7.cpp
+2 integer_cst 
+1 statement_list 
+0 function_decl test7.cpp
+1 method_type 
+2 void_type 
+3 type_decl <built-in>
+2 record_type 
+3 type_decl test7.cpp
+3 field_decl test7.cpp
+4 integer_cst 
+3 type_decl test7.cpp
+2 tree_list 
+3 pointer_type 
+4 record_type 
+5 type_decl test7.cpp
+5 field_decl test7.cpp
+6 integer_cst 
+5 type_decl test7.cpp
+3 tree_list 
+4 pointer_type 
+5 integer_type 
+6 type_decl <built-in>
+6 integer_cst 
+6 integer_cst 
+6 integer_cst 
+4 tree_list 
+5 void_type 
+6 type_decl <built-in>
+1 result_decl test7.cpp
+2 void_type 
+3 type_decl <built-in>
+1 parm_decl test7.cpp
+2 pointer_type 
+3 record_type 
+4 type_decl test7.cpp
+4 field_decl test7.cpp
+5 integer_cst 
+4 type_decl test7.cpp
+2 integer_cst 
+1 parm_decl test7.cpp
+2 pointer_type 
+3 integer_type 
+4 type_decl <built-in>
+4 integer_cst 
+4 integer_cst 
+4 integer_cst 
+2 integer_cst 
+1 cleanup_point_expr test7.cpp
+2 expr_stmt 
+3 convert_expr 
+4 modify_expr 
+5 indirect_ref 
+6 parm_decl test7.cpp
+7 pointer_type 
+8 integer_type 
+9 type_decl <built-in>
+9 integer_cst 
+9 integer_cst 
+9 integer_cst 
+7 integer_cst 
+5 integer_cst 
+0 function_decl test7.cpp
+1 method_type 
+2 void_type 
+3 type_decl <built-in>
+2 record_type 
+3 type_decl test7.cpp
+3 field_decl test7.cpp
+4 integer_cst 
+3 type_decl test7.cpp
+2 tree_list 
+3 pointer_type 
+4 record_type 
+5 type_decl test7.cpp
+5 field_decl test7.cpp
+6 integer_cst 
+5 type_decl test7.cpp
+3 tree_list 
+4 pointer_type 
+5 integer_type 
+6 type_decl <built-in>
+6 integer_cst 
+6 integer_cst 
+6 integer_cst 
+4 tree_list 
+5 void_type 
+6 type_decl <built-in>
+1 result_decl test7.cpp
+2 void_type 
+3 type_decl <built-in>
+1 parm_decl test7.cpp
+2 pointer_type 
+3 record_type 
+4 type_decl test7.cpp
+4 field_decl test7.cpp
+5 integer_cst 
+4 type_decl test7.cpp
+2 integer_cst 
+1 parm_decl test7.cpp
+2 pointer_type 
+3 integer_type 
+4 type_decl <built-in>
+4 integer_cst 
+4 integer_cst 
+4 integer_cst 
+2 integer_cst 
+1 if_stmt 
+2 ne_expr 
+3 parm_decl test7.cpp
+4 pointer_type 
+5 integer_type 
+6 type_decl <built-in>
+6 integer_cst 
+6 integer_cst 
+6 integer_cst 
+4 integer_cst 
+3 integer_cst 
+2 cleanup_point_expr test7.cpp
+3 expr_stmt 
+4 convert_expr 
+5 modify_expr 
+6 indirect_ref 
+7 parm_decl test7.cpp
+8 pointer_type 
+9 integer_type 
+10 type_decl <built-in>
+10 integer_cst 
+10 integer_cst 
+10 integer_cst 
+8 integer_cst 
+6 integer_cst 
+0 function_decl test7.cpp
+1 method_type 
+2 void_type 
+3 type_decl <built-in>
+2 record_type 
+3 type_decl test7.cpp
+3 field_decl test7.cpp
+4 integer_cst 
+3 type_decl test7.cpp
+2 tree_list 
+3 pointer_type 
+4 record_type 
+5 type_decl test7.cpp
+5 field_decl test7.cpp
+6 integer_cst 
+5 type_decl test7.cpp
+3 tree_list 
+4 pointer_type 
+5 integer_type 
+6 type_decl <built-in>
+6 integer_cst 
+6 integer_cst 
+6 integer_cst 
+4 tree_list 
+5 void_type 
+6 type_decl <built-in>
+1 result_decl test7.cpp
+2 void_type 
+3 type_decl <built-in>
+1 parm_decl test7.cpp
+2 pointer_type 
+3 record_type 
+4 type_decl test7.cpp
+4 field_decl test7.cpp
+5 integer_cst 
+4 type_decl test7.cpp
+2 integer_cst 
+1 parm_decl test7.cpp
+2 pointer_type 
+3 integer_type 
+4 type_decl <built-in>
+4 integer_cst 
+4 integer_cst 
+4 integer_cst 
+2 integer_cst 
+1 cleanup_point_expr test7.cpp
+2 expr_stmt 
+3 convert_expr 
+4 modify_expr 
+5 component_ref 
+5 integer_cst 

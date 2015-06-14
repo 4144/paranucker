@@ -1,0 +1,44 @@
+function_decl func1: 
+statement_list : this, 
+function_decl func2: 
+cleanup_point_expr : aptr, this, 
+expr_stmt : aptr, this, 
+convert_expr : aptr, this, 
+modify_expr : aptr, this, 
+test7.cpp: In member function 'void Object1::func2(int*)':
+test7.cpp:10:18: warning: Using variable without check for NULL
+         *aptr = 0;
+                  ^
+indirect_ref : aptr, this, 
+parm_decl aptr: aptr, this, 
+pointer_type : aptr, this, 
+integer_type : aptr, this, 
+type_decl int: aptr, this, 
+integer_cst 32: aptr, this, 
+integer_cst -2147483648: aptr, this, 
+integer_cst 2147483647: aptr, this, 
+integer_cst 64: aptr, this, 
+integer_cst 0: aptr, this, 
+function_decl func3: 
+if_stmt : aptr, this, 
+cleanup_point_expr : this, 
+expr_stmt : this, 
+convert_expr : this, 
+modify_expr : this, 
+indirect_ref : this, 
+parm_decl aptr: this, 
+pointer_type : this, 
+integer_type : this, 
+type_decl int: this, 
+integer_cst 32: this, 
+integer_cst -2147483648: this, 
+integer_cst 2147483647: this, 
+integer_cst 64: this, 
+integer_cst 0: this, 
+function_decl func4: 
+cleanup_point_expr : aptr, this, 
+expr_stmt : aptr, this, 
+convert_expr : aptr, this, 
+modify_expr : aptr, this, 
+component_ref : aptr, this, 
+integer_cst 3: aptr, this, 

@@ -1,4 +1,4 @@
-.PHONY: test1 test2 test3 test4 test5 test6 crashtest1 crashtest2 all crashes clean
+.PHONY: test1 test2 test3 test4 test5 test6 test7 crashtest1 crashtest2 all crashes clean
 .NOTPARALLEL: all allcrash
 
 CC := gcc-5
@@ -7,7 +7,7 @@ CXX := g++-5
 PLUGIN = ../build/src/.libs/astdumper.so
 CMD = LANG=C ${CXX} -c -fplugin=${PLUGIN} -fplugin-arg-astdumper-command=${1} ${2} -o a.out 2>${3}
 
-all: test1 test2 test3 test4 test5 test6 clean
+all: test1 test2 test3 test4 test5 test6 test7 clean
 crashes: crashtest1 crashtest2 crashtest3 crashtest4 clean
 
 clean:
@@ -39,6 +39,12 @@ test6:
 	$(call CMD,dumpunsupported,test6.c,test6-02.txt)
 	$(call CMD,detectnullpointers,test6.c,test6-03.txt)
 	$(call CMD,dumpnullpointers,test6.c,test6-04.txt)
+test7:
+	$(call CMD,dump,test7.cpp,test7-01.txt)
+	$(call CMD,smalldump,test7.cpp,test7-02.txt)
+	$(call CMD,findargs,test7.cpp,test7-03.txt)
+	$(call CMD,detectnullpointers,test7.cpp,test7-04.txt)
+	$(call CMD,dumpnullpointers,test7.cpp,test7-05.txt)
 
 crashtest1:
 	$(call CMD,dump,crashtest1.h,crashtest1-01.txt)
