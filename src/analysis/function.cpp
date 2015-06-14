@@ -29,6 +29,8 @@
 
 #include "nodes/list/tree_list.h"
 
+#include "nodes/type/method_type.h"
+
 #include <set>
 
 #include "localconsts.h"
@@ -44,12 +46,16 @@ void getFunctionArgTypes(FunctionDeclNode *node,
     if (!node->functionType)
         return;
 
-    // need impliment also for METHOD_TYPE
-    if (node->functionType->nodeType != FUNCTION_TYPE)
+    TreeListNode *types = nullptr;
+    if (node->functionType->nodeType == FUNCTION_TYPE)
+        types = static_cast<FunctionTypeNode*>(node->functionType)->argTypes;
+    else if (node->functionType->nodeType == METHOD_TYPE)
+        types = static_cast<MethodTypeNode*>(node->functionType)->argTypes;
+    else
         return;
 
     // walk in TREE_LIST and get value nodes
-    FOR_TREE_LIST2(list, static_cast<FunctionTypeNode*>(node->functionType)->argTypes)
+    FOR_TREE_LIST2(list, types)
     {
         arr.push_back(static_cast<TypeNode*>(list->value));
     }
