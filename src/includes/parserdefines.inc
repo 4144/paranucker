@@ -110,3 +110,4 @@ parserDefine(FixTruncExpr);
 parserDefine(ObjTypeRef);
 parserDefine(AsmExpr);
 parserDefine(ThrowExpr);
+parserDefine(ArrayRef);

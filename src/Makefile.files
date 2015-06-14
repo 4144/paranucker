@@ -266,4 +266,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/asm_expr.h \
       parsers/expr/asm_expr.cpp \
       nodes/expr/throw_expr.h \
-      parsers/expr/throw_expr.cpp
+      parsers/expr/throw_expr.cpp \
+      nodes/ref/array_ref.h \
+      parsers/ref/array_ref.cpp
