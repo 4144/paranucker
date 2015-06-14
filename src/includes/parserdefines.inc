@@ -109,3 +109,4 @@ parserDefine(MinExpr);
 parserDefine(FixTruncExpr);
 parserDefine(ObjTypeRef);
 parserDefine(AsmExpr);
+parserDefine(ThrowExpr);
