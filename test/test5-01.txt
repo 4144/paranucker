@@ -75,7 +75,7 @@ function_decl func1 test5.c 10:6
    integer_cst 2147483647 - max value
   integer_cst 8 - parm size
  cleanup_point_expr test5.c 12:13 - code
-  expr_stmt - operand
+  expr_stmt test5.c 12:13 - operand
    convert_expr - expresssion
     modify_expr - operand
      indirect_ref - operand
@@ -169,7 +169,7 @@ function_decl func2 test5.c 15:6
    integer_cst 2147483647 - max value
   integer_cst 8 - parm size
  cleanup_point_expr test5.c 17:19 - code
-  expr_stmt - operand
+  expr_stmt test5.c 17:19 - operand
    convert_expr - expresssion
     modify_expr - operand
      indirect_ref - operand
@@ -265,7 +265,7 @@ function_decl func3 test5.c 20:6
    integer_cst 2147483647 - max value
   integer_cst 8 - parm size
  cleanup_point_expr test5.c 22:25 - code
-  expr_stmt - operand
+  expr_stmt test5.c 22:25 - operand
    convert_expr - expresssion
     modify_expr - operand
      indirect_ref - operand
@@ -379,7 +379,7 @@ function_decl func5 test5.c 25:6
      var_decl var1 test5.c 27:9 - operand
      - isUsed: 1
    cleanup_point_expr test5.c 28:22 - statement
-    expr_stmt - operand
+    expr_stmt test5.c 28:22 - operand
      convert_expr - expresssion
       modify_expr - operand
        indirect_ref - operand
@@ -502,7 +502,7 @@ function_decl func6 test5.c 31:6
     var_decl var2 test5.c 33:10 - operand
     - isUsed: 1
    cleanup_point_expr test5.c 34:16 - statement
-    expr_stmt - operand
+    expr_stmt test5.c 34:16 - operand
      convert_expr - expresssion
       modify_expr - operand
        indirect_ref - operand
@@ -620,7 +620,7 @@ function_decl func7 test5.c 37:6
     var_decl var3 test5.c 39:10 - operand
     - isUsed: 1
    cleanup_point_expr test5.c 40:16 - statement
-    expr_stmt - operand
+    expr_stmt test5.c 40:16 - operand
      convert_expr - expresssion
       modify_expr - operand
        indirect_ref - operand
@@ -738,7 +738,7 @@ function_decl func8 test5.c 43:6
     var_decl var4 test5.c 45:11 - operand
     - isUsed: 1
    cleanup_point_expr test5.c 46:17 - statement
-    expr_stmt - operand
+    expr_stmt test5.c 46:17 - operand
      convert_expr - expresssion
       modify_expr - operand
        indirect_ref - operand

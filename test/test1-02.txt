@@ -48,7 +48,7 @@
 2 integer_cst 
 1 statement_list 
 2 cleanup_point_expr test1.c
-3 expr_stmt 
+3 expr_stmt test1.c
 4 convert_expr 
 5 modify_expr 
 6 indirect_ref 
@@ -62,7 +62,7 @@
 8 integer_cst 
 6 integer_cst 
 2 cleanup_point_expr test1.c
-3 expr_stmt 
+3 expr_stmt test1.c
 4 convert_expr 
 5 modify_expr 
 6 indirect_ref 
@@ -75,7 +75,7 @@
 10 integer_cst 
 8 integer_cst 
 6 integer_cst 
-2 while_stmt 
+2 while_stmt test1.c
 3 integer_cst 
 3 statement_list 
 0 function_decl test1.c
@@ -106,7 +106,7 @@
 5 integer_cst 
 3 statement_list 
 4 cleanup_point_expr test1.c
-5 expr_stmt 
+5 expr_stmt test1.c
 6 convert_expr 
 7 call_expr test1.c
 8 integer_cst 
@@ -122,7 +122,7 @@
 7 integer_cst 
 7 integer_cst 
 4 cleanup_point_expr test1.c
-5 expr_stmt 
+5 expr_stmt test1.c
 6 call_expr test1.c
 7 integer_cst 
 7 addr_expr 
@@ -186,7 +186,7 @@
 3 integer_cst 
 3 integer_cst 
 2 integer_cst 
-1 if_stmt 
+1 if_stmt test1.c
 2 eq_expr test1.c
 3 parm_decl test1.c
 4 integer_type 
@@ -197,7 +197,7 @@
 4 integer_cst 
 3 integer_cst 
 2 cleanup_point_expr test1.c
-3 expr_stmt 
+3 expr_stmt test1.c
 4 convert_expr 
 5 modify_expr 
 6 parm_decl test1.c
@@ -232,7 +232,7 @@
 9 integer_cst 
 9 integer_cst 
 2 cleanup_point_expr test1.c
-3 expr_stmt 
+3 expr_stmt test1.c
 4 convert_expr 
 5 modify_expr 
 6 parm_decl test1.c
@@ -316,7 +316,7 @@
 7 integer_cst 
 7 integer_cst 
 3 cleanup_point_expr test1.c
-4 expr_stmt 
+4 expr_stmt test1.c
 5 convert_expr 
 6 modify_expr 
 7 var_decl test1.c
@@ -329,11 +329,11 @@
 9 integer_cst 
 7 var_decl test1.c
 3 cleanup_point_expr test1.c
-4 expr_stmt 
+4 expr_stmt test1.c
 5 call_expr test1.c
 6 integer_cst 
 6 integer_cst 
-3 if_stmt 
+3 if_stmt test1.c
 4 eq_expr test1.c
 5 var_decl test1.c
 5 integer_cst 

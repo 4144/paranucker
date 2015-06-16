@@ -36,7 +36,7 @@ function_decl func1 test6.c 10:6
     integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  cleanup_point_expr test6.c 12:13 - code
-  expr_stmt - operand
+  expr_stmt test6.c 12:13 - operand
    convert_expr - expresssion
     modify_expr - operand
      indirect_ref - operand
@@ -90,7 +90,7 @@ function_decl func2 test6.c 15:6
     integer_cst -2147483648 - min value
     integer_cst 2147483647 - max value
   integer_cst 64 - parm size
- if_stmt - code
+ if_stmt test6.c 17:5 - code
   eq_expr test6.c 17:10 - condition
    - isUsed: 1
    parm_decl a test6.c 15:17 - operand
@@ -107,7 +107,7 @@ function_decl func2 test6.c 15:6
    integer_cst 0 - operand
   return_expr test6.c 18:9 - then
   cleanup_point_expr test6.c 20:17 - else
-   expr_stmt - operand
+   expr_stmt test6.c 20:17 - operand
     convert_expr - expresssion
      modify_expr - operand
       indirect_ref - operand
@@ -162,7 +162,7 @@ function_decl func3 test6.c 23:6
     integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  statement_list - code
-  if_stmt - statement
+  if_stmt test6.c 25:5 - statement
    eq_expr test6.c 25:10 - condition
     - isUsed: 1
     parm_decl a test6.c 23:17 - operand
@@ -179,7 +179,7 @@ function_decl func3 test6.c 23:6
     integer_cst 0 - operand
    return_expr test6.c 26:9 - then
   cleanup_point_expr test6.c 28:13 - statement
-   expr_stmt - operand
+   expr_stmt test6.c 28:13 - operand
     convert_expr - expresssion
      modify_expr - operand
       indirect_ref - operand
@@ -233,7 +233,7 @@ function_decl func4 test6.c 31:6
     integer_cst -2147483648 - min value
     integer_cst 2147483647 - max value
   integer_cst 64 - parm size
- if_stmt - code
+ if_stmt test6.c 33:5 - code
   ne_expr - condition
    - isUsed: 1
    parm_decl a test6.c 31:17 - operand
@@ -249,7 +249,7 @@ function_decl func4 test6.c 31:6
     integer_cst 64 - parm size
    integer_cst 0 - operand
   cleanup_point_expr test6.c 35:17 - then
-   expr_stmt - operand
+   expr_stmt test6.c 35:17 - operand
     convert_expr - expresssion
      modify_expr - operand
       indirect_ref - operand
@@ -304,7 +304,7 @@ function_decl func5 test6.c 39:6
     integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  statement_list - code
-  if_stmt - statement
+  if_stmt test6.c 41:5 - statement
    ne_expr - condition
     - isUsed: 1
     parm_decl a test6.c 39:17 - operand
@@ -320,7 +320,7 @@ function_decl func5 test6.c 39:6
      integer_cst 64 - parm size
     integer_cst 0 - operand
    cleanup_point_expr test6.c 43:17 - then
-    expr_stmt - operand
+    expr_stmt test6.c 43:17 - operand
      convert_expr - expresssion
       modify_expr - operand
        indirect_ref - operand
@@ -338,7 +338,7 @@ function_decl func5 test6.c 39:6
          integer_cst 64 - parm size
        integer_cst 500 - operand
   cleanup_point_expr test6.c 45:13 - statement
-   expr_stmt - operand
+   expr_stmt test6.c 45:13 - operand
     convert_expr - expresssion
      modify_expr - operand
       indirect_ref - operand
@@ -395,7 +395,7 @@ function_decl func6 test6.c 48:6
  bind_expr test6.c 56:13 - code
   statement_list - operand
    bind_expr test6.c 54:5 - statement
-    if_stmt - operand
+    if_stmt test6.c 50:5 - operand
      eq_expr test6.c 50:10 - condition
       - isUsed: 1
       parm_decl a test6.c 48:17 - operand
@@ -433,7 +433,7 @@ function_decl func6 test6.c 48:6
      block - sub block
       var_decl k test6.c 52:13 - block vars
    cleanup_point_expr test6.c 56:13 - statement
-    expr_stmt - operand
+    expr_stmt test6.c 56:13 - operand
      convert_expr - expresssion
       modify_expr - operand
        indirect_ref - operand
@@ -494,11 +494,11 @@ function_decl func7 test6.c 59:6
  bind_expr test6.c 70:16 - code
   statement_list - operand
    bind_expr test6.c 68:5 - statement
-    if_stmt - operand
+    if_stmt test6.c 61:5 - operand
      integer_cst 0 - condition
      bind_expr test6.c 67:9 - then
       bind_expr test6.c 67:9 - operand
-       if_stmt - operand
+       if_stmt test6.c 63:9 - operand
         eq_expr test6.c 63:14 - condition
          - isUsed: 1
          parm_decl aptr test6.c 59:17 - operand
@@ -545,7 +545,7 @@ function_decl func7 test6.c 59:6
        block - sub block
         var_decl k test6.c 65:17 - block vars
    cleanup_point_expr test6.c 70:16 - statement
-    expr_stmt - operand
+    expr_stmt test6.c 70:16 - operand
      convert_expr - expresssion
       modify_expr - operand
        indirect_ref - operand
@@ -608,7 +608,7 @@ function_decl func8 test6.c 73:6
  bind_expr test6.c 85:16 - code
   statement_list - operand
    bind_expr test6.c 83:5 - statement
-    if_stmt - operand
+    if_stmt test6.c 75:5 - operand
      eq_expr test6.c 75:10 - condition
       - isUsed: 1
       parm_decl aptr test6.c 73:17 - operand
@@ -626,7 +626,7 @@ function_decl func8 test6.c 73:6
      bind_expr test6.c 82:15 - then
       statement_list - operand
        bind_expr test6.c 81:9 - statement
-        if_stmt - operand
+        if_stmt test6.c 77:9 - operand
          integer_cst 0 - condition
          bind_expr test6.c 80:23 - then
           var_decl k test6.c 79:17 - operand
@@ -677,7 +677,7 @@ function_decl func8 test6.c 73:6
         var_decl k test6.c 79:17 - block vars
         var_decl l test6.c 80:17 - block vars
    cleanup_point_expr test6.c 85:16 - statement
-    expr_stmt - operand
+    expr_stmt test6.c 85:16 - operand
      convert_expr - expresssion
       modify_expr - operand
        indirect_ref - operand

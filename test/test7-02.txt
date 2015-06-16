@@ -75,7 +75,7 @@
 4 integer_cst 
 2 integer_cst 
 1 cleanup_point_expr test7.cpp
-2 expr_stmt 
+2 expr_stmt test7.cpp
 3 convert_expr 
 4 modify_expr 
 5 indirect_ref 
@@ -133,7 +133,7 @@
 4 integer_cst 
 4 integer_cst 
 2 integer_cst 
-1 if_stmt 
+1 if_stmt test7.cpp
 2 ne_expr 
 3 parm_decl test7.cpp
 4 pointer_type 
@@ -145,7 +145,7 @@
 4 integer_cst 
 3 integer_cst 
 2 cleanup_point_expr test7.cpp
-3 expr_stmt 
+3 expr_stmt test7.cpp
 4 convert_expr 
 5 modify_expr 
 6 indirect_ref 
@@ -204,7 +204,7 @@
 4 integer_cst 
 2 integer_cst 
 1 cleanup_point_expr test7.cpp
-2 expr_stmt 
+2 expr_stmt test7.cpp
 3 convert_expr 
 4 modify_expr 
 5 component_ref 

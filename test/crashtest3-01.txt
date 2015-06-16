@@ -1,6 +1,8 @@
-exception: 
+exception: pointer_type this, 
+__base_ctor : pointer_type this, 
+__comp_ctor : pointer_type this, 
+bad_exception: pointer_type this, 
 __base_ctor : 
-__comp_ctor : 
-bad_exception: 
+__base_ctor : pointer_type this, 
 __base_ctor : 
-__comp_ctor : 
+__comp_ctor : pointer_type this, 

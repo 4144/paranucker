@@ -69,7 +69,7 @@ function_decl func3 test1.c 7:6
   integer_cst 64 - parm size
  statement_list - code
   cleanup_point_expr test1.c 9:14 - statement
-   expr_stmt - operand
+   expr_stmt test1.c 9:14 - operand
     convert_expr - expresssion
      modify_expr - operand
       indirect_ref - operand
@@ -87,7 +87,7 @@ function_decl func3 test1.c 7:6
         integer_cst 64 - parm size
       integer_cst 10 - operand
   cleanup_point_expr test1.c 10:15 - statement
-   expr_stmt - operand
+   expr_stmt test1.c 10:15 - operand
     convert_expr - expresssion
      modify_expr - operand
       indirect_ref - operand
@@ -105,7 +105,7 @@ function_decl func3 test1.c 7:6
           integer_cst 127 - max value
         integer_cst 64 - parm size
       integer_cst 20 - operand
-  while_stmt - statement
+  while_stmt test1.c 11:5 - statement
    integer_cst 1 - condition
    statement_list - body
 function_decl main test1.c 14:5
@@ -150,7 +150,7 @@ function_decl main test1.c 14:5
      integer_cst 127 - max value
    statement_list - operand
     cleanup_point_expr test1.c 16:19 - statement
-     expr_stmt - operand
+     expr_stmt test1.c 16:19 - operand
       convert_expr - expresssion
        call_expr test1.c 16:6 - operand
        - function: LOAD_LANES - operand
@@ -172,7 +172,7 @@ function_decl main test1.c 14:5
        integer_cst -128 - min value
        integer_cst 127 - max value
     cleanup_point_expr test1.c 18:21 - statement
-     expr_stmt - operand
+     expr_stmt test1.c 18:21 - operand
       call_expr test1.c 18:14 - expresssion
       - function: LOAD_LANES - expresssion
        integer_cst 0 - arg
@@ -266,7 +266,7 @@ function_decl fun test1.c 21:6
    integer_cst -2147483648 - min value
    integer_cst 2147483647 - max value
   integer_cst 32 - parm size
- if_stmt - code
+ if_stmt test1.c 23:2 - code
   eq_expr test1.c 23:7 - condition
    - isUsed: 1
    parm_decl a test1.c 21:14 - operand
@@ -281,7 +281,7 @@ function_decl fun test1.c 21:6
     integer_cst 32 - parm size
    integer_cst 0 - operand
   cleanup_point_expr test1.c 24:12 - then
-   expr_stmt - operand
+   expr_stmt test1.c 24:12 - operand
     convert_expr - expresssion
      modify_expr - operand
       - isUsed: 1
@@ -332,7 +332,7 @@ function_decl fun test1.c 21:6
          integer_cst -2147483648 - min value
          integer_cst 2147483647 - max value
   cleanup_point_expr test1.c 26:6 - else
-   expr_stmt - operand
+   expr_stmt test1.c 26:6 - operand
     convert_expr - expresssion
      modify_expr - operand
       - isUsed: 1
@@ -450,7 +450,7 @@ function_decl fun1 test1.c 29:5
        integer_cst -2147483648 - min value
        integer_cst 2147483647 - max value
    cleanup_point_expr test1.c 32:5 - statement
-    expr_stmt - operand
+    expr_stmt test1.c 32:5 - operand
      convert_expr - expresssion
       modify_expr - operand
        var_decl c test1.c 3:5 - operand
@@ -468,12 +468,12 @@ function_decl fun1 test1.c 29:5
        var_decl b test1.c 31:14 - operand
        - isUsed: 1
    cleanup_point_expr test1.c 33:10 - statement
-    expr_stmt - operand
+    expr_stmt test1.c 33:10 - operand
      call_expr test1.c 33:5 - expresssion
      - function: LOAD_LANES - expresssion
       integer_cst 0 - arg
       integer_cst 1 - arg
-   if_stmt - statement
+   if_stmt test1.c 34:2 - statement
     eq_expr test1.c 34:6 - condition
      var_decl a test1.c 31:6 - operand
      - isUsed: 1

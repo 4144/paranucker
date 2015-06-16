@@ -112,7 +112,7 @@ function_decl func2 test7.cpp 8:10
     integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  cleanup_point_expr test7.cpp 10:18 - code
-  expr_stmt - operand
+  expr_stmt test7.cpp 10:18 - operand
    convert_expr - expresssion
     modify_expr - operand
      indirect_ref - operand
@@ -196,7 +196,7 @@ function_decl func3 test7.cpp 13:10
     integer_cst -2147483648 - min value
     integer_cst 2147483647 - max value
   integer_cst 64 - parm size
- if_stmt - code
+ if_stmt test7.cpp 15:9 - code
   ne_expr - condition
    - isUsed: 1
    parm_decl aptr test7.cpp 13:21 - operand
@@ -212,7 +212,7 @@ function_decl func3 test7.cpp 13:10
     integer_cst 64 - parm size
    integer_cst 0 - operand
   cleanup_point_expr test7.cpp 16:22 - then
-   expr_stmt - operand
+   expr_stmt test7.cpp 16:22 - operand
     convert_expr - expresssion
      modify_expr - operand
       indirect_ref - operand
@@ -297,7 +297,7 @@ function_decl func4 test7.cpp 19:10
     integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  cleanup_point_expr test7.cpp 21:14 - code
-  expr_stmt - operand
+  expr_stmt test7.cpp 21:14 - operand
    convert_expr - expresssion
     modify_expr - operand
      component_ref - operand
