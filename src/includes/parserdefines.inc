@@ -117,3 +117,4 @@ parserDefine(DoStmt);
 parserDefine(ExitExpr);
 parserDefine(FloatExpr);
 parserDefine(GotoExpr);
+parserDefine(LRotateExpr);
