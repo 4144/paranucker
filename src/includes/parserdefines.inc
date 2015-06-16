@@ -111,3 +111,4 @@ parserDefine(ObjTypeRef);
 parserDefine(AsmExpr);
 parserDefine(ThrowExpr);
 parserDefine(ArrayRef);
+parserDefine(BitFieldRef);

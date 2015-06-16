@@ -268,4 +268,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/throw_expr.h \
       parsers/expr/throw_expr.cpp \
       nodes/ref/array_ref.h \
-      parsers/ref/array_ref.cpp
+      parsers/ref/array_ref.cpp \
+      nodes/ref/bitfield_ref.h \
+      parsers/ref/bitfield_ref.cpp
