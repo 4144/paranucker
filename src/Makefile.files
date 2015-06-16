@@ -296,4 +296,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/staticcast_expr.h \
       parsers/expr/staticcast_expr.cpp \
       nodes/expr/switch_expr.h \
-      parsers/expr/switch_expr.cpp
+      parsers/expr/switch_expr.cpp \
+      nodes/stmt/switch_stmt.h \
+      parsers/stmt/switch_stmt.cpp

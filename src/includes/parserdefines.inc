@@ -125,3 +125,4 @@ parserDefine(RRotateExpr);
 parserDefine(ScopeRef);
 parserDefine(StaticCastExpr);
 parserDefine(SwitchExpr);
+parserDefine(SwitchStmt);
