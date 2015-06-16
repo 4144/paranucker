@@ -286,4 +286,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/max_expr.h \
       parsers/expr/max_expr.cpp \
       nodes/cst/ptrmem_cst.h \
-      parsers/cst/ptrmem_cst.cpp
+      parsers/cst/ptrmem_cst.cpp \
+      nodes/expr/range_expr.h \
+      parsers/expr/range_expr.cpp

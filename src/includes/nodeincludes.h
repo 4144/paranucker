@@ -121,3 +121,4 @@
 #include "nodes/expr/lrotate_expr.h"
 #include "nodes/expr/max_expr.h"
 #include "nodes/cst/ptrmem_cst.h"
+#include "nodes/expr/range_expr.h"
