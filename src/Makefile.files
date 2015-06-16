@@ -302,4 +302,6 @@ SRC = analysis/analysis.cpp \
       nodes/targetoption.h \
       parsers/targetoption.cpp \
       nodes/templatetypeparm.h \
-      parsers/templatetypeparm.cpp
+      parsers/templatetypeparm.cpp \
+      nodes/expr/truthand_expr.h \
+      parsers/expr/truthand_expr.cpp

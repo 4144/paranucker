@@ -128,3 +128,4 @@ parserDefine(SwitchExpr);
 parserDefine(SwitchStmt);
 parserDefine(TargetOption);
 parserDefine(TemplateTypeParm);
+parserDefine(TruthAndExpr);

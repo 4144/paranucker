@@ -129,3 +129,4 @@
 #include "nodes/stmt/switch_stmt.h"
 #include "nodes/targetoption.h"
 #include "nodes/templatetypeparm.h"
+#include "nodes/expr/truthand_expr.h"
