@@ -116,3 +116,4 @@ parserDefine(ContinueStmt);
 parserDefine(DoStmt);
 parserDefine(ExitExpr);
 parserDefine(FloatExpr);
+parserDefine(GotoExpr);
