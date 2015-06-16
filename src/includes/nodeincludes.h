@@ -119,3 +119,4 @@
 #include "nodes/expr/float_expr.h"
 #include "nodes/expr/goto_expr.h"
 #include "nodes/expr/lrotate_expr.h"
+#include "nodes/expr/max_expr.h"
