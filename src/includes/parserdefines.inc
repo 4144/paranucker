@@ -127,3 +127,4 @@ parserDefine(StaticCastExpr);
 parserDefine(SwitchExpr);
 parserDefine(SwitchStmt);
 parserDefine(TargetOption);
+parserDefine(TemplateTypeParm);

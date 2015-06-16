@@ -300,4 +300,6 @@ SRC = analysis/analysis.cpp \
       nodes/stmt/switch_stmt.h \
       parsers/stmt/switch_stmt.cpp \
       nodes/targetoption.h \
-      parsers/targetoption.cpp
+      parsers/targetoption.cpp \
+      nodes/templatetypeparm.h \
+      parsers/templatetypeparm.cpp
