@@ -153,7 +153,10 @@ function_decl main test1.c 14:5
      expr_stmt test1.c 16:19 - operand
       convert_expr - expresssion
        call_expr test1.c 16:6 - operand
-       - function: LOAD_LANES - operand
+        addr_expr - function
+         function_decl fun1 test1.c 2:5 - operand
+         - isExternal: 1
+         - isPublic: 1
         integer_cst 1 - arg
         integer_cst 2 - arg
     decl_expr test1.c 17:14 - statement
@@ -174,7 +177,9 @@ function_decl main test1.c 14:5
     cleanup_point_expr test1.c 18:21 - statement
      expr_stmt test1.c 18:21 - operand
       call_expr test1.c 18:14 - expresssion
-      - function: LOAD_LANES - expresssion
+       addr_expr - function
+        function_decl func3 test1.c 7:6 - operand
+        - isPublic: 1
        integer_cst 0 - arg
        addr_expr - arg
         var_decl k test1.c 17:14 - operand
@@ -470,7 +475,9 @@ function_decl fun1 test1.c 29:5
    cleanup_point_expr test1.c 33:10 - statement
     expr_stmt test1.c 33:10 - operand
      call_expr test1.c 33:5 - expresssion
-     - function: LOAD_LANES - expresssion
+      addr_expr - function
+       function_decl fun test1.c 21:6 - operand
+       - isPublic: 1
       integer_cst 0 - arg
       integer_cst 1 - arg
    if_stmt test1.c 34:2 - statement
