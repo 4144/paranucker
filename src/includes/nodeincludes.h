@@ -130,3 +130,4 @@
 #include "nodes/targetoption.h"
 #include "nodes/templatetypeparm.h"
 #include "nodes/expr/truthand_expr.h"
+#include "nodes/expr/truthor_expr.h"
