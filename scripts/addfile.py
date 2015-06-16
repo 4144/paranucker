@@ -69,7 +69,8 @@ if dirName != "":
         parserBaseInclude = "#include \"parsers/base/expr.h\"\n"
     elif nodeName[-4:] == "stmt":
         suffixSize = 4
-        parserBaseInclude = "#include \"parsers/base/stmt.h\"\n"
+        parserAdditionalCode1 = "    fillExprLocation(node);\n"
+        parserBaseInclude = "#include \"parsers/base/expr.h\"\n#include \"parsers/base/stmt.h\"\n"
         parserAdditionalCode2 = ""
     elif nodeName[-3:] == "vec":
         suffixSize = 3
