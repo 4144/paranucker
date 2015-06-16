@@ -21,6 +21,7 @@
 
 parserDefine(ExprStmt);
 
+#include "parsers/base/expr.h"
 #include "parsers/base/stmt.h"
 
 #include "nodes/base/expr.h"
@@ -33,6 +34,7 @@ namespace Generic
 void parseExprStmtNode(ExprStmtNode *node)
 {
     fillType(node);
+    fillExprLocation(node);
     Log::dump(node);
 
     if (!node->parseChilds)

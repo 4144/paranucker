@@ -19,34 +19,21 @@
 
 #include "includes/parserincludes.h"
 
-parserDefine(CleanupStmt);
+parserDefine(ContinueStmt);
 
 #include "parsers/base/expr.h"
 #include "parsers/base/stmt.h"
 
-#include "nodes/stmt/cleanup_stmt.h"
+#include "nodes/stmt/continue_stmt.h"
 
 namespace Generic
 {
 
-void parseCleanupStmtNode(CleanupStmtNode *node)
+void parseContinueStmtNode(ContinueStmtNode *node)
 {
     fillType(node);
     fillExprLocation(node);
     Log::dump(node);
-
-    node->body = createParseNode(
-        node,
-        CLEANUP_BODY(node->gccNode),
-        "body");
-    node->expr = static_cast<ExprNode*>(createParseNode(
-        node,
-        CLEANUP_EXPR(node->gccNode),
-        "expresssion"));
-    node->decl = static_cast<DeclNode*>(createParseNode(
-        node,
-        CLEANUP_DECL(node->gccNode),
-        "decl"));
 }
 
 }

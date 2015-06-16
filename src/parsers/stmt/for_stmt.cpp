@@ -21,6 +21,7 @@
 
 parserDefine(ForStmt);
 
+#include "parsers/base/expr.h"
 #include "parsers/base/stmt.h"
 
 #include "nodes/stmt/for_stmt.h"
@@ -31,6 +32,7 @@ namespace Generic
 void parseForStmtNode(ForStmtNode *node)
 {
     fillType(node);
+    fillExprLocation(node);
     Log::dump(node);
 
     node->init = static_cast<StmtNode*>(createParseNode(

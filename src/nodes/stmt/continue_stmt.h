@@ -17,36 +17,19 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "includes/parserincludes.h"
+#ifndef NODES_STMT_CONTINUESTMTNODE_H
+#define NODES_STMT_CONTINUESTMTNODE_H
 
-parserDefine(CleanupStmt);
+#include "nodes/base/stmt.h"
 
-#include "parsers/base/expr.h"
-#include "parsers/base/stmt.h"
+#include <string>
 
-#include "nodes/stmt/cleanup_stmt.h"
-
-namespace Generic
+struct ContinueStmtNode : public StmtNode
 {
+    ContinueStmtNode() :
+        StmtNode()
+    {
+    }
+};
 
-void parseCleanupStmtNode(CleanupStmtNode *node)
-{
-    fillType(node);
-    fillExprLocation(node);
-    Log::dump(node);
-
-    node->body = createParseNode(
-        node,
-        CLEANUP_BODY(node->gccNode),
-        "body");
-    node->expr = static_cast<ExprNode*>(createParseNode(
-        node,
-        CLEANUP_EXPR(node->gccNode),
-        "expresssion"));
-    node->decl = static_cast<DeclNode*>(createParseNode(
-        node,
-        CLEANUP_DECL(node->gccNode),
-        "decl"));
-}
-
-}
+#endif // NODES_STMT_CONTINUESTMTNODE_H

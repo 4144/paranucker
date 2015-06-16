@@ -113,3 +113,4 @@
 #include "nodes/expr/throw_expr.h"
 #include "nodes/ref/array_ref.h"
 #include "nodes/ref/bitfield_ref.h"
+#include "nodes/stmt/continue_stmt.h"

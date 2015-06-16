@@ -21,6 +21,7 @@
 
 parserDefine(WhileStmt);
 
+#include "parsers/base/expr.h"
 #include "parsers/base/stmt.h"
 
 #include "nodes/stmt/while_stmt.h"
@@ -31,6 +32,7 @@ namespace Generic
 void parseWhileStmtNode(WhileStmtNode *node)
 {
     fillType(node);
+    fillExprLocation(node);
     Log::dump(node);
 
     if (!node->parseChilds)

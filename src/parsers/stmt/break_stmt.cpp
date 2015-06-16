@@ -21,6 +21,7 @@
 
 parserDefine(BreakStmt);
 
+#include "parsers/base/expr.h"
 #include "parsers/base/stmt.h"
 
 #include "nodes/stmt/break_stmt.h"
@@ -31,6 +32,7 @@ namespace Generic
 void parseBreakStmtNode(BreakStmtNode *node)
 {
     fillType(node);
+    fillExprLocation(node);
     Log::dump(node);
 }
 

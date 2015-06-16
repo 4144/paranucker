@@ -21,6 +21,7 @@
 
 parserDefine(IfStmt);
 
+#include "parsers/base/expr.h"
 #include "parsers/base/stmt.h"
 
 #include "nodes/stmt/if_stmt.h"
@@ -31,6 +32,7 @@ namespace Generic
 void parseIfStmtNode(IfStmtNode *node)
 {
     fillType(node);
+    fillExprLocation(node);
     Log::dump(node);
 
     if (!node->parseChilds)
