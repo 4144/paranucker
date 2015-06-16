@@ -122,3 +122,4 @@ parserDefine(MaxExpr);
 parserDefine(PtrMemCst);
 parserDefine(RangeExpr);
 parserDefine(RRotateExpr);
+parserDefine(ScopeRef);

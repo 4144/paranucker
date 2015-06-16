@@ -290,4 +290,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/range_expr.h \
       parsers/expr/range_expr.cpp \
       nodes/expr/rrotate_expr.h \
-      parsers/expr/rrotate_expr.cpp
+      parsers/expr/rrotate_expr.cpp \
+      nodes/ref/scope_ref.h \
+      parsers/ref/scope_ref.cpp

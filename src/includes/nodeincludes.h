@@ -123,3 +123,4 @@
 #include "nodes/cst/ptrmem_cst.h"
 #include "nodes/expr/range_expr.h"
 #include "nodes/expr/rrotate_expr.h"
+#include "nodes/ref/scope_ref.h"
