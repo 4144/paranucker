@@ -131,3 +131,4 @@ parserDefine(TemplateTypeParm);
 parserDefine(TruthAndExpr);
 parserDefine(TruthOrExpr);
 parserDefine(TruthXorExpr);
+parserDefine(TypeNameType);
