@@ -276,4 +276,6 @@ SRC = analysis/analysis.cpp \
       nodes/stmt/do_stmt.h \
       parsers/stmt/do_stmt.cpp \
       nodes/expr/exit_expr.h \
-      parsers/expr/exit_expr.cpp
+      parsers/expr/exit_expr.cpp \
+      nodes/expr/float_expr.h \
+      parsers/expr/float_expr.cpp

@@ -115,3 +115,4 @@ parserDefine(BitFieldRef);
 parserDefine(ContinueStmt);
 parserDefine(DoStmt);
 parserDefine(ExitExpr);
+parserDefine(FloatExpr);

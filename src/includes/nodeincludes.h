@@ -116,3 +116,4 @@
 #include "nodes/stmt/continue_stmt.h"
 #include "nodes/stmt/do_stmt.h"
 #include "nodes/expr/exit_expr.h"
+#include "nodes/expr/float_expr.h"
