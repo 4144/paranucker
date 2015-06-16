@@ -131,3 +131,4 @@
 #include "nodes/templatetypeparm.h"
 #include "nodes/expr/truthand_expr.h"
 #include "nodes/expr/truthor_expr.h"
+#include "nodes/expr/truthxor_expr.h"
