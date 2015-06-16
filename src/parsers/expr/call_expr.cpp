@@ -39,8 +39,18 @@ void parseCallExprNode(CallExprNode *node)
 // not recommended
 //    fillExprOperands(node);
 
-    node->functionName = internal_fn_name(CALL_EXPR_IFN (node->gccNode));
-    Log::dump(node, "- function: %s", node->functionName.c_str());
+    if (CALL_EXPR_FN(node->gccNode) != NULL_TREE)
+    {
+        node->function = createParseNode(
+            node,
+            CALL_EXPR_FN(node->gccNode),
+            "function");
+    }
+    else
+    {
+        node->functionName = internal_fn_name(CALL_EXPR_IFN (node->gccNode));
+        Log::dump(node, "- function: %s", node->functionName.c_str());
+    }
 
 //    if (!node->parseChilds)
 //        return;
@@ -61,11 +71,6 @@ void parseCallExprNode(CallExprNode *node)
 
     if (node->functionName == "LOAD_LANES")
         return;
-
-    node->function = createParseNode(
-        node,
-        CALL_EXPR_FN(node->gccNode),
-        "function");
 }
 
 }
