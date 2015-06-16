@@ -292,4 +292,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/rrotate_expr.h \
       parsers/expr/rrotate_expr.cpp \
       nodes/ref/scope_ref.h \
-      parsers/ref/scope_ref.cpp
+      parsers/ref/scope_ref.cpp \
+      nodes/expr/staticcast_expr.h \
+      parsers/expr/staticcast_expr.cpp
