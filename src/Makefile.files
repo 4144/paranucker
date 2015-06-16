@@ -272,4 +272,6 @@ SRC = analysis/analysis.cpp \
       nodes/ref/bitfield_ref.h \
       parsers/ref/bitfield_ref.cpp \
       nodes/stmt/continue_stmt.h \
-      parsers/stmt/continue_stmt.cpp
+      parsers/stmt/continue_stmt.cpp \
+      nodes/stmt/do_stmt.h \
+      parsers/stmt/do_stmt.cpp

@@ -113,3 +113,4 @@ parserDefine(ThrowExpr);
 parserDefine(ArrayRef);
 parserDefine(BitFieldRef);
 parserDefine(ContinueStmt);
+parserDefine(DoStmt);
