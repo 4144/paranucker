@@ -124,3 +124,4 @@ parserDefine(RangeExpr);
 parserDefine(RRotateExpr);
 parserDefine(ScopeRef);
 parserDefine(StaticCastExpr);
+parserDefine(SwitchExpr);
