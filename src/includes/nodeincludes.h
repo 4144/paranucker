@@ -127,3 +127,4 @@
 #include "nodes/expr/staticcast_expr.h"
 #include "nodes/expr/switch_expr.h"
 #include "nodes/stmt/switch_stmt.h"
+#include "nodes/targetoption.h"

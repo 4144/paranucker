@@ -126,3 +126,4 @@ parserDefine(ScopeRef);
 parserDefine(StaticCastExpr);
 parserDefine(SwitchExpr);
 parserDefine(SwitchStmt);
+parserDefine(TargetOption);
