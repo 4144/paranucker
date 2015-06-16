@@ -133,3 +133,4 @@
 #include "nodes/expr/truthor_expr.h"
 #include "nodes/expr/truthxor_expr.h"
 #include "nodes/type/typename_type.h"
+#include "nodes/expr/vecinit_expr.h"

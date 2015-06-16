@@ -310,4 +310,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/truthxor_expr.h \
       parsers/expr/truthxor_expr.cpp \
       nodes/type/typename_type.h \
-      parsers/type/typename_type.cpp
+      parsers/type/typename_type.cpp \
+      nodes/expr/vecinit_expr.h \
+      parsers/expr/vecinit_expr.cpp
