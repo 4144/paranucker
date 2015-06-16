@@ -284,4 +284,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/lrotate_expr.h \
       parsers/expr/lrotate_expr.cpp \
       nodes/expr/max_expr.h \
-      parsers/expr/max_expr.cpp
+      parsers/expr/max_expr.cpp \
+      nodes/cst/ptrmem_cst.h \
+      parsers/cst/ptrmem_cst.cpp

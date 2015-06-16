@@ -120,3 +120,4 @@
 #include "nodes/expr/goto_expr.h"
 #include "nodes/expr/lrotate_expr.h"
 #include "nodes/expr/max_expr.h"
+#include "nodes/cst/ptrmem_cst.h"

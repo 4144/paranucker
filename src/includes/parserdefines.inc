@@ -119,3 +119,4 @@ parserDefine(FloatExpr);
 parserDefine(GotoExpr);
 parserDefine(LRotateExpr);
 parserDefine(MaxExpr);
+parserDefine(PtrMemCst);
