@@ -33,6 +33,7 @@ namespace Generic
 void parseComponentRefNode(ComponentRefNode *node)
 {
     fillType(node);
+    fillRefLocation(node);
     Log::dump(node);
 
     node->object = getRefOperand(node, 0, "object");
