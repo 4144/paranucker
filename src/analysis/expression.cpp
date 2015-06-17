@@ -49,9 +49,9 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
     {
         IndirectRefNode *refNode = static_cast<IndirectRefNode*>(arg);
         // need atleast one arg for check
-        if (refNode->args.empty())
+        if (refNode->ref == nullptr)
             return;
-        arg = refNode->args[0];
+        arg = refNode->ref;
         if (arg->nodeType == PARM_DECL)
         {
             if (wi.checkNullVars.find(arg->label) != wi.checkNullVars.end())

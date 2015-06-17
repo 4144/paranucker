@@ -22,14 +22,19 @@
 
 #include "nodes/base/ref.h"
 
+#include "nodes/base/decl.h"
+
 #include <string>
 
 struct IndirectRefNode : public RefNode
 {
     IndirectRefNode() :
-        RefNode()
+        RefNode(),
+        ref(nullptr)
     {
     }
+
+    DeclNode *ref;
 };
 
 #endif // NODES_REF_INDIRECTREFNODE_H
