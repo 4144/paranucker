@@ -73,6 +73,8 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
             walkTree(node->thenNode, wi2, wo);
             wo.removeNullVars.clear();
             const bool returned = wo.isReturned;
+//            if (wo.isReturned)
+//                Log::log("wo.isReturned 1\n");
 
             // From else branch remove variable what we just found.
             wi2 = wi;
@@ -80,6 +82,9 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
             walkTree(node->elseNode, wi2, wo);
             wo.removeNullVars.clear();
             wo.stopWalking = true;
+//            if (wo.isReturned)
+//                Log::log("wo.isReturned 2\n");
+            wo.isReturned = false;
 
             if (returned)
             {
@@ -117,10 +122,14 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
             wi2.checkNullVars.erase(node1->label);
             // From then branch remove variable what we just found.
             walkTree(node->thenNode, wi2, wo);
+//            if (wo.isReturned)
+//                Log::log("wo.isReturned 3\n");
             wo.removeNullVars.clear();
             wi2 = wi;
             // walking else node with all variables
             walkTree(node->elseNode, wi2, wo);
+//            if (wo.isReturned)
+//                Log::log("wo.isReturned 4\n");
             wo.removeNullVars.clear();
             wo.stopWalking = true;
 
@@ -131,6 +140,7 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
                 wo.removeNullVars.insert(node1->label);
                 wo.checkNullVars.erase(node1->label);
             }
+            wo.isReturned = false;
             return;
         }
     }
@@ -139,6 +149,9 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
     walkTree(node->thenNode, wi, wo);
     walkTree(node->elseNode, wi, wo);
     wo.removeNullVars.clear();
+//    if (wo.isReturned)
+//        Log::log("wo.isReturned 5\n");
+    wo.isReturned = false;
     wo.stopWalking = true;
 }
 

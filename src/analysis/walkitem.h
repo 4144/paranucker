@@ -29,7 +29,7 @@ struct WalkItem
         checkNullVars(),
         removeNullVars(),
         stopWalking(false),
-        isReturned(true)
+        isReturned(false)
     {
     }
 

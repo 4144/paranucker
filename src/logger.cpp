@@ -164,6 +164,30 @@ void dump(const Node *const node)
     fprintf(stderr, "\n");
 }
 
+void dumpAttr(const Node *const node, int num, bool isReturned)
+{
+    if (!node)
+    {
+        fprintf(stderr, "node is null\n");
+        return;
+    }
+    fprintf(stderr, "%s", node->getIndent().c_str());
+    fprintf(stderr, "%s", node->nodeTypeName.c_str());
+    if (!node->label.empty())
+        fprintf(stderr, " %s", node->label.c_str());
+    if (!node->file.empty())
+    {
+        fprintf(stderr, " %s %d:%d",
+            node->file.c_str(),
+            node->line,
+            node->column);
+    }
+    if (!node->tag.empty())
+        fprintf(stderr, " - %s", node->tag.c_str());
+
+    fprintf(stderr, " walkTree%d: %d\n", num, isReturned ? 1 : 0);
+}
+
 void warn(const int loc,
           const std::string &message,
           const std::string &param)

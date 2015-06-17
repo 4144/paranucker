@@ -54,6 +54,8 @@ namespace Log
     void warn(const int loc,
           const std::string &message,
           const std::string &param);
+
+    void dumpAttr(const Node *const node, int num, bool isReturned);
 }
 
 #endif  // LOGGER_H

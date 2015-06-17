@@ -75,7 +75,9 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     WalkItem wi2 = wi;
     analyseNode(node, wi2, wo);
     removeCheckNullVars(wi2);
+//    Log::dumpAttr(node, 1, wo.isReturned);
 
+    const bool isReturned = wo.isReturned;
     if (wo.stopWalking)
     {
         wo.stopWalking = false;
@@ -87,9 +89,13 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     {
         walkTree(*it, wi2, wo2);
         wi2.removeNullVars = wo2.removeNullVars;
+        wi2.isReturned = wi2.isReturned || wo2.isReturned;
         wo2.stopWalking = false;
     }
     wo.removeNullVars = wi2.removeNullVars;
+    wo.isReturned = wo.isReturned || isReturned || wo2.isReturned;
+
+//    Log::dumpAttr(node, 2, wo.isReturned);
 }
 
 int findBackLocation(Node *node)
