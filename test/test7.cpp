@@ -1,4 +1,5 @@
 #include <string>
+#include <vector>
 
 struct Struct1
 {
@@ -15,6 +16,8 @@ struct Struct1
 class Object1
 {
     int k;
+    std::vector<Struct1*> vec1;
+
     void func1()
     {
     }
@@ -45,5 +48,12 @@ class Object1
         if (!sptr)
             return;
         sptr->num = 0;
+    }
+
+    void func7(Struct1 *const sptr)
+    {
+        if (!sptr)
+            return;
+        vec1.push_back(sptr);
     }
 };

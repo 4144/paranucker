@@ -139,6 +139,90 @@ __atomic_add_dispatch: pointer_type __mem,
 __gthread_active_p: 
 __atomic_add: 
 __atomic_add_single: 
+_Bit_reference: pointer_type this, pointer_type __x, 
+__base_ctor : pointer_type this, pointer_type __x, 
+__comp_ctor : pointer_type this, pointer_type __x, 
+_Bit_reference: pointer_type this, 
+__base_ctor : pointer_type this, 
+__comp_ctor : pointer_type this, 
+operator 2: pointer_type this, 
+operator=: pointer_type this, 
+operator=: pointer_type this, 
+operator==: pointer_type this, 
+operator<: pointer_type this, 
+flip: pointer_type this, 
+iterator: pointer_type this, 
+__base_ctor : pointer_type this, 
+__comp_ctor : pointer_type this, 
+_Bit_iterator_base: pointer_type this, pointer_type __x, 
+__base_ctor : 
+__base_ctor : pointer_type this, pointer_type __x, 
+__base_ctor : 
+__comp_ctor : pointer_type this, pointer_type __x, 
+_M_bump_up: pointer_type this, 
+_M_bump_down: pointer_type this, 
+_M_incr: pointer_type this, 
+operator==: pointer_type this, 
+operator<: pointer_type this, 
+operator!=: pointer_type this, 
+operator>: pointer_type this, 
+operator<=: pointer_type this, 
+operator>=: pointer_type this, 
+operator-: 
+_Bit_iterator: pointer_type this, 
+__base_ctor : 
+__base_ctor : pointer_type this, 
+__base_ctor : 
+__comp_ctor : pointer_type this, 
+_Bit_iterator: pointer_type this, pointer_type __x, 
+__base_ctor : 
+__base_ctor : pointer_type this, pointer_type __x, 
+__base_ctor : 
+__comp_ctor : pointer_type this, pointer_type __x, 
+_M_const_cast: pointer_type this, 
+operator*: pointer_type this, 
+__comp_ctor : 
+operator++: pointer_type this, 
+operator++: pointer_type this, 
+operator--: pointer_type this, 
+operator--: pointer_type this, 
+operator+=: pointer_type this, 
+operator-=: pointer_type this, 
+operator+: pointer_type this, 
+operator-: pointer_type this, 
+operator[]: pointer_type this, 
+operator+: 
+_Bit_const_iterator: pointer_type this, 
+__base_ctor : 
+__base_ctor : pointer_type this, 
+__base_ctor : 
+__comp_ctor : pointer_type this, 
+_Bit_const_iterator: pointer_type this, pointer_type __x, 
+__base_ctor : 
+__base_ctor : pointer_type this, pointer_type __x, 
+__base_ctor : 
+__comp_ctor : pointer_type this, pointer_type __x, 
+_Bit_const_iterator: pointer_type this, 
+__base_ctor : 
+__base_ctor : pointer_type this, 
+__base_ctor : 
+__comp_ctor : pointer_type this, 
+_M_const_cast: pointer_type this, 
+__comp_ctor : 
+operator*: pointer_type this, 
+__comp_ctor : 
+operator++: pointer_type this, 
+operator++: pointer_type this, 
+operator--: pointer_type this, 
+operator--: pointer_type this, 
+operator+=: pointer_type this, 
+operator-=: pointer_type this, 
+operator+: pointer_type this, 
+operator-: pointer_type this, 
+operator[]: pointer_type this, 
+operator+: 
+__fill_bvector: 
+fill: 
 Struct1: pointer_type this, 
 __base_ctor : pointer_type this, 
 __comp_ctor : pointer_type this, 
@@ -148,15 +232,74 @@ func3: pointer_type this, pointer_type aptr,
 func4: pointer_type this, pointer_type aptr, 
 func5: pointer_type this, pointer_type sptr, 
 func6: pointer_type this, pointer_type sptr, 
+func7: pointer_type this, pointer_type sptr, 
+fill: pointer_type __first, pointer_type __last, 
 _Alloc_hider: pointer_type this, 
 __base_dtor : pointer_type this, 
 __comp_dtor : pointer_type this, 
+push_back: pointer_type this, 
+__niter_base: pointer_type __it, 
+__fill_a: pointer_type __first, pointer_type __last, 
+construct: pointer_type __p, 
+_M_insert_aux: pointer_type this, 
+construct: 
+construct: 
+end: pointer_type this, 
+_S_base: pointer_type __it, 
 new_allocator: pointer_type this, 
 __base_ctor : pointer_type this, 
 __comp_ctor : pointer_type this, 
 new_allocator: pointer_type this, 
 __base_dtor : pointer_type this, 
 __comp_dtor : pointer_type this, 
+construct: pointer_type this, pointer_type __p, 
+base: pointer_type this, 
+copy_backward: pointer_type __first, pointer_type __last, pointer_type __result, 
+operator*: pointer_type this, 
+_M_check_len: pointer_type this, pointer_type __s, 
+begin: pointer_type this, 
+operator-: 
+_M_allocate: pointer_type this, 
+_M_get_Tp_allocator: pointer_type this, 
+__uninitialized_move_if_noexcept_a: pointer_type __first, pointer_type __last, pointer_type __result, 
+destroy: pointer_type __p, 
+_Destroy: pointer_type __first, pointer_type __last, 
+_M_deallocate: pointer_type this, pointer_type __p, 
+__normal_iterator: pointer_type this, 
+__base_ctor : pointer_type this, 
+__comp_ctor : pointer_type this, 
 new_allocator: pointer_type this, 
 __base_ctor : pointer_type this, 
 __comp_ctor : pointer_type this, 
+__miter_base: pointer_type __it, 
+__copy_move_backward_a2: pointer_type __first, pointer_type __last, pointer_type __result, 
+max_size: pointer_type this, 
+size: pointer_type this, 
+max: 
+allocate: 
+__uninitialized_copy_a: pointer_type __first, pointer_type __last, pointer_type __result, 
+destroy: pointer_type this, pointer_type __p, 
+_Destroy: pointer_type __first, pointer_type __last, 
+deallocate: pointer_type __p, 
+_S_base: pointer_type __it, 
+__niter_base: pointer_type __it, 
+_S_base: 
+__copy_move_backward_a: pointer_type __first, pointer_type __last, pointer_type __result, 
+max_size: 
+_M_get_Tp_allocator: pointer_type this, 
+allocate: pointer_type this, pointer_type , 
+uninitialized_copy: pointer_type __first, pointer_type __last, pointer_type __result, 
+__destroy: pointer_type , pointer_type , 
+deallocate: pointer_type this, pointer_type __p, 
+__copy_move_b: pointer_type __first, pointer_type __last, pointer_type __result, 
+max_size: pointer_type this, 
+__uninit_copy: pointer_type __first, pointer_type __last, pointer_type __result, 
+copy: pointer_type __first, pointer_type __last, pointer_type __result, 
+__miter_base: 
+__miter_base: 
+__copy_move_a2: pointer_type __first, pointer_type __last, pointer_type __result, 
+__niter_base: 
+__niter_base: 
+__niter_base: 
+__copy_move_a: pointer_type __first, pointer_type __last, pointer_type __result, 
+__copy_m: pointer_type __first, pointer_type __last, pointer_type __result, 
