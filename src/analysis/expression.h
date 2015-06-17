@@ -24,6 +24,7 @@
 
 struct AddrExprNode;
 struct ModifyExprNode;
+struct NeExprNode;
 struct PointerPlusExprNode;
 struct ReturnExprNode;
 struct WalkItem;
@@ -37,6 +38,8 @@ namespace Analysis
     void analyseAddrExpr(AddrExprNode *node, const WalkItem &wi, WalkItem &wo);
 
     void analyseReturnExpr(ReturnExprNode *node, const WalkItem &wi, WalkItem &wo);
+
+    void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo);
 }
 
 #endif // ANALYSIS_EXPRESSION_H

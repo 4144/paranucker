@@ -27,6 +27,7 @@
 
 #include "nodes/expr/addr_expr.h"
 #include "nodes/expr/modify_expr.h"
+#include "nodes/expr/ne_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
 #include "nodes/expr/return_expr.h"
 
@@ -75,6 +76,30 @@ void analyseAddrExpr(AddrExprNode *node, const WalkItem &wi, WalkItem &wo)
 void analyseReturnExpr(ReturnExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     wo.isReturned = true;
+}
+
+void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    // need atleast one arg for check
+    if (node->args.size() < 2 || !wi.isExpr || command == FindArgs)
+        return;
+
+    // PARM_DECL?
+    Node *node1 = skipNop(node->args[0]);
+    // INTEGER_CST?
+    Node *node2 = skipNop(node->args[1]);
+
+    // if (var != 0)
+    if (node1 &&
+        node2 &&
+        node1->nodeType == PARM_DECL &&
+        node2->nodeType == INTEGER_CST &&
+        wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
+        node2->label == "0")
+    {
+        wo.removeNullVars.insert(node1->label);
+        wo.checkNullVars.erase(node1->label);
+    }
 }
 
 }

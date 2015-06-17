@@ -29,7 +29,8 @@ struct WalkItem
         checkNullVars(),
         removeNullVars(),
         stopWalking(false),
-        isReturned(false)
+        isReturned(false),
+        isExpr(false)
     {
     }
 
@@ -43,8 +44,9 @@ struct WalkItem
 
     std::set<std::string> checkNullVars;
     std::set<std::string> removeNullVars;
-    bool stopWalking;
-    bool isReturned;
+    bool stopWalking;   // stop walking on tree after this node
+    bool isReturned;    // set if return present in child nodes
+    bool isExpr;        // set if walking on expression for if other kind nodes
 };
 
 
