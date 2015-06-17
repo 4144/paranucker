@@ -41,7 +41,7 @@ function_decl func1 test6.c 10:6
     modify_expr - operand
      indirect_ref - operand
       - isUsed: 1
-      parm_decl a test6.c 10:17 - operand
+      parm_decl a test6.c 10:17 - ref
        pointer_type - decl type
         integer_type - nested type
         - precisionBits: 32
@@ -112,7 +112,7 @@ function_decl func2 test6.c 15:6
      modify_expr - operand
       indirect_ref - operand
        - isUsed: 1
-       parm_decl a test6.c 15:17 - operand
+       parm_decl a test6.c 15:17 - ref
         pointer_type - decl type
          integer_type - nested type
          - precisionBits: 32
@@ -184,7 +184,7 @@ function_decl func3 test6.c 23:6
      modify_expr - operand
       indirect_ref - operand
        - isUsed: 1
-       parm_decl a test6.c 23:17 - operand
+       parm_decl a test6.c 23:17 - ref
         pointer_type - decl type
          integer_type - nested type
          - precisionBits: 32
@@ -254,7 +254,7 @@ function_decl func4 test6.c 31:6
      modify_expr - operand
       indirect_ref - operand
        - isUsed: 1
-       parm_decl a test6.c 31:17 - operand
+       parm_decl a test6.c 31:17 - ref
         pointer_type - decl type
          integer_type - nested type
          - precisionBits: 32
@@ -325,7 +325,7 @@ function_decl func5 test6.c 39:6
       modify_expr - operand
        indirect_ref - operand
         - isUsed: 1
-        parm_decl a test6.c 39:17 - operand
+        parm_decl a test6.c 39:17 - ref
          pointer_type - decl type
           integer_type - nested type
           - precisionBits: 32
@@ -343,7 +343,7 @@ function_decl func5 test6.c 39:6
      modify_expr - operand
       indirect_ref - operand
        - isUsed: 1
-       parm_decl a test6.c 39:17 - operand
+       parm_decl a test6.c 39:17 - ref
         pointer_type - decl type
          integer_type - nested type
          - precisionBits: 32
@@ -438,7 +438,7 @@ function_decl func6 test6.c 48:6
       modify_expr - operand
        indirect_ref - operand
         - isUsed: 1
-        parm_decl a test6.c 48:17 - operand
+        parm_decl a test6.c 48:17 - ref
          pointer_type - decl type
           integer_type - nested type
           - precisionBits: 32
@@ -550,7 +550,7 @@ function_decl func7 test6.c 59:6
       modify_expr - operand
        indirect_ref - operand
         - isUsed: 1
-        parm_decl aptr test6.c 59:17 - operand
+        parm_decl aptr test6.c 59:17 - ref
          pointer_type - decl type
           integer_type - nested type
           - precisionBits: 32
@@ -682,7 +682,7 @@ function_decl func8 test6.c 73:6
       modify_expr - operand
        indirect_ref - operand
         - isUsed: 1
-        parm_decl aptr test6.c 73:17 - operand
+        parm_decl aptr test6.c 73:17 - ref
          pointer_type - decl type
           integer_type - nested type
           - precisionBits: 32

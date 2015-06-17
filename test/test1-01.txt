@@ -74,7 +74,7 @@ function_decl func3 test1.c 7:6
      modify_expr - operand
       indirect_ref - operand
        - isUsed: 1
-       parm_decl ptr test1.c 7:17 - operand
+       parm_decl ptr test1.c 7:17 - ref
         pointer_type - decl type
          integer_type - nested type
          - precisionBits: 32
@@ -92,7 +92,7 @@ function_decl func3 test1.c 7:6
      modify_expr - operand
       indirect_ref - operand
        - isUsed: 1
-       parm_decl ptr2 test1.c 7:28 - operand
+       parm_decl ptr2 test1.c 7:28 - ref
         pointer_type - decl type
          integer_type - nested type
          - precisionBits: 8

@@ -80,7 +80,7 @@ function_decl func1 test5.c 10:6
     modify_expr - operand
      indirect_ref - operand
       - isUsed: 1
-      parm_decl b test5.c 10:24 - operand
+      parm_decl b test5.c 10:24 - ref
        pointer_type - decl type
         integer_type - nested type
         - precisionBits: 32
@@ -173,7 +173,7 @@ function_decl func2 test5.c 15:6
    convert_expr - expresssion
     modify_expr - operand
      indirect_ref - operand
-      pointer_plus_expr test5.c 17:9 - operand
+      pointer_plus_expr test5.c 17:9 - ref
        - isUsed: 1
        parm_decl b test5.c 15:24 - operand
         pointer_type - decl type
@@ -269,7 +269,7 @@ function_decl func3 test5.c 20:6
    convert_expr - expresssion
     modify_expr - operand
      indirect_ref - operand
-      pointer_plus_expr test5.c 22:9 - operand
+      pointer_plus_expr test5.c 22:9 - ref
        - isUsed: 1
        parm_decl b test5.c 20:24 - operand
         pointer_type - decl type
@@ -383,7 +383,7 @@ function_decl func5 test5.c 25:6
      convert_expr - expresssion
       modify_expr - operand
        indirect_ref - operand
-        pointer_plus_expr test5.c 28:12 - operand
+        pointer_plus_expr test5.c 28:12 - ref
          - isUsed: 1
          parm_decl b test5.c 25:24 - operand
           pointer_type - decl type
@@ -506,7 +506,7 @@ function_decl func6 test5.c 31:6
      convert_expr - expresssion
       modify_expr - operand
        indirect_ref - operand
-        var_decl var2 test5.c 33:10 - operand
+        var_decl var2 test5.c 33:10 - ref
         - isUsed: 1
        integer_cst 500 - operand
   block - operand
@@ -624,7 +624,7 @@ function_decl func7 test5.c 37:6
      convert_expr - expresssion
       modify_expr - operand
        indirect_ref - operand
-        var_decl var3 test5.c 39:10 - operand
+        var_decl var3 test5.c 39:10 - ref
         - isUsed: 1
        integer_cst 600 - operand
   block - operand
@@ -742,8 +742,8 @@ function_decl func8 test5.c 43:6
      convert_expr - expresssion
       modify_expr - operand
        indirect_ref - operand
-        indirect_ref - operand
-         var_decl var4 test5.c 45:11 - operand
+        indirect_ref - ref
+         var_decl var4 test5.c 45:11 - ref
          - isUsed: 1
        integer_cst 700 - operand
   block - operand

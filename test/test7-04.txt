@@ -1,4 +1,4 @@
 test7.cpp: In member function 'void Object1::func2(int*)':
-test7.cpp:10:18: warning: Using variable without check for NULL
+test7.cpp:24:18: warning: Using variable without check for NULL
          *aptr = 0;
                   ^
