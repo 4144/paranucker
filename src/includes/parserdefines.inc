@@ -134,3 +134,4 @@ parserDefine(TruthXorExpr);
 parserDefine(TypeNameType);
 parserDefine(VecInitExpr);
 parserDefine(CaseLabelExpr);
+parserDefine(TemplateParmIndex);

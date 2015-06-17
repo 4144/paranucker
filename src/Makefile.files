@@ -314,4 +314,6 @@ SRC = analysis/analysis.cpp \
       nodes/expr/vecinit_expr.h \
       parsers/expr/vecinit_expr.cpp \
       nodes/expr/caselabel_expr.h \
-      parsers/expr/caselabel_expr.cpp
+      parsers/expr/caselabel_expr.cpp \
+      nodes/templateparmindex.h \
+      parsers/templateparmindex.cpp
