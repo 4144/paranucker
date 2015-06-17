@@ -69,9 +69,9 @@ Node *getRefOperand(RefNode *node,
 {
     if (!node || node->gccNode == NULL_TREE)
         return nullptr;
-    const int sz = TREE_OPERAND_LENGTH(node->gccNode);
-    if (sz >= pos)
-        return nullptr;
+//    const int sz = TREE_OPERAND_LENGTH(node->gccNode);
+//    if (sz >= pos)
+//        return nullptr;
 
     return createParseNode(
         node,
