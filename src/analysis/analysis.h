@@ -40,6 +40,8 @@ namespace Analysis
                                    const WalkItem &wi);
 
     void removeCheckNullVars(WalkItem &wi);
+
+    Node *skipNop(Node *node);
 }
 
 #endif // ANALYSIS_ANALYSIS_H

@@ -55,7 +55,7 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
             return;
 
         // PARM_DECL?
-        Node *node1 = eq->args[0];
+        Node *node1 = skipNop(eq->args[0]);
         // INTEGER_CST?
         Node *node2 = eq->args[1];
         // if (var == 0)

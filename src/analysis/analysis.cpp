@@ -34,6 +34,7 @@
 
 #include "nodes/expr/addr_expr.h"
 #include "nodes/expr/modify_expr.h"
+#include "nodes/expr/nop_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
 
 #include "nodes/ref/component_ref.h"
@@ -114,6 +115,19 @@ void reportParmDeclNullPointer(Node *mainNode,
                 node->label);
         }
     }
+}
+
+Node *skipNop(Node *node)
+{
+    while (node && node->nodeType == NOP_EXPR)
+    {
+        NopExprNode *nop = static_cast<NopExprNode*>(node);
+        if (nop && !nop->args.empty())
+            node = nop->args[0];
+        else
+            return nop;
+    }
+    return node;
 }
 
 void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
