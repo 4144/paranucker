@@ -110,7 +110,8 @@ void reportParmDeclNullPointer(Node *mainNode,
         if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
         {
             Log::warn(findBackLocation(mainNode),
-                "Using variable without check for NULL");
+                "Using parameter '%s' without checking for null pointer",
+                node->label);
         }
     }
 }

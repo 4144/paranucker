@@ -164,9 +164,11 @@ void dump(const Node *const node)
     fprintf(stderr, "\n");
 }
 
-void warn(int loc, std::string message)
+void warn(const int loc,
+          const std::string &message,
+          const std::string &param)
 {
-    warning_at(loc, 0, message.c_str());
+    warning_at(loc, 0, message.c_str(), param.c_str());
 }
 
 }
