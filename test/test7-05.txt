@@ -3003,6 +3003,10 @@ expr_stmt : sptr, this,
 convert_expr : sptr, this, 
 modify_expr : sptr, this, 
 component_ref : sptr, this, 
+test7.cpp: In member function 'void Object1::func5(Struct1*)':
+test7.cpp:40:15: warning: Using variable without check for NULL
+         sptr->num = 0;
+               ^
 indirect_ref : sptr, this, 
 parm_decl sptr: sptr, this, 
 pointer_type : sptr, this, 
