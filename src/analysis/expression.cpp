@@ -47,19 +47,9 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
     Node *arg = node->args[0];
     if (arg && arg->nodeType == INDIRECT_REF)
     {
-        IndirectRefNode *refNode = static_cast<IndirectRefNode*>(arg);
-        // need atleast one arg for check
-        if (refNode->ref == nullptr)
-            return;
-        arg = refNode->ref;
-        if (arg->nodeType == PARM_DECL)
-        {
-            if (wi.checkNullVars.find(arg->label) != wi.checkNullVars.end())
-            {
-                Log::warn(findBackLocation(node),
-                    "Using variable without check for NULL");
-            }
-        }
+        reportParmDeclNullPointer(node,
+            static_cast<IndirectRefNode*>(arg)->ref,
+            wi);
     }
 }
 
@@ -69,15 +59,7 @@ void analysePointerPlusExpr(PointerPlusExprNode *node, const WalkItem &wi, WalkI
     if (node->args.empty() || command == FindArgs)
         return;
 
-    Node *arg = node->args[0];
-    if (arg && arg->nodeType == PARM_DECL)
-    {
-        if (wi.checkNullVars.find(arg->label) != wi.checkNullVars.end())
-        {
-            Log::warn(findBackLocation(node),
-                "Using variable without check for NULL");
-        }
-    }
+    reportParmDeclNullPointer(node, node->args[0], wi);
 }
 
 void analyseAddrExpr(AddrExprNode *node, const WalkItem &wi, WalkItem &wo)
@@ -86,15 +68,7 @@ void analyseAddrExpr(AddrExprNode *node, const WalkItem &wi, WalkItem &wo)
     if (node->args.empty() || command == FindArgs)
         return;
 
-    Node *arg = node->args[0];
-    if (arg && arg->nodeType == PARM_DECL)
-    {
-        if (wi.checkNullVars.find(arg->label) != wi.checkNullVars.end())
-        {
-            Log::warn(findBackLocation(node),
-                "Using variable without check for NULL");
-        }
-    }
+    reportParmDeclNullPointer(node, node->args[0], wi);
 }
 
 }

@@ -40,16 +40,7 @@ void analyseVarDecl(VarDeclNode *node, const WalkItem &wi, WalkItem &wo)
     if (!node->initial || command == FindArgs)
         return;
 
-    Node *initial = node->initial;
-    if (initial && initial->nodeType == PARM_DECL)
-    {
-        if (wi.checkNullVars.find(initial->label) != wi.checkNullVars.end())
-        {
-            Log::warn(findBackLocation(node),
-                "Using variable without check for NULL");
-        }
-    }
-
+    reportParmDeclNullPointer(node, node->initial, wi);
     return;
 }
 

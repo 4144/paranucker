@@ -35,6 +35,10 @@ namespace Analysis
 
     int findBackLocation(Node *node);
 
+    void reportParmDeclNullPointer(Node *mainNode,
+                                   Node *node,
+                                   const WalkItem &wi);
+
     void removeCheckNullVars(WalkItem &wi);
 }
 

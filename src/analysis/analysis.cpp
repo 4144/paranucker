@@ -101,6 +101,20 @@ int findBackLocation(Node *node)
     return loc;
 }
 
+void reportParmDeclNullPointer(Node *mainNode,
+                               Node *node,
+                               const WalkItem &wi)
+{
+    if (node && node->nodeType == PARM_DECL)
+    {
+        if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+        {
+            Log::warn(findBackLocation(mainNode),
+                "Using variable without check for NULL");
+        }
+    }
+}
+
 void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
 {
     if (!node)

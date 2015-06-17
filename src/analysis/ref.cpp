@@ -48,19 +48,9 @@ void analyseComponentRef(ComponentRefNode *node, const WalkItem &wi, WalkItem &w
     Node *arg = node->object;
     if (arg && arg->nodeType == INDIRECT_REF)
     {
-        IndirectRefNode *refNode = static_cast<IndirectRefNode*>(arg);
-        // need atleast one arg for check
-        if (refNode->ref == nullptr)
-            return;
-        arg = refNode->ref;
-        if (arg->nodeType == PARM_DECL)
-        {
-            if (wi.checkNullVars.find(arg->label) != wi.checkNullVars.end())
-            {
-                Log::warn(findBackLocation(node),
-                    "Using variable without check for NULL");
-            }
-        }
+        reportParmDeclNullPointer(node,
+            static_cast<IndirectRefNode*>(arg)->ref,
+            wi);
     }
 }
 
