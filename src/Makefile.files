@@ -6,6 +6,8 @@ SRC = analysis/analysis.cpp \
       analysis/expression.h \
       analysis/function.cpp \
       analysis/function.h \
+      analysis/ref.cpp \
+      analysis/ref.h \
       analysis/statement.cpp \
       analysis/statement.h \
       analysis/walkitem.h \
