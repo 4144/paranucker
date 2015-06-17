@@ -1,17 +1,20 @@
-.PHONY: test1 test2 test3 test4 test5 test6 test7 crashtest1 crashtest2 all crashes clean
-.NOTPARALLEL: all allcrash
+CRASHES = crashtest1 crashtest2 crashtest3 crashtest4
+ALLTESTS = test1 test2 test3 test4 test5 test6 test7
+
+.PHONY: ${ALLTESTS} ${CRASHES} all crashes clean
 
 CC := gcc-5
 CXX := g++-5
+MAKEFLAGS += --jobs=9
 
 PLUGIN = ../build/src/.libs/astdumper.so
-CMD = LANG=C ${CXX} -c -fplugin=${PLUGIN} -fplugin-arg-astdumper-command=${1} ${2} -o a.out 2>${3}
+CMD = LANG=C ${CXX} -c -fplugin=${PLUGIN} -fplugin-arg-astdumper-command=${1} ${2} -o ../build/${3}.out 2>${3}
 
-all: test1 test2 test3 test4 test5 test6 test7 clean
-crashes: crashtest1 crashtest2 crashtest3 crashtest4 clean
+all: ${ALLTESTS} ${CRASHES} clean
+crashes: ${CRASHES} clean
 
-clean:
-	@rm a.out 2>/dev/null || true
+clean: ${ALLTESTS} ${CRASHES}
+	@rm ../build/*.out 2>/dev/null || true
 
 test1:
 	$(call CMD,dump,test1.c,test1-01.txt)
