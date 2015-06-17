@@ -312,4 +312,6 @@ SRC = analysis/analysis.cpp \
       nodes/type/typename_type.h \
       parsers/type/typename_type.cpp \
       nodes/expr/vecinit_expr.h \
-      parsers/expr/vecinit_expr.cpp
+      parsers/expr/vecinit_expr.cpp \
+      nodes/expr/caselabel_expr.h \
+      parsers/expr/caselabel_expr.cpp
