@@ -56,4 +56,10 @@ class Object1
             return;
         vec1.push_back(sptr);
     }
+
+    void func8(Struct1 *sptr)
+    {
+        k = 10;
+        this->k = 20;
+    }
 };
