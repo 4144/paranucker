@@ -44,7 +44,7 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
     if (node->args.empty() || command == FindArgs)
         return;
 
-    Node *arg = node->args[0];
+    Node *arg = skipNop(node->args[0]);
     if (arg && arg->nodeType == INDIRECT_REF)
     {
         reportParmDeclNullPointer(node,

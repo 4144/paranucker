@@ -106,6 +106,7 @@ void reportParmDeclNullPointer(Node *mainNode,
                                Node *node,
                                const WalkItem &wi)
 {
+    node = skipNop(node);
     if (node && node->nodeType == PARM_DECL)
     {
         if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())

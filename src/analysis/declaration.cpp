@@ -37,7 +37,7 @@ namespace Analysis
 void analyseVarDecl(VarDeclNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need atleast one arg for check
-    if (!node->initial || command == FindArgs)
+    if (command == FindArgs)
         return;
 
     reportParmDeclNullPointer(node, node->initial, wi);

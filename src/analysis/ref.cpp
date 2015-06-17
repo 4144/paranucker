@@ -45,7 +45,7 @@ void analyseComponentRef(ComponentRefNode *node, const WalkItem &wi, WalkItem &w
     if (!node->object || command == FindArgs)
         return;
 
-    Node *arg = node->object;
+    Node *arg = skipNop(node->object);
     if (arg && arg->nodeType == INDIRECT_REF)
     {
         reportParmDeclNullPointer(node,

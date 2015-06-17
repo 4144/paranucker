@@ -47,9 +47,10 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
     if (!node->condition || command == FindArgs)
         return;
 
-    if (node->condition->nodeType == EQ_EXPR)
+    Node *condNode = skipNop(node->condition);
+    if (condNode->nodeType == EQ_EXPR)
     {   // if (... == ..)
-        EqExprNode *eq = static_cast<EqExprNode*>(node->condition);
+        EqExprNode *eq = static_cast<EqExprNode*>(condNode);
         // need atleast two operands for EQ_EXPR node
         if (eq->args.size() < 2)
             return;
@@ -57,7 +58,7 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
         // PARM_DECL?
         Node *node1 = skipNop(eq->args[0]);
         // INTEGER_CST?
-        Node *node2 = eq->args[1];
+        Node *node2 = skipNop(eq->args[1]);
         // if (var == 0)
         if (node1 &&
             node2 &&
@@ -88,17 +89,17 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
             return;
         }
     }
-    else if (node->condition->nodeType == NE_EXPR)
+    else if (condNode->nodeType == NE_EXPR)
     {   // if (... != ..)
-        NeExprNode *ne = static_cast<NeExprNode*>(node->condition);
+        NeExprNode *ne = static_cast<NeExprNode*>(condNode);
         // need atleast two operands for NE_EXPR node
         if (ne->args.size() < 2)
             return;
 
         // PARM_DECL?
-        Node *node1 = ne->args[0];
+        Node *node1 = skipNop(ne->args[0]);
         // INTEGER_CST?
-        Node *node2 = ne->args[1];
+        Node *node2 = skipNop(ne->args[1]);
         // if (var != 0)
         if (node1 &&
             node2 &&
