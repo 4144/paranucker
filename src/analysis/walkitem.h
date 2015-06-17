@@ -28,20 +28,23 @@ struct WalkItem
     WalkItem() :
         checkNullVars(),
         removeNullVars(),
-        stopWalking(false)
+        stopWalking(false),
+        isReturned(true)
     {
     }
 
     WalkItem(const WalkItem &item) :
         checkNullVars(item.checkNullVars),
         removeNullVars(item.removeNullVars),
-        stopWalking(item.stopWalking)
+        stopWalking(item.stopWalking),
+        isReturned(item.isReturned)
     {
     }
 
     std::set<std::string> checkNullVars;
     std::set<std::string> removeNullVars;
     bool stopWalking;
+    bool isReturned;
 };
 
 

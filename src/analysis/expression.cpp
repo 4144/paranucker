@@ -28,6 +28,7 @@
 #include "nodes/expr/addr_expr.h"
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
+#include "nodes/expr/return_expr.h"
 
 #include "nodes/ref/indirect_ref.h"
 
@@ -69,6 +70,11 @@ void analyseAddrExpr(AddrExprNode *node, const WalkItem &wi, WalkItem &wo)
         return;
 
     reportParmDeclNullPointer(node, node->args[0], wi);
+}
+
+void analyseReturnExpr(ReturnExprNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    wo.isReturned = true;
 }
 
 }

@@ -72,6 +72,7 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
             // walking to then branch
             walkTree(node->thenNode, wi2, wo);
             wo.removeNullVars.clear();
+            const bool returned = wo.isReturned;
 
             // From else branch remove variable what we just found.
             wi2 = wi;
@@ -80,12 +81,14 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
             wo.removeNullVars.clear();
             wo.stopWalking = true;
 
-            //Log::log("add removeNullVars: %s\n", node1->label.c_str());
-            // add variable for ignore for all parent nodes except special like IF_STMT
-            wo.removeNullVars.insert(node1->label);
-            wo.checkNullVars.erase(node1->label);
+            if (returned)
+            {
+                //Log::log("add removeNullVars: %s\n", node1->label.c_str());
+                // add variable for ignore for all parent nodes except special like IF_STMT
+                wo.removeNullVars.insert(node1->label);
+                wo.checkNullVars.erase(node1->label);
+            }
 
-            // need check what return present
             return;
         }
     }
@@ -120,6 +123,14 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
             walkTree(node->elseNode, wi2, wo);
             wo.removeNullVars.clear();
             wo.stopWalking = true;
+
+            if (wo.isReturned && node->elseNode)
+            {
+                //Log::log("add removeNullVars: %s\n", node1->label.c_str());
+                // add variable for ignore for all parent nodes except special like IF_STMT
+                wo.removeNullVars.insert(node1->label);
+                wo.checkNullVars.erase(node1->label);
+            }
             return;
         }
     }

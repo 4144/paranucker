@@ -36,6 +36,7 @@
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/nop_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
+#include "nodes/expr/return_expr.h"
 
 #include "nodes/ref/component_ref.h"
 
@@ -169,6 +170,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             break;
         case MODIFY_EXPR:
             analyseModifyExpr(static_cast<ModifyExprNode*>(node), wi2, wo);
+            break;
+        case RETURN_EXPR:
+            analyseReturnExpr(static_cast<ReturnExprNode*>(node), wi2, wo);
             break;
         case POINTER_PLUS_EXPR:
             analysePointerPlusExpr(static_cast<PointerPlusExprNode*>(node), wi2, wo);
