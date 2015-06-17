@@ -128,6 +128,8 @@ void analyseFunction(FunctionDeclNode *node, const WalkItem &wi, WalkItem &wo)
         if (!type || type->nodeType != POINTER_TYPE)
             continue;
         const ParmDeclNode *const name = node->args[f];
+        if (f == 0 && name->label == "this")
+            continue;
         if (nonNull.find(f + 1) == nonNull.end())
         {
             if (command == Command::FindArgs)
