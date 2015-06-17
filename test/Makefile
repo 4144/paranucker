@@ -6,7 +6,8 @@ TESTS4 = test4-01 test4-02 test4-03
 TESTS5 = test5-01 test5-02 test5-03 test5-04 test5-05
 TESTS6 = test6-01 test6-02 test6-03 test6-04
 TESTS7 = test7-01 test7-02 test7-03 test7-04 test7-05
-ALLTESTS = test1 test2 test3 test4 test5 test6 test7 ${TESTS1} ${TESTS2} ${TESTS3} ${TESTS4} ${TESTS5} ${TESTS6} ${TESTS7}
+TESTS8 = test8-01 test8-02 test8-03 test8-04
+ALLTESTS = test1 test2 test3 test4 test5 test6 test7 test8 ${TESTS1} ${TESTS2} ${TESTS3} ${TESTS4} ${TESTS5} ${TESTS6} ${TESTS7} ${TESTS8}
 
 .PHONY: ${ALLTESTS} ${CRASHES} all crashes
 
@@ -84,6 +85,16 @@ test7-04:
 	$(call CMD,detectnullpointers,test7.cpp,test7-04.txt)
 test7-05:
 	$(call CMD,dumpnullpointers,test7.cpp,test7-05.txt)
+
+test8: ${TESTS8}
+test8-01:
+	$(call CMD,dump,test8.cpp,test8-01.txt)
+test8-02:
+	$(call CMD,findargs,test8.cpp,test8-02.txt)
+test8-03:
+	$(call CMD,dumpnullpointers,test8.cpp,test8-03.txt)
+test8-04:
+	$(call CMD,detectnullpointers,test8.cpp,test8-04.txt)
 
 crashtest1:
 	$(call CMD,dump,crashtest1.h,crashtest1-01.txt)

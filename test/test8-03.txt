@@ -1,0 +1,205 @@
+function_decl func1: 
+statement_list : ptr1, 
+if_stmt : ptr1, 
+return_expr : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 100: 
+function_decl func2: 
+statement_list : ptr2, 
+if_stmt : ptr2, 
+cleanup_point_expr : ptr2, 
+expr_stmt : ptr2, 
+convert_expr : ptr2, 
+modify_expr : ptr2, 
+component_ref : ptr2, 
+indirect_ref : ptr2, 
+nop_expr : ptr2, 
+parm_decl this: ptr2, 
+pointer_type : ptr2, 
+record_type : ptr2, 
+type_decl Object1: ptr2, 
+field_decl k: ptr2, 
+integer_cst 32: ptr2, 
+type_decl Object1: ptr2, 
+integer_cst 64: ptr2, 
+field_decl k: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst 0: ptr2, 
+cleanup_point_expr : ptr2, 
+expr_stmt : ptr2, 
+convert_expr : ptr2, 
+modify_expr : ptr2, 
+test8.cpp: In member function 'void Object1::func2(int*)':
+test8.cpp:20:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 200;
+                    ^
+indirect_ref : ptr2, 
+parm_decl ptr2: ptr2, 
+pointer_type : ptr2, 
+integer_type : ptr2, 
+type_decl int: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst -2147483648: ptr2, 
+integer_cst 2147483647: ptr2, 
+integer_cst 64: ptr2, 
+integer_cst 200: ptr2, 
+function_decl func3: 
+statement_list : ptr3, 
+if_stmt : ptr3, 
+return_expr : 
+cleanup_point_expr : ptr3, 
+expr_stmt : ptr3, 
+convert_expr : ptr3, 
+modify_expr : ptr3, 
+test8.cpp: In member function 'void Object1::func3(int*)':
+test8.cpp:28:20: warning: Using parameter 'ptr3' without checking for null pointer
+         *ptr3 = 300;
+                    ^
+indirect_ref : ptr3, 
+parm_decl ptr3: ptr3, 
+pointer_type : ptr3, 
+integer_type : ptr3, 
+type_decl int: ptr3, 
+integer_cst 32: ptr3, 
+integer_cst -2147483648: ptr3, 
+integer_cst 2147483647: ptr3, 
+integer_cst 64: ptr3, 
+integer_cst 300: ptr3, 
+function_decl func4: 
+statement_list : ptr4, 
+if_stmt : ptr4, 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+nop_expr : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Object1: 
+field_decl k: 
+integer_cst 32: 
+type_decl Object1: 
+integer_cst 64: 
+field_decl k: 
+integer_cst 32: 
+integer_cst 0: 
+return_expr : ptr4, 
+cleanup_point_expr : ptr4, 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr4: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 400: 
+function_decl func5: 
+statement_list : ptr5, 
+if_stmt : ptr5, 
+return_expr : ptr5, 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr5: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 501: 
+cleanup_point_expr : ptr5, 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr5: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 500: 
+function_decl func6: 
+statement_list : ptr6, 
+if_stmt : ptr6, 
+if_stmt : 
+return_expr : 
+cleanup_point_expr : ptr6, 
+expr_stmt : ptr6, 
+convert_expr : ptr6, 
+modify_expr : ptr6, 
+test8.cpp: In member function 'void Object1::func6(int*)':
+test8.cpp:59:20: warning: Using parameter 'ptr6' without checking for null pointer
+         *ptr6 = 600;
+                    ^
+indirect_ref : ptr6, 
+parm_decl ptr6: ptr6, 
+pointer_type : ptr6, 
+integer_type : ptr6, 
+type_decl int: ptr6, 
+integer_cst 32: ptr6, 
+integer_cst -2147483648: ptr6, 
+integer_cst 2147483647: ptr6, 
+integer_cst 64: ptr6, 
+integer_cst 600: ptr6, 
+function_decl func7: 
+statement_list : ptr7, 
+if_stmt : ptr7, 
+return_expr : ptr7, 
+statement_list : 
+if_stmt : 
+return_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr7: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 701: 
+cleanup_point_expr : ptr7, 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr7: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 700: 
