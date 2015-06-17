@@ -8,7 +8,7 @@ TESTS6 = test6-01 test6-02 test6-03 test6-04
 TESTS7 = test7-01 test7-02 test7-03 test7-04 test7-05
 ALLTESTS = test1 test2 test3 test4 test5 test6 test7 ${TESTS1} ${TESTS2} ${TESTS3} ${TESTS4} ${TESTS5} ${TESTS6} ${TESTS7}
 
-.PHONY: ${ALLTESTS} ${CRASHES} all crashes clean
+.PHONY: ${ALLTESTS} ${CRASHES} all crashes
 
 CC := gcc-5
 CXX := g++-5
@@ -17,11 +17,9 @@ MAKEFLAGS += --jobs=9
 PLUGIN = ../build/src/.libs/astdumper.so
 CMD = LANG=C ${CXX} -c -fplugin=${PLUGIN} -fplugin-arg-astdumper-command=${1} ${2} -o ../build/${3}.out 2>${3}
 
-all: ${ALLTESTS} ${CRASHES} clean
-crashes: ${CRASHES} clean
-
-clean: ${ALLTESTS} ${CRASHES}
-	@rm ../build/*.out 2>/dev/null || true
+all: ${ALLTESTS} ${CRASHES}
+tests: ${ALLTESTS}
+crashes: ${CRASHES}
 
 test1: ${TESTS1}
 test1-01:
