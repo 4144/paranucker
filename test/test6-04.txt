@@ -4,7 +4,7 @@ expr_stmt : a,
 convert_expr : a, 
 modify_expr : a, 
 test6.c: In function 'void func1(int*)':
-test6.c:12:13: warning: Using variable without check for NULL
+test6.c:12:13: warning: Using parameter 'a' without checking for null pointer
      *a = 100;
              ^
 indirect_ref : a, 
@@ -90,7 +90,7 @@ expr_stmt : a,
 convert_expr : a, 
 modify_expr : a, 
 test6.c: In function 'void func5(int*)':
-test6.c:45:13: warning: Using variable without check for NULL
+test6.c:45:13: warning: Using parameter 'a' without checking for null pointer
      *a = 600;
              ^
 indirect_ref : a, 
@@ -186,7 +186,7 @@ expr_stmt : aptr,
 convert_expr : aptr, 
 modify_expr : aptr, 
 test6.c: In function 'void func7(int*)':
-test6.c:70:16: warning: Using variable without check for NULL
+test6.c:70:16: warning: Using parameter 'aptr' without checking for null pointer
      *aptr = 800;
                 ^
 indirect_ref : aptr, 

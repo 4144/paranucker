@@ -4,7 +4,7 @@ expr_stmt : b,
 convert_expr : b, 
 modify_expr : b, 
 test5.c: In function 'void func1(int, int*, char)':
-test5.c:12:13: warning: Using variable without check for NULL
+test5.c:12:13: warning: Using parameter 'b' without checking for null pointer
      *b = 100;
              ^
 indirect_ref : b, 
@@ -25,7 +25,7 @@ modify_expr : b,
 indirect_ref : b, 
 pointer_plus_expr : b, 
 test5.c: In function 'void func2(int, int*, char)':
-test5.c:17:9: warning: Using variable without check for NULL
+test5.c:17:9: warning: Using parameter 'b' without checking for null pointer
      *(1 + b) = 200;
          ^
 parm_decl b: b, 
@@ -46,7 +46,7 @@ modify_expr : b,
 indirect_ref : b, 
 pointer_plus_expr : b, 
 test5.c: In function 'void func3(int, int*, char)':
-test5.c:22:9: warning: Using variable without check for NULL
+test5.c:22:9: warning: Using parameter 'b' without checking for null pointer
      *(1 + (1 + b)) = 300;
          ^
 parm_decl b: b, 
@@ -80,7 +80,7 @@ modify_expr : b,
 indirect_ref : b, 
 pointer_plus_expr : b, 
 test5.c: In function 'void func5(int, int*, char)':
-test5.c:28:12: warning: Using variable without check for NULL
+test5.c:28:12: warning: Using parameter 'b' without checking for null pointer
      *(var1 + b) = 400;
             ^
 parm_decl b: b, 
@@ -103,7 +103,7 @@ function_decl func6:
 bind_expr : b, 
 var_decl var2: b, 
 test5.c: In function 'void func6(int, int*, char)':
-test5.c:33:10: warning: Using variable without check for NULL
+test5.c:33:10: warning: Using parameter 'b' without checking for null pointer
      int *var2 = b;
           ^
 integer_cst 64: b, 
@@ -117,25 +117,25 @@ integer_cst 2147483647: b,
 statement_list : b, 
 decl_expr : b, 
 var_decl var2: b, 
-test5.c:33:10: warning: Using variable without check for NULL
+test5.c:33:10: warning: Using parameter 'b' without checking for null pointer
 cleanup_point_expr : b, 
 expr_stmt : b, 
 convert_expr : b, 
 modify_expr : b, 
 indirect_ref : b, 
 var_decl var2: b, 
-test5.c:33:10: warning: Using variable without check for NULL
+test5.c:33:10: warning: Using parameter 'b' without checking for null pointer
 integer_cst 500: b, 
 block : b, 
 var_decl var2: b, 
-test5.c:33:10: warning: Using variable without check for NULL
+test5.c:33:10: warning: Using parameter 'b' without checking for null pointer
 function_decl func7: 
 bind_expr : b, 
 var_decl var3: b, 
 integer_cst 64: b, 
 pointer_plus_expr : b, 
 test5.c: In function 'void func7(int, int*, char)':
-test5.c:39:20: warning: Using variable without check for NULL
+test5.c:39:20: warning: Using parameter 'b' without checking for null pointer
      int *var3 = 12 + b;
                     ^
 parm_decl b: b, 
@@ -171,7 +171,7 @@ var_decl var4: bptr,
 integer_cst 64: bptr, 
 addr_expr : bptr, 
 test5.c: In function 'void func8(int, int*, char)':
-test5.c:45:11: warning: Using variable without check for NULL
+test5.c:45:11: warning: Using parameter 'bptr' without checking for null pointer
      int **var4 = &bptr;
            ^
 parm_decl bptr: bptr, 
