@@ -23,10 +23,12 @@
 #include "includes.h"
 
 struct AddrExprNode;
+struct EqExprNode;
 struct ModifyExprNode;
 struct NeExprNode;
 struct PointerPlusExprNode;
 struct ReturnExprNode;
+struct TruthOrIfExprNode;
 struct WalkItem;
 
 namespace Analysis
@@ -40,6 +42,10 @@ namespace Analysis
     void analyseReturnExpr(ReturnExprNode *node, const WalkItem &wi, WalkItem &wo);
 
     void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo);
+
+    void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo);
+
+    void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem &wo);
 }
 
 #endif // ANALYSIS_EXPRESSION_H

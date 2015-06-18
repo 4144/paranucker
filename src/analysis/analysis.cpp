@@ -33,11 +33,13 @@
 #include "nodes/decl/var_decl.h"
 
 #include "nodes/expr/addr_expr.h"
+#include "nodes/expr/eq_expr.h"
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/ne_expr.h"
 #include "nodes/expr/nop_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
 #include "nodes/expr/return_expr.h"
+#include "nodes/expr/truthorif_expr.h"
 
 #include "nodes/ref/component_ref.h"
 
@@ -180,6 +182,12 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             break;
         case NE_EXPR:
             analyseNeExpr(static_cast<NeExprNode*>(node), wi2, wo);
+            break;
+        case EQ_EXPR:
+            analyseEqExpr(static_cast<EqExprNode*>(node), wi2, wo);
+            break;
+        case TRUTH_ORIF_EXPR:
+            analyseTruthOrIfExpr(static_cast<TruthOrIfExprNode*>(node), wi2, wo);
             break;
         case RETURN_EXPR:
             analyseReturnExpr(static_cast<ReturnExprNode*>(node), wi2, wo);
