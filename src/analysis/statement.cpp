@@ -49,119 +49,60 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
 
     Node *condNode = skipNop(node->condition);
 
-    // for now for debug
     WalkItem wci = wi;
     WalkItem wco = wo;
     walkTree(condNode, wci, wco);
-    Log::dumpWI(node, "wco ", wco);
-    // for now for debug
+//    Log::dumpWI(node, "wco ", wco);
 
-
-    if (condNode->nodeType == EQ_EXPR)
-    {   // if (... == ..)
-        EqExprNode *eq = static_cast<EqExprNode*>(condNode);
-        // need atleast two operands for EQ_EXPR node
-        if (eq->args.size() < 2)
-            return;
-
-        // PARM_DECL?
-        Node *node1 = skipNop(eq->args[0]);
-        // INTEGER_CST?
-        Node *node2 = skipNop(eq->args[1]);
-        // if (var == 0)
-        if (node1 &&
-            node2 &&
-            node1->nodeType == PARM_DECL &&
-            node2->nodeType == INTEGER_CST &&
-            wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
-            node2->label == "0")
-        {
-            WalkItem wi2 = wi;
-            // found check for parameter and 0.
-            // walking to then branch
-            walkTree(node->thenNode, wi2, wo);
-            wo.removeNullVars.clear();
-            const bool returned = wo.isReturned;
-//            if (wo.isReturned)
-//                Log::log("wo.isReturned 1\n");
-
-            // From else branch remove variable what we just found.
-            wi2 = wi;
-            wi2.checkNullVars.erase(node1->label);
-            walkTree(node->elseNode, wi2, wo);
-            wo.removeNullVars.clear();
-            wo.stopWalking = true;
-//            if (wo.isReturned)
-//                Log::log("wo.isReturned 2\n");
-            wo.isReturned = false;
-
-            if (returned)
-            {
-                //Log::log("add removeNullVars: %s\n", node1->label.c_str());
-                // add variable for ignore for all parent nodes except special like IF_STMT
-                wo.removeNullVars.insert(node1->label);
-                wo.checkNullVars.erase(node1->label);
-            }
-
-            return;
-        }
+    WalkItem wi2 = wi;
+    FOR_EACH (std::set<std::string>::const_iterator,
+              it,
+              wco.checkedNonNullVars)
+    {
+        wi2.checkNullVars.erase(*it);
     }
-    else if (condNode->nodeType == NE_EXPR)
-    {   // if (... != ..)
-        NeExprNode *ne = static_cast<NeExprNode*>(condNode);
-        // need atleast two operands for NE_EXPR node
-        if (ne->args.size() < 2)
-            return;
+    walkTree(node->thenNode, wi2, wo);
 
-        // PARM_DECL?
-        Node *node1 = skipNop(ne->args[0]);
-        // INTEGER_CST?
-        Node *node2 = skipNop(ne->args[1]);
-        // if (var != 0)
-        if (node1 &&
-            node2 &&
-            node1->nodeType == PARM_DECL &&
-            node2->nodeType == INTEGER_CST &&
-            wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
-            node2->label == "0")
-        {
-            // found check for parameter and 0.
-            // walking to then branch
-            WalkItem wi2 = wi;
-            wi2.checkNullVars.erase(node1->label);
-            // From then branch remove variable what we just found.
-            walkTree(node->thenNode, wi2, wo);
-//            if (wo.isReturned)
-//                Log::log("wo.isReturned 3\n");
-            wo.removeNullVars.clear();
-            wi2 = wi;
-            // walking else node with all variables
-            walkTree(node->elseNode, wi2, wo);
-//            if (wo.isReturned)
-//                Log::log("wo.isReturned 4\n");
-            wo.removeNullVars.clear();
-            wo.stopWalking = true;
-
-            if (wo.isReturned && node->elseNode)
-            {
-                //Log::log("add removeNullVars: %s\n", node1->label.c_str());
-                // add variable for ignore for all parent nodes except special like IF_STMT
-                wo.removeNullVars.insert(node1->label);
-                wo.checkNullVars.erase(node1->label);
-            }
-            wo.isReturned = false;
-            return;
-        }
-    }
-
-    // default case
-    walkTree(node->thenNode, wi, wo);
-    walkTree(node->elseNode, wi, wo);
     wo.removeNullVars.clear();
-//    if (wo.isReturned)
-//        Log::log("wo.isReturned 5\n");
+    const bool returned = wo.isReturned;
     wo.isReturned = false;
+
+    wi2 = wi;
+    FOR_EACH (std::set<std::string>::const_iterator,
+              it,
+              wco.checkedNullVars)
+    {
+        wi2.checkNullVars.erase(*it);
+    }
+    walkTree(node->elseNode, wi2, wo);
+
+    wo.removeNullVars.clear();
+
+    if (returned)
+    {
+        // add variable for ignore for all parent nodes except special like IF_STMT
+        FOR_EACH (std::set<std::string>::const_iterator,
+                  it,
+                  wco.checkedNullVars)
+        {
+            wo.removeNullVars.insert(*it);
+            wo.checkNullVars.erase(*it);
+        }
+    }
+    if (wo.isReturned)
+    {
+        // add variable for ignore for all parent nodes except special like IF_STMT
+        FOR_EACH (std::set<std::string>::const_iterator,
+                  it,
+                  wco.checkedNonNullVars)
+        {
+            wo.removeNullVars.insert(*it);
+            wo.checkNullVars.erase(*it);
+        }
+    }
+
     wo.stopWalking = true;
+    wo.isReturned = false;
 }
 
 }

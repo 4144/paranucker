@@ -202,6 +202,8 @@ void dumpWI(Node *const node,
         node->label.c_str());
     if (wi.cleanExpr)
         Log::log(" clean");
+    if (wi.uselessExpr)
+        Log::log(" useless");
     Log::log(" checkedNullVars:");
     FOR_EACH (std::set<std::string>::const_iterator,
               it,

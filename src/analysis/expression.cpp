@@ -87,7 +87,7 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
     if (node->args.size() < 2 || command == FindArgs)
         return;
 
-    Log::log("analyseNeExpr 1\n");
+//    Log::log("analyseNeExpr 1\n");
     // PARM_DECL?
     Node *node1 = skipNop(node->args[0]);
     // INTEGER_CST?
@@ -101,13 +101,15 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
         wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
         node2->label == "0")
     {
-        Log::log("analyseNeExpr 2\n");
+//        Log::log("analyseNeExpr 2\n");
         wo.checkedNonNullVars.insert(node1->label);
         wo.cleanExpr = true;
+        wo.uselessExpr = false;
     }
     else
     {
         wo.cleanExpr = false;
+        wo.uselessExpr = true;
     }
 }
 
@@ -117,7 +119,7 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
     if (node->args.size() < 2 || command == FindArgs)
         return;
 
-    Log::log("analyseEqExpr 1\n");
+//    Log::log("analyseEqExpr 1\n");
     // PARM_DECL?
     Node *node1 = skipNop(node->args[0]);
     // INTEGER_CST?
@@ -130,13 +132,15 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
         wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
         node2->label == "0")
     {
-        Log::log("analyseEqExpr 2\n");
+//        Log::log("analyseEqExpr 2\n");
         wo.checkedNullVars.insert(node1->label);
         wo.cleanExpr = true;
+        wo.uselessExpr = false;
     }
     else
     {
         wo.cleanExpr = false;
+        wo.uselessExpr = true;
     }
 }
 
@@ -146,19 +150,20 @@ void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem 
     if (node->args.size() < 2 || command == FindArgs)
         return;
 
-    Log::dumpWI(node, "wo ", wo);
+//    Log::dumpWI(node, "wo ", wo);
     WalkItem wo1 = wo;
     WalkItem wo2 = wo;
     walkTree(node->args[0], wi, wo1);
     walkTree(node->args[1], wi, wo2);
-    Log::dumpWI(node, "wo1 ", wo1);
-    Log::dumpWI(node, "wo2 ", wo2);
+//    Log::dumpWI(node, "wo1 ", wo1);
+//    Log::dumpWI(node, "wo2 ", wo2);
     if (wo1.cleanExpr)
         mergeChecked(wo, wo1);
     if (wo2.cleanExpr)
         mergeChecked(wo, wo2);
-    wo.cleanExpr = true;
+    wo.cleanExpr = false;
     wo.stopWalking = true;
+    wo.uselessExpr = wo1.uselessExpr || wo2.uselessExpr;
 }
 
 void analyseTruthAndIfExpr(TruthAndIfExprNode *node, const WalkItem &wi, WalkItem &wo)
@@ -167,22 +172,23 @@ void analyseTruthAndIfExpr(TruthAndIfExprNode *node, const WalkItem &wi, WalkIte
     if (node->args.size() < 2 || command == FindArgs)
         return;
 
-    Log::dumpWI(node, "wo ", wo);
+//    Log::dumpWI(node, "wo ", wo);
     WalkItem wo1 = wo;
     walkTree(node->args[0], wi, wo1);
     WalkItem wo2 = wo1;
     walkTree(node->args[1], wo1, wo2);
-    Log::dumpWI(node, "wo1 ", wo1);
-    Log::dumpWI(node, "wo2 ", wo2);
+//    Log::dumpWI(node, "wo1 ", wo1);
+//    Log::dumpWI(node, "wo2 ", wo2);
 
     wo.stopWalking = true;
-    if (wo1.cleanExpr && wo2.cleanExpr)
+    if (!wo1.uselessExpr && !wo2.uselessExpr)
     {   // need combine wo1 and wo2
         // for now empty simple merge, but must be compilated!
         mergeChecked(wo, wo1);
         mergeChecked(wo, wo2);
     }
-    wo.cleanExpr = true;
+    wo.cleanExpr = false;
+    wo.uselessExpr = wo1.uselessExpr || wo2.uselessExpr;
 }
 
 }

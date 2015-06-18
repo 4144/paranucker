@@ -32,7 +32,8 @@ struct WalkItem
         checkedNonNullVars(),
         stopWalking(false),
         isReturned(false),
-        cleanExpr(false)
+        cleanExpr(false),
+        uselessExpr(true)
     {
     }
 
@@ -43,7 +44,8 @@ struct WalkItem
         checkedNonNullVars(item.checkedNonNullVars),
         stopWalking(item.stopWalking),
         isReturned(item.isReturned),
-        cleanExpr(item.cleanExpr)
+        cleanExpr(item.cleanExpr),
+        uselessExpr(item.uselessExpr)
     {
     }
 
@@ -54,6 +56,7 @@ struct WalkItem
     bool stopWalking;   // stop walking on tree after this node
     bool isReturned;    // set if return present in child nodes
     bool cleanExpr;     // set if expression is only variable check without compound conditions
+    bool uselessExpr;   // set if some part of expression is unknown and not checking parameters
 };
 
 
