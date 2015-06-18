@@ -31,6 +31,7 @@
 #include "nodes/expr/ne_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
 #include "nodes/expr/return_expr.h"
+#include "nodes/expr/truthandif_expr.h"
 #include "nodes/expr/truthorif_expr.h"
 
 #include "nodes/ref/indirect_ref.h"
@@ -102,6 +103,11 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
     {
         Log::log("analyseNeExpr 2\n");
         wo.checkedNonNullVars.insert(node1->label);
+        wo.cleanExpr = true;
+    }
+    else
+    {
+        wo.cleanExpr = false;
     }
 }
 
@@ -126,6 +132,11 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
     {
         Log::log("analyseEqExpr 2\n");
         wo.checkedNullVars.insert(node1->label);
+        wo.cleanExpr = true;
+    }
+    else
+    {
+        wo.cleanExpr = false;
     }
 }
 
@@ -142,9 +153,36 @@ void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem 
     walkTree(node->args[1], wi, wo2);
     Log::dumpWI(node, "wo1 ", wo1);
     Log::dumpWI(node, "wo2 ", wo2);
-    mergeChecked(wo, wo1);
-    mergeChecked(wo, wo2);
+    if (wo1.cleanExpr)
+        mergeChecked(wo, wo1);
+    if (wo2.cleanExpr)
+        mergeChecked(wo, wo2);
+    wo.cleanExpr = true;
     wo.stopWalking = true;
+}
+
+void analyseTruthAndIfExpr(TruthAndIfExprNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    // need two args for check
+    if (node->args.size() < 2 || command == FindArgs)
+        return;
+
+    Log::dumpWI(node, "wo ", wo);
+    WalkItem wo1 = wo;
+    walkTree(node->args[0], wi, wo1);
+    WalkItem wo2 = wo1;
+    walkTree(node->args[1], wo1, wo2);
+    Log::dumpWI(node, "wo1 ", wo1);
+    Log::dumpWI(node, "wo2 ", wo2);
+
+    wo.stopWalking = true;
+    if (wo1.cleanExpr && wo2.cleanExpr)
+    {   // need combine wo1 and wo2
+        // for now empty simple merge, but must be compilated!
+        mergeChecked(wo, wo1);
+        mergeChecked(wo, wo2);
+    }
+    wo.cleanExpr = true;
 }
 
 }

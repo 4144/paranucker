@@ -196,10 +196,13 @@ void dumpWI(Node *const node,
             const std::string &name,
             WalkItem &wi)
 {
-    Log::log("%s%s %s checkedNullVars:",
+    Log::log("%s%s %s",
         name.c_str(),
         node->nodeTypeName.c_str(),
         node->label.c_str());
+    if (wi.cleanExpr)
+        Log::log(" clean");
+    Log::log(" checkedNullVars:");
     FOR_EACH (std::set<std::string>::const_iterator,
               it,
               wi.checkedNullVars)

@@ -28,6 +28,7 @@ struct ModifyExprNode;
 struct NeExprNode;
 struct PointerPlusExprNode;
 struct ReturnExprNode;
+struct TruthAndIfExprNode;
 struct TruthOrIfExprNode;
 struct WalkItem;
 
@@ -46,6 +47,8 @@ namespace Analysis
     void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo);
 
     void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem &wo);
+
+    void analyseTruthAndIfExpr(TruthAndIfExprNode *node, const WalkItem &wi, WalkItem &wo);
 }
 
 #endif // ANALYSIS_EXPRESSION_H

@@ -31,7 +31,8 @@ struct WalkItem
         checkedNullVars(),
         checkedNonNullVars(),
         stopWalking(false),
-        isReturned(false)
+        isReturned(false),
+        cleanExpr(false)
     {
     }
 
@@ -41,7 +42,8 @@ struct WalkItem
         checkedNullVars(item.checkedNullVars),
         checkedNonNullVars(item.checkedNonNullVars),
         stopWalking(item.stopWalking),
-        isReturned(item.isReturned)
+        isReturned(item.isReturned),
+        cleanExpr(item.cleanExpr)
     {
     }
 
@@ -51,7 +53,7 @@ struct WalkItem
     std::set<std::string> checkedNonNullVars;   // vars checked for nonnull in expressions
     bool stopWalking;   // stop walking on tree after this node
     bool isReturned;    // set if return present in child nodes
-    bool isExpr;        // set if walking on expression for if other kind nodes
+    bool cleanExpr;     // set if expression is only variable check without compound conditions
 };
 
 
