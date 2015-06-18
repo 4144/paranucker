@@ -83,9 +83,10 @@ void analyseReturnExpr(ReturnExprNode *node, const WalkItem &wi, WalkItem &wo)
 void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need two args for check
-    if (node->args.size() < 2 || !wi.isExpr || command == FindArgs)
+    if (node->args.size() < 2 || command == FindArgs)
         return;
 
+    Log::log("analyseNeExpr 1\n");
     // PARM_DECL?
     Node *node1 = skipNop(node->args[0]);
     // INTEGER_CST?
@@ -99,18 +100,18 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
         wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
         node2->label == "0")
     {
-        wo.removeNullVars.insert(node1->label);
-        wo.checkNullVars.erase(node1->label);
+        Log::log("analyseNeExpr 2\n");
+        wo.checkedNonNullVars.insert(node1->label);
     }
 }
 
 void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need two args for check
-    if (node->args.size() < 2 || !wi.isExpr || command == FindArgs)
+    if (node->args.size() < 2 || command == FindArgs)
         return;
 
-/*
+    Log::log("analyseEqExpr 1\n");
     // PARM_DECL?
     Node *node1 = skipNop(node->args[0]);
     // INTEGER_CST?
@@ -123,13 +124,27 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
         wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
         node2->label == "0")
     {
+        Log::log("analyseEqExpr 2\n");
+        wo.checkedNullVars.insert(node1->label);
     }
-*/
-// do nothing for now
 }
 
 void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
+    // need two args for check
+    if (node->args.size() < 2 || command == FindArgs)
+        return;
+
+    Log::dumpWI(node, "wo ", wo);
+    WalkItem wo1 = wo;
+    WalkItem wo2 = wo;
+    walkTree(node->args[0], wi, wo1);
+    walkTree(node->args[1], wi, wo2);
+    Log::dumpWI(node, "wo1 ", wo1);
+    Log::dumpWI(node, "wo2 ", wo2);
+    mergeChecked(wo, wo1);
+    mergeChecked(wo, wo2);
+    wo.stopWalking = true;
 }
 
 }

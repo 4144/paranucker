@@ -42,6 +42,8 @@ namespace Analysis
     void removeCheckNullVars(WalkItem &wi);
 
     Node *skipNop(Node *node);
+
+    void mergeChecked(WalkItem &wi1, WalkItem &wi2);
 }
 
 #endif // ANALYSIS_ANALYSIS_H

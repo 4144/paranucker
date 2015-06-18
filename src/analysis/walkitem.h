@@ -28,22 +28,27 @@ struct WalkItem
     WalkItem() :
         checkNullVars(),
         removeNullVars(),
+        checkedNullVars(),
+        checkedNonNullVars(),
         stopWalking(false),
-        isReturned(false),
-        isExpr(false)
+        isReturned(false)
     {
     }
 
     WalkItem(const WalkItem &item) :
         checkNullVars(item.checkNullVars),
         removeNullVars(item.removeNullVars),
+        checkedNullVars(item.checkedNullVars),
+        checkedNonNullVars(item.checkedNonNullVars),
         stopWalking(item.stopWalking),
         isReturned(item.isReturned)
     {
     }
 
-    std::set<std::string> checkNullVars;
-    std::set<std::string> removeNullVars;
+    std::set<std::string> checkNullVars;        // need check for usage without null pointer check
+    std::set<std::string> removeNullVars;       // need remove vars from parent checkNullVars
+    std::set<std::string> checkedNullVars;      // vars checked for null in expressions
+    std::set<std::string> checkedNonNullVars;   // vars checked for nonnull in expressions
     bool stopWalking;   // stop walking on tree after this node
     bool isReturned;    // set if return present in child nodes
     bool isExpr;        // set if walking on expression for if other kind nodes

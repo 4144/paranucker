@@ -23,6 +23,7 @@
 #include <string>
 
 struct Node;
+struct WalkItem;
 
 namespace Log
 {
@@ -55,7 +56,13 @@ namespace Log
           const std::string &message,
           const std::string &param);
 
-    void dumpAttr(const Node *const node, int num, bool isReturned);
+    void dumpAttr(const Node *const node,
+                  int num,
+                  bool isReturned);
+
+    void dumpWI(Node *const node,
+                const std::string &name,
+                WalkItem &wi);
 }
 
 #endif  // LOGGER_H

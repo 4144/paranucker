@@ -22,7 +22,11 @@
 #include "command.h"
 #include "includes.h"
 
+#include "analysis/walkitem.h"
+
 #include "nodes/base/node.h"
+
+#include <set>
 
 #include "localconsts.h"
 
@@ -186,6 +190,30 @@ void dumpAttr(const Node *const node, int num, bool isReturned)
         fprintf(stderr, " - %s", node->tag.c_str());
 
     fprintf(stderr, " walkTree%d: %d\n", num, isReturned ? 1 : 0);
+}
+
+void dumpWI(Node *const node,
+            const std::string &name,
+            WalkItem &wi)
+{
+    Log::log("%s%s %s checkedNullVars:",
+        name.c_str(),
+        node->nodeTypeName.c_str(),
+        node->label.c_str());
+    FOR_EACH (std::set<std::string>::const_iterator,
+              it,
+              wi.checkedNullVars)
+    {
+        Log::log("%s, ", (*it).c_str());
+    }
+    Log::log(" checkedNonNullVars:");
+    FOR_EACH (std::set<std::string>::const_iterator,
+              it,
+              wi.checkedNonNullVars)
+    {
+        Log::log("%s, ", (*it).c_str());
+    }
+    Log::log("\n");
 }
 
 void warn(const int loc,

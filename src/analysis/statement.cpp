@@ -48,6 +48,16 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
         return;
 
     Node *condNode = skipNop(node->condition);
+
+    // for now for debug
+    WalkItem wci = wi;
+    WalkItem wco = wo;
+    wci.isExpr = true;
+    walkTree(condNode, wci, wco);
+    Log::dumpWI(node, "wco ", wco);
+    // for now for debug
+
+
     if (condNode->nodeType == EQ_EXPR)
     {   // if (... == ..)
         EqExprNode *eq = static_cast<EqExprNode*>(condNode);

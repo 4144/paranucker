@@ -141,6 +141,14 @@ Node *skipNop(Node *node)
     return node;
 }
 
+void mergeChecked(WalkItem &wi1, WalkItem &wi2)
+{
+    wi1.checkedNullVars.insert(wi2.checkedNullVars.begin(),
+        wi2.checkedNullVars.end());
+    wi1.checkedNonNullVars.insert(wi2.checkedNonNullVars.begin(),
+        wi2.checkedNonNullVars.end());
+}
+
 void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
 {
     if (!node)
