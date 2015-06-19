@@ -150,6 +150,24 @@ void mergeChecked(WalkItem &wi1, WalkItem &wi2)
         wi2.checkedNonNullVars.end());
 }
 
+void intersectChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
+{
+    FOR_EACH (std::set<std::string>::const_iterator,
+              it,
+              wi1.checkedNullVars)
+    {
+        if (wi2.checkedNullVars.find(*it) != wi2.checkedNullVars.end())
+            wi.checkedNullVars.insert(*it);
+    }
+    FOR_EACH (std::set<std::string>::const_iterator,
+              it,
+              wi2.checkedNonNullVars)
+    {
+        if (wi2.checkedNonNullVars.find(*it) != wi2.checkedNonNullVars.end())
+            wi.checkedNonNullVars.insert(*it);
+    }
+}
+
 void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
 {
     if (!node)

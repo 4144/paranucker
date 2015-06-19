@@ -52,7 +52,7 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
     WalkItem wci = wi;
     WalkItem wco = wo;
     walkTree(condNode, wci, wco);
-//    Log::dumpWI(node, "wco ", wco);
+    //Log::dumpWI(node, "wco ", wco);
 
     WalkItem wi2 = wi;
     FOR_EACH (std::set<std::string>::const_iterator,
@@ -78,7 +78,8 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
 
     wo.removeNullVars.clear();
 
-    if (returned)
+//    if (returned && wco.cleanExpr && !wco.uselessExpr)
+    if (returned && !wco.uselessExpr)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
         FOR_EACH (std::set<std::string>::const_iterator,
@@ -89,7 +90,8 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
             wo.checkNullVars.erase(*it);
         }
     }
-    if (wo.isReturned)
+//    if (wo.isReturned && wco.cleanExpr && !wco.uselessExpr)
+    if (wo.isReturned && !wco.uselessExpr)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
         FOR_EACH (std::set<std::string>::const_iterator,

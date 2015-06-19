@@ -44,6 +44,8 @@ namespace Analysis
     Node *skipNop(Node *node);
 
     void mergeChecked(WalkItem &wi1, WalkItem &wi2);
+
+    void intersectChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2);
 }
 
 #endif // ANALYSIS_ANALYSIS_H
