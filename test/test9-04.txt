@@ -50,3 +50,30 @@ test9.cpp:124:20: warning: Using parameter 'ptr1' without checking for null poin
 test9.cpp:125:20: warning: Using parameter 'ptr2' without checking for null pointer
          *ptr2 = 300;
                     ^
+test9.cpp: In member function 'void Object1::func10(int*, int*)':
+test9.cpp:139:20: warning: Using parameter 'ptr1' without checking for null pointer
+         *ptr1 = 200;
+                    ^
+test9.cpp:140:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 300;
+                    ^
+test9.cpp: In member function 'void Object1::func11(int*, int*)':
+test9.cpp:148:24: warning: Using parameter 'ptr1' without checking for null pointer
+             *ptr1 = 100;
+                        ^
+test9.cpp:151:20: warning: Using parameter 'ptr1' without checking for null pointer
+         *ptr1 = 200;
+                    ^
+test9.cpp:152:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 300;
+                    ^
+test9.cpp: In member function 'void Object1::func12(int*, int*)':
+test9.cpp:159:24: warning: Using parameter 'ptr1' without checking for null pointer
+             *ptr1 = 100;
+                        ^
+test9.cpp:166:20: warning: Using parameter 'ptr1' without checking for null pointer
+         *ptr1 = 200;
+                    ^
+test9.cpp:167:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 300;
+                    ^

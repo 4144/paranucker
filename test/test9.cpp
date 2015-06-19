@@ -125,15 +125,11 @@ class Object1
         *ptr2 = 300;
     }
 
-
-
-/*
-    void func8(int *ptr1, int *ptr2)
+    void func10(int *ptr1, int *ptr2)
     {
-        int c;
-        if (k == c || !ptr1)
+        if (!ptr1 || !ptr2)
         {
-            return;
+            int k = 0;
         }
         else
         {
@@ -143,5 +139,31 @@ class Object1
         *ptr1 = 200;
         *ptr2 = 300;
     }
-*/
+
+    void func11(int *ptr1, int *ptr2)
+    {
+        if (!ptr1 || ptr2)
+        {
+            int k = 10;
+            *ptr1 = 100;
+        }
+
+        *ptr1 = 200;
+        *ptr2 = 300;
+    }
+
+    void func12(int *ptr1, int *ptr2)
+    {
+        if (!ptr1 || k == 10)
+        {
+            *ptr1 = 100;
+        }
+        else
+        {
+            *ptr1 = 400;
+        }
+
+        *ptr1 = 200;
+        *ptr2 = 300;
+    }
 };
