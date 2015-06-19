@@ -1,0 +1,613 @@
+function_decl func1: 
+statement_list : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_orif_expr : ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+return_expr : ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 200: 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr2: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 300: 
+function_decl func2: 
+statement_list : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_orif_expr : ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+return_expr : ptr1, ptr2, 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 100: 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 200: 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr2: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 300: 
+function_decl func3: 
+statement_list : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_orif_expr : ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+return_expr : 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+test9.cpp: In member function 'void Object1::func3(int*, int*)':
+test9.cpp:38:20: warning: Using parameter 'ptr1' without checking for null pointer
+         *ptr1 = 200;
+                    ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 200: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+test9.cpp:39:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 300;
+                    ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 300: ptr1, ptr2, 
+function_decl func4: 
+statement_list : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_orif_expr : ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+return_expr : 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+test9.cpp: In member function 'void Object1::func4(int*, int*)':
+test9.cpp:50:24: warning: Using parameter 'ptr1' without checking for null pointer
+             *ptr1 = 100;
+                        ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 100: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+test9.cpp:53:20: warning: Using parameter 'ptr1' without checking for null pointer
+         *ptr1 = 200;
+                    ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 200: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+test9.cpp:54:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 300;
+                    ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 300: ptr1, ptr2, 
+function_decl func5: 
+statement_list : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_orif_expr : ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+return_expr : ptr1, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr2, 
+convert_expr : ptr2, 
+modify_expr : ptr2, 
+indirect_ref : ptr2, 
+parm_decl ptr1: ptr2, 
+pointer_type : ptr2, 
+integer_type : ptr2, 
+type_decl int: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst -2147483648: ptr2, 
+integer_cst 2147483647: ptr2, 
+integer_cst 64: ptr2, 
+integer_cst 200: ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr2, 
+convert_expr : ptr2, 
+modify_expr : ptr2, 
+test9.cpp: In member function 'void Object1::func5(int*, int*)':
+test9.cpp:65:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 300;
+                    ^
+indirect_ref : ptr2, 
+parm_decl ptr2: ptr2, 
+pointer_type : ptr2, 
+integer_type : ptr2, 
+type_decl int: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst -2147483648: ptr2, 
+integer_cst 2147483647: ptr2, 
+integer_cst 64: ptr2, 
+integer_cst 300: ptr2, 
+function_decl func6: 
+statement_list : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_orif_expr : ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+return_expr : ptr1, 
+cleanup_point_expr : ptr2, 
+expr_stmt : ptr2, 
+convert_expr : ptr2, 
+modify_expr : ptr2, 
+indirect_ref : ptr2, 
+parm_decl ptr1: ptr2, 
+pointer_type : ptr2, 
+integer_type : ptr2, 
+type_decl int: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst -2147483648: ptr2, 
+integer_cst 2147483647: ptr2, 
+integer_cst 64: ptr2, 
+integer_cst 100: ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr2, 
+convert_expr : ptr2, 
+modify_expr : ptr2, 
+indirect_ref : ptr2, 
+parm_decl ptr1: ptr2, 
+pointer_type : ptr2, 
+integer_type : ptr2, 
+type_decl int: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst -2147483648: ptr2, 
+integer_cst 2147483647: ptr2, 
+integer_cst 64: ptr2, 
+integer_cst 200: ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr2, 
+convert_expr : ptr2, 
+modify_expr : ptr2, 
+test9.cpp: In member function 'void Object1::func6(int*, int*)':
+test9.cpp:80:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 300;
+                    ^
+indirect_ref : ptr2, 
+parm_decl ptr2: ptr2, 
+pointer_type : ptr2, 
+integer_type : ptr2, 
+type_decl int: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst -2147483648: ptr2, 
+integer_cst 2147483647: ptr2, 
+integer_cst 64: ptr2, 
+integer_cst 300: ptr2, 
+function_decl func7: 
+statement_list : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_orif_expr : ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+return_expr : ptr2, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+test9.cpp: In member function 'void Object1::func7(int*, int*)':
+test9.cpp:91:24: warning: Using parameter 'ptr1' without checking for null pointer
+             *ptr1 = 100;
+                        ^
+indirect_ref : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 100: ptr1, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+test9.cpp:94:20: warning: Using parameter 'ptr1' without checking for null pointer
+         *ptr1 = 200;
+                    ^
+indirect_ref : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 200: ptr1, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+indirect_ref : ptr1, 
+parm_decl ptr2: ptr1, 
+pointer_type : ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 300: ptr1, 
+function_decl func8: 
+statement_list : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_andif_expr : ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+return_expr : ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+test9.cpp: In member function 'void Object1::func8(int*, int*)':
+test9.cpp:106:24: warning: Using parameter 'ptr1' without checking for null pointer
+             *ptr1 = 100;
+                        ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 100: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+test9.cpp:109:20: warning: Using parameter 'ptr1' without checking for null pointer
+         *ptr1 = 200;
+                    ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 200: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+test9.cpp:110:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 300;
+                    ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 300: ptr1, ptr2, 
+function_decl func9: 
+statement_list : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_andif_expr : ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+return_expr : ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+test9.cpp: In member function 'void Object1::func9(int*, int*)':
+test9.cpp:121:24: warning: Using parameter 'ptr1' without checking for null pointer
+             *ptr1 = 100;
+                        ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 100: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+test9.cpp:124:20: warning: Using parameter 'ptr1' without checking for null pointer
+         *ptr1 = 200;
+                    ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 200: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+test9.cpp:125:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 300;
+                    ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 300: ptr1, ptr2, 
