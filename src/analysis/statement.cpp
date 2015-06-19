@@ -103,8 +103,20 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
         }
     }
 
+    // special case where all branches is ended.
+    if (returned && wo.isReturned)
+    {
+        FOR_EACH (std::set<std::string>::const_iterator,
+                  it,
+                  wo.checkNullVars)
+        {
+            wo.removeNullVars.insert(*it);
+        }
+    }
+
     wo.stopWalking = true;
     wo.isReturned = false;
+
 }
 
 }
