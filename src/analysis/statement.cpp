@@ -52,7 +52,7 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
     WalkItem wci = wi;
     WalkItem wco = wo;
     walkTree(condNode, wci, wco);
-    //Log::dumpWI(node, "wco ", wco);
+    Log::dumpWI(node, "wco ", wco);
 
     WalkItem wi2 = wi;
     FOR_EACH (std::set<std::string>::const_iterator,
