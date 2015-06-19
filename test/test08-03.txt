@@ -61,8 +61,8 @@ cleanup_point_expr : ptr2,
 expr_stmt : ptr2, 
 convert_expr : ptr2, 
 modify_expr : ptr2, 
-test8.cpp: In member function 'void Object1::func2(int*)':
-test8.cpp:20:20: warning: Using parameter 'ptr2' without checking for null pointer
+test08.cpp: In member function 'void Object1::func2(int*)':
+test08.cpp:20:20: warning: Using parameter 'ptr2' without checking for null pointer
          *ptr2 = 200;
                     ^
 indirect_ref : ptr2, 
@@ -93,8 +93,8 @@ cleanup_point_expr : ptr3,
 expr_stmt : ptr3, 
 convert_expr : ptr3, 
 modify_expr : ptr3, 
-test8.cpp: In member function 'void Object1::func3(int*)':
-test8.cpp:28:20: warning: Using parameter 'ptr3' without checking for null pointer
+test08.cpp: In member function 'void Object1::func3(int*)':
+test08.cpp:28:20: warning: Using parameter 'ptr3' without checking for null pointer
          *ptr3 = 300;
                     ^
 indirect_ref : ptr3, 
@@ -224,8 +224,8 @@ cleanup_point_expr : ptr6,
 expr_stmt : ptr6, 
 convert_expr : ptr6, 
 modify_expr : ptr6, 
-test8.cpp: In member function 'void Object1::func6(int*)':
-test8.cpp:59:20: warning: Using parameter 'ptr6' without checking for null pointer
+test08.cpp: In member function 'void Object1::func6(int*)':
+test08.cpp:59:20: warning: Using parameter 'ptr6' without checking for null pointer
          *ptr6 = 600;
                     ^
 indirect_ref : ptr6, 

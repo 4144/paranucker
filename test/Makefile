@@ -1,14 +1,14 @@
-CRASHES = crashtest1 crashtest2 crashtest3 crashtest4
-TESTS1 = test1-01 test1-02 test1-03 test1-04
-TESTS2 = test2-01 test2-02
-TESTS3 = test3-01 test3-02
-TESTS4 = test4-01 test4-02 test4-03
-TESTS5 = test5-01 test5-02 test5-03 test5-04 test5-05
-TESTS6 = test6-01 test6-02 test6-03 test6-04
-TESTS7 = test7-01 test7-02 test7-03 test7-04 test7-05
-TESTS8 = test8-01 test8-02 test8-03 test8-04
-TESTS9 = test9-01 test9-02 test9-03 test9-04
-ALLTESTS = test1 test2 test3 test4 test5 test6 test7 test8 test9 ${TESTS1} ${TESTS2} ${TESTS3} ${TESTS4} ${TESTS5} ${TESTS6} ${TESTS7} ${TESTS8} ${TESTS9}
+CRASHES = crashtest01 crashtest02 crashtest03 crashtest4
+TESTS01 = test01-01 test01-02 test01-03 test01-04
+TESTS02 = test02-01 test02-02
+TESTS03 = test03-01 test03-02
+TESTS04 = test04-01 test04-02 test04-03
+TESTS05 = test05-01 test05-02 test05-03 test05-04 test05-05
+TESTS06 = test06-01 test06-02 test06-03 test06-04
+TESTS07 = test07-01 test07-02 test07-03 test07-04 test07-05
+TESTS08 = test08-01 test08-02 test08-03 test08-04
+TESTS09 = test09-01 test09-02 test09-03 test09-04
+ALLTESTS = test01 test02 test03 test04 test05 test06 test07 test08 test09 ${TESTS01} ${TESTS02} ${TESTS03} ${TESTS04} ${TESTS05} ${TESTS06} ${TESTS07} ${TESTS08} ${TESTS09}
 
 .PHONY: ${ALLTESTS} ${CRASHES} all crashes
 
@@ -23,95 +23,95 @@ all: ${ALLTESTS} ${CRASHES}
 tests: ${ALLTESTS}
 crashes: ${CRASHES}
 
-test1: ${TESTS1}
-test1-01:
-	$(call CMD,dump,test1.c,test1-01.txt)
-test1-02:
-	$(call CMD,smalldump,test1.c,test1-02.txt)
-test1-03:
-	$(call CMD,memoryusage,test1.c,test1-03.txt)
-test1-04:
-	$(call CMD,dumpunsupported,test1.c,test1-04.txt)
+test01: ${TESTS01}
+test01-01:
+	$(call CMD,dump,test01.c,test01-01.txt)
+test01-02:
+	$(call CMD,smalldump,test01.c,test01-02.txt)
+test01-03:
+	$(call CMD,memoryusage,test01.c,test01-03.txt)
+test01-04:
+	$(call CMD,dumpunsupported,test01.c,test01-04.txt)
 
-test2: ${TESTS2}
-test2-01:
-	$(call CMD,dump,test2.c,test2-01.txt)
-test2-02:
-	$(call CMD,findargs,test2.c,test2-02.txt)
+test02: ${TESTS02}
+test02-01:
+	$(call CMD,dump,test02.c,test02-01.txt)
+test02-02:
+	$(call CMD,findargs,test02.c,test02-02.txt)
 
-test3: ${TESTS3}
-test3-01:
-	$(call CMD,dump,test3.c,test3-01.txt)
-test3-02:
-	$(call CMD,findargs,test3.c,test3-02.txt)
+test03: ${TESTS03}
+test03-01:
+	$(call CMD,dump,test03.c,test03-01.txt)
+test03-02:
+	$(call CMD,findargs,test03.c,test03-02.txt)
 
-test4: ${TESTS4}
-test4-01:
-	$(call CMD,dump,test4.c,test4-01.txt)
-test4-02:
-	$(call CMD,findargs,test4.c,test4-02.txt)
-test4-03:
-	$(call CMD,detectnullpointers,test4.c,test4-03.txt)
+test04: ${TESTS04}
+test04-01:
+	$(call CMD,dump,test04.c,test04-01.txt)
+test04-02:
+	$(call CMD,findargs,test04.c,test04-02.txt)
+test04-03:
+	$(call CMD,detectnullpointers,test04.c,test04-03.txt)
 
-test5: ${TESTS5}
-test5-01:
-	$(call CMD,dump,test5.c,test5-01.txt)
-test5-02:
-	$(call CMD,findargs,test5.c,test5-02.txt)
-test5-03:
-	$(call CMD,detectnullpointers,test5.c,test5-03.txt)
-test5-04:
-	$(call CMD,dumpunsupported,test5.c,test5-04.txt)
-test5-05:
-	$(call CMD,dumpnullpointers,test5.c,test5-05.txt)
+test05: ${TESTS05}
+test05-01:
+	$(call CMD,dump,test05.c,test05-01.txt)
+test05-02:
+	$(call CMD,findargs,test05.c,test05-02.txt)
+test05-03:
+	$(call CMD,detectnullpointers,test05.c,test05-03.txt)
+test05-04:
+	$(call CMD,dumpunsupported,test05.c,test05-04.txt)
+test05-05:
+	$(call CMD,dumpnullpointers,test05.c,test05-05.txt)
 
-test6: ${TESTS6}
-test6-01:
-	$(call CMD,dump,test6.c,test6-01.txt)
-test6-02:
-	$(call CMD,dumpunsupported,test6.c,test6-02.txt)
-test6-03:
-	$(call CMD,detectnullpointers,test6.c,test6-03.txt)
-test6-04:
-	$(call CMD,dumpnullpointers,test6.c,test6-04.txt)
+test06: ${TESTS06}
+test06-01:
+	$(call CMD,dump,test06.c,test06-01.txt)
+test06-02:
+	$(call CMD,dumpunsupported,test06.c,test06-02.txt)
+test06-03:
+	$(call CMD,detectnullpointers,test06.c,test06-03.txt)
+test06-04:
+	$(call CMD,dumpnullpointers,test06.c,test06-04.txt)
 
-test7: ${TESTS7}
-test7-01:
-	$(call CMD,dump,test7.cpp,test7-01.txt)
-test7-02:
-	$(call CMD,smalldump,test7.cpp,test7-02.txt)
-test7-03:
-	$(call CMD,findargs,test7.cpp,test7-03.txt)
-test7-04:
-	$(call CMD,detectnullpointers,test7.cpp,test7-04.txt)
-test7-05:
-	$(call CMD,dumpnullpointers,test7.cpp,test7-05.txt)
+test07: ${TESTS07}
+test07-01:
+	$(call CMD,dump,test07.cpp,test07-01.txt)
+test07-02:
+	$(call CMD,smalldump,test07.cpp,test07-02.txt)
+test07-03:
+	$(call CMD,findargs,test07.cpp,test07-03.txt)
+test07-04:
+	$(call CMD,detectnullpointers,test07.cpp,test07-04.txt)
+test07-05:
+	$(call CMD,dumpnullpointers,test07.cpp,test07-05.txt)
 
-test8: ${TESTS8}
-test8-01:
-	$(call CMD,dump,test8.cpp,test8-01.txt)
-test8-02:
-	$(call CMD,findargs,test8.cpp,test8-02.txt)
-test8-03:
-	$(call CMD,dumpnullpointers,test8.cpp,test8-03.txt)
-test8-04:
-	$(call CMD,detectnullpointers,test8.cpp,test8-04.txt)
+test08: ${TESTS08}
+test08-01:
+	$(call CMD,dump,test08.cpp,test08-01.txt)
+test08-02:
+	$(call CMD,findargs,test08.cpp,test08-02.txt)
+test08-03:
+	$(call CMD,dumpnullpointers,test08.cpp,test08-03.txt)
+test08-04:
+	$(call CMD,detectnullpointers,test08.cpp,test08-04.txt)
 
-test9: ${TESTS9}
-test9-01:
-	$(call CMD,dump,test9.cpp,test9-01.txt)
-test9-02:
-	$(call CMD,findargs,test9.cpp,test9-02.txt)
-test9-03:
-	$(call CMD,dumpnullpointers,test9.cpp,test9-03.txt)
-test9-04:
-	$(call CMD,detectnullpointers,test9.cpp,test9-04.txt)
+test09: ${TESTS09}
+test09-01:
+	$(call CMD,dump,test09.cpp,test09-01.txt)
+test09-02:
+	$(call CMD,findargs,test09.cpp,test09-02.txt)
+test09-03:
+	$(call CMD,dumpnullpointers,test09.cpp,test09-03.txt)
+test09-04:
+	$(call CMD,detectnullpointers,test09.cpp,test09-04.txt)
 
-crashtest1:
-	$(call CMD,dump,crashtest1.h,crashtest1-01.txt)
-crashtest2:
-	$(call CMD,dump,crashtest2.h,crashtest2-01.txt)
-crashtest3:
-	$(call CMD,findargs,crashtest3.h,crashtest3-01.txt)
-crashtest4:
-	$(call CMD,dump,crashtest4.cpp,crashtest4-01.txt)
+crashtest01:
+	$(call CMD,dump,crashtest01.h,crashtest01-01.txt)
+crashtest02:
+	$(call CMD,dump,crashtest02.h,crashtest02-01.txt)
+crashtest03:
+	$(call CMD,findargs,crashtest03.h,crashtest03-01.txt)
+crashtest04:
+	$(call CMD,dump,crashtest04.cpp,crashtest04-01.txt)

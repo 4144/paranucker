@@ -2424,8 +2424,8 @@ cleanup_point_expr : aptr,
 expr_stmt : aptr, 
 convert_expr : aptr, 
 modify_expr : aptr, 
-test7.cpp: In member function 'void Object1::func2(int*)':
-test7.cpp:27:18: warning: Using parameter 'aptr' without checking for null pointer
+test07.cpp: In member function 'void Object1::func2(int*)':
+test07.cpp:27:18: warning: Using parameter 'aptr' without checking for null pointer
          *aptr = 0;
                   ^
 indirect_ref : aptr, 
@@ -2491,8 +2491,8 @@ expr_stmt : sptr,
 convert_expr : sptr, 
 modify_expr : sptr, 
 component_ref : sptr, 
-test7.cpp: In member function 'void Object1::func5(Struct1*)':
-test7.cpp:43:15: warning: Using parameter 'sptr' without checking for null pointer
+test07.cpp: In member function 'void Object1::func5(Struct1*)':
+test07.cpp:43:15: warning: Using parameter 'sptr' without checking for null pointer
          sptr->num = 0;
                ^
 indirect_ref : sptr, 

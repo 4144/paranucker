@@ -1,0 +1,31 @@
+test05.c: In function 'void func1(int, int*, char)':
+test05.c:12:13: warning: Using parameter 'b' without checking for null pointer
+     *b = 100;
+             ^
+test05.c: In function 'void func2(int, int*, char)':
+test05.c:17:9: warning: Using parameter 'b' without checking for null pointer
+     *(1 + b) = 200;
+         ^
+test05.c: In function 'void func3(int, int*, char)':
+test05.c:22:9: warning: Using parameter 'b' without checking for null pointer
+     *(1 + (1 + b)) = 300;
+         ^
+test05.c: In function 'void func5(int, int*, char)':
+test05.c:28:12: warning: Using parameter 'b' without checking for null pointer
+     *(var1 + b) = 400;
+            ^
+test05.c: In function 'void func6(int, int*, char)':
+test05.c:33:10: warning: Using parameter 'b' without checking for null pointer
+     int *var2 = b;
+          ^
+test05.c:33:10: warning: Using parameter 'b' without checking for null pointer
+test05.c:33:10: warning: Using parameter 'b' without checking for null pointer
+test05.c:33:10: warning: Using parameter 'b' without checking for null pointer
+test05.c: In function 'void func7(int, int*, char)':
+test05.c:39:20: warning: Using parameter 'b' without checking for null pointer
+     int *var3 = 12 + b;
+                    ^
+test05.c: In function 'void func8(int, int*, char)':
+test05.c:45:11: warning: Using parameter 'bptr' without checking for null pointer
+     int **var4 = &bptr;
+           ^
