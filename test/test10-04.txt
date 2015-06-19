@@ -1,0 +1,57 @@
+test10.cpp: In member function 'void Object1::func1(int*, int*)':
+test10.cpp:9:24: warning: Using parameter 'ptr2' without checking for null pointer
+             *ptr2 = 400;
+                        ^
+test10.cpp:14:24: warning: Using parameter 'ptr1' without checking for null pointer
+             *ptr1 = 100;
+                        ^
+test10.cpp:17:20: warning: Using parameter 'ptr1' without checking for null pointer
+         *ptr1 = 200;
+                    ^
+test10.cpp:18:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 300;
+                    ^
+test10.cpp: In member function 'void Object1::func2(int*, int*)':
+test10.cpp:25:24: warning: Using parameter 'ptr2' without checking for null pointer
+             *ptr2 = 400;
+                        ^
+test10.cpp:30:24: warning: Using parameter 'ptr1' without checking for null pointer
+             *ptr1 = 100;
+                        ^
+test10.cpp:33:20: warning: Using parameter 'ptr1' without checking for null pointer
+         *ptr1 = 200;
+                    ^
+test10.cpp:34:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 300;
+                    ^
+test10.cpp: In member function 'void Object1::func3(int*, int*)':
+test10.cpp:50:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 300;
+                    ^
+test10.cpp: In member function 'void Object1::func5(int*, int*)':
+test10.cpp:81:20: warning: Using parameter 'ptr1' without checking for null pointer
+         *ptr1 = 200;
+                    ^
+test10.cpp:82:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 300;
+                    ^
+test10.cpp: In member function 'void Object1::func7(int*, int*)':
+test10.cpp:105:24: warning: Using parameter 'ptr1' without checking for null pointer
+             *ptr1 = 100;
+                        ^
+test10.cpp:106:24: warning: Using parameter 'ptr2' without checking for null pointer
+             *ptr2 = 200;
+                        ^
+test10.cpp:113:20: warning: Using parameter 'ptr1' without checking for null pointer
+         *ptr1 = 300;
+                    ^
+test10.cpp:114:20: warning: Using parameter 'ptr2' without checking for null pointer
+         *ptr2 = 400;
+                    ^
+test10.cpp: In member function 'void Object1::func8(int*, int*)':
+test10.cpp:127:24: warning: Using parameter 'ptr1' without checking for null pointer
+             *ptr1 = 300;
+                        ^
+test10.cpp:128:24: warning: Using parameter 'ptr2' without checking for null pointer
+             *ptr2 = 400;
+                        ^
