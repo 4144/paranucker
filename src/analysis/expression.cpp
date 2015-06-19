@@ -87,7 +87,7 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
     if (node->args.size() < 2 || command == FindArgs)
         return;
 
-//    Log::log("analyseNeExpr 1\n");
+    //Log::dumpWI(node, "NE in ", wo);
     // PARM_DECL?
     Node *node1 = skipNop(node->args[0]);
     // INTEGER_CST?
@@ -101,7 +101,6 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
         wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
         node2->label == "0")
     {
-//        Log::log("analyseNeExpr 2\n");
         wo.checkedNonNullVars.insert(node1->label);
         wo.cleanExpr = true;
         wo.uselessExpr = false;
@@ -111,6 +110,7 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
         wo.cleanExpr = false;
         wo.uselessExpr = true;
     }
+    //Log::dumpWI(node, "NE out ", wo);
 }
 
 void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
@@ -119,7 +119,7 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
     if (node->args.size() < 2 || command == FindArgs)
         return;
 
-//    Log::log("analyseEqExpr 1\n");
+    //Log::dumpWI(node, "EQ in ", wo);
     // PARM_DECL?
     Node *node1 = skipNop(node->args[0]);
     // INTEGER_CST?
@@ -132,7 +132,6 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
         wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
         node2->label == "0")
     {
-//        Log::log("analyseEqExpr 2\n");
         wo.checkedNullVars.insert(node1->label);
         wo.cleanExpr = true;
         wo.uselessExpr = false;
@@ -142,6 +141,7 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
         wo.cleanExpr = false;
         wo.uselessExpr = true;
     }
+    //Log::dumpWI(node, "EQ out ", wo);
 }
 
 void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem &wo)
@@ -158,9 +158,18 @@ void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem 
     //Log::dumpWI(node, "wo1 ", wo1);
     //Log::dumpWI(node, "wo2 ", wo2);
     if (wo1.cleanExpr)
-        mergeChecked(wo, wo1);
+    {
+        mergeNullChecked(wo, wo1);
+        //mergeNonNullChecked(wo, wo1);
+    }
     if (wo2.cleanExpr)
-        mergeChecked(wo, wo2);
+    {
+        mergeNullChecked(wo, wo2);
+        //mergeNonNullChecked(wo, wo2);
+    }
+    // need check for cleanExpr?
+    intersectNonNullChecked(wo, wo1, wo2);
+
     wo.cleanExpr = false;
     wo.stopWalking = true;
     wo.uselessExpr = wo1.uselessExpr || wo2.uselessExpr;

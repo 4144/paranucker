@@ -142,15 +142,19 @@ Node *skipNop(Node *node)
     return node;
 }
 
-void mergeChecked(WalkItem &wi1, WalkItem &wi2)
+void mergeNullChecked(WalkItem &wi1, WalkItem &wi2)
 {
     wi1.checkedNullVars.insert(wi2.checkedNullVars.begin(),
         wi2.checkedNullVars.end());
+}
+
+void mergeNonNullChecked(WalkItem &wi1, WalkItem &wi2)
+{
     wi1.checkedNonNullVars.insert(wi2.checkedNonNullVars.begin(),
         wi2.checkedNonNullVars.end());
 }
 
-void intersectChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
+void intersectNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
 {
     FOR_EACH (std::set<std::string>::const_iterator,
               it,
@@ -159,9 +163,13 @@ void intersectChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
         if (wi2.checkedNullVars.find(*it) != wi2.checkedNullVars.end())
             wi.checkedNullVars.insert(*it);
     }
+}
+
+void intersectNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
+{
     FOR_EACH (std::set<std::string>::const_iterator,
               it,
-              wi2.checkedNonNullVars)
+              wi1.checkedNonNullVars)
     {
         if (wi2.checkedNonNullVars.find(*it) != wi2.checkedNonNullVars.end())
             wi.checkedNonNullVars.insert(*it);
