@@ -1,0 +1,286 @@
+function_decl func1: 
+bind_expr : a, 
+modify_expr : a, 
+test14.c: In function 'func1':
+test14.c:12:8: warning: Using parameter 'a' without checking for null pointer
+     *a = 100;
+        ^
+indirect_ref : a, 
+parm_decl a: a, 
+pointer_type : a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
+integer_cst 64: a, 
+integer_cst 100: a, 
+block : a, 
+function_decl func2: 
+bind_expr : a, 
+cond_expr : a, 
+eq_expr : a, 
+parm_decl a: a, 
+pointer_type : a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
+integer_cst 64: a, 
+integer_cst 0: a, 
+return_expr : a, 
+modify_expr : 
+indirect_ref : 
+parm_decl a: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 200: 
+block : a, 
+function_decl func3: 
+bind_expr : a, 
+statement_list : a, 
+cond_expr : a, 
+eq_expr : a, 
+parm_decl a: a, 
+pointer_type : a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
+integer_cst 64: a, 
+integer_cst 0: a, 
+return_expr : a, 
+modify_expr : a, 
+indirect_ref : 
+parm_decl a: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 300: 
+block : a, 
+function_decl func4: 
+bind_expr : a, 
+cond_expr : a, 
+ne_expr : a, 
+parm_decl a: a, 
+pointer_type : a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
+integer_cst 64: a, 
+integer_cst 0: a, 
+modify_expr : 
+indirect_ref : 
+parm_decl a: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 400: 
+block : a, 
+function_decl func5: 
+bind_expr : a, 
+statement_list : a, 
+cond_expr : a, 
+ne_expr : a, 
+parm_decl a: a, 
+pointer_type : a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
+integer_cst 64: a, 
+integer_cst 0: a, 
+modify_expr : 
+indirect_ref : 
+parm_decl a: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 500: 
+modify_expr : a, 
+test14.c: In function 'func5':
+test14.c:45:8: warning: Using parameter 'a' without checking for null pointer
+     *a = 600;
+        ^
+indirect_ref : a, 
+parm_decl a: a, 
+pointer_type : a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
+integer_cst 64: a, 
+integer_cst 600: a, 
+block : a, 
+function_decl func6: 
+bind_expr : a, 
+statement_list : a, 
+cond_expr : a, 
+eq_expr : a, 
+parm_decl a: a, 
+pointer_type : a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
+integer_cst 64: a, 
+integer_cst 0: a, 
+bind_expr : a, 
+var_decl k: a, 
+integer_cst 32: a, 
+integer_cst 10: a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
+statement_list : a, 
+decl_expr : a, 
+var_decl k: a, 
+return_expr : a, 
+block : a, 
+var_decl k: a, 
+modify_expr : a, 
+indirect_ref : 
+parm_decl a: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 700: 
+block : a, 
+block : 
+var_decl k: 
+function_decl func7: 
+bind_expr : aptr, 
+statement_list : aptr, 
+cond_expr : aptr, 
+integer_cst 0: aptr, 
+cond_expr : aptr, 
+eq_expr : aptr, 
+parm_decl aptr: aptr, 
+pointer_type : aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 64: aptr, 
+integer_cst 0: aptr, 
+bind_expr : aptr, 
+var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+statement_list : aptr, 
+decl_expr : aptr, 
+var_decl k: aptr, 
+return_expr : aptr, 
+block : aptr, 
+var_decl k: aptr, 
+modify_expr : aptr, 
+test14.c: In function 'func7':
+test14.c:70:11: warning: Using parameter 'aptr' without checking for null pointer
+     *aptr = 800;
+           ^
+indirect_ref : aptr, 
+parm_decl aptr: aptr, 
+pointer_type : aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 64: aptr, 
+integer_cst 800: aptr, 
+block : aptr, 
+block : aptr, 
+var_decl k: aptr, 
+function_decl func8: 
+bind_expr : aptr, 
+statement_list : aptr, 
+cond_expr : aptr, 
+eq_expr : aptr, 
+parm_decl aptr: aptr, 
+pointer_type : aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+integer_cst 64: aptr, 
+integer_cst 0: aptr, 
+statement_list : aptr, 
+cond_expr : aptr, 
+integer_cst 0: aptr, 
+bind_expr : aptr, 
+var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+statement_list : aptr, 
+decl_expr : aptr, 
+var_decl k: aptr, 
+decl_expr : aptr, 
+var_decl l: aptr, 
+integer_cst 32: aptr, 
+integer_cst 20: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
+block : aptr, 
+var_decl k: aptr, 
+var_decl l: aptr, 
+return_expr : aptr, 
+modify_expr : aptr, 
+indirect_ref : 
+parm_decl aptr: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 900: 
+block : aptr, 
+block : 
+var_decl k: 
+var_decl l: 
