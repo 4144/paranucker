@@ -291,7 +291,7 @@ void analyseCondExpr(CondExprNode *node, const WalkItem &wi, WalkItem &wo)
         // add variable for ignore for all parent nodes except special like IF_STMT
         FOR_EACH (std::set<std::string>::const_iterator,
                   it,
-                  wo1.checkedNullVars)
+                  wo.checkNullVars)
         {
             wo.removeNullVars.insert(*it);
         }
