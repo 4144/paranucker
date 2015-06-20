@@ -261,6 +261,43 @@ void analyseCondExpr(CondExprNode *node, const WalkItem &wi, WalkItem &wo)
     // need check for cleanExpr?
     intersectNonNullChecked(wo, wo2, wo3);
 
+    wo.removeNullVars.clear();
+
+    if (wo2.isReturned)
+    {
+        // add variable for ignore for all parent nodes except special like IF_STMT
+        FOR_EACH (std::set<std::string>::const_iterator,
+                  it,
+                  wo1.checkedNullVars)
+        {
+            wo.removeNullVars.insert(*it);
+            wo.checkNullVars.erase(*it);
+        }
+    }
+    if (wo3.isReturned)
+    {
+        // add variable for ignore for all parent nodes except special like IF_STMT
+        FOR_EACH (std::set<std::string>::const_iterator,
+                  it,
+                  wo1.checkedNonNullVars)
+        {
+            wo.removeNullVars.insert(*it);
+            wo.checkNullVars.erase(*it);
+        }
+    }
+
+    if (wo2.isReturned && wo3.isReturned)
+    {
+        // add variable for ignore for all parent nodes except special like IF_STMT
+        FOR_EACH (std::set<std::string>::const_iterator,
+                  it,
+                  wo1.checkedNullVars)
+        {
+            wo.removeNullVars.insert(*it);
+        }
+    }
+
+    wo.isReturned = false;
     wo.cleanExpr = true;
     wo.stopWalking = true;
     wo.uselessExpr = false;
