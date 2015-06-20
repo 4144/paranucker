@@ -1,0 +1,28 @@
+test16.c: In function 'func2':
+test16.c:22:13: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 200;
+             ^
+test16.c:26:9: warning: Using parameter 'ptr1' without checking for null pointer
+     ptr1->val = 300;
+         ^
+test16.c: In function 'func3':
+test16.c:31:21: warning: Using parameter 'ptr1' without checking for null pointer
+     if (ptr1 || ptr1->val == 100)
+                     ^
+test16.c:36:9: warning: Using parameter 'ptr1' without checking for null pointer
+     ptr1->val = 200;
+         ^
+test16.c: In function 'func4':
+test16.c:41:22: warning: Using parameter 'ptr1' without checking for null pointer
+     if (!ptr1 && ptr1->val == 100)
+                      ^
+test16.c:46:9: warning: Using parameter 'ptr1' without checking for null pointer
+     ptr1->val = 200;
+         ^
+test16.c: In function 'func6':
+test16.c:67:9: warning: Using parameter 'ptr1' without checking for null pointer
+     ptr1->val = 300;
+         ^
+test16.c:68:9: warning: Using parameter 'ptr2' without checking for null pointer
+     ptr2->val = 400;
+         ^
