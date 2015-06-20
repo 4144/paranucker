@@ -13,7 +13,8 @@ TESTS11 = test11-01 test11-02 test11-03 test11-04
 TESTS12 = test12-01 test12-02 test12-03 test12-04
 TESTS13 = test13-01 test13-02 test13-03 test13-04 test13-05
 TESTS14 = test14-01 test14-02 test14-03 test14-04
-ALLTESTS = test01 test02 test03 test04 test05 test06 test07 test08 test09 test10 test11 test12 test13 test14 ${TESTS01} ${TESTS02} ${TESTS03} ${TESTS04} ${TESTS05} ${TESTS06} ${TESTS07} ${TESTS08} ${TESTS09} ${TESTS10} ${TESTS11} ${TESTS12} ${TESTS13} ${TESTS14}
+TESTS15 = test15-01 test15-02 test15-03 test15-04
+ALLTESTS = test01 test02 test03 test04 test05 test06 test07 test08 test09 test10 test11 test12 test13 test14 test15 ${TESTS01} ${TESTS02} ${TESTS03} ${TESTS04} ${TESTS05} ${TESTS06} ${TESTS07} ${TESTS08} ${TESTS09} ${TESTS10} ${TESTS11} ${TESTS12} ${TESTS13} ${TESTS14} ${TESTS15}
 
 .PHONY: ${ALLTESTS} ${CRASHES} all crashes
 
@@ -166,6 +167,16 @@ test14-03:
 	$(call CMD,detectnullpointers,test14.c,test14-03.txt)
 test14-04:
 	$(call CMD,dumpnullpointers,test14.c,test14-04.txt)
+
+test15: ${TESTS15}
+test15-01:
+	$(call CMD,dump,test15.c,test15-01.txt)
+test15-02:
+	$(call CMD,findargs,test15.c,test15-02.txt)
+test15-03:
+	$(call CMD,dumpnullpointers,test15.c,test15-03.txt)
+test15-04:
+	$(call CMD,detectnullpointers,test15.c,test15-04.txt)
 
 crashtest01:
 	$(call CMDXX,dump,crashtest01.h,crashtest01-01.txt)
