@@ -22,6 +22,9 @@
 
 #include "includes.h"
 
+#include <set>
+#include <string>
+
 struct Node;
 struct WalkItem;
 
@@ -40,6 +43,9 @@ namespace Analysis
                                    const WalkItem &wi);
 
     void removeCheckNullVars(WalkItem &wi);
+
+    void removeCheckNullVarsSet(WalkItem &wi,
+                                std::set<std::string> &vars);
 
     Node *skipNop(Node *node);
 

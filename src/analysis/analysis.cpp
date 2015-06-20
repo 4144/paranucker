@@ -64,6 +64,18 @@ void removeCheckNullVars(WalkItem &wi)
     }
 }
 
+void removeCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
+{
+    FOR_EACH (std::set<std::string>::const_iterator, it, vars)
+    {
+        // found var for deletion
+        if (wi.checkNullVars.find(*it) != wi.checkNullVars.end())
+        {
+            wi.checkNullVars.erase(*it);
+        }
+    }
+}
+
 void startWalkTree(Node *node)
 {
     WalkItem wi;

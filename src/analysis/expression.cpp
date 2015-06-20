@@ -154,8 +154,11 @@ void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem 
     WalkItem wo1 = wo;
     WalkItem wo2 = wo;
     walkTree(node->args[0], wi, wo1);
-    walkTree(node->args[1], wi, wo2);
     Log::dumpWI(node, "wo1 ", wo1);
+    WalkItem wi2 = wi;
+    removeCheckNullVarsSet(wi2, wo1.checkedNullVars);
+    Log::dumpWI(node, "wi2 ", wi2);
+    walkTree(node->args[1], wi2, wo2);
     Log::dumpWI(node, "wo2 ", wo2);
     // probably condition wrong
     if (wo1.cleanExpr)
@@ -182,8 +185,11 @@ void analyseTruthAndIfExpr(TruthAndIfExprNode *node, const WalkItem &wi, WalkIte
     WalkItem wo1 = wo;
     WalkItem wo2 = wo;
     walkTree(node->args[0], wi, wo1);
-    walkTree(node->args[1], wi, wo2);
     Log::dumpWI(node, "wo1 ", wo1);
+    WalkItem wi2 = wi;
+    removeCheckNullVarsSet(wi2, wo1.checkedNonNullVars);
+    Log::dumpWI(node, "wi2 ", wi2);
+    walkTree(node->args[1], wi2, wo2);
     Log::dumpWI(node, "wo2 ", wo2);
 
     wo.stopWalking = true;
