@@ -10,7 +10,8 @@ TESTS08 = test08-01 test08-02 test08-03 test08-04
 TESTS09 = test09-01 test09-02 test09-03 test09-04
 TESTS10 = test10-01 test10-02 test10-03 test10-04
 TESTS11 = test11-01 test11-02 test11-03 test11-04
-ALLTESTS = test01 test02 test03 test04 test05 test06 test07 test08 test09 test10 test11 ${TESTS01} ${TESTS02} ${TESTS03} ${TESTS04} ${TESTS05} ${TESTS06} ${TESTS07} ${TESTS08} ${TESTS09} ${TESTS10} ${TESTS11}
+TESTS12 = test12-01 test12-02 test12-03 test12-04
+ALLTESTS = test01 test02 test03 test04 test05 test06 test07 test08 test09 test10 test11 test12 ${TESTS01} ${TESTS02} ${TESTS03} ${TESTS04} ${TESTS05} ${TESTS06} ${TESTS07} ${TESTS08} ${TESTS09} ${TESTS10} ${TESTS11} ${TESTS12}
 
 .PHONY: ${ALLTESTS} ${CRASHES} all crashes
 
@@ -128,6 +129,16 @@ test11-03:
 	$(call CMD,dumpnullpointers,test11.cpp,test11-03.txt)
 test11-04:
 	$(call CMD,detectnullpointers,test11.cpp,test11-04.txt)
+
+test12: ${TESTS12}
+test12-01:
+	$(call CMD,dump,test12.cpp,test12-01.txt)
+test12-02:
+	$(call CMD,findargs,test12.cpp,test12-02.txt)
+test12-03:
+	$(call CMD,dumpnullpointers,test12.cpp,test12-03.txt)
+test12-04:
+	$(call CMD,detectnullpointers,test12.cpp,test12-04.txt)
 
 crashtest01:
 	$(call CMD,dump,crashtest01.h,crashtest01-01.txt)

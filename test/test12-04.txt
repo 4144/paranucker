@@ -1,0 +1,33 @@
+test12.cpp: In member function 'void Object1::func1(Data1*, Data1*)':
+test12.cpp:13:45: warning: Using parameter 'ptr2' without checking for null pointer
+         int val1 = ptr1 ? ptr1->val : ptr2->val;
+                                             ^
+test12.cpp: In member function 'void Object1::func2(Data1*, Data1*)':
+test12.cpp:18:36: warning: Using parameter 'ptr1' without checking for null pointer
+         int val1 = (!ptr1) ? ptr1->val : ptr2->val;
+                                    ^
+test12.cpp:18:48: warning: Using parameter 'ptr2' without checking for null pointer
+         int val1 = (!ptr1) ? ptr1->val : ptr2->val;
+                                                ^
+test12.cpp: In member function 'void Object1::func3(Data1*, Data1*)':
+test12.cpp:23:56: warning: Using parameter 'ptr2' without checking for null pointer
+         int val1 = (ptr1 && !ptr2) ? ptr1->val : ptr2->val;
+                                                        ^
+test12.cpp: In member function 'void Object1::func4(Data1*, Data1*)':
+test12.cpp:28:35: warning: Using parameter 'ptr2' without checking for null pointer
+         if ((ptr1 ? ptr1 : ptr2)->val == 100)
+                                   ^
+test12.cpp:30:19: warning: Using parameter 'ptr1' without checking for null pointer
+             ptr1->val = 200;
+                   ^
+test12.cpp:34:19: warning: Using parameter 'ptr2' without checking for null pointer
+             ptr2->val = 300;
+                   ^
+test12.cpp: In member function 'void Object1::func5(Data1*, Data1*)':
+test12.cpp:40:41: warning: Using parameter 'ptr2' without checking for null pointer
+         int tmp = (ptr1 ? ptr1 : ptr2)->val;
+                                         ^
+test12.cpp: In member function 'void Object1::func7(Data1*, Data1*)':
+test12.cpp:50:53: warning: Using parameter 'ptr2' without checking for null pointer
+         int tmp = ptr1 ? ptr1->val : (!ptr2 ? ptr2->val : 0);
+                                                     ^
