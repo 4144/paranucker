@@ -314,16 +314,16 @@ integer_cst -2147483648: ptr1, ptr2,
 integer_cst 2147483647: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
-eq_expr : ptr1, ptr2, 
-parm_decl ptr2: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
+eq_expr : ptr2, 
+parm_decl ptr2: ptr2, 
+pointer_type : ptr2, 
+integer_type : ptr2, 
+type_decl int: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst -2147483648: ptr2, 
+integer_cst 2147483647: ptr2, 
+integer_cst 64: ptr2, 
+integer_cst 0: ptr2, 
 return_expr : ptr1, ptr2, 
 cleanup_point_expr : 
 expr_stmt : 
@@ -394,31 +394,31 @@ integer_cst -2147483648: ptr1, ptr2,
 integer_cst 2147483647: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
-eq_expr : ptr1, ptr2, 
-parm_decl ptr2: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-eq_expr : ptr1, ptr2, 
-component_ref : ptr1, ptr2, 
-indirect_ref : ptr1, ptr2, 
-nop_expr : ptr1, ptr2, 
-parm_decl this: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-record_type : ptr1, ptr2, 
-type_decl Object1: ptr1, ptr2, 
-field_decl k: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-type_decl Object1: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-field_decl k: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-var_decl c: ptr1, ptr2, 
+eq_expr : ptr2, 
+parm_decl ptr2: ptr2, 
+pointer_type : ptr2, 
+integer_type : ptr2, 
+type_decl int: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst -2147483648: ptr2, 
+integer_cst 2147483647: ptr2, 
+integer_cst 64: ptr2, 
+integer_cst 0: ptr2, 
+eq_expr : 
+component_ref : 
+indirect_ref : 
+nop_expr : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Object1: 
+field_decl k: 
+integer_cst 32: 
+type_decl Object1: 
+integer_cst 64: 
+field_decl k: 
+integer_cst 32: 
+var_decl c: 
 cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 

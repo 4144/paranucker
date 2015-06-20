@@ -1,0 +1,7 @@
+test11.cpp: In member function 'void Object1::func2(Data1*, Data1*)':
+test11.cpp:25:19: warning: Using parameter 'ptr1' without checking for null pointer
+             ptr1->val = 100;
+                   ^
+test11.cpp:29:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 200;
+               ^
