@@ -35,6 +35,7 @@ void parseForStmtNode(ForStmtNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
+#ifdef ENABLE_CPPLANG
     node->init = static_cast<StmtNode*>(createParseNode(
         node,
         FOR_INIT_STMT(node->gccNode),
@@ -54,6 +55,7 @@ void parseForStmtNode(ForStmtNode *node)
         node,
         FOR_BODY(node->gccNode),
         "body"));
+#endif
 }
 
 }

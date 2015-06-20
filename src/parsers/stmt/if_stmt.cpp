@@ -38,6 +38,7 @@ void parseIfStmtNode(IfStmtNode *node)
     if (!node->parseChilds)
         return;
 
+#ifdef ENABLE_CPPLANG
     node->condition = createParseNode(
         node,
         IF_COND(node->gccNode),
@@ -55,6 +56,7 @@ void parseIfStmtNode(IfStmtNode *node)
         node,
         IF_SCOPE(node->gccNode),
         "score");
+#endif
 }
 
 }

@@ -38,6 +38,7 @@ void parseWhileStmtNode(WhileStmtNode *node)
     if (!node->parseChilds)
         return;
 
+#ifdef ENABLE_CPPLANG
     node->condition = createParseNode(
         node,
         WHILE_COND(node->gccNode),
@@ -47,6 +48,7 @@ void parseWhileStmtNode(WhileStmtNode *node)
         node,
         WHILE_BODY(node->gccNode),
         "body");
+#endif
 }
 
 }

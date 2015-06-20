@@ -35,11 +35,16 @@ if ENABLE_GPROF
 SHARED_CXXFLAGS += "-pg"
 endif
 
-lib_LTLIBRARIES = libastdumper.la
+lib_LTLIBRARIES = libastdumper.la libcppastdumper.la
 libastdumper_la_SOURCES = ${SRC}
 libastdumper_la_LDFLAGS = ${SHARED_LDFLAGS}
 libastdumper_la_CXXFLAGS = ${SHARED_CXXFLAGS}
 
-all-local: libastdumper.la
+libcppastdumper_la_SOURCES = ${SRC}
+libcppastdumper_la_LDFLAGS = ${SHARED_LDFLAGS}
+libcppastdumper_la_CXXFLAGS = ${SHARED_CXXFLAGS} -DENABLE_CPPLANG
+
+all-local: libastdumper.la  libcppastdumper.la
 	cp .libs/libastdumper.so .libs/astdumper.so
+	cp .libs/libcppastdumper.so .libs/cppastdumper.so
 	echo done

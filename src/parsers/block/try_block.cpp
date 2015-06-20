@@ -34,6 +34,7 @@ void parseTryBlockNode(TryBlockNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
+#ifdef ENABLE_CPPLANG
     setPrintField(node, CLEANUP_P, isClean);
 
     node->body = createParseNode(
@@ -45,6 +46,7 @@ void parseTryBlockNode(TryBlockNode *node)
         node,
         TRY_HANDLERS(node->gccNode),
         "handler");
+#endif
 }
 
 }

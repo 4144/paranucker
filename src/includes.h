@@ -41,7 +41,11 @@
 #include "tree.h"
 #include "print-tree.h"
 
+#ifdef ENABLE_CPPLANG
 #include "cp/cp-tree.h"
+#else
+#include "c-family/c-common.h"
+#endif
 
 #include "diagnostic.h"
 

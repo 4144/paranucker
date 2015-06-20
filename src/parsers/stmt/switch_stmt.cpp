@@ -35,6 +35,7 @@ void parseSwitchStmtNode(SwitchStmtNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
+#ifdef ENABLE_CPPLANG
     node->condition = createParseNode(
         node,
         SWITCH_STMT_COND(node->gccNode),
@@ -54,6 +55,7 @@ void parseSwitchStmtNode(SwitchStmtNode *node)
         node,
         SWITCH_STMT_SCOPE(node->gccNode),
         "scope");
+#endif
 }
 
 }

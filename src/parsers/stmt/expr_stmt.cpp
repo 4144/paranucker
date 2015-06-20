@@ -40,10 +40,12 @@ void parseExprStmtNode(ExprStmtNode *node)
     if (!node->parseChilds)
         return;
 
+#ifdef ENABLE_CPPLANG
     node->expression = static_cast<ExprNode*>(createParseNode(
         node,
         EXPR_STMT_EXPR(node->gccNode),
         "expresssion"));
+#endif
 }
 
 }

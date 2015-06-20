@@ -34,7 +34,9 @@ void parseVecInitExprNode(VecInitExprNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
+#ifdef ENABLE_CPPLANG
     setPrintField(node, VEC_INIT_EXPR_IS_CONSTEXPR, isConstExpr);
+#endif
 
     fillExprOperands(node);
 
