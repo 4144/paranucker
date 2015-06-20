@@ -25,7 +25,7 @@ type_decl Data1: ptr2,
 integer_cst 64: ptr2, 
 field_decl val: ptr2, 
 integer_cst 32: ptr2, 
-integer_cst 1: ptr2, 
+integer_cst 100: ptr2, 
 return_expr : ptr1, ptr2, 
 cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr2, 
@@ -43,7 +43,7 @@ type_decl Data1: ptr2,
 integer_cst 64: ptr2, 
 field_decl val: ptr2, 
 integer_cst 32: ptr2, 
-integer_cst 100: ptr2, 
+integer_cst 200: ptr2, 
 function_decl func2: 
 statement_list : ptr1, ptr2, 
 if_stmt : ptr1, ptr2, 
@@ -71,7 +71,7 @@ type_decl Data1: ptr2,
 integer_cst 64: ptr2, 
 field_decl val: ptr2, 
 integer_cst 32: ptr2, 
-integer_cst 1: ptr2, 
+integer_cst 100: ptr2, 
 statement_list : ptr1, ptr2, 
 cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr1, ptr2, 
@@ -80,8 +80,61 @@ modify_expr : ptr1, ptr2,
 component_ref : ptr1, ptr2, 
 test11.cpp: In member function 'void Object1::func2(Data1*, Data1*)':
 test11.cpp:25:19: warning: Using parameter 'ptr1' without checking for null pointer
-             ptr1->val = 100;
+             ptr1->val = 200;
                    ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst 200: ptr1, ptr2, 
+return_expr : ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+component_ref : ptr1, ptr2, 
+test11.cpp:29:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 300;
+               ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst 300: ptr1, ptr2, 
+function_decl func3: 
+statement_list : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_orif_expr : ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+component_ref : ptr1, ptr2, 
+test11.cpp: In member function 'void Object1::func3(Data1*, Data1*)':
+test11.cpp:34:27: warning: Using parameter 'ptr1' without checking for null pointer
+         if (ptr1 || ptr1->val == 100)
+                           ^
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
@@ -100,7 +153,7 @@ expr_stmt : ptr1, ptr2,
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 component_ref : ptr1, ptr2, 
-test11.cpp:29:15: warning: Using parameter 'ptr1' without checking for null pointer
+test11.cpp:39:15: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 200;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -115,3 +168,241 @@ integer_cst 64: ptr1, ptr2,
 field_decl val: ptr1, ptr2, 
 integer_cst 32: ptr1, ptr2, 
 integer_cst 200: ptr1, ptr2, 
+function_decl func4: 
+statement_list : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_andif_expr : ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+component_ref : ptr1, ptr2, 
+test11.cpp: In member function 'void Object1::func4(Data1*, Data1*)':
+test11.cpp:44:28: warning: Using parameter 'ptr1' without checking for null pointer
+         if (!ptr1 && ptr1->val == 100)
+                            ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst 100: ptr1, ptr2, 
+return_expr : ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+component_ref : ptr1, ptr2, 
+test11.cpp:49:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 200;
+               ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst 200: ptr1, ptr2, 
+function_decl func5: 
+statement_list : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_orif_expr : ptr1, ptr2, 
+truth_orif_expr : ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+eq_expr : ptr2, 
+component_ref : ptr2, 
+indirect_ref : ptr2, 
+parm_decl ptr1: ptr2, 
+pointer_type : ptr2, 
+record_type : ptr2, 
+type_decl Data1: ptr2, 
+field_decl val: ptr2, 
+integer_cst 32: ptr2, 
+type_decl Data1: ptr2, 
+integer_cst 64: ptr2, 
+field_decl val: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst 100: ptr2, 
+truth_orif_expr : ptr2, 
+eq_expr : ptr2, 
+parm_decl ptr2: ptr2, 
+pointer_type : ptr2, 
+record_type : ptr2, 
+type_decl Data1: ptr2, 
+field_decl val: ptr2, 
+integer_cst 32: ptr2, 
+type_decl Data1: ptr2, 
+integer_cst 64: ptr2, 
+integer_cst 0: ptr2, 
+eq_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr2: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_cst 200: 
+return_expr : ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_cst 300: 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr2: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_cst 400: 
+function_decl func6: 
+statement_list : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_andif_expr : ptr1, ptr2, 
+truth_orif_expr : ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+eq_expr : ptr2, 
+component_ref : ptr2, 
+indirect_ref : ptr2, 
+parm_decl ptr1: ptr2, 
+pointer_type : ptr2, 
+record_type : ptr2, 
+type_decl Data1: ptr2, 
+field_decl val: ptr2, 
+integer_cst 32: ptr2, 
+type_decl Data1: ptr2, 
+integer_cst 64: ptr2, 
+field_decl val: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst 100: ptr2, 
+truth_orif_expr : ptr1, ptr2, 
+eq_expr : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+eq_expr : ptr1, 
+component_ref : ptr1, 
+indirect_ref : ptr1, 
+parm_decl ptr2: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst 200: ptr1, 
+return_expr : ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+component_ref : ptr1, ptr2, 
+test11.cpp: In member function 'void Object1::func6(Data1*, Data1*)':
+test11.cpp:70:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 300;
+               ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst 300: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+convert_expr : ptr1, ptr2, 
+modify_expr : ptr1, ptr2, 
+component_ref : ptr1, ptr2, 
+test11.cpp:71:15: warning: Using parameter 'ptr2' without checking for null pointer
+         ptr2->val = 400;
+               ^
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst 400: ptr1, ptr2, 
