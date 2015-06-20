@@ -23,6 +23,7 @@
 #include "includes.h"
 
 struct AddrExprNode;
+struct CondExprNode;
 struct EqExprNode;
 struct ModifyExprNode;
 struct NeExprNode;
@@ -49,6 +50,8 @@ namespace Analysis
     void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem &wo);
 
     void analyseTruthAndIfExpr(TruthAndIfExprNode *node, const WalkItem &wi, WalkItem &wo);
+
+    void analyseCondExpr(CondExprNode *node, const WalkItem &wi, WalkItem &wo);
 }
 
 #endif // ANALYSIS_EXPRESSION_H
