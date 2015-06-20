@@ -35,7 +35,6 @@ void parseCleanupStmtNode(CleanupStmtNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
-#ifdef ENABLE_CPPLANG
     node->body = createParseNode(
         node,
         CLEANUP_BODY(node->gccNode),
@@ -48,7 +47,6 @@ void parseCleanupStmtNode(CleanupStmtNode *node)
         node,
         CLEANUP_DECL(node->gccNode),
         "decl"));
-#endif
 }
 
 }

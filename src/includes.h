@@ -45,6 +45,7 @@
 #include "cp/cp-tree.h"
 #else
 #include "c-family/c-common.h"
+#include "custom/fixed-cp-tree.h"
 #endif
 
 #include "diagnostic.h"

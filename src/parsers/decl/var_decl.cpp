@@ -38,9 +38,7 @@ void parseVarDeclNode(VarDeclNode *node)
 
     Log::dump(node);
 
-#ifdef ENABLE_CPPLANG
     setPrintField(node, DECL_THIS_STATIC, isStatic);
-#endif
     setPrintField(node, DECL_REGISTER, isRegister);
     setPrintField(node, TREE_USED, isUsed);
     setPrintField(node, DECL_VIRTUAL_P, isVirtual);

@@ -31,7 +31,6 @@ void parseHandlerNode(HandlerNode *node)
     fillType(node);
     Log::dump(node);
 
-#ifdef ENABLE_CPPLANG
     node->type = createParseNode(
         node,
         HANDLER_TYPE(node->gccNode),
@@ -44,7 +43,6 @@ void parseHandlerNode(HandlerNode *node)
         node,
         HANDLER_BODY(node->gccNode),
         "body");
-#endif
 }
 
 }

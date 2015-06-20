@@ -40,7 +40,7 @@ libastdumper_la_SOURCES = ${SRC}
 libastdumper_la_LDFLAGS = ${SHARED_LDFLAGS}
 libastdumper_la_CXXFLAGS = ${SHARED_CXXFLAGS}
 
-libcppastdumper_la_SOURCES = ${SRC}
+libcppastdumper_la_SOURCES = ${SRC} custom/fixed-cp-tree.h
 libcppastdumper_la_LDFLAGS = ${SHARED_LDFLAGS}
 libcppastdumper_la_CXXFLAGS = ${SHARED_CXXFLAGS} -DENABLE_CPPLANG
 

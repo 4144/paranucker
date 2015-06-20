@@ -38,7 +38,6 @@ void parseDoStmtNode(DoStmtNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
-#ifdef ENABLE_CPPLANG
     node->condition = static_cast<ExprNode*>(createParseNode(
         node,
         DO_COND(node->gccNode),
@@ -48,7 +47,6 @@ void parseDoStmtNode(DoStmtNode *node)
         node,
         DO_BODY(node->gccNode),
         "body");
-#endif
 }
 
 }
