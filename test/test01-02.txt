@@ -1,4 +1,4 @@
-0 function_decl test01.c
+0 function_decl test01.cpp
 1 tree_list 
 2 identifier_node 
 1 function_type 
@@ -27,10 +27,10 @@
 4 tree_list 
 5 void_type 
 6 type_decl <built-in>
-1 result_decl test01.c
+1 result_decl test01.cpp
 2 void_type 
 3 type_decl <built-in>
-1 parm_decl test01.c
+1 parm_decl test01.cpp
 2 pointer_type 
 3 integer_type 
 4 type_decl <built-in>
@@ -38,7 +38,7 @@
 4 integer_cst 
 4 integer_cst 
 2 integer_cst 
-1 parm_decl test01.c
+1 parm_decl test01.cpp
 2 pointer_type 
 3 integer_type 
 4 type_decl <built-in>
@@ -47,12 +47,12 @@
 4 integer_cst 
 2 integer_cst 
 1 statement_list 
-2 cleanup_point_expr test01.c
-3 expr_stmt test01.c
+2 cleanup_point_expr test01.cpp
+3 expr_stmt test01.cpp
 4 convert_expr 
 5 modify_expr 
 6 indirect_ref 
-7 parm_decl test01.c
+7 parm_decl test01.cpp
 8 pointer_type 
 9 integer_type 
 10 type_decl <built-in>
@@ -61,12 +61,12 @@
 10 integer_cst 
 8 integer_cst 
 6 integer_cst 
-2 cleanup_point_expr test01.c
-3 expr_stmt test01.c
+2 cleanup_point_expr test01.cpp
+3 expr_stmt test01.cpp
 4 convert_expr 
 5 modify_expr 
 6 indirect_ref 
-7 parm_decl test01.c
+7 parm_decl test01.cpp
 8 pointer_type 
 9 integer_type 
 10 type_decl <built-in>
@@ -75,10 +75,10 @@
 10 integer_cst 
 8 integer_cst 
 6 integer_cst 
-2 while_stmt test01.c
+2 while_stmt test01.cpp
 3 integer_cst 
 3 statement_list 
-0 function_decl test01.c
+0 function_decl test01.cpp
 1 function_type 
 2 integer_type 
 3 type_decl <built-in>
@@ -88,7 +88,7 @@
 2 tree_list 
 3 void_type 
 4 type_decl <built-in>
-1 result_decl test01.c
+1 result_decl test01.cpp
 2 integer_type 
 3 type_decl <built-in>
 3 integer_cst 
@@ -96,8 +96,8 @@
 3 integer_cst 
 2 integer_cst 
 1 statement_list 
-2 bind_expr test01.c
-3 var_decl test01.c
+2 bind_expr test01.cpp
+3 var_decl test01.cpp
 4 integer_cst 
 4 integer_type 
 5 type_decl <built-in>
@@ -105,35 +105,35 @@
 5 integer_cst 
 5 integer_cst 
 3 statement_list 
-4 cleanup_point_expr test01.c
-5 expr_stmt test01.c
+4 cleanup_point_expr test01.cpp
+5 expr_stmt test01.cpp
 6 convert_expr 
-7 call_expr test01.c
+7 call_expr test01.cpp
 8 addr_expr 
-9 function_decl test01.c
+9 function_decl test01.cpp
 8 integer_cst 
 8 integer_cst 
-4 decl_expr test01.c
-5 var_decl test01.c
-4 decl_expr test01.c
-5 var_decl test01.c
+4 decl_expr test01.cpp
+5 var_decl test01.cpp
+4 decl_expr test01.cpp
+5 var_decl test01.cpp
 6 integer_cst 
 6 integer_type 
 7 type_decl <built-in>
 7 integer_cst 
 7 integer_cst 
 7 integer_cst 
-4 cleanup_point_expr test01.c
-5 expr_stmt test01.c
-6 call_expr test01.c
+4 cleanup_point_expr test01.cpp
+5 expr_stmt test01.cpp
+6 call_expr test01.cpp
 7 addr_expr 
-8 function_decl test01.c
+8 function_decl test01.cpp
 7 integer_cst 
 7 addr_expr 
-8 var_decl test01.c
-4 return_expr test01.c
+8 var_decl test01.cpp
+4 return_expr test01.cpp
 5 init_expr 
-6 result_decl test01.c
+6 result_decl test01.cpp
 7 integer_type 
 8 type_decl <built-in>
 8 integer_cst 
@@ -142,11 +142,11 @@
 7 integer_cst 
 6 integer_cst 
 3 block 
-4 var_decl test01.c
-4 var_decl test01.c
-2 return_expr test01.c
+4 var_decl test01.cpp
+4 var_decl test01.cpp
+2 return_expr test01.cpp
 3 init_expr 
-4 result_decl test01.c
+4 result_decl test01.cpp
 5 integer_type 
 6 type_decl <built-in>
 6 integer_cst 
@@ -154,7 +154,7 @@
 6 integer_cst 
 5 integer_cst 
 4 integer_cst 
-0 function_decl test01.c
+0 function_decl test01.cpp
 1 function_type 
 2 void_type 
 3 type_decl <built-in>
@@ -173,26 +173,26 @@
 4 tree_list 
 5 void_type 
 6 type_decl <built-in>
-1 result_decl test01.c
+1 result_decl test01.cpp
 2 void_type 
 3 type_decl <built-in>
-1 parm_decl test01.c
+1 parm_decl test01.cpp
 2 integer_type 
 3 type_decl <built-in>
 3 integer_cst 
 3 integer_cst 
 3 integer_cst 
 2 integer_cst 
-1 parm_decl test01.c
+1 parm_decl test01.cpp
 2 integer_type 
 3 type_decl <built-in>
 3 integer_cst 
 3 integer_cst 
 3 integer_cst 
 2 integer_cst 
-1 if_stmt test01.c
-2 eq_expr test01.c
-3 parm_decl test01.c
+1 if_stmt test01.cpp
+2 eq_expr test01.cpp
+3 parm_decl test01.cpp
 4 integer_type 
 5 type_decl <built-in>
 5 integer_cst 
@@ -200,34 +200,34 @@
 5 integer_cst 
 4 integer_cst 
 3 integer_cst 
-2 cleanup_point_expr test01.c
-3 expr_stmt test01.c
+2 cleanup_point_expr test01.cpp
+3 expr_stmt test01.cpp
 4 convert_expr 
 5 modify_expr 
-6 parm_decl test01.c
+6 parm_decl test01.cpp
 7 integer_type 
 8 type_decl <built-in>
 8 integer_cst 
 8 integer_cst 
 8 integer_cst 
 7 integer_cst 
-6 mult_expr test01.c
-7 plus_expr test01.c
-8 parm_decl test01.c
+6 mult_expr test01.cpp
+7 plus_expr test01.cpp
+8 parm_decl test01.cpp
 9 integer_type 
 10 type_decl <built-in>
 10 integer_cst 
 10 integer_cst 
 10 integer_cst 
 9 integer_cst 
-8 parm_decl test01.c
+8 parm_decl test01.cpp
 9 integer_type 
 10 type_decl <built-in>
 10 integer_cst 
 10 integer_cst 
 10 integer_cst 
 9 integer_cst 
-7 var_decl test01.c
+7 var_decl test01.cpp
 8 integer_cst 
 8 integer_cst 
 8 integer_type 
@@ -235,11 +235,11 @@
 9 integer_cst 
 9 integer_cst 
 9 integer_cst 
-2 cleanup_point_expr test01.c
-3 expr_stmt test01.c
+2 cleanup_point_expr test01.cpp
+3 expr_stmt test01.cpp
 4 convert_expr 
 5 modify_expr 
-6 parm_decl test01.c
+6 parm_decl test01.cpp
 7 integer_type 
 8 type_decl <built-in>
 8 integer_cst 
@@ -247,7 +247,7 @@
 8 integer_cst 
 7 integer_cst 
 6 integer_cst 
-0 function_decl test01.c
+0 function_decl test01.cpp
 1 function_type 
 2 integer_type 
 3 type_decl <built-in>
@@ -272,21 +272,21 @@
 4 tree_list 
 5 void_type 
 6 type_decl <built-in>
-1 result_decl test01.c
+1 result_decl test01.cpp
 2 integer_type 
 3 type_decl <built-in>
 3 integer_cst 
 3 integer_cst 
 3 integer_cst 
 2 integer_cst 
-1 parm_decl test01.c
+1 parm_decl test01.cpp
 2 integer_type 
 3 type_decl <built-in>
 3 integer_cst 
 3 integer_cst 
 3 integer_cst 
 2 integer_cst 
-1 parm_decl test01.c
+1 parm_decl test01.cpp
 2 pointer_type 
 3 pointer_type 
 4 pointer_type 
@@ -296,8 +296,8 @@
 6 integer_cst 
 6 integer_cst 
 2 integer_cst 
-1 bind_expr test01.c
-2 var_decl test01.c
+1 bind_expr test01.cpp
+2 var_decl test01.cpp
 3 integer_cst 
 3 integer_cst 
 3 integer_type 
@@ -306,12 +306,12 @@
 4 integer_cst 
 4 integer_cst 
 2 statement_list 
-3 cleanup_point_expr test01.c
-4 decl_expr test01.c
-5 var_decl test01.c
-3 cleanup_point_expr test01.c
-4 decl_expr test01.c
-5 var_decl test01.c
+3 cleanup_point_expr test01.cpp
+4 decl_expr test01.cpp
+5 var_decl test01.cpp
+3 cleanup_point_expr test01.cpp
+4 decl_expr test01.cpp
+5 var_decl test01.cpp
 6 integer_cst 
 6 integer_cst 
 6 integer_type 
@@ -319,11 +319,11 @@
 7 integer_cst 
 7 integer_cst 
 7 integer_cst 
-3 cleanup_point_expr test01.c
-4 expr_stmt test01.c
+3 cleanup_point_expr test01.cpp
+4 expr_stmt test01.cpp
 5 convert_expr 
 6 modify_expr 
-7 var_decl test01.c
+7 var_decl test01.cpp
 8 integer_cst 
 8 integer_cst 
 8 integer_type 
@@ -331,33 +331,33 @@
 9 integer_cst 
 9 integer_cst 
 9 integer_cst 
-7 var_decl test01.c
-3 cleanup_point_expr test01.c
-4 expr_stmt test01.c
-5 call_expr test01.c
+7 var_decl test01.cpp
+3 cleanup_point_expr test01.cpp
+4 expr_stmt test01.cpp
+5 call_expr test01.cpp
 6 addr_expr 
-7 function_decl test01.c
+7 function_decl test01.cpp
 6 integer_cst 
 6 integer_cst 
-3 if_stmt test01.c
-4 eq_expr test01.c
-5 var_decl test01.c
+3 if_stmt test01.cpp
+4 eq_expr test01.cpp
+5 var_decl test01.cpp
 5 integer_cst 
-4 return_expr test01.c
+4 return_expr test01.cpp
 5 init_expr 
-6 result_decl test01.c
+6 result_decl test01.cpp
 7 integer_type 
 8 type_decl <built-in>
 8 integer_cst 
 8 integer_cst 
 8 integer_cst 
 7 integer_cst 
-6 plus_expr test01.c
-7 var_decl test01.c
-7 var_decl test01.c
-4 return_expr test01.c
+6 plus_expr test01.cpp
+7 var_decl test01.cpp
+7 var_decl test01.cpp
+4 return_expr test01.cpp
 5 init_expr 
-6 result_decl test01.c
+6 result_decl test01.cpp
 7 integer_type 
 8 type_decl <built-in>
 8 integer_cst 
@@ -366,9 +366,9 @@
 7 integer_cst 
 6 integer_cst 
 2 block 
-3 var_decl test01.c
-3 var_decl test01.c
-0 function_decl test01.c
+3 var_decl test01.cpp
+3 var_decl test01.cpp
+0 function_decl test01.cpp
 1 function_type 
 2 integer_type 
 3 type_decl <built-in>
@@ -385,14 +385,14 @@
 3 tree_list 
 4 void_type 
 5 type_decl <built-in>
-1 result_decl test01.c
+1 result_decl test01.cpp
 2 integer_type 
 3 type_decl <built-in>
 3 integer_cst 
 3 integer_cst 
 3 integer_cst 
 2 integer_cst 
-1 parm_decl test01.c
+1 parm_decl test01.cpp
 2 pointer_type 
 3 integer_type 
 4 type_decl <built-in>
@@ -400,9 +400,9 @@
 4 integer_cst 
 4 integer_cst 
 2 integer_cst 
-1 return_expr test01.c
+1 return_expr test01.cpp
 2 init_expr 
-3 result_decl test01.c
+3 result_decl test01.cpp
 4 integer_type 
 5 type_decl <built-in>
 5 integer_cst 
@@ -410,7 +410,7 @@
 5 integer_cst 
 4 integer_cst 
 3 convert_expr 
-4 parm_decl test01.c
+4 parm_decl test01.cpp
 5 pointer_type 
 6 integer_type 
 7 type_decl <built-in>
@@ -418,7 +418,7 @@
 7 integer_cst 
 7 integer_cst 
 5 integer_cst 
-0 function_decl test01.c
+0 function_decl test01.cpp
 1 function_type 
 2 void_type 
 3 type_decl <built-in>
@@ -428,10 +428,10 @@
 3 tree_list 
 4 void_type 
 5 type_decl <built-in>
-1 result_decl test01.c
+1 result_decl test01.cpp
 2 void_type 
 3 type_decl <built-in>
-1 parm_decl test01.c
+1 parm_decl test01.cpp
 2 integer_type 
 3 type_decl <built-in>
 3 integer_cst 

@@ -1,12 +1,12 @@
-test06.c: In function 'void func1(int*)':
-test06.c:12:13: warning: Using parameter 'a' without checking for null pointer
+test06.cpp: In function 'void func1(int*)':
+test06.cpp:12:13: warning: Using parameter 'a' without checking for null pointer
      *a = 100;
              ^
-test06.c: In function 'void func5(int*)':
-test06.c:45:13: warning: Using parameter 'a' without checking for null pointer
+test06.cpp: In function 'void func5(int*)':
+test06.cpp:45:13: warning: Using parameter 'a' without checking for null pointer
      *a = 600;
              ^
-test06.c: In function 'void func7(int*)':
-test06.c:70:16: warning: Using parameter 'aptr' without checking for null pointer
+test06.cpp: In function 'void func7(int*)':
+test06.cpp:70:16: warning: Using parameter 'aptr' without checking for null pointer
      *aptr = 800;
                 ^
