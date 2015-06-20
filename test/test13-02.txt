@@ -1,0 +1,7 @@
+func1: pointer_type b, 
+func2: pointer_type b, 
+func3: pointer_type b, 
+func5: pointer_type b, 
+func6: pointer_type b, 
+func7: pointer_type b, 
+func8: pointer_type bptr, 

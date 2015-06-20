@@ -11,7 +11,8 @@ TESTS09 = test09-01 test09-02 test09-03 test09-04
 TESTS10 = test10-01 test10-02 test10-03 test10-04
 TESTS11 = test11-01 test11-02 test11-03 test11-04
 TESTS12 = test12-01 test12-02 test12-03 test12-04
-ALLTESTS = test01 test02 test03 test04 test05 test06 test07 test08 test09 test10 test11 test12 ${TESTS01} ${TESTS02} ${TESTS03} ${TESTS04} ${TESTS05} ${TESTS06} ${TESTS07} ${TESTS08} ${TESTS09} ${TESTS10} ${TESTS11} ${TESTS12}
+TESTS13 = test13-01 test13-02 test13-03 test13-04 test13-05
+ALLTESTS = test01 test02 test03 test04 test05 test06 test07 test08 test09 test10 test11 test12 test13 ${TESTS01} ${TESTS02} ${TESTS03} ${TESTS04} ${TESTS05} ${TESTS06} ${TESTS07} ${TESTS08} ${TESTS09} ${TESTS10} ${TESTS11} ${TESTS12} ${TESTS13}
 
 .PHONY: ${ALLTESTS} ${CRASHES} all crashes
 
@@ -20,7 +21,10 @@ CXX := g++-5
 MAKEFLAGS += --jobs=9
 
 PLUGINXX = ../build/src/.libs/cppastdumper.so
+PLUGIN = ../build/src/.libs/astdumper.so
+
 CMDXX = LANG=C ${CXX} -c -fplugin=${PLUGINXX} -fplugin-arg-cppastdumper-command=${1} ${2} -o ../build/${3}.out 2>${3}
+CMD = LANG=C ${CC} -c -fplugin=${PLUGIN} -fplugin-arg-astdumper-command=${1} ${2} -o ../build/${3}.out 2>${3}
 
 all: ${ALLTESTS} ${CRASHES}
 tests: ${ALLTESTS}
@@ -139,6 +143,18 @@ test12-03:
 	$(call CMDXX,dumpnullpointers,test12.cpp,test12-03.txt)
 test12-04:
 	$(call CMDXX,detectnullpointers,test12.cpp,test12-04.txt)
+
+test13: ${TESTS13}
+test13-01:
+	$(call CMD,dump,test13.c,test13-01.txt)
+test13-02:
+	$(call CMD,findargs,test13.c,test13-02.txt)
+test13-03:
+	$(call CMD,detectnullpointers,test13.c,test13-03.txt)
+test13-04:
+	$(call CMD,dumpunsupported,test13.c,test13-04.txt)
+test13-05:
+	$(call CMD,dumpnullpointers,test13.c,test13-05.txt)
 
 crashtest01:
 	$(call CMDXX,dump,crashtest01.h,crashtest01-01.txt)
