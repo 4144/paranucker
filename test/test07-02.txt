@@ -21107,46 +21107,13 @@
 10 var_decl /usr/include/c++/5/bits/vector.tcc
 5 block 
 6 var_decl /usr/include/c++/5/bits/vector.tcc
-6 block 
-7 var_decl /usr/include/c++/5/bits/vector.tcc
-8 integer_cst 
-8 integer_type 
-9 type_decl /usr/include/c++/5/bits/stl_vector.h
-9 integer_cst 
-9 integer_cst 
-7 var_decl /usr/include/c++/5/bits/vector.tcc
-8 integer_cst 
-8 integer_type 
-9 type_decl /usr/include/c++/5/bits/stl_vector.h
-9 integer_cst 
-9 integer_cst 
-7 var_decl /usr/include/c++/5/bits/vector.tcc
-8 integer_cst 
-8 pointer_type 
-9 type_decl /usr/include/c++/5/bits/stl_vector.h
-9 pointer_type 
-10 record_type 
-11 type_decl test07.cpp
-11 field_decl test07.cpp
-12 integer_cst 
-11 field_decl test07.cpp
-12 integer_cst 
-11 type_decl test07.cpp
-7 var_decl /usr/include/c++/5/bits/vector.tcc
-8 integer_cst 
-8 var_decl /usr/include/c++/5/bits/vector.tcc
-8 pointer_type 
-9 type_decl /usr/include/c++/5/bits/stl_vector.h
-9 pointer_type 
-10 record_type 
-11 type_decl test07.cpp
-11 field_decl test07.cpp
-12 integer_cst 
-11 field_decl test07.cpp
-12 integer_cst 
-11 type_decl test07.cpp
 4 bind_expr /usr/include/c++/5/bits/vector.tcc
 5 var_decl /usr/include/c++/5/bits/vector.tcc
+6 integer_cst 
+6 integer_type 
+7 type_decl /usr/include/c++/5/bits/stl_vector.h
+7 integer_cst 
+7 integer_cst 
 5 statement_list 
 6 decl_expr /usr/include/c++/5/bits/vector.tcc
 7 var_decl /usr/include/c++/5/bits/vector.tcc
@@ -21193,6 +21160,11 @@
 13 string_cst 
 6 decl_expr /usr/include/c++/5/bits/vector.tcc
 7 var_decl /usr/include/c++/5/bits/vector.tcc
+8 integer_cst 
+8 integer_type 
+9 type_decl /usr/include/c++/5/bits/stl_vector.h
+9 integer_cst 
+9 integer_cst 
 6 cleanup_point_expr /usr/include/c++/5/bits/vector.tcc
 7 expr_stmt /usr/include/c++/5/bits/vector.tcc
 8 convert_expr 
@@ -21271,6 +21243,17 @@
 18 integer_cst 
 6 decl_expr /usr/include/c++/5/bits/vector.tcc
 7 var_decl /usr/include/c++/5/bits/vector.tcc
+8 integer_cst 
+8 pointer_type 
+9 type_decl /usr/include/c++/5/bits/stl_vector.h
+9 pointer_type 
+10 record_type 
+11 type_decl test07.cpp
+11 field_decl test07.cpp
+12 integer_cst 
+11 field_decl test07.cpp
+12 integer_cst 
+11 type_decl test07.cpp
 6 cleanup_point_expr /usr/include/c++/5/bits/vector.tcc
 7 expr_stmt /usr/include/c++/5/bits/vector.tcc
 8 convert_expr 
@@ -21318,6 +21301,18 @@
 12 var_decl /usr/include/c++/5/bits/vector.tcc
 6 decl_expr /usr/include/c++/5/bits/vector.tcc
 7 var_decl /usr/include/c++/5/bits/vector.tcc
+8 integer_cst 
+8 var_decl /usr/include/c++/5/bits/vector.tcc
+8 pointer_type 
+9 type_decl /usr/include/c++/5/bits/stl_vector.h
+9 pointer_type 
+10 record_type 
+11 type_decl test07.cpp
+11 field_decl test07.cpp
+12 integer_cst 
+11 field_decl test07.cpp
+12 integer_cst 
+11 type_decl test07.cpp
 6 try_block /usr/include/c++/5/bits/vector.tcc
 7 statement_list 
 8 cleanup_point_expr /usr/include/c++/5/bits/vector.tcc
@@ -22223,11 +22218,6 @@
 3 block 
 4 block 
 5 var_decl /usr/include/c++/5/bits/vector.tcc
-5 block 
-6 var_decl /usr/include/c++/5/bits/vector.tcc
-6 var_decl /usr/include/c++/5/bits/vector.tcc
-6 var_decl /usr/include/c++/5/bits/vector.tcc
-6 var_decl /usr/include/c++/5/bits/vector.tcc
 4 block 
 5 var_decl /usr/include/c++/5/bits/vector.tcc
 5 var_decl /usr/include/c++/5/bits/vector.tcc
@@ -22237,11 +22227,6 @@
 3 block 
 4 block 
 5 var_decl /usr/include/c++/5/bits/vector.tcc
-5 block 
-6 var_decl /usr/include/c++/5/bits/vector.tcc
-6 var_decl /usr/include/c++/5/bits/vector.tcc
-6 var_decl /usr/include/c++/5/bits/vector.tcc
-6 var_decl /usr/include/c++/5/bits/vector.tcc
 4 block 
 5 var_decl /usr/include/c++/5/bits/vector.tcc
 5 var_decl /usr/include/c++/5/bits/vector.tcc
