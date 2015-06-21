@@ -44,7 +44,5 @@ libcppastdumper_la_SOURCES = ${SRC} custom/fixed-cp-tree.h
 libcppastdumper_la_LDFLAGS = ${SHARED_LDFLAGS}
 libcppastdumper_la_CXXFLAGS = ${SHARED_CXXFLAGS} -DENABLE_CPPLANG
 
-all-local: libastdumper.la  libcppastdumper.la
-	cp .libs/libastdumper.so .libs/astdumper.so
-	cp .libs/libcppastdumper.so .libs/cppastdumper.so
+all-local: libastdumper.la libcppastdumper.la
 	echo done

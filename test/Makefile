@@ -25,8 +25,8 @@ CC := gcc-5
 CXX := g++-5
 MAKEFLAGS += --jobs=9
 
-PLUGINXX = ../build/src/.libs/cppastdumper.so
-PLUGIN = ../build/src/.libs/astdumper.so
+PLUGINXX = ../cppastdumper.so
+PLUGIN = ../astdumper.so
 
 CMDXX = LANG=C ${CXX} -c -fplugin=${PLUGINXX} -fplugin-arg-cppastdumper-command=${1} ${2} -o ../build/${3}.out 2>${3}
 CMD = LANG=C ${CC} -c -fplugin=${PLUGIN} -fplugin-arg-astdumper-command=${1} ${2} -o ../build/${3}.out 2>${3}
