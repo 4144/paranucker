@@ -69,14 +69,16 @@ void parseBlockNode(BlockNode *node)
             "sub block")));
     }
 
+/*
     FOR_CHAIN(node->gccNode, it, BLOCK_CHAIN, BLOCK_CHAIN)
     {
         node->chain.push_back(createParseNode(
             node,
             it,
-            "block chain"));
+            "block chain",
+            false));
     }
-
+*/
     FOR_CHAIN(node->gccNode, it, BLOCK_FRAGMENT_CHAIN, BLOCK_FRAGMENT_CHAIN)
     {
         (createParseNode(
