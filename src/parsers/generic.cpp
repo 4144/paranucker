@@ -56,6 +56,18 @@ Node *createParseNode(Node *parent,
         return nullptr;
     }
 
+    if (allocations > 1000000)
+    {
+        fatal_error(0, "Plugin error. Infinite loop detected 1");
+        return nullptr;
+    }
+
+    if (parent && parent->indent > 30000)
+    {
+        fatal_error(0, "Plugin error. Infinite loop detected 2");
+        return nullptr;
+    }
+
     Node *node = nullptr;
     switch (TREE_CODE(gccNode))
     {
