@@ -262,7 +262,7 @@ void analyseCondExpr(CondExprNode *node, const WalkItem &wi, WalkItem &wo)
     // need check for cleanExpr?
     intersectNonNullChecked(wo, wo2, wo3);
 
-    wo.removeNullVars.clear();
+    //wo.removeNullVars.clear();
 
     if (wo2.isReturned)
     {
@@ -333,7 +333,7 @@ void analyseCompoundExpr(CompoundExprNode *node, const WalkItem &wi, WalkItem &w
         mergeNonNullChecked(wo, wo2);
     }
 
-    wo.removeNullVars.clear();
+    //wo.removeNullVars.clear();
 
     wo.cleanExpr = true;
     wo.stopWalking = true;
