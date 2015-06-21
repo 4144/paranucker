@@ -34,7 +34,8 @@ In directory [examples](examples) present two examples one for C++ and other for
 Ast Dumper support one plugin paramater named -fplugin-arg-astdumper-command or -fplugin-arg-cppastdumper-command depend what you using C or C++
 
 Example:
- gcc-5 -fplugin=../astdumper.so -fplugin-arg-astdumper-command=detectnullpointers
+  gcc-5 -fplugin=../astdumper.so -fplugin-arg-astdumper-command=detectnullpointers
+
 
 Known parameter values:
 

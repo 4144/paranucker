@@ -35,7 +35,8 @@
 Ast Dumper поддерживает один параметр с именем -fplugin-arg-astdumper-command или -fplugin-arg-cppastdumper-command в зависимости от того, что вы используется C или C++.
 
 Пример:
- gcc-5 -fplugin=../astdumper.so -fplugin-arg-astdumper-command=detectnullpointers
+  gcc-5 -fplugin=../astdumper.so -fplugin-arg-astdumper-command=detectnullpointers
+
 
 Возможные значения параметра:
 
