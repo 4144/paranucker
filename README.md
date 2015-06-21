@@ -1,6 +1,6 @@
 # Ast Dumper - static code analyser for C/C++
 
-This is gcc plugin for dump AST tree and search possible null pointers.
+This is [gcc](gcc.gnu.org) plugin for dump AST tree and search possible null pointers.
 
 Version 1.0       Date: 2015-06-22
 
@@ -24,7 +24,7 @@ Version 1.0       Date: 2015-06-22
    and cppastdumper.so for g++ binary
 
 ## Usage examples
-In directory [examples] present two examples one for C++ and other for C.
+In directory [examples](examples) present two examples one for C++ and other for C.
 
 
-Readme on russian [README.ru.md]
+Readme on russian [README.ru.md](README.ru.md)
