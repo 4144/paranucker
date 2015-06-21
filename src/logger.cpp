@@ -221,6 +221,20 @@ void dumpWI(Node *const node,
     {
         Log::log("%s, ", (*it).c_str());
     }
+    Log::log(" checkNullVars:");
+    FOR_EACH (std::set<std::string>::const_iterator,
+              it,
+              wi.checkNullVars)
+    {
+        Log::log("%s, ", (*it).c_str());
+    }
+    Log::log(" removeNullVars:");
+    FOR_EACH (std::set<std::string>::const_iterator,
+              it,
+              wi.removeNullVars)
+    {
+        Log::log("%s, ", (*it).c_str());
+    }
     Log::log("\n");
 }
 
