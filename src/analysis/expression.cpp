@@ -26,6 +26,7 @@
 #include "analysis/walkitem.h"
 
 #include "nodes/expr/addr_expr.h"
+#include "nodes/expr/compound_expr.h"
 #include "nodes/expr/cond_expr.h"
 #include "nodes/expr/eq_expr.h"
 #include "nodes/expr/modify_expr.h"
@@ -298,6 +299,42 @@ void analyseCondExpr(CondExprNode *node, const WalkItem &wi, WalkItem &wo)
     }
 
     wo.isReturned = false;
+    wo.cleanExpr = true;
+    wo.stopWalking = true;
+    wo.uselessExpr = false;
+    Log::dumpWI(node, "wo out ", wo);
+}
+
+// expression like this (expr1, expr2, ..., exprn). Only have sense exprn.
+void analyseCompoundExpr(CompoundExprNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    // need one arg for check
+    if (node->args.size() < 1 || command == FindArgs)
+        return;
+
+    Log::dumpWI(node, "wo in ", wo);
+
+    const size_t sz = node->args.size();
+    // walking and ignoring results for all args except last
+    for (size_t f = 0; f < sz - 1; f ++)
+    {
+        WalkItem wo1 = wo;
+        walkTree(node->args[f], wi, wo1);
+        Log::dumpWI(node, "wo1 ", wo1);
+    }
+    WalkItem wo2 = wo;
+    walkTree(node->args[sz - 1], wi, wo2);
+    Log::dumpWI(node, "wo2 ", wo2);
+
+    // probably condition wrong
+    if (wo2.cleanExpr)
+    {
+        mergeNullChecked(wo, wo2);
+        mergeNonNullChecked(wo, wo2);
+    }
+
+    wo.removeNullVars.clear();
+
     wo.cleanExpr = true;
     wo.stopWalking = true;
     wo.uselessExpr = false;
