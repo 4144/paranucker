@@ -1,0 +1,13 @@
+func1: pointer_type ptr1, pointer_type ptr2, 
+test17.c: In function 'func2':
+test17.c:18:14: warning: comparison between pointer and integer
+     if (ptr1 == (123, 0))
+              ^
+func2: pointer_type ptr1, pointer_type ptr2, 
+test17.c: In function 'func3':
+test17.c:26:14: warning: comparison between pointer and integer
+     if (ptr1 != (123, 0))
+              ^
+func3: pointer_type ptr1, pointer_type ptr2, 
+func4: pointer_type ptr1, pointer_type ptr2, 
+func5: pointer_type ptr1, pointer_type ptr2, 
