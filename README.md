@@ -37,8 +37,9 @@ Example:
  gcc-5 -fplugin=../astdumper.so -fplugin-arg-astdumper-command=detectnullpointers
 
 Known parameter values:
+
 | name               | action                                                |
-| ------------------ | ----------------------------------------------------- |
+|:-------------------|:------------------------------------------------------|
 | parse              | silently parse AST                                    |
 | dump               | dump whole AST                                        |
 | smalldump          | small AST dump without indention                      |
