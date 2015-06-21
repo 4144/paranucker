@@ -36,7 +36,7 @@ int plugin_is_GPL_compatible = 1;
 
 struct Node;
 
-Command command = Command::Dump;
+Command command = Command::DetectNullPointers;
 std::map<tree, Node*> foundNodesMap;
 std::map<Node*, Node*> updateNodesMap;
 
