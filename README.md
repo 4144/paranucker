@@ -26,5 +26,8 @@ Version 1.0       Date: 2015-06-22
 ## Usage examples
 In directory [examples](examples) present two examples one for C++ and other for C.
 
+## Real world usage examples
+ - [ManaPlus](http://manaplus.org/)
+ - [Hercules](http://herc.ws/)
 
 Readme on russian [README.ru.md](README.ru.md)

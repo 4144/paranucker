@@ -26,3 +26,7 @@
 
 ## Примеры использования
 В директории [examples](examples) находится два примера для C++ и C.
+
+## Использование в реальных программах
+ - [ManaPlus](http://manaplus.org/)
+ - [Hercules](http://herc.ws/)
