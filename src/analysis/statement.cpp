@@ -61,6 +61,7 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
     {
         wi2.checkNullVars.erase(*it);
     }
+    std::set<std::string> tmpVars = wo.removeNullVars;
     walkTree(node->thenNode, wi2, wo);
 
     wo.removeNullVars.clear();
@@ -76,7 +77,7 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
     }
     walkTree(node->elseNode, wi2, wo);
 
-    wo.removeNullVars.clear();
+    wo.removeNullVars = tmpVars;
 
 //    if (returned && wco.cleanExpr && !wco.uselessExpr)
     if (returned && !wco.uselessExpr)
