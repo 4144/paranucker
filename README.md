@@ -30,4 +30,22 @@ In directory [examples](examples) present two examples one for C++ and other for
  - [ManaPlus](http://manaplus.org/)
  - [Hercules](http://herc.ws/)
 
+## Advanced usage
+Ast Dumper support one plugin paramater named -fplugin-arg-astdumper-command or -fplugin-arg-cppastdumper-command depend what you using C or C++
+
+Example:
+ gcc-5 -fplugin=../astdumper.so -fplugin-arg-astdumper-command=detectnullpointers
+
+Known parameter values:
+ | name               | action                                                |
+ | ------------------ | ----------------------------------------------------- |
+ | parse              | silently parse AST                                    |
+ | dump               | dump whole AST                                        |
+ | smalldump          | small AST dump without indention                      |
+ | memoryusage        | show how many nodes parsed                            |
+ | dumpunsupported    | dump nodes what cant be parsed                        |
+ | findargs           | dump functions and argument names what can be checked |
+ | detectnullpointers | search null pointers                                  |
+ | dumpnullpointers   | search null pointers and dump some debug info         |
+
 Readme on russian [README.ru.md](README.ru.md)
