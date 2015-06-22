@@ -41,13 +41,16 @@
 namespace Analysis
 {
 
-void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
+void analyseCondition(Node *node,
+                      Node *condNode,
+                      Node *thenNode,
+                      Node *elseNode,
+                      const WalkItem &wi,
+                      WalkItem &wo)
 {
-    // need condition node
-    if (!node->condition || command == FindArgs)
-        return;
-
-    Node *condNode = skipNop(node->condition);
+    condNode = skipNop(condNode);
+    thenNode = skipNop(thenNode);
+    elseNode = skipNop(elseNode);
 
     WalkItem wci = wi;
     WalkItem wco = wo;
@@ -63,9 +66,9 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
     Log::dumpWI(node, "wi2 then ", wi2);
 
     reportParmDeclNullPointer(node,
-        node->thenNode,
+        thenNode,
         wi2);
-    walkTree(node->thenNode, wi2, wo2);
+    walkTree(thenNode, wi2, wo2);
     Log::dumpWI(node, "wo2 then ", wo2);
 
     WalkItem wi3 = wi;
@@ -75,9 +78,9 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
     Log::dumpWI(node, "wi3 else ", wi3);
 
     reportParmDeclNullPointer(node,
-        node->elseNode,
+        elseNode,
         wi3);
-    walkTree(node->elseNode, wi3, wo3);
+    walkTree(elseNode, wi3, wo3);
     Log::dumpWI(node, "wo3 else ", wo3);
 
     // probably condition wrong
@@ -129,6 +132,15 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
     wo.cleanExpr = true;
     wo.stopWalking = true;
     wo.uselessExpr = false;
+}
+
+void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    // need condition node
+    if (!node->condition || command == FindArgs)
+        return;
+
+    analyseCondition(node, node->condition, node->thenNode, node->elseNode, wi, wo);
 }
 
 }

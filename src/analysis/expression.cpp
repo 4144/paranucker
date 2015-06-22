@@ -23,6 +23,7 @@
 #include "logger.h"
 
 #include "analysis/analysis.h"
+#include "analysis/statement.h"
 #include "analysis/walkitem.h"
 
 #include "nodes/expr/addr_expr.h"
@@ -224,92 +225,12 @@ void analyseCondExpr(CondExprNode *node, const WalkItem &wi, WalkItem &wo)
     if (node->args.size() < 3 || command == FindArgs)
         return;
 
-    Log::dumpWI(node, "wo in ", wo);
-    WalkItem wo1 = wo;
-    WalkItem wo2 = wo;
-    WalkItem wo3 = wo;
-
-    // walk condition
-    walkTree(node->args[0], wi, wo1);
-    Log::dumpWI(node, "wo1 ", wo1);
-    WalkItem wi2 = wi;
-    removeCheckNullVarsSet(wi2, wo1.checkedNonNullVars);
-    wi2.checkNullVars.insert(wo1.checkedNullVars.begin(),
-        wo1.checkedNullVars.end());
-    Log::dumpWI(node, "wi2 ", wi2);
-
-    reportParmDeclNullPointer(node,
+    analyseCondition(node,
+        node->args[0],
         node->args[1],
-        wi2);
-    // walk true expr
-    walkTree(node->args[1], wi2, wo2);
-    Log::dumpWI(node, "wo2 ", wo2);
-
-    WalkItem wi3 = wi;
-    removeCheckNullVarsSet(wi3, wo1.checkedNullVars);
-    wi3.checkNullVars.insert(wo1.checkedNonNullVars.begin(),
-        wo1.checkedNonNullVars.end());
-    Log::dumpWI(node, "wi3 ", wi3);
-
-    reportParmDeclNullPointer(node,
         node->args[2],
-        wi3);
-    // walk true expr
-    walkTree(node->args[2], wi3, wo3);
-    Log::dumpWI(node, "wo3 ", wo3);
-
-    // probably condition wrong
-    if (wo2.cleanExpr)
-        mergeNullChecked(wo, wo2);
-    // probably condition wrong
-    if (wo3.cleanExpr)
-        mergeNullChecked(wo, wo3);
-    // need check for cleanExpr?
-    intersectNonNullChecked(wo, wo2, wo3);
-
-    //wo.removeNullVars.clear();
-
-    if (wo2.isReturned)
-    {
-        // add variable for ignore for all parent nodes except special like IF_STMT
-        FOR_EACH (std::set<std::string>::const_iterator,
-                  it,
-                  wo1.checkedNullVars)
-        {
-            wo.removeNullVars.insert(*it);
-            wo.checkNullVars.erase(*it);
-            wo.addNullVars.erase(*it);
-        }
-    }
-    if (wo3.isReturned)
-    {
-        // add variable for ignore for all parent nodes except special like IF_STMT
-        FOR_EACH (std::set<std::string>::const_iterator,
-                  it,
-                  wo1.checkedNonNullVars)
-        {
-            wo.removeNullVars.insert(*it);
-            wo.checkNullVars.erase(*it);
-            wo.addNullVars.erase(*it);
-        }
-    }
-
-    if (wo2.isReturned && wo3.isReturned)
-    {
-        // add variable for ignore for all parent nodes except special like IF_STMT
-        FOR_EACH (std::set<std::string>::const_iterator,
-                  it,
-                  wo.checkNullVars)
-        {
-            wo.removeNullVars.insert(*it);
-        }
-    }
-
-    wo.isReturned = false;
-    wo.cleanExpr = true;
-    wo.stopWalking = true;
-    wo.uselessExpr = false;
-    Log::dumpWI(node, "wo out ", wo);
+        wi,
+        wo);
 }
 
 // expression like this (expr1, expr2, ..., exprn). Only have sense exprn.

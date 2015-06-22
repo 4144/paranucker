@@ -23,11 +23,21 @@
 #include "includes.h"
 
 struct IfStmtNode;
+struct Node;
 struct WalkItem;
 
 namespace Analysis
 {
-    void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo);
+    void analyseCondition(Node *node,
+                          Node *condNode,
+                          Node *thenNode,
+                          Node *elseNode,
+                          const WalkItem &wi,
+                          WalkItem &wo);
+
+    void analyseIfStmt(IfStmtNode *node,
+                       const WalkItem &wi,
+                       WalkItem &wo);
 }
 
 #endif // ANALYSIS_STATEMENT_H
