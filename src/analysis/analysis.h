@@ -45,6 +45,10 @@ namespace Analysis
     bool checkForReport(Node *node,
                         const WalkItem &wi);
 
+    void addLinkedVar(WalkItem &wi,
+                      const std::string &parent,
+                      const std::string &var);
+
     void removeCheckNullVars(WalkItem &wi);
 
     void removeCheckNullVarsSet(WalkItem &wi,

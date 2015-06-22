@@ -57,18 +57,7 @@ namespace Analysis
 // remove check null vars.
 void removeCheckNullVars(WalkItem &wi)
 {
-    FOR_EACH (std::set<std::string>::const_iterator, it, wi.removeNullVars)
-    {
-        // found var for deletion
-        if (wi.checkNullVars.find(*it) != wi.checkNullVars.end())
-        {
-            wi.checkNullVars.erase(*it);
-        }
-        if (wi.addNullVars.find(*it) != wi.addNullVars.end())
-        {
-            wi.addNullVars.erase(*it);
-        }
-    }
+    removeCheckNullVarsSet(wi, wi.removeNullVars);
 }
 
 void addCheckNullVars(WalkItem &wi, WalkItem &wo)
@@ -88,7 +77,33 @@ void removeCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
         {
             wi.checkNullVars.erase(*it);
         }
+        if (wi.addNullVars.find(*it) != wi.addNullVars.end())
+        {
+            wi.addNullVars.erase(*it);
+        }
+        StringMapSet::const_iterator it2 = wi.linkedVars.find(*it);
+        if (it2 != wi.linkedVars.end())
+        {
+            const StringSet &linked = (*it2).second;
+            FOR_EACH (StringSet::const_iterator, it3, linked)
+            {
+                if (wi.checkNullVars.find(*it3) != wi.checkNullVars.end())
+                {
+                    wi.checkNullVars.erase(*it3);
+                }
+            }
+            wi.linkedVars.erase(*it);
+        }
     }
+}
+
+void addLinkedVar(WalkItem &wi,
+                  const std::string &parent,
+                  const std::string &var)
+{
+    if (wi.linkedVars.find(parent) == wi.linkedVars.end())
+        wi.linkedVars[parent] = std::set<std::string>();
+    wi.linkedVars[parent].insert(var);
 }
 
 void startWalkTree(Node *node)
@@ -108,6 +123,7 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     removeCheckNullVars(wi2);
     addCheckNullVars(wo, wi2);
     addCheckNullVars(wi2, wi2);
+    wi2.linkedVars = wo.linkedVars;
 //    Log::dumpAttr(node, 1, wo.isReturned);
 
     const bool isReturned = wo.isReturned;

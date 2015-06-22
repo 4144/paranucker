@@ -362,6 +362,7 @@ void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo)
         if (checkForReport(initial, wi))
         {
             wo.addNullVars.insert(varDecl->label);
+            addLinkedVar(wo, initial->label, varDecl->label);
         }
     }
     Log::dumpWI(node, "wo out ", wo);

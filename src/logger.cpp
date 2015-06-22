@@ -192,6 +192,15 @@ void dumpAttr(const Node *const node, int num, bool isReturned)
     fprintf(stderr, " walkTree%d: %d\n", num, isReturned ? 1 : 0);
 }
 
+#define dumpWIProps(comment, name) \
+    Log::log(comment); \
+    FOR_EACH (StringSet::const_iterator, \
+              it, \
+              name) \
+    { \
+        Log::log("%s, ", (*it).c_str()); \
+    }
+
 void dumpWI(Node *const node,
             const std::string &name,
             const WalkItem &wi)
@@ -207,40 +216,26 @@ void dumpWI(Node *const node,
         Log::log(" useless");
     if (wi.isReturned)
         Log::log(" returned");
-    Log::log(" checkedNullVars:");
-    FOR_EACH (std::set<std::string>::const_iterator,
+    dumpWIProps(" checkedNullVars:", wi.checkedNullVars)
+    dumpWIProps(" checkedNonNullVars:", wi.checkedNonNullVars)
+    dumpWIProps(" checkNullVars:", wi.checkNullVars)
+    dumpWIProps(" removeNullVars:", wi.removeNullVars)
+    dumpWIProps(" addNullVars:", wi.addNullVars)
+
+    Log::log(" linkedVars:");
+    FOR_EACH (StringMapSet::const_iterator,
               it,
-              wi.checkedNullVars)
+              wi.linkedVars)
     {
-        Log::log("%s, ", (*it).c_str());
-    }
-    Log::log(" checkedNonNullVars:");
-    FOR_EACH (std::set<std::string>::const_iterator,
-              it,
-              wi.checkedNonNullVars)
-    {
-        Log::log("%s, ", (*it).c_str());
-    }
-    Log::log(" checkNullVars:");
-    FOR_EACH (std::set<std::string>::const_iterator,
-              it,
-              wi.checkNullVars)
-    {
-        Log::log("%s, ", (*it).c_str());
-    }
-    Log::log(" removeNullVars:");
-    FOR_EACH (std::set<std::string>::const_iterator,
-              it,
-              wi.removeNullVars)
-    {
-        Log::log("%s, ", (*it).c_str());
-    }
-    Log::log(" addNullVars:");
-    FOR_EACH (std::set<std::string>::const_iterator,
-              it,
-              wi.addNullVars)
-    {
-        Log::log("%s, ", (*it).c_str());
+        Log::log("%s -> (", ((*it).first).c_str());
+        const StringSet &vars = (*it).second;
+        FOR_EACH (StringSet::const_iterator,
+                  it2,
+                  vars)
+        {
+            Log::log("%s, ", (*it2).c_str());
+        }
+        Log::log("), ");
     }
     Log::log("\n");
 }

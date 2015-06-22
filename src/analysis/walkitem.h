@@ -20,8 +20,12 @@
 #ifndef ANALYSIS_WALKITEM_H
 #define ANALYSIS_WALKITEM_H
 
+#include <map>
 #include <set>
 #include <string>
+
+typedef std::set<std::string> StringSet;
+typedef std::map<std::string, StringSet> StringMapSet;
 
 struct WalkItem
 {
@@ -31,6 +35,7 @@ struct WalkItem
         addNullVars(),
         checkedNullVars(),
         checkedNonNullVars(),
+        linkedVars(),
         stopWalking(false),
         isReturned(false),
         cleanExpr(false),
@@ -44,6 +49,7 @@ struct WalkItem
         addNullVars(item.addNullVars),
         checkedNullVars(item.checkedNullVars),
         checkedNonNullVars(item.checkedNonNullVars),
+        linkedVars(item.linkedVars),
         stopWalking(item.stopWalking),
         isReturned(item.isReturned),
         cleanExpr(item.cleanExpr),
@@ -51,11 +57,12 @@ struct WalkItem
     {
     }
 
-    std::set<std::string> checkNullVars;        // need check for usage without null pointer check
-    std::set<std::string> removeNullVars;       // need remove vars from parent checkNullVars
-    std::set<std::string> addNullVars;          // need add vars to parent checkNullVars
-    std::set<std::string> checkedNullVars;      // vars checked for null in expressions
-    std::set<std::string> checkedNonNullVars;   // vars checked for nonnull in expressions
+    StringSet checkNullVars;       // need check for usage without null pointer check
+    StringSet removeNullVars;      // need remove vars from parent checkNullVars
+    StringSet addNullVars;         // need add vars to parent checkNullVars
+    StringSet checkedNullVars;     // vars checked for null in expressions
+    StringSet checkedNonNullVars;  // vars checked for nonnull in expressions
+    StringMapSet linkedVars;       // linked vars. map <parent, set(vars)>
     bool stopWalking;   // stop walking on tree after this node
     bool isReturned;    // set if return present in child nodes
     bool cleanExpr;     // set if expression is only variable check without compound conditions
