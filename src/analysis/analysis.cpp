@@ -145,7 +145,7 @@ bool checkForReport(Node *node,
 {
     node = skipNop(node);
     return node &&
-        node->nodeType == PARM_DECL &&
+        (node->nodeType == PARM_DECL || node->nodeType == VAR_DECL) &&
         wi.checkNullVars.find(node->label) != wi.checkNullVars.end();
 }
 

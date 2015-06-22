@@ -93,7 +93,7 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
         return;
 
 //    Log::dumpWI(node, "NE in ", wo);
-    // PARM_DECL?
+    // PARM_DECL or VAR_DECL?
     Node *node1 = skipNop(node->args[0]);
     // INTEGER_CST?
     Node *node2 = skipNop(node->args[1]);
@@ -101,7 +101,7 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
     // if (var != 0)
     if (node1 &&
         node2 &&
-        node1->nodeType == PARM_DECL &&
+        (node1->nodeType == PARM_DECL || node1->nodeType == VAR_DECL) &&
         node2->nodeType == INTEGER_CST &&
         wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
         node2->label == "0")
@@ -125,14 +125,14 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
         return;
 
     Log::dumpWI(node, "EQ in ", wo);
-    // PARM_DECL?
+    // PARM_DECL or VAR_DECL ?
     Node *node1 = skipNop(node->args[0]);
     // INTEGER_CST?
     Node *node2 = skipNop(node->args[1]);
     // if (var == 0)
     if (node1 &&
         node2 &&
-        node1->nodeType == PARM_DECL &&
+        (node1->nodeType == PARM_DECL || node1->nodeType == VAR_DECL) &&
         node2->nodeType == INTEGER_CST &&
         wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
         node2->label == "0")
