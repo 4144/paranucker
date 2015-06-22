@@ -1,0 +1,22 @@
+test20.c: In function 'func2':
+test20.c:16:9: warning: Using variable 'ptr3' without checking for null pointer
+     ptr3->val = 100;
+         ^
+test20.c: In function 'func6':
+test20.c:52:9: warning: Using variable 'ptr3' without checking for null pointer
+     ptr3->val = 100;
+         ^
+test20.c: In function 'func7':
+test20.c:66:9: warning: Using parameter 'ptr1' without checking for null pointer
+     ptr1->val = 100;
+         ^
+test20.c:67:9: warning: Using variable 'ptr3' without checking for null pointer
+     ptr3->val = 200;
+         ^
+test20.c: In function 'func8':
+test20.c:81:9: warning: Using parameter 'ptr1' without checking for null pointer
+     ptr1->val = 100;
+         ^
+test20.c:82:9: warning: Using variable 'ptr3' without checking for null pointer
+     ptr3->val = 200;
+         ^
