@@ -64,6 +64,10 @@ void removeCheckNullVars(WalkItem &wi)
         {
             wi.checkNullVars.erase(*it);
         }
+        if (wi.addNullVars.find(*it) != wi.addNullVars.end())
+        {
+            wi.addNullVars.erase(*it);
+        }
     }
 }
 
@@ -154,7 +158,7 @@ void reportParmDeclNullPointer(Node *mainNode,
                                const WalkItem &wi)
 {
     node = skipNop(node);
-    if (node)
+    if (node && !node->label.empty())
     {
         if (node->nodeType == PARM_DECL)
         {
