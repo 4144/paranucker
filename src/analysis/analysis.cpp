@@ -122,12 +122,12 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     WalkItem wi2 = wi;
     analyseNode(node, wi2, wo);
     removeCheckNullVars(wi2);
+    addCheckNullVars(wo, wo);
     addCheckNullVars(wo, wi2);
     addCheckNullVars(wi2, wi2);
     wi2.linkedVars = wo.linkedVars;
     wi2.addNullVars = wo.addNullVars;
     wi2.linkedVars = wo.linkedVars;
-//    Log::dumpAttr(node, 1, wo.isReturned);
 
     const bool isReturned = wo.isReturned;
     if (wo.stopWalking)
@@ -137,11 +137,16 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     }
 
     WalkItem wo2 = wo;
+    if (command != Command::DumpNullPointers)
+        Log::dumpWI(node, "walkTree 2 wo2 ", wo2);
+
     FOR_EACH (std::vector<Node*>::iterator, it, node->childs)
     {
         walkTree(*it, wi2, wo2);
         wi2.removeNullVars = wo2.removeNullVars;
         wi2.addNullVars = wo2.addNullVars;
+        addCheckNullVars(wi2, wi2);
+        wo2.checkNullVars = wi2.checkNullVars;
         wi2.isReturned = wi2.isReturned || wo2.isReturned;
         wi2.linkedVars = wo2.linkedVars;
         wo2.stopWalking = false;
@@ -150,6 +155,9 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     wo.addNullVars = wi2.addNullVars;
     wo.isReturned = wo.isReturned || isReturned || wo2.isReturned;
     wo.linkedVars = wi2.linkedVars;
+
+    if (command != Command::DumpNullPointers)
+        Log::dumpWI(node, "walkTree out wo ", wo);
 
 //    Log::dumpAttr(node, 2, wo.isReturned);
 }
