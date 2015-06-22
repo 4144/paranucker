@@ -26,6 +26,7 @@ struct AddrExprNode;
 struct BindExprNode;
 struct CompoundExprNode;
 struct CondExprNode;
+struct DeclExprNode;
 struct EqExprNode;
 struct ModifyExprNode;
 struct NeExprNode;
@@ -58,6 +59,8 @@ namespace Analysis
     void analyseCompoundExpr(CompoundExprNode *node, const WalkItem &wi, WalkItem &wo);
 
     void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo);
+
+    void analyseDeclExpr(DeclExprNode *node, const WalkItem &wi, WalkItem &wo);
 }
 
 #endif // ANALYSIS_EXPRESSION_H

@@ -29,6 +29,7 @@
 #include "nodes/expr/bind_expr.h"
 #include "nodes/expr/compound_expr.h"
 #include "nodes/expr/cond_expr.h"
+#include "nodes/expr/decl_expr.h"
 #include "nodes/expr/eq_expr.h"
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/ne_expr.h"
@@ -276,6 +277,7 @@ void analyseCondExpr(CondExprNode *node, const WalkItem &wi, WalkItem &wo)
         {
             wo.removeNullVars.insert(*it);
             wo.checkNullVars.erase(*it);
+            wo.addNullVars.erase(*it);
         }
     }
     if (wo3.isReturned)
@@ -287,6 +289,7 @@ void analyseCondExpr(CondExprNode *node, const WalkItem &wi, WalkItem &wo)
         {
             wo.removeNullVars.insert(*it);
             wo.checkNullVars.erase(*it);
+            wo.addNullVars.erase(*it);
         }
     }
 
@@ -366,6 +369,28 @@ void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo)
         }
     }
     Log::dumpWI(node, "wo out ", wo);
+}
+
+// type var1 = var2;
+void analyseDeclExpr(DeclExprNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    // need one arg for check
+    if (node->args.empty() || command == FindArgs)
+        return;
+
+    Node *node1 = skipNop(node->args[0]);
+
+    if (node1 &&
+        node1->nodeType == VAR_DECL)
+    {
+        VarDeclNode *varDecl = static_cast<VarDeclNode*>(node1);
+        Node *initial = varDecl->initial;
+        if (checkForReport(initial, wi))
+        {
+            wo.addNullVars.insert(varDecl->label);
+            addLinkedVar(wo, initial->label, varDecl->label);
+        }
+    }
 }
 
 }

@@ -36,6 +36,7 @@
 #include "nodes/expr/bind_expr.h"
 #include "nodes/expr/compound_expr.h"
 #include "nodes/expr/cond_expr.h"
+#include "nodes/expr/decl_expr.h"
 #include "nodes/expr/eq_expr.h"
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/ne_expr.h"
@@ -124,6 +125,8 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     addCheckNullVars(wo, wi2);
     addCheckNullVars(wi2, wi2);
     wi2.linkedVars = wo.linkedVars;
+    wi2.addNullVars = wo.addNullVars;
+    wi2.linkedVars = wo.linkedVars;
 //    Log::dumpAttr(node, 1, wo.isReturned);
 
     const bool isReturned = wo.isReturned;
@@ -140,11 +143,13 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
         wi2.removeNullVars = wo2.removeNullVars;
         wi2.addNullVars = wo2.addNullVars;
         wi2.isReturned = wi2.isReturned || wo2.isReturned;
+        wi2.linkedVars = wo2.linkedVars;
         wo2.stopWalking = false;
     }
     wo.removeNullVars = wi2.removeNullVars;
     wo.addNullVars = wi2.addNullVars;
     wo.isReturned = wo.isReturned || isReturned || wo2.isReturned;
+    wo.linkedVars = wi2.linkedVars;
 
 //    Log::dumpAttr(node, 2, wo.isReturned);
 }
@@ -292,6 +297,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             break;
         case BIND_EXPR:
             analyseBindExpr(static_cast<BindExprNode*>(node), wi2, wo);
+            break;
+        case DECL_EXPR:
+            analyseDeclExpr(static_cast<DeclExprNode*>(node), wi2, wo);
             break;
         case MODIFY_EXPR:
             analyseModifyExpr(static_cast<ModifyExprNode*>(node), wi2, wo);
