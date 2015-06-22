@@ -384,7 +384,7 @@ void analyseDeclExpr(DeclExprNode *node, const WalkItem &wi, WalkItem &wo)
         node1->nodeType == VAR_DECL)
     {
         VarDeclNode *varDecl = static_cast<VarDeclNode*>(node1);
-        Node *initial = varDecl->initial;
+        Node *initial = skipNop(varDecl->initial);
         if (checkForReport(initial, wi))
         {
             wo.addNullVars.insert(varDecl->label);
