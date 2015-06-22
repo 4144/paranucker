@@ -94,31 +94,28 @@ block : b,
 var_decl var1: b, 
 function_decl func6: 
 bind_expr : b, 
-var_decl var2: b, 
+var_decl var2: b, var2, 
+integer_cst 64: b, var2, 
+parm_decl b: b, var2, 
+pointer_type : b, var2, 
+integer_type : b, var2, 
+type_decl int: b, var2, 
+integer_cst 32: b, var2, 
+integer_cst -2147483648: b, var2, 
+integer_cst 2147483647: b, var2, 
+statement_list : b, var2, 
+decl_expr : b, var2, 
+var_decl var2: b, var2, 
+modify_expr : b, var2, 
 test13.c: In function 'func6':
-test13.c:33:10: warning: Using parameter 'b' without checking for null pointer
-     int *var2 = b;
-          ^
-integer_cst 64: b, 
-parm_decl b: b, 
-pointer_type : b, 
-integer_type : b, 
-type_decl int: b, 
-integer_cst 32: b, 
-integer_cst -2147483648: b, 
-integer_cst 2147483647: b, 
-statement_list : b, 
-decl_expr : b, 
-var_decl var2: b, 
-test13.c:33:10: warning: Using parameter 'b' without checking for null pointer
-modify_expr : b, 
-indirect_ref : b, 
-var_decl var2: b, 
-test13.c:33:10: warning: Using parameter 'b' without checking for null pointer
-integer_cst 500: b, 
-block : b, 
-var_decl var2: b, 
-test13.c:33:10: warning: Using parameter 'b' without checking for null pointer
+test13.c:34:11: warning: Using variable 'var2' without checking for null pointer
+     *var2 = 500;
+           ^
+indirect_ref : b, var2, 
+var_decl var2: b, var2, 
+integer_cst 500: b, var2, 
+block : b, var2, 
+var_decl var2: b, var2, 
 function_decl func7: 
 bind_expr : b, 
 var_decl var3: b, 

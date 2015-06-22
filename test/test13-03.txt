@@ -15,12 +15,9 @@ test13.c:28:12: warning: Using parameter 'b' without checking for null pointer
      *(var1 + b) = 400;
             ^
 test13.c: In function 'func6':
-test13.c:33:10: warning: Using parameter 'b' without checking for null pointer
-     int *var2 = b;
-          ^
-test13.c:33:10: warning: Using parameter 'b' without checking for null pointer
-test13.c:33:10: warning: Using parameter 'b' without checking for null pointer
-test13.c:33:10: warning: Using parameter 'b' without checking for null pointer
+test13.c:34:11: warning: Using variable 'var2' without checking for null pointer
+     *var2 = 500;
+           ^
 test13.c: In function 'func7':
 test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
      int *var3 = 12 + b;
