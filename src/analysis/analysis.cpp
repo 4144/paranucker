@@ -33,6 +33,7 @@
 #include "nodes/decl/var_decl.h"
 
 #include "nodes/expr/addr_expr.h"
+#include "nodes/expr/bind_expr.h"
 #include "nodes/expr/compound_expr.h"
 #include "nodes/expr/cond_expr.h"
 #include "nodes/expr/eq_expr.h"
@@ -66,6 +67,14 @@ void removeCheckNullVars(WalkItem &wi)
     }
 }
 
+void addCheckNullVars(WalkItem &wi, WalkItem &wo)
+{
+    FOR_EACH (std::set<std::string>::const_iterator, it, wi.addNullVars)
+    {
+        wo.checkNullVars.insert(*it);
+    }
+}
+
 void removeCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
 {
     FOR_EACH (std::set<std::string>::const_iterator, it, vars)
@@ -93,6 +102,8 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     WalkItem wi2 = wi;
     analyseNode(node, wi2, wo);
     removeCheckNullVars(wi2);
+    addCheckNullVars(wo, wi2);
+    addCheckNullVars(wi2, wi2);
 //    Log::dumpAttr(node, 1, wo.isReturned);
 
     const bool isReturned = wo.isReturned;
@@ -107,10 +118,12 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     {
         walkTree(*it, wi2, wo2);
         wi2.removeNullVars = wo2.removeNullVars;
+        wi2.addNullVars = wo2.addNullVars;
         wi2.isReturned = wi2.isReturned || wo2.isReturned;
         wo2.stopWalking = false;
     }
     wo.removeNullVars = wi2.removeNullVars;
+    wo.addNullVars = wi2.addNullVars;
     wo.isReturned = wo.isReturned || isReturned || wo2.isReturned;
 
 //    Log::dumpAttr(node, 2, wo.isReturned);
@@ -127,18 +140,39 @@ int findBackLocation(Node *node)
     return loc;
 }
 
+bool checkForReport(Node *node,
+                    const WalkItem &wi)
+{
+    node = skipNop(node);
+    return node &&
+        node->nodeType == PARM_DECL &&
+        wi.checkNullVars.find(node->label) != wi.checkNullVars.end();
+}
+
 void reportParmDeclNullPointer(Node *mainNode,
                                Node *node,
                                const WalkItem &wi)
 {
     node = skipNop(node);
-    if (node && node->nodeType == PARM_DECL)
+    if (node)
     {
-        if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+        if (node->nodeType == PARM_DECL)
         {
-            Log::warn(findBackLocation(mainNode),
-                "Using parameter '%s' without checking for null pointer",
-                node->label);
+            if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+            {
+                Log::warn(findBackLocation(mainNode),
+                    "Using parameter '%s' without checking for null pointer",
+                    node->label);
+            }
+        }
+        if (node->nodeType == VAR_DECL)
+        {
+            if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+            {
+                Log::warn(findBackLocation(mainNode),
+                    "Using variable '%s' without checking for null pointer",
+                    node->label);
+            }
         }
     }
 }
@@ -208,6 +242,10 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
         }
         Log::log("\n");
     }
+    else
+    {
+        Log::dumpWI(node, "analyseNode wi in ", wi);
+    }
 
     WalkItem wi2 = wi;
     wo = wi;
@@ -215,7 +253,13 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
     // remove check for vars what was requested from some childs.
     // Except IF_STMT. Removing handled inside analyse function.
     if (node->nodeType != IF_STMT)
+    {
         removeCheckNullVars(wi2);
+//        addCheckNullVars(wi2);
+    }
+
+    if (command != Command::DumpNullPointers)
+        Log::dumpWI(node, "analyseNode wi2 ", wi2);
 
     // searching function declaration
     switch (node->nodeType)
@@ -225,6 +269,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             break;
         case ADDR_EXPR:
             analyseAddrExpr(static_cast<AddrExprNode*>(node), wi2, wo);
+            break;
+        case BIND_EXPR:
+            analyseBindExpr(static_cast<BindExprNode*>(node), wi2, wo);
             break;
         case MODIFY_EXPR:
             analyseModifyExpr(static_cast<ModifyExprNode*>(node), wi2, wo);
@@ -265,6 +312,8 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
         default:
             break;
     }
+    if (command != Command::DumpNullPointers)
+        Log::dumpWI(node, "analyseNode out ", wo);
 }
 
 }

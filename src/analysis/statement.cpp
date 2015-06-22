@@ -61,10 +61,12 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
     {
         wi2.checkNullVars.erase(*it);
     }
-    std::set<std::string> tmpVars = wo.removeNullVars;
+    std::set<std::string> tmpRemove = wo.removeNullVars;
+    std::set<std::string> tmpAdd = wo.addNullVars;
     walkTree(node->thenNode, wi2, wo);
 
     wo.removeNullVars.clear();
+    wo.addNullVars.clear();
     const bool returned = wo.isReturned;
     wo.isReturned = false;
 
@@ -77,7 +79,8 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
     }
     walkTree(node->elseNode, wi2, wo);
 
-    wo.removeNullVars = tmpVars;
+    wo.removeNullVars = tmpRemove;
+    wo.addNullVars = tmpAdd;
 
 //    if (returned && wco.cleanExpr && !wco.uselessExpr)
     if (returned && !wco.uselessExpr)
@@ -117,7 +120,6 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
 
     wo.stopWalking = true;
     wo.isReturned = false;
-
 }
 
 }

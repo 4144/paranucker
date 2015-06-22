@@ -62,7 +62,7 @@ namespace Log
 
     void dumpWI(Node *const node,
                 const std::string &name,
-                WalkItem &wi);
+                const WalkItem &wi);
 }
 
 #endif  // LOGGER_H

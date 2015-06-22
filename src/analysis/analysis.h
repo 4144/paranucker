@@ -42,6 +42,9 @@ namespace Analysis
                                    Node *node,
                                    const WalkItem &wi);
 
+    bool checkForReport(Node *node,
+                        const WalkItem &wi);
+
     void removeCheckNullVars(WalkItem &wi);
 
     void removeCheckNullVarsSet(WalkItem &wi,

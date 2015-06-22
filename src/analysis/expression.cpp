@@ -26,6 +26,7 @@
 #include "analysis/walkitem.h"
 
 #include "nodes/expr/addr_expr.h"
+#include "nodes/expr/bind_expr.h"
 #include "nodes/expr/compound_expr.h"
 #include "nodes/expr/cond_expr.h"
 #include "nodes/expr/eq_expr.h"
@@ -35,6 +36,8 @@
 #include "nodes/expr/return_expr.h"
 #include "nodes/expr/truthandif_expr.h"
 #include "nodes/expr/truthorif_expr.h"
+
+#include "nodes/decl/var_decl.h"
 
 #include "nodes/ref/indirect_ref.h"
 
@@ -338,6 +341,29 @@ void analyseCompoundExpr(CompoundExprNode *node, const WalkItem &wi, WalkItem &w
     wo.cleanExpr = true;
     wo.stopWalking = true;
     wo.uselessExpr = false;
+    Log::dumpWI(node, "wo out ", wo);
+}
+
+// type var1 = var2;
+void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    // need one arg for check
+    if (node->args.empty() || command == FindArgs)
+        return;
+
+    Log::dumpWI(node, "wo in ", wo);
+    Node *node1 = skipNop(node->args[0]);
+
+    if (node1 &&
+        node1->nodeType == VAR_DECL)
+    {
+        VarDeclNode *varDecl = static_cast<VarDeclNode*>(node1);
+        Node *initial = varDecl->initial;
+        if (checkForReport(initial, wi))
+        {
+            wo.addNullVars.insert(varDecl->label);
+        }
+    }
     Log::dumpWI(node, "wo out ", wo);
 }
 

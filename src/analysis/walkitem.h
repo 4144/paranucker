@@ -28,6 +28,7 @@ struct WalkItem
     WalkItem() :
         checkNullVars(),
         removeNullVars(),
+        addNullVars(),
         checkedNullVars(),
         checkedNonNullVars(),
         stopWalking(false),
@@ -40,6 +41,7 @@ struct WalkItem
     WalkItem(const WalkItem &item) :
         checkNullVars(item.checkNullVars),
         removeNullVars(item.removeNullVars),
+        addNullVars(item.addNullVars),
         checkedNullVars(item.checkedNullVars),
         checkedNonNullVars(item.checkedNonNullVars),
         stopWalking(item.stopWalking),
@@ -51,6 +53,7 @@ struct WalkItem
 
     std::set<std::string> checkNullVars;        // need check for usage without null pointer check
     std::set<std::string> removeNullVars;       // need remove vars from parent checkNullVars
+    std::set<std::string> addNullVars;          // need add vars to parent checkNullVars
     std::set<std::string> checkedNullVars;      // vars checked for null in expressions
     std::set<std::string> checkedNonNullVars;   // vars checked for nonnull in expressions
     bool stopWalking;   // stop walking on tree after this node

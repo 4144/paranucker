@@ -194,7 +194,7 @@ void dumpAttr(const Node *const node, int num, bool isReturned)
 
 void dumpWI(Node *const node,
             const std::string &name,
-            WalkItem &wi)
+            const WalkItem &wi)
 {
     return;
     Log::log("%s%s %s",
@@ -232,6 +232,13 @@ void dumpWI(Node *const node,
     FOR_EACH (std::set<std::string>::const_iterator,
               it,
               wi.removeNullVars)
+    {
+        Log::log("%s, ", (*it).c_str());
+    }
+    Log::log(" addNullVars:");
+    FOR_EACH (std::set<std::string>::const_iterator,
+              it,
+              wi.addNullVars)
     {
         Log::log("%s, ", (*it).c_str());
     }
