@@ -51,45 +51,45 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
 
     WalkItem wci = wi;
     WalkItem wco = wo;
+    WalkItem wo2 = wo;
+    WalkItem wo3 = wo;
     walkTree(condNode, wci, wco);
     Log::dumpWI(node, "wco ", wco);
 
     WalkItem wi2 = wi;
-    FOR_EACH (std::set<std::string>::const_iterator,
-              it,
-              wco.checkedNonNullVars)
-    {
-        wi2.checkNullVars.erase(*it);
-        wi2.addNullVars.erase(*it);
-    }
-    std::set<std::string> tmpRemove = wo.removeNullVars;
-    std::set<std::string> tmpAdd = wo.addNullVars;
+    removeCheckNullVarsSet(wi2, wco.checkedNonNullVars);
+    wi2.checkNullVars.insert(wco.checkedNullVars.begin(),
+        wco.checkedNullVars.end());
     Log::dumpWI(node, "wi2 then ", wi2);
-    walkTree(node->thenNode, wi2, wo);
-    Log::dumpWI(node, "wo then ", wo);
 
-    wo.removeNullVars.clear();
-    wo.addNullVars.clear();
-    const bool returned = wo.isReturned;
-    wo.isReturned = false;
+    reportParmDeclNullPointer(node,
+        node->thenNode,
+        wi2);
+    walkTree(node->thenNode, wi2, wo2);
+    Log::dumpWI(node, "wo2 then ", wo2);
 
-    wi2 = wi;
-    FOR_EACH (std::set<std::string>::const_iterator,
-              it,
-              wco.checkedNullVars)
-    {
-        wi2.checkNullVars.erase(*it);
-        wi2.addNullVars.erase(*it);
-    }
-    Log::dumpWI(node, "wi2 else ", wi2);
-    walkTree(node->elseNode, wi2, wo);
-    Log::dumpWI(node, "wo else ", wo);
+    WalkItem wi3 = wi;
+    removeCheckNullVarsSet(wi3, wco.checkedNullVars);
+    wi3.checkNullVars.insert(wco.checkedNonNullVars.begin(),
+        wco.checkedNonNullVars.end());
+    Log::dumpWI(node, "wi3 else ", wi3);
 
-    wo.removeNullVars = tmpRemove;
-    wo.addNullVars = tmpAdd;
+    reportParmDeclNullPointer(node,
+        node->elseNode,
+        wi3);
+    walkTree(node->elseNode, wi3, wo3);
+    Log::dumpWI(node, "wo3 else ", wo3);
 
-//    if (returned && wco.cleanExpr && !wco.uselessExpr)
-    if (returned && !wco.uselessExpr)
+    // probably condition wrong
+    if (wo2.cleanExpr)
+        mergeNullChecked(wo, wo2);
+    // probably condition wrong
+    if (wo3.cleanExpr)
+        mergeNullChecked(wo, wo3);
+    // need check for cleanExpr?
+    intersectNonNullChecked(wo, wo2, wo3);
+
+    if (wo2.isReturned)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
         FOR_EACH (std::set<std::string>::const_iterator,
@@ -98,10 +98,10 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
         {
             wo.removeNullVars.insert(*it);
             wo.checkNullVars.erase(*it);
+            wo.addNullVars.erase(*it);
         }
     }
-//    if (wo.isReturned && wco.cleanExpr && !wco.uselessExpr)
-    if (wo.isReturned && !wco.uselessExpr)
+    if (wo3.isReturned)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
         FOR_EACH (std::set<std::string>::const_iterator,
@@ -114,9 +114,9 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
         }
     }
 
-    // special case where all branches is ended.
-    if (returned && wo.isReturned)
+    if (wo2.isReturned && wo3.isReturned)
     {
+        // add variable for ignore for all parent nodes except special like IF_STMT
         FOR_EACH (std::set<std::string>::const_iterator,
                   it,
                   wo.checkNullVars)
@@ -125,8 +125,10 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
         }
     }
 
-    wo.stopWalking = true;
     wo.isReturned = false;
+    wo.cleanExpr = true;
+    wo.stopWalking = true;
+    wo.uselessExpr = false;
 }
 
 }

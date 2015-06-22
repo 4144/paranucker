@@ -244,6 +244,7 @@ void analyseCondExpr(CondExprNode *node, const WalkItem &wi, WalkItem &wo)
     // walk true expr
     walkTree(node->args[1], wi2, wo2);
     Log::dumpWI(node, "wo2 ", wo2);
+
     WalkItem wi3 = wi;
     removeCheckNullVarsSet(wi3, wo1.checkedNullVars);
     wi3.checkNullVars.insert(wo1.checkedNonNullVars.begin(),
