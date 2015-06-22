@@ -40,7 +40,7 @@ void analyseVarDecl(VarDeclNode *node, const WalkItem &wi, WalkItem &wo)
     if (command == FindArgs)
         return;
 
-    reportParmDeclNullPointer(node, node->initial, wi);
+//    reportParmDeclNullPointer(node, node->initial, wi);
     return;
 }
 
