@@ -1,0 +1,4 @@
+test19.cpp: In function 'int func2(Data1*, Data1*)':
+test19.cpp:16:11: warning: Using variable 'ptr3' without checking for null pointer
+     ptr3->val = 100;
+           ^
