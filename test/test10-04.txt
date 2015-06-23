@@ -63,12 +63,6 @@ test10.cpp:144:24: warning: Using parameter 'ptr1' without checking for null poi
              *ptr1 = 200;
                         ^
 test10.cpp: In member function 'void Object1::func10(int*, int*)':
-test10.cpp:156:24: warning: Using parameter 'ptr1' without checking for null pointer
-             *ptr1 = 100;
-                        ^
-test10.cpp:157:24: warning: Using parameter 'ptr2' without checking for null pointer
-             *ptr2 = 200;
-                        ^
 test10.cpp:162:24: warning: Using parameter 'ptr1' without checking for null pointer
              *ptr1 = 300;
                         ^

@@ -1,7 +1,4 @@
 test16.c: In function 'func2':
-test16.c:22:13: warning: Using parameter 'ptr1' without checking for null pointer
-         ptr1->val = 200;
-             ^
 test16.c:26:9: warning: Using parameter 'ptr1' without checking for null pointer
      ptr1->val = 300;
          ^

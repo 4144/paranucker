@@ -63,12 +63,6 @@ test15.c:141:15: warning: Using parameter 'ptr1' without checking for null point
          *ptr1 = 200;
                ^
 test15.c: In function 'func10':
-test15.c:153:15: warning: Using parameter 'ptr1' without checking for null pointer
-         *ptr1 = 100;
-               ^
-test15.c:154:15: warning: Using parameter 'ptr2' without checking for null pointer
-         *ptr2 = 200;
-               ^
 test15.c:159:15: warning: Using parameter 'ptr1' without checking for null pointer
          *ptr1 = 300;
                ^

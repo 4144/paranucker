@@ -784,39 +784,33 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 integer_cst 0: 
+statement_list : 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 100: 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr2: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 200: 
+return_expr : 
 statement_list : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test15.c: In function 'func10':
-test15.c:153:15: warning: Using parameter 'ptr1' without checking for null pointer
-         *ptr1 = 100;
-               ^
-indirect_ref : ptr1, ptr2, 
-parm_decl ptr1: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 100: ptr1, ptr2, 
-modify_expr : ptr1, ptr2, 
-test15.c:154:15: warning: Using parameter 'ptr2' without checking for null pointer
-         *ptr2 = 200;
-               ^
-indirect_ref : ptr1, ptr2, 
-parm_decl ptr2: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 200: ptr1, ptr2, 
-return_expr : ptr1, ptr2, 
-statement_list : ptr1, ptr2, 
-modify_expr : ptr1, ptr2, 
 test15.c:159:15: warning: Using parameter 'ptr1' without checking for null pointer
          *ptr1 = 300;
                ^
