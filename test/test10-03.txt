@@ -203,7 +203,6 @@ truth_orif_expr : ptr1, ptr2,
 eq_expr : ptr1, ptr2, 
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
-nop_expr : ptr1, ptr2, 
 parm_decl this: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
@@ -292,7 +291,6 @@ truth_orif_expr : ptr1, ptr2,
 eq_expr : ptr1, ptr2, 
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
-nop_expr : ptr1, ptr2, 
 parm_decl this: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
@@ -407,7 +405,6 @@ integer_cst 0: ptr2,
 eq_expr : 
 component_ref : 
 indirect_ref : 
-nop_expr : 
 parm_decl this: 
 pointer_type : 
 record_type : 
@@ -891,7 +888,6 @@ integer_cst 0: ptr2,
 ne_expr : 
 component_ref : 
 indirect_ref : 
-nop_expr : 
 parm_decl this: 
 pointer_type : 
 record_type : 

@@ -45,7 +45,6 @@ convert_expr : ptr2,
 modify_expr : ptr2, 
 component_ref : ptr2, 
 indirect_ref : ptr2, 
-nop_expr : ptr2, 
 parm_decl this: ptr2, 
 pointer_type : ptr2, 
 record_type : ptr2, 
@@ -126,7 +125,6 @@ convert_expr :
 modify_expr : 
 component_ref : 
 indirect_ref : 
-nop_expr : 
 parm_decl this: 
 pointer_type : 
 record_type : 
