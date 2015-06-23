@@ -385,13 +385,32 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
     walkTree(node->chain, wi, wo2);
     Log::dumpWI(node, "wo chain ", wo2);
     wo2 = wo;
-    walkTree(node->function, wi, wo2);
-    Log::dumpWI(node, "wo function ", wo2);
+    bool enableCheck(true);
+    if (node->function)
+    {
+        walkTree(node->function, wi, wo2);
+        Log::dumpWI(node, "wo function ", wo2);
+        if (node->function->nodeType == ADDR_EXPR)
+        {
+            AddrExprNode *addrNode = static_cast<AddrExprNode*>(node->function);
+            if (!addrNode->args.empty())
+            {
+                if (addrNode->args[0]->nodeType == FUNCTION_TYPE)
+                {
+                    enableCheck = false;
+                }
+            }
+        }
+    }
     FOR_EACH (std::vector<Node*>::const_iterator, it, node->args)
     {
         wo2 = wo;
         Node *node2 = skipNop(*it);
-        reportParmDeclNullPointer(node, node2, wi);
+        if (enableCheck)
+        {
+            reportParmDeclNullPointer(node, node2, wi);
+            enableCheck = false;
+        }
         walkTree(node2, wi, wo2);
         Log::dumpWI(node, "wo arg ", wo2);
     }
