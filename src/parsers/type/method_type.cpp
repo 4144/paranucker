@@ -33,7 +33,11 @@ void parseMethodTypeNode(MethodTypeNode *node)
     fillType(node);
     Log::dump(node);
 
+    if (!node->parseChilds)
+        return;
+
     fillTypeName(node);
+
     node->returnType = static_cast<TypeNode*>(createParseNode(
         node,
         TREE_TYPE(node->gccNode),
