@@ -218,7 +218,7 @@ void analyseTruthAndIfExpr(TruthAndIfExprNode *node, const WalkItem &wi, WalkIte
         mergeNonNullChecked(wo, wo2);
     }
     wo.cleanExpr = wo1.cleanExpr && wo2.cleanExpr;
-    wo.uselessExpr = wo1.uselessExpr || wo2.uselessExpr;
+    wo.uselessExpr = wo1.uselessExpr && wo2.uselessExpr;
     Log::dumpWI(node, "wo out ", wo);
 }
 
