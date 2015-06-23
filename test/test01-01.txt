@@ -157,6 +157,7 @@ function_decl main test01.cpp 14:5
          function_decl fun1 test01.cpp 2:5 - operand
          - isExternal: 1
          - isPublic: 1
+          function_type - function type
         integer_cst 1 - arg
         integer_cst 2 - arg
     decl_expr test01.cpp 17:14 - statement
@@ -180,6 +181,9 @@ function_decl main test01.cpp 14:5
        addr_expr - function
         function_decl func3 test01.cpp 7:6 - operand
         - isPublic: 1
+         tree_list - attribute
+          identifier_node noreturn - purpose
+         function_type - function type
        integer_cst 0 - arg
        addr_expr - arg
         var_decl k test01.cpp 17:14 - operand
@@ -478,6 +482,7 @@ function_decl fun1 test01.cpp 29:5
       addr_expr - function
        function_decl fun test01.cpp 21:6 - operand
        - isPublic: 1
+        function_type - function type
       integer_cst 0 - arg
       integer_cst 1 - arg
    if_stmt test01.cpp 34:2 - statement

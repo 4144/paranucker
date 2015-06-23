@@ -1,3 +1,5 @@
+#include <vector>
+
 struct Data1
 {
     int val;

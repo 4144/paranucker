@@ -325,6 +325,13 @@
 7 call_expr /usr/include/c++/5/bits/stl_algobase.h
 8 addr_expr 
 9 function_decl <built-in>
+10 tree_list 
+11 identifier_node 
+11 tree_list 
+12 identifier_node 
+12 tree_list 
+13 identifier_node 
+10 function_type 
 8 nop_expr 
 9 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 10 integer_type 
@@ -385,6 +392,13 @@
 6 call_expr /usr/include/c++/5/bits/stl_algobase.h
 7 addr_expr 
 8 function_decl <built-in>
+9 tree_list 
+10 identifier_node 
+10 tree_list 
+11 identifier_node 
+11 tree_list 
+12 identifier_node 
+9 function_type 
 7 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 8 integer_type 
 9 type_decl <built-in>
@@ -444,6 +458,13 @@
 7 call_expr /usr/include/c++/5/bits/stl_algobase.h
 8 addr_expr 
 9 function_decl <built-in>
+10 tree_list 
+11 identifier_node 
+11 tree_list 
+12 identifier_node 
+12 tree_list 
+13 identifier_node 
+10 function_type 
 8 nop_expr 
 9 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 10 integer_type 
@@ -497,6 +518,13 @@
 6 call_expr /usr/include/c++/5/bits/stl_algobase.h
 7 addr_expr 
 8 function_decl <built-in>
+9 tree_list 
+10 identifier_node 
+10 tree_list 
+11 identifier_node 
+11 tree_list 
+12 identifier_node 
+9 function_type 
 7 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 8 integer_type 
 9 type_decl <built-in>
@@ -554,6 +582,13 @@
 7 call_expr /usr/include/c++/5/bits/stl_algobase.h
 8 addr_expr 
 9 function_decl <built-in>
+10 tree_list 
+11 identifier_node 
+11 tree_list 
+12 identifier_node 
+12 tree_list 
+13 identifier_node 
+10 function_type 
 8 nop_expr 
 9 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 10 integer_type 
@@ -608,6 +643,13 @@
 7 call_expr /usr/include/c++/5/bits/stl_algobase.h
 8 addr_expr 
 9 function_decl <built-in>
+10 tree_list 
+11 identifier_node 
+11 tree_list 
+12 identifier_node 
+12 tree_list 
+13 identifier_node 
+10 function_type 
 8 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 9 integer_type 
 10 type_decl <built-in>
@@ -883,6 +925,13 @@
 3 call_expr /usr/include/c++/5/bits/char_traits.h
 4 addr_expr 
 5 function_decl <built-in>
+6 tree_list 
+7 identifier_node 
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 identifier_node 
+6 function_type 
 4 nop_expr 
 5 parm_decl /usr/include/c++/5/bits/char_traits.h
 6 pointer_type 
@@ -948,6 +997,13 @@
 3 call_expr /usr/include/c++/5/bits/char_traits.h
 4 addr_expr 
 5 function_decl <built-in>
+6 tree_list 
+7 identifier_node 
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 identifier_node 
+6 function_type 
 4 parm_decl /usr/include/c++/5/bits/char_traits.h
 5 pointer_type 
 6 integer_type 
@@ -1030,6 +1086,13 @@
 4 call_expr /usr/include/c++/5/bits/char_traits.h
 5 addr_expr 
 6 function_decl <built-in>
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 identifier_node 
+7 function_type 
 5 nop_expr 
 6 parm_decl /usr/include/c++/5/bits/char_traits.h
 7 pointer_type 
@@ -1130,6 +1193,11 @@
 5 call_expr /usr/include/c++/5/bits/char_traits.h
 6 addr_expr 
 7 function_decl <built-in>
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 identifier_node 
+8 function_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/bits/char_traits.h
 8 pointer_type 
@@ -1229,6 +1297,11 @@
 5 call_expr /usr/include/c++/5/bits/char_traits.h
 6 addr_expr 
 7 function_decl <built-in>
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 identifier_node 
+8 function_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/bits/char_traits.h
 8 pointer_type 
@@ -1326,6 +1399,11 @@
 5 call_expr /usr/include/c++/5/bits/char_traits.h
 6 addr_expr 
 7 function_decl <built-in>
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 identifier_node 
+8 function_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/bits/char_traits.h
 8 pointer_type 
@@ -1604,6 +1682,7 @@
 6 call_expr /usr/include/c++/5/bits/char_traits.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/char_traits.h
+9 function_type 
 5 nop_expr 
 6 indirect_ref 
 7 parm_decl /usr/include/c++/5/bits/char_traits.h
@@ -1884,6 +1963,9 @@
 3 call_expr /usr/include/c++/5/bits/char_traits.h
 4 addr_expr 
 5 function_decl /usr/include/wchar.h
+6 tree_list 
+7 identifier_node 
+6 function_type 
 4 parm_decl /usr/include/c++/5/bits/char_traits.h
 5 pointer_type 
 6 integer_type 
@@ -1947,6 +2029,9 @@
 3 call_expr /usr/include/c++/5/bits/char_traits.h
 4 addr_expr 
 5 function_decl /usr/include/wchar.h
+6 tree_list 
+7 identifier_node 
+6 function_type 
 4 parm_decl /usr/include/c++/5/bits/char_traits.h
 5 pointer_type 
 6 integer_type 
@@ -2029,6 +2114,9 @@
 4 call_expr /usr/include/c++/5/bits/char_traits.h
 5 addr_expr 
 6 function_decl /usr/include/wchar.h
+7 tree_list 
+8 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/c++/5/bits/char_traits.h
 6 pointer_type 
 7 integer_type 
@@ -2128,6 +2216,7 @@
 5 call_expr /usr/include/c++/5/bits/char_traits.h
 6 addr_expr 
 7 function_decl /usr/include/wchar.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/bits/char_traits.h
 7 pointer_type 
 8 integer_type 
@@ -2225,6 +2314,7 @@
 5 call_expr /usr/include/c++/5/bits/char_traits.h
 6 addr_expr 
 7 function_decl /usr/include/wchar.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/bits/char_traits.h
 7 pointer_type 
 8 integer_type 
@@ -2320,6 +2410,7 @@
 5 call_expr /usr/include/c++/5/bits/char_traits.h
 6 addr_expr 
 7 function_decl /usr/include/wchar.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/bits/char_traits.h
 7 pointer_type 
 8 integer_type 
@@ -2584,6 +2675,7 @@
 5 call_expr /usr/include/c++/5/bits/char_traits.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/char_traits.h
+8 function_type 
 6 nop_expr 
 7 convert_expr 
 8 parm_decl /usr/include/c++/5/bits/char_traits.h
@@ -2607,6 +2699,7 @@
 9 call_expr /usr/include/c++/5/bits/char_traits.h
 10 addr_expr 
 11 function_decl /usr/include/c++/5/bits/char_traits.h
+12 function_type 
 5 integer_cst 
 5 nop_expr 
 6 indirect_ref 
@@ -2698,12 +2791,15 @@
 11 nop_expr 
 12 addr_expr 
 13 function_decl /usr/include/c++/5/exception
+14 method_type 
 11 nop_expr 
 12 addr_expr 
 13 function_decl /usr/include/c++/5/exception
+14 method_type 
 11 nop_expr 
 12 addr_expr 
 13 function_decl /usr/include/c++/5/exception
+14 method_type 
 10 array_type 
 11 pointer_type 
 12 type_decl <built-in>
@@ -2799,12 +2895,15 @@
 11 nop_expr 
 12 addr_expr 
 13 function_decl /usr/include/c++/5/exception
+14 method_type 
 11 nop_expr 
 12 addr_expr 
 13 function_decl /usr/include/c++/5/exception
+14 method_type 
 11 nop_expr 
 12 addr_expr 
 13 function_decl /usr/include/c++/5/exception
+14 method_type 
 10 array_type 
 11 pointer_type 
 12 type_decl <built-in>
@@ -2889,6 +2988,7 @@
 6 call_expr /usr/include/c++/5/exception
 7 addr_expr 
 8 function_decl /usr/include/c++/5/exception
+9 method_type 
 7 addr_expr 
 8 component_ref 
 9 indirect_ref 
@@ -2958,12 +3058,15 @@
 14 nop_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/exception
+17 method_type 
 14 nop_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/exception
+17 method_type 
 14 nop_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/exception
+17 method_type 
 13 array_type 
 14 pointer_type 
 15 type_decl <built-in>
@@ -2981,6 +3084,7 @@
 5 call_expr /usr/include/c++/5/exception
 6 addr_expr 
 7 function_decl /usr/include/c++/5/exception
+8 method_type 
 6 addr_expr 
 7 component_ref 
 8 indirect_ref 
@@ -3034,6 +3138,7 @@
 6 call_expr /usr/include/c++/5/exception
 7 addr_expr 
 8 function_decl /usr/include/c++/5/exception
+9 method_type 
 7 addr_expr 
 8 component_ref 
 9 indirect_ref 
@@ -3103,12 +3208,15 @@
 14 nop_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/exception
+17 method_type 
 14 nop_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/exception
+17 method_type 
 14 nop_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/exception
+17 method_type 
 13 array_type 
 14 pointer_type 
 15 type_decl <built-in>
@@ -3126,6 +3234,7 @@
 5 call_expr /usr/include/c++/5/exception
 6 addr_expr 
 7 function_decl /usr/include/c++/5/exception
+8 method_type 
 6 addr_expr 
 7 component_ref 
 8 indirect_ref 
@@ -3210,6 +3319,7 @@
 6 call_expr /usr/include/c++/5/new
 7 addr_expr 
 8 function_decl /usr/include/c++/5/exception
+9 method_type 
 7 addr_expr 
 8 component_ref 
 9 indirect_ref 
@@ -3279,12 +3389,15 @@
 14 nop_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/new
+17 method_type 
 14 nop_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/new
+17 method_type 
 14 nop_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/new
+17 method_type 
 13 array_type 
 14 pointer_type 
 15 type_decl <built-in>
@@ -3302,6 +3415,7 @@
 5 call_expr /usr/include/c++/5/new
 6 addr_expr 
 7 function_decl /usr/include/c++/5/exception
+8 method_type 
 6 addr_expr 
 7 component_ref 
 8 indirect_ref 
@@ -3355,6 +3469,7 @@
 6 call_expr /usr/include/c++/5/new
 7 addr_expr 
 8 function_decl /usr/include/c++/5/exception
+9 method_type 
 7 addr_expr 
 8 component_ref 
 9 indirect_ref 
@@ -3424,12 +3539,15 @@
 14 nop_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/new
+17 method_type 
 14 nop_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/new
+17 method_type 
 14 nop_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/new
+17 method_type 
 13 array_type 
 14 pointer_type 
 15 type_decl <built-in>
@@ -3447,6 +3565,7 @@
 5 call_expr /usr/include/c++/5/new
 6 addr_expr 
 7 function_decl /usr/include/c++/5/exception
+8 method_type 
 6 addr_expr 
 7 component_ref 
 8 indirect_ref 
@@ -3770,6 +3889,7 @@
 7 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h
 8 addr_expr 
 9 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h
+10 function_type 
 8 nop_expr 
 9 indirect_ref 
 10 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h
@@ -3816,6 +3936,11 @@
 5 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h
 6 addr_expr 
 7 function_decl <built-in>
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 identifier_node 
+8 function_type 
 6 nop_expr 
 7 addr_expr 
 8 var_decl /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h
@@ -3843,6 +3968,9 @@
 7 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h
 8 addr_expr 
 9 function_decl <built-in>
+10 tree_list 
+11 identifier_node 
+10 function_type 
 8 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h
 9 pointer_type 
 10 integer_type 
@@ -3877,6 +4005,11 @@
 5 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h
 6 addr_expr 
 7 function_decl <built-in>
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 identifier_node 
+8 function_type 
 6 nop_expr 
 7 addr_expr 
 8 var_decl /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h
@@ -3886,6 +4019,7 @@
 6 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h
 7 addr_expr 
 8 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h
+9 function_type 
 7 var_decl /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h
 3 return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h
 4 init_expr 
@@ -3944,6 +4078,13 @@
 3 call_expr /usr/include/x86_64-linux-gnu/bits/byteswap.h
 4 addr_expr 
 5 function_decl <built-in>
+6 tree_list 
+7 identifier_node 
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 identifier_node 
+6 function_type 
 4 parm_decl /usr/include/x86_64-linux-gnu/bits/byteswap.h
 5 integer_type 
 6 type_decl <built-in>
@@ -3988,6 +4129,13 @@
 3 call_expr /usr/include/x86_64-linux-gnu/bits/byteswap.h
 4 addr_expr 
 5 function_decl <built-in>
+6 tree_list 
+7 identifier_node 
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 identifier_node 
+6 function_type 
 4 parm_decl /usr/include/x86_64-linux-gnu/bits/byteswap.h
 5 integer_type 
 6 type_decl /usr/include/x86_64-linux-gnu/bits/types.h
@@ -4922,6 +5070,7 @@
 4 call_expr /usr/include/pthread.h
 5 addr_expr 
 6 function_decl /usr/include/pthread.h
+7 function_type 
 5 integer_cst 
 5 addr_expr 
 6 component_ref /usr/include/pthread.h
@@ -4997,6 +5146,7 @@
 4 call_expr /usr/include/pthread.h
 5 addr_expr 
 6 function_decl /usr/include/pthread.h
+7 function_type 
 5 nop_expr 
 6 component_ref /usr/include/pthread.h
 7 indirect_ref 
@@ -5041,6 +5191,13 @@
 3 nop_expr 
 4 addr_expr 
 5 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+6 tree_list 
+7 identifier_node 
+7 tree_list 
+8 string_cst 
+7 tree_list 
+8 identifier_node 
+6 function_type 
 3 pointer_type 
 4 void_type 
 5 type_decl <built-in>
@@ -5142,6 +5299,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 pointer_type 
 7 integer_type 
@@ -5221,6 +5385,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 integer_type 
 7 type_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
@@ -5274,6 +5445,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 integer_type 
 7 type_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
@@ -5332,6 +5510,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 integer_type 
 7 type_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
@@ -5371,6 +5556,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 0 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 1 function_type 
 2 integer_type 
@@ -5401,6 +5593,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 0 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 1 function_type 
 2 integer_type 
@@ -5456,6 +5655,7 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 4 integer_cst 
 2 cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 3 return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
@@ -5470,6 +5670,13 @@
 5 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 addr_expr 
 7 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 string_cst 
+9 tree_list 
+10 identifier_node 
+8 function_type 
 6 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 7 pointer_type 
 8 integer_type 
@@ -5567,6 +5774,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 pointer_type 
 7 integer_type 
@@ -5631,6 +5845,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 integer_type 
 7 type_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
@@ -5675,6 +5896,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 integer_type 
 7 type_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
@@ -5734,6 +5962,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 integer_type 
 7 type_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
@@ -5787,6 +6022,7 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 4 integer_cst 
 2 cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 3 expr_stmt /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
@@ -5794,6 +6030,13 @@
 5 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 addr_expr 
 7 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 string_cst 
+9 tree_list 
+10 identifier_node 
+8 function_type 
 6 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 7 pointer_type 
 8 union_type 
@@ -5856,6 +6099,7 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 4 integer_cst 
 2 cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 3 return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
@@ -5870,91 +6114,13 @@
 5 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 addr_expr 
 7 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-6 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-7 pointer_type 
-8 union_type 
-9 type_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-9 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-10 integer_cst 
-9 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-10 integer_cst 
-9 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-10 integer_cst 
-9 type_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-9 type_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-7 integer_cst 
-2 return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-3 init_expr 
-4 result_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-5 integer_type 
-6 type_decl <built-in>
-6 integer_cst 
-6 integer_cst 
-6 integer_cst 
-5 integer_cst 
-4 integer_cst 
-0 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-1 function_type 
-2 integer_type 
-3 type_decl <built-in>
-3 integer_cst 
-3 integer_cst 
-3 integer_cst 
-2 tree_list 
-3 pointer_type 
-4 union_type 
-5 type_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-5 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-6 integer_cst 
-5 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-6 integer_cst 
-5 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-6 integer_cst 
-5 type_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-5 type_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-3 tree_list 
-4 void_type 
-5 type_decl <built-in>
-1 result_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-2 integer_type 
-3 type_decl <built-in>
-3 integer_cst 
-3 integer_cst 
-3 integer_cst 
-2 integer_cst 
-1 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-2 pointer_type 
-3 union_type 
-4 type_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-4 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-5 integer_cst 
-4 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-5 integer_cst 
-4 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-5 integer_cst 
-4 type_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-4 type_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-2 integer_cst 
-1 if_stmt /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-2 cleanup_point_expr 
-3 ne_expr 
-4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-5 addr_expr 
-6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-4 integer_cst 
-2 cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-3 return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-4 init_expr 
-5 result_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-6 integer_type 
-7 type_decl <built-in>
-7 integer_cst 
-7 integer_cst 
-7 integer_cst 
-6 integer_cst 
-5 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
-6 addr_expr 
-7 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 string_cst 
+9 tree_list 
+10 identifier_node 
+8 function_type 
 6 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 7 pointer_type 
 8 union_type 
@@ -6026,6 +6192,7 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 4 integer_cst 
 2 cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 3 return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
@@ -6040,6 +6207,106 @@
 5 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 addr_expr 
 7 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 string_cst 
+9 tree_list 
+10 identifier_node 
+8 function_type 
+6 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 pointer_type 
+8 union_type 
+9 type_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+9 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+10 integer_cst 
+9 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+10 integer_cst 
+9 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+10 integer_cst 
+9 type_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+9 type_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+7 integer_cst 
+2 return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+3 init_expr 
+4 result_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+5 integer_type 
+6 type_decl <built-in>
+6 integer_cst 
+6 integer_cst 
+6 integer_cst 
+5 integer_cst 
+4 integer_cst 
+0 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+1 function_type 
+2 integer_type 
+3 type_decl <built-in>
+3 integer_cst 
+3 integer_cst 
+3 integer_cst 
+2 tree_list 
+3 pointer_type 
+4 union_type 
+5 type_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+5 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+6 integer_cst 
+5 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+6 integer_cst 
+5 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+6 integer_cst 
+5 type_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+5 type_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+3 tree_list 
+4 void_type 
+5 type_decl <built-in>
+1 result_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+2 integer_type 
+3 type_decl <built-in>
+3 integer_cst 
+3 integer_cst 
+3 integer_cst 
+2 integer_cst 
+1 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+2 pointer_type 
+3 union_type 
+4 type_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+4 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+5 integer_cst 
+4 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+5 integer_cst 
+4 field_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+5 integer_cst 
+4 type_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+4 type_decl /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+2 integer_cst 
+1 if_stmt /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+2 cleanup_point_expr 
+3 ne_expr 
+4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+5 addr_expr 
+6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
+4 integer_cst 
+2 cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+3 return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+4 init_expr 
+5 result_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+6 integer_type 
+7 type_decl <built-in>
+7 integer_cst 
+7 integer_cst 
+7 integer_cst 
+6 integer_cst 
+5 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+6 addr_expr 
+7 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 string_cst 
+9 tree_list 
+10 identifier_node 
+8 function_type 
 6 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 7 pointer_type 
 8 union_type 
@@ -6130,6 +6397,7 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 4 integer_cst 
 2 cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 3 return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
@@ -6144,6 +6412,13 @@
 5 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 addr_expr 
 7 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 string_cst 
+9 tree_list 
+10 identifier_node 
+8 function_type 
 6 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 7 pointer_type 
 8 union_type 
@@ -6225,6 +6500,7 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 4 integer_cst 
 2 cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 3 return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
@@ -6239,6 +6515,13 @@
 5 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 addr_expr 
 7 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 string_cst 
+9 tree_list 
+10 identifier_node 
+8 function_type 
 6 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 7 pointer_type 
 8 union_type 
@@ -6317,6 +6600,7 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 pointer_type 
 7 union_type 
@@ -6385,6 +6669,7 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 pointer_type 
 7 union_type 
@@ -6472,6 +6757,7 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 pointer_type 
 7 union_type 
@@ -6550,6 +6836,7 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 pointer_type 
 7 union_type 
@@ -6618,6 +6905,7 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 pointer_type 
 7 union_type 
@@ -6686,6 +6974,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 pointer_type 
 7 union_type 
@@ -6754,6 +7049,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 pointer_type 
 7 union_type 
@@ -6847,6 +7149,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 pointer_type 
 7 union_type 
@@ -6972,6 +7281,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 pointer_type 
 7 union_type 
@@ -7088,6 +7404,7 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 pointer_type 
 7 union_type 
@@ -7169,6 +7486,13 @@
 4 call_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 string_cst 
+8 tree_list 
+9 identifier_node 
+7 function_type 
 5 parm_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 6 pointer_type 
 7 union_type 
@@ -7241,6 +7565,11 @@
 5 call_expr /usr/include/c++/5/ext/atomicity.h
 6 addr_expr 
 7 function_decl <built-in>
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 identifier_node 
+8 function_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/ext/atomicity.h
 8 pointer_type 
@@ -7304,6 +7633,11 @@
 5 call_expr /usr/include/c++/5/ext/atomicity.h
 6 addr_expr 
 7 function_decl <built-in>
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 identifier_node 
+8 function_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/ext/atomicity.h
 8 pointer_type 
@@ -7550,6 +7884,7 @@
 4 call_expr /usr/include/c++/5/ext/atomicity.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 4 integer_cst 
 2 cleanup_point_expr /usr/include/c++/5/ext/atomicity.h
 3 return_expr /usr/include/c++/5/ext/atomicity.h
@@ -7564,6 +7899,7 @@
 5 call_expr /usr/include/c++/5/ext/atomicity.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/ext/atomicity.h
+8 function_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/ext/atomicity.h
 8 pointer_type 
@@ -7593,6 +7929,7 @@
 5 call_expr /usr/include/c++/5/ext/atomicity.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/ext/atomicity.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/ext/atomicity.h
 7 pointer_type 
 8 integer_type 
@@ -7654,12 +7991,14 @@
 4 call_expr /usr/include/c++/5/ext/atomicity.h
 5 addr_expr 
 6 function_decl /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
+7 function_type 
 4 integer_cst 
 2 cleanup_point_expr /usr/include/c++/5/ext/atomicity.h
 3 expr_stmt /usr/include/c++/5/ext/atomicity.h
 4 call_expr /usr/include/c++/5/ext/atomicity.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/ext/atomicity.h
+7 function_type 
 5 nop_expr 
 6 parm_decl /usr/include/c++/5/ext/atomicity.h
 7 pointer_type 
@@ -7681,6 +8020,7 @@
 4 call_expr /usr/include/c++/5/ext/atomicity.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/ext/atomicity.h
+7 function_type 
 5 parm_decl /usr/include/c++/5/ext/atomicity.h
 6 pointer_type 
 7 integer_type 
@@ -8542,6 +8882,7 @@
 6 call_expr /usr/include/c++/5/bits/stl_bvector.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/stl_bvector.h
+9 method_type 
 7 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 8 pointer_type 
 9 record_type 
@@ -8556,6 +8897,7 @@
 8 call_expr /usr/include/c++/5/bits/stl_bvector.h
 9 addr_expr 
 10 function_decl /usr/include/c++/5/bits/stl_bvector.h
+11 method_type 
 9 convert_expr 
 10 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 11 reference_type 
@@ -8634,6 +8976,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 7 pointer_type 
 8 record_type 
@@ -8647,6 +8990,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 convert_expr 
 7 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 8 reference_type 
@@ -8726,6 +9070,7 @@
 6 call_expr /usr/include/c++/5/bits/stl_bvector.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/stl_bvector.h
+9 method_type 
 7 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 8 pointer_type 
 9 record_type 
@@ -8739,6 +9084,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 convert_expr 
 7 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 8 reference_type 
@@ -9031,6 +9377,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_iterator_base_types.h
+8 method_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 8 pointer_type 
@@ -9164,6 +9511,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_iterator_base_types.h
+8 method_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 8 pointer_type 
@@ -10031,6 +10379,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 7 pointer_type 
 8 record_type 
@@ -10119,6 +10468,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 convert_expr 
 6 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 7 reference_type 
@@ -10209,6 +10559,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 convert_expr 
 7 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 8 reference_type 
@@ -10299,6 +10650,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 7 pointer_type 
 8 record_type 
@@ -10497,6 +10849,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -10562,6 +10915,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -10693,6 +11047,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -10796,6 +11151,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -11060,6 +11416,7 @@
 6 aggr_init_expr 
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/stl_bvector.h
+9 method_type 
 7 var_decl /usr/include/c++/5/bits/stl_bvector.h
 7 convert_expr 
 8 void_cst 
@@ -11166,6 +11523,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -11307,6 +11665,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 addr_expr 
 7 component_ref 
 8 indirect_ref 
@@ -11411,6 +11770,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -11552,6 +11912,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 addr_expr 
 7 component_ref 
 8 indirect_ref 
@@ -11669,6 +12030,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -11793,6 +12155,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 7 pointer_type 
 8 record_type 
@@ -11962,6 +12325,7 @@
 10 call_expr /usr/include/c++/5/bits/stl_bvector.h
 11 addr_expr 
 12 function_decl /usr/include/c++/5/bits/stl_bvector.h
+13 method_type 
 11 addr_expr 
 12 var_decl /usr/include/c++/5/bits/stl_bvector.h
 11 parm_decl /usr/include/c++/5/bits/stl_bvector.h
@@ -12096,6 +12460,7 @@
 10 call_expr /usr/include/c++/5/bits/stl_bvector.h
 11 addr_expr 
 12 function_decl /usr/include/c++/5/bits/stl_bvector.h
+13 method_type 
 11 addr_expr 
 12 var_decl /usr/include/c++/5/bits/stl_bvector.h
 11 parm_decl /usr/include/c++/5/bits/stl_bvector.h
@@ -12195,6 +12560,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 addr_expr 
 7 target_expr /usr/include/c++/5/bits/stl_bvector.h
 8 var_decl /usr/include/c++/5/bits/stl_bvector.h
@@ -12210,6 +12576,7 @@
 8 call_expr /usr/include/c++/5/bits/stl_bvector.h
 9 addr_expr 
 10 function_decl /usr/include/c++/5/bits/stl_bvector.h
+11 method_type 
 9 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 10 pointer_type 
 11 record_type 
@@ -12312,6 +12679,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 convert_expr 
 7 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 8 reference_type 
@@ -12379,6 +12747,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -12448,6 +12817,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -12586,6 +12956,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -12693,6 +13064,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -12864,6 +13236,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -12992,6 +13365,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -13198,6 +13572,7 @@
 6 aggr_init_expr 
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/stl_bvector.h
+9 method_type 
 7 var_decl /usr/include/c++/5/bits/stl_bvector.h
 7 convert_expr 
 8 void_cst 
@@ -13297,6 +13672,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 target_expr 
 7 var_decl /usr/include/c++/5/bits/stl_bvector.h
@@ -13311,6 +13687,7 @@
 7 aggr_init_expr 
 8 addr_expr 
 9 function_decl /usr/include/c++/5/bits/stl_bvector.h
+10 method_type 
 8 var_decl /usr/include/c++/5/bits/stl_bvector.h
 8 convert_expr 
 9 void_cst 
@@ -13423,6 +13800,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -13574,6 +13952,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 addr_expr 
 7 component_ref 
 8 indirect_ref 
@@ -13686,6 +14065,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -13837,6 +14217,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 addr_expr 
 7 component_ref 
 8 indirect_ref 
@@ -13962,6 +14343,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 component_ref 
 7 indirect_ref 
@@ -14094,6 +14476,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 7 pointer_type 
 8 record_type 
@@ -14275,6 +14658,7 @@
 10 call_expr /usr/include/c++/5/bits/stl_bvector.h
 11 addr_expr 
 12 function_decl /usr/include/c++/5/bits/stl_bvector.h
+13 method_type 
 11 addr_expr 
 12 var_decl /usr/include/c++/5/bits/stl_bvector.h
 11 parm_decl /usr/include/c++/5/bits/stl_bvector.h
@@ -14418,6 +14802,7 @@
 10 call_expr /usr/include/c++/5/bits/stl_bvector.h
 11 addr_expr 
 12 function_decl /usr/include/c++/5/bits/stl_bvector.h
+13 method_type 
 11 addr_expr 
 12 var_decl /usr/include/c++/5/bits/stl_bvector.h
 11 parm_decl /usr/include/c++/5/bits/stl_bvector.h
@@ -14495,6 +14880,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 target_expr /usr/include/c++/5/bits/stl_bvector.h
 7 var_decl /usr/include/c++/5/bits/stl_bvector.h
@@ -14511,6 +14897,7 @@
 7 call_expr /usr/include/c++/5/bits/stl_bvector.h
 8 addr_expr 
 9 function_decl /usr/include/c++/5/bits/stl_bvector.h
+10 method_type 
 8 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 9 pointer_type 
 10 record_type 
@@ -14620,6 +15007,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 convert_expr 
 7 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 8 reference_type 
@@ -14704,6 +15092,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 method_type 
 5 addr_expr 
 6 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 7 record_type 
@@ -14719,6 +15108,7 @@
 3 call_expr /usr/include/c++/5/bits/stl_bvector.h
 4 addr_expr 
 5 function_decl /usr/include/c++/5/bits/stl_bvector.h
+6 method_type 
 4 addr_expr 
 5 component_ref 
 6 parm_decl /usr/include/c++/5/bits/stl_bvector.h
@@ -14755,6 +15145,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 method_type 
 6 addr_expr 
 7 target_expr 
 8 var_decl /usr/include/c++/5/bits/stl_bvector.h
@@ -14769,6 +15160,7 @@
 8 call_expr /usr/include/c++/5/bits/stl_bvector.h
 9 addr_expr 
 10 function_decl /usr/include/c++/5/bits/stl_bvector.h
+11 method_type 
 9 addr_expr 
 10 parm_decl /usr/include/c++/5/bits/stl_bvector.h
 11 record_type 
@@ -14885,6 +15277,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_algobase.h
+8 function_type 
 6 pointer_plus_expr /usr/include/c++/5/bits/stl_bvector.h
 7 component_ref /usr/include/c++/5/bits/stl_bvector.h
 8 component_ref 
@@ -14944,6 +15337,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 function_type 
 6 target_expr 
 7 var_decl /usr/include/c++/5/bits/stl_bvector.h
 8 integer_cst 
@@ -14979,6 +15373,7 @@
 7 aggr_init_expr 
 8 addr_expr 
 9 function_decl /usr/include/c++/5/bits/stl_bvector.h
+10 method_type 
 8 var_decl /usr/include/c++/5/bits/stl_bvector.h
 8 convert_expr 
 9 void_cst 
@@ -15013,6 +15408,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_bvector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_bvector.h
+8 function_type 
 6 target_expr 
 7 var_decl /usr/include/c++/5/bits/stl_bvector.h
 8 integer_cst 
@@ -15027,6 +15423,7 @@
 7 aggr_init_expr 
 8 addr_expr 
 9 function_decl /usr/include/c++/5/bits/stl_bvector.h
+10 method_type 
 8 var_decl /usr/include/c++/5/bits/stl_bvector.h
 8 convert_expr 
 9 void_cst 
@@ -15080,6 +15477,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_bvector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_bvector.h
+7 function_type 
 5 target_expr 
 6 var_decl /usr/include/c++/5/bits/stl_bvector.h
 7 integer_cst 
@@ -15189,6 +15587,7 @@
 7 aggr_init_expr 
 8 addr_expr 
 9 function_decl /usr/include/c++/5/bits/basic_string.h
+10 method_type 
 8 var_decl test07.cpp
 9 integer_cst 
 9 record_type 
@@ -15246,6 +15645,7 @@
 4 call_expr test07.cpp
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/basic_string.h
+7 method_type 
 5 addr_expr 
 6 component_ref test07.cpp
 7 indirect_ref 
@@ -15323,6 +15723,7 @@
 7 aggr_init_expr 
 8 addr_expr 
 9 function_decl /usr/include/c++/5/bits/basic_string.h
+10 method_type 
 8 var_decl test07.cpp
 9 integer_cst 
 9 record_type 
@@ -15380,6 +15781,7 @@
 4 call_expr test07.cpp
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/basic_string.h
+7 method_type 
 5 addr_expr 
 6 component_ref test07.cpp
 7 indirect_ref 
@@ -15922,6 +16324,7 @@
 4 call_expr test07.cpp
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_vector.h
+7 method_type 
 5 addr_expr 
 6 component_ref test07.cpp
 7 indirect_ref 
@@ -16102,9 +16505,11 @@
 3 call_expr /usr/include/c++/5/bits/stl_algobase.h
 4 addr_expr 
 5 function_decl /usr/include/c++/5/bits/stl_algobase.h
+6 function_type 
 4 call_expr /usr/include/c++/5/bits/stl_algobase.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_algobase.h
+7 function_type 
 5 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 6 pointer_type 
 7 integer_type 
@@ -16115,6 +16520,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_algobase.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_algobase.h
+7 function_type 
 5 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 6 pointer_type 
 7 integer_type 
@@ -16184,6 +16590,7 @@
 6 call_expr /usr/include/c++/5/bits/basic_string.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/allocator.h
+9 method_type 
 7 nop_expr 
 8 parm_decl /usr/include/c++/5/bits/basic_string.h
 9 pointer_type 
@@ -16250,6 +16657,7 @@
 6 call_expr /usr/include/c++/5/bits/basic_string.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/allocator.h
+9 method_type 
 7 nop_expr 
 8 parm_decl /usr/include/c++/5/bits/basic_string.h
 9 pointer_type 
@@ -16404,6 +16812,7 @@
 5 call_expr /usr/include/c++/5/bits/basic_string.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/basic_string.h
+8 method_type 
 6 addr_expr 
 7 component_ref /usr/include/c++/5/bits/basic_string.h
 8 indirect_ref 
@@ -16439,10 +16848,12 @@
 6 call_expr /usr/include/c++/5/bits/basic_string.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/basic_string.h
+9 method_type 
 7 convert_expr 
 8 call_expr /usr/include/c++/5/bits/basic_string.h
 9 addr_expr 
 10 function_decl /usr/include/c++/5/bits/basic_string.h
+11 function_type 
 6 nop_expr 
 7 nop_expr 
 8 addr_expr 
@@ -16481,12 +16892,14 @@
 10 aggr_init_expr 
 11 addr_expr 
 12 function_decl /usr/include/c++/5/bits/allocator.h
+13 method_type 
 11 var_decl /usr/include/c++/5/bits/basic_string.h
 11 convert_expr 
 12 void_cst 
 10 call_expr 
 11 addr_expr 
 12 function_decl /usr/include/c++/5/bits/allocator.h
+13 method_type 
 11 addr_expr 
 12 var_decl /usr/include/c++/5/bits/basic_string.h
 3 cleanup_stmt /usr/include/c++/5/bits/basic_string.h
@@ -16494,6 +16907,7 @@
 4 call_expr /usr/include/c++/5/bits/basic_string.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/basic_string.h
+7 method_type 
 5 addr_expr 
 6 component_ref /usr/include/c++/5/bits/basic_string.h
 7 indirect_ref 
@@ -16623,6 +17037,7 @@
 5 call_expr /usr/include/c++/5/bits/basic_string.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/basic_string.h
+8 method_type 
 6 addr_expr 
 7 component_ref /usr/include/c++/5/bits/basic_string.h
 8 indirect_ref 
@@ -16658,10 +17073,12 @@
 6 call_expr /usr/include/c++/5/bits/basic_string.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/basic_string.h
+9 method_type 
 7 convert_expr 
 8 call_expr /usr/include/c++/5/bits/basic_string.h
 9 addr_expr 
 10 function_decl /usr/include/c++/5/bits/basic_string.h
+11 function_type 
 6 nop_expr 
 7 nop_expr 
 8 addr_expr 
@@ -16700,12 +17117,14 @@
 10 aggr_init_expr 
 11 addr_expr 
 12 function_decl /usr/include/c++/5/bits/allocator.h
+13 method_type 
 11 var_decl /usr/include/c++/5/bits/basic_string.h
 11 convert_expr 
 12 void_cst 
 10 call_expr 
 11 addr_expr 
 12 function_decl /usr/include/c++/5/bits/allocator.h
+13 method_type 
 11 addr_expr 
 12 var_decl /usr/include/c++/5/bits/basic_string.h
 3 try_catch_expr /usr/include/c++/5/bits/basic_string.h
@@ -16713,6 +17132,7 @@
 4 call_expr /usr/include/c++/5/bits/basic_string.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/basic_string.h
+7 method_type 
 5 addr_expr 
 6 component_ref /usr/include/c++/5/bits/basic_string.h
 7 indirect_ref 
@@ -16949,9 +17369,11 @@
 9 call_expr /usr/include/c++/5/bits/basic_string.h
 10 addr_expr 
 11 function_decl /usr/include/c++/5/bits/basic_string.h
+12 method_type 
 10 call_expr /usr/include/c++/5/bits/basic_string.h
 11 addr_expr 
 12 function_decl /usr/include/c++/5/bits/basic_string.h
+13 method_type 
 11 parm_decl /usr/include/c++/5/bits/basic_string.h
 12 pointer_type 
 13 record_type 
@@ -17016,6 +17438,7 @@
 14 aggr_init_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/bits/basic_string.h
+17 method_type 
 15 var_decl /usr/include/c++/5/bits/basic_string.h
 15 parm_decl /usr/include/c++/5/bits/basic_string.h
 16 pointer_type 
@@ -17046,11 +17469,13 @@
 14 call_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/bits/allocator.h
+17 method_type 
 15 addr_expr 
 16 var_decl /usr/include/c++/5/bits/basic_string.h
 6 call_expr /usr/include/c++/5/bits/basic_string.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/basic_string.h
+9 method_type 
 7 addr_expr 
 8 component_ref /usr/include/c++/5/bits/basic_string.h
 9 indirect_ref 
@@ -17219,9 +17644,11 @@
 9 call_expr /usr/include/c++/5/bits/basic_string.h
 10 addr_expr 
 11 function_decl /usr/include/c++/5/bits/basic_string.h
+12 method_type 
 10 call_expr /usr/include/c++/5/bits/basic_string.h
 11 addr_expr 
 12 function_decl /usr/include/c++/5/bits/basic_string.h
+13 method_type 
 11 parm_decl /usr/include/c++/5/bits/basic_string.h
 12 pointer_type 
 13 record_type 
@@ -17286,6 +17713,7 @@
 14 aggr_init_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/bits/basic_string.h
+17 method_type 
 15 var_decl /usr/include/c++/5/bits/basic_string.h
 15 parm_decl /usr/include/c++/5/bits/basic_string.h
 16 pointer_type 
@@ -17316,11 +17744,13 @@
 14 call_expr 
 15 addr_expr 
 16 function_decl /usr/include/c++/5/bits/allocator.h
+17 method_type 
 15 addr_expr 
 16 var_decl /usr/include/c++/5/bits/basic_string.h
 6 call_expr /usr/include/c++/5/bits/basic_string.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/basic_string.h
+9 method_type 
 7 addr_expr 
 8 component_ref /usr/include/c++/5/bits/basic_string.h
 9 indirect_ref 
@@ -17683,6 +18113,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_vector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/ext/alloc_traits.h
+8 function_type 
 6 nop_expr 
 7 nop_expr 
 8 addr_expr 
@@ -17827,6 +18258,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_vector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/vector.tcc
+7 method_type 
 5 parm_decl /usr/include/c++/5/bits/stl_vector.h
 6 pointer_type 
 7 record_type 
@@ -17874,6 +18306,7 @@
 6 call_expr /usr/include/c++/5/bits/stl_vector.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/stl_vector.h
+9 method_type 
 7 parm_decl /usr/include/c++/5/bits/stl_vector.h
 8 pointer_type 
 9 record_type 
@@ -17963,6 +18396,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_algobase.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_iterator_base_types.h
+7 function_type 
 5 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 6 pointer_type 
 7 integer_type 
@@ -18148,6 +18582,7 @@
 6 call_expr /usr/include/c++/5/bits/basic_string.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/basic_string.h
+9 function_type 
 0 function_decl /usr/include/c++/5/bits/basic_string.h
 1 method_type 
 2 pointer_type 
@@ -18351,6 +18786,7 @@
 6 call_expr /usr/include/c++/5/bits/allocator.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/ext/new_allocator.h
+9 method_type 
 7 nop_expr 
 8 parm_decl /usr/include/c++/5/bits/allocator.h
 9 pointer_type 
@@ -18389,6 +18825,7 @@
 5 call_expr /usr/include/c++/5/bits/allocator.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/ext/new_allocator.h
+8 method_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/bits/allocator.h
 8 pointer_type 
@@ -18533,6 +18970,7 @@
 6 call_expr /usr/include/c++/5/bits/allocator.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/ext/new_allocator.h
+9 method_type 
 7 nop_expr 
 8 parm_decl /usr/include/c++/5/bits/allocator.h
 9 pointer_type 
@@ -18571,6 +19009,7 @@
 5 call_expr /usr/include/c++/5/bits/allocator.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/ext/new_allocator.h
+8 method_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/bits/allocator.h
 8 pointer_type 
@@ -18833,6 +19272,7 @@
 7 call_expr /usr/include/c++/5/bits/allocator.h
 8 addr_expr 
 9 function_decl /usr/include/c++/5/ext/new_allocator.h
+10 method_type 
 8 nop_expr 
 9 parm_decl /usr/include/c++/5/bits/allocator.h
 10 pointer_type 
@@ -19018,6 +19458,7 @@
 7 call_expr /usr/include/c++/5/bits/allocator.h
 8 addr_expr 
 9 function_decl /usr/include/c++/5/ext/new_allocator.h
+10 method_type 
 8 nop_expr 
 9 parm_decl /usr/include/c++/5/bits/allocator.h
 10 pointer_type 
@@ -19309,6 +19750,7 @@
 5 call_expr /usr/include/c++/5/bits/basic_string.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/allocator.h
+8 method_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/bits/basic_string.h
 8 pointer_type 
@@ -19382,6 +19824,7 @@
 4 call_expr /usr/include/c++/5/bits/basic_string.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/allocator.h
+7 method_type 
 5 nop_expr 
 6 parm_decl /usr/include/c++/5/bits/basic_string.h
 7 pointer_type 
@@ -19507,6 +19950,7 @@
 5 call_expr /usr/include/c++/5/bits/basic_string.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/allocator.h
+8 method_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/bits/basic_string.h
 8 pointer_type 
@@ -19580,6 +20024,7 @@
 4 call_expr /usr/include/c++/5/bits/basic_string.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/allocator.h
+7 method_type 
 5 nop_expr 
 6 parm_decl /usr/include/c++/5/bits/basic_string.h
 7 pointer_type 
@@ -19841,6 +20286,7 @@
 6 call_expr /usr/include/c++/5/bits/basic_string.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/basic_string.h
+9 method_type 
 7 parm_decl /usr/include/c++/5/bits/basic_string.h
 8 pointer_type 
 9 record_type 
@@ -20080,6 +20526,7 @@
 5 aggr_init_expr 
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/allocator.h
+8 method_type 
 6 var_decl /usr/include/c++/5/bits/basic_string.h
 6 convert_expr 
 7 void_cst 
@@ -20120,6 +20567,7 @@
 5 call_expr 
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/allocator.h
+8 method_type 
 6 addr_expr 
 7 var_decl /usr/include/c++/5/bits/basic_string.h
 0 function_decl /usr/include/c++/5/bits/basic_string.h
@@ -20249,11 +20697,19 @@
 4 call_expr /usr/include/c++/5/bits/basic_string.h
 5 addr_expr 
 6 function_decl <built-in>
+7 tree_list 
+8 identifier_node 
+8 tree_list 
+9 identifier_node 
+9 tree_list 
+10 identifier_node 
+7 function_type 
 5 ne_expr 
 6 convert_expr 
 7 call_expr /usr/include/c++/5/bits/basic_string.h
 8 addr_expr 
 9 function_decl /usr/include/c++/5/bits/basic_string.h
+10 function_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/bits/basic_string.h
 8 pointer_type 
@@ -20275,6 +20731,9 @@
 5 call_expr /usr/include/c++/5/bits/basic_string.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/ext/atomicity.h
+8 tree_list 
+9 identifier_node 
+8 function_type 
 6 addr_expr 
 7 component_ref /usr/include/c++/5/bits/basic_string.h
 8 component_ref 
@@ -20303,6 +20762,7 @@
 5 call_expr /usr/include/c++/5/bits/basic_string.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/basic_string.tcc
+8 method_type 
 6 parm_decl /usr/include/c++/5/bits/basic_string.h
 7 pointer_type 
 8 record_type 
@@ -20483,6 +20943,7 @@
 3 call_expr /usr/include/c++/5/ext/alloc_traits.h
 4 addr_expr 
 5 function_decl /usr/include/c++/5/ext/new_allocator.h
+6 method_type 
 4 nop_expr 
 5 convert_expr 
 6 parm_decl /usr/include/c++/5/ext/alloc_traits.h
@@ -20803,6 +21264,7 @@
 8 call_expr /usr/include/c++/5/bits/vector.tcc
 9 addr_expr 
 10 function_decl /usr/include/c++/5/ext/alloc_traits.h
+11 function_type 
 9 nop_expr 
 10 nop_expr 
 11 addr_expr 
@@ -20979,11 +21441,13 @@
 9 call_expr /usr/include/c++/5/bits/vector.tcc
 10 addr_expr 
 11 function_decl /usr/include/c++/5/bits/stl_algobase.h
+12 function_type 
 10 nop_expr 
 11 indirect_ref 
 12 call_expr /usr/include/c++/5/bits/vector.tcc
 13 addr_expr 
 14 function_decl /usr/include/c++/5/bits/stl_iterator.h
+15 method_type 
 13 addr_expr 
 14 parm_decl /usr/include/c++/5/bits/vector.tcc
 15 record_type 
@@ -21089,6 +21553,7 @@
 11 call_expr /usr/include/c++/5/bits/vector.tcc
 12 addr_expr 
 13 function_decl /usr/include/c++/5/bits/stl_iterator.h
+14 method_type 
 12 addr_expr 
 13 parm_decl /usr/include/c++/5/bits/vector.tcc
 14 record_type 
@@ -21125,6 +21590,7 @@
 10 call_expr /usr/include/c++/5/bits/vector.tcc
 11 addr_expr 
 12 function_decl /usr/include/c++/5/bits/stl_vector.h
+13 method_type 
 11 parm_decl /usr/include/c++/5/bits/vector.tcc
 12 pointer_type 
 13 record_type 
@@ -21174,6 +21640,7 @@
 11 call_expr /usr/include/c++/5/bits/vector.tcc
 12 addr_expr 
 13 function_decl /usr/include/c++/5/bits/stl_iterator.h
+14 function_type 
 12 nop_expr 
 13 nop_expr 
 14 addr_expr 
@@ -21212,6 +21679,7 @@
 16 call_expr /usr/include/c++/5/bits/vector.tcc
 17 addr_expr 
 18 function_decl /usr/include/c++/5/bits/stl_vector.h
+19 method_type 
 17 parm_decl /usr/include/c++/5/bits/vector.tcc
 18 pointer_type 
 19 record_type 
@@ -21262,6 +21730,7 @@
 10 call_expr /usr/include/c++/5/bits/vector.tcc
 11 addr_expr 
 12 function_decl /usr/include/c++/5/bits/stl_vector.h
+13 method_type 
 11 addr_expr 
 12 component_ref 
 13 indirect_ref 
@@ -21320,6 +21789,7 @@
 10 call_expr /usr/include/c++/5/bits/vector.tcc
 11 addr_expr 
 12 function_decl /usr/include/c++/5/ext/alloc_traits.h
+13 function_type 
 11 nop_expr 
 12 nop_expr 
 13 addr_expr 
@@ -21394,6 +21864,7 @@
 12 call_expr /usr/include/c++/5/bits/vector.tcc
 13 addr_expr 
 14 function_decl /usr/include/c++/5/bits/stl_uninitialized.h
+15 function_type 
 13 component_ref /usr/include/c++/5/bits/vector.tcc
 14 component_ref /usr/include/c++/5/bits/vector.tcc
 15 component_ref 
@@ -21439,6 +21910,7 @@
 15 call_expr /usr/include/c++/5/bits/vector.tcc
 16 addr_expr 
 17 function_decl /usr/include/c++/5/bits/stl_iterator.h
+18 method_type 
 16 addr_expr 
 17 parm_decl /usr/include/c++/5/bits/vector.tcc
 18 record_type 
@@ -21460,6 +21932,7 @@
 15 call_expr /usr/include/c++/5/bits/vector.tcc
 16 addr_expr 
 17 function_decl /usr/include/c++/5/bits/stl_vector.h
+18 method_type 
 16 addr_expr 
 17 component_ref 
 18 indirect_ref 
@@ -21509,11 +21982,13 @@
 12 call_expr /usr/include/c++/5/bits/vector.tcc
 13 addr_expr 
 14 function_decl /usr/include/c++/5/bits/stl_uninitialized.h
+15 function_type 
 13 nop_expr 
 14 indirect_ref 
 15 call_expr /usr/include/c++/5/bits/vector.tcc
 16 addr_expr 
 17 function_decl /usr/include/c++/5/bits/stl_iterator.h
+18 method_type 
 16 addr_expr 
 17 parm_decl /usr/include/c++/5/bits/vector.tcc
 18 record_type 
@@ -21575,6 +22050,7 @@
 15 call_expr /usr/include/c++/5/bits/vector.tcc
 16 addr_expr 
 17 function_decl /usr/include/c++/5/bits/stl_vector.h
+18 method_type 
 16 addr_expr 
 17 component_ref 
 18 indirect_ref 
@@ -21619,9 +22095,13 @@
 13 call_expr /usr/include/c++/5/bits/vector.tcc
 14 addr_expr 
 15 function_decl /usr/include/c++/5/bits/vector.tcc
+16 function_type 
 14 call_expr /usr/include/c++/5/bits/vector.tcc
 15 addr_expr 
 16 function_decl <built-in>
+17 tree_list 
+18 identifier_node 
+17 function_type 
 15 integer_cst 
 10 if_stmt /usr/include/c++/5/bits/vector.tcc
 11 eq_expr /usr/include/c++/5/bits/vector.tcc
@@ -21632,6 +22112,7 @@
 13 call_expr /usr/include/c++/5/bits/vector.tcc
 14 addr_expr 
 15 function_decl /usr/include/c++/5/ext/alloc_traits.h
+16 function_type 
 14 nop_expr 
 15 nop_expr 
 16 addr_expr 
@@ -21684,6 +22165,7 @@
 13 call_expr /usr/include/c++/5/bits/vector.tcc
 14 addr_expr 
 15 function_decl /usr/include/c++/5/bits/stl_construct.h
+16 function_type 
 14 var_decl /usr/include/c++/5/bits/vector.tcc
 14 var_decl /usr/include/c++/5/bits/vector.tcc
 14 nop_expr 
@@ -21691,6 +22173,7 @@
 16 call_expr /usr/include/c++/5/bits/vector.tcc
 17 addr_expr 
 18 function_decl /usr/include/c++/5/bits/stl_vector.h
+19 method_type 
 17 addr_expr 
 18 component_ref 
 19 indirect_ref 
@@ -21731,6 +22214,7 @@
 12 call_expr /usr/include/c++/5/bits/vector.tcc
 13 addr_expr 
 14 function_decl /usr/include/c++/5/bits/stl_vector.h
+15 method_type 
 13 addr_expr 
 14 component_ref 
 15 indirect_ref 
@@ -21775,14 +22259,17 @@
 13 call_expr /usr/include/c++/5/bits/vector.tcc
 14 addr_expr 
 15 function_decl /usr/include/c++/5/bits/vector.tcc
+16 function_type 
 9 call_expr /usr/include/c++/5/bits/vector.tcc
 10 addr_expr 
 11 function_decl /usr/include/c++/5/bits/vector.tcc
+12 function_type 
 6 cleanup_point_expr /usr/include/c++/5/bits/vector.tcc
 7 expr_stmt /usr/include/c++/5/bits/vector.tcc
 8 call_expr /usr/include/c++/5/bits/vector.tcc
 9 addr_expr 
 10 function_decl /usr/include/c++/5/bits/stl_construct.h
+11 function_type 
 9 component_ref /usr/include/c++/5/bits/vector.tcc
 10 component_ref /usr/include/c++/5/bits/vector.tcc
 11 component_ref 
@@ -21868,6 +22355,7 @@
 11 call_expr /usr/include/c++/5/bits/vector.tcc
 12 addr_expr 
 13 function_decl /usr/include/c++/5/bits/stl_vector.h
+14 method_type 
 12 addr_expr 
 13 component_ref 
 14 indirect_ref 
@@ -21908,6 +22396,7 @@
 8 call_expr /usr/include/c++/5/bits/vector.tcc
 9 addr_expr 
 10 function_decl /usr/include/c++/5/bits/stl_vector.h
+11 method_type 
 9 addr_expr 
 10 component_ref 
 11 indirect_ref 
@@ -22382,6 +22871,7 @@
 6 aggr_init_expr 
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/stl_iterator.h
+9 method_type 
 7 var_decl /usr/include/c++/5/bits/stl_vector.h
 7 convert_expr 
 8 void_cst 
@@ -23092,6 +23582,7 @@
 6 call_expr /usr/include/c++/5/bits/allocator.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/ext/new_allocator.h
+9 method_type 
 7 nop_expr 
 8 parm_decl /usr/include/c++/5/bits/allocator.h
 9 pointer_type 
@@ -23165,6 +23656,7 @@
 5 call_expr /usr/include/c++/5/bits/allocator.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/ext/new_allocator.h
+8 method_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/bits/allocator.h
 8 pointer_type 
@@ -23372,6 +23864,7 @@
 6 call_expr /usr/include/c++/5/bits/allocator.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/ext/new_allocator.h
+9 method_type 
 7 nop_expr 
 8 parm_decl /usr/include/c++/5/bits/allocator.h
 9 pointer_type 
@@ -23445,6 +23938,7 @@
 5 call_expr /usr/include/c++/5/bits/allocator.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/ext/new_allocator.h
+8 method_type 
 6 nop_expr 
 7 parm_decl /usr/include/c++/5/bits/allocator.h
 8 pointer_type 
@@ -23913,6 +24407,7 @@
 8 call_expr /usr/include/c++/5/ext/new_allocator.h
 9 addr_expr 
 10 function_decl /usr/include/c++/5/new
+11 function_type 
 9 integer_cst 
 9 non_lvalue_expr 
 10 var_decl /usr/include/c++/5/ext/new_allocator.h
@@ -23943,6 +24438,7 @@
 9 call_expr /usr/include/c++/5/ext/new_allocator.h
 10 addr_expr 
 11 function_decl /usr/include/c++/5/new
+12 function_type 
 10 var_decl /usr/include/c++/5/ext/new_allocator.h
 10 non_lvalue_expr 
 11 var_decl /usr/include/c++/5/ext/new_allocator.h
@@ -24159,9 +24655,11 @@
 4 call_expr /usr/include/c++/5/bits/stl_algobase.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_algobase.h
+7 function_type 
 5 call_expr /usr/include/c++/5/bits/stl_algobase.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_algobase.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 7 pointer_type 
 8 pointer_type 
@@ -24176,6 +24674,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_algobase.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_algobase.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 7 pointer_type 
 8 pointer_type 
@@ -24441,6 +24940,7 @@
 7 call_expr /usr/include/c++/5/bits/stl_vector.h
 8 addr_expr 
 9 function_decl /usr/include/c++/5/bits/stl_vector.h
+10 method_type 
 8 parm_decl /usr/include/c++/5/bits/stl_vector.h
 9 pointer_type 
 10 record_type 
@@ -24473,6 +24973,7 @@
 7 call_expr /usr/include/c++/5/bits/stl_vector.h
 8 addr_expr 
 9 function_decl /usr/include/c++/5/bits/stl_vector.h
+10 method_type 
 8 parm_decl /usr/include/c++/5/bits/stl_vector.h
 9 pointer_type 
 10 record_type 
@@ -24513,6 +25014,9 @@
 6 call_expr /usr/include/c++/5/bits/stl_vector.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/functexcept.h
+9 tree_list 
+10 identifier_node 
+9 function_type 
 7 parm_decl /usr/include/c++/5/bits/stl_vector.h
 8 pointer_type 
 9 integer_type 
@@ -24532,6 +25036,7 @@
 8 call_expr /usr/include/c++/5/bits/stl_vector.h
 9 addr_expr 
 10 function_decl /usr/include/c++/5/bits/stl_vector.h
+11 method_type 
 9 parm_decl /usr/include/c++/5/bits/stl_vector.h
 10 pointer_type 
 11 record_type 
@@ -24566,6 +25071,7 @@
 10 call_expr /usr/include/c++/5/bits/stl_vector.h
 11 addr_expr 
 12 function_decl /usr/include/c++/5/bits/stl_algobase.h
+13 function_type 
 11 nop_expr 
 12 addr_expr 
 13 target_expr 
@@ -24578,6 +25084,7 @@
 14 call_expr /usr/include/c++/5/bits/stl_vector.h
 15 addr_expr 
 16 function_decl /usr/include/c++/5/bits/stl_vector.h
+17 method_type 
 15 parm_decl /usr/include/c++/5/bits/stl_vector.h
 16 pointer_type 
 17 record_type 
@@ -24631,6 +25138,7 @@
 9 call_expr /usr/include/c++/5/bits/stl_vector.h
 10 addr_expr 
 11 function_decl /usr/include/c++/5/bits/stl_vector.h
+12 method_type 
 10 parm_decl /usr/include/c++/5/bits/stl_vector.h
 11 pointer_type 
 12 record_type 
@@ -24666,6 +25174,7 @@
 9 call_expr /usr/include/c++/5/bits/stl_vector.h
 10 addr_expr 
 11 function_decl /usr/include/c++/5/bits/stl_vector.h
+12 method_type 
 10 parm_decl /usr/include/c++/5/bits/stl_vector.h
 11 pointer_type 
 12 record_type 
@@ -24700,6 +25209,7 @@
 7 call_expr /usr/include/c++/5/bits/stl_vector.h
 8 addr_expr 
 9 function_decl /usr/include/c++/5/bits/stl_vector.h
+10 method_type 
 8 parm_decl /usr/include/c++/5/bits/stl_vector.h
 9 pointer_type 
 10 record_type 
@@ -24883,6 +25393,7 @@
 6 aggr_init_expr 
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/stl_iterator.h
+9 method_type 
 7 var_decl /usr/include/c++/5/bits/stl_vector.h
 7 convert_expr 
 8 void_cst 
@@ -25022,6 +25533,7 @@
 8 call_expr /usr/include/c++/5/bits/stl_iterator.h
 9 addr_expr 
 10 function_decl /usr/include/c++/5/bits/stl_iterator.h
+11 method_type 
 9 convert_expr 
 10 parm_decl /usr/include/c++/5/bits/stl_iterator.h
 11 reference_type 
@@ -25043,6 +25555,7 @@
 8 call_expr /usr/include/c++/5/bits/stl_iterator.h
 9 addr_expr 
 10 function_decl /usr/include/c++/5/bits/stl_iterator.h
+11 method_type 
 9 convert_expr 
 10 parm_decl /usr/include/c++/5/bits/stl_iterator.h
 11 reference_type 
@@ -25160,6 +25673,7 @@
 7 call_expr /usr/include/c++/5/bits/stl_vector.h
 8 addr_expr 
 9 function_decl /usr/include/c++/5/ext/alloc_traits.h
+10 function_type 
 8 nop_expr 
 9 nop_expr 
 10 addr_expr 
@@ -25540,6 +26054,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_uninitialized.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_uninitialized.h
+7 function_type 
 5 parm_decl /usr/include/c++/5/bits/stl_uninitialized.h
 6 pointer_type 
 7 pointer_type 
@@ -25726,6 +26241,7 @@
 3 call_expr /usr/include/c++/5/ext/alloc_traits.h
 4 addr_expr 
 5 function_decl /usr/include/c++/5/ext/new_allocator.h
+6 method_type 
 4 nop_expr 
 5 convert_expr 
 6 parm_decl /usr/include/c++/5/ext/alloc_traits.h
@@ -25910,6 +26426,7 @@
 3 call_expr /usr/include/c++/5/bits/stl_construct.h
 4 addr_expr 
 5 function_decl /usr/include/c++/5/bits/stl_construct.h
+6 function_type 
 4 parm_decl /usr/include/c++/5/bits/stl_construct.h
 5 pointer_type 
 6 pointer_type 
@@ -26030,6 +26547,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_vector.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/ext/alloc_traits.h
+8 function_type 
 6 nop_expr 
 7 nop_expr 
 8 addr_expr 
@@ -26672,6 +27190,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_algobase.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_iterator_base_types.h
+7 function_type 
 5 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 6 pointer_type 
 7 pointer_type 
@@ -26788,9 +27307,11 @@
 4 call_expr /usr/include/c++/5/bits/stl_algobase.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_algobase.h
+7 function_type 
 5 call_expr /usr/include/c++/5/bits/stl_algobase.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_algobase.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 7 pointer_type 
 8 pointer_type 
@@ -26805,6 +27326,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_algobase.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_algobase.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 7 pointer_type 
 8 pointer_type 
@@ -26819,6 +27341,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_algobase.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_algobase.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 7 pointer_type 
 8 pointer_type 
@@ -26940,11 +27463,13 @@
 4 call_expr /usr/include/c++/5/bits/stl_vector.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/ext/alloc_traits.h
+7 function_type 
 5 nop_expr 
 6 convert_expr 
 7 call_expr /usr/include/c++/5/bits/stl_vector.h
 8 addr_expr 
 9 function_decl /usr/include/c++/5/bits/stl_vector.h
+10 method_type 
 8 addr_expr 
 9 component_ref 
 10 indirect_ref 
@@ -27404,6 +27929,7 @@
 5 call_expr /usr/include/c++/5/ext/alloc_traits.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/ext/new_allocator.h
+8 method_type 
 6 nop_expr 
 7 convert_expr 
 8 parm_decl /usr/include/c++/5/ext/alloc_traits.h
@@ -27631,6 +28157,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_uninitialized.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_uninitialized.h
+7 function_type 
 5 parm_decl /usr/include/c++/5/bits/stl_uninitialized.h
 6 pointer_type 
 7 pointer_type 
@@ -27810,6 +28337,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_construct.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_construct.h
+7 function_type 
 5 parm_decl /usr/include/c++/5/bits/stl_construct.h
 6 pointer_type 
 7 pointer_type 
@@ -27957,6 +28485,7 @@
 3 call_expr /usr/include/c++/5/ext/alloc_traits.h
 4 addr_expr 
 5 function_decl /usr/include/c++/5/ext/new_allocator.h
+6 method_type 
 4 nop_expr 
 5 convert_expr 
 6 parm_decl /usr/include/c++/5/ext/alloc_traits.h
@@ -28155,6 +28684,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_algobase.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_iterator_base_types.h
+7 function_type 
 5 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 6 pointer_type 
 7 pointer_type 
@@ -28281,6 +28811,7 @@
 6 call_expr /usr/include/c++/5/bits/stl_algobase.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/stl_algobase.h
+9 function_type 
 7 nop_expr 
 8 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 9 pointer_type 
@@ -28420,6 +28951,7 @@
 4 call_expr /usr/include/c++/5/ext/alloc_traits.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/ext/new_allocator.h
+7 method_type 
 5 nop_expr 
 6 convert_expr 
 7 parm_decl /usr/include/c++/5/ext/alloc_traits.h
@@ -28725,6 +29257,7 @@
 5 call_expr /usr/include/c++/5/ext/new_allocator.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/ext/new_allocator.h
+8 method_type 
 6 parm_decl /usr/include/c++/5/ext/new_allocator.h
 7 pointer_type 
 8 record_type 
@@ -28750,6 +29283,9 @@
 5 call_expr /usr/include/c++/5/ext/new_allocator.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/functexcept.h
+8 tree_list 
+9 identifier_node 
+8 function_type 
 2 cleanup_point_expr /usr/include/c++/5/ext/new_allocator.h
 3 return_expr /usr/include/c++/5/ext/new_allocator.h
 4 init_expr 
@@ -28769,6 +29305,9 @@
 6 call_expr /usr/include/c++/5/ext/new_allocator.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/new
+9 tree_list 
+10 identifier_node 
+9 function_type 
 7 mult_expr 
 8 sizeof_expr /usr/include/c++/5/ext/new_allocator.h
 9 nop_expr 
@@ -28894,6 +29433,7 @@
 6 call_expr /usr/include/c++/5/bits/stl_uninitialized.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/stl_uninitialized.h
+9 function_type 
 7 parm_decl /usr/include/c++/5/bits/stl_uninitialized.h
 8 pointer_type 
 9 pointer_type 
@@ -29069,6 +29609,9 @@
 3 call_expr /usr/include/c++/5/ext/new_allocator.h
 4 addr_expr 
 5 function_decl /usr/include/c++/5/new
+6 tree_list 
+7 identifier_node 
+6 function_type 
 4 nop_expr 
 5 parm_decl /usr/include/c++/5/ext/new_allocator.h
 6 pointer_type 
@@ -29219,6 +29762,11 @@
 7 call_expr /usr/include/c++/5/bits/stl_algobase.h
 8 addr_expr 
 9 function_decl <built-in>
+10 tree_list 
+11 identifier_node 
+11 tree_list 
+12 identifier_node 
+10 function_type 
 8 nop_expr 
 9 pointer_plus_expr /usr/include/c++/5/bits/stl_algobase.h
 10 parm_decl /usr/include/c++/5/bits/stl_algobase.h
@@ -29460,6 +30008,7 @@
 4 call_expr /usr/include/c++/5/bits/stl_uninitialized.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_algobase.h
+7 function_type 
 5 parm_decl /usr/include/c++/5/bits/stl_uninitialized.h
 6 pointer_type 
 7 pointer_type 
@@ -29598,9 +30147,11 @@
 4 call_expr /usr/include/c++/5/bits/stl_algobase.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_algobase.h
+7 function_type 
 5 call_expr /usr/include/c++/5/bits/stl_algobase.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_algobase.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 7 pointer_type 
 8 pointer_type 
@@ -29615,6 +30166,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_algobase.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_algobase.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 7 pointer_type 
 8 pointer_type 
@@ -29742,9 +30294,11 @@
 4 call_expr /usr/include/c++/5/bits/stl_algobase.h
 5 addr_expr 
 6 function_decl /usr/include/c++/5/bits/stl_algobase.h
+7 function_type 
 5 call_expr /usr/include/c++/5/bits/stl_algobase.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_algobase.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 7 pointer_type 
 8 pointer_type 
@@ -29759,6 +30313,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_algobase.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_algobase.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 7 pointer_type 
 8 pointer_type 
@@ -29773,6 +30328,7 @@
 5 call_expr /usr/include/c++/5/bits/stl_algobase.h
 6 addr_expr 
 7 function_decl /usr/include/c++/5/bits/stl_algobase.h
+8 function_type 
 6 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 7 pointer_type 
 8 pointer_type 
@@ -29899,6 +30455,7 @@
 6 call_expr /usr/include/c++/5/bits/stl_algobase.h
 7 addr_expr 
 8 function_decl /usr/include/c++/5/bits/stl_algobase.h
+9 function_type 
 7 nop_expr 
 8 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 9 pointer_type 
@@ -30073,6 +30630,11 @@
 7 call_expr /usr/include/c++/5/bits/stl_algobase.h
 8 addr_expr 
 9 function_decl <built-in>
+10 tree_list 
+11 identifier_node 
+11 tree_list 
+12 identifier_node 
+10 function_type 
 8 nop_expr 
 9 parm_decl /usr/include/c++/5/bits/stl_algobase.h
 10 pointer_type 
