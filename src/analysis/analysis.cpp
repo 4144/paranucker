@@ -227,6 +227,15 @@ Node *skipNop(Node *node)
     return node;
 }
 
+Node *skipBackNop(Node *node)
+{
+    while (node && node->nodeType == NOP_EXPR)
+    {
+        node = node->parent;
+    }
+    return node;
+}
+
 void mergeNullChecked(WalkItem &wi1, WalkItem &wi2)
 {
     wi1.checkedNullVars.insert(wi2.checkedNullVars.begin(),

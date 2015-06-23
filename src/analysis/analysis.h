@@ -56,6 +56,8 @@ namespace Analysis
 
     Node *skipNop(Node *node);
 
+    Node *skipBackNop(Node *node);
+
     void mergeNullChecked(WalkItem &wi1, WalkItem &wi2);
 
     void mergeNonNullChecked(WalkItem &wi1, WalkItem &wi2);

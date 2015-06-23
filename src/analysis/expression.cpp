@@ -28,6 +28,7 @@
 
 #include "nodes/expr/addr_expr.h"
 #include "nodes/expr/bind_expr.h"
+#include "nodes/expr/call_expr.h"
 #include "nodes/expr/compound_expr.h"
 #include "nodes/expr/cond_expr.h"
 #include "nodes/expr/decl_expr.h"
@@ -82,6 +83,21 @@ void analyseAddrExpr(AddrExprNode *node, const WalkItem &wi, WalkItem &wo)
     // need atleast one arg for check
     if (node->args.empty() || command == FindArgs)
         return;
+
+    // do not report code like func1(ptr) or push_back(ptr)
+    Node *node2 = skipBackNop(node->parent);
+    if (node2)
+    {
+        while (node2 && node2->nodeType == ADDR_EXPR)
+        {
+            node2 = skipBackNop(node2->parent);
+        }
+        // found what some parent is function or method call
+        if (node2 && node2->nodeType == CALL_EXPR)
+        {
+            return;
+        }
+    }
 
     reportParmDeclNullPointer(node, node->args[0], wi);
 }
