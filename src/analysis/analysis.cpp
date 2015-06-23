@@ -119,6 +119,8 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     if (!node)
         return;
 
+    node = skipNop(node);
+
     WalkItem wi2 = wi;
     analyseNode(node, wi2, wo);
     removeCheckNullVars(wi2);
