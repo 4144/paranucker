@@ -324,6 +324,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
         case COMPOUND_EXPR:
             analyseCompoundExpr(static_cast<CompoundExprNode*>(node), wi2, wo);
             break;
+        case NOP_EXPR:
+            analyseNopExpr(static_cast<NopExprNode*>(node), wi2, wo);
+            break;
         case TRUTH_ORIF_EXPR:
             analyseTruthOrIfExpr(static_cast<TruthOrIfExprNode*>(node), wi2, wo);
             break;

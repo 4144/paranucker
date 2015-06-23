@@ -34,6 +34,7 @@
 #include "nodes/expr/eq_expr.h"
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/ne_expr.h"
+#include "nodes/expr/nop_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
 #include "nodes/expr/return_expr.h"
 #include "nodes/expr/truthandif_expr.h"
@@ -319,6 +320,16 @@ void analyseDeclExpr(DeclExprNode *node, const WalkItem &wi, WalkItem &wo)
             addLinkedVar(wo, initial->label, varDecl->label);
         }
     }
+}
+
+void analyseNopExpr(NopExprNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    // need one arg for check
+    if (node->args.empty())
+        return;
+
+    walkTree(node->args[0], wi, wo);
+    wo.stopWalking = true;
 }
 
 }
