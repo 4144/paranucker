@@ -152,23 +152,19 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
     Log::dumpWI(node, "EQ out ", wo);
 }
 
-void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem &wo)
+void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi, WalkItem &wo)
 {
-    // need two args for check
-    if (node->args.size() < 2 || command == FindArgs)
-        return;
-
     Log::dumpWI(node, "wo in ", wo);
     WalkItem wo1 = wo;
     WalkItem wo2 = wo;
-    walkTree(node->args[0], wi, wo1);
+    walkTree(node1, wi, wo1);
     Log::dumpWI(node, "wo1 ", wo1);
     WalkItem wi2 = wi;
     removeCheckNullVarsSet(wi2, wo1.checkedNullVars);
     wi2.checkNullVars.insert(wo1.checkedNonNullVars.begin(),
         wo1.checkedNonNullVars.end());
     Log::dumpWI(node, "wi2 ", wi2);
-    walkTree(node->args[1], wi2, wo2);
+    walkTree(node2, wi2, wo2);
     Log::dumpWI(node, "wo2 ", wo2);
     // probably condition wrong
     if (wo1.cleanExpr)
@@ -217,6 +213,15 @@ void analyseAndCondition(Node *node, Node *node1, Node *node2, const WalkItem &w
     wo.cleanExpr = wo1.cleanExpr && wo2.cleanExpr;
     wo.uselessExpr = wo1.uselessExpr && wo2.uselessExpr;
     Log::dumpWI(node, "wo out ", wo);
+}
+
+void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    // need two args for check
+    if (node->args.size() < 2 || command == FindArgs)
+        return;
+
+    analyseOrCondition(node, node->args[0], node->args[1], wi, wo);
 }
 
 void analyseTruthAndIfExpr(TruthAndIfExprNode *node, const WalkItem &wi, WalkItem &wo)
