@@ -45,6 +45,7 @@
 #include "nodes/expr/return_expr.h"
 #include "nodes/expr/truthand_expr.h"
 #include "nodes/expr/truthandif_expr.h"
+#include "nodes/expr/truthor_expr.h"
 #include "nodes/expr/truthorif_expr.h"
 
 #include "nodes/ref/component_ref.h"
@@ -332,6 +333,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             break;
         case TRUTH_ORIF_EXPR:
             analyseTruthOrIfExpr(static_cast<TruthOrIfExprNode*>(node), wi2, wo);
+            break;
+        case TRUTH_OR_EXPR:
+            analyseTruthOrExpr(static_cast<TruthOrExprNode*>(node), wi2, wo);
             break;
         case TRUTH_ANDIF_EXPR:
             analyseTruthAndIfExpr(static_cast<TruthAndIfExprNode*>(node), wi2, wo);
