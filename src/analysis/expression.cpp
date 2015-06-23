@@ -37,6 +37,7 @@
 #include "nodes/expr/nop_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
 #include "nodes/expr/return_expr.h"
+#include "nodes/expr/truthand_expr.h"
 #include "nodes/expr/truthandif_expr.h"
 #include "nodes/expr/truthorif_expr.h"
 
@@ -225,6 +226,15 @@ void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem 
 }
 
 void analyseTruthAndIfExpr(TruthAndIfExprNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    // need two args for check
+    if (node->args.size() < 2 || command == FindArgs)
+        return;
+
+    analyseAndCondition(node, node->args[0], node->args[1], wi, wo);
+}
+
+void analyseTruthAndExpr(TruthAndExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need two args for check
     if (node->args.size() < 2 || command == FindArgs)
