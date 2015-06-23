@@ -208,7 +208,13 @@ void analyseTruthAndIfExpr(TruthAndIfExprNode *node, const WalkItem &wi, WalkIte
     if (!wo1.uselessExpr && !wo2.uselessExpr)
     {   // need combine wo1 and wo2
         intersectNullChecked(wo, wo1, wo2);
+    }
+    if (!wo1.uselessExpr)
+    {
         mergeNonNullChecked(wo, wo1);
+    }
+    if (!wo2.uselessExpr)
+    {
         mergeNonNullChecked(wo, wo2);
     }
     wo.cleanExpr = wo1.cleanExpr && wo2.cleanExpr;
