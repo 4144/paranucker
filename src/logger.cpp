@@ -206,7 +206,8 @@ void dumpWI(Node *const node,
             const WalkItem &wi)
 {
     return;
-    Log::log("%s%s %s",
+    Log::log("%s%s%s %s",
+        node->getIndent().c_str(),
         name.c_str(),
         node->nodeTypeName.c_str(),
         node->label.c_str());
