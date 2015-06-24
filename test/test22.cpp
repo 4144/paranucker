@@ -1,3 +1,4 @@
+#include <string>
 #include <vector>
 
 struct Data1;
@@ -15,6 +16,8 @@ struct Data1
 
     int val;
     Data1 *ptrval;
+    int arr[3];
+    std::string str1;
 
     int ftest1()
     {
@@ -75,4 +78,22 @@ class Object1
             return;
         }
     }
+    void func8(Data1 *const ptr1)
+    {
+        if (!ptr1 || ptr1->val == 3 || !ptr1->ptrval)
+            return;
+
+        const int k = ptr1->arr[0];
+
+        int test1 = ptr1->val;
+    }
+
+void func9(Data1 *const chunk)
+{
+    if (!chunk || chunk->str1.empty())
+        return;
+    chunk->str1[0];
+}
+
 };
+
