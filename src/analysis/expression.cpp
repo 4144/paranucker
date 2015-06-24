@@ -325,13 +325,24 @@ void analyseCompoundExpr(CompoundExprNode *node, const WalkItem &wi, WalkItem &w
 // type var1 = var2;
 void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
-    // need one arg for check
-    if (node->args.empty() || command == FindArgs)
+    const size_t sz = node->args.size();
+    if (sz < 1 || command == FindArgs)
         return;
 
     Log::dumpWI(node, "wo in ", wo);
-    Node *node1 = skipNop(node->args[0]);
+    WalkItem wi2 = wi;
+    walkTree(node->args[1], wi2, wo);
+    wi2 = wo;
+    Log::dumpWI(node, "wi2 ", wi2);
+    walkTree(node->args[0], wi2, wo);
+    if (sz > 2)
+    {
+        wi2 = wo;
+        Log::dumpWI(node, "wi2 ", wi2);
+        walkTree(node->args[2], wi2, wo);
+    }
 
+    Node *node1 = skipNop(node->args[0]);
     if (node1 &&
         node1->nodeType == VAR_DECL)
     {
@@ -343,6 +354,7 @@ void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo)
             addLinkedVar(wo, initial->label, varDecl->label);
         }
     }
+    wo.stopWalking = true;
     Log::dumpWI(node, "wo out ", wo);
 }
 
