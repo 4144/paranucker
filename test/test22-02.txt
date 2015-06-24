@@ -100,15 +100,26 @@ operator[]:
 operator+: 
 __fill_bvector: 
 fill: 
-ftest: 
+Data1: 
+__base_ctor : 
+__comp_ctor : 
+Data1: pointer_type ptr0, 
+__base_ctor : pointer_type ptr0, 
+__comp_ctor : pointer_type ptr0, 
+ftest1: 
+ftest2: pointer_type ptr0, 
 func1: pointer_type ptr1, 
 func2: pointer_type ptr1, 
 func3: pointer_type ptr1, 
 func4: pointer_type ptr1, 
 test22.cpp: In member function 'void Object1::func4(Data1*)':
-test22.cpp:36:24: warning: Using parameter 'ptr1' without checking for null pointer
-         if (ptr1->ftest() == 100)
-                        ^
+test22.cpp:53:25: warning: Using parameter 'ptr1' without checking for null pointer
+         if (ptr1->ftest1() == 100)
+                         ^
+func5: pointer_type ptr1, 
+__comp_ctor : 
+func6: pointer_type ptr1, 
+func7: pointer_type ptr1, 
 fill: pointer_type __first, pointer_type __last, 
 vector: 
 __base_ctor : 

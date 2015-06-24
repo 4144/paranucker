@@ -1,10 +1,27 @@
 #include <vector>
 
+struct Data1;
+
 struct Data1
 {
-    int val;
+    Data1()
+    {
+    }
 
-    int ftest()
+    Data1(Data1 *ptr0) :
+        ptrval(ptr0)
+    {
+    }
+
+    int val;
+    Data1 *ptrval;
+
+    int ftest1()
+    {
+        return 1;
+    }
+
+    static int ftest2(Data1 *ptr0)
     {
         return 1;
     }
@@ -33,7 +50,27 @@ class Object1
 
     void func4(Data1 *const ptr1)
     {
-        if (ptr1->ftest() == 100)
+        if (ptr1->ftest1() == 100)
+        {
+            return;
+        }
+    }
+
+    void func5(Data1 *ptr1)
+    {
+        Data1 data(ptr1);
+    }
+
+    void func6(Data1 *const ptr1)
+    {
+        if (!ptr1)
+            return;
+        int num = ptr1->val;
+    }
+
+    void func7(Data1 *const ptr1)
+    {
+        if (Data1::ftest2(ptr1) == 200)
         {
             return;
         }
