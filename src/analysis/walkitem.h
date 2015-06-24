@@ -26,6 +26,7 @@
 
 typedef std::set<std::string> StringSet;
 typedef std::map<std::string, StringSet> StringMapSet;
+typedef std::map<std::string, std::string> StringMap;
 
 struct WalkItem
 {
@@ -36,6 +37,7 @@ struct WalkItem
         checkedNullVars(),
         checkedNonNullVars(),
         linkedVars(),
+        linkedReverseVars(),
         stopWalking(false),
         isReturned(false),
         cleanExpr(false),
@@ -50,6 +52,7 @@ struct WalkItem
         checkedNullVars(item.checkedNullVars),
         checkedNonNullVars(item.checkedNonNullVars),
         linkedVars(item.linkedVars),
+        linkedReverseVars(item.linkedReverseVars),
         stopWalking(item.stopWalking),
         isReturned(item.isReturned),
         cleanExpr(item.cleanExpr),
@@ -63,6 +66,7 @@ struct WalkItem
     StringSet checkedNullVars;     // vars checked for null in expressions
     StringSet checkedNonNullVars;  // vars checked for nonnull in expressions
     StringMapSet linkedVars;       // linked vars. map <parent, set(vars)>
+    StringMap linkedReverseVars;   // linked vars. map <child, parent>
     bool stopWalking;   // stop walking on tree after this node
     bool isReturned;    // set if return present in child nodes
     bool cleanExpr;     // set if expression is only variable check without compound conditions

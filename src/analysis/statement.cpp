@@ -100,8 +100,7 @@ void analyseCondition(Node *node,
                   wco.checkedNullVars)
         {
             wo.removeNullVars.insert(*it);
-            wo.checkNullVars.erase(*it);
-            wo.addNullVars.erase(*it);
+            removeCheckNullVar(wo, *it);
         }
     }
     if (wo3.isReturned)
@@ -112,8 +111,7 @@ void analyseCondition(Node *node,
                   wco.checkedNonNullVars)
         {
             wo.removeNullVars.insert(*it);
-            wo.checkNullVars.erase(*it);
-            wo.addNullVars.erase(*it);
+            removeCheckNullVar(wo, *it);
         }
     }
 

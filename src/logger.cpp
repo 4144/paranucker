@@ -238,6 +238,15 @@ void dumpWI(Node *const node,
         }
         Log::log("), ");
     }
+    Log::log(" linkedReverseVars:");
+    FOR_EACH (StringMap::const_iterator,
+              it,
+              wi.linkedReverseVars)
+    {
+        Log::log("%s -> %s ",
+            ((*it).first).c_str(),
+            ((*it).second).c_str());
+    }
     Log::log("\n");
 }
 

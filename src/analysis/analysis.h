@@ -51,6 +51,8 @@ namespace Analysis
 
     void removeCheckNullVars(WalkItem &wi);
 
+    void removeCheckNullVar(WalkItem &wi, std::string str);
+
     void removeCheckNullVarsSet(WalkItem &wi,
                                 std::set<std::string> &vars);
 

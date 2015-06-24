@@ -73,31 +73,50 @@ void addCheckNullVars(WalkItem &wi, WalkItem &wo)
     }
 }
 
+void removeCheckNullVar(WalkItem &wi, std::string str)
+{
+    // found var for deletion
+    if (wi.checkNullVars.find(str) != wi.checkNullVars.end())
+    {
+        wi.checkNullVars.erase(str);
+    }
+    if (wi.addNullVars.find(str) != wi.addNullVars.end())
+    {
+        wi.addNullVars.erase(str);
+    }
+    StringMapSet::const_iterator it2 = wi.linkedVars.find(str);
+    if (it2 != wi.linkedVars.end())
+    {
+        const StringSet &linked = (*it2).second;
+        FOR_EACH (StringSet::const_iterator, it3, linked)
+        {
+            if (wi.checkNullVars.find(*it3) != wi.checkNullVars.end())
+            {
+                wi.checkNullVars.erase(*it3);
+            }
+            if (wi.addNullVars.find(*it3) != wi.addNullVars.end())
+            {
+                wi.addNullVars.erase(*it3);
+            }
+        }
+        //wi.linkedVars.erase(str);
+    }
+}
+
 void removeCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
 {
     FOR_EACH (std::set<std::string>::const_iterator, it, vars)
     {
-        // found var for deletion
-        if (wi.checkNullVars.find(*it) != wi.checkNullVars.end())
+        // remove var if need
+        removeCheckNullVar(wi, *it);
+        // if need remove some linked var, search it parent,
+        // and remove all linked vars for this parent
+        StringMap::const_iterator it3 = wi.linkedReverseVars.find(*it);
+        if (it3 != wi.linkedReverseVars.end())
         {
-            wi.checkNullVars.erase(*it);
-        }
-        if (wi.addNullVars.find(*it) != wi.addNullVars.end())
-        {
-            wi.addNullVars.erase(*it);
-        }
-        StringMapSet::const_iterator it2 = wi.linkedVars.find(*it);
-        if (it2 != wi.linkedVars.end())
-        {
-            const StringSet &linked = (*it2).second;
-            FOR_EACH (StringSet::const_iterator, it3, linked)
-            {
-                if (wi.checkNullVars.find(*it3) != wi.checkNullVars.end())
-                {
-                    wi.checkNullVars.erase(*it3);
-                }
-            }
-            wi.linkedVars.erase(*it);
+            const std::string parent = (*it3).second;
+            //wi.linkedVars.erase(parent);
+            removeCheckNullVar(wi, parent);
         }
     }
 }
@@ -109,6 +128,7 @@ void addLinkedVar(WalkItem &wi,
     if (wi.linkedVars.find(parent) == wi.linkedVars.end())
         wi.linkedVars[parent] = std::set<std::string>();
     wi.linkedVars[parent].insert(var);
+    wi.linkedReverseVars[var] = parent;
 }
 
 void startWalkTree(Node *node)
@@ -132,8 +152,8 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     addCheckNullVars(wo, wi2);
     addCheckNullVars(wi2, wi2);
     wi2.linkedVars = wo.linkedVars;
+    wi2.linkedReverseVars = wo.linkedReverseVars;
     wi2.addNullVars = wo.addNullVars;
-    wi2.linkedVars = wo.linkedVars;
 
     const bool isReturned = wo.isReturned;
     if (wo.stopWalking)
@@ -155,12 +175,14 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
         wo2.checkNullVars = wi2.checkNullVars;
         wi2.isReturned = wi2.isReturned || wo2.isReturned;
         wi2.linkedVars = wo2.linkedVars;
+        wi2.linkedReverseVars = wo2.linkedReverseVars;
         wo2.stopWalking = false;
     }
     wo.removeNullVars = wi2.removeNullVars;
     wo.addNullVars = wi2.addNullVars;
     wo.isReturned = wo.isReturned || isReturned || wo2.isReturned;
     wo.linkedVars = wi2.linkedVars;
+    wo.linkedReverseVars = wi2.linkedReverseVars;
 
     if (command != Command::DumpNullPointers)
         Log::dumpWI(node, "walkTree out wo ", wo);
