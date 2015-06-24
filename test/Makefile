@@ -21,7 +21,8 @@ TESTS19 = test19-01 test19-02 test19-03 test19-04
 TESTS20 = test20-01 test20-02 test20-03 test20-04
 TESTS21 = test21-01 test21-02 test21-03 test21-04 test21-05
 TESTS22 = test22-01 test22-02 test22-03 test22-04 test22-05
-ALLTESTS = test01 test02 test03 test04 test05 test06 test07 test08 test09 test10 test11 test12 test13 test14 test15 test16 test17 test18 test19 test20 test21 test22 ${TESTS01} ${TESTS02} ${TESTS03} ${TESTS04} ${TESTS05} ${TESTS06} ${TESTS07} ${TESTS08} ${TESTS09} ${TESTS10} ${TESTS11} ${TESTS12} ${TESTS13} ${TESTS14} ${TESTS15} ${TESTS16} ${TESTS17} ${TESTS18} ${TESTS19} ${TESTS20} ${TESTS21} ${TESTS22}
+TESTS23 = test23-01 test23-02 test23-03 test23-04 test23-05
+ALLTESTS = test01 test02 test03 test04 test05 test06 test07 test08 test09 test10 test11 test12 test13 test14 test15 test16 test17 test18 test19 test20 test21 test22 test23 ${TESTS01} ${TESTS02} ${TESTS03} ${TESTS04} ${TESTS05} ${TESTS06} ${TESTS07} ${TESTS08} ${TESTS09} ${TESTS10} ${TESTS11} ${TESTS12} ${TESTS13} ${TESTS14} ${TESTS15} ${TESTS16} ${TESTS17} ${TESTS18} ${TESTS19} ${TESTS20} ${TESTS21} ${TESTS22} ${TESTS23}
 
 .PHONY: ${ALLTESTS} ${CRASHES} all crashes
 
@@ -258,6 +259,18 @@ test22-04:
 	$(call CMDXX,detectnullpointers,test22.cpp,test22-04.txt)
 test22-05:
 	$(call CMDXX,detectnullpointers,test22.cpp,test22-05.txt,"-O2")
+
+test23: ${TESTS23}
+test23-01:
+	$(call CMDXX,dump,test23.cpp,test23-01.txt)
+test23-02:
+	$(call CMDXX,findargs,test23.cpp,test23-02.txt)
+test23-03:
+	$(call CMDXX,dumpnullpointers,test23.cpp,test23-03.txt)
+test23-04:
+	$(call CMDXX,detectnullpointers,test23.cpp,test23-04.txt)
+test23-05:
+	$(call CMDXX,detectnullpointers,test23.cpp,test23-05.txt,"-O2")
 
 crashtest01:
 	$(call CMDXX,dump,crashtest01.h,crashtest01-01.txt)

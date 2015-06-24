@@ -1,0 +1,8 @@
+test23.cpp: In member function 'void Object1::func3(Data1*)':
+test23.cpp:62:25: warning: Using parameter 'ptr1' without checking for null pointer
+             ptr1->ftest1();
+                         ^
+test23.cpp: In member function 'void Object1::func5(Data1*)':
+test23.cpp:80:25: warning: Using parameter 'ptr1' without checking for null pointer
+             ptr1->ftest1();
+                         ^
