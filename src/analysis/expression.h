@@ -33,6 +33,7 @@ struct EqExprNode;
 struct ModifyExprNode;
 struct NeExprNode;
 struct Node;
+struct NonLvalueExprNode;
 struct NopExprNode;
 struct PointerPlusExprNode;
 struct ReturnExprNode;
@@ -77,6 +78,8 @@ namespace Analysis
     void analyseDeclExpr(DeclExprNode *node, const WalkItem &wi, WalkItem &wo);
 
     void analyseNopExpr(NopExprNode *node, const WalkItem &wi, WalkItem &wo);
+
+    void analyseNonLvalueExpr(NonLvalueExprNode *node, const WalkItem &wi, WalkItem &wo);
 
     std::string getComponentRefVariable(Node *node);
 }

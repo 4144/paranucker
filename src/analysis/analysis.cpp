@@ -42,6 +42,7 @@
 #include "nodes/expr/eq_expr.h"
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/ne_expr.h"
+#include "nodes/expr/nonlvalue_expr.h"
 #include "nodes/expr/nop_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
 #include "nodes/expr/return_expr.h"
@@ -250,7 +251,9 @@ void reportParmDeclNullPointer(Node *mainNode,
 
 Node *skipNop(Node *node)
 {
-    while (node && node->nodeType == NOP_EXPR)
+    while (node &&
+           (node->nodeType == NOP_EXPR ||
+           node->nodeType == NON_LVALUE_EXPR))
     {
         NopExprNode *nop = static_cast<NopExprNode*>(node);
         if (nop && !nop->args.empty())
@@ -397,6 +400,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             break;
         case POINTER_PLUS_EXPR:
             analysePointerPlusExpr(static_cast<PointerPlusExprNode*>(node), wi2, wo);
+            break;
+        case NON_LVALUE_EXPR:
+            analyseNonLvalueExpr(static_cast<NonLvalueExprNode*>(node), wi2, wo);
             break;
         case VAR_DECL:
             analyseVarDecl(static_cast<VarDeclNode*>(node), wi2, wo);
