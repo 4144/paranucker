@@ -47,6 +47,7 @@
 #include "nodes/decl/function_decl.h"
 #include "nodes/decl/var_decl.h"
 
+#include "nodes/ref/component_ref.h"
 #include "nodes/ref/indirect_ref.h"
 
 #include <set>
@@ -56,6 +57,47 @@
 namespace Analysis
 {
 
+std::string getVariableName(Node *node)
+{
+    if (!node)
+        return "";
+
+    node = skipNop(node);
+    if (!node)
+        return "";
+
+    if (node->nodeType == PARM_DECL || node->nodeType == VAR_DECL)
+        return node->label;
+    else if (node->nodeType == COMPONENT_REF)
+        return getComponentRefVariable(node);
+    return "";
+}
+
+std::string getComponentRefVariable(Node *node)
+{
+    std::string str;
+    ComponentRefNode *const comp = static_cast<ComponentRefNode*>(skipNop(node));
+    if (comp->object &&
+        comp->field)
+    {
+        Node *object = skipNop(comp->object);
+        Node *field = skipNop(comp->field);
+        if (object &&
+            field &&
+            object->nodeType == INDIRECT_REF &&
+            field->nodeType == FIELD_DECL)
+        {
+            IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
+            Node *ref = skipNop(indirect->ref);
+            if (ref && ref->nodeType == PARM_DECL)
+            {
+                str.append(ref->label).append("->").append(field->label);
+            }
+        }
+    }
+    return str;
+}
+
 void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need atleast one arg for check
@@ -63,11 +105,21 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
         return;
 
     Node *arg = skipNop(node->args[0]);
-    if (arg && arg->nodeType == INDIRECT_REF)
+    if (arg)
     {
-        reportParmDeclNullPointer(node,
-            static_cast<IndirectRefNode*>(arg)->ref,
-            wi);
+        if (arg->nodeType == INDIRECT_REF)
+        {
+            reportParmDeclNullPointer(node,
+                static_cast<IndirectRefNode*>(arg)->ref,
+                wi);
+        }
+        else if (arg->nodeType == COMPONENT_REF && node->args.size() > 1)
+        {
+            std::string var1 = getComponentRefVariable(arg);
+            std::string var2 = getVariableName(node->args[1]);
+            wo.addNullVars.insert(var1);
+            addLinkedVar(wo, var2, var1);
+        }
     }
 }
 
@@ -121,15 +173,15 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
     // INTEGER_CST?
     Node *node2 = skipNop(node->args[1]);
 
+    std::string var = getVariableName(node1);
     // if (var != 0)
-    if (node1 &&
+    if (!var.empty() &&
         node2 &&
-        (node1->nodeType == PARM_DECL || node1->nodeType == VAR_DECL) &&
         node2->nodeType == INTEGER_CST &&
-        wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
+        wi.checkNullVars.find(var) != wi.checkNullVars.end() &&
         node2->label == "0")
     {
-        wo.checkedNonNullVars.insert(node1->label);
+        wo.checkedNonNullVars.insert(var);
         wo.cleanExpr = true;
         wo.uselessExpr = false;
     }
@@ -152,15 +204,15 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
     Node *node1 = skipNop(node->args[0]);
     // INTEGER_CST?
     Node *node2 = skipNop(node->args[1]);
+    std::string var = getVariableName(node1);
     // if (var == 0)
-    if (node1 &&
+    if (!var.empty() &&
         node2 &&
-        (node1->nodeType == PARM_DECL || node1->nodeType == VAR_DECL) &&
         node2->nodeType == INTEGER_CST &&
-        wi.checkNullVars.find(node1->label) != wi.checkNullVars.end() &&
+        wi.checkNullVars.find(var) != wi.checkNullVars.end() &&
         node2->label == "0")
     {
-        wo.checkedNullVars.insert(node1->label);
+        wo.checkedNullVars.insert(var);
         wo.cleanExpr = true;
         wo.uselessExpr = false;
     }

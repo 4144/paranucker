@@ -226,13 +226,23 @@ void reportParmDeclNullPointer(Node *mainNode,
                     node->label);
             }
         }
-        if (node->nodeType == VAR_DECL)
+        else if (node->nodeType == VAR_DECL)
         {
             if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
             {
                 Log::warn(findBackLocation(mainNode),
                     "Using variable '%s' without checking for null pointer",
                     node->label);
+            }
+        }
+        else if (node->nodeType == COMPONENT_REF)
+        {
+            std::string var = getComponentRefVariable(node);
+            if (wi.checkNullVars.find(var) != wi.checkNullVars.end())
+            {
+                Log::warn(findBackLocation(mainNode),
+                    "Using field '%s' without checking for null pointer",
+                    var);
             }
         }
     }
