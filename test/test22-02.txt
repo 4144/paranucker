@@ -235,7 +235,9 @@ __comp_dtor :
 func6: pointer_type ptr1, 
 func7: pointer_type ptr1, 
 func8: pointer_type ptr1, 
-func9: pointer_type chunk, 
+func9: pointer_type ptr1, 
+func10: pointer_type ptr1, 
+func11: pointer_type ptr1, 
 fill: pointer_type __first, pointer_type __last, 
 _Alloc_hider: 
 __base_dtor : 

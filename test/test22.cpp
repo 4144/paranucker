@@ -88,12 +88,31 @@ class Object1
         int test1 = ptr1->val;
     }
 
-void func9(Data1 *const chunk)
-{
-    if (!chunk || chunk->str1.empty())
-        return;
-    chunk->str1[0];
-}
+    void func9(Data1 *const ptr1)
+    {
+        if (!ptr1 || ptr1->str1.empty())
+            return;
+        ptr1->str1[0];
+    }
 
+    void func10(Data1 *const ptr1)
+    {
+        Data1 *ptr2 = ptr1;
+        if (ptr2)
+        {
+            int k = 10;
+            ptr1->val = 100;
+        }
+        else
+        {
+            k = 20;
+        }
+    }
+
+    void func11(Data1 *const ptr1)
+    {
+        Data1 *ptr2 = ptr1;
+        if (ptr1)
+            ptr2->val = 200;
+    }
 };
-
