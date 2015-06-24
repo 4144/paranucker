@@ -25,6 +25,7 @@
 struct AddrExprNode;
 struct BindExprNode;
 struct CallExprNode;
+struct CleanupPointExprNode;
 struct CompoundExprNode;
 struct CondExprNode;
 struct DeclExprNode;
@@ -49,6 +50,8 @@ namespace Analysis
     void analyseAddrExpr(AddrExprNode *node, const WalkItem &wi, WalkItem &wo);
 
     void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo);
+
+    void analyseCleanupPointExpr(CleanupPointExprNode* node, const WalkItem &wi, WalkItem &wo);
 
     void analyseReturnExpr(ReturnExprNode *node, const WalkItem &wi, WalkItem &wo);
 

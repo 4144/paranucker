@@ -36,6 +36,7 @@
 #include "nodes/expr/bind_expr.h"
 #include "nodes/expr/compound_expr.h"
 #include "nodes/expr/call_expr.h"
+#include "nodes/expr/cleanuppoint_expr.h"
 #include "nodes/expr/cond_expr.h"
 #include "nodes/expr/decl_expr.h"
 #include "nodes/expr/eq_expr.h"
@@ -334,6 +335,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             break;
         case CALL_EXPR:
             analyseCallExpr(static_cast<CallExprNode*>(node), wi2, wo);
+            break;
+        case CLEANUP_POINT_EXPR:
+            analyseCleanupPointExpr(static_cast<CleanupPointExprNode*>(node), wi2, wo);
             break;
         case COND_EXPR:
             analyseCondExpr(static_cast<CondExprNode*>(node), wi2, wo);

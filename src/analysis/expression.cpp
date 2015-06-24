@@ -29,6 +29,7 @@
 #include "nodes/expr/addr_expr.h"
 #include "nodes/expr/bind_expr.h"
 #include "nodes/expr/call_expr.h"
+#include "nodes/expr/cleanuppoint_expr.h"
 #include "nodes/expr/compound_expr.h"
 #include "nodes/expr/cond_expr.h"
 #include "nodes/expr/decl_expr.h"
@@ -433,6 +434,21 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
         walkTree(node2, wi, wo2);
         Log::dumpWI(node, "wo arg ", wo2);
     }
+    wo.stopWalking = true;
+}
+
+void analyseCleanupPointExpr(CleanupPointExprNode* node, const WalkItem &wi, WalkItem &wo)
+{
+    WalkItem wo2 = wo;
+    FOR_EACH (std::vector<Node*>::const_iterator, it, node->args)
+    {
+        wo2 = wo;
+        Node *node2 = skipNop(*it);
+        reportParmDeclNullPointer(node, node2, wi);
+        walkTree(node2, wi, wo2);
+        Log::dumpWI(node, "wo arg ", wo2);
+    }
+    wo = wo2;
     wo.stopWalking = true;
 }
 
