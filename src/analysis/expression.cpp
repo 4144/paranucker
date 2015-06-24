@@ -43,6 +43,7 @@
 #include "nodes/expr/truthor_expr.h"
 #include "nodes/expr/truthorif_expr.h"
 
+#include "nodes/decl/function_decl.h"
 #include "nodes/decl/var_decl.h"
 
 #include "nodes/ref/indirect_ref.h"
@@ -407,9 +408,15 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
             AddrExprNode *addrNode = static_cast<AddrExprNode*>(node->function);
             if (!addrNode->args.empty())
             {
-                if (addrNode->args[0]->nodeType == FUNCTION_TYPE)
+                if (addrNode->args[0]->nodeType == FUNCTION_DECL)
                 {
-                    enableCheck = false;
+                    FunctionDeclNode *declNode = static_cast<FunctionDeclNode*>(
+                        addrNode->args[0]);
+                    if (declNode->functionType &&
+                        declNode->functionType->nodeType == FUNCTION_TYPE)
+                    {
+                        enableCheck = false;
+                    }
                 }
             }
         }
