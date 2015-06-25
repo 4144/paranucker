@@ -40,6 +40,7 @@
 #include "nodes/expr/cond_expr.h"
 #include "nodes/expr/decl_expr.h"
 #include "nodes/expr/eq_expr.h"
+#include "nodes/expr/init_expr.h"
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/ne_expr.h"
 #include "nodes/expr/nonlvalue_expr.h"
@@ -358,6 +359,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             break;
         case DECL_EXPR:
             analyseDeclExpr(static_cast<DeclExprNode*>(node), wi2, wo);
+            break;
+        case INIT_EXPR:
+            analyseInitExpr(static_cast<InitExprNode*>(node), wi2, wo);
             break;
         case MODIFY_EXPR:
             analyseModifyExpr(static_cast<ModifyExprNode*>(node), wi2, wo);

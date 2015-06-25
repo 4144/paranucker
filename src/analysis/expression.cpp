@@ -34,6 +34,7 @@
 #include "nodes/expr/cond_expr.h"
 #include "nodes/expr/decl_expr.h"
 #include "nodes/expr/eq_expr.h"
+#include "nodes/expr/init_expr.h"
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/ne_expr.h"
 #include "nodes/expr/nonlvalue_expr.h"
@@ -513,6 +514,21 @@ void analyseCleanupPointExpr(CleanupPointExprNode* node, const WalkItem &wi, Wal
     }
     wo = wo2;
     wo.stopWalking = true;
+}
+
+void analyseInitExpr(InitExprNode* node, const WalkItem &wi, WalkItem &wo)
+{
+    // need one arg for check
+    if (node->args.size() < 2 || command == FindArgs)
+        return;
+
+    // var1 = var2
+    std::string var1 = getVariableName(node->args[0]);
+    std::string var2 = getVariableName(node->args[1]);
+    if (var1.empty() || var2.empty())
+        return;
+    wo.addNullVars.insert(var1);
+    addLinkedVar(wo, var2, var1);
 }
 
 }
