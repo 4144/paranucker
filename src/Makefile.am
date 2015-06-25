@@ -35,14 +35,14 @@ if ENABLE_GPROF
 SHARED_CXXFLAGS += "-pg"
 endif
 
-lib_LTLIBRARIES = libastdumper.la libcppastdumper.la
-libastdumper_la_SOURCES = ${SRC}
-libastdumper_la_LDFLAGS = ${SHARED_LDFLAGS}
-libastdumper_la_CXXFLAGS = ${SHARED_CXXFLAGS}
+lib_LTLIBRARIES = libparanucker.la libcxxparanucker.la
+libparanucker_la_SOURCES = ${SRC}
+libparanucker_la_LDFLAGS = ${SHARED_LDFLAGS}
+libparanucker_la_CXXFLAGS = ${SHARED_CXXFLAGS}
 
-libcppastdumper_la_SOURCES = ${SRC} custom/fixed-cp-tree.h
-libcppastdumper_la_LDFLAGS = ${SHARED_LDFLAGS}
-libcppastdumper_la_CXXFLAGS = ${SHARED_CXXFLAGS} -DENABLE_CPPLANG
+libcxxparanucker_la_SOURCES = ${SRC} custom/fixed-cp-tree.h
+libcxxparanucker_la_LDFLAGS = ${SHARED_LDFLAGS}
+libcxxparanucker_la_CXXFLAGS = ${SHARED_CXXFLAGS} -DENABLE_CXXLANG
 
-all-local: libastdumper.la libcppastdumper.la
+all-local: libparanucker.la libcxxparanucker.la
 	echo done

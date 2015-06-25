@@ -30,11 +30,11 @@ CC := gcc-5
 CXX := g++-5
 MAKEFLAGS += --jobs=9
 
-PLUGINXX = ../cppastdumper.so
-PLUGIN = ../astdumper.so
+PLUGINXX = ../cxxparanucker.so
+PLUGIN = ../paranucker.so
 
-CMDXX = LANG=C ${CXX} -c ${4} -fplugin=${PLUGINXX} -fplugin-arg-cppastdumper-command=${1} ${2} -o ../build/${3}.out 2>${3}
-CMD = LANG=C ${CC} -c ${4} -fplugin=${PLUGIN} -fplugin-arg-astdumper-command=${1} ${2} -o ../build/${3}.out 2>${3}
+CMDXX = LANG=C ${CXX} -c ${4} -fplugin=${PLUGINXX} -fplugin-arg-cxxparanucker-command=${1} ${2} -o ../build/${3}.out 2>${3}
+CMD = LANG=C ${CC} -c ${4} -fplugin=${PLUGIN} -fplugin-arg-paranucker-command=${1} ${2} -o ../build/${3}.out 2>${3}
 
 all: ${ALLTESTS} ${CRASHES}
 tests: ${ALLTESTS}

@@ -33,7 +33,7 @@ void parseTypeNameTypeNode(TypeNameTypeNode *node)
     fillType(node);
     Log::dump(node);
 
-#ifdef ENABLE_CPPLANG
+#ifdef ENABLE_CXXLANG
     setPrintField(node, TYPENAME_IS_ENUM_P, isEnum);
     setPrintField(node, TYPENAME_IS_CLASS_P, isClass);
     setPrintField(node, TYPENAME_IS_RESOLVING_P, isResolving);
@@ -42,7 +42,7 @@ void parseTypeNameTypeNode(TypeNameTypeNode *node)
     fillTypeName(node);
     fillTypeAttributes(node);
 
-#ifdef ENABLE_CPPLANG
+#ifdef ENABLE_CXXLANG
     node->fullName = createParseNode(
         node,
         TYPENAME_TYPE_FULLNAME(node->gccNode),

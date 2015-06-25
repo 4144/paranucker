@@ -1,4 +1,4 @@
-AC_INIT(astdumper, 1.0, akaras@inbox.ru)
+AC_INIT(paranucker, 1.0, akaras@inbox.ru)
 AC_CONFIG_AUX_DIR(config)
 AC_CONFIG_SRCDIR(src)
 AC_CONFIG_MACRO_DIR([m4])

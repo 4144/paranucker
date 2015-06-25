@@ -33,7 +33,7 @@ void parsePtrMemCstNode(PtrMemCstNode *node)
     fillType(node);
     Log::dump(node);
 
-#ifdef ENABLE_CPPLANG
+#ifdef ENABLE_CXXLANG
     node->record = createParseNode(
         node,
         PTRMEM_CST_CLASS(node->gccNode),

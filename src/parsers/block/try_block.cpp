@@ -34,7 +34,7 @@ void parseTryBlockNode(TryBlockNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
-#ifdef ENABLE_CPPLANG
+#ifdef ENABLE_CXXLANG
     setPrintField(node, CLEANUP_P, isClean);
 
     node->body = createParseNode(

@@ -41,7 +41,7 @@
 #include "tree.h"
 #include "print-tree.h"
 
-#ifdef ENABLE_CPPLANG
+#ifdef ENABLE_CXXLANG
 #include "cp/cp-tree.h"
 #else
 #include "c-family/c-common.h"

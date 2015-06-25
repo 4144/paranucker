@@ -32,7 +32,7 @@ void parseTemplateParmIndexNode(TemplateParmIndexNode *node)
     fillType(node);
     Log::dump(node);
 
-#ifdef ENABLE_CPPLANG
+#ifdef ENABLE_CXXLANG
     setPrintField(node, TEMPLATE_PARM_IDX, parmIdx);
     setPrintField(node, TEMPLATE_PARM_LEVEL, parmLevel);
     setPrintField(node, TEMPLATE_PARM_ORIG_LEVEL, parmOrigLevel);

@@ -1,4 +1,4 @@
-# Ast Dumper - статический анализатор C/C++ кода.
+# Paranoid null checker (paranucker) - статический анализатор C/C++ кода.
 
 Представляет собой плагин к компилятору [gcc](https://gcc.gnu.org).
 Есть возможность вывода абстрактного синтаксического дерева [AST](https://ru.wikipedia.org/wiki/Абстрактное_синтаксическое_дерево) и поиска нулевых указателей.
@@ -21,8 +21,8 @@
 
 ## Компиляции
  - Запустить build.sh
- - Вы получите два файла. astdumper.so для C/gcc.
-   и cppastdumper.so для C++/g++
+ - Вы получите два файла. paranucker.so для C/gcc.
+   и cxxparanucker.so для C++/g++
 
 ## Примеры использования
 В директории [examples](examples) находится два примера для C++ и C.
@@ -32,10 +32,10 @@
  - [Hercules](http://herc.ws/)
 
 ## Расширенное использование
-Ast Dumper поддерживает один параметр с именем -fplugin-arg-astdumper-command или -fplugin-arg-cppastdumper-command в зависимости от того, что вы используется C или C++.
+Paranoid null checker поддерживает один параметр с именем -fplugin-arg-paranucker-command или -fplugin-arg-cxxparanucker-command в зависимости от того, что вы используется C или C++.
 
 Пример:
-  gcc-5 -fplugin=../astdumper.so -fplugin-arg-astdumper-command=detectnullpointers
+  gcc-5 -fplugin=../paranucker.so -fplugin-arg-paranucker-command=detectnullpointers
 
 
 Возможные значения параметра:

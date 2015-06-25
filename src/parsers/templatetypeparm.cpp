@@ -32,7 +32,7 @@ void parseTemplateTypeParmNode(TemplateTypeParmNode *node)
     fillType(node);
     Log::dump(node);
 
-#ifdef ENABLE_CPPLANG
+#ifdef ENABLE_CXXLANG
     node->index = createParseNode(
         node,
         TEMPLATE_TYPE_PARM_INDEX(node->gccNode),

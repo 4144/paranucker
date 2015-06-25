@@ -36,7 +36,7 @@ void parseAggrInitExprNode(AggrInitExprNode *node)
 
     //fillExprOperands(node);
 
-#ifdef ENABLE_CPPLANG
+#ifdef ENABLE_CXXLANG
     node->function = createParseNode(
         node,
         AGGR_INIT_EXPR_FN(node->gccNode),

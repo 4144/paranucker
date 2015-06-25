@@ -1,4 +1,4 @@
-# Ast Dumper - static code analyser for C/C++
+# Paranoid null checker (paranucker) - static code analyser for C/C++
 
 This is [gcc](https://gcc.gnu.org) plugin for dump [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) tree and search possible null pointers.
 
@@ -20,8 +20,8 @@ Version 1.0       Date: 2015-06-22
 
 ## Build
  - Run build.sh
- - You will get astdumper.so for gcc binary
-   and cppastdumper.so for g++ binary
+ - You will get paranucker.so for gcc binary
+   and cxxparanucker.so for g++ binary
 
 ## Usage examples
 In directory [examples](examples) present two examples one for C++ and other for C.
@@ -31,10 +31,10 @@ In directory [examples](examples) present two examples one for C++ and other for
  - [Hercules](http://herc.ws/)
 
 ## Advanced usage
-Ast Dumper support one plugin paramater named -fplugin-arg-astdumper-command or -fplugin-arg-cppastdumper-command depend what you using C or C++
+Paranoid null checker support one plugin paramater named -fplugin-arg-paranucker-command or -fplugin-arg-cxxparanucker-command depend what you using C or C++
 
 Example:
-  gcc-5 -fplugin=../astdumper.so -fplugin-arg-astdumper-command=detectnullpointers
+  gcc-5 -fplugin=../paranucker.so -fplugin-arg-paranucker-command=detectnullpointers
 
 
 Known parameter values:
