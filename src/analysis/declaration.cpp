@@ -34,7 +34,9 @@
 namespace Analysis
 {
 
-void analyseVarDecl(VarDeclNode *node, const WalkItem &wi, WalkItem &wo)
+void analyseVarDecl(VarDeclNode *node A_UNUSED,
+                    const WalkItem &wi A_UNUSED,
+                    WalkItem &wo A_UNUSED)
 {
     // need atleast one arg for check
     if (command == FindArgs)

@@ -39,7 +39,9 @@
 namespace Analysis
 {
 
-void analyseComponentRef(ComponentRefNode *node, const WalkItem &wi, WalkItem &wo)
+void analyseComponentRef(ComponentRefNode *node,
+                         const WalkItem &wi,
+                         WalkItem &wo A_UNUSED)
 {
     // need atleast one arg for check
     if (!node->object || command == FindArgs)

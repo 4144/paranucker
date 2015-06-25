@@ -122,7 +122,7 @@ void analyseFunction(FunctionDeclNode *node, const WalkItem &wi, WalkItem &wo)
     size_t sz = node->args.size();
     if (types.size() < sz)
         sz = types.size();
-    for (int f = 0; f < sz; f ++)
+    for (size_t f = 0; f < sz; f ++)
     {
         const TypeNode *const type = types[f];
         if (!type || type->nodeType != POINTER_TYPE)

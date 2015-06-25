@@ -128,7 +128,9 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
     }
 }
 
-void analysePointerPlusExpr(PointerPlusExprNode *node, const WalkItem &wi, WalkItem &wo)
+void analysePointerPlusExpr(PointerPlusExprNode *node,
+                            const WalkItem &wi,
+                            WalkItem &wo A_UNUSED)
 {
     // need atleast one arg for check
     if (node->args.empty() || command == FindArgs)
@@ -137,7 +139,9 @@ void analysePointerPlusExpr(PointerPlusExprNode *node, const WalkItem &wi, WalkI
     reportParmDeclNullPointer(node, node->args[0], wi);
 }
 
-void analyseAddrExpr(AddrExprNode *node, const WalkItem &wi, WalkItem &wo)
+void analyseAddrExpr(AddrExprNode *node,
+                     const WalkItem &wi,
+                     WalkItem &wo A_UNUSED)
 {
     // need atleast one arg for check
     if (node->args.empty() || command == FindArgs)
@@ -161,7 +165,9 @@ void analyseAddrExpr(AddrExprNode *node, const WalkItem &wi, WalkItem &wo)
     reportParmDeclNullPointer(node, node->args[0], wi);
 }
 
-void analyseReturnExpr(ReturnExprNode *node, const WalkItem &wi, WalkItem &wo)
+void analyseReturnExpr(ReturnExprNode *node A_UNUSED,
+                       const WalkItem &wi A_UNUSED,
+                       WalkItem &wo)
 {
     wo.isReturned = true;
 }
@@ -519,7 +525,9 @@ void analyseCleanupPointExpr(CleanupPointExprNode* node, const WalkItem &wi, Wal
     wo.stopWalking = true;
 }
 
-void analyseInitExpr(InitExprNode* node, const WalkItem &wi, WalkItem &wo)
+void analyseInitExpr(InitExprNode* node,
+                     const WalkItem &wi A_UNUSED,
+                     WalkItem &wo)
 {
     // need one arg for check
     if (node->args.size() < 2 || command == FindArgs)

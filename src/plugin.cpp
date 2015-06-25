@@ -55,8 +55,11 @@ static void pre_generic(void *gcc_data,
 }
 
 int plugin_init (struct plugin_name_args *plugin_info,
-                 struct plugin_gcc_version *version A_UNUSED)
+                 struct plugin_gcc_version *version)
 {
+    if (!plugin_default_version_check (version, &gcc_version))
+        return 1;
+
     const char *const plugin_name = plugin_info->base_name;
     const int argc = plugin_info->argc;
     struct plugin_argument *argv = plugin_info->argv;
