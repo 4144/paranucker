@@ -217,24 +217,27 @@ void reportParmDeclNullPointer(Node *mainNode,
                                const WalkItem &wi)
 {
     node = skipNop(node);
-    if (node && !node->label.empty())
+    if (node)
     {
-        if (node->nodeType == PARM_DECL)
+        if (!node->label.empty())
         {
-            if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+            if (node->nodeType == PARM_DECL)
             {
-                Log::warn(findBackLocation(mainNode),
-                    "Using parameter '%s' without checking for null pointer",
-                    node->label);
+                if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+                {
+                    Log::warn(findBackLocation(mainNode),
+                        "Using parameter '%s' without checking for null pointer",
+                        node->label);
+                }
             }
-        }
-        else if (node->nodeType == VAR_DECL)
-        {
-            if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+            else if (node->nodeType == VAR_DECL)
             {
-                Log::warn(findBackLocation(mainNode),
-                    "Using variable '%s' without checking for null pointer",
-                    node->label);
+                if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+                {
+                    Log::warn(findBackLocation(mainNode),
+                        "Using variable '%s' without checking for null pointer",
+                        node->label);
+                }
             }
         }
         else if (node->nodeType == COMPONENT_REF)
