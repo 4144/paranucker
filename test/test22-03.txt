@@ -2676,49 +2676,49 @@ cleanup_point_expr : ptr1,
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
-component_ref : , ptr1, 
-indirect_ref : , ptr1, 
-indirect_ref : , ptr1, 
-var_decl ptr2: , ptr1, 
-field_decl val: , ptr1, 
-integer_cst 32: , ptr1, 
-integer_cst 10: , ptr1, 
+component_ref : ptr1, 
+indirect_ref : ptr1, 
+indirect_ref : ptr1, 
 var_decl ptr2: ptr1, 
-integer_cst 64: , ptr1, 
-addr_expr : , ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst 10: ptr1, 
+var_decl ptr2: ptr1, 
+integer_cst 64: ptr1, 
+addr_expr : ptr1, 
 test22.cpp: In member function 'int Object1::func3(Data1*)':
 test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
          Data1** ptr2 = &ptr1;
                  ^
-parm_decl ptr1: , ptr1, 
-pointer_type : , ptr1, 
-record_type : , ptr1, 
-type_decl Data1: , ptr1, 
-field_decl val: , ptr1, 
-integer_cst 32: , ptr1, 
-field_decl ptrval: , ptr1, 
-integer_cst 64: , ptr1, 
-field_decl arr: , ptr1, 
-integer_cst 96: , ptr1, 
-field_decl str1: , ptr1, 
-integer_cst 64: , ptr1, 
-type_decl Data1: , ptr1, 
-integer_cst 64: , ptr1, 
-pointer_type : , ptr1, 
-pointer_type : , ptr1, 
-record_type : , ptr1, 
-type_decl Data1: , ptr1, 
-field_decl val: , ptr1, 
-integer_cst 32: , ptr1, 
-field_decl ptrval: , ptr1, 
-integer_cst 64: , ptr1, 
-field_decl arr: , ptr1, 
-integer_cst 96: , ptr1, 
-field_decl str1: , ptr1, 
-integer_cst 64: , ptr1, 
-type_decl Data1: , ptr1, 
-block : , ptr1, 
-var_decl ptr2: , ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+block : ptr1, 
+var_decl ptr2: ptr1, 
 function_decl func4: 
 if_stmt : ptr1, 
 cleanup_point_expr : ptr1, 
@@ -3083,35 +3083,35 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 modify_expr : 
-component_ref : ptr1->val, 
-indirect_ref : ptr1->val, 
-parm_decl ptr1: ptr1->val, 
-pointer_type : ptr1->val, 
-record_type : ptr1->val, 
-type_decl Data1: ptr1->val, 
-field_decl val: ptr1->val, 
-integer_cst 32: ptr1->val, 
-field_decl ptrval: ptr1->val, 
-integer_cst 64: ptr1->val, 
-field_decl arr: ptr1->val, 
-integer_cst 96: ptr1->val, 
-field_decl str1: ptr1->val, 
-integer_cst 64: ptr1->val, 
-type_decl Data1: ptr1->val, 
-integer_cst 64: ptr1->val, 
-field_decl val: ptr1->val, 
-integer_cst 32: ptr1->val, 
-integer_cst 100: ptr1->val, 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_cst 100: 
 var_decl k: 
-integer_cst 32: ptr1->val, 
-integer_cst 10: ptr1->val, 
-integer_type : ptr1->val, 
-type_decl int: ptr1->val, 
-integer_cst 32: ptr1->val, 
-integer_cst -2147483648: ptr1->val, 
-integer_cst 2147483647: ptr1->val, 
-block : ptr1->val, 
-var_decl k: ptr1->val, 
+integer_cst 32: 
+integer_cst 10: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+block : 
+var_decl k: 
 cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
@@ -3186,12 +3186,12 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 modify_expr : 
-component_ref : , 
-indirect_ref : , 
-var_decl ptr2: , 
-field_decl val: , 
-integer_cst 32: , 
-integer_cst 200: , 
+component_ref : 
+indirect_ref : 
+var_decl ptr2: 
+field_decl val: 
+integer_cst 32: 
+integer_cst 200: 
 var_decl ptr2: ptr1, 
 integer_cst 64: ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
