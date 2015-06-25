@@ -119,8 +119,11 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
         {
             std::string var1 = getComponentRefVariable(arg);
             std::string var2 = getVariableName(node->args[1]);
-            wo.addNullVars.insert(var1);
-            addLinkedVar(wo, var2, var1);
+            if (!var1.empty() && !var2.empty())
+            {
+                wo.addNullVars.insert(var1);
+                addLinkedVar(wo, var2, var1);
+            }
         }
     }
 }
