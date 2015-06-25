@@ -223,7 +223,7 @@ func2: pointer_type ptr1,
 func3: pointer_type ptr1, 
 func4: pointer_type ptr1, 
 test22.cpp: In member function 'void Object1::func4(Data1*)':
-test22.cpp:58:25: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:56:25: warning: Using parameter 'ptr1' without checking for null pointer
          if (ptr1->ftest1() == 100)
                          ^
 Data1: 
@@ -238,11 +238,6 @@ func8: pointer_type ptr1,
 func9: pointer_type ptr1, 
 func10: pointer_type ptr1, 
 func11: pointer_type ptr1, 
-func12: pointer_type ptr1, 
-test22.cpp: In member function 'void Object1::func12(Data1*)':
-test22.cpp:126:25: warning: Using parameter 'ptr1' without checking for null pointer
-             ptr1->ftest1();
-                         ^
 fill: pointer_type __first, pointer_type __last, 
 _Alloc_hider: 
 __base_dtor : 

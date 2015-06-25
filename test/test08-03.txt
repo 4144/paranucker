@@ -43,19 +43,19 @@ cleanup_point_expr : ptr2,
 expr_stmt : ptr2, 
 convert_expr : ptr2, 
 modify_expr : ptr2, 
-component_ref : ptr2, 
-indirect_ref : ptr2, 
-parm_decl this: ptr2, 
-pointer_type : ptr2, 
-record_type : ptr2, 
-type_decl Object1: ptr2, 
-field_decl k: ptr2, 
-integer_cst 32: ptr2, 
-type_decl Object1: ptr2, 
-integer_cst 64: ptr2, 
-field_decl k: ptr2, 
-integer_cst 32: ptr2, 
-integer_cst 0: ptr2, 
+component_ref : ptr2, this->k, 
+indirect_ref : ptr2, this->k, 
+parm_decl this: ptr2, this->k, 
+pointer_type : ptr2, this->k, 
+record_type : ptr2, this->k, 
+type_decl Object1: ptr2, this->k, 
+field_decl k: ptr2, this->k, 
+integer_cst 32: ptr2, this->k, 
+type_decl Object1: ptr2, this->k, 
+integer_cst 64: ptr2, this->k, 
+field_decl k: ptr2, this->k, 
+integer_cst 32: ptr2, this->k, 
+integer_cst 0: ptr2, this->k, 
 cleanup_point_expr : ptr2, 
 expr_stmt : ptr2, 
 convert_expr : ptr2, 
@@ -123,19 +123,19 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 modify_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl Object1: 
-field_decl k: 
-integer_cst 32: 
-type_decl Object1: 
-integer_cst 64: 
-field_decl k: 
-integer_cst 32: 
-integer_cst 0: 
+component_ref : this->k, 
+indirect_ref : this->k, 
+parm_decl this: this->k, 
+pointer_type : this->k, 
+record_type : this->k, 
+type_decl Object1: this->k, 
+field_decl k: this->k, 
+integer_cst 32: this->k, 
+type_decl Object1: this->k, 
+integer_cst 64: this->k, 
+field_decl k: this->k, 
+integer_cst 32: this->k, 
+integer_cst 0: this->k, 
 return_expr : ptr4, 
 cleanup_point_expr : ptr4, 
 expr_stmt : 

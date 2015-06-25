@@ -36,6 +36,16 @@ class Object1
 {
     Data1 *dataptr;
 
+    Object1(Data1 *ptr1) :
+        dataptr(ptr1)
+    {
+        if (dataptr)
+        {
+            ptr1->ftest1();
+        }
+        dataptr->ftest1();
+    }
+
     void func1(Data1 *const ptr1)
     {
         dataptr = ptr1;
