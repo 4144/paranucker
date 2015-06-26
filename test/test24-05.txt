@@ -1,0 +1,8 @@
+test24.c: In function 'func1':
+test24.c:32:5: warning: Using parameter 'ptr1' without checking for null pointer
+     ptr1();
+     ^
+test24.c: In function 'func4':
+test24.c:50:9: warning: Using parameter 'ptr1' without checking for null pointer
+     ptr1->fptr1(ptr2);
+         ^

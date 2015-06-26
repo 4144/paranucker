@@ -1,0 +1,11 @@
+ftest1: 
+ftest2: pointer_type ptr0, 
+ftest3: pointer_type ptr0, 
+func1: pointer_type ptr1, 
+test24.c: In function 'func1':
+test24.c:32:5: warning: Using parameter 'ptr1' without checking for null pointer
+     ptr1();
+     ^
+func2: pointer_type ptr1, 
+func3: pointer_type ptr1, 
+func4: pointer_type ptr1, 
