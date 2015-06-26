@@ -9,6 +9,7 @@ struct Data1
     struct Data1 *ptrval;
     int arr[3];
     FuncPtr2 fptr1;
+    FuncPtr2 fptr2[3];
 };
 
 int ftest1(void)
@@ -48,4 +49,16 @@ void func4(struct Data1 *ptr1)
 {
     struct Data1 *ptr2;
     ptr1->fptr1(ptr2);
+}
+
+void func5(struct Data1 *ptr1)
+{
+    struct Data1 *data;
+    (*data->fptr2[1])(ptr1);
+}
+
+void func6(FuncPtr2 ptr1[3])
+{
+    struct Data1 *data;
+    (*ptr1[1])(data);
 }
