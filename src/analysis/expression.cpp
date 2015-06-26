@@ -475,6 +475,10 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
                 }
             }
         }
+        else if (node->function == VAR_DECL)
+        {
+            enableCheck = false;
+        }
         else
         {
             reportParmDeclNullPointer(node, node->function, wi);
