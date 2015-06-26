@@ -475,6 +475,10 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
                 }
             }
         }
+        else
+        {
+            reportParmDeclNullPointer(node, node->function, wi);
+        }
     }
     FOR_EACH (std::vector<Node*>::const_iterator, it, node->args)
     {
