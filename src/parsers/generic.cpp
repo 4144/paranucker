@@ -163,7 +163,7 @@ void updateNodes()
     {
         Node *node1 = (*it).first;
         Node *node2 = (*it).second;
-        if (node1->nodeType == VAR_DECL)
+        if (node1 == VAR_DECL)
         {
             parseVarDeclNode(static_cast<VarDeclNode*>(node1),
                 static_cast<VarDeclNode*>(node2));

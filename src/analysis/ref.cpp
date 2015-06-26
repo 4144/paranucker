@@ -48,7 +48,7 @@ void analyseComponentRef(ComponentRefNode *node,
         return;
 
     Node *arg = skipNop(node->object);
-    if (arg && arg->nodeType == INDIRECT_REF)
+    if (arg == INDIRECT_REF)
     {
         reportParmDeclNullPointer(node,
             static_cast<IndirectRefNode*>(arg)->ref,

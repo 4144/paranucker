@@ -208,7 +208,7 @@ bool checkForReport(Node *node,
 {
     node = skipNop(node);
     return node &&
-        (node->nodeType == PARM_DECL || node->nodeType == VAR_DECL) &&
+        (node == PARM_DECL || node == VAR_DECL) &&
         wi.checkNullVars.find(node->label) != wi.checkNullVars.end();
 }
 
@@ -221,7 +221,7 @@ void reportParmDeclNullPointer(Node *mainNode,
     {
         if (!node->label.empty())
         {
-            if (node->nodeType == PARM_DECL)
+            if (node == PARM_DECL)
             {
                 if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
                 {
@@ -230,7 +230,7 @@ void reportParmDeclNullPointer(Node *mainNode,
                         node->label);
                 }
             }
-            else if (node->nodeType == VAR_DECL)
+            else if (node == VAR_DECL)
             {
                 if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
                 {
@@ -240,7 +240,7 @@ void reportParmDeclNullPointer(Node *mainNode,
                 }
             }
         }
-        else if (node->nodeType == COMPONENT_REF)
+        else if (node == COMPONENT_REF)
         {
             std::string var = getComponentRefVariable(node);
             if (wi.checkNullVars.find(var) != wi.checkNullVars.end())
@@ -256,8 +256,7 @@ void reportParmDeclNullPointer(Node *mainNode,
 Node *skipNop(Node *node)
 {
     while (node &&
-           (node->nodeType == NOP_EXPR ||
-           node->nodeType == NON_LVALUE_EXPR))
+           (node == NOP_EXPR || node == NON_LVALUE_EXPR))
     {
         NopExprNode *nop = static_cast<NopExprNode*>(node);
         if (nop && !nop->args.empty())
@@ -270,7 +269,7 @@ Node *skipNop(Node *node)
 
 Node *skipBackNop(Node *node)
 {
-    while (node && node->nodeType == NOP_EXPR)
+    while (node && node == NOP_EXPR)
     {
         node = node->parent;
     }
@@ -339,7 +338,7 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
 
     // remove check for vars what was requested from some childs.
     // Except IF_STMT. Removing handled inside analyse function.
-    if (node->nodeType != IF_STMT)
+    if (node != IF_STMT)
     {
         removeCheckNullVars(wi2);
 //        addCheckNullVars(wi2);

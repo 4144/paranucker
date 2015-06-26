@@ -68,9 +68,9 @@ std::string getVariableName(Node *node)
     if (!node)
         return "";
 
-    if (node->nodeType == PARM_DECL || node->nodeType == VAR_DECL)
+    if (node == PARM_DECL || node == VAR_DECL)
         return node->label;
-    else if (node->nodeType == COMPONENT_REF)
+    else if (node == COMPONENT_REF)
         return getComponentRefVariable(node);
     return "";
 }
@@ -84,14 +84,12 @@ std::string getComponentRefVariable(Node *node)
     {
         Node *object = skipNop(comp->object);
         Node *field = skipNop(comp->field);
-        if (object &&
-            field &&
-            object->nodeType == INDIRECT_REF &&
-            field->nodeType == FIELD_DECL)
+        if (object == INDIRECT_REF &&
+            field == FIELD_DECL)
         {
             IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
             Node *ref = skipNop(indirect->ref);
-            if (ref && ref->nodeType == PARM_DECL)
+            if (ref == PARM_DECL)
             {
                 str.append(ref->label).append("->").append(field->label);
             }
@@ -109,13 +107,13 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
     Node *arg = skipNop(node->args[0]);
     if (arg)
     {
-        if (arg->nodeType == INDIRECT_REF)
+        if (arg == INDIRECT_REF)
         {
             reportParmDeclNullPointer(node,
                 static_cast<IndirectRefNode*>(arg)->ref,
                 wi);
         }
-        else if (arg->nodeType == COMPONENT_REF && node->args.size() > 1)
+        else if (arg == COMPONENT_REF && node->args.size() > 1)
         {
             std::string var1 = getComponentRefVariable(arg);
             std::string var2 = getVariableName(node->args[1]);
@@ -151,12 +149,12 @@ void analyseAddrExpr(AddrExprNode *node,
     Node *node2 = skipBackNop(node->parent);
     if (node2)
     {
-        while (node2 && node2->nodeType == ADDR_EXPR)
+        while (node2 == ADDR_EXPR)
         {
             node2 = skipBackNop(node2->parent);
         }
         // found what some parent is function or method call
-        if (node2 && node2->nodeType == CALL_EXPR)
+        if (node2 == CALL_EXPR)
         {
             return;
         }
@@ -187,8 +185,7 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
     std::string var = getVariableName(node1);
     // if (var != 0)
     if (!var.empty() &&
-        node2 &&
-        node2->nodeType == INTEGER_CST &&
+        node2 == INTEGER_CST &&
         wi.checkNullVars.find(var) != wi.checkNullVars.end() &&
         node2->label == "0")
     {
@@ -218,8 +215,7 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
     std::string var = getVariableName(node1);
     // if (var == 0)
     if (!var.empty() &&
-        node2 &&
-        node2->nodeType == INTEGER_CST &&
+        node2 == INTEGER_CST &&
         wi.checkNullVars.find(var) != wi.checkNullVars.end() &&
         node2->label == "0")
     {
@@ -408,8 +404,7 @@ void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo)
     }
 
     Node *node1 = skipNop(node->args[0]);
-    if (node1 &&
-        node1->nodeType == VAR_DECL)
+    if (node1 == VAR_DECL)
     {
         VarDeclNode *varDecl = static_cast<VarDeclNode*>(node1);
         Node *initial = skipNop(varDecl->initial);
@@ -432,8 +427,7 @@ void analyseDeclExpr(DeclExprNode *node, const WalkItem &wi, WalkItem &wo)
 
     Node *node1 = skipNop(node->args[0]);
 
-    if (node1 &&
-        node1->nodeType == VAR_DECL)
+    if (node1 == VAR_DECL)
     {
         VarDeclNode *varDecl = static_cast<VarDeclNode*>(node1);
         Node *initial = skipNop(varDecl->initial);
@@ -477,17 +471,16 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
     {
         walkTree(node->function, wi, wo2);
         Log::dumpWI(node, "wo function ", wo2);
-        if (node->function->nodeType == ADDR_EXPR)
+        if (node->function == ADDR_EXPR)
         {
             AddrExprNode *addrNode = static_cast<AddrExprNode*>(node->function);
             if (!addrNode->args.empty())
             {
-                if (addrNode->args[0]->nodeType == FUNCTION_DECL)
+                if (addrNode->args[0] == FUNCTION_DECL)
                 {
                     FunctionDeclNode *declNode = static_cast<FunctionDeclNode*>(
                         addrNode->args[0]);
-                    if (declNode->functionType &&
-                        declNode->functionType->nodeType == FUNCTION_TYPE)
+                    if (declNode->functionType == FUNCTION_TYPE)
                     {
                         enableCheck = false;
                     }

@@ -14,6 +14,7 @@ SRC = analysis/analysis.cpp \
       nodes/base/cst.h \
       nodes/base/decl.h \
       nodes/base/expr.h \
+      nodes/base/node.cpp \
       nodes/base/node.h \
       nodes/base/ref.h \
       nodes/base/stmt.h \

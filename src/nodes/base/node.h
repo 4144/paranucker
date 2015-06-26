@@ -80,4 +80,8 @@ struct Node
     bool complete;
 };
 
+bool operator ==(const Node *const node, const tree_code &code);
+
+bool operator !=(const Node *const node, const tree_code &code);
+
 #endif // NODES_BASE_NODE_H

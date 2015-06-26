@@ -42,14 +42,10 @@ namespace Analysis
 void getFunctionArgTypes(FunctionDeclNode *node,
                          std::vector<TypeNode*> &arr)
 {
-    // function not have type
-    if (!node->functionType)
-        return;
-
     TreeListNode *types = nullptr;
-    if (node->functionType->nodeType == FUNCTION_TYPE)
+    if (node->functionType == FUNCTION_TYPE)
         types = static_cast<FunctionTypeNode*>(node->functionType)->argTypes;
-    else if (node->functionType->nodeType == METHOD_TYPE)
+    else if (node->functionType == METHOD_TYPE)
         types = static_cast<MethodTypeNode*>(node->functionType)->argTypes;
     else
         return;
@@ -125,7 +121,7 @@ void analyseFunction(FunctionDeclNode *node, const WalkItem &wi, WalkItem &wo)
     for (size_t f = 0; f < sz; f ++)
     {
         const TypeNode *const type = types[f];
-        if (!type || type->nodeType != POINTER_TYPE)
+        if (!type || type != POINTER_TYPE)
             continue;
         const ParmDeclNode *const name = node->args[f];
         if (f == 0 && name->label == "this")
