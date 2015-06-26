@@ -3,6 +3,10 @@
 
 struct Data1;
 
+typedef void (*FuncPtr1) (void);
+typedef void (*FuncPtr2) (Data1 *ptr);
+typedef void (Data1::*FuncPtr3) (Data1 *ptr);
+
 struct Data1
 {
     Data1()
@@ -27,6 +31,10 @@ struct Data1
     static int ftest2(Data1 *ptr0)
     {
         return 1;
+    }
+
+    void ftest3(Data1 *ptr0)
+    {
     }
 };
 
@@ -89,5 +97,22 @@ class Object1
         {
             ptr1->ftest1();
         }
+    }
+
+    void func6(FuncPtr1 ptr1)
+    {
+        ptr1();
+    }
+
+    void func7(Data1 *ptr1)
+    {
+        FuncPtr2 fptr2;
+        fptr2(ptr1);
+    }
+
+    void func8(Data1 *ptr1)
+    {
+        FuncPtr3 fptr2 = &Data1::ftest3;
+        (ptr1->*fptr2)(ptr1);
     }
 };
