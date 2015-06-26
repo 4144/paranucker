@@ -1,7 +1,7 @@
 /*
  *  Copyright (C) 2015  Andrei Karas
  *
- *  This file is part of AstDumper.
+ *  This file is part of Paranoid null checker.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
