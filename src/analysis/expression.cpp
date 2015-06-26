@@ -49,6 +49,7 @@
 #include "nodes/decl/function_decl.h"
 #include "nodes/decl/var_decl.h"
 
+#include "nodes/ref/array_ref.h"
 #include "nodes/ref/component_ref.h"
 #include "nodes/ref/indirect_ref.h"
 
@@ -458,16 +459,18 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
     if (node->function)
     {
         walkTree(node->function, wi, wo2);
+        Node *function = skipNop(node->function);
         Log::dumpWI(node, "wo function ", wo2);
-        if (node->function == ADDR_EXPR)
+        if (function == ADDR_EXPR)
         {
-            AddrExprNode *addrNode = static_cast<AddrExprNode*>(node->function);
+            AddrExprNode *addrNode = static_cast<AddrExprNode*>(function);
             if (!addrNode->args.empty())
             {
-                if (addrNode->args[0] == FUNCTION_DECL)
+                Node *decl = skipNop(addrNode->args[0]);
+                if (decl == FUNCTION_DECL)
                 {
                     FunctionDeclNode *declNode = static_cast<FunctionDeclNode*>(
-                        addrNode->args[0]);
+                        decl);
                     if (declNode->functionType == FUNCTION_TYPE)
                     {
                         enableCheck = false;
@@ -481,8 +484,14 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
         }
         else
         {
-            reportParmDeclNullPointer(node, node->function, wi);
-            if (!getVariableName(node->function).empty())
+            if (function == ARRAY_REF)
+            {
+                ArrayRefNode *arrRef = static_cast<ArrayRefNode*>(function);
+                if (!arrRef->args.empty() && arrRef->args[0] == COMPONENT_REF)
+                    function = arrRef->args[0];
+            }
+            reportParmDeclNullPointer(node, function, wi);
+            if (!getVariableName(function).empty())
                 enableCheck = false;
         }
     }
