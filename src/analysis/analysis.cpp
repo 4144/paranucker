@@ -143,6 +143,8 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
         return;
 
     node = skipNop(node);
+    if (!node)
+        return;
 
     WalkItem wi2 = wi;
     // analyse node and after copy all properties from wo to wi2
