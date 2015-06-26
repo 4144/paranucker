@@ -91,7 +91,7 @@ std::string getComponentRefVariable(Node *node)
         {
             IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
             Node *ref = skipNop(indirect->ref);
-            if (ref == PARM_DECL)
+            if (ref == PARM_DECL || ref == VAR_DECL)
             {
                 str.append(ref->label).append("->").append(field->label);
             }
@@ -482,6 +482,8 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
         else
         {
             reportParmDeclNullPointer(node, node->function, wi);
+            if (!getVariableName(node->function).empty())
+                enableCheck = false;
         }
     }
     FOR_EACH (std::vector<Node*>::const_iterator, it, node->args)
