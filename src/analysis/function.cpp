@@ -110,7 +110,6 @@ void analyseFunction(FunctionDeclNode *node, const WalkItem &wi, WalkItem &wo)
 
     getFunctionArgTypes(node, types);
     getFunctionParamsNonNullAttributes(node, nonNull);
-    // here need check is variables already present in wi2.checkNullVars
 
     if (command == Command::FindArgs)
         Log::log("%s: ", node->label.c_str());

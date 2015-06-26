@@ -61,12 +61,7 @@
 namespace Analysis
 {
 
-// remove check null vars.
-void removeCheckNullVars(WalkItem &wi)
-{
-    removeCheckNullVarsSet(wi, wi.removeNullVars);
-}
-
+// add variables null pointer checks
 void addCheckNullVars(WalkItem &wi, WalkItem &wo)
 {
     FOR_EACH (std::set<std::string>::const_iterator, it, wi.addNullVars)
@@ -75,9 +70,9 @@ void addCheckNullVars(WalkItem &wi, WalkItem &wo)
     }
 }
 
+// remove one variable from null pointer checks
 void removeCheckNullVar(WalkItem &wi, std::string str)
 {
-    // found var for deletion
     if (wi.checkNullVars.find(str) != wi.checkNullVars.end())
     {
         wi.checkNullVars.erase(str);
@@ -101,10 +96,10 @@ void removeCheckNullVar(WalkItem &wi, std::string str)
                 wi.addNullVars.erase(*it3);
             }
         }
-        //wi.linkedVars.erase(str);
     }
 }
 
+// remove vars from checks for null pointer
 void removeCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
 {
     FOR_EACH (std::set<std::string>::const_iterator, it, vars)
@@ -123,6 +118,7 @@ void removeCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
     }
 }
 
+// link var to parent. (type var = parent)
 void addLinkedVar(WalkItem &wi,
                   const std::string &parent,
                   const std::string &var)
@@ -140,6 +136,7 @@ void startWalkTree(Node *node)
     walkTree(node, wi, wo);
 }
 
+// main walk tree function
 void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
 {
     if (!node)
@@ -148,8 +145,9 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     node = skipNop(node);
 
     WalkItem wi2 = wi;
+    // analyse node and after copy all properties from wo to wi2
     analyseNode(node, wi2, wo);
-    removeCheckNullVars(wi2);
+    removeCheckNullVarsSet(wi2, wi2.removeNullVars);
     addCheckNullVars(wo, wo);
     addCheckNullVars(wo, wi2);
     addCheckNullVars(wi2, wi2);
@@ -168,6 +166,8 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     if (command != Command::DumpNullPointers)
         Log::dumpWI(node, "walkTree 2 wo2 ", wo2);
 
+    // walk to all child nodes.
+    // wi2 combining output from node and previous childs
     FOR_EACH (std::vector<Node*>::iterator, it, node->childs)
     {
         walkTree(*it, wi2, wo2);
@@ -180,6 +180,7 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
         wi2.linkedReverseVars = wo2.linkedReverseVars;
         wo2.stopWalking = false;
     }
+    // copy properties from wi2 to wo
     wo.removeNullVars = wi2.removeNullVars;
     wo.addNullVars = wi2.addNullVars;
     wo.isReturned = wo.isReturned || isReturned || wo2.isReturned;
@@ -188,10 +189,9 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
 
     if (command != Command::DumpNullPointers)
         Log::dumpWI(node, "walkTree out wo ", wo);
-
-//    Log::dumpAttr(node, 2, wo.isReturned);
 }
 
+// search location for node or first parent
 int findBackLocation(Node *node)
 {
     location_t loc = 0;
@@ -203,6 +203,7 @@ int findBackLocation(Node *node)
     return loc;
 }
 
+// check is var from node can be checked for null pointer
 bool checkForReport(Node *node,
                     const WalkItem &wi)
 {
@@ -212,6 +213,7 @@ bool checkForReport(Node *node,
         wi.checkNullVars.find(node->label) != wi.checkNullVars.end();
 }
 
+// report about null pointer if need for node
 void reportParmDeclNullPointer(Node *mainNode,
                                Node *node,
                                const WalkItem &wi)
@@ -253,6 +255,7 @@ void reportParmDeclNullPointer(Node *mainNode,
     }
 }
 
+// skip all child nodes and return non nop child
 Node *skipNop(Node *node)
 {
     while (node &&
@@ -267,6 +270,7 @@ Node *skipNop(Node *node)
     return node;
 }
 
+// skip all parent nop nodes and return first non nop parent
 Node *skipBackNop(Node *node)
 {
     while (node && node == NOP_EXPR)
@@ -276,18 +280,21 @@ Node *skipBackNop(Node *node)
     return node;
 }
 
+// merger two checked for null var sets
 void mergeNullChecked(WalkItem &wi1, WalkItem &wi2)
 {
     wi1.checkedNullVars.insert(wi2.checkedNullVars.begin(),
         wi2.checkedNullVars.end());
 }
 
+// merger two checked for non null var sets
 void mergeNonNullChecked(WalkItem &wi1, WalkItem &wi2)
 {
     wi1.checkedNonNullVars.insert(wi2.checkedNonNullVars.begin(),
         wi2.checkedNonNullVars.end());
 }
 
+// intersect two checked for null sets
 void intersectNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
 {
     FOR_EACH (std::set<std::string>::const_iterator,
@@ -299,6 +306,7 @@ void intersectNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
     }
 }
 
+// intersect two checked for non null sets
 void intersectNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
 {
     FOR_EACH (std::set<std::string>::const_iterator,
@@ -340,8 +348,7 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
     // Except IF_STMT. Removing handled inside analyse function.
     if (node != IF_STMT)
     {
-        removeCheckNullVars(wi2);
-//        addCheckNullVars(wi2);
+        removeCheckNullVarsSet(wi2, wi2.removeNullVars);
     }
 
     if (command != Command::DumpNullPointers)

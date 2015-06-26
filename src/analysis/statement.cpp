@@ -138,7 +138,12 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
     if (!node->condition || command == FindArgs)
         return;
 
-    analyseCondition(node, node->condition, node->thenNode, node->elseNode, wi, wo);
+    analyseCondition(node,
+        node->condition,
+        node->thenNode,
+        node->elseNode,
+        wi,
+        wo);
 }
 
 }

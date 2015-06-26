@@ -59,6 +59,7 @@
 namespace Analysis
 {
 
+// return variable name if possible or empty string
 std::string getVariableName(Node *node)
 {
     if (!node)
@@ -75,6 +76,7 @@ std::string getVariableName(Node *node)
     return "";
 }
 
+// return variable name in format object->field for component node
 std::string getComponentRefVariable(Node *node)
 {
     std::string str;
@@ -176,7 +178,6 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
     if (node->args.size() < 2 || command == FindArgs)
         return;
 
-//    Log::dumpWI(node, "NE in ", wo);
     // PARM_DECL or VAR_DECL?
     Node *node1 = skipNop(node->args[0]);
     // INTEGER_CST?
@@ -198,7 +199,6 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
         wo.cleanExpr = false;
         wo.uselessExpr = true;
     }
-    Log::dumpWI(node, "NE out ", wo);
 }
 
 void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
@@ -207,7 +207,6 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
     if (node->args.size() < 2 || command == FindArgs)
         return;
 
-    Log::dumpWI(node, "EQ in ", wo);
     // PARM_DECL or VAR_DECL ?
     Node *node1 = skipNop(node->args[0]);
     // INTEGER_CST?
@@ -228,12 +227,10 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
         wo.cleanExpr = false;
         wo.uselessExpr = true;
     }
-    Log::dumpWI(node, "EQ out ", wo);
 }
 
 void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi, WalkItem &wo)
 {
-    Log::dumpWI(node, "wo in ", wo);
     WalkItem wo1 = wo;
     WalkItem wo2 = wo;
     walkTree(node1, wi, wo1);
@@ -257,12 +254,10 @@ void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi
     wo.cleanExpr = true;
     wo.stopWalking = true;
     wo.uselessExpr = false;
-    Log::dumpWI(node, "wo out ", wo);
 }
 
 void analyseAndCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi, WalkItem &wo)
 {
-    Log::dumpWI(node, "wo in ", wo);
     WalkItem wo1 = wo;
     WalkItem wo2 = wo;
     walkTree(node1, wi, wo1);
@@ -291,7 +286,6 @@ void analyseAndCondition(Node *node, Node *node1, Node *node2, const WalkItem &w
     }
     wo.cleanExpr = wo1.cleanExpr && wo2.cleanExpr;
     wo.uselessExpr = wo1.uselessExpr && wo2.uselessExpr;
-    Log::dumpWI(node, "wo out ", wo);
 }
 
 void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem &wo)
@@ -354,8 +348,6 @@ void analyseCompoundExpr(CompoundExprNode *node, const WalkItem &wi, WalkItem &w
     if (node->args.size() < 1 || command == FindArgs)
         return;
 
-    Log::dumpWI(node, "wo in ", wo);
-
     const size_t sz = node->args.size();
     // walking and ignoring results for all args except last
     for (size_t f = 0; f < sz - 1; f ++)
@@ -380,7 +372,6 @@ void analyseCompoundExpr(CompoundExprNode *node, const WalkItem &wi, WalkItem &w
     wo.cleanExpr = true;
     wo.stopWalking = true;
     wo.uselessExpr = false;
-    Log::dumpWI(node, "wo out ", wo);
 }
 
 // type var1 = var2;
@@ -390,7 +381,6 @@ void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo)
     if (sz < 1 || command == FindArgs)
         return;
 
-    Log::dumpWI(node, "wo in ", wo);
     WalkItem wi2 = wi;
     walkTree(node->args[1], wi2, wo);
     wi2 = wo;
@@ -415,7 +405,6 @@ void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo)
         }
     }
     wo.stopWalking = true;
-    Log::dumpWI(node, "wo out ", wo);
 }
 
 // type var1 = var2;
@@ -462,7 +451,6 @@ void analyseNonLvalueExpr(NonLvalueExprNode *node, const WalkItem &wi, WalkItem 
 void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     WalkItem wo2 = wo;
-    Log::dumpWI(node, "wo in ", wo);
     walkTree(node->chain, wi, wo2);
     Log::dumpWI(node, "wo chain ", wo2);
     wo2 = wo;

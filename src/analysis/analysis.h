@@ -49,8 +49,6 @@ namespace Analysis
                       const std::string &parent,
                       const std::string &var);
 
-    void removeCheckNullVars(WalkItem &wi);
-
     void removeCheckNullVar(WalkItem &wi, std::string str);
 
     void removeCheckNullVarsSet(WalkItem &wi,
