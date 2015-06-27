@@ -22,6 +22,8 @@
 
 #include "includes.h"
 
+#include <set>
+
 struct FunctionDeclNode;
 struct TreeListNode;
 struct TypeNode;
@@ -33,6 +35,9 @@ namespace Analysis
 
     void getFunctionArgTypes(FunctionDeclNode *node,
                              std::vector<TypeNode*> &arr);
+
+    void getFunctionParamsNonNullAttributes(FunctionDeclNode *node,
+                                            std::set<int> &arr);
 }
 
 #endif // ANALYSIS_FUNCTION_H

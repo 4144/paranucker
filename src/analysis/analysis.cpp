@@ -257,6 +257,43 @@ void reportParmDeclNullPointer(Node *mainNode,
     }
 }
 
+void reportPossibleNullPointer(Node *node,
+                               const std::string &label)
+{
+    Log::warn(findBackLocation(node),
+        "warning: possible null argument '%s' where non-null required",
+        label);
+}
+
+void reportParmDeclAttrNullPointer(Node *mainNode,
+                                   Node *node,
+                                   const WalkItem &wi)
+{
+    node = skipNop(node);
+    if (node)
+    {
+        if (!node->label.empty())
+        {
+            if (node == PARM_DECL)
+            {
+                if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+                    reportPossibleNullPointer(mainNode, node->label);
+            }
+            else if (node == VAR_DECL)
+            {
+                if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+                    reportPossibleNullPointer(mainNode, node->label);
+            }
+        }
+        else if (node == COMPONENT_REF)
+        {
+            std::string var = getComponentRefVariable(node);
+            if (wi.checkNullVars.find(var) != wi.checkNullVars.end())
+                reportPossibleNullPointer(mainNode, node->label);
+        }
+    }
+}
+
 // skip all child nodes and return non nop child
 Node *skipNop(Node *node)
 {

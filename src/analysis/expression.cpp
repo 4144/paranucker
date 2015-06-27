@@ -23,6 +23,7 @@
 #include "logger.h"
 
 #include "analysis/analysis.h"
+#include "analysis/function.h"
 #include "analysis/statement.h"
 #include "analysis/walkitem.h"
 
@@ -457,6 +458,7 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
     Log::dumpWI(node, "wo chain ", wo2);
     wo2 = wo;
     bool enableCheck(true);
+    std::set<int> nullAttrs;
     if (node->function)
     {
         walkTree(node->function, wi, wo2);
@@ -470,6 +472,7 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
                 Node *decl = skipNop(addrNode->args[0]);
                 if (decl == FUNCTION_DECL)
                 {
+                    function = decl;
                     FunctionDeclNode *declNode = static_cast<FunctionDeclNode*>(
                         decl);
                     if (declNode->functionType == FUNCTION_TYPE)
@@ -504,7 +507,14 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
             if (!getVariableName(function).empty())
                 enableCheck = false;
         }
+        if (function == FUNCTION_DECL)
+        {
+            getFunctionParamsNonNullAttributes(
+                static_cast<FunctionDeclNode*>(function),
+                nullAttrs);
+        }
     }
+    int param = 1;
     FOR_EACH (std::vector<Node*>::const_iterator, it, node->args)
     {
         wo2 = wo;
@@ -514,8 +524,14 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
             reportParmDeclNullPointer(node, node2, wi);
             enableCheck = false;
         }
+        else
+        {
+            if (nullAttrs.find(param) != nullAttrs.end())
+                reportParmDeclAttrNullPointer(node, node2, wi);
+        }
         walkTree(node2, wi, wo2);
         Log::dumpWI(node, "wo arg ", wo2);
+        param ++;
     }
     wo.stopWalking = true;
 }

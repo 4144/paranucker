@@ -42,6 +42,10 @@ namespace Analysis
                                    Node *node,
                                    const WalkItem &wi);
 
+    void reportParmDeclAttrNullPointer(Node *mainNode,
+                                       Node *node,
+                                       const WalkItem &wi);
+
     bool checkForReport(Node *node,
                         const WalkItem &wi);
 
