@@ -487,8 +487,11 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
             if (function == ARRAY_REF)
             {
                 ArrayRefNode *arrRef = static_cast<ArrayRefNode*>(function);
-                if (!arrRef->args.empty() && arrRef->args[0] == COMPONENT_REF)
+                if (!arrRef->args.empty() &&
+                    (arrRef->args[0] == COMPONENT_REF || VAR_DECL))
+                {
                     function = arrRef->args[0];
+                }
             }
             reportParmDeclNullPointer(node, function, wi);
             if (!getVariableName(function).empty())
