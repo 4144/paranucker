@@ -1,8 +1,8 @@
 test25.cpp: In member function 'void Object1::func1(Data1*)':
-test25.cpp:43:22: warning: null argument where non-null required (argument 2) [-Wnonnull]
+test25.cpp:45:22: warning: null argument where non-null required (argument 2) [-Wnonnull]
          test1(nullptr);
                       ^
 test25.cpp: In member function 'void Object1::func2(Data1*)':
-test25.cpp:48:14: warning: warning: possible null argument 'ptr1' where non-null required
+test25.cpp:50:14: warning: warning: possible null argument 'ptr1' where non-null required
          test1(ptr1);
               ^

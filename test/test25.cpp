@@ -30,6 +30,8 @@ int k;
 
 class Object1
 {
+    Data1 *ptrval;
+
     int test1(Data1 *const ptr1) __attribute__((nonnull (2)))
     {
         if (ptr1)
@@ -46,5 +48,11 @@ class Object1
     void func2(Data1 *const ptr1)
     {
         test1(ptr1);
+    }
+
+    void func3(Data1 *const ptr1)
+    {
+        ptrval = reinterpret_cast<Data1*>(1);
+        test1(ptrval);
     }
 };
