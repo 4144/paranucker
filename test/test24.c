@@ -62,3 +62,26 @@ void func6(FuncPtr2 ptr1[3])
     struct Data1 *data;
     (*ptr1[1])(data);
 }
+
+int test1(char *w1, char *w2)
+{
+}
+
+void func7(char *w1, char *w2)
+{
+    int (*fptr[]) (char *w1, char *w2) =
+    {
+        test1
+    };
+    int i;
+    for(i = 0; i < 10; i++)
+    {
+        if ((*fptr[i])(w1,w2))
+            break;
+    }
+}
+
+void func8(int (*fptr[]) (char *w1, char *w2))
+{
+    fptr[1]("", "");
+}
