@@ -193,12 +193,15 @@ void dumpAttr(const Node *const node, int num, bool isReturned)
 }
 
 #define dumpWIProps(comment, name) \
-    Log::log(comment); \
-    FOR_EACH (StringSet::const_iterator, \
-              it, \
-              name) \
+    if (!(name).empty()) \
     { \
-        Log::log("%s, ", (*it).c_str()); \
+        Log::log(comment); \
+        FOR_EACH (StringSet::const_iterator, \
+                  it, \
+                  name) \
+        { \
+            Log::log("%s, ", (*it).c_str()); \
+        } \
     }
 
 void dumpWI(Node *const node,
@@ -223,29 +226,35 @@ void dumpWI(Node *const node,
     dumpWIProps(" removeNullVars:", wi.removeNullVars)
     dumpWIProps(" addNullVars:", wi.addNullVars)
 
-    Log::log(" linkedVars:");
-    FOR_EACH (StringMapSet::const_iterator,
-              it,
-              wi.linkedVars)
+    if (!wi.linkedVars.empty())
     {
-        Log::log("%s -> (", ((*it).first).c_str());
-        const StringSet &vars = (*it).second;
-        FOR_EACH (StringSet::const_iterator,
-                  it2,
-                  vars)
+        Log::log(" linkedVars:");
+        FOR_EACH (StringMapSet::const_iterator,
+                  it,
+                  wi.linkedVars)
         {
-            Log::log("%s, ", (*it2).c_str());
+            Log::log("%s -> (", ((*it).first).c_str());
+            const StringSet &vars = (*it).second;
+            FOR_EACH (StringSet::const_iterator,
+                      it2,
+                      vars)
+            {
+                Log::log("%s, ", (*it2).c_str());
+            }
+            Log::log("), ");
         }
-        Log::log("), ");
     }
-    Log::log(" linkedReverseVars:");
-    FOR_EACH (StringMap::const_iterator,
-              it,
-              wi.linkedReverseVars)
+    if (!wi.linkedReverseVars.empty())
     {
-        Log::log("%s -> %s ",
-            ((*it).first).c_str(),
-            ((*it).second).c_str());
+        Log::log(" linkedReverseVars:");
+        FOR_EACH (StringMap::const_iterator,
+                  it,
+                  wi.linkedReverseVars)
+        {
+            Log::log("%s -> %s ",
+                ((*it).first).c_str(),
+                ((*it).second).c_str());
+        }
     }
     Log::log("\n");
 }
