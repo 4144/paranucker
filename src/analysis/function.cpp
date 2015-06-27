@@ -95,18 +95,10 @@ void getFunctionParamsNonNullAttributes(FunctionDeclNode *node,
     }
 }
 
-void analyseFunction(FunctionDeclNode *node, const WalkItem &wi, WalkItem &wo)
+void getPossibleNullParameters(FunctionDeclNode *node, WalkItem &wi)
 {
-    // ignore external functions
-    if (node->isExternal)
-    {
-        wo.stopWalking = true;
-        return;
-    }
-
     std::vector<TypeNode*> types;
     std::set<int> nonNull;
-    WalkItem wi2 = wi;
 
     getFunctionArgTypes(node, types);
     getFunctionParamsNonNullAttributes(node, nonNull);
@@ -133,17 +125,29 @@ void analyseFunction(FunctionDeclNode *node, const WalkItem &wi, WalkItem &wo)
                     type->nodeTypeName.c_str(),
                     name->label.c_str());
             }
-            wi2.checkNullVars.insert(name->label);
+            wi.checkNullVars.insert(name->label);
         }
     }
     if (command == Command::FindArgs)
         Log::log("\n");
+}
 
-    if (!wi2.checkNullVars.empty())
+void analyseFunction(FunctionDeclNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    // ignore external functions
+    if (node->isExternal)
     {
-        walkTree(node->code, wi2, wo);
+        wo.stopWalking = true;
+        return;
     }
-    wo.stopWalking = true;
+
+    if (node->code)
+    {   // probably function definition
+        WalkItem wi2 = wi;
+        getPossibleNullParameters(node, wi2);
+        walkTree(node->code, wi2, wo);
+        wo.stopWalking = true;
+    }
 }
 
 }
