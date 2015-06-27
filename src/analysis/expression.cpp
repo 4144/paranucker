@@ -32,6 +32,7 @@
 #include "nodes/expr/cleanuppoint_expr.h"
 #include "nodes/expr/compound_expr.h"
 #include "nodes/expr/cond_expr.h"
+#include "nodes/expr/convert_expr.h"
 #include "nodes/expr/decl_expr.h"
 #include "nodes/expr/eq_expr.h"
 #include "nodes/expr/init_expr.h"
@@ -492,6 +493,12 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
                 {
                     function = arrRef->args[0];
                 }
+            }
+            if (function == CONVERT_EXPR)
+            {
+                ConvertExprNode *convExpr = static_cast<ConvertExprNode*>(function);
+                if (!convExpr->args.empty())
+                    function = convExpr->args[0];
             }
             reportParmDeclNullPointer(node, function, wi);
             if (!getVariableName(function).empty())
