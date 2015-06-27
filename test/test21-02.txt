@@ -41,9 +41,7 @@ iterator:
 __base_ctor : 
 __comp_ctor : 
 _Bit_iterator_base: pointer_type __x, 
-__base_ctor : 
 __base_ctor : pointer_type __x, 
-__base_ctor : 
 __comp_ctor : pointer_type __x, 
 _M_bump_up: 
 _M_bump_down: 
@@ -59,9 +57,7 @@ _Bit_iterator:
 __base_ctor : 
 __comp_ctor : 
 _Bit_iterator: pointer_type __x, 
-__base_ctor : 
 __base_ctor : pointer_type __x, 
-__base_ctor : 
 __comp_ctor : pointer_type __x, 
 _M_const_cast: 
 operator*: 
@@ -79,9 +75,7 @@ _Bit_const_iterator:
 __base_ctor : 
 __comp_ctor : 
 _Bit_const_iterator: pointer_type __x, 
-__base_ctor : 
 __base_ctor : pointer_type __x, 
-__base_ctor : 
 __comp_ctor : pointer_type __x, 
 _Bit_const_iterator: 
 __base_ctor : 

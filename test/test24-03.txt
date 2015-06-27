@@ -1,4 +1,16 @@
 function_decl ftest1: 
+bind_expr : 
+return_expr : 
+modify_expr : 
+result_decl : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+integer_cst 1: 
+block : 
 function_decl ftest2: 
 bind_expr : ptr0, 
 return_expr : ptr0, 
@@ -372,6 +384,7 @@ integer_cst 0: w1, w2,
 integer_cst 0: w1, w2, 
 addr_expr : w1, w2, 
 function_decl test1: w1, w2, 
+function_type : w1, w2, 
 array_type : w1, w2, 
 pointer_type : w1, w2, 
 function_type : w1, w2, 

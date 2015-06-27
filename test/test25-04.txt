@@ -1,0 +1,4 @@
+test25.cpp: In member function 'void Object1::func2(Data1*)':
+test25.cpp:48:14: warning: warning: possible null argument 'ptr1' where non-null required
+         test1(ptr1);
+              ^

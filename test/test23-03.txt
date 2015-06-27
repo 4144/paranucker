@@ -1,20 +1,392 @@
 function_decl __iter_less_iter: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl _Iter_less_iter: 
+type_decl _Iter_less_iter: 
+integer_cst 8: 
+target_expr : 
+var_decl : 
+integer_cst 8: 
+record_type : 
+type_decl _Iter_less_iter: 
+type_decl _Iter_less_iter: 
+constructor : 
+record_type : 
+type_decl _Iter_less_iter: 
+type_decl _Iter_less_iter: 
 function_decl __iter_less_val: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl _Iter_less_val: 
+type_decl _Iter_less_val: 
+integer_cst 8: 
+target_expr : 
+var_decl : 
+integer_cst 8: 
+record_type : 
+type_decl _Iter_less_val: 
+type_decl _Iter_less_val: 
+constructor : 
+record_type : 
+type_decl _Iter_less_val: 
+type_decl _Iter_less_val: 
 function_decl __iter_comp_val: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl _Iter_less_val: 
+type_decl _Iter_less_val: 
+integer_cst 8: 
+target_expr : 
+var_decl : 
+integer_cst 8: 
+record_type : 
+type_decl _Iter_less_val: 
+type_decl _Iter_less_val: 
+constructor : 
+record_type : 
+type_decl _Iter_less_val: 
+type_decl _Iter_less_val: 
 function_decl __val_less_iter: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl _Val_less_iter: 
+type_decl _Val_less_iter: 
+integer_cst 8: 
+target_expr : 
+var_decl : 
+integer_cst 8: 
+record_type : 
+type_decl _Val_less_iter: 
+type_decl _Val_less_iter: 
+constructor : 
+record_type : 
+type_decl _Val_less_iter: 
+type_decl _Val_less_iter: 
 function_decl __val_comp_iter: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl _Val_less_iter: 
+type_decl _Val_less_iter: 
+integer_cst 8: 
+target_expr : 
+var_decl : 
+integer_cst 8: 
+record_type : 
+type_decl _Val_less_iter: 
+type_decl _Val_less_iter: 
+constructor : 
+record_type : 
+type_decl _Val_less_iter: 
+type_decl _Val_less_iter: 
 function_decl __iter_equal_to_iter: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl _Iter_equal_to_iter: 
+type_decl _Iter_equal_to_iter: 
+integer_cst 8: 
+target_expr : 
+var_decl : 
+integer_cst 8: 
+record_type : 
+type_decl _Iter_equal_to_iter: 
+type_decl _Iter_equal_to_iter: 
+constructor : 
+record_type : 
+type_decl _Iter_equal_to_iter: 
+type_decl _Iter_equal_to_iter: 
 function_decl __iter_equal_to_val: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl _Iter_equal_to_val: 
+type_decl _Iter_equal_to_val: 
+integer_cst 8: 
+target_expr : 
+var_decl : 
+integer_cst 8: 
+record_type : 
+type_decl _Iter_equal_to_val: 
+type_decl _Iter_equal_to_val: 
+constructor : 
+record_type : 
+type_decl _Iter_equal_to_val: 
+type_decl _Iter_equal_to_val: 
 function_decl __iter_comp_val: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl _Iter_equal_to_val: 
+type_decl _Iter_equal_to_val: 
+integer_cst 8: 
+target_expr : 
+var_decl : 
+integer_cst 8: 
+record_type : 
+type_decl _Iter_equal_to_val: 
+type_decl _Iter_equal_to_val: 
+constructor : 
+record_type : 
+type_decl _Iter_equal_to_val: 
+type_decl _Iter_equal_to_val: 
 function_decl __lg: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+plus_expr : 
+minus_expr : 
+mult_expr : 
+sizeof_expr : 
+error_mark : 
+integer_cst 8: 
+call_expr : 
+addr_expr : 
+function_decl __builtin_clz: 
+parm_decl __n: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+integer_cst 4294967295: 
 function_decl __lg: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 32: 
+plus_expr : 
+minus_expr : 
+mult_expr : 
+sizeof_expr : 
+error_mark : 
+integer_cst 8: 
+call_expr : 
+addr_expr : 
+function_decl __builtin_clz: 
+parm_decl __n: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 32: 
+integer_cst 4294967295: 
 function_decl __lg: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl long int: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+plus_expr : 
+minus_expr : 
+mult_expr : 
+sizeof_expr : 
+error_mark : 
+integer_cst 8: 
+call_expr : 
+addr_expr : 
+function_decl __builtin_clzl: 
+parm_decl __n: 
+integer_type : 
+type_decl long int: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+integer_cst : 
 function_decl __lg: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl long unsigned int: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+integer_cst 64: 
+plus_expr : 
+minus_expr : 
+mult_expr : 
+sizeof_expr : 
+error_mark : 
+integer_cst 8: 
+call_expr : 
+addr_expr : 
+function_decl __builtin_clzl: 
+parm_decl __n: 
+integer_type : 
+type_decl long unsigned int: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+integer_cst 64: 
+integer_cst : 
 function_decl __lg: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl long long int: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+plus_expr : 
+minus_expr : 
+mult_expr : 
+sizeof_expr : 
+error_mark : 
+integer_cst 8: 
+call_expr : 
+addr_expr : 
+function_decl __builtin_clzll: 
+parm_decl __n: 
+integer_type : 
+type_decl long long int: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+integer_cst : 
 function_decl __lg: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl long long unsigned int: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+integer_cst 64: 
+plus_expr : 
+minus_expr : 
+mult_expr : 
+sizeof_expr : 
+error_mark : 
+integer_cst 8: 
+call_expr : 
+addr_expr : 
+function_decl __builtin_clzll: 
+parm_decl __n: 
+integer_type : 
+type_decl long long unsigned int: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+integer_cst 64: 
+integer_cst : 
 function_decl assign: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl __c1: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
+integer_cst 64: 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
+integer_cst 64: 
 function_decl eq: 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+eq_expr : 
+indirect_ref : 
+parm_decl __c1: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
+integer_cst 64: 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
+integer_cst 64: 
 function_decl lt: 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+lt_expr : 
+indirect_ref : 
+parm_decl __c1: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
+integer_cst 64: 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
+integer_cst 64: 
 function_decl compare: 
 return_expr : __s1, __s2, 
 init_expr : __s1, __s2, 
@@ -224,13 +596,191 @@ integer_cst 0: __s,
 integer_cst : __s, 
 integer_cst 64: __s, 
 function_decl to_char_type: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl char_type: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
+integer_cst 8: 
+convert_expr : 
+indirect_ref : 
+parm_decl __c: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
 function_decl to_int_type: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+indirect_ref : 
+parm_decl __c: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
+integer_cst 64: 
 function_decl eq_int_type: 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+eq_expr : 
+indirect_ref : 
+parm_decl __c1: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
 function_decl eof: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+integer_cst -1: 
 function_decl not_eof: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+cond_expr : 
+ne_expr : 
+indirect_ref : 
+parm_decl __c: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+call_expr : 
+addr_expr : 
+function_decl eof: 
+indirect_ref : 
+parm_decl __c: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 0: 
 function_decl assign: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl __c1: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
 function_decl eq: 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+eq_expr : 
+indirect_ref : 
+parm_decl __c1: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
 function_decl lt: 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+lt_expr : 
+indirect_ref : 
+parm_decl __c1: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
 function_decl compare: 
 return_expr : __s1, __s2, 
 init_expr : __s1, __s2, 
@@ -440,19 +990,700 @@ integer_cst 0: __s,
 integer_cst : __s, 
 integer_cst 64: __s, 
 function_decl to_char_type: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl char_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+indirect_ref : 
+parm_decl __c: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 64: 
 function_decl to_int_type: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 32: 
+indirect_ref : 
+parm_decl __c: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
 function_decl eq_int_type: 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+eq_expr : 
+indirect_ref : 
+parm_decl __c1: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 64: 
 function_decl eof: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 32: 
+integer_cst 4294967295: 
 function_decl not_eof: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 32: 
+cond_expr : 
+call_expr : 
+addr_expr : 
+function_decl eq_int_type: 
+convert_expr : 
+parm_decl __c: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+addr_expr : 
+target_expr : 
+var_decl : 
+integer_cst 32: 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+call_expr : 
+addr_expr : 
+function_decl eof: 
+integer_cst 0: 
+indirect_ref : 
+parm_decl __c: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 64: 
 function_decl exception: 
+eh_spec_block : 
+bind_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl exception: 
+field_decl _vptr.exception: 
+integer_cst 64: 
+type_decl exception: 
+integer_cst 64: 
+field_decl _vptr.exception: 
+integer_cst 64: 
+pointer_plus_expr : 
+addr_expr : 
+var_decl _ZTVSt9exception: 
+integer_cst 320: 
+constructor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
+integer_cst 0: 
+addr_expr : 
+var_decl _ZTISt9exception: 
+integer_cst 128: 
+record_type : 
+type_decl __class_type_info_pseudo: 
+field_decl : 
+integer_cst 128: 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+function_decl __deleting_dtor : 
+addr_expr : 
+function_decl what: 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
+integer_cst 16: 
+block : 
 function_decl __base_ctor : 
+eh_spec_block : 
+bind_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl exception: 
+field_decl _vptr.exception: 
+integer_cst 64: 
+type_decl exception: 
+integer_cst 64: 
+field_decl _vptr.exception: 
+integer_cst 64: 
+pointer_plus_expr : 
+addr_expr : 
+var_decl _ZTVSt9exception: 
+integer_cst 320: 
+constructor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
+integer_cst 0: 
+addr_expr : 
+var_decl _ZTISt9exception: 
+integer_cst 128: 
+record_type : 
+type_decl __class_type_info_pseudo: 
+field_decl : 
+integer_cst 128: 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+function_decl __deleting_dtor : 
+addr_expr : 
+function_decl what: 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
+integer_cst 16: 
+block : 
 function_decl __comp_ctor : 
+statement_list : 
 function_decl bad_exception: 
+eh_spec_block : 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
 function_decl __base_ctor : 
+method_type : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl bad_exception: 
+field_decl : 
+integer_cst 64: 
+type_decl bad_exception: 
+integer_cst 64: 
+field_decl : 
+integer_cst 64: 
+cleanup_stmt : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl bad_exception: 
+field_decl : 
+integer_cst 64: 
+type_decl bad_exception: 
+integer_cst 64: 
+field_decl : 
+integer_cst 64: 
+field_decl _vptr.exception: 
+integer_cst 64: 
+pointer_plus_expr : 
+addr_expr : 
+var_decl _ZTVSt13bad_exception: 
+integer_cst 320: 
+constructor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
+integer_cst 0: 
+addr_expr : 
+var_decl _ZTISt13bad_exception: 
+integer_cst 192: 
+record_type : 
+type_decl __si_class_type_info_pseudo: 
+field_decl : 
+integer_cst 128: 
+field_decl : 
+integer_cst 64: 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+function_decl __deleting_dtor : 
+addr_expr : 
+function_decl what: 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
+integer_cst 16: 
+call_expr : 
+addr_expr : 
+function_decl __base_dtor : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl bad_exception: 
+field_decl : 
+integer_cst 64: 
+type_decl bad_exception: 
+integer_cst 64: 
+field_decl : 
+integer_cst 64: 
+block : 
+function_decl __base_ctor : 
+eh_spec_block : 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl __base_ctor : 
+method_type : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl bad_exception: 
+field_decl : 
+integer_cst 64: 
+type_decl bad_exception: 
+integer_cst 64: 
+field_decl : 
+integer_cst 64: 
+try_catch_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl bad_exception: 
+field_decl : 
+integer_cst 64: 
+type_decl bad_exception: 
+integer_cst 64: 
+field_decl : 
+integer_cst 64: 
+field_decl _vptr.exception: 
+integer_cst 64: 
+pointer_plus_expr : 
+addr_expr : 
+var_decl _ZTVSt13bad_exception: 
+integer_cst 320: 
+constructor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
+integer_cst 0: 
+addr_expr : 
+var_decl _ZTISt13bad_exception: 
+integer_cst 192: 
+record_type : 
+type_decl __si_class_type_info_pseudo: 
+field_decl : 
+integer_cst 128: 
+field_decl : 
+integer_cst 64: 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+function_decl __deleting_dtor : 
+addr_expr : 
+function_decl what: 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
+integer_cst 16: 
+call_expr : 
+addr_expr : 
+function_decl __base_dtor : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl bad_exception: 
+field_decl : 
+integer_cst 64: 
+type_decl bad_exception: 
+integer_cst 64: 
+field_decl : 
+integer_cst 64: 
+block : 
 function_decl __comp_ctor : 
+statement_list : 
 function_decl bad_alloc: 
+eh_spec_block : 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
 function_decl __base_ctor : 
+method_type : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl bad_alloc: 
+field_decl : 
+integer_cst 64: 
+type_decl bad_alloc: 
+integer_cst 64: 
+field_decl : 
+integer_cst 64: 
+cleanup_stmt : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl bad_alloc: 
+field_decl : 
+integer_cst 64: 
+type_decl bad_alloc: 
+integer_cst 64: 
+field_decl : 
+integer_cst 64: 
+field_decl _vptr.exception: 
+integer_cst 64: 
+pointer_plus_expr : 
+addr_expr : 
+var_decl _ZTVSt9bad_alloc: 
+integer_cst 320: 
+constructor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
+integer_cst 0: 
+addr_expr : 
+var_decl _ZTISt9bad_alloc: 
+integer_cst 192: 
+record_type : 
+type_decl __si_class_type_info_pseudo: 
+field_decl : 
+integer_cst 128: 
+field_decl : 
+integer_cst 64: 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+function_decl __deleting_dtor : 
+addr_expr : 
+function_decl what: 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
+integer_cst 16: 
+call_expr : 
+addr_expr : 
+function_decl __base_dtor : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl bad_alloc: 
+field_decl : 
+integer_cst 64: 
+type_decl bad_alloc: 
+integer_cst 64: 
+field_decl : 
+integer_cst 64: 
+block : 
+function_decl __base_ctor : 
+eh_spec_block : 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl __base_ctor : 
+method_type : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl bad_alloc: 
+field_decl : 
+integer_cst 64: 
+type_decl bad_alloc: 
+integer_cst 64: 
+field_decl : 
+integer_cst 64: 
+try_catch_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl bad_alloc: 
+field_decl : 
+integer_cst 64: 
+type_decl bad_alloc: 
+integer_cst 64: 
+field_decl : 
+integer_cst 64: 
+field_decl _vptr.exception: 
+integer_cst 64: 
+pointer_plus_expr : 
+addr_expr : 
+var_decl _ZTVSt9bad_alloc: 
+integer_cst 320: 
+constructor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
+integer_cst 0: 
+addr_expr : 
+var_decl _ZTISt9bad_alloc: 
+integer_cst 192: 
+record_type : 
+type_decl __si_class_type_info_pseudo: 
+field_decl : 
+integer_cst 128: 
+field_decl : 
+integer_cst 64: 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+function_decl __deleting_dtor : 
+addr_expr : 
+function_decl what: 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
+integer_cst 16: 
+call_expr : 
+addr_expr : 
+function_decl __base_dtor : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl bad_alloc: 
+field_decl : 
+integer_cst 64: 
+type_decl bad_alloc: 
+integer_cst 64: 
+field_decl : 
+integer_cst 64: 
+block : 
 function_decl __comp_ctor : 
+statement_list : 
 function_decl operator new: 
 eh_spec_block : __p, 
 return_expr : __p, 
@@ -644,7 +1875,45 @@ var_decl __old: __fmt, __out,
 var_decl __args: __fmt, __out, 
 var_decl __ret: __fmt, __out, 
 function_decl __bswap_32: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 32: 
+call_expr : 
+addr_expr : 
+function_decl __builtin_bswap32: 
+parm_decl __bsx: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 32: 
 function_decl __bswap_64: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl __uint64_t: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+integer_cst 64: 
+call_expr : 
+addr_expr : 
+function_decl __builtin_bswap64: 
+parm_decl __bsx: 
+integer_type : 
+type_decl __uint64_t: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+integer_cst 64: 
 function_decl __pthread_cleanup_class: 
 bind_expr : __arg, __fct, 
 statement_list : __arg, __fct, 
@@ -826,12 +2095,313 @@ block : __arg, __fct,
 function_decl __comp_ctor : 
 statement_list : __arg, __fct, 
 function_decl __pthread_cleanup_class: 
+statement_list : 
+bind_expr : 
+cleanup_stmt : 
+statement_list : 
+if_stmt : 
+ne_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl __pthread_cleanup_class: 
+field_decl __cancel_routine: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+field_decl __cancel_type: 
+integer_cst 32: 
+type_decl __pthread_cleanup_class: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+integer_cst 0: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl __pthread_cleanup_class: 
+field_decl __cancel_routine: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+field_decl __cancel_type: 
+integer_cst 32: 
+type_decl __pthread_cleanup_class: 
+integer_cst 64: 
+field_decl __cancel_routine: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl __pthread_cleanup_class: 
+field_decl __cancel_routine: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+field_decl __cancel_type: 
+integer_cst 32: 
+type_decl __pthread_cleanup_class: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+modify_expr : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl __pthread_cleanup_class: 
+field_decl __cancel_routine: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+field_decl __cancel_type: 
+integer_cst 32: 
+type_decl __pthread_cleanup_class: 
+integer_cst 64: 
+constructor : 
+record_type : 
+field_decl __cancel_routine: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+field_decl __cancel_type: 
+integer_cst 32: 
+block : 
+label_expr : 
+label_decl : 
 function_decl __base_dtor : 
+statement_list : 
+bind_expr : 
+try_finally : 
+statement_list : 
+cond_expr : 
+ne_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl __pthread_cleanup_class: 
+field_decl __cancel_routine: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+field_decl __cancel_type: 
+integer_cst 32: 
+type_decl __pthread_cleanup_class: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+integer_cst 0: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl __pthread_cleanup_class: 
+field_decl __cancel_routine: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+field_decl __cancel_type: 
+integer_cst 32: 
+type_decl __pthread_cleanup_class: 
+integer_cst 64: 
+field_decl __cancel_routine: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl __pthread_cleanup_class: 
+field_decl __cancel_routine: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+field_decl __cancel_type: 
+integer_cst 32: 
+type_decl __pthread_cleanup_class: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+integer_cst 0: 
+modify_expr : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl __pthread_cleanup_class: 
+field_decl __cancel_routine: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+field_decl __cancel_type: 
+integer_cst 32: 
+type_decl __pthread_cleanup_class: 
+integer_cst 64: 
+constructor : 
+record_type : 
+field_decl __cancel_routine: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+field_decl __cancel_type: 
+integer_cst 32: 
+block : 
+label_expr : 
+label_decl : 
 function_decl __comp_dtor : 
+statement_list : 
 function_decl __setdoit: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : this->__do_it, 
+indirect_ref : this->__do_it, 
+parm_decl this: this->__do_it, 
+pointer_type : this->__do_it, 
+record_type : this->__do_it, 
+type_decl __pthread_cleanup_class: this->__do_it, 
+field_decl __cancel_routine: this->__do_it, 
+integer_cst 64: this->__do_it, 
+field_decl __cancel_arg: this->__do_it, 
+integer_cst 64: this->__do_it, 
+field_decl __do_it: this->__do_it, 
+integer_cst 32: this->__do_it, 
+field_decl __cancel_type: this->__do_it, 
+integer_cst 32: this->__do_it, 
+type_decl __pthread_cleanup_class: this->__do_it, 
+integer_cst 64: this->__do_it, 
+field_decl __do_it: this->__do_it, 
+integer_cst 32: this->__do_it, 
+parm_decl __newval: this->__do_it, 
+integer_type : this->__do_it, 
+type_decl int: this->__do_it, 
+integer_cst 32: this->__do_it, 
+integer_cst -2147483648: this->__do_it, 
+integer_cst 2147483647: this->__do_it, 
+integer_cst 32: this->__do_it, 
 function_decl __defer: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+call_expr : 
+addr_expr : 
+function_decl pthread_setcanceltype: 
+integer_cst 0: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl __pthread_cleanup_class: 
+field_decl __cancel_routine: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+field_decl __cancel_type: 
+integer_cst 32: 
+type_decl __pthread_cleanup_class: 
+integer_cst 64: 
+field_decl __cancel_type: 
+integer_cst 32: 
 function_decl __restore: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+call_expr : 
+addr_expr : 
+function_decl pthread_setcanceltype: 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl __pthread_cleanup_class: 
+field_decl __cancel_routine: 
+integer_cst 64: 
+field_decl __cancel_arg: 
+integer_cst 64: 
+field_decl __do_it: 
+integer_cst 32: 
+field_decl __cancel_type: 
+integer_cst 32: 
+type_decl __pthread_cleanup_class: 
+integer_cst 64: 
+field_decl __cancel_type: 
+integer_cst 32: 
+integer_cst 0: 
 function_decl __gthread_active_p: 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+decl_expr : 
+var_decl __gthread_active_ptr: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+ne_expr : 
+var_decl __gthread_active_ptr: 
+integer_cst 0: 
+var_decl __gthread_active_ptr: 
+integer_cst 64: 
+addr_expr : 
+function_decl __gthrw___pthread_key_create: 
+tree_list : 
+identifier_node alias: 
+tree_list : 
+string_cst __pthread_key_create: 
+tree_list : 
+identifier_node weakref: 
+function_type : 
+pointer_type : 
+void_type : 
+type_decl void: 
+block : 
+var_decl __gthread_active_ptr: 
 function_decl __gthread_create: 
 cleanup_point_expr : __args, __func, __threadid, 
 return_expr : __args, __func, __threadid, 
@@ -846,6 +2416,13 @@ integer_cst 32: __args, __func, __threadid,
 call_expr : __args, __func, __threadid, 
 addr_expr : __args, __func, __threadid, 
 function_decl __gthrw_pthread_create: __args, __func, __threadid, 
+tree_list : __args, __func, __threadid, 
+identifier_node alias: __args, __func, __threadid, 
+tree_list : __args, __func, __threadid, 
+string_cst pthread_create: __args, __func, __threadid, 
+tree_list : __args, __func, __threadid, 
+identifier_node weakref: __args, __func, __threadid, 
+function_type : __args, __func, __threadid, 
 parm_decl __threadid: __args, __func, __threadid, 
 pointer_type : __args, __func, __threadid, 
 integer_type : __args, __func, __threadid, 
@@ -888,6 +2465,13 @@ integer_cst 32: __value_ptr,
 call_expr : __value_ptr, 
 addr_expr : __value_ptr, 
 function_decl __gthrw_pthread_join: __value_ptr, 
+tree_list : __value_ptr, 
+identifier_node alias: __value_ptr, 
+tree_list : __value_ptr, 
+string_cst pthread_join: __value_ptr, 
+tree_list : __value_ptr, 
+identifier_node weakref: __value_ptr, 
+function_type : __value_ptr, 
 parm_decl __threadid: __value_ptr, 
 integer_type : __value_ptr, 
 type_decl __gthread_t: __value_ptr, 
@@ -902,9 +2486,110 @@ void_type : __value_ptr,
 type_decl void: __value_ptr, 
 integer_cst 64: __value_ptr, 
 function_decl __gthread_detach: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+call_expr : 
+addr_expr : 
+function_decl __gthrw_pthread_detach: 
+tree_list : 
+identifier_node alias: 
+tree_list : 
+string_cst pthread_detach: 
+tree_list : 
+identifier_node weakref: 
+function_type : 
+parm_decl __threadid: 
+integer_type : 
+type_decl __gthread_t: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+integer_cst 64: 
 function_decl __gthread_equal: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+call_expr : 
+addr_expr : 
+function_decl __gthrw_pthread_equal: 
+tree_list : 
+identifier_node alias: 
+tree_list : 
+string_cst pthread_equal: 
+tree_list : 
+identifier_node weakref: 
+function_type : 
+parm_decl __t1: 
+integer_type : 
+type_decl __gthread_t: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+integer_cst 64: 
+parm_decl __t2: 
+integer_type : 
+type_decl __gthread_t: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+integer_cst 64: 
 function_decl __gthread_self: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl __gthread_t: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+integer_cst 64: 
+call_expr : 
+addr_expr : 
+function_decl __gthrw_pthread_self: 
+tree_list : 
+identifier_node alias: 
+tree_list : 
+string_cst pthread_self: 
+tree_list : 
+identifier_node weakref: 
+function_type : 
 function_decl __gthread_yield: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+call_expr : 
+addr_expr : 
+function_decl __gthrw_sched_yield: 
+tree_list : 
+identifier_node alias: 
+tree_list : 
+string_cst sched_yield: 
+tree_list : 
+identifier_node weakref: 
+function_type : 
 function_decl __gthread_once: 
 if_stmt : __func, __once, 
 cleanup_point_expr : __func, __once, 
@@ -912,6 +2597,7 @@ ne_expr : __func, __once,
 call_expr : __func, __once, 
 addr_expr : __func, __once, 
 function_decl __gthread_active_p: __func, __once, 
+function_type : __func, __once, 
 integer_cst 0: __func, __once, 
 cleanup_point_expr : __func, __once, 
 return_expr : __func, __once, 
@@ -926,6 +2612,13 @@ integer_cst 32: __func, __once,
 call_expr : __func, __once, 
 addr_expr : __func, __once, 
 function_decl __gthrw_pthread_once: __func, __once, 
+tree_list : __func, __once, 
+identifier_node alias: __func, __once, 
+tree_list : __func, __once, 
+string_cst pthread_once: __func, __once, 
+tree_list : __func, __once, 
+identifier_node weakref: __func, __once, 
+function_type : __func, __once, 
 parm_decl __once: __func, __once, 
 pointer_type : __func, __once, 
 integer_type : __func, __once, 
@@ -967,6 +2660,13 @@ integer_cst 32: __dtor, __key,
 call_expr : __dtor, __key, 
 addr_expr : __dtor, __key, 
 function_decl __gthrw_pthread_key_create: __dtor, __key, 
+tree_list : __dtor, __key, 
+identifier_node alias: __dtor, __key, 
+tree_list : __dtor, __key, 
+string_cst pthread_key_create: __dtor, __key, 
+tree_list : __dtor, __key, 
+identifier_node weakref: __dtor, __key, 
+function_type : __dtor, __key, 
 parm_decl __key: __dtor, __key, 
 pointer_type : __dtor, __key, 
 integer_type : __dtor, __key, 
@@ -989,7 +2689,59 @@ void_type : __dtor, __key,
 type_decl void: __dtor, __key, 
 integer_cst 64: __dtor, __key, 
 function_decl __gthread_key_delete: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+call_expr : 
+addr_expr : 
+function_decl __gthrw_pthread_key_delete: 
+tree_list : 
+identifier_node alias: 
+tree_list : 
+string_cst pthread_key_delete: 
+tree_list : 
+identifier_node weakref: 
+function_type : 
+parm_decl __key: 
+integer_type : 
+type_decl __gthread_key_t: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 32: 
 function_decl __gthread_getspecific: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+pointer_type : 
+void_type : 
+type_decl void: 
+integer_cst 64: 
+call_expr : 
+addr_expr : 
+function_decl __gthrw_pthread_getspecific: 
+tree_list : 
+identifier_node alias: 
+tree_list : 
+string_cst pthread_getspecific: 
+tree_list : 
+identifier_node weakref: 
+function_type : 
+parm_decl __key: 
+integer_type : 
+type_decl __gthread_key_t: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 32: 
 function_decl __gthread_setspecific: 
 cleanup_point_expr : __ptr, 
 return_expr : __ptr, 
@@ -1004,6 +2756,13 @@ integer_cst 32: __ptr,
 call_expr : __ptr, 
 addr_expr : __ptr, 
 function_decl __gthrw_pthread_setspecific: __ptr, 
+tree_list : __ptr, 
+identifier_node alias: __ptr, 
+tree_list : __ptr, 
+string_cst pthread_setspecific: __ptr, 
+tree_list : __ptr, 
+identifier_node weakref: __ptr, 
+function_type : __ptr, 
 parm_decl __key: __ptr, 
 integer_type : __ptr, 
 type_decl __gthread_key_t: __ptr, 
@@ -1023,6 +2782,7 @@ ne_expr : __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
+function_type : __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 expr_stmt : __mutex, 
@@ -1030,6 +2790,13 @@ convert_expr : __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthrw_pthread_mutex_init: __mutex, 
+tree_list : __mutex, 
+identifier_node alias: __mutex, 
+tree_list : __mutex, 
+string_cst pthread_mutex_init: __mutex, 
+tree_list : __mutex, 
+identifier_node weakref: __mutex, 
+function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -1051,6 +2818,7 @@ ne_expr : __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
+function_type : __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -1065,6 +2833,13 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthrw_pthread_mutex_destroy: __mutex, 
+tree_list : __mutex, 
+identifier_node alias: __mutex, 
+tree_list : __mutex, 
+string_cst pthread_mutex_destroy: __mutex, 
+tree_list : __mutex, 
+identifier_node weakref: __mutex, 
+function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -1095,6 +2870,7 @@ ne_expr : __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
+function_type : __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -1109,6 +2885,13 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthrw_pthread_mutex_lock: __mutex, 
+tree_list : __mutex, 
+identifier_node alias: __mutex, 
+tree_list : __mutex, 
+string_cst pthread_mutex_lock: __mutex, 
+tree_list : __mutex, 
+identifier_node weakref: __mutex, 
+function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -1139,6 +2922,7 @@ ne_expr : __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
+function_type : __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -1153,6 +2937,13 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthrw_pthread_mutex_trylock: __mutex, 
+tree_list : __mutex, 
+identifier_node alias: __mutex, 
+tree_list : __mutex, 
+string_cst pthread_mutex_trylock: __mutex, 
+tree_list : __mutex, 
+identifier_node weakref: __mutex, 
+function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -1183,6 +2974,7 @@ ne_expr : __abs_timeout, __mutex,
 call_expr : __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
 function_decl __gthread_active_p: __abs_timeout, __mutex, 
+function_type : __abs_timeout, __mutex, 
 integer_cst 0: __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 return_expr : __abs_timeout, __mutex, 
@@ -1197,6 +2989,13 @@ integer_cst 32: __abs_timeout, __mutex,
 call_expr : __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
 function_decl __gthrw_pthread_mutex_timedlock: __abs_timeout, __mutex, 
+tree_list : __abs_timeout, __mutex, 
+identifier_node alias: __abs_timeout, __mutex, 
+tree_list : __abs_timeout, __mutex, 
+string_cst pthread_mutex_timedlock: __abs_timeout, __mutex, 
+tree_list : __abs_timeout, __mutex, 
+identifier_node weakref: __abs_timeout, __mutex, 
+function_type : __abs_timeout, __mutex, 
 parm_decl __mutex: __abs_timeout, __mutex, 
 pointer_type : __abs_timeout, __mutex, 
 union_type : __abs_timeout, __mutex, 
@@ -1237,6 +3036,7 @@ ne_expr : __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
+function_type : __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -1251,6 +3051,13 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthrw_pthread_mutex_unlock: __mutex, 
+tree_list : __mutex, 
+identifier_node alias: __mutex, 
+tree_list : __mutex, 
+string_cst pthread_mutex_unlock: __mutex, 
+tree_list : __mutex, 
+identifier_node weakref: __mutex, 
+function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -1288,6 +3095,7 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_mutex_lock: __mutex, 
+function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -1315,6 +3123,7 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_mutex_trylock: __mutex, 
+function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -1342,6 +3151,7 @@ integer_cst 32: __abs_timeout, __mutex,
 call_expr : __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
 function_decl __gthread_mutex_timedlock: __abs_timeout, __mutex, 
+function_type : __abs_timeout, __mutex, 
 parm_decl __mutex: __abs_timeout, __mutex, 
 pointer_type : __abs_timeout, __mutex, 
 union_type : __abs_timeout, __mutex, 
@@ -1379,6 +3189,7 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_mutex_unlock: __mutex, 
+function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -1406,6 +3217,7 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_mutex_destroy: __mutex, 
+function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -1433,6 +3245,13 @@ integer_cst 32: __cond,
 call_expr : __cond, 
 addr_expr : __cond, 
 function_decl __gthrw_pthread_cond_broadcast: __cond, 
+tree_list : __cond, 
+identifier_node alias: __cond, 
+tree_list : __cond, 
+string_cst pthread_cond_broadcast: __cond, 
+tree_list : __cond, 
+identifier_node weakref: __cond, 
+function_type : __cond, 
 parm_decl __cond: __cond, 
 pointer_type : __cond, 
 union_type : __cond, 
@@ -1460,6 +3279,13 @@ integer_cst 32: __cond,
 call_expr : __cond, 
 addr_expr : __cond, 
 function_decl __gthrw_pthread_cond_signal: __cond, 
+tree_list : __cond, 
+identifier_node alias: __cond, 
+tree_list : __cond, 
+string_cst pthread_cond_signal: __cond, 
+tree_list : __cond, 
+identifier_node weakref: __cond, 
+function_type : __cond, 
 parm_decl __cond: __cond, 
 pointer_type : __cond, 
 union_type : __cond, 
@@ -1487,6 +3313,13 @@ integer_cst 32: __cond, __mutex,
 call_expr : __cond, __mutex, 
 addr_expr : __cond, __mutex, 
 function_decl __gthrw_pthread_cond_wait: __cond, __mutex, 
+tree_list : __cond, __mutex, 
+identifier_node alias: __cond, __mutex, 
+tree_list : __cond, __mutex, 
+string_cst pthread_cond_wait: __cond, __mutex, 
+tree_list : __cond, __mutex, 
+identifier_node weakref: __cond, __mutex, 
+function_type : __cond, __mutex, 
 parm_decl __cond: __cond, __mutex, 
 pointer_type : __cond, __mutex, 
 union_type : __cond, __mutex, 
@@ -1527,6 +3360,13 @@ integer_cst 32: __abs_timeout, __cond, __mutex,
 call_expr : __abs_timeout, __cond, __mutex, 
 addr_expr : __abs_timeout, __cond, __mutex, 
 function_decl __gthrw_pthread_cond_timedwait: __abs_timeout, __cond, __mutex, 
+tree_list : __abs_timeout, __cond, __mutex, 
+identifier_node alias: __abs_timeout, __cond, __mutex, 
+tree_list : __abs_timeout, __cond, __mutex, 
+string_cst pthread_cond_timedwait: __abs_timeout, __cond, __mutex, 
+tree_list : __abs_timeout, __cond, __mutex, 
+identifier_node weakref: __abs_timeout, __cond, __mutex, 
+function_type : __abs_timeout, __cond, __mutex, 
 parm_decl __cond: __abs_timeout, __cond, __mutex, 
 pointer_type : __abs_timeout, __cond, __mutex, 
 union_type : __abs_timeout, __cond, __mutex, 
@@ -1577,6 +3417,7 @@ integer_cst 32: __cond, __mutex,
 call_expr : __cond, __mutex, 
 addr_expr : __cond, __mutex, 
 function_decl __gthread_cond_wait: __cond, __mutex, 
+function_type : __cond, __mutex, 
 parm_decl __cond: __cond, __mutex, 
 pointer_type : __cond, __mutex, 
 union_type : __cond, __mutex, 
@@ -1617,6 +3458,13 @@ integer_cst 32: __cond,
 call_expr : __cond, 
 addr_expr : __cond, 
 function_decl __gthrw_pthread_cond_destroy: __cond, 
+tree_list : __cond, 
+identifier_node alias: __cond, 
+tree_list : __cond, 
+string_cst pthread_cond_destroy: __cond, 
+tree_list : __cond, 
+identifier_node weakref: __cond, 
+function_type : __cond, 
 parm_decl __cond: __cond, 
 pointer_type : __cond, 
 union_type : __cond, 
@@ -1784,6 +3632,7 @@ ne_expr : __mem,
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __gthread_active_p: __mem, 
+function_type : __mem, 
 integer_cst 0: __mem, 
 cleanup_point_expr : __mem, 
 return_expr : __mem, 
@@ -1798,6 +3647,7 @@ integer_cst 32: __mem,
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __exchange_and_add: __mem, 
+function_type : __mem, 
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
@@ -1826,6 +3676,7 @@ integer_cst 32: __mem,
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __exchange_and_add_single: __mem, 
+function_type : __mem, 
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
@@ -1848,12 +3699,14 @@ ne_expr : __mem,
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __gthread_active_p: __mem, 
+function_type : __mem, 
 integer_cst 0: __mem, 
 cleanup_point_expr : __mem, 
 expr_stmt : __mem, 
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __atomic_add: __mem, 
+function_type : __mem, 
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
@@ -1874,6 +3727,7 @@ expr_stmt : __mem,
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __atomic_add_single: __mem, 
+function_type : __mem, 
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
@@ -2002,17 +3856,437 @@ block : __x,
 function_decl __comp_ctor : 
 statement_list : __x, 
 function_decl _Bit_reference: 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+init_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+integer_cst 0: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+init_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+integer_cst 0: 
+block : 
 function_decl __base_ctor : 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+init_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+integer_cst 0: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+init_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+integer_cst 0: 
+block : 
 function_decl __comp_ctor : 
+statement_list : 
 function_decl operator 2: 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+ne_expr : 
+bit_and_expr : 
+indirect_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+integer_cst 0: 
 function_decl operator=: 
+statement_list : 
+if_stmt : 
+parm_decl __x: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 8: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+bit_ior_expr : 
+indirect_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+bit_and_expr : 
+indirect_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+bit_not_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+return_expr : 
+init_expr : 
+result_decl : 
+reference_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
 function_decl operator=: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+reference_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+convert_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator=: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+convert_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator 2: 
+convert_expr : 
+parm_decl __x: 
+reference_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
 function_decl operator==: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+eq_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator 2: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+call_expr : 
+addr_expr : 
+function_decl operator 2: 
+convert_expr : 
+parm_decl __x: 
+reference_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
 function_decl operator<: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+truth_andif_expr : 
+truth_not_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator 2: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+call_expr : 
+addr_expr : 
+function_decl operator 2: 
+convert_expr : 
+parm_decl __x: 
+reference_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
 function_decl flip: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+bit_xor_expr : 
+indirect_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
 function_decl iterator: 
+bind_expr : 
+statement_list : 
+block : 
 function_decl __base_ctor : 
+bind_expr : 
+statement_list : 
+block : 
 function_decl __comp_ctor : 
+statement_list : 
 function_decl _Bit_iterator_base: 
 bind_expr : __x, 
 statement_list : __x, 
@@ -2021,6 +4295,7 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
+method_type : __x, 
 parm_decl this: __x, 
 pointer_type : __x, 
 record_type : __x, 
@@ -2091,6 +4366,7 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
+method_type : __x, 
 parm_decl this: __x, 
 pointer_type : __x, 
 record_type : __x, 
@@ -2156,18 +4432,681 @@ block : __x,
 function_decl __comp_ctor : 
 statement_list : __x, 
 function_decl _M_bump_up: 
+if_stmt : 
+cleanup_point_expr : 
+eq_expr : 
+postincrement_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_cst 1: 
+integer_cst 63: 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_cst 0: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+preincrement_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+integer_cst 8: 
 function_decl _M_bump_down: 
+if_stmt : 
+cleanup_point_expr : 
+eq_expr : 
+postdecrement_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_cst 1: 
+integer_cst 0: 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_cst 63: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+predecrement_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+integer_cst 8: 
 function_decl _M_incr: 
+bind_expr : 
+statement_list : 
+decl_expr : 
+var_decl __n: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_plus_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+mult_expr : 
+trunc_div_expr : 
+var_decl __n: 
+integer_cst 64: 
+integer_cst 8: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl __n: 
+trunc_mod_expr : 
+var_decl __n: 
+integer_cst 64: 
+if_stmt : 
+lt_expr : 
+var_decl __n: 
+integer_cst 0: 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl __n: 
+plus_expr : 
+var_decl __n: 
+integer_cst 64: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+predecrement_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+integer_cst 8: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+convert_expr : 
+var_decl __n: 
+var_decl __n: 
+integer_cst 64: 
+plus_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+parm_decl __i: 
+integer_type : 
+type_decl ptrdiff_t: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+integer_type : 
+type_decl difference_type: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+block : 
+var_decl __n: 
 function_decl operator==: 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+truth_andif_expr : 
+eq_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+eq_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+component_ref : 
+indirect_ref : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
 function_decl operator<: 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+truth_orif_expr : 
+lt_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+truth_andif_expr : 
+eq_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+lt_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+component_ref : 
+indirect_ref : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
 function_decl operator!=: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+truth_not_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator==: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+convert_expr : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 function_decl operator>: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+call_expr : 
+addr_expr : 
+function_decl operator<: 
+convert_expr : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 function_decl operator<=: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+truth_not_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator<: 
+convert_expr : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 function_decl operator>=: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl bool: 
+integer_cst 8: 
+truth_not_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator<: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+convert_expr : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 function_decl operator-: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl ptrdiff_t: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+minus_expr : 
+plus_expr : 
+mult_expr : 
+exact_div_expr : 
+minus_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl __x: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl __y: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+integer_cst 8: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl __x: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+component_ref : 
+indirect_ref : 
+parm_decl __y: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
 function_decl _Bit_iterator: 
+bind_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
 function_decl __base_ctor : 
+method_type : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+integer_cst 0: 
+integer_cst 0: 
+block : 
+function_decl __base_ctor : 
+bind_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl __base_ctor : 
+method_type : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+integer_cst 0: 
+integer_cst 0: 
+block : 
 function_decl __comp_ctor : 
+statement_list : 
 function_decl _Bit_iterator: 
 bind_expr : __x, 
 cleanup_point_expr : __x, 
@@ -2175,6 +5114,7 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
+method_type : __x, 
 addr_expr : __x, 
 component_ref : __x, 
 indirect_ref : __x, 
@@ -2214,6 +5154,7 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
+method_type : __x, 
 addr_expr : __x, 
 component_ref : __x, 
 indirect_ref : __x, 
@@ -2249,20 +5190,757 @@ block : __x,
 function_decl __comp_ctor : 
 statement_list : __x, 
 function_decl _M_const_cast: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
 function_decl operator*: 
-function_decl operator++: 
-function_decl operator++: 
-function_decl operator--: 
-function_decl operator--: 
-function_decl operator+=: 
-function_decl operator-=: 
-function_decl operator+: 
-function_decl operator-: 
-function_decl operator[]: 
-function_decl operator+: 
-function_decl _Bit_const_iterator: 
-function_decl __base_ctor : 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 128: 
+compound_expr : 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+aggr_init_expr : 
+addr_expr : 
 function_decl __comp_ctor : 
+method_type : 
+var_decl : 
+convert_expr : 
+void_cst : 
+component_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_p: 
+integer_cst 64: 
+lshift_expr : 
+integer_cst 1: 
+component_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_offset: 
+integer_cst 32: 
+var_decl : 
+function_decl operator++: 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl _M_bump_up: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+return_expr : 
+init_expr : 
+result_decl : 
+reference_type : 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+function_decl operator++: 
+bind_expr : 
+statement_list : 
+decl_expr : 
+var_decl __tmp: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl _M_bump_up: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+var_decl __tmp: 
+var_decl __tmp: 
+integer_cst 128: 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+block : 
+var_decl __tmp: 
+function_decl operator--: 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl _M_bump_down: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+return_expr : 
+init_expr : 
+result_decl : 
+reference_type : 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+function_decl operator--: 
+bind_expr : 
+statement_list : 
+decl_expr : 
+var_decl __tmp: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl _M_bump_down: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+var_decl __tmp: 
+var_decl __tmp: 
+integer_cst 128: 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+block : 
+var_decl __tmp: 
+function_decl operator+=: 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl _M_incr: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+parm_decl __i: 
+integer_type : 
+type_decl difference_type: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+return_expr : 
+init_expr : 
+result_decl : 
+reference_type : 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+function_decl operator-=: 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator+=: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+negate_expr : 
+parm_decl __i: 
+integer_type : 
+type_decl difference_type: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+return_expr : 
+init_expr : 
+result_decl : 
+reference_type : 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+function_decl operator+: 
+bind_expr : 
+statement_list : 
+decl_expr : 
+var_decl __tmp: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+indirect_ref : 
+call_expr : 
+addr_expr : 
+function_decl operator+=: 
+addr_expr : 
+var_decl __tmp: 
+parm_decl __i: 
+integer_type : 
+type_decl difference_type: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+var_decl __tmp: 
+integer_cst 128: 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+block : 
+var_decl __tmp: 
+function_decl operator-: 
+bind_expr : 
+statement_list : 
+decl_expr : 
+var_decl __tmp: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+indirect_ref : 
+call_expr : 
+addr_expr : 
+function_decl operator-=: 
+addr_expr : 
+var_decl __tmp: 
+parm_decl __i: 
+integer_type : 
+type_decl difference_type: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+var_decl __tmp: 
+integer_cst 128: 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+block : 
+var_decl __tmp: 
+function_decl operator[]: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+call_expr : 
+addr_expr : 
+function_decl operator*: 
+addr_expr : 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+call_expr : 
+addr_expr : 
+function_decl operator+: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+parm_decl __i: 
+integer_type : 
+type_decl difference_type: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+function_decl operator+: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+call_expr : 
+addr_expr : 
+function_decl operator+: 
+convert_expr : 
+parm_decl __x: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+parm_decl __n: 
+integer_type : 
+type_decl ptrdiff_t: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+function_decl _Bit_const_iterator: 
+bind_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl __base_ctor : 
+method_type : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+integer_cst 0: 
+integer_cst 0: 
+block : 
+function_decl __base_ctor : 
+bind_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl __base_ctor : 
+method_type : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+integer_cst 0: 
+integer_cst 0: 
+block : 
+function_decl __comp_ctor : 
+statement_list : 
 function_decl _Bit_const_iterator: 
 bind_expr : __x, 
 cleanup_point_expr : __x, 
@@ -2270,6 +5948,7 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
+method_type : __x, 
 addr_expr : __x, 
 component_ref : __x, 
 indirect_ref : __x, 
@@ -2310,6 +5989,7 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
+method_type : __x, 
 addr_expr : __x, 
 component_ref : __x, 
 indirect_ref : __x, 
@@ -2346,25 +6026,1360 @@ block : __x,
 function_decl __comp_ctor : 
 statement_list : __x, 
 function_decl _Bit_const_iterator: 
+bind_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
 function_decl __base_ctor : 
+method_type : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+component_ref : 
+component_ref : 
+indirect_ref : 
+convert_expr : 
+parm_decl __x: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_p: 
+integer_cst 64: 
+component_ref : 
+component_ref : 
+indirect_ref : 
+convert_expr : 
+parm_decl __x: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_offset: 
+integer_cst 32: 
+block : 
+function_decl __base_ctor : 
+bind_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl __base_ctor : 
+method_type : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+component_ref : 
+component_ref : 
+indirect_ref : 
+convert_expr : 
+parm_decl __x: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_p: 
+integer_cst 64: 
+component_ref : 
+component_ref : 
+indirect_ref : 
+convert_expr : 
+parm_decl __x: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_offset: 
+integer_cst 32: 
+block : 
 function_decl __comp_ctor : 
+statement_list : 
 function_decl _M_const_cast: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+compound_expr : 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+aggr_init_expr : 
+addr_expr : 
+function_decl __comp_ctor : 
+method_type : 
+var_decl : 
+convert_expr : 
+void_cst : 
+component_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_p: 
+integer_cst 64: 
+component_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_offset: 
+integer_cst 32: 
+var_decl : 
 function_decl operator*: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl const_reference: 
+integer_cst 8: 
+call_expr : 
+addr_expr : 
+function_decl operator 2: 
+addr_expr : 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+aggr_init_expr : 
+addr_expr : 
+function_decl __comp_ctor : 
+method_type : 
+var_decl : 
+convert_expr : 
+void_cst : 
+component_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_p: 
+integer_cst 64: 
+lshift_expr : 
+integer_cst 1: 
+component_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_offset: 
+integer_cst 32: 
 function_decl operator++: 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl _M_bump_up: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+return_expr : 
+init_expr : 
+result_decl : 
+reference_type : 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
 function_decl operator++: 
+bind_expr : 
+statement_list : 
+decl_expr : 
+var_decl __tmp: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl _M_bump_up: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+var_decl __tmp: 
+var_decl __tmp: 
+integer_cst 128: 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+block : 
+var_decl __tmp: 
 function_decl operator--: 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl _M_bump_down: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+return_expr : 
+init_expr : 
+result_decl : 
+reference_type : 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
 function_decl operator--: 
+bind_expr : 
+statement_list : 
+decl_expr : 
+var_decl __tmp: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl _M_bump_down: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+var_decl __tmp: 
+var_decl __tmp: 
+integer_cst 128: 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+block : 
+var_decl __tmp: 
 function_decl operator+=: 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl _M_incr: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+field_decl : 
+integer_cst 96: 
+parm_decl __i: 
+integer_type : 
+type_decl difference_type: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+return_expr : 
+init_expr : 
+result_decl : 
+reference_type : 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
 function_decl operator-=: 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator+=: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+negate_expr : 
+parm_decl __i: 
+integer_type : 
+type_decl difference_type: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+return_expr : 
+init_expr : 
+result_decl : 
+reference_type : 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
 function_decl operator+: 
+bind_expr : 
+statement_list : 
+decl_expr : 
+var_decl __tmp: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+indirect_ref : 
+call_expr : 
+addr_expr : 
+function_decl operator+=: 
+addr_expr : 
+var_decl __tmp: 
+parm_decl __i: 
+integer_type : 
+type_decl difference_type: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+var_decl __tmp: 
+integer_cst 128: 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+block : 
+var_decl __tmp: 
 function_decl operator-: 
+bind_expr : 
+statement_list : 
+decl_expr : 
+var_decl __tmp: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+indirect_ref : 
+call_expr : 
+addr_expr : 
+function_decl operator-=: 
+addr_expr : 
+var_decl __tmp: 
+parm_decl __i: 
+integer_type : 
+type_decl difference_type: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+var_decl __tmp: 
+integer_cst 128: 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+block : 
+var_decl __tmp: 
 function_decl operator[]: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+boolean_type : 
+type_decl const_reference: 
+integer_cst 8: 
+call_expr : 
+addr_expr : 
+function_decl operator*: 
+addr_expr : 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+call_expr : 
+addr_expr : 
 function_decl operator+: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+parm_decl __i: 
+integer_type : 
+type_decl difference_type: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+function_decl operator+: 
+cleanup_point_expr : 
+return_expr : 
+init_expr : 
+result_decl : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+call_expr : 
+addr_expr : 
+function_decl operator+: 
+convert_expr : 
+parm_decl __x: 
+reference_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_const_iterator: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl pointer: 
+type_decl const_iterator: 
+integer_cst 64: 
+parm_decl __n: 
+integer_type : 
+type_decl ptrdiff_t: 
+integer_cst 64: 
+integer_cst -0: 
+integer_cst 4294967295: 
+integer_cst 64: 
 function_decl __fill_bvector: 
+for_stmt : 
+cleanup_point_expr : 
+convert_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator++: 
+addr_expr : 
+parm_decl __first: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+cleanup_point_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator!=: 
+addr_expr : 
+component_ref : 
+parm_decl __first: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+field_decl : 
+integer_cst 96: 
+addr_expr : 
+component_ref : 
+parm_decl __last: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+field_decl : 
+integer_cst 96: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator=: 
+addr_expr : 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl reference: 
+field_decl _M_p: 
+integer_cst 64: 
+field_decl _M_mask: 
+integer_cst 64: 
+type_decl _Bit_reference: 
+call_expr : 
+addr_expr : 
+function_decl operator*: 
+addr_expr : 
+parm_decl __first: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+convert_expr : 
+parm_decl __x: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 8: 
 function_decl fill: 
-function_decl Data1: 
-function_decl __base_ctor : 
+if_stmt : 
+ne_expr : 
+component_ref : 
+component_ref : 
+parm_decl __first: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_p: 
+integer_cst 64: 
+component_ref : 
+component_ref : 
+parm_decl __last: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_p: 
+integer_cst 64: 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl fill: 
+pointer_plus_expr : 
+component_ref : 
+component_ref : 
+parm_decl __first: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_p: 
+integer_cst 64: 
+integer_cst 8: 
+component_ref : 
+component_ref : 
+parm_decl __last: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_p: 
+integer_cst 64: 
+addr_expr : 
+target_expr : 
+var_decl : 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+cond_expr : 
+indirect_ref : 
+parm_decl __x: 
+reference_type : 
+boolean_type : 
+type_decl bool: 
+integer_cst 64: 
+integer_cst -1: 
+integer_cst 0: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl __fill_bvector: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+parm_decl __first: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+aggr_init_expr : 
+addr_expr : 
 function_decl __comp_ctor : 
+method_type : 
+var_decl : 
+convert_expr : 
+void_cst : 
+pointer_plus_expr : 
+component_ref : 
+component_ref : 
+parm_decl __first: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_p: 
+integer_cst 64: 
+integer_cst 8: 
+integer_cst 0: 
+indirect_ref : 
+parm_decl __x: 
+reference_type : 
+boolean_type : 
+type_decl bool: 
+integer_cst 64: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl __fill_bvector: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+aggr_init_expr : 
+addr_expr : 
+function_decl __comp_ctor : 
+method_type : 
+var_decl : 
+convert_expr : 
+void_cst : 
+component_ref : 
+component_ref : 
+parm_decl __last: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+field_decl : 
+integer_cst 96: 
+field_decl _M_p: 
+integer_cst 64: 
+integer_cst 0: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+parm_decl __last: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+indirect_ref : 
+parm_decl __x: 
+reference_type : 
+boolean_type : 
+type_decl bool: 
+integer_cst 64: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl __fill_bvector: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+parm_decl __first: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+target_expr : 
+var_decl : 
+integer_cst 128: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+parm_decl __last: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+indirect_ref : 
+parm_decl __x: 
+reference_type : 
+boolean_type : 
+type_decl bool: 
+integer_cst 64: 
+function_decl Data1: 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl __comp_ctor : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl str1: 
+integer_cst 64: 
+cleanup_stmt : 
+statement_list : 
+call_expr : 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl str1: 
+integer_cst 64: 
+block : 
+function_decl __base_ctor : 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl __comp_ctor : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl str1: 
+integer_cst 64: 
+try_catch_expr : 
+statement_list : 
+call_expr : 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl str1: 
+integer_cst 64: 
+block : 
+function_decl __comp_ctor : 
+statement_list : 
 function_decl Data1: 
 bind_expr : ptr0, 
 statement_list : ptr0, 
@@ -2544,6 +7559,16 @@ block : ptr0,
 function_decl __comp_ctor : 
 statement_list : ptr0, 
 function_decl ftest1: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+integer_cst 1: 
 function_decl ftest2: 
 return_expr : ptr0, 
 init_expr : ptr0, 
@@ -3369,8 +8394,77 @@ integer_cst -2147483648: __first, __last,
 integer_cst 2147483647: __first, __last, 
 integer_cst 64: __first, __last, 
 function_decl _Alloc_hider: 
+statement_list : 
+bind_expr : 
+cleanup_stmt : 
+statement_list : 
+cleanup_stmt : 
+statement_list : 
+call_expr : 
+addr_expr : 
 function_decl __base_dtor : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Alloc_hider: 
+field_decl _M_p: 
+integer_cst 64: 
+type_decl _Alloc_hider: 
+integer_cst 64: 
+modify_expr : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Alloc_hider: 
+field_decl _M_p: 
+integer_cst 64: 
+type_decl _Alloc_hider: 
+integer_cst 64: 
+constructor : 
+record_type : 
+field_decl _M_p: 
+integer_cst 64: 
+block : 
+label_expr : 
+label_decl : 
+function_decl __base_dtor : 
+statement_list : 
+bind_expr : 
+try_finally : 
+statement_list : 
+try_finally : 
+statement_list : 
+call_expr : 
+addr_expr : 
+function_decl __base_dtor : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Alloc_hider: 
+field_decl _M_p: 
+integer_cst 64: 
+type_decl _Alloc_hider: 
+integer_cst 64: 
+modify_expr : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Alloc_hider: 
+field_decl _M_p: 
+integer_cst 64: 
+type_decl _Alloc_hider: 
+integer_cst 64: 
+constructor : 
+record_type : 
+field_decl _M_p: 
+integer_cst 64: 
+block : 
+label_expr : 
+label_decl : 
 function_decl __comp_dtor : 
+statement_list : 
 function_decl basic_string: 
 function_decl __base_ctor : 
 function_decl __comp_ctor : 
@@ -3504,15 +8598,86 @@ integer_cst : __it,
 integer_cst 64: __it, 
 function_decl _S_empty_rep: 
 function_decl new_allocator: 
+eh_spec_block : 
+bind_expr : 
+statement_list : 
+block : 
 function_decl __base_ctor : 
+eh_spec_block : 
+bind_expr : 
+statement_list : 
+block : 
 function_decl __comp_ctor : 
+statement_list : 
 function_decl new_allocator: 
+eh_spec_block : 
+statement_list : 
+bind_expr : 
+cleanup_stmt : 
+statement_list : 
+modify_expr : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl new_allocator: 
+template_decl rebind: 
+type_decl new_allocator: 
+type_decl size_type: 
+type_decl difference_type: 
+type_decl pointer: 
+type_decl const_pointer: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl value_type: 
+integer_cst 64: 
+constructor : 
+record_type : 
+block : 
+label_expr : 
+label_decl : 
 function_decl __base_dtor : 
+eh_spec_block : 
+statement_list : 
+bind_expr : 
+try_finally : 
+statement_list : 
+modify_expr : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl new_allocator: 
+template_decl rebind: 
+type_decl new_allocator: 
+type_decl size_type: 
+type_decl difference_type: 
+type_decl pointer: 
+type_decl const_pointer: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl value_type: 
+integer_cst 64: 
+constructor : 
+record_type : 
+block : 
+label_expr : 
+label_decl : 
 function_decl __comp_dtor : 
+statement_list : 
 function_decl allocator: 
 function_decl __base_ctor : 
 function_decl __comp_ctor : 
 function_decl _M_data: 
 function_decl new_allocator: 
+eh_spec_block : 
+bind_expr : 
+statement_list : 
+block : 
 function_decl __base_ctor : 
+eh_spec_block : 
+bind_expr : 
+statement_list : 
+block : 
 function_decl __comp_ctor : 
+statement_list : 
