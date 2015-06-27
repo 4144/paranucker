@@ -1,25 +1,25 @@
 test23.cpp: In constructor 'Object1::Object1(Data1*)':
-test23.cpp:54:24: warning: Using field 'this->dataptr' without checking for null pointer
+test23.cpp:55:24: warning: Using field 'this->dataptr' without checking for null pointer
          dataptr->ftest1();
                         ^
 test23.cpp: In constructor 'Object1::Object1(Data1*)':
-test23.cpp:54:24: warning: Using field 'this->dataptr' without checking for null pointer
+test23.cpp:55:24: warning: Using field 'this->dataptr' without checking for null pointer
 test23.cpp: In member function 'void Object1::func3(Data1*)':
-test23.cpp:80:25: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:81:25: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->ftest1();
                          ^
 test23.cpp: In member function 'void Object1::func5(Data1*)':
-test23.cpp:98:25: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:99:25: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->ftest1();
                          ^
 test23.cpp: In member function 'void Object1::func6(FuncPtr1)':
-test23.cpp:104:13: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:105:13: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1();
              ^
 test23.cpp: In member function 'void Object1::func8(Data1*)':
-test23.cpp:116:28: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:117:28: warning: Using parameter 'ptr1' without checking for null pointer
          (ptr1->*fptr2)(ptr1);
                             ^
-test23.cpp:116:23: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:117:23: warning: Using parameter 'ptr1' without checking for null pointer
          (ptr1->*fptr2)(ptr1);
                        ^

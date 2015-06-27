@@ -6,6 +6,7 @@ struct Data1;
 typedef void (*FuncPtr1) (void);
 typedef void (*FuncPtr2) (Data1 *ptr);
 typedef void (Data1::*FuncPtr3) (Data1 *ptr);
+typedef void (&FuncPtr4)(const void *const);
 
 struct Data1
 {
@@ -114,5 +115,10 @@ class Object1
     {
         FuncPtr3 fptr2 = &Data1::ftest3;
         (ptr1->*fptr2)(ptr1);
+    }
+
+    void func9(FuncPtr4 ptr1, Data1 *const ptr2)
+    {
+        ptr1(ptr2);
     }
 };
