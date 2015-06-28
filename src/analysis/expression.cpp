@@ -54,6 +54,7 @@
 #include "nodes/ref/array_ref.h"
 #include "nodes/ref/component_ref.h"
 #include "nodes/ref/indirect_ref.h"
+#include "nodes/ref/objtype_ref.h"
 
 #include <set>
 
@@ -204,7 +205,84 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
         }
         else if (wi.knownVars.find(var) != wi.knownVars.end())
         {
-            reportUselessCheck(node, var);
+            bool doReport(true);
+            // exception for delete operator. it check for var != 0 before really delete
+            node1 = skipBackNop(node->parent);
+            if (node1 == COND_EXPR)
+            {
+                CondExprNode *cond = static_cast<CondExprNode*>(node1);
+                if (cond->args.size() >= 2 &&
+                    skipNop(cond->args[0]) == NE_EXPR)
+                {
+                    if (skipNop(cond->args[1]) == COMPOUND_EXPR)
+                    {
+                        CompoundExprNode *compound = static_cast<CompoundExprNode*>(
+                            skipNop(cond->args[1]));
+                        if (compound &&
+                            compound->args.size() == 2 &&
+                            compound->args[0] == CALL_EXPR &&
+                            compound->args[1] == CALL_EXPR)
+                        {
+                            CallExprNode *call = static_cast<CallExprNode*>(
+                                skipNop(compound->args[1]));
+                            if (call && call->function == ADDR_EXPR)
+                            {
+                                AddrExprNode *addr = static_cast<AddrExprNode*>(
+                                    skipNop(call->function));
+                                if (addr &&
+                                    !addr->args.empty() &&
+                                    skipNop(addr->args[0]) == FUNCTION_DECL &&
+                                    skipNop(addr->args[0])->label == "operator delete")
+                                {
+                                    doReport = false;
+                                }
+                            }
+                        }
+                    }
+                    else if (!cond->args.empty() &&
+                             skipNop(cond->args[1]) == CALL_EXPR)
+                    {
+                        CallExprNode *call = static_cast<CallExprNode*>(
+                            skipNop(cond->args[1]));
+                        if (call && skipNop(call->function) == OBJ_TYPE_REF)
+                        {
+                            ObjTypeRefNode *typeRef = static_cast<ObjTypeRefNode*>(
+                                skipNop(call->function));
+                            if (typeRef &&
+                                !typeRef->args.empty() &&
+                                skipNop(typeRef->args[0]) == INDIRECT_REF)
+                            {
+                                IndirectRefNode *indirect = static_cast<IndirectRefNode*>(
+                                    skipNop(typeRef->args[0]));
+                                if (indirect &&
+                                    skipNop(indirect->ref) == POINTER_PLUS_EXPR)
+                                {
+                                    PointerPlusExprNode *plusExpr = static_cast<PointerPlusExprNode*>(
+                                        skipNop(indirect->ref));
+                                    if (plusExpr &&
+                                        !plusExpr->args.empty() &&
+                                        skipNop(plusExpr->args[0]) == COMPONENT_REF)
+                                    {
+                                        ComponentRefNode *comp = static_cast<ComponentRefNode*>(
+                                            skipNop(plusExpr->args[0]));
+                                        if (comp &&
+                                            skipNop(comp->object) == INDIRECT_REF &&
+                                            skipNop(comp->field) == FIELD_DECL)
+                                        {
+                                            std::string label = skipNop(comp->field)->label;
+                                            if (label.size() > 6 && label.substr(0, 6) == "_vptr.")
+                                                doReport = false;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (doReport)
+                reportUselessCheck(node, var);
         }
     }
     wo.cleanExpr = false;
