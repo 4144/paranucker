@@ -30,6 +30,13 @@ struct Data1
     }
 };
 
+struct Data2
+{
+    virtual ~Data2()
+    {
+    }
+};
+
 int k;
 
 class Object1
@@ -41,5 +48,40 @@ class Object1
             if (ptr1 && k == 1)
                 return;
         }
+    }
+
+    void func2(Data1 *const ptr1)
+    {
+        if (!ptr1)
+        {
+            if (!ptr1 && k == 1)
+                return;
+        }
+    }
+
+    void func3(Data1 *const ptr1)
+    {
+        if (!ptr1)
+        {
+            return;
+        }
+        delete ptr1;
+    }
+
+    void func4(Data1 *const ptr1)
+    {
+        if (ptr1)
+        {
+            return;
+        }
+        delete ptr1;
+    }
+
+    static void func5(Data2 *const ptr1)
+    {
+        if (!ptr1)
+            return;
+
+        delete ptr1;
     }
 };

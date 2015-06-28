@@ -13023,6 +13023,247 @@ integer_cst -2147483648: ptr0,
 integer_cst 2147483647: ptr0, 
 integer_cst 32: ptr0, 
 integer_cst 1: ptr0, 
+function_decl Data2: 
+must_not_throw_expr : 
+statement_list : 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+type_decl Data2: 
+integer_cst 64: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_plus_expr : 
+addr_expr : 
+var_decl _ZTV5Data2: 
+integer_cst 256: 
+constructor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 3: 
+integer_cst 0: 
+addr_expr : 
+var_decl _ZTI5Data2: 
+integer_cst 128: 
+record_type : 
+type_decl __class_type_info_pseudo: 
+field_decl : 
+integer_cst 128: 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+function_decl __deleting_dtor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 3: 
+integer_cst 16: 
+cleanup_stmt : 
+statement_list : 
+modify_expr : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+type_decl Data2: 
+integer_cst 64: 
+constructor : 
+record_type : 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+block : 
+label_expr : 
+label_decl : 
+if_stmt : 
+ne_expr : 
+bit_and_expr : 
+parm_decl __in_chrg: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+integer_cst 1: 
+integer_cst 0: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl operator delete: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+type_decl Data2: 
+integer_cst 64: 
+function_decl __base_dtor : 
+must_not_throw_expr : 
+statement_list : 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+type_decl Data2: 
+integer_cst 64: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_plus_expr : 
+addr_expr : 
+var_decl _ZTV5Data2: 
+integer_cst 256: 
+constructor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 3: 
+integer_cst 0: 
+addr_expr : 
+var_decl _ZTI5Data2: 
+integer_cst 128: 
+record_type : 
+type_decl __class_type_info_pseudo: 
+field_decl : 
+integer_cst 128: 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+function_decl __deleting_dtor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 3: 
+integer_cst 16: 
+try_finally : 
+statement_list : 
+modify_expr : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+type_decl Data2: 
+integer_cst 64: 
+constructor : 
+record_type : 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+block : 
+label_expr : 
+label_decl : 
+cond_expr : 
+ne_expr : 
+bit_and_expr : 
+integer_cst 0: 
+integer_cst 1: 
+integer_cst 0: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl operator delete: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+type_decl Data2: 
+integer_cst 64: 
+integer_cst 0: 
+function_decl __comp_dtor : 
+statement_list : 
+function_decl __deleting_dtor : 
+statement_list : 
+call_expr : 
+addr_expr : 
+function_decl __comp_dtor : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+type_decl Data2: 
+integer_cst 64: 
+label_expr : 
+label_decl : 
+call_expr : 
+addr_expr : 
+function_decl operator delete: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+type_decl Data2: 
+integer_cst 64: 
 function_decl func1: 
 if_stmt : ptr1, 
 ne_expr : ptr1, 
@@ -13045,7 +13286,7 @@ if_stmt :
 truth_andif_expr : 
 ne_expr : 
 test26.cpp: In member function 'void Object1::func1(Data1*)':
-test26.cpp:41:22: warning: Useless variable check 'ptr1'. It already was checked before
+test26.cpp:48:22: warning: Useless variable check 'ptr1'. It already was checked before
              if (ptr1 && k == 1)
                       ^
 parm_decl ptr1: 
@@ -13073,6 +13314,386 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 1: 
 return_expr : 
+function_decl func2: 
+if_stmt : ptr1, 
+eq_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+if_stmt : ptr1, 
+truth_andif_expr : ptr1, 
+eq_expr : ptr1, 
+test26.cpp: In member function 'void Object1::func2(Data1*)':
+test26.cpp:57:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 && k == 1)
+                  ^
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+eq_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 1: ptr1, 
+return_expr : ptr1, 
+function_decl Data1: 
+statement_list : 
+bind_expr : 
+cleanup_stmt : 
+statement_list : 
+cleanup_stmt : 
+statement_list : 
+call_expr : 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl str1: 
+integer_cst 64: 
+modify_expr : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+constructor : 
+record_type : 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+block : 
+label_expr : 
+label_decl : 
+function_decl __base_dtor : 
+statement_list : 
+bind_expr : 
+try_finally : 
+statement_list : 
+try_finally : 
+statement_list : 
+call_expr : 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl str1: 
+integer_cst 64: 
+modify_expr : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+constructor : 
+record_type : 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+block : 
+label_expr : 
+label_decl : 
+function_decl __comp_dtor : 
+statement_list : 
+function_decl func3: 
+statement_list : ptr1, 
+if_stmt : ptr1, 
+eq_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+return_expr : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : 
+cond_expr : 
+ne_expr : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+integer_cst 0: 
+compound_expr : 
+call_expr : 
+addr_expr : 
+function_decl __comp_dtor : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+call_expr : 
+addr_expr : 
+function_decl operator delete: 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+void_cst : 
+function_decl func4: 
+statement_list : ptr1, 
+if_stmt : ptr1, 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+return_expr : 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+cond_expr : ptr1, 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+compound_expr : 
+call_expr : 
+addr_expr : 
+function_decl __comp_dtor : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+call_expr : 
+addr_expr : 
+function_decl operator delete: 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+void_cst : ptr1, 
+function_decl func5: 
+statement_list : ptr1, 
+if_stmt : ptr1, 
+eq_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data2: ptr1, 
+field_decl _vptr.Data2: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data2: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+return_expr : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : 
+cond_expr : 
+ne_expr : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+type_decl Data2: 
+integer_cst 64: 
+integer_cst 0: 
+call_expr : 
+obj_type_ref : 
+indirect_ref : 
+pointer_plus_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+type_decl Data2: 
+integer_cst 64: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+integer_cst 8: 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+type_decl Data2: 
+integer_cst 64: 
+integer_cst 1: 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+type_decl Data2: 
+integer_cst 64: 
+void_cst : 
 function_decl c_str: 
 function_decl __stoa: 
 bind_expr : __convf, __idx, __name, __str, 
