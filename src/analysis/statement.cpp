@@ -135,7 +135,7 @@ void analyseCondition(Node *node,
 void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need condition node
-    if (!node->condition || command == FindArgs)
+    if (!node->condition || checkCommand(FindArgs))
         return;
 
     analyseCondition(node,

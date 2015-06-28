@@ -20,16 +20,18 @@
 #ifndef COMMAND_H
 #define COMMAND_H
 
+#define checkCommand(val) ((command & Command::val) == Command::val)
+
 enum Command : int
 {
-    Parse = 0,
-    Dump,
-    SmallDump,
-    DumpUnsupported,
-    MemoryUsage,
-    FindArgs,
-    DetectNullPointers,
-    DumpNullPointers
+    Parse              = 0,
+    Dump               = 1,
+    SmallDump          = 2,
+    DumpUnsupported    = 4,
+    MemoryUsage        = 8,
+    FindArgs           = 16,
+    DetectNullPointers = 32,
+    DumpNullPointers   = 64
 };
 
 extern Command command;

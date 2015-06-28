@@ -39,7 +39,7 @@ void analyseVarDecl(VarDeclNode *node A_UNUSED,
                     WalkItem &wo A_UNUSED)
 {
     // need atleast one arg for check
-    if (command == FindArgs)
+    if (checkCommand(FindArgs))
         return;
 
 //    reportParmDeclNullPointer(node, node->initial, wi);

@@ -37,7 +37,7 @@ void dump(const Node *const node,
           const char *const text,
           ...)
 {
-    if (command != Command::Dump)
+    if (!checkCommand(Dump))
         return;
 
     va_list ap;
@@ -57,7 +57,7 @@ void dumpRaw(const Node *const node,
              const char *const text,
              ...)
 {
-    if (command != Command::Dump)
+    if (!checkCommand(Dump))
         return;
 
     va_list ap;
@@ -96,7 +96,7 @@ void dumpInt(const Node *const node,
              const char *const text,
              const int val)
 {
-    if (command != Command::Dump || !val || !node)
+    if (!checkCommand(Dump) || !val || !node)
         return;
 
     fprintf(stderr, "%s", node->getIndent().c_str());
@@ -109,7 +109,7 @@ void dump(const Node *const node,
           const char *const text,
           ...)
 {
-    if (command != Command::Dump)
+    if (!checkCommand(Dump))
         return;
 
     va_list ap;
@@ -133,7 +133,7 @@ void dump(const Node *const node,
 
 void dump(const Node *const node)
 {
-    if (command == Command::SmallDump)
+    if (checkCommand(SmallDump))
     {
         fprintf(stderr,
             "%d %s %s\n",
@@ -143,7 +143,7 @@ void dump(const Node *const node)
         return;
     }
 
-    if (command != Command::Dump)
+    if (!checkCommand(Dump))
         return;
 
     if (!node)

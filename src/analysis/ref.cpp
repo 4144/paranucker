@@ -44,7 +44,7 @@ void analyseComponentRef(ComponentRefNode *node,
                          WalkItem &wo A_UNUSED)
 {
     // need atleast one arg for check
-    if (!node->object || command == FindArgs)
+    if (!node->object || checkCommand(FindArgs))
         return;
 
     Node *arg = skipNop(node->object);

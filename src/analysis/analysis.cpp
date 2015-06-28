@@ -362,7 +362,7 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
     if (!node)
         return;
 
-    if (command == Command::DumpNullPointers)
+    if (checkCommand(DumpNullPointers))
     {
         Log::log("%s %s: ",
             node->nodeTypeName.c_str(),

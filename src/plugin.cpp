@@ -44,9 +44,9 @@ static void pre_generic(void *gcc_data,
                         void *user_data A_UNUSED)
 {
     Node *node = Generic::parseNodes((tree)gcc_data);
-    if (command == Command::FindArgs ||
-        command == Command::DetectNullPointers ||
-        command == Command::DumpNullPointers)
+    if (checkCommand(FindArgs) ||
+        checkCommand(DetectNullPointers) ||
+        checkCommand(DumpNullPointers))
     {
         Generic::updateNodes();
         Analysis::startWalkTree(node);

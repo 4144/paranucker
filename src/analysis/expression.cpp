@@ -106,7 +106,7 @@ std::string getComponentRefVariable(Node *node)
 void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need atleast one arg for check
-    if (node->args.empty() || command == FindArgs)
+    if (node->args.empty() || checkCommand(FindArgs))
         return;
 
     Node *arg = skipNop(node->args[0]);
@@ -139,7 +139,7 @@ void analysePointerPlusExpr(PointerPlusExprNode *node,
                             WalkItem &wo A_UNUSED)
 {
     // need atleast one arg for check
-    if (node->args.empty() || command == FindArgs)
+    if (node->args.empty() || checkCommand(FindArgs))
         return;
 
     reportParmDeclNullPointer(node, node->args[0], wi);
@@ -150,7 +150,7 @@ void analyseAddrExpr(AddrExprNode *node,
                      WalkItem &wo A_UNUSED)
 {
     // need atleast one arg for check
-    if (node->args.empty() || command == FindArgs)
+    if (node->args.empty() || checkCommand(FindArgs))
         return;
 
     // do not report code like func1(ptr) or push_back(ptr)
@@ -181,7 +181,7 @@ void analyseReturnExpr(ReturnExprNode *node A_UNUSED,
 void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need two args for check
-    if (node->args.size() < 2 || command == FindArgs)
+    if (node->args.size() < 2 || checkCommand(FindArgs))
         return;
 
     // PARM_DECL or VAR_DECL?
@@ -210,7 +210,7 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
 void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need two args for check
-    if (node->args.size() < 2 || command == FindArgs)
+    if (node->args.size() < 2 || checkCommand(FindArgs))
         return;
 
     // PARM_DECL or VAR_DECL ?
@@ -297,7 +297,7 @@ void analyseAndCondition(Node *node, Node *node1, Node *node2, const WalkItem &w
 void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need two args for check
-    if (node->args.size() < 2 || command == FindArgs)
+    if (node->args.size() < 2 || checkCommand(FindArgs))
         return;
 
     analyseOrCondition(node, node->args[0], node->args[1], wi, wo);
@@ -306,7 +306,7 @@ void analyseTruthOrIfExpr(TruthOrIfExprNode *node, const WalkItem &wi, WalkItem 
 void analyseTruthOrExpr(TruthOrExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need two args for check
-    if (node->args.size() < 2 || command == FindArgs)
+    if (node->args.size() < 2 || checkCommand(FindArgs))
         return;
 
     analyseOrCondition(node, node->args[0], node->args[1], wi, wo);
@@ -315,7 +315,7 @@ void analyseTruthOrExpr(TruthOrExprNode *node, const WalkItem &wi, WalkItem &wo)
 void analyseTruthAndIfExpr(TruthAndIfExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need two args for check
-    if (node->args.size() < 2 || command == FindArgs)
+    if (node->args.size() < 2 || checkCommand(FindArgs))
         return;
 
     analyseAndCondition(node, node->args[0], node->args[1], wi, wo);
@@ -324,7 +324,7 @@ void analyseTruthAndIfExpr(TruthAndIfExprNode *node, const WalkItem &wi, WalkIte
 void analyseTruthAndExpr(TruthAndExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need two args for check
-    if (node->args.size() < 2 || command == FindArgs)
+    if (node->args.size() < 2 || checkCommand(FindArgs))
         return;
 
     analyseAndCondition(node, node->args[0], node->args[1], wi, wo);
@@ -336,7 +336,7 @@ void analyseTruthAndExpr(TruthAndExprNode *node, const WalkItem &wi, WalkItem &w
 void analyseCondExpr(CondExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need tree args for check
-    if (node->args.size() < 3 || command == FindArgs)
+    if (node->args.size() < 3 || checkCommand(FindArgs))
         return;
 
     analyseCondition(node,
@@ -351,7 +351,7 @@ void analyseCondExpr(CondExprNode *node, const WalkItem &wi, WalkItem &wo)
 void analyseCompoundExpr(CompoundExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need one arg for check
-    if (node->args.size() < 1 || command == FindArgs)
+    if (node->args.size() < 1 || checkCommand(FindArgs))
         return;
 
     const size_t sz = node->args.size();
@@ -384,7 +384,7 @@ void analyseCompoundExpr(CompoundExprNode *node, const WalkItem &wi, WalkItem &w
 void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     const size_t sz = node->args.size();
-    if (sz < 1 || command == FindArgs)
+    if (sz < 1 || checkCommand(FindArgs))
         return;
 
     WalkItem wi2 = wi;
@@ -417,7 +417,7 @@ void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo)
 void analyseDeclExpr(DeclExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need one arg for check
-    if (node->args.empty() || command == FindArgs)
+    if (node->args.empty() || checkCommand(FindArgs))
         return;
 
     Node *node1 = skipNop(node->args[0]);
@@ -559,7 +559,7 @@ void analyseInitExpr(InitExprNode* node,
                      WalkItem &wo)
 {
     // need one arg for check
-    if (node->args.size() < 2 || command == FindArgs)
+    if (node->args.size() < 2 || checkCommand(FindArgs))
         return;
 
     // var1 = var2

@@ -103,7 +103,7 @@ void getPossibleNullParameters(FunctionDeclNode *node, WalkItem &wi)
     getFunctionArgTypes(node, types);
     getFunctionParamsNonNullAttributes(node, nonNull);
 
-    if (command == Command::FindArgs)
+    if (checkCommand(FindArgs))
         Log::log("%s: ", node->label.c_str());
 
     size_t sz = node->args.size();
@@ -119,7 +119,7 @@ void getPossibleNullParameters(FunctionDeclNode *node, WalkItem &wi)
             continue;
         if (nonNull.find(f + 1) == nonNull.end())
         {
-            if (command == Command::FindArgs)
+            if (checkCommand(FindArgs))
             {
                 Log::log("%s %s, ",
                     type->nodeTypeName.c_str(),
@@ -128,7 +128,7 @@ void getPossibleNullParameters(FunctionDeclNode *node, WalkItem &wi)
             wi.checkNullVars.insert(name->label);
         }
     }
-    if (command == Command::FindArgs)
+    if (checkCommand(FindArgs))
         Log::log("\n");
 }
 

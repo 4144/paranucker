@@ -77,7 +77,7 @@ Node *createParseNode(Node *parent,
         break;
 #include "includes/nodeshandling.inc"
         default:
-            if (command == Command::DumpUnsupported)
+            if (checkCommand(DumpUnsupported))
             {
                 Log::error("Unsupported node type: %s",
                     get_tree_code_name(TREE_CODE(gccNode)));
@@ -175,10 +175,10 @@ void cleanAllNodes(Node *node)
 {
     foundNodesMap.clear();
     updateNodesMap.clear();
-    if (command == Command::MemoryUsage)
+    if (checkCommand(MemoryUsage))
         Log::error("Allocations before cleanup: %d", allocations);
     cleanNodes(node);
-    if (command == Command::MemoryUsage)
+    if (checkCommand(MemoryUsage))
         Log::error("Allocations after cleanup: %d", allocations);
 }
 
