@@ -63,6 +63,8 @@ void analyseCondition(Node *node,
     removeCheckNullVarsSet(wi2, wco.checkedNonNullVars);
     wi2.checkNullVars.insert(wco.checkedNullVars.begin(),
         wco.checkedNullVars.end());
+    wi2.knownVars.insert(wco.checkedNullVars.begin(),
+        wco.checkedNullVars.end());
     Log::dumpWI(node, "wi2 then ", wi2);
 
     reportParmDeclNullPointer(node,
@@ -74,6 +76,8 @@ void analyseCondition(Node *node,
     WalkItem wi3 = wi;
     removeCheckNullVarsSet(wi3, wco.checkedNullVars);
     wi3.checkNullVars.insert(wco.checkedNonNullVars.begin(),
+        wco.checkedNonNullVars.end());
+    wi3.knownVars.insert(wco.checkedNonNullVars.begin(),
         wco.checkedNonNullVars.end());
     Log::dumpWI(node, "wi3 else ", wi3);
 

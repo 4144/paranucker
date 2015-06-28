@@ -67,6 +67,7 @@ void addCheckNullVars(WalkItem &wi, WalkItem &wo)
     FOR_EACH (std::set<std::string>::const_iterator, it, wi.addNullVars)
     {
         wo.checkNullVars.insert(*it);
+        wo.knownVars.insert(*it);
     }
 }
 
@@ -177,6 +178,7 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
         wi2.addNullVars = wo2.addNullVars;
         addCheckNullVars(wi2, wi2);
         wo2.checkNullVars = wi2.checkNullVars;
+        wo2.knownVars = wi2.knownVars;
         wi2.isReturned = wi2.isReturned || wo2.isReturned;
         wi2.linkedVars = wo2.linkedVars;
         wi2.linkedReverseVars = wo2.linkedReverseVars;

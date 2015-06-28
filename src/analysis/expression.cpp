@@ -245,6 +245,8 @@ void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi
     removeCheckNullVarsSet(wi2, wo1.checkedNullVars);
     wi2.checkNullVars.insert(wo1.checkedNonNullVars.begin(),
         wo1.checkedNonNullVars.end());
+    wi2.knownVars.insert(wo1.checkedNonNullVars.begin(),
+        wo1.checkedNonNullVars.end());
     Log::dumpWI(node, "wi2 ", wi2);
     walkTree(node2, wi2, wo2);
     Log::dumpWI(node, "wo2 ", wo2);
@@ -271,6 +273,8 @@ void analyseAndCondition(Node *node, Node *node1, Node *node2, const WalkItem &w
     WalkItem wi2 = wi;
     removeCheckNullVarsSet(wi2, wo1.checkedNonNullVars);
     wi2.checkNullVars.insert(wo1.checkedNullVars.begin(),
+        wo1.checkedNullVars.end());
+    wi2.knownVars.insert(wo1.checkedNullVars.begin(),
         wo1.checkedNullVars.end());
     Log::dumpWI(node, "wi2 ", wi2);
     walkTree(node2, wi2, wo2);
