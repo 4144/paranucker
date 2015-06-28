@@ -147,8 +147,8 @@ void analyseFunction(FunctionDeclNode *node, const WalkItem &wi, WalkItem &wo)
         WalkItem wi2 = wi;
         getPossibleNullParameters(node, wi2);
         walkTree(node->code, wi2, wo);
-        wo.stopWalking = true;
     }
+    wo.stopWalking = true;
 }
 
 }

@@ -193,18 +193,22 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
     // if (var != 0)
     if (!var.empty() &&
         node2 == INTEGER_CST &&
-        wi.checkNullVars.find(var) != wi.checkNullVars.end() &&
         node2->label == "0")
     {
-        wo.checkedNonNullVars.insert(var);
-        wo.cleanExpr = true;
-        wo.uselessExpr = false;
+        if (wi.checkNullVars.find(var) != wi.checkNullVars.end())
+        {
+            wo.checkedNonNullVars.insert(var);
+            wo.cleanExpr = true;
+            wo.uselessExpr = false;
+            return;
+        }
+        else if (wi.knownVars.find(var) != wi.knownVars.end())
+        {
+            reportUselessCheck(node, var);
+        }
     }
-    else
-    {
-        wo.cleanExpr = false;
-        wo.uselessExpr = true;
-    }
+    wo.cleanExpr = false;
+    wo.uselessExpr = true;
 }
 
 void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
@@ -221,18 +225,18 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
     // if (var == 0)
     if (!var.empty() &&
         node2 == INTEGER_CST &&
-        wi.checkNullVars.find(var) != wi.checkNullVars.end() &&
         node2->label == "0")
     {
-        wo.checkedNullVars.insert(var);
-        wo.cleanExpr = true;
-        wo.uselessExpr = false;
+        if (wi.checkNullVars.find(var) != wi.checkNullVars.end())
+        {
+            wo.checkedNullVars.insert(var);
+            wo.cleanExpr = true;
+            wo.uselessExpr = false;
+            return;
+        }
     }
-    else
-    {
-        wo.cleanExpr = false;
-        wo.uselessExpr = true;
-    }
+    wo.cleanExpr = false;
+    wo.uselessExpr = true;
 }
 
 void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi, WalkItem &wo)

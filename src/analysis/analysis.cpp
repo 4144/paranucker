@@ -217,6 +217,15 @@ bool checkForReport(Node *node,
         wi.checkNullVars.find(node->label) != wi.checkNullVars.end();
 }
 
+// report about useless check for null pointer
+void reportUselessCheck(Node *node,
+                        const std::string &var)
+{
+    Log::warn(findBackLocation(node),
+        "Useless variable check '%s'. It already was checked before",
+        var);
+}
+
 // report about null pointer if need for node
 void reportParmDeclNullPointer(Node *mainNode,
                                Node *node,

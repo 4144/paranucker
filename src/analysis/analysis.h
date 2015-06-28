@@ -46,6 +46,9 @@ namespace Analysis
                                        Node *node,
                                        const WalkItem &wi);
 
+    void reportUselessCheck(Node *node,
+                            const std::string &var);
+
     bool checkForReport(Node *node,
                         const WalkItem &wi);
 
