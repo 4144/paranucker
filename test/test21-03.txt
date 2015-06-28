@@ -455,7 +455,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -564,7 +563,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -675,7 +673,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -784,7 +781,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -1472,7 +1468,6 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
-method_type : __x, 
 parm_decl this: __x, 
 pointer_type : __x, 
 record_type : __x, 
@@ -1543,7 +1538,6 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
-method_type : __x, 
 parm_decl this: __x, 
 pointer_type : __x, 
 record_type : __x, 
@@ -2235,7 +2229,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -2262,7 +2255,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -2291,7 +2283,6 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
-method_type : __x, 
 addr_expr : __x, 
 component_ref : __x, 
 indirect_ref : __x, 
@@ -2331,7 +2322,6 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
-method_type : __x, 
 addr_expr : __x, 
 component_ref : __x, 
 indirect_ref : __x, 
@@ -2430,7 +2420,6 @@ type_decl _Bit_reference:
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
-method_type : 
 var_decl : 
 convert_expr : 
 void_cst : 
@@ -3067,7 +3056,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -3095,7 +3083,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -3125,7 +3112,6 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
-method_type : __x, 
 addr_expr : __x, 
 component_ref : __x, 
 indirect_ref : __x, 
@@ -3166,7 +3152,6 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
-method_type : __x, 
 addr_expr : __x, 
 component_ref : __x, 
 indirect_ref : __x, 
@@ -3209,7 +3194,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -3273,7 +3257,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -3361,7 +3344,6 @@ type_decl iterator:
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
-method_type : 
 var_decl : 
 convert_expr : 
 void_cst : 
@@ -3429,7 +3411,6 @@ type_decl _Bit_reference:
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
-method_type : 
 var_decl : 
 convert_expr : 
 void_cst : 
@@ -4302,7 +4283,6 @@ type_decl iterator:
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
-method_type : 
 var_decl : 
 convert_expr : 
 void_cst : 
@@ -4350,7 +4330,6 @@ type_decl iterator:
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
-method_type : 
 var_decl : 
 convert_expr : 
 void_cst : 

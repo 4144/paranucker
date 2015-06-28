@@ -1253,7 +1253,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -1362,7 +1361,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -1473,7 +1471,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -1582,7 +1579,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -2390,13 +2386,6 @@ var_decl __gthread_active_ptr:
 integer_cst 64: 
 addr_expr : 
 function_decl __gthrw___pthread_key_create: 
-tree_list : 
-identifier_node alias: 
-tree_list : 
-string_cst __pthread_key_create: 
-tree_list : 
-identifier_node weakref: 
-function_type : 
 pointer_type : 
 void_type : 
 type_decl void: 
@@ -2416,13 +2405,6 @@ integer_cst 32: __args, __func, __threadid,
 call_expr : __args, __func, __threadid, 
 addr_expr : __args, __func, __threadid, 
 function_decl __gthrw_pthread_create: __args, __func, __threadid, 
-tree_list : __args, __func, __threadid, 
-identifier_node alias: __args, __func, __threadid, 
-tree_list : __args, __func, __threadid, 
-string_cst pthread_create: __args, __func, __threadid, 
-tree_list : __args, __func, __threadid, 
-identifier_node weakref: __args, __func, __threadid, 
-function_type : __args, __func, __threadid, 
 parm_decl __threadid: __args, __func, __threadid, 
 pointer_type : __args, __func, __threadid, 
 integer_type : __args, __func, __threadid, 
@@ -2465,13 +2447,6 @@ integer_cst 32: __value_ptr,
 call_expr : __value_ptr, 
 addr_expr : __value_ptr, 
 function_decl __gthrw_pthread_join: __value_ptr, 
-tree_list : __value_ptr, 
-identifier_node alias: __value_ptr, 
-tree_list : __value_ptr, 
-string_cst pthread_join: __value_ptr, 
-tree_list : __value_ptr, 
-identifier_node weakref: __value_ptr, 
-function_type : __value_ptr, 
 parm_decl __threadid: __value_ptr, 
 integer_type : __value_ptr, 
 type_decl __gthread_t: __value_ptr, 
@@ -2499,13 +2474,6 @@ integer_cst 32:
 call_expr : 
 addr_expr : 
 function_decl __gthrw_pthread_detach: 
-tree_list : 
-identifier_node alias: 
-tree_list : 
-string_cst pthread_detach: 
-tree_list : 
-identifier_node weakref: 
-function_type : 
 parm_decl __threadid: 
 integer_type : 
 type_decl __gthread_t: 
@@ -2527,13 +2495,6 @@ integer_cst 32:
 call_expr : 
 addr_expr : 
 function_decl __gthrw_pthread_equal: 
-tree_list : 
-identifier_node alias: 
-tree_list : 
-string_cst pthread_equal: 
-tree_list : 
-identifier_node weakref: 
-function_type : 
 parm_decl __t1: 
 integer_type : 
 type_decl __gthread_t: 
@@ -2562,13 +2523,6 @@ integer_cst 64:
 call_expr : 
 addr_expr : 
 function_decl __gthrw_pthread_self: 
-tree_list : 
-identifier_node alias: 
-tree_list : 
-string_cst pthread_self: 
-tree_list : 
-identifier_node weakref: 
-function_type : 
 function_decl __gthread_yield: 
 cleanup_point_expr : 
 return_expr : 
@@ -2583,13 +2537,6 @@ integer_cst 32:
 call_expr : 
 addr_expr : 
 function_decl __gthrw_sched_yield: 
-tree_list : 
-identifier_node alias: 
-tree_list : 
-string_cst sched_yield: 
-tree_list : 
-identifier_node weakref: 
-function_type : 
 function_decl __gthread_once: 
 if_stmt : __func, __once, 
 cleanup_point_expr : __func, __once, 
@@ -2597,7 +2544,6 @@ ne_expr : __func, __once,
 call_expr : __func, __once, 
 addr_expr : __func, __once, 
 function_decl __gthread_active_p: __func, __once, 
-function_type : __func, __once, 
 integer_cst 0: __func, __once, 
 cleanup_point_expr : __func, __once, 
 return_expr : __func, __once, 
@@ -2612,13 +2558,6 @@ integer_cst 32: __func, __once,
 call_expr : __func, __once, 
 addr_expr : __func, __once, 
 function_decl __gthrw_pthread_once: __func, __once, 
-tree_list : __func, __once, 
-identifier_node alias: __func, __once, 
-tree_list : __func, __once, 
-string_cst pthread_once: __func, __once, 
-tree_list : __func, __once, 
-identifier_node weakref: __func, __once, 
-function_type : __func, __once, 
 parm_decl __once: __func, __once, 
 pointer_type : __func, __once, 
 integer_type : __func, __once, 
@@ -2660,13 +2599,6 @@ integer_cst 32: __dtor, __key,
 call_expr : __dtor, __key, 
 addr_expr : __dtor, __key, 
 function_decl __gthrw_pthread_key_create: __dtor, __key, 
-tree_list : __dtor, __key, 
-identifier_node alias: __dtor, __key, 
-tree_list : __dtor, __key, 
-string_cst pthread_key_create: __dtor, __key, 
-tree_list : __dtor, __key, 
-identifier_node weakref: __dtor, __key, 
-function_type : __dtor, __key, 
 parm_decl __key: __dtor, __key, 
 pointer_type : __dtor, __key, 
 integer_type : __dtor, __key, 
@@ -2702,13 +2634,6 @@ integer_cst 32:
 call_expr : 
 addr_expr : 
 function_decl __gthrw_pthread_key_delete: 
-tree_list : 
-identifier_node alias: 
-tree_list : 
-string_cst pthread_key_delete: 
-tree_list : 
-identifier_node weakref: 
-function_type : 
 parm_decl __key: 
 integer_type : 
 type_decl __gthread_key_t: 
@@ -2728,13 +2653,6 @@ integer_cst 64:
 call_expr : 
 addr_expr : 
 function_decl __gthrw_pthread_getspecific: 
-tree_list : 
-identifier_node alias: 
-tree_list : 
-string_cst pthread_getspecific: 
-tree_list : 
-identifier_node weakref: 
-function_type : 
 parm_decl __key: 
 integer_type : 
 type_decl __gthread_key_t: 
@@ -2756,13 +2674,6 @@ integer_cst 32: __ptr,
 call_expr : __ptr, 
 addr_expr : __ptr, 
 function_decl __gthrw_pthread_setspecific: __ptr, 
-tree_list : __ptr, 
-identifier_node alias: __ptr, 
-tree_list : __ptr, 
-string_cst pthread_setspecific: __ptr, 
-tree_list : __ptr, 
-identifier_node weakref: __ptr, 
-function_type : __ptr, 
 parm_decl __key: __ptr, 
 integer_type : __ptr, 
 type_decl __gthread_key_t: __ptr, 
@@ -2782,7 +2693,6 @@ ne_expr : __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
-function_type : __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 expr_stmt : __mutex, 
@@ -2790,13 +2700,6 @@ convert_expr : __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthrw_pthread_mutex_init: __mutex, 
-tree_list : __mutex, 
-identifier_node alias: __mutex, 
-tree_list : __mutex, 
-string_cst pthread_mutex_init: __mutex, 
-tree_list : __mutex, 
-identifier_node weakref: __mutex, 
-function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -2818,7 +2721,6 @@ ne_expr : __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
-function_type : __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -2833,13 +2735,6 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthrw_pthread_mutex_destroy: __mutex, 
-tree_list : __mutex, 
-identifier_node alias: __mutex, 
-tree_list : __mutex, 
-string_cst pthread_mutex_destroy: __mutex, 
-tree_list : __mutex, 
-identifier_node weakref: __mutex, 
-function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -2870,7 +2765,6 @@ ne_expr : __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
-function_type : __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -2885,13 +2779,6 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthrw_pthread_mutex_lock: __mutex, 
-tree_list : __mutex, 
-identifier_node alias: __mutex, 
-tree_list : __mutex, 
-string_cst pthread_mutex_lock: __mutex, 
-tree_list : __mutex, 
-identifier_node weakref: __mutex, 
-function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -2922,7 +2809,6 @@ ne_expr : __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
-function_type : __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -2937,13 +2823,6 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthrw_pthread_mutex_trylock: __mutex, 
-tree_list : __mutex, 
-identifier_node alias: __mutex, 
-tree_list : __mutex, 
-string_cst pthread_mutex_trylock: __mutex, 
-tree_list : __mutex, 
-identifier_node weakref: __mutex, 
-function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -2974,7 +2853,6 @@ ne_expr : __abs_timeout, __mutex,
 call_expr : __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
 function_decl __gthread_active_p: __abs_timeout, __mutex, 
-function_type : __abs_timeout, __mutex, 
 integer_cst 0: __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 return_expr : __abs_timeout, __mutex, 
@@ -2989,13 +2867,6 @@ integer_cst 32: __abs_timeout, __mutex,
 call_expr : __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
 function_decl __gthrw_pthread_mutex_timedlock: __abs_timeout, __mutex, 
-tree_list : __abs_timeout, __mutex, 
-identifier_node alias: __abs_timeout, __mutex, 
-tree_list : __abs_timeout, __mutex, 
-string_cst pthread_mutex_timedlock: __abs_timeout, __mutex, 
-tree_list : __abs_timeout, __mutex, 
-identifier_node weakref: __abs_timeout, __mutex, 
-function_type : __abs_timeout, __mutex, 
 parm_decl __mutex: __abs_timeout, __mutex, 
 pointer_type : __abs_timeout, __mutex, 
 union_type : __abs_timeout, __mutex, 
@@ -3036,7 +2907,6 @@ ne_expr : __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
-function_type : __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -3051,13 +2921,6 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthrw_pthread_mutex_unlock: __mutex, 
-tree_list : __mutex, 
-identifier_node alias: __mutex, 
-tree_list : __mutex, 
-string_cst pthread_mutex_unlock: __mutex, 
-tree_list : __mutex, 
-identifier_node weakref: __mutex, 
-function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -3095,7 +2958,6 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_mutex_lock: __mutex, 
-function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -3123,7 +2985,6 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_mutex_trylock: __mutex, 
-function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -3151,7 +3012,6 @@ integer_cst 32: __abs_timeout, __mutex,
 call_expr : __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
 function_decl __gthread_mutex_timedlock: __abs_timeout, __mutex, 
-function_type : __abs_timeout, __mutex, 
 parm_decl __mutex: __abs_timeout, __mutex, 
 pointer_type : __abs_timeout, __mutex, 
 union_type : __abs_timeout, __mutex, 
@@ -3189,7 +3049,6 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_mutex_unlock: __mutex, 
-function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -3217,7 +3076,6 @@ integer_cst 32: __mutex,
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_mutex_destroy: __mutex, 
-function_type : __mutex, 
 parm_decl __mutex: __mutex, 
 pointer_type : __mutex, 
 union_type : __mutex, 
@@ -3245,13 +3103,6 @@ integer_cst 32: __cond,
 call_expr : __cond, 
 addr_expr : __cond, 
 function_decl __gthrw_pthread_cond_broadcast: __cond, 
-tree_list : __cond, 
-identifier_node alias: __cond, 
-tree_list : __cond, 
-string_cst pthread_cond_broadcast: __cond, 
-tree_list : __cond, 
-identifier_node weakref: __cond, 
-function_type : __cond, 
 parm_decl __cond: __cond, 
 pointer_type : __cond, 
 union_type : __cond, 
@@ -3279,13 +3130,6 @@ integer_cst 32: __cond,
 call_expr : __cond, 
 addr_expr : __cond, 
 function_decl __gthrw_pthread_cond_signal: __cond, 
-tree_list : __cond, 
-identifier_node alias: __cond, 
-tree_list : __cond, 
-string_cst pthread_cond_signal: __cond, 
-tree_list : __cond, 
-identifier_node weakref: __cond, 
-function_type : __cond, 
 parm_decl __cond: __cond, 
 pointer_type : __cond, 
 union_type : __cond, 
@@ -3313,13 +3157,6 @@ integer_cst 32: __cond, __mutex,
 call_expr : __cond, __mutex, 
 addr_expr : __cond, __mutex, 
 function_decl __gthrw_pthread_cond_wait: __cond, __mutex, 
-tree_list : __cond, __mutex, 
-identifier_node alias: __cond, __mutex, 
-tree_list : __cond, __mutex, 
-string_cst pthread_cond_wait: __cond, __mutex, 
-tree_list : __cond, __mutex, 
-identifier_node weakref: __cond, __mutex, 
-function_type : __cond, __mutex, 
 parm_decl __cond: __cond, __mutex, 
 pointer_type : __cond, __mutex, 
 union_type : __cond, __mutex, 
@@ -3360,13 +3197,6 @@ integer_cst 32: __abs_timeout, __cond, __mutex,
 call_expr : __abs_timeout, __cond, __mutex, 
 addr_expr : __abs_timeout, __cond, __mutex, 
 function_decl __gthrw_pthread_cond_timedwait: __abs_timeout, __cond, __mutex, 
-tree_list : __abs_timeout, __cond, __mutex, 
-identifier_node alias: __abs_timeout, __cond, __mutex, 
-tree_list : __abs_timeout, __cond, __mutex, 
-string_cst pthread_cond_timedwait: __abs_timeout, __cond, __mutex, 
-tree_list : __abs_timeout, __cond, __mutex, 
-identifier_node weakref: __abs_timeout, __cond, __mutex, 
-function_type : __abs_timeout, __cond, __mutex, 
 parm_decl __cond: __abs_timeout, __cond, __mutex, 
 pointer_type : __abs_timeout, __cond, __mutex, 
 union_type : __abs_timeout, __cond, __mutex, 
@@ -3417,7 +3247,6 @@ integer_cst 32: __cond, __mutex,
 call_expr : __cond, __mutex, 
 addr_expr : __cond, __mutex, 
 function_decl __gthread_cond_wait: __cond, __mutex, 
-function_type : __cond, __mutex, 
 parm_decl __cond: __cond, __mutex, 
 pointer_type : __cond, __mutex, 
 union_type : __cond, __mutex, 
@@ -3458,13 +3287,6 @@ integer_cst 32: __cond,
 call_expr : __cond, 
 addr_expr : __cond, 
 function_decl __gthrw_pthread_cond_destroy: __cond, 
-tree_list : __cond, 
-identifier_node alias: __cond, 
-tree_list : __cond, 
-string_cst pthread_cond_destroy: __cond, 
-tree_list : __cond, 
-identifier_node weakref: __cond, 
-function_type : __cond, 
 parm_decl __cond: __cond, 
 pointer_type : __cond, 
 union_type : __cond, 
@@ -3632,7 +3454,6 @@ ne_expr : __mem,
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __gthread_active_p: __mem, 
-function_type : __mem, 
 integer_cst 0: __mem, 
 cleanup_point_expr : __mem, 
 return_expr : __mem, 
@@ -3647,7 +3468,6 @@ integer_cst 32: __mem,
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __exchange_and_add: __mem, 
-function_type : __mem, 
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
@@ -3676,7 +3496,6 @@ integer_cst 32: __mem,
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __exchange_and_add_single: __mem, 
-function_type : __mem, 
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
@@ -3699,14 +3518,12 @@ ne_expr : __mem,
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __gthread_active_p: __mem, 
-function_type : __mem, 
 integer_cst 0: __mem, 
 cleanup_point_expr : __mem, 
 expr_stmt : __mem, 
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __atomic_add: __mem, 
-function_type : __mem, 
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
@@ -3727,7 +3544,6 @@ expr_stmt : __mem,
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __atomic_add_single: __mem, 
-function_type : __mem, 
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
@@ -4295,7 +4111,6 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
-method_type : __x, 
 parm_decl this: __x, 
 pointer_type : __x, 
 record_type : __x, 
@@ -4366,7 +4181,6 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
-method_type : __x, 
 parm_decl this: __x, 
 pointer_type : __x, 
 record_type : __x, 
@@ -5058,7 +4872,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -5085,7 +4898,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -5114,7 +4926,6 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
-method_type : __x, 
 addr_expr : __x, 
 component_ref : __x, 
 indirect_ref : __x, 
@@ -5154,7 +4965,6 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
-method_type : __x, 
 addr_expr : __x, 
 component_ref : __x, 
 indirect_ref : __x, 
@@ -5253,7 +5063,6 @@ type_decl _Bit_reference:
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
-method_type : 
 var_decl : 
 convert_expr : 
 void_cst : 
@@ -5890,7 +5699,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -5918,7 +5726,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -5948,7 +5755,6 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
-method_type : __x, 
 addr_expr : __x, 
 component_ref : __x, 
 indirect_ref : __x, 
@@ -5989,7 +5795,6 @@ expr_stmt : __x,
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
-method_type : __x, 
 addr_expr : __x, 
 component_ref : __x, 
 indirect_ref : __x, 
@@ -6032,7 +5837,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -6096,7 +5900,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
-method_type : 
 addr_expr : 
 component_ref : 
 indirect_ref : 
@@ -6184,7 +5987,6 @@ type_decl iterator:
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
-method_type : 
 var_decl : 
 convert_expr : 
 void_cst : 
@@ -6252,7 +6054,6 @@ type_decl _Bit_reference:
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
-method_type : 
 var_decl : 
 convert_expr : 
 void_cst : 
@@ -7125,7 +6926,6 @@ type_decl iterator:
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
-method_type : 
 var_decl : 
 convert_expr : 
 void_cst : 
@@ -7173,7 +6973,6 @@ type_decl iterator:
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
-method_type : 
 var_decl : 
 convert_expr : 
 void_cst : 
@@ -8376,7 +8175,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl construct: 
-function_type : 
 addr_expr : 
 component_ref : 
 component_ref : 
@@ -8895,7 +8693,6 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl construct: 
-function_type : 
 addr_expr : 
 component_ref : 
 component_ref : 
@@ -10545,7 +10342,6 @@ indirect_ref :
 call_expr : 
 addr_expr : 
 function_decl base: 
-method_type : 
 convert_expr : 
 parm_decl __lhs: 
 reference_type : 
@@ -10566,7 +10362,6 @@ indirect_ref :
 call_expr : 
 addr_expr : 
 function_decl base: 
-method_type : 
 convert_expr : 
 parm_decl __rhs: 
 reference_type : 
@@ -11592,7 +11387,6 @@ integer_cst 64: __it,
 call_expr : __it, 
 addr_expr : __it, 
 function_decl _S_base: __it, 
-function_type : __it, 
 parm_decl __it: __it, 
 pointer_type : __it, 
 pointer_type : __it, 
@@ -12121,7 +11915,6 @@ function_decl __copy_move_a2: __first, __last, __result,
 call_expr : __first, __last, __result, 
 addr_expr : __first, __last, __result, 
 function_decl __miter_base: __first, __last, __result, 
-function_type : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
 pointer_type : __first, __last, __result, 
 pointer_type : __first, __last, __result, 
@@ -12136,7 +11929,6 @@ integer_cst 64: __first, __last, __result,
 call_expr : __first, __last, __result, 
 addr_expr : __first, __last, __result, 
 function_decl __miter_base: __first, __last, __result, 
-function_type : __first, __last, __result, 
 parm_decl __last: __first, __last, __result, 
 pointer_type : __first, __last, __result, 
 pointer_type : __first, __last, __result, 
@@ -12180,7 +11972,6 @@ function_decl __copy_move_a: __first, __last, __result,
 call_expr : __first, __last, __result, 
 addr_expr : __first, __last, __result, 
 function_decl __niter_base: __first, __last, __result, 
-function_type : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
 pointer_type : __first, __last, __result, 
 pointer_type : __first, __last, __result, 
@@ -12195,7 +11986,6 @@ integer_cst 64: __first, __last, __result,
 call_expr : __first, __last, __result, 
 addr_expr : __first, __last, __result, 
 function_decl __niter_base: __first, __last, __result, 
-function_type : __first, __last, __result, 
 parm_decl __last: __first, __last, __result, 
 pointer_type : __first, __last, __result, 
 pointer_type : __first, __last, __result, 
@@ -12210,7 +12000,6 @@ integer_cst 64: __first, __last, __result,
 call_expr : __first, __last, __result, 
 addr_expr : __first, __last, __result, 
 function_decl __niter_base: __first, __last, __result, 
-function_type : __first, __last, __result, 
 parm_decl __result: __first, __last, __result, 
 pointer_type : __first, __last, __result, 
 pointer_type : __first, __last, __result, 

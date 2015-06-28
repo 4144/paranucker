@@ -1,0 +1,4 @@
+test26.cpp: In member function 'void Object1::func1(Data1*)':
+test26.cpp:41:22: warning: Useless variable check 'ptr1'. It already was checked before
+             if (ptr1 && k == 1)
+                      ^
