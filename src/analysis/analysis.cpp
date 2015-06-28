@@ -62,21 +62,21 @@ namespace Analysis
 {
 
 // add variables null pointer checks
-void addCheckNullVars(WalkItem &wi, WalkItem &wo)
+void addNeedCheckNullVars(WalkItem &wi, WalkItem &wo)
 {
     FOR_EACH (std::set<std::string>::const_iterator, it, wi.addNullVars)
     {
-        wo.checkNullVars.insert(*it);
+        wo.needCheckNullVars.insert(*it);
         wo.knownVars.insert(*it);
     }
 }
 
 // remove one variable from null pointer checks
-void removeCheckNullVar(WalkItem &wi, std::string str)
+void removeNeedCheckNullVar(WalkItem &wi, std::string str)
 {
-    if (wi.checkNullVars.find(str) != wi.checkNullVars.end())
+    if (wi.needCheckNullVars.find(str) != wi.needCheckNullVars.end())
     {
-        wi.checkNullVars.erase(str);
+        wi.needCheckNullVars.erase(str);
     }
     if (wi.addNullVars.find(str) != wi.addNullVars.end())
     {
@@ -88,9 +88,9 @@ void removeCheckNullVar(WalkItem &wi, std::string str)
         const StringSet &linked = (*it2).second;
         FOR_EACH (StringSet::const_iterator, it3, linked)
         {
-            if (wi.checkNullVars.find(*it3) != wi.checkNullVars.end())
+            if (wi.needCheckNullVars.find(*it3) != wi.needCheckNullVars.end())
             {
-                wi.checkNullVars.erase(*it3);
+                wi.needCheckNullVars.erase(*it3);
             }
             if (wi.addNullVars.find(*it3) != wi.addNullVars.end())
             {
@@ -101,12 +101,12 @@ void removeCheckNullVar(WalkItem &wi, std::string str)
 }
 
 // remove vars from checks for null pointer
-void removeCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
+void removeNeedCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
 {
     FOR_EACH (std::set<std::string>::const_iterator, it, vars)
     {
         // remove var if need
-        removeCheckNullVar(wi, *it);
+        removeNeedCheckNullVar(wi, *it);
         // if need remove some linked var, search it parent,
         // and remove all linked vars for this parent
         StringMap::const_iterator it3 = wi.linkedReverseVars.find(*it);
@@ -114,7 +114,7 @@ void removeCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
         {
             const std::string parent = (*it3).second;
             //wi.linkedVars.erase(parent);
-            removeCheckNullVar(wi, parent);
+            removeNeedCheckNullVar(wi, parent);
         }
     }
 }
@@ -150,10 +150,10 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     WalkItem wi2 = wi;
     // analyse node and after copy all properties from wo to wi2
     analyseNode(node, wi2, wo);
-    removeCheckNullVarsSet(wi2, wi2.removeNullVars);
-    addCheckNullVars(wo, wo);
-    addCheckNullVars(wo, wi2);
-    addCheckNullVars(wi2, wi2);
+    removeNeedCheckNullVarsSet(wi2, wi2.removeNullVars);
+    addNeedCheckNullVars(wo, wo);
+    addNeedCheckNullVars(wo, wi2);
+    addNeedCheckNullVars(wi2, wi2);
     wi2.linkedVars = wo.linkedVars;
     wi2.linkedReverseVars = wo.linkedReverseVars;
     wi2.addNullVars = wo.addNullVars;
@@ -176,8 +176,8 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
         walkTree(*it, wi2, wo2);
         wi2.removeNullVars = wo2.removeNullVars;
         wi2.addNullVars = wo2.addNullVars;
-        addCheckNullVars(wi2, wi2);
-        wo2.checkNullVars = wi2.checkNullVars;
+        addNeedCheckNullVars(wi2, wi2);
+        wo2.needCheckNullVars = wi2.needCheckNullVars;
         wo2.knownVars = wi2.knownVars;
         wi2.isReturned = wi2.isReturned || wo2.isReturned;
         wi2.linkedVars = wo2.linkedVars;
@@ -214,7 +214,7 @@ bool checkForReport(Node *node,
     node = skipNop(node);
     return node &&
         (node == PARM_DECL || node == VAR_DECL) &&
-        wi.checkNullVars.find(node->label) != wi.checkNullVars.end();
+        wi.needCheckNullVars.find(node->label) != wi.needCheckNullVars.end();
 }
 
 // report about useless check for null pointer
@@ -238,7 +238,7 @@ void reportParmDeclNullPointer(Node *mainNode,
         {
             if (node == PARM_DECL)
             {
-                if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+                if (wi.needCheckNullVars.find(node->label) != wi.needCheckNullVars.end())
                 {
                     Log::warn(findBackLocation(mainNode),
                         "Using parameter '%s' without checking for null pointer",
@@ -247,7 +247,7 @@ void reportParmDeclNullPointer(Node *mainNode,
             }
             else if (node == VAR_DECL)
             {
-                if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+                if (wi.needCheckNullVars.find(node->label) != wi.needCheckNullVars.end())
                 {
                     Log::warn(findBackLocation(mainNode),
                         "Using variable '%s' without checking for null pointer",
@@ -258,7 +258,7 @@ void reportParmDeclNullPointer(Node *mainNode,
         else if (node == COMPONENT_REF)
         {
             std::string var = getComponentRefVariable(node);
-            if (wi.checkNullVars.find(var) != wi.checkNullVars.end())
+            if (wi.needCheckNullVars.find(var) != wi.needCheckNullVars.end())
             {
                 Log::warn(findBackLocation(mainNode),
                     "Using field '%s' without checking for null pointer",
@@ -287,19 +287,19 @@ void reportParmDeclAttrNullPointer(Node *mainNode,
         {
             if (node == PARM_DECL)
             {
-                if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+                if (wi.needCheckNullVars.find(node->label) != wi.needCheckNullVars.end())
                     reportPossibleNullPointer(mainNode, node->label);
             }
             else if (node == VAR_DECL)
             {
-                if (wi.checkNullVars.find(node->label) != wi.checkNullVars.end())
+                if (wi.needCheckNullVars.find(node->label) != wi.needCheckNullVars.end())
                     reportPossibleNullPointer(mainNode, node->label);
             }
         }
         else if (node == COMPONENT_REF)
         {
             std::string var = getComponentRefVariable(node);
-            if (wi.checkNullVars.find(var) != wi.checkNullVars.end())
+            if (wi.needCheckNullVars.find(var) != wi.needCheckNullVars.end())
                 reportPossibleNullPointer(mainNode, node->label);
         }
     }
@@ -380,7 +380,7 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             node->label.c_str());
         FOR_EACH (std::set<std::string>::const_iterator,
                   it,
-                  wi.checkNullVars)
+                  wi.needCheckNullVars)
         {
             Log::log("%s, ", (*it).c_str());
         }
@@ -398,7 +398,7 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
     // Except IF_STMT. Removing handled inside analyse function.
     if (node != IF_STMT)
     {
-        removeCheckNullVarsSet(wi2, wi2.removeNullVars);
+        removeNeedCheckNullVarsSet(wi2, wi2.removeNullVars);
     }
 
     if (command != Command::DumpNullPointers)

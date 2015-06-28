@@ -31,7 +31,7 @@ typedef std::map<std::string, std::string> StringMap;
 struct WalkItem
 {
     WalkItem() :
-        checkNullVars(),
+        needCheckNullVars(),
         knownVars(),
         removeNullVars(),
         addNullVars(),
@@ -47,7 +47,7 @@ struct WalkItem
     }
 
     WalkItem(const WalkItem &item) :
-        checkNullVars(item.checkNullVars),
+        needCheckNullVars(item.needCheckNullVars),
         knownVars(item.knownVars),
         removeNullVars(item.removeNullVars),
         addNullVars(item.addNullVars),
@@ -62,7 +62,7 @@ struct WalkItem
     {
     }
 
-    StringSet checkNullVars;       // need check for usage without null pointer check
+    StringSet needCheckNullVars;   // need check for usage without null pointer check
     StringSet knownVars;           // vars already checked for null pointer
     StringSet removeNullVars;      // need remove vars from parent checkNullVars
     StringSet addNullVars;         // need add vars to parent checkNullVars

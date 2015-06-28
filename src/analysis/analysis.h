@@ -56,10 +56,10 @@ namespace Analysis
                       const std::string &parent,
                       const std::string &var);
 
-    void removeCheckNullVar(WalkItem &wi, std::string str);
+    void removeNeedCheckNullVar(WalkItem &wi, std::string str);
 
-    void removeCheckNullVarsSet(WalkItem &wi,
-                                std::set<std::string> &vars);
+    void removeNeedCheckNullVarsSet(WalkItem &wi,
+                                    std::set<std::string> &vars);
 
     Node *skipNop(Node *node);
 

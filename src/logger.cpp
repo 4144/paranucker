@@ -222,7 +222,7 @@ void dumpWI(Node *const node,
         Log::log(" returned");
     dumpWIProps(" checkedNullVars:", wi.checkedNullVars)
     dumpWIProps(" checkedNonNullVars:", wi.checkedNonNullVars)
-    dumpWIProps(" checkNullVars:", wi.checkNullVars)
+    dumpWIProps(" needCheckNullVars:", wi.needCheckNullVars)
     dumpWIProps(" knownVars:", wi.knownVars)
     dumpWIProps(" removeNullVars:", wi.removeNullVars)
     dumpWIProps(" addNullVars:", wi.addNullVars)

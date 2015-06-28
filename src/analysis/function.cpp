@@ -125,7 +125,7 @@ void getPossibleNullParameters(FunctionDeclNode *node, WalkItem &wi)
                     type->nodeTypeName.c_str(),
                     name->label.c_str());
             }
-            wi.checkNullVars.insert(name->label);
+            wi.needCheckNullVars.insert(name->label);
             wi.knownVars.insert(name->label);
         }
     }

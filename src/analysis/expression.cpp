@@ -124,7 +124,7 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
             std::string var2 = getVariableName(node->args[1]);
             if (!var1.empty() && !var2.empty())
             {
-                if (wi.checkNullVars.find(var2) != wi.checkNullVars.end())
+                if (wi.needCheckNullVars.find(var2) != wi.needCheckNullVars.end())
                 {
                     wo.addNullVars.insert(var1);
                     addLinkedVar(wo, var2, var1);
@@ -195,7 +195,7 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
         node2 == INTEGER_CST &&
         node2->label == "0")
     {
-        if (wi.checkNullVars.find(var) != wi.checkNullVars.end())
+        if (wi.needCheckNullVars.find(var) != wi.needCheckNullVars.end())
         {
             wo.checkedNonNullVars.insert(var);
             wo.cleanExpr = true;
@@ -227,7 +227,7 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
         node2 == INTEGER_CST &&
         node2->label == "0")
     {
-        if (wi.checkNullVars.find(var) != wi.checkNullVars.end())
+        if (wi.needCheckNullVars.find(var) != wi.needCheckNullVars.end())
         {
             wo.checkedNullVars.insert(var);
             wo.cleanExpr = true;
@@ -246,8 +246,8 @@ void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi
     walkTree(node1, wi, wo1);
     Log::dumpWI(node, "wo1 ", wo1);
     WalkItem wi2 = wi;
-    removeCheckNullVarsSet(wi2, wo1.checkedNullVars);
-    wi2.checkNullVars.insert(wo1.checkedNonNullVars.begin(),
+    removeNeedCheckNullVarsSet(wi2, wo1.checkedNullVars);
+    wi2.needCheckNullVars.insert(wo1.checkedNonNullVars.begin(),
         wo1.checkedNonNullVars.end());
     wi2.knownVars.insert(wo1.checkedNonNullVars.begin(),
         wo1.checkedNonNullVars.end());
@@ -275,8 +275,8 @@ void analyseAndCondition(Node *node, Node *node1, Node *node2, const WalkItem &w
     walkTree(node1, wi, wo1);
     Log::dumpWI(node, "wo1 ", wo1);
     WalkItem wi2 = wi;
-    removeCheckNullVarsSet(wi2, wo1.checkedNonNullVars);
-    wi2.checkNullVars.insert(wo1.checkedNullVars.begin(),
+    removeNeedCheckNullVarsSet(wi2, wo1.checkedNonNullVars);
+    wi2.needCheckNullVars.insert(wo1.checkedNullVars.begin(),
         wo1.checkedNullVars.end());
     wi2.knownVars.insert(wo1.checkedNullVars.begin(),
         wo1.checkedNullVars.end());
@@ -575,7 +575,7 @@ void analyseInitExpr(InitExprNode* node,
     std::string var2 = getVariableName(node->args[1]);
     if (var1.empty() || var2.empty())
         return;
-    if (wi.checkNullVars.find(var2) == wi.checkNullVars.end())
+    if (wi.needCheckNullVars.find(var2) == wi.needCheckNullVars.end())
         return;
     wo.addNullVars.insert(var1);
     addLinkedVar(wo, var2, var1);

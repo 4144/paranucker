@@ -60,8 +60,8 @@ void analyseCondition(Node *node,
     Log::dumpWI(node, "wco ", wco);
 
     WalkItem wi2 = wi;
-    removeCheckNullVarsSet(wi2, wco.checkedNonNullVars);
-    wi2.checkNullVars.insert(wco.checkedNullVars.begin(),
+    removeNeedCheckNullVarsSet(wi2, wco.checkedNonNullVars);
+    wi2.needCheckNullVars.insert(wco.checkedNullVars.begin(),
         wco.checkedNullVars.end());
     wi2.knownVars.insert(wco.checkedNullVars.begin(),
         wco.checkedNullVars.end());
@@ -74,8 +74,8 @@ void analyseCondition(Node *node,
     Log::dumpWI(node, "wo2 then ", wo2);
 
     WalkItem wi3 = wi;
-    removeCheckNullVarsSet(wi3, wco.checkedNullVars);
-    wi3.checkNullVars.insert(wco.checkedNonNullVars.begin(),
+    removeNeedCheckNullVarsSet(wi3, wco.checkedNullVars);
+    wi3.needCheckNullVars.insert(wco.checkedNonNullVars.begin(),
         wco.checkedNonNullVars.end());
     wi3.knownVars.insert(wco.checkedNonNullVars.begin(),
         wco.checkedNonNullVars.end());
@@ -104,7 +104,7 @@ void analyseCondition(Node *node,
                   wco.checkedNullVars)
         {
             wo.removeNullVars.insert(*it);
-            removeCheckNullVar(wo, *it);
+            removeNeedCheckNullVar(wo, *it);
         }
     }
     if (wo3.isReturned)
@@ -115,7 +115,7 @@ void analyseCondition(Node *node,
                   wco.checkedNonNullVars)
         {
             wo.removeNullVars.insert(*it);
-            removeCheckNullVar(wo, *it);
+            removeNeedCheckNullVar(wo, *it);
         }
     }
 
@@ -124,7 +124,7 @@ void analyseCondition(Node *node,
         // add variable for ignore for all parent nodes except special like IF_STMT
         FOR_EACH (std::set<std::string>::const_iterator,
                   it,
-                  wo.checkNullVars)
+                  wo.needCheckNullVars)
         {
             wo.removeNullVars.insert(*it);
         }
