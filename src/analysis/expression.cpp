@@ -232,7 +232,15 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
             wo.checkedNullVars.insert(var);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
+            if (wi.knownNullVars.find(var) != wi.knownNullVars.end())
+            {
+                reportUselessCheck(node, var);
+            }
             return;
+        }
+        else if (wi.knownNullVars.find(var) != wi.knownNullVars.end())
+        {
+            reportUselessCheck(node, var);
         }
     }
     wo.cleanExpr = false;

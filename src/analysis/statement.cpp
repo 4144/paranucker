@@ -65,6 +65,8 @@ void analyseCondition(Node *node,
         wco.checkedNullVars.end());
     wi2.knownVars.insert(wco.checkedNullVars.begin(),
         wco.checkedNullVars.end());
+    wi2.knownNullVars.insert(wco.checkedNullVars.begin(),
+        wco.checkedNullVars.end());
     Log::dumpWI(node, "wi2 then ", wi2);
 
     reportParmDeclNullPointer(node,

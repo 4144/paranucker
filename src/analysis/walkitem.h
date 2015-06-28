@@ -33,6 +33,7 @@ struct WalkItem
     WalkItem() :
         needCheckNullVars(),
         knownVars(),
+        knownNullVars(),
         removeNullVars(),
         addNullVars(),
         checkedNullVars(),
@@ -49,6 +50,7 @@ struct WalkItem
     WalkItem(const WalkItem &item) :
         needCheckNullVars(item.needCheckNullVars),
         knownVars(item.knownVars),
+        knownNullVars(item.knownNullVars),
         removeNullVars(item.removeNullVars),
         addNullVars(item.addNullVars),
         checkedNullVars(item.checkedNullVars),
@@ -64,6 +66,7 @@ struct WalkItem
 
     StringSet needCheckNullVars;   // need check for usage without null pointer check
     StringSet knownVars;           // vars already checked for null pointer
+    StringSet knownNullVars;       // vars checked and it null
     StringSet removeNullVars;      // need remove vars from parent checkNullVars
     StringSet addNullVars;         // need add vars to parent checkNullVars
     StringSet checkedNullVars;     // vars checked for null in expressions
