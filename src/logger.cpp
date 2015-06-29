@@ -196,11 +196,9 @@ void dumpAttr(const Node *const node, int num, bool isReturned)
     if (!(name).empty()) \
     { \
         Log::log(comment); \
-        FOR_EACH (StringSet::const_iterator, \
-                  it, \
-                  name) \
+        FOR_EACH (it, name) \
         { \
-            Log::log("%s, ", (*it).c_str()); \
+            Log::log("%s, ", it.c_str()); \
         } \
     }
 
@@ -231,17 +229,14 @@ void dumpWI(Node *const node,
     if (!wi.linkedVars.empty())
     {
         Log::log(" linkedVars:");
-        FOR_EACH (StringMapSet::const_iterator,
-                  it,
-                  wi.linkedVars)
+        FOR_EACH (it, wi.linkedVars)
         {
-            Log::log("%s -> (", ((*it).first).c_str());
-            const StringSet &vars = (*it).second;
-            FOR_EACH (StringSet::const_iterator,
-                      it2,
+            Log::log("%s -> (", it.first.c_str());
+            const StringSet &vars = it.second;
+            FOR_EACH (it2,
                       vars)
             {
-                Log::log("%s, ", (*it2).c_str());
+                Log::log("%s, ", it2.c_str());
             }
             Log::log("), ");
         }
@@ -249,13 +244,11 @@ void dumpWI(Node *const node,
     if (!wi.linkedReverseVars.empty())
     {
         Log::log(" linkedReverseVars:");
-        FOR_EACH (StringMap::const_iterator,
-                  it,
-                  wi.linkedReverseVars)
+        FOR_EACH (it, wi.linkedReverseVars)
         {
             Log::log("%s -> %s ",
-                ((*it).first).c_str(),
-                ((*it).second).c_str());
+                it.first.c_str(),
+                it.second.c_str());
         }
     }
     Log::log("\n");

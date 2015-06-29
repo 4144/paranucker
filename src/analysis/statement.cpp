@@ -101,34 +101,28 @@ void analyseCondition(Node *node,
     if (wo2.isReturned)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
-        FOR_EACH (std::set<std::string>::const_iterator,
-                  it,
-                  wco.checkedNullVars)
+        FOR_EACH (it, wco.checkedNullVars)
         {
-            wo.removeNullVars.insert(*it);
-            removeNeedCheckNullVar(wo, *it);
+            wo.removeNullVars.insert(it);
+            removeNeedCheckNullVar(wo, it);
         }
     }
     if (wo3.isReturned)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
-        FOR_EACH (std::set<std::string>::const_iterator,
-                  it,
-                  wco.checkedNonNullVars)
+        FOR_EACH (it, wco.checkedNonNullVars)
         {
-            wo.removeNullVars.insert(*it);
-            removeNeedCheckNullVar(wo, *it);
+            wo.removeNullVars.insert(it);
+            removeNeedCheckNullVar(wo, it);
         }
     }
 
     if (wo2.isReturned && wo3.isReturned)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
-        FOR_EACH (std::set<std::string>::const_iterator,
-                  it,
-                  wo.needCheckNullVars)
+        FOR_EACH (it, wo.needCheckNullVars)
         {
-            wo.removeNullVars.insert(*it);
+            wo.removeNullVars.insert(it);
         }
     }
 

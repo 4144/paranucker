@@ -64,10 +64,10 @@ namespace Analysis
 // add variables null pointer checks
 void addNeedCheckNullVars(WalkItem &wi, WalkItem &wo)
 {
-    FOR_EACH (std::set<std::string>::const_iterator, it, wi.addNullVars)
+    FOR_EACH (it, wi.addNullVars)
     {
-        wo.needCheckNullVars.insert(*it);
-        wo.knownVars.insert(*it);
+        wo.needCheckNullVars.insert(it);
+        wo.knownVars.insert(it);
     }
 }
 
@@ -86,15 +86,15 @@ void removeNeedCheckNullVar(WalkItem &wi, std::string str)
     if (it2 != wi.linkedVars.end())
     {
         const StringSet &linked = (*it2).second;
-        FOR_EACH (StringSet::const_iterator, it3, linked)
+        FOR_EACH (it3, linked)
         {
-            if (wi.needCheckNullVars.find(*it3) != wi.needCheckNullVars.end())
+            if (wi.needCheckNullVars.find(it3) != wi.needCheckNullVars.end())
             {
-                wi.needCheckNullVars.erase(*it3);
+                wi.needCheckNullVars.erase(it3);
             }
-            if (wi.addNullVars.find(*it3) != wi.addNullVars.end())
+            if (wi.addNullVars.find(it3) != wi.addNullVars.end())
             {
-                wi.addNullVars.erase(*it3);
+                wi.addNullVars.erase(it3);
             }
         }
     }
@@ -103,13 +103,13 @@ void removeNeedCheckNullVar(WalkItem &wi, std::string str)
 // remove vars from checks for null pointer
 void removeNeedCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
 {
-    FOR_EACH (std::set<std::string>::const_iterator, it, vars)
+    FOR_EACH (it, vars)
     {
         // remove var if need
-        removeNeedCheckNullVar(wi, *it);
+        removeNeedCheckNullVar(wi, it);
         // if need remove some linked var, search it parent,
         // and remove all linked vars for this parent
-        StringMap::const_iterator it3 = wi.linkedReverseVars.find(*it);
+        StringMap::const_iterator it3 = wi.linkedReverseVars.find(it);
         if (it3 != wi.linkedReverseVars.end())
         {
             const std::string parent = (*it3).second;
@@ -171,9 +171,9 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
 
     // walk to all child nodes.
     // wi2 combining output from node and previous childs
-    FOR_EACH (std::vector<Node*>::iterator, it, node->childs)
+    FOR_EACH (it, node->childs)
     {
-        walkTree(*it, wi2, wo2);
+        walkTree(it, wi2, wo2);
         wi2.removeNullVars = wo2.removeNullVars;
         wi2.addNullVars = wo2.addNullVars;
         addNeedCheckNullVars(wi2, wi2);
@@ -347,24 +347,20 @@ void mergeNonNullChecked(WalkItem &wi1, WalkItem &wi2)
 // intersect two checked for null sets
 void intersectNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
 {
-    FOR_EACH (std::set<std::string>::const_iterator,
-              it,
-              wi1.checkedNullVars)
+    FOR_EACH (it, wi1.checkedNullVars)
     {
-        if (wi2.checkedNullVars.find(*it) != wi2.checkedNullVars.end())
-            wi.checkedNullVars.insert(*it);
+        if (wi2.checkedNullVars.find(it) != wi2.checkedNullVars.end())
+            wi.checkedNullVars.insert(it);
     }
 }
 
 // intersect two checked for non null sets
 void intersectNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
 {
-    FOR_EACH (std::set<std::string>::const_iterator,
-              it,
-              wi1.checkedNonNullVars)
+    FOR_EACH (it, wi1.checkedNonNullVars)
     {
-        if (wi2.checkedNonNullVars.find(*it) != wi2.checkedNonNullVars.end())
-            wi.checkedNonNullVars.insert(*it);
+        if (wi2.checkedNonNullVars.find(it) != wi2.checkedNonNullVars.end())
+            wi.checkedNonNullVars.insert(it);
     }
 }
 
@@ -378,11 +374,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
         Log::log("%s %s: ",
             node->nodeTypeName.c_str(),
             node->label.c_str());
-        FOR_EACH (std::set<std::string>::const_iterator,
-                  it,
-                  wi.needCheckNullVars)
+        FOR_EACH (it, wi.needCheckNullVars)
         {
-            Log::log("%s, ", (*it).c_str());
+            Log::log("%s, ", it.c_str());
         }
         Log::log("\n");
     }

@@ -159,10 +159,10 @@ void parseVarDeclNode(VarDeclNode *node1, VarDeclNode *node2);
 
 void updateNodes()
 {
-    FOR_EACH(NodeNodeMap::iterator, it, updateNodesMap)
+    FOR_EACH(it, updateNodesMap)
     {
-        Node *node1 = (*it).first;
-        Node *node2 = (*it).second;
+        Node *node1 = it.first;
+        Node *node2 = it.second;
         if (node1 == VAR_DECL)
         {
             parseVarDeclNode(static_cast<VarDeclNode*>(node1),
@@ -184,9 +184,9 @@ void cleanAllNodes(Node *node)
 
 void cleanNodes(Node *node)
 {
-    FOR_EACH (std::vector<Node*>::iterator, it, node->childs)
+    FOR_EACH (it, node->childs)
     {
-        cleanNodes(*it);
+        cleanNodes(it);
     }
     delete node;
 }
