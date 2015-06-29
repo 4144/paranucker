@@ -154,7 +154,6 @@ Node *parseNodes(tree gccNode)
     return createParseNode(nullptr, gccNode, FUNCTION_DECL);
 }
 
-typedef std::map<Node*, Node*> NodeNodeMap;
 void parseVarDeclNode(VarDeclNode *node1, VarDeclNode *node2);
 
 void updateNodes()

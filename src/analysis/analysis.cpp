@@ -82,7 +82,7 @@ void removeNeedCheckNullVar(WalkItem &wi, std::string str)
     {
         wi.addNullVars.erase(str);
     }
-    StringMapSet::const_iterator it2 = wi.linkedVars.find(str);
+    auto it2 = wi.linkedVars.find(str);
     if (it2 != wi.linkedVars.end())
     {
         const StringSet &linked = (*it2).second;
@@ -109,7 +109,7 @@ void removeNeedCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
         removeNeedCheckNullVar(wi, it);
         // if need remove some linked var, search it parent,
         // and remove all linked vars for this parent
-        StringMap::const_iterator it3 = wi.linkedReverseVars.find(it);
+        auto it3 = wi.linkedReverseVars.find(it);
         if (it3 != wi.linkedReverseVars.end())
         {
             const std::string parent = (*it3).second;
