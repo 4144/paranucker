@@ -113,6 +113,18 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
     Node *arg = skipNop(node->args[0]);
     if (arg)
     {
+        std::string var1 = getVariableName(arg);
+        std::string var2 = getVariableName(node->args[1]);
+        // var2 not found in known checking pointer
+        if (wi.needCheckNullVars.find(var2) == wi.needCheckNullVars.end() &&
+            wi.knownVars.find(var2) == wi.knownVars.end())
+        {
+            //Log::log("removed var: %s\n", var1.c_str());
+            removeNeedCheckNullVar(wo, var1);
+            wo.removeNullVars.insert(var1);
+//            return;
+        }
+
         if (arg == INDIRECT_REF)
         {
             reportParmDeclNullPointer(node,
