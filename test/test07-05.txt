@@ -10236,14 +10236,14 @@ type_decl allocator_type: __s,
 integer_cst 64: __s, 
 var_decl __len: __s, 
 var_decl __len: __s, 
-integer_cst 64: __s, 
-integer_type : __s, 
-type_decl size_type: __s, 
-integer_cst 64: __s, 
-integer_cst 0: __s, 
-integer_cst : __s, 
+integer_cst 64: 
+integer_type : 
+type_decl size_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
 block : __s, 
-var_decl __len: __s, 
+var_decl __len: 
 function_decl begin: 
 cleanup_point_expr : 
 return_expr : 

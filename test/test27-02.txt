@@ -12,3 +12,9 @@ __comp_dtor :
 __deleting_dtor : 
 func1: pointer_type ptr1, 
 func2: pointer_type ptr1, 
+func3: pointer_type ptr1, 
+func4: pointer_type ptr1, 
+func5: pointer_type ptr1, pointer_type ptr3, 
+func6: pointer_type ptr1, pointer_type ptr3, 
+func7: pointer_type ptr1, pointer_type ptr3, 
+func8: pointer_type ptr1, pointer_type ptr3, 
