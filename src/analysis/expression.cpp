@@ -215,7 +215,7 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
             wo.uselessExpr = false;
             return;
         }
-        else if (wi.knownVars.find(var) != wi.knownVars.end())
+        else if (wi.knownNonNullVars.find(var) != wi.knownNonNullVars.end())
         {
             bool doReport(true);
             // exception for delete operator. it check for var != 0 before really delete
@@ -347,8 +347,10 @@ void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi
     removeNeedCheckNullVarsSet(wi2, wo1.checkedNullVars);
     wi2.needCheckNullVars.insert(wo1.checkedNonNullVars.begin(),
         wo1.checkedNonNullVars.end());
-    wi2.knownVars.insert(wo1.checkedNonNullVars.begin(),
+    wi2.knownNonNullVars.insert(wo1.checkedNonNullVars.begin(),
         wo1.checkedNonNullVars.end());
+    wi2.knownNullVars.insert(wo1.checkedNullVars.begin(),
+        wo1.checkedNullVars.end());
     Log::dumpWI(node, "wi2 ", wi2);
     walkTree(node2, wi2, wo2);
     Log::dumpWI(node, "wo2 ", wo2);
@@ -376,8 +378,10 @@ void analyseAndCondition(Node *node, Node *node1, Node *node2, const WalkItem &w
     removeNeedCheckNullVarsSet(wi2, wo1.checkedNonNullVars);
     wi2.needCheckNullVars.insert(wo1.checkedNullVars.begin(),
         wo1.checkedNullVars.end());
-    wi2.knownVars.insert(wo1.checkedNullVars.begin(),
+    wi2.knownNullVars.insert(wo1.checkedNullVars.begin(),
         wo1.checkedNullVars.end());
+    wi2.knownNonNullVars.insert(wo1.checkedNonNullVars.begin(),
+        wo1.checkedNonNullVars.end());
     Log::dumpWI(node, "wi2 ", wi2);
     walkTree(node2, wi2, wo2);
     Log::dumpWI(node, "wo2 ", wo2);

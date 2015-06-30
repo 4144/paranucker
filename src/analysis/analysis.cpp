@@ -182,6 +182,8 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
         addNeedCheckNullVars(wi2, wi2);
         wo2.needCheckNullVars = wi2.needCheckNullVars;
         wo2.knownVars = wi2.knownVars;
+        wo2.knownNullVars = wi2.knownNullVars;
+        wo2.knownNonNullVars = wi2.knownNonNullVars;
         wi2.isReturned = wi2.isReturned || wo2.isReturned;
         wi2.linkedVars = wo2.linkedVars;
         wi2.linkedReverseVars = wo2.linkedReverseVars;

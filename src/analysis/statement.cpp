@@ -63,8 +63,8 @@ void analyseCondition(Node *node,
     removeNeedCheckNullVarsSet(wi2, wco.checkedNonNullVars);
     wi2.needCheckNullVars.insert(wco.checkedNullVars.begin(),
         wco.checkedNullVars.end());
-    wi2.knownVars.insert(wco.checkedNullVars.begin(),
-        wco.checkedNullVars.end());
+    wi2.knownNonNullVars.insert(wco.checkedNonNullVars.begin(),
+        wco.checkedNonNullVars.end());
     wi2.knownNullVars.insert(wco.checkedNullVars.begin(),
         wco.checkedNullVars.end());
     Log::dumpWI(node, "wi2 then ", wi2);
@@ -79,8 +79,10 @@ void analyseCondition(Node *node,
     removeNeedCheckNullVarsSet(wi3, wco.checkedNullVars);
     wi3.needCheckNullVars.insert(wco.checkedNonNullVars.begin(),
         wco.checkedNonNullVars.end());
-    wi3.knownVars.insert(wco.checkedNonNullVars.begin(),
+    wi3.knownNullVars.insert(wco.checkedNonNullVars.begin(),
         wco.checkedNonNullVars.end());
+    wi3.knownNonNullVars.insert(wco.checkedNullVars.begin(),
+        wco.checkedNullVars.end());
     Log::dumpWI(node, "wi3 else ", wi3);
 
     reportParmDeclNullPointer(node,
