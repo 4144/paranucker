@@ -84,6 +84,15 @@ namespace Analysis
 
     void analyseInitExpr(InitExprNode* node, const WalkItem &wi, WalkItem &wo);
 
+    void handleSetVar(Node *node1,
+                      Node *node2,
+                      const WalkItem &wi,
+                      WalkItem &wo);
+
+    void handleSetVarDecl(Node *node,
+                          const WalkItem &wi,
+                          WalkItem &wo);
+
     std::string getComponentRefVariable(Node *node);
 }
 

@@ -493,17 +493,7 @@ void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo)
         walkTree(node->args[2], wi2, wo);
     }
 
-    Node *node1 = skipNop(node->args[0]);
-    if (node1 == VAR_DECL)
-    {
-        VarDeclNode *varDecl = static_cast<VarDeclNode*>(node1);
-        Node *initial = skipNop(varDecl->initial);
-        if (checkForReport(initial, wi))
-        {
-            wo.addNullVars.insert(varDecl->label);
-            addLinkedVar(wo, initial->label, varDecl->label);
-        }
-    }
+    handleSetVarDecl(node->args[0], wi, wo);
     wo.stopWalking = true;
 }
 
@@ -514,18 +504,7 @@ void analyseDeclExpr(DeclExprNode *node, const WalkItem &wi, WalkItem &wo)
     if (node->args.empty() || checkCommand(FindArgs))
         return;
 
-    Node *node1 = skipNop(node->args[0]);
-
-    if (node1 == VAR_DECL)
-    {
-        VarDeclNode *varDecl = static_cast<VarDeclNode*>(node1);
-        Node *initial = skipNop(varDecl->initial);
-        if (checkForReport(initial, wi))
-        {
-            wo.addNullVars.insert(varDecl->label);
-            addLinkedVar(wo, initial->label, varDecl->label);
-        }
-    }
+    handleSetVarDecl(node->args[0], wi, wo);
 }
 
 void analyseNopExpr(NopExprNode *node, const WalkItem &wi, WalkItem &wo)
@@ -648,23 +627,45 @@ void analyseCleanupPointExpr(CleanupPointExprNode* node, const WalkItem &wi, Wal
     wo.stopWalking = true;
 }
 
-void analyseInitExpr(InitExprNode* node,
-                     const WalkItem &wi A_UNUSED,
-                     WalkItem &wo)
+void handleSetVarDecl(Node *node,
+                      const WalkItem &wi,
+                      WalkItem &wo)
 {
-    // need one arg for check
-    if (node->args.size() < 2 || checkCommand(FindArgs))
-        return;
+    node = skipNop(node);
+    if (node == VAR_DECL)
+    {
+        VarDeclNode *varDecl = static_cast<VarDeclNode*>(node);
+        Node *initial = skipNop(varDecl->initial);
+        handleSetVar(varDecl, initial, wi, wo);
+    }
+}
 
+void handleSetVar(Node *node1,
+                  Node *node2,
+                  const WalkItem &wi,
+                  WalkItem &wo)
+{
     // var1 = var2
-    std::string var1 = getVariableName(node->args[0]);
-    std::string var2 = getVariableName(node->args[1]);
+    const std::string var1 = getVariableName(node1);
+    const std::string var2 = getVariableName(node2);
     if (var1.empty() || var2.empty())
         return;
     if (wi.needCheckNullVars.find(var2) == wi.needCheckNullVars.end())
         return;
     wo.addNullVars.insert(var1);
     addLinkedVar(wo, var2, var1);
+}
+
+// field = var
+void analyseInitExpr(InitExprNode* node,
+                     const WalkItem &wi,
+                     WalkItem &wo)
+{
+    // need one arg for check
+    if (node->args.size() < 2 || checkCommand(FindArgs))
+        return;
+
+    handleSetVar(node->args[0], node->args[1], wi, wo);
 }
 
 }
