@@ -149,6 +149,13 @@ void removeNeedCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
     }
 }
 
+void addNullVar(WalkItem &wi,
+                const std::string &var)
+{
+    wi.addNullVars.insert(var);
+    wi.removeNullVars.erase(var);
+}
+
 // link var to parent. (type var = parent)
 void addLinkedVar(WalkItem &wi,
                   std::string parent,

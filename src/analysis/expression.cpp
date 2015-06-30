@@ -85,7 +85,8 @@ std::string getComponentRefVariable(Node *node)
 {
     std::string str;
     ComponentRefNode *const comp = static_cast<ComponentRefNode*>(skipNop(node));
-    if (comp->object &&
+    if (comp &&
+        comp->object &&
         comp->field)
     {
         Node *object = skipNop(comp->object);
@@ -115,33 +116,32 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
     {
         std::string var1 = getVariableName(arg);
         std::string var2 = getVariableName(node->args[1]);
-        // var2 not found in known checking pointer
-        if (wi.needCheckNullVars.find(var2) == wi.needCheckNullVars.end() &&
-            wi.knownVars.find(var2) == wi.knownVars.end())
-        {
-            //Log::log("removed var: %s\n", var1.c_str());
-//            removeNeedCheckNullVar(wo, var1);
-            wo.removeNullVars.insert(var1);
-//            return;
-        }
 
         if (arg == INDIRECT_REF)
         {
+            // var2 not found in known checking pointer
+            if (wi.needCheckNullVars.find(var2) == wi.needCheckNullVars.end() &&
+                wi.knownVars.find(var2) == wi.knownVars.end())
+            {
+                wo.removeNullVars.insert(var1);
+            }
+
             reportParmDeclNullPointer(node,
                 static_cast<IndirectRefNode*>(arg)->ref,
                 wi);
         }
-        else if (arg == COMPONENT_REF && node->args.size() > 1)
+        else if (!var1.empty() && !var2.empty())
         {
-            std::string var1 = getComponentRefVariable(arg);
-            std::string var2 = getVariableName(node->args[1]);
-            if (!var1.empty() && !var2.empty())
+            if (wi.needCheckNullVars.find(var2) != wi.needCheckNullVars.end())
             {
-                if (wi.needCheckNullVars.find(var2) != wi.needCheckNullVars.end())
-                {
-                    wo.addNullVars.insert(var1);
-                    addLinkedVar(wo, var2, var1);
-                }
+                addNullVar(wo, var1);
+                addLinkedVar(wo, var2, var1);
+            }
+            // var2 not found in known checking pointer
+            else if (wi.needCheckNullVars.find(var2) == wi.needCheckNullVars.end() &&
+                     wi.knownVars.find(var2) == wi.knownVars.end())
+            {
+                wo.removeNullVars.insert(var1);
             }
         }
     }
@@ -666,7 +666,7 @@ void handleSetVar(Node *node1,
         return;
     if (wi.needCheckNullVars.find(var2) == wi.needCheckNullVars.end())
         return;
-    wo.addNullVars.insert(var1);
+    addNullVar(wo, var1);
     addLinkedVar(wo, var2, var1);
 }
 
