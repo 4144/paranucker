@@ -1,0 +1,32 @@
+test27.cpp: In member function 'void Object1::func1(Data1*)':
+test27.cpp:53:19: warning: Using parameter 'ptr1' without checking for null pointer
+             ptr1->val = 300;
+                   ^
+test27.cpp:54:19: warning: Using field 'this->tmp1' without checking for null pointer
+             tmp1->val = 400;
+                   ^
+test27.cpp:56:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 500;
+               ^
+test27.cpp:57:15: warning: Using field 'this->tmp1' without checking for null pointer
+         tmp1->val = 600;
+               ^
+test27.cpp: In member function 'void Object1::func2(Data1*)':
+test27.cpp:72:19: warning: Using parameter 'ptr1' without checking for null pointer
+             ptr1->val = 400;
+                   ^
+test27.cpp:73:19: warning: Using field 'this->tmp1' without checking for null pointer
+             tmp1->val = 500;
+                   ^
+test27.cpp:74:19: warning: Using field 'this->tmp2' without checking for null pointer
+             tmp2->val = 600;
+                   ^
+test27.cpp:76:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 700;
+               ^
+test27.cpp:77:15: warning: Using field 'this->tmp1' without checking for null pointer
+         tmp1->val = 800;
+               ^
+test27.cpp:78:15: warning: Using field 'this->tmp2' without checking for null pointer
+         tmp2->val = 900;
+               ^
