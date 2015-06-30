@@ -121,7 +121,8 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
         {
             //Log::log("removed var: %s\n", var1.c_str());
             removeNeedCheckNullVar(wo, var1);
-            wo.removeNullVars.insert(var1);
+            // here need only removeNullVars.
+            wo.removeNullVarsAll.insert(var1);
 //            return;
         }
 
@@ -344,7 +345,7 @@ void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi
     walkTree(node1, wi, wo1);
     Log::dumpWI(node, "wo1 ", wo1);
     WalkItem wi2 = wi;
-    removeNeedCheckNullVarsSet(wi2, wo1.checkedNullVars);
+    removeNeedCheckNullVarsSetAll(wi2, wo1.checkedNullVars);
     wi2.needCheckNullVars.insert(wo1.checkedNonNullVars.begin(),
         wo1.checkedNonNullVars.end());
     wi2.knownNonNullVars.insert(wo1.checkedNonNullVars.begin(),
@@ -375,7 +376,7 @@ void analyseAndCondition(Node *node, Node *node1, Node *node2, const WalkItem &w
     walkTree(node1, wi, wo1);
     Log::dumpWI(node, "wo1 ", wo1);
     WalkItem wi2 = wi;
-    removeNeedCheckNullVarsSet(wi2, wo1.checkedNonNullVars);
+    removeNeedCheckNullVarsSetAll(wi2, wo1.checkedNonNullVars);
     wi2.needCheckNullVars.insert(wo1.checkedNullVars.begin(),
         wo1.checkedNullVars.end());
     wi2.knownNullVars.insert(wo1.checkedNullVars.begin(),
@@ -482,8 +483,6 @@ void analyseCompoundExpr(CompoundExprNode *node, const WalkItem &wi, WalkItem &w
         mergeNullChecked(wo, wo2);
         mergeNonNullChecked(wo, wo2);
     }
-
-    //wo.removeNullVars.clear();
 
     wo.cleanExpr = true;
     wo.stopWalking = true;

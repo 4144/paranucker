@@ -35,7 +35,7 @@ struct WalkItem
         knownVars(),
         knownNullVars(),
         knownNonNullVars(),
-        removeNullVars(),
+        removeNullVarsAll(),
         addNullVars(),
         checkedNullVars(),
         checkedNonNullVars(),
@@ -53,7 +53,7 @@ struct WalkItem
         knownVars(item.knownVars),
         knownNullVars(item.knownNullVars),
         knownNonNullVars(item.knownNonNullVars),
-        removeNullVars(item.removeNullVars),
+        removeNullVarsAll(item.removeNullVarsAll),
         addNullVars(item.addNullVars),
         checkedNullVars(item.checkedNullVars),
         checkedNonNullVars(item.checkedNonNullVars),
@@ -66,16 +66,16 @@ struct WalkItem
     {
     }
 
-    StringSet needCheckNullVars;   // need check for usage without null pointer check
-    StringSet knownVars;           // known vars what can be checked or already checked
-    StringSet knownNullVars;       // vars checked and it null
-    StringSet knownNonNullVars;    // vars checked for null pointer
-    StringSet removeNullVars;      // need remove vars from parent checkNullVars
-    StringSet addNullVars;         // need add vars to parent checkNullVars
-    StringSet checkedNullVars;     // vars checked for null in expressions
-    StringSet checkedNonNullVars;  // vars checked for nonnull in expressions
-    StringMapSet linkedVars;       // linked vars. map <parent, set(vars)>
-    StringMap linkedReverseVars;   // linked vars. map <child, parent>
+    StringSet needCheckNullVars;     // need check for usage without null pointer check
+    StringSet knownVars;             // known vars what can be checked or already checked
+    StringSet knownNullVars;         // vars checked and it null
+    StringSet knownNonNullVars;      // vars checked for null pointer
+    StringSet removeNullVarsAll;     // need remove vars from parent checkNullVars
+    StringSet addNullVars;           // need add vars to parent checkNullVars
+    StringSet checkedNullVars;       // vars checked for null in expressions
+    StringSet checkedNonNullVars;    // vars checked for nonnull in expressions
+    StringMapSet linkedVars;         // linked vars. map <parent, set(vars)>
+    StringMap linkedReverseVars;     // linked vars. map <child, parent>
     bool stopWalking;   // stop walking on tree after this node
     bool isReturned;    // set if return present in child nodes
     bool cleanExpr;     // set if expression is only variable check without compound conditions

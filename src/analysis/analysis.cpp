@@ -100,8 +100,8 @@ void removeNeedCheckNullVar(WalkItem &wi, std::string str)
     }
 }
 
-// remove vars from checks for null pointer
-void removeNeedCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
+// remove vars from checks for null pointer with linked vars
+void removeNeedCheckNullVarsSetAll(WalkItem &wi, std::set<std::string> &vars)
 {
     FOR_EACH (it, vars)
     {
@@ -164,7 +164,7 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     wi2 = wo;
 
     addNeedCheckNullVars(wi2, wi2);
-    removeNeedCheckNullVarsSet(wi2, wi2.removeNullVars);
+    removeNeedCheckNullVarsSetAll(wi2, wi2.removeNullVarsAll);
 
     const bool isReturned = wo.isReturned;
 
@@ -177,7 +177,7 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     FOR_EACH (it, node->childs)
     {
         walkTree(it, wi2, wo2);
-        wi2.removeNullVars = wo2.removeNullVars;
+        wi2.removeNullVarsAll = wo2.removeNullVarsAll;
         wi2.addNullVars = wo2.addNullVars;
         addNeedCheckNullVars(wi2, wi2);
         wo2.needCheckNullVars = wi2.needCheckNullVars;
@@ -190,7 +190,7 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
         wo2.stopWalking = false;
     }
     // copy properties from wi2 to wo
-    wo.removeNullVars = wi2.removeNullVars;
+    wo.removeNullVarsAll = wi2.removeNullVarsAll;
     wo.addNullVars = wi2.addNullVars;
     wo.isReturned = wo.isReturned || isReturned || wo2.isReturned;
     wo.linkedVars = wi2.linkedVars;
@@ -397,7 +397,7 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
     // Except IF_STMT. Removing handled inside analyse function.
     if (node != IF_STMT)
     {
-        removeNeedCheckNullVarsSet(wi2, wi2.removeNullVars);
+        removeNeedCheckNullVarsSetAll(wi2, wi2.removeNullVarsAll);
     }
 
     if (command != Command::DumpNullPointers)
