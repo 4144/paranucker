@@ -153,20 +153,20 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     WalkItem wi2 = wi;
     // analyse node and after copy all properties from wo to wi2
     analyseNode(node, wi2, wo);
-    removeNeedCheckNullVarsSet(wi2, wi2.removeNullVars);
     addNeedCheckNullVars(wo, wo);
     addNeedCheckNullVars(wo, wi2);
-    addNeedCheckNullVars(wi2, wi2);
-    wi2.linkedVars = wo.linkedVars;
-    wi2.linkedReverseVars = wo.linkedReverseVars;
-    wi2.addNullVars = wo.addNullVars;
-
-    const bool isReturned = wo.isReturned;
     if (wo.stopWalking)
     {
         wo.stopWalking = false;
         return;
     }
+
+    wi2 = wo;
+
+    addNeedCheckNullVars(wi2, wi2);
+    removeNeedCheckNullVarsSet(wi2, wi2.removeNullVars);
+
+    const bool isReturned = wo.isReturned;
 
     WalkItem wo2 = wo;
     if (command != Command::DumpNullPointers)
