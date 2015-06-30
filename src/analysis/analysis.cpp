@@ -121,9 +121,12 @@ void removeNeedCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
 
 // link var to parent. (type var = parent)
 void addLinkedVar(WalkItem &wi,
-                  const std::string &parent,
+                  std::string parent,
                   const std::string &var)
 {
+    // found parent as already linked var. need change parent to real parent
+    if (wi.linkedReverseVars.find(parent) != wi.linkedReverseVars.end())
+        parent = wi.linkedReverseVars[parent];
     if (wi.linkedVars.find(parent) == wi.linkedVars.end())
         wi.linkedVars[parent] = std::set<std::string>();
     wi.linkedVars[parent].insert(var);

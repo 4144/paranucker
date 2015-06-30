@@ -53,7 +53,7 @@ namespace Analysis
                         const WalkItem &wi);
 
     void addLinkedVar(WalkItem &wi,
-                      const std::string &parent,
+                      std::string parent,
                       const std::string &var);
 
     void removeNeedCheckNullVar(WalkItem &wi, std::string str);
