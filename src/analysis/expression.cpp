@@ -120,9 +120,8 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
             wi.knownVars.find(var2) == wi.knownVars.end())
         {
             //Log::log("removed var: %s\n", var1.c_str());
-            removeNeedCheckNullVar(wo, var1);
-            // here need only removeNullVars.
-            wo.removeNullVarsAll.insert(var1);
+//            removeNeedCheckNullVar(wo, var1);
+            wo.removeNullVars.insert(var1);
 //            return;
         }
 

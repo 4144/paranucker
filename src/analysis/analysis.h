@@ -61,6 +61,9 @@ namespace Analysis
     void removeNeedCheckNullVarsSetAll(WalkItem &wi,
                                        std::set<std::string> &vars);
 
+    void removeNeedCheckNullVarsSet(WalkItem &wi,
+                                    std::set<std::string> &vars);
+
     Node *skipNop(Node *node);
 
     Node *skipBackNop(Node *node);

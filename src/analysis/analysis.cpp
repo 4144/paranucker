@@ -119,6 +119,36 @@ void removeNeedCheckNullVarsSetAll(WalkItem &wi, std::set<std::string> &vars)
     }
 }
 
+// remove vars from checks for null pointer without linked vars
+void removeNeedCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
+{
+    FOR_EACH (it, vars)
+    {
+        if (wi.needCheckNullVars.find(it) != wi.needCheckNullVars.end())
+        {
+            wi.needCheckNullVars.erase(it);
+        }
+        if (wi.addNullVars.find(it) != wi.addNullVars.end())
+        {
+            wi.addNullVars.erase(it);
+        }
+        auto it2 = wi.linkedVars.find(it);
+        if (it2 != wi.linkedVars.end())
+        {
+            const StringSet linked = (*it2).second;
+            std::string newParent = *(linked.begin());
+            wi.linkedVars[newParent] = linked;
+            wi.linkedVars.erase(it);
+            wi.linkedVars[newParent].erase(newParent);
+        }
+        auto it3 = wi.linkedReverseVars.find(it);
+        if (it3 != wi.linkedReverseVars.end())
+        {
+            wi.linkedReverseVars.erase(it);
+        }
+    }
+}
+
 // link var to parent. (type var = parent)
 void addLinkedVar(WalkItem &wi,
                   std::string parent,
@@ -165,6 +195,7 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
 
     addNeedCheckNullVars(wi2, wi2);
     removeNeedCheckNullVarsSetAll(wi2, wi2.removeNullVarsAll);
+    removeNeedCheckNullVarsSet(wi2, wi2.removeNullVars);
 
     const bool isReturned = wo.isReturned;
 
@@ -178,6 +209,7 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     {
         walkTree(it, wi2, wo2);
         wi2.removeNullVarsAll = wo2.removeNullVarsAll;
+        wi2.removeNullVars = wo2.removeNullVars;
         wi2.addNullVars = wo2.addNullVars;
         addNeedCheckNullVars(wi2, wi2);
         wo2.needCheckNullVars = wi2.needCheckNullVars;
@@ -191,6 +223,7 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     }
     // copy properties from wi2 to wo
     wo.removeNullVarsAll = wi2.removeNullVarsAll;
+    wo.removeNullVars = wi2.removeNullVars;
     wo.addNullVars = wi2.addNullVars;
     wo.isReturned = wo.isReturned || isReturned || wo2.isReturned;
     wo.linkedVars = wi2.linkedVars;
@@ -399,6 +432,7 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
     {
         removeNeedCheckNullVarsSetAll(wi2, wi2.removeNullVarsAll);
     }
+    removeNeedCheckNullVarsSet(wi2, wi2.removeNullVars);
 
     if (command != Command::DumpNullPointers)
         Log::dumpWI(node, "analyseNode wi2 ", wi2);

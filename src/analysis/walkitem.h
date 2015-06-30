@@ -36,6 +36,7 @@ struct WalkItem
         knownNullVars(),
         knownNonNullVars(),
         removeNullVarsAll(),
+        removeNullVars(),
         addNullVars(),
         checkedNullVars(),
         checkedNonNullVars(),
@@ -54,6 +55,7 @@ struct WalkItem
         knownNullVars(item.knownNullVars),
         knownNonNullVars(item.knownNonNullVars),
         removeNullVarsAll(item.removeNullVarsAll),
+        removeNullVars(item.removeNullVars),
         addNullVars(item.addNullVars),
         checkedNullVars(item.checkedNullVars),
         checkedNonNullVars(item.checkedNonNullVars),
@@ -70,7 +72,8 @@ struct WalkItem
     StringSet knownVars;             // known vars what can be checked or already checked
     StringSet knownNullVars;         // vars checked and it null
     StringSet knownNonNullVars;      // vars checked for null pointer
-    StringSet removeNullVarsAll;     // need remove vars from parent checkNullVars
+    StringSet removeNullVarsAll;     // need remove vars from parent checkNullVars with linked vars
+    StringSet removeNullVars;        // need remove vars from parent checkNullVars without linked vars
     StringSet addNullVars;           // need add vars to parent checkNullVars
     StringSet checkedNullVars;       // vars checked for null in expressions
     StringSet checkedNonNullVars;    // vars checked for nonnull in expressions

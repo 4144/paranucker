@@ -225,6 +225,7 @@ void dumpWI(Node *const node,
     dumpWIProps(" knownNullVars:", wi.knownNullVars)
     dumpWIProps(" knownNonNullVars:", wi.knownNonNullVars)
     dumpWIProps(" removeNullVarsAll:", wi.removeNullVarsAll)
+    dumpWIProps(" removeNullVars:", wi.removeNullVars)
     dumpWIProps(" addNullVars:", wi.addNullVars)
 
     if (!wi.linkedVars.empty())
