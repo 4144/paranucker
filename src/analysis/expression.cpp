@@ -24,6 +24,7 @@
 
 #include "analysis/analysis.h"
 #include "analysis/function.h"
+#include "analysis/reports.h"
 #include "analysis/statement.h"
 #include "analysis/walkitem.h"
 

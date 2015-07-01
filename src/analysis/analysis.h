@@ -38,20 +38,6 @@ namespace Analysis
 
     int findBackLocation(Node *node);
 
-    void reportParmDeclNullPointer(Node *mainNode,
-                                   Node *node,
-                                   const WalkItem &wi);
-
-    void reportParmDeclAttrNullPointer(Node *mainNode,
-                                       Node *node,
-                                       const WalkItem &wi);
-
-    void reportUselessCheck(Node *node,
-                            const std::string &var);
-
-    bool checkForReport(Node *node,
-                        const WalkItem &wi);
-
     void addNullVar(WalkItem &wi,
                     const std::string &var);
 

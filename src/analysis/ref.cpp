@@ -23,6 +23,7 @@
 #include "logger.h"
 
 #include "analysis/analysis.h"
+#include "analysis/reports.h"
 #include "analysis/walkitem.h"
 
 #include "nodes/expr/addr_expr.h"
