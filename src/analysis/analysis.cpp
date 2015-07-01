@@ -112,9 +112,9 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
         wi2.addNullVars = wo2.addNullVars;
         addNeedCheckNullVars(wi2, wi2);
         wo2.needCheckNullVars = wi2.needCheckNullVars;
-        wo2.knownVars = wi2.knownVars;
-        wo2.knownNullVars = wi2.knownNullVars;
-        wo2.knownNonNullVars = wi2.knownNonNullVars;
+        wi2.knownVars = wo2.knownVars;
+        wi2.knownNullVars = wo2.knownNullVars;
+        wi2.knownNonNullVars = wo2.knownNonNullVars;
         wi2.isReturned = wi2.isReturned || wo2.isReturned;
         wi2.linkedVars = wo2.linkedVars;
         wi2.linkedReverseVars = wo2.linkedReverseVars;
@@ -127,6 +127,9 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     wo.isReturned = wo.isReturned || isReturned || wo2.isReturned;
     wo.linkedVars = wi2.linkedVars;
     wo.linkedReverseVars = wi2.linkedReverseVars;
+    wo.knownVars = wo2.knownVars;
+    wo.knownNullVars = wo2.knownNullVars;
+    wo.knownNonNullVars = wo2.knownNonNullVars;
 
     if (command != Command::DumpNullPointers)
         Log::dumpWI(node, "walkTree out wo ", wo);
