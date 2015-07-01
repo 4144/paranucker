@@ -208,6 +208,10 @@ integer_cst 64: ptr6,
 integer_cst 0: ptr6, 
 if_stmt : 
 eq_expr : 
+test08.cpp: In member function 'void Object1::func6(int*)':
+test08.cpp:55:18: warning: Useless variable check 'ptr6'. It already was checked before
+             if (!ptr6)
+                  ^
 parm_decl ptr6: 
 pointer_type : 
 integer_type : 
@@ -222,7 +226,6 @@ cleanup_point_expr : ptr6,
 expr_stmt : ptr6, 
 convert_expr : ptr6, 
 modify_expr : ptr6, 
-test08.cpp: In member function 'void Object1::func6(int*)':
 test08.cpp:59:20: warning: Using parameter 'ptr6' without checking for null pointer
          *ptr6 = 600;
                     ^
@@ -253,6 +256,10 @@ return_expr : ptr7,
 statement_list : 
 if_stmt : 
 eq_expr : 
+test08.cpp: In member function 'void Object1::func7(int*)':
+test08.cpp:70:18: warning: Useless variable check 'ptr7'. It already was checked before
+             if (!ptr7)
+                  ^
 parm_decl ptr7: 
 pointer_type : 
 integer_type : 
