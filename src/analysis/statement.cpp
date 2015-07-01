@@ -113,6 +113,10 @@ void analyseCondition(Node *node,
             wo.knownNonNullVars.insert(it);
             removeNeedCheckNullVar(wo, it);
         }
+        FOR_EACH (it, wco.checkedNonNullVars)
+        {
+            wo.knownNullVars.insert(it);
+        }
     }
     if (wo3.isReturned)
     {
@@ -123,6 +127,10 @@ void analyseCondition(Node *node,
             wo.knownNonNullVars.insert(it);
             removeNeedCheckNullVar(wo, it);
         }
+        FOR_EACH (it, wco.checkedNullVars)
+        {
+            wo.knownNullVars.insert(it);
+        }
     }
 
     if (wo2.isReturned && wo3.isReturned)
@@ -131,7 +139,6 @@ void analyseCondition(Node *node,
         FOR_EACH (it, wo.needCheckNullVars)
         {
             wo.removeNullVarsAll.insert(it);
-            wo.knownNonNullVars.insert(it);
         }
     }
 
