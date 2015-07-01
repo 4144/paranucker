@@ -41552,7 +41552,13 @@ function_decl func6 test26.cpp 88:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 1 - operand
-    return_expr test26.cpp 93:17 - then
+    cleanup_point_expr test26.cpp 93:23 - then
+     expr_stmt test26.cpp 93:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 10 - operand
    if_stmt test26.cpp 94:13 - statement
     truth_andif_expr test26.cpp 94:22 - condition
      ne_expr - operand
@@ -41583,7 +41589,13 @@ function_decl func6 test26.cpp 88:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 2 - operand
-    return_expr test26.cpp 95:17 - then
+    cleanup_point_expr test26.cpp 95:23 - then
+     expr_stmt test26.cpp 95:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 20 - operand
    if_stmt test26.cpp 96:13 - statement
     truth_orif_expr test26.cpp 96:23 - condition
      eq_expr test26.cpp 96:18 - operand
@@ -41614,7 +41626,13 @@ function_decl func6 test26.cpp 88:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 1 - operand
-    return_expr test26.cpp 97:17 - then
+    cleanup_point_expr test26.cpp 97:23 - then
+     expr_stmt test26.cpp 97:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 30 - operand
    if_stmt test26.cpp 98:13 - statement
     truth_orif_expr test26.cpp 98:22 - condition
      ne_expr - operand
@@ -41645,7 +41663,13 @@ function_decl func6 test26.cpp 88:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 2 - operand
-    return_expr test26.cpp 99:17 - then
+    cleanup_point_expr test26.cpp 99:23 - then
+     expr_stmt test26.cpp 99:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 40 - operand
   statement_list - else
    if_stmt test26.cpp 103:13 - statement
     truth_andif_expr test26.cpp 103:23 - condition
@@ -41677,7 +41701,13 @@ function_decl func6 test26.cpp 88:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 4 - operand
-    return_expr test26.cpp 104:17 - then
+    cleanup_point_expr test26.cpp 104:23 - then
+     expr_stmt test26.cpp 104:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 50 - operand
    if_stmt test26.cpp 105:13 - statement
     truth_andif_expr test26.cpp 105:22 - condition
      ne_expr - operand
@@ -41708,7 +41738,13 @@ function_decl func6 test26.cpp 88:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 5 - operand
-    return_expr test26.cpp 106:17 - then
+    cleanup_point_expr test26.cpp 106:23 - then
+     expr_stmt test26.cpp 106:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 60 - operand
    if_stmt test26.cpp 107:13 - statement
     truth_orif_expr test26.cpp 107:23 - condition
      eq_expr test26.cpp 107:18 - operand
@@ -41739,7 +41775,13 @@ function_decl func6 test26.cpp 88:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 4 - operand
-    return_expr test26.cpp 108:17 - then
+    cleanup_point_expr test26.cpp 108:23 - then
+     expr_stmt test26.cpp 108:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 70 - operand
    if_stmt test26.cpp 109:13 - statement
     truth_orif_expr test26.cpp 109:22 - condition
      ne_expr - operand
@@ -41770,7 +41812,13 @@ function_decl func6 test26.cpp 88:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 5 - operand
-    return_expr test26.cpp 110:17 - then
+    cleanup_point_expr test26.cpp 110:23 - then
+     expr_stmt test26.cpp 110:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 80 - operand
 function_decl func7 test26.cpp 114:10
 - isPublic: 1
  method_type - function type
@@ -41917,7 +41965,13 @@ function_decl func7 test26.cpp 114:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 1 - operand
-    return_expr test26.cpp 119:17 - then
+    cleanup_point_expr test26.cpp 119:23 - then
+     expr_stmt test26.cpp 119:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 10 - operand
    if_stmt test26.cpp 120:13 - statement
     truth_andif_expr test26.cpp 120:23 - condition
      eq_expr test26.cpp 120:18 - operand
@@ -41948,7 +42002,13 @@ function_decl func7 test26.cpp 114:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 2 - operand
-    return_expr test26.cpp 121:17 - then
+    cleanup_point_expr test26.cpp 121:23 - then
+     expr_stmt test26.cpp 121:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 20 - operand
    if_stmt test26.cpp 122:13 - statement
     truth_orif_expr test26.cpp 122:22 - condition
      ne_expr - operand
@@ -41979,7 +42039,13 @@ function_decl func7 test26.cpp 114:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 1 - operand
-    return_expr test26.cpp 123:17 - then
+    cleanup_point_expr test26.cpp 123:23 - then
+     expr_stmt test26.cpp 123:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 30 - operand
    if_stmt test26.cpp 124:13 - statement
     truth_orif_expr test26.cpp 124:23 - condition
      eq_expr test26.cpp 124:18 - operand
@@ -42010,7 +42076,13 @@ function_decl func7 test26.cpp 114:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 2 - operand
-    return_expr test26.cpp 125:17 - then
+    cleanup_point_expr test26.cpp 125:23 - then
+     expr_stmt test26.cpp 125:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 40 - operand
   statement_list - else
    if_stmt test26.cpp 129:13 - statement
     truth_andif_expr test26.cpp 129:22 - condition
@@ -42042,7 +42114,13 @@ function_decl func7 test26.cpp 114:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 4 - operand
-    return_expr test26.cpp 130:17 - then
+    cleanup_point_expr test26.cpp 130:23 - then
+     expr_stmt test26.cpp 130:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 50 - operand
    if_stmt test26.cpp 131:13 - statement
     truth_andif_expr test26.cpp 131:23 - condition
      eq_expr test26.cpp 131:18 - operand
@@ -42073,7 +42151,13 @@ function_decl func7 test26.cpp 114:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 5 - operand
-    return_expr test26.cpp 132:17 - then
+    cleanup_point_expr test26.cpp 132:23 - then
+     expr_stmt test26.cpp 132:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 60 - operand
    if_stmt test26.cpp 133:13 - statement
     truth_orif_expr test26.cpp 133:22 - condition
      ne_expr - operand
@@ -42104,7 +42188,13 @@ function_decl func7 test26.cpp 114:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 4 - operand
-    return_expr test26.cpp 134:17 - then
+    cleanup_point_expr test26.cpp 134:23 - then
+     expr_stmt test26.cpp 134:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 70 - operand
    if_stmt test26.cpp 135:13 - statement
     truth_orif_expr test26.cpp 135:23 - condition
      eq_expr test26.cpp 135:18 - operand
@@ -42135,7 +42225,13 @@ function_decl func7 test26.cpp 114:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 5 - operand
-    return_expr test26.cpp 136:17 - then
+    cleanup_point_expr test26.cpp 136:23 - then
+     expr_stmt test26.cpp 136:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 80 - operand
 function_decl func8 test26.cpp 140:10
 - isPublic: 1
  method_type - function type
@@ -42282,7 +42378,13 @@ function_decl func8 test26.cpp 140:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 1 - operand
-    return_expr test26.cpp 145:17 - then
+    cleanup_point_expr test26.cpp 145:23 - then
+     expr_stmt test26.cpp 145:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 10 - operand
    if_stmt test26.cpp 146:13 - statement
     truth_orif_expr test26.cpp 146:22 - condition
      ne_expr - operand
@@ -42313,7 +42415,13 @@ function_decl func8 test26.cpp 140:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 2 - operand
-    return_expr test26.cpp 147:17 - then
+    cleanup_point_expr test26.cpp 147:23 - then
+     expr_stmt test26.cpp 147:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 20 - operand
    if_stmt test26.cpp 148:13 - statement
     truth_andif_expr test26.cpp 148:23 - condition
      eq_expr test26.cpp 148:18 - operand
@@ -42343,8 +42451,14 @@ function_decl func8 test26.cpp 140:10
      eq_expr test26.cpp 148:28 - operand
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
-      integer_cst 1 - operand
-    return_expr test26.cpp 149:17 - then
+      integer_cst 3 - operand
+    cleanup_point_expr test26.cpp 149:23 - then
+     expr_stmt test26.cpp 149:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 30 - operand
    if_stmt test26.cpp 150:13 - statement
     truth_andif_expr test26.cpp 150:22 - condition
      ne_expr - operand
@@ -42374,8 +42488,14 @@ function_decl func8 test26.cpp 140:10
      eq_expr test26.cpp 150:27 - operand
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
-      integer_cst 2 - operand
-    return_expr test26.cpp 151:17 - then
+      integer_cst 4 - operand
+    cleanup_point_expr test26.cpp 151:23 - then
+     expr_stmt test26.cpp 151:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 40 - operand
   statement_list - else
    if_stmt test26.cpp 155:13 - statement
     truth_orif_expr test26.cpp 155:23 - condition
@@ -42406,8 +42526,14 @@ function_decl func8 test26.cpp 140:10
      eq_expr test26.cpp 155:28 - operand
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
-      integer_cst 4 - operand
-    return_expr test26.cpp 156:17 - then
+      integer_cst 5 - operand
+    cleanup_point_expr test26.cpp 156:23 - then
+     expr_stmt test26.cpp 156:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 50 - operand
    if_stmt test26.cpp 157:13 - statement
     truth_orif_expr test26.cpp 157:22 - condition
      ne_expr - operand
@@ -42437,8 +42563,14 @@ function_decl func8 test26.cpp 140:10
      eq_expr test26.cpp 157:27 - operand
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
-      integer_cst 5 - operand
-    return_expr test26.cpp 158:17 - then
+      integer_cst 6 - operand
+    cleanup_point_expr test26.cpp 158:23 - then
+     expr_stmt test26.cpp 158:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 60 - operand
    if_stmt test26.cpp 159:13 - statement
     truth_andif_expr test26.cpp 159:23 - condition
      eq_expr test26.cpp 159:18 - operand
@@ -42468,8 +42600,14 @@ function_decl func8 test26.cpp 140:10
      eq_expr test26.cpp 159:28 - operand
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
-      integer_cst 4 - operand
-    return_expr test26.cpp 160:17 - then
+      integer_cst 7 - operand
+    cleanup_point_expr test26.cpp 160:23 - then
+     expr_stmt test26.cpp 160:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 70 - operand
    if_stmt test26.cpp 161:13 - statement
     truth_andif_expr test26.cpp 161:22 - condition
      ne_expr - operand
@@ -42499,8 +42637,14 @@ function_decl func8 test26.cpp 140:10
      eq_expr test26.cpp 161:27 - operand
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
-      integer_cst 5 - operand
-    return_expr test26.cpp 162:17 - then
+      integer_cst 8 - operand
+    cleanup_point_expr test26.cpp 162:23 - then
+     expr_stmt test26.cpp 162:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 80 - operand
 function_decl func9 test26.cpp 166:10
 - isPublic: 1
  method_type - function type
@@ -42647,7 +42791,13 @@ function_decl func9 test26.cpp 166:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 1 - operand
-    return_expr test26.cpp 171:17 - then
+    cleanup_point_expr test26.cpp 171:23 - then
+     expr_stmt test26.cpp 171:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 10 - operand
    if_stmt test26.cpp 172:13 - statement
     truth_orif_expr test26.cpp 172:23 - condition
      eq_expr test26.cpp 172:18 - operand
@@ -42678,7 +42828,13 @@ function_decl func9 test26.cpp 166:10
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
       integer_cst 2 - operand
-    return_expr test26.cpp 173:17 - then
+    cleanup_point_expr test26.cpp 173:23 - then
+     expr_stmt test26.cpp 173:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 20 - operand
    if_stmt test26.cpp 174:13 - statement
     truth_andif_expr test26.cpp 174:22 - condition
      ne_expr - operand
@@ -42708,8 +42864,14 @@ function_decl func9 test26.cpp 166:10
      eq_expr test26.cpp 174:27 - operand
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
-      integer_cst 1 - operand
-    return_expr test26.cpp 175:17 - then
+      integer_cst 3 - operand
+    cleanup_point_expr test26.cpp 175:23 - then
+     expr_stmt test26.cpp 175:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 30 - operand
    if_stmt test26.cpp 176:13 - statement
     truth_andif_expr test26.cpp 176:23 - condition
      eq_expr test26.cpp 176:18 - operand
@@ -42739,8 +42901,14 @@ function_decl func9 test26.cpp 166:10
      eq_expr test26.cpp 176:28 - operand
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
-      integer_cst 2 - operand
-    return_expr test26.cpp 177:17 - then
+      integer_cst 4 - operand
+    cleanup_point_expr test26.cpp 177:23 - then
+     expr_stmt test26.cpp 177:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 40 - operand
   statement_list - else
    if_stmt test26.cpp 181:13 - statement
     truth_orif_expr test26.cpp 181:22 - condition
@@ -42771,8 +42939,14 @@ function_decl func9 test26.cpp 166:10
      eq_expr test26.cpp 181:27 - operand
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
-      integer_cst 4 - operand
-    return_expr test26.cpp 182:17 - then
+      integer_cst 5 - operand
+    cleanup_point_expr test26.cpp 182:23 - then
+     expr_stmt test26.cpp 182:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 50 - operand
    if_stmt test26.cpp 183:13 - statement
     truth_orif_expr test26.cpp 183:23 - condition
      eq_expr test26.cpp 183:18 - operand
@@ -42802,8 +42976,14 @@ function_decl func9 test26.cpp 166:10
      eq_expr test26.cpp 183:28 - operand
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
-      integer_cst 5 - operand
-    return_expr test26.cpp 184:17 - then
+      integer_cst 6 - operand
+    cleanup_point_expr test26.cpp 184:23 - then
+     expr_stmt test26.cpp 184:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 60 - operand
    if_stmt test26.cpp 185:13 - statement
     truth_andif_expr test26.cpp 185:22 - condition
      ne_expr - operand
@@ -42833,8 +43013,14 @@ function_decl func9 test26.cpp 166:10
      eq_expr test26.cpp 185:27 - operand
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
-      integer_cst 4 - operand
-    return_expr test26.cpp 186:17 - then
+      integer_cst 7 - operand
+    cleanup_point_expr test26.cpp 186:23 - then
+     expr_stmt test26.cpp 186:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 70 - operand
    if_stmt test26.cpp 187:13 - statement
     truth_andif_expr test26.cpp 187:23 - condition
      eq_expr test26.cpp 187:18 - operand
@@ -42864,8 +43050,862 @@ function_decl func9 test26.cpp 166:10
      eq_expr test26.cpp 187:28 - operand
       var_decl k test26.cpp 40:5 - operand
       - isUsed: 1
-      integer_cst 5 - operand
-    return_expr test26.cpp 188:17 - then
+      integer_cst 8 - operand
+    cleanup_point_expr test26.cpp 188:23 - then
+     expr_stmt test26.cpp 188:23 - operand
+      convert_expr - expresssion
+       modify_expr - operand
+        var_decl k test26.cpp 40:5 - operand
+        - isUsed: 1
+        integer_cst 80 - operand
+function_decl func10 test26.cpp 192:10
+- isPublic: 1
+ method_type - function type
+  void_type - method return type
+   type_decl void <built-in> 0:0 - type name
+   - isAutogenerated: 1
+  record_type - method base type
+   type_decl Object1 test26.cpp 42:7 - type name
+   - isAutogenerated: 1
+   type_decl Object1 test26.cpp 43:1 - field
+   - isAutogenerated: 1
+  tree_list - arg types
+   pointer_type - value
+    record_type - nested type
+     type_decl Object1 test26.cpp 42:7 - type name
+     - isAutogenerated: 1
+     type_decl Object1 test26.cpp 43:1 - field
+     - isAutogenerated: 1
+   tree_list - chain
+    pointer_type - value
+     record_type - nested type
+      type_decl Data1 test26.cpp 6:8 - type name
+      - isAutogenerated: 1
+      field_decl val test26.cpp 17:9 - field
+      - signed
+       integer_cst 32 - decl size
+      field_decl ptrval test26.cpp 18:12 - field
+      - unsigned
+       integer_cst 64 - decl size
+      field_decl arr test26.cpp 19:14 - field
+      - signed
+       integer_cst 96 - decl size
+      field_decl str1 test26.cpp 20:17 - field
+      - signed
+       integer_cst 64 - decl size
+      type_decl Data1 test26.cpp 7:1 - field
+      - isAutogenerated: 1
+    tree_list - chain
+     void_type - value
+      type_decl void <built-in> 0:0 - type name
+      - isAutogenerated: 1
+ result_decl test26.cpp 193:5 - function result
+ - isAutogenerated: 1
+  void_type - result type
+   type_decl void <built-in> 0:0 - type name
+   - isAutogenerated: 1
+ parm_decl this test26.cpp 192:34 - argument
+ - isAutogenerated: 1
+  pointer_type - decl type
+   record_type - nested type
+    type_decl Object1 test26.cpp 42:7 - type name
+    - isAutogenerated: 1
+    type_decl Object1 test26.cpp 43:1 - field
+    - isAutogenerated: 1
+  integer_cst 64 - parm size
+ - isUsed: 1
+ parm_decl ptr1 test26.cpp 192:30 - argument
+  pointer_type - decl type
+   record_type - nested type
+    type_decl Data1 test26.cpp 6:8 - type name
+    - isAutogenerated: 1
+    field_decl val test26.cpp 17:9 - field
+    - signed
+     integer_cst 32 - decl size
+    field_decl ptrval test26.cpp 18:12 - field
+    - unsigned
+     integer_cst 64 - decl size
+    field_decl arr test26.cpp 19:14 - field
+    - signed
+     integer_cst 96 - decl size
+    field_decl str1 test26.cpp 20:17 - field
+    - signed
+     integer_cst 64 - decl size
+    type_decl Data1 test26.cpp 7:1 - field
+    - isAutogenerated: 1
+  integer_cst 64 - parm size
+ if_stmt test26.cpp 194:9 - code
+  ne_expr - condition
+   nop_expr - operand
+    - isUsed: 1
+    parm_decl ptr1 test26.cpp 192:30 - operand
+     pointer_type - decl type
+      record_type - nested type
+       type_decl Data1 test26.cpp 6:8 - type name
+       - isAutogenerated: 1
+       field_decl val test26.cpp 17:9 - field
+       - signed
+        integer_cst 32 - decl size
+       field_decl ptrval test26.cpp 18:12 - field
+       - unsigned
+        integer_cst 64 - decl size
+       field_decl arr test26.cpp 19:14 - field
+       - signed
+        integer_cst 96 - decl size
+       field_decl str1 test26.cpp 20:17 - field
+       - signed
+        integer_cst 64 - decl size
+       type_decl Data1 test26.cpp 7:1 - field
+       - isAutogenerated: 1
+     integer_cst 64 - parm size
+   integer_cst 0 - operand
+  if_stmt test26.cpp 196:13 - then
+   ne_expr - condition
+    nop_expr - operand
+     - isUsed: 1
+     parm_decl ptr1 test26.cpp 192:30 - operand
+      pointer_type - decl type
+       record_type - nested type
+        type_decl Data1 test26.cpp 6:8 - type name
+        - isAutogenerated: 1
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+        field_decl ptrval test26.cpp 18:12 - field
+        - unsigned
+         integer_cst 64 - decl size
+        field_decl arr test26.cpp 19:14 - field
+        - signed
+         integer_cst 96 - decl size
+        field_decl str1 test26.cpp 20:17 - field
+        - signed
+         integer_cst 64 - decl size
+        type_decl Data1 test26.cpp 7:1 - field
+        - isAutogenerated: 1
+      integer_cst 64 - parm size
+    integer_cst 0 - operand
+   cleanup_point_expr test26.cpp 197:32 - then
+    expr_stmt test26.cpp 197:32 - operand
+     convert_expr - expresssion
+      modify_expr - operand
+       component_ref test26.cpp 197:23 - operand
+        indirect_ref - object
+         nop_expr - ref
+          - isUsed: 1
+          parm_decl ptr1 test26.cpp 192:30 - operand
+           pointer_type - decl type
+            record_type - nested type
+             type_decl Data1 test26.cpp 6:8 - type name
+             - isAutogenerated: 1
+             field_decl val test26.cpp 17:9 - field
+             - signed
+              integer_cst 32 - decl size
+             field_decl ptrval test26.cpp 18:12 - field
+             - unsigned
+              integer_cst 64 - decl size
+             field_decl arr test26.cpp 19:14 - field
+             - signed
+              integer_cst 96 - decl size
+             field_decl str1 test26.cpp 20:17 - field
+             - signed
+              integer_cst 64 - decl size
+             type_decl Data1 test26.cpp 7:1 - field
+             - isAutogenerated: 1
+           integer_cst 64 - parm size
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+       integer_cst 100 - operand
+function_decl func11 test26.cpp 201:10
+- isPublic: 1
+ method_type - function type
+  void_type - method return type
+   type_decl void <built-in> 0:0 - type name
+   - isAutogenerated: 1
+  record_type - method base type
+   type_decl Object1 test26.cpp 42:7 - type name
+   - isAutogenerated: 1
+   type_decl Object1 test26.cpp 43:1 - field
+   - isAutogenerated: 1
+  tree_list - arg types
+   pointer_type - value
+    record_type - nested type
+     type_decl Object1 test26.cpp 42:7 - type name
+     - isAutogenerated: 1
+     type_decl Object1 test26.cpp 43:1 - field
+     - isAutogenerated: 1
+   tree_list - chain
+    pointer_type - value
+     record_type - nested type
+      type_decl Data1 test26.cpp 6:8 - type name
+      - isAutogenerated: 1
+      field_decl val test26.cpp 17:9 - field
+      - signed
+       integer_cst 32 - decl size
+      field_decl ptrval test26.cpp 18:12 - field
+      - unsigned
+       integer_cst 64 - decl size
+      field_decl arr test26.cpp 19:14 - field
+      - signed
+       integer_cst 96 - decl size
+      field_decl str1 test26.cpp 20:17 - field
+      - signed
+       integer_cst 64 - decl size
+      type_decl Data1 test26.cpp 7:1 - field
+      - isAutogenerated: 1
+    tree_list - chain
+     void_type - value
+      type_decl void <built-in> 0:0 - type name
+      - isAutogenerated: 1
+ result_decl test26.cpp 202:5 - function result
+ - isAutogenerated: 1
+  void_type - result type
+   type_decl void <built-in> 0:0 - type name
+   - isAutogenerated: 1
+ parm_decl this test26.cpp 201:34 - argument
+ - isAutogenerated: 1
+  pointer_type - decl type
+   record_type - nested type
+    type_decl Object1 test26.cpp 42:7 - type name
+    - isAutogenerated: 1
+    type_decl Object1 test26.cpp 43:1 - field
+    - isAutogenerated: 1
+  integer_cst 64 - parm size
+ - isUsed: 1
+ parm_decl ptr1 test26.cpp 201:30 - argument
+  pointer_type - decl type
+   record_type - nested type
+    type_decl Data1 test26.cpp 6:8 - type name
+    - isAutogenerated: 1
+    field_decl val test26.cpp 17:9 - field
+    - signed
+     integer_cst 32 - decl size
+    field_decl ptrval test26.cpp 18:12 - field
+    - unsigned
+     integer_cst 64 - decl size
+    field_decl arr test26.cpp 19:14 - field
+    - signed
+     integer_cst 96 - decl size
+    field_decl str1 test26.cpp 20:17 - field
+    - signed
+     integer_cst 64 - decl size
+    type_decl Data1 test26.cpp 7:1 - field
+    - isAutogenerated: 1
+  integer_cst 64 - parm size
+ if_stmt test26.cpp 203:9 - code
+  truth_andif_expr test26.cpp 203:18 - condition
+   ne_expr - operand
+    nop_expr - operand
+     - isUsed: 1
+     parm_decl ptr1 test26.cpp 201:30 - operand
+      pointer_type - decl type
+       record_type - nested type
+        type_decl Data1 test26.cpp 6:8 - type name
+        - isAutogenerated: 1
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+        field_decl ptrval test26.cpp 18:12 - field
+        - unsigned
+         integer_cst 64 - decl size
+        field_decl arr test26.cpp 19:14 - field
+        - signed
+         integer_cst 96 - decl size
+        field_decl str1 test26.cpp 20:17 - field
+        - signed
+         integer_cst 64 - decl size
+        type_decl Data1 test26.cpp 7:1 - field
+        - isAutogenerated: 1
+      integer_cst 64 - parm size
+    integer_cst 0 - operand
+   eq_expr test26.cpp 203:23 - operand
+    var_decl k test26.cpp 40:5 - operand
+    - isUsed: 1
+     integer_cst 32 - decl size
+     integer_type - var type
+     - precisionBits: 32
+     - signed
+      type_decl int <built-in> 0:0 - type name
+      - isAutogenerated: 1
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
+    integer_cst 10 - operand
+  if_stmt test26.cpp 205:13 - then
+   ne_expr - condition
+    nop_expr - operand
+     - isUsed: 1
+     parm_decl ptr1 test26.cpp 201:30 - operand
+      pointer_type - decl type
+       record_type - nested type
+        type_decl Data1 test26.cpp 6:8 - type name
+        - isAutogenerated: 1
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+        field_decl ptrval test26.cpp 18:12 - field
+        - unsigned
+         integer_cst 64 - decl size
+        field_decl arr test26.cpp 19:14 - field
+        - signed
+         integer_cst 96 - decl size
+        field_decl str1 test26.cpp 20:17 - field
+        - signed
+         integer_cst 64 - decl size
+        type_decl Data1 test26.cpp 7:1 - field
+        - isAutogenerated: 1
+      integer_cst 64 - parm size
+    integer_cst 0 - operand
+   cleanup_point_expr test26.cpp 206:32 - then
+    expr_stmt test26.cpp 206:32 - operand
+     convert_expr - expresssion
+      modify_expr - operand
+       component_ref test26.cpp 206:23 - operand
+        indirect_ref - object
+         nop_expr - ref
+          - isUsed: 1
+          parm_decl ptr1 test26.cpp 201:30 - operand
+           pointer_type - decl type
+            record_type - nested type
+             type_decl Data1 test26.cpp 6:8 - type name
+             - isAutogenerated: 1
+             field_decl val test26.cpp 17:9 - field
+             - signed
+              integer_cst 32 - decl size
+             field_decl ptrval test26.cpp 18:12 - field
+             - unsigned
+              integer_cst 64 - decl size
+             field_decl arr test26.cpp 19:14 - field
+             - signed
+              integer_cst 96 - decl size
+             field_decl str1 test26.cpp 20:17 - field
+             - signed
+              integer_cst 64 - decl size
+             type_decl Data1 test26.cpp 7:1 - field
+             - isAutogenerated: 1
+           integer_cst 64 - parm size
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+       integer_cst 100 - operand
+function_decl func12 test26.cpp 210:10
+- isPublic: 1
+ method_type - function type
+  void_type - method return type
+   type_decl void <built-in> 0:0 - type name
+   - isAutogenerated: 1
+  record_type - method base type
+   type_decl Object1 test26.cpp 42:7 - type name
+   - isAutogenerated: 1
+   type_decl Object1 test26.cpp 43:1 - field
+   - isAutogenerated: 1
+  tree_list - arg types
+   pointer_type - value
+    record_type - nested type
+     type_decl Object1 test26.cpp 42:7 - type name
+     - isAutogenerated: 1
+     type_decl Object1 test26.cpp 43:1 - field
+     - isAutogenerated: 1
+   tree_list - chain
+    pointer_type - value
+     record_type - nested type
+      type_decl Data1 test26.cpp 6:8 - type name
+      - isAutogenerated: 1
+      field_decl val test26.cpp 17:9 - field
+      - signed
+       integer_cst 32 - decl size
+      field_decl ptrval test26.cpp 18:12 - field
+      - unsigned
+       integer_cst 64 - decl size
+      field_decl arr test26.cpp 19:14 - field
+      - signed
+       integer_cst 96 - decl size
+      field_decl str1 test26.cpp 20:17 - field
+      - signed
+       integer_cst 64 - decl size
+      type_decl Data1 test26.cpp 7:1 - field
+      - isAutogenerated: 1
+    tree_list - chain
+     void_type - value
+      type_decl void <built-in> 0:0 - type name
+      - isAutogenerated: 1
+ result_decl test26.cpp 211:5 - function result
+ - isAutogenerated: 1
+  void_type - result type
+   type_decl void <built-in> 0:0 - type name
+   - isAutogenerated: 1
+ parm_decl this test26.cpp 210:34 - argument
+ - isAutogenerated: 1
+  pointer_type - decl type
+   record_type - nested type
+    type_decl Object1 test26.cpp 42:7 - type name
+    - isAutogenerated: 1
+    type_decl Object1 test26.cpp 43:1 - field
+    - isAutogenerated: 1
+  integer_cst 64 - parm size
+ - isUsed: 1
+ parm_decl ptr1 test26.cpp 210:30 - argument
+  pointer_type - decl type
+   record_type - nested type
+    type_decl Data1 test26.cpp 6:8 - type name
+    - isAutogenerated: 1
+    field_decl val test26.cpp 17:9 - field
+    - signed
+     integer_cst 32 - decl size
+    field_decl ptrval test26.cpp 18:12 - field
+    - unsigned
+     integer_cst 64 - decl size
+    field_decl arr test26.cpp 19:14 - field
+    - signed
+     integer_cst 96 - decl size
+    field_decl str1 test26.cpp 20:17 - field
+    - signed
+     integer_cst 64 - decl size
+    type_decl Data1 test26.cpp 7:1 - field
+    - isAutogenerated: 1
+  integer_cst 64 - parm size
+ if_stmt test26.cpp 212:9 - code
+  truth_orif_expr test26.cpp 212:18 - condition
+   ne_expr - operand
+    nop_expr - operand
+     - isUsed: 1
+     parm_decl ptr1 test26.cpp 210:30 - operand
+      pointer_type - decl type
+       record_type - nested type
+        type_decl Data1 test26.cpp 6:8 - type name
+        - isAutogenerated: 1
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+        field_decl ptrval test26.cpp 18:12 - field
+        - unsigned
+         integer_cst 64 - decl size
+        field_decl arr test26.cpp 19:14 - field
+        - signed
+         integer_cst 96 - decl size
+        field_decl str1 test26.cpp 20:17 - field
+        - signed
+         integer_cst 64 - decl size
+        type_decl Data1 test26.cpp 7:1 - field
+        - isAutogenerated: 1
+      integer_cst 64 - parm size
+    integer_cst 0 - operand
+   eq_expr test26.cpp 212:23 - operand
+    var_decl k test26.cpp 40:5 - operand
+    - isUsed: 1
+     integer_cst 32 - decl size
+     integer_type - var type
+     - precisionBits: 32
+     - signed
+      type_decl int <built-in> 0:0 - type name
+      - isAutogenerated: 1
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
+    integer_cst 10 - operand
+  if_stmt test26.cpp 214:13 - then
+   ne_expr - condition
+    nop_expr - operand
+     - isUsed: 1
+     parm_decl ptr1 test26.cpp 210:30 - operand
+      pointer_type - decl type
+       record_type - nested type
+        type_decl Data1 test26.cpp 6:8 - type name
+        - isAutogenerated: 1
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+        field_decl ptrval test26.cpp 18:12 - field
+        - unsigned
+         integer_cst 64 - decl size
+        field_decl arr test26.cpp 19:14 - field
+        - signed
+         integer_cst 96 - decl size
+        field_decl str1 test26.cpp 20:17 - field
+        - signed
+         integer_cst 64 - decl size
+        type_decl Data1 test26.cpp 7:1 - field
+        - isAutogenerated: 1
+      integer_cst 64 - parm size
+    integer_cst 0 - operand
+   cleanup_point_expr test26.cpp 215:32 - then
+    expr_stmt test26.cpp 215:32 - operand
+     convert_expr - expresssion
+      modify_expr - operand
+       component_ref test26.cpp 215:23 - operand
+        indirect_ref - object
+         nop_expr - ref
+          - isUsed: 1
+          parm_decl ptr1 test26.cpp 210:30 - operand
+           pointer_type - decl type
+            record_type - nested type
+             type_decl Data1 test26.cpp 6:8 - type name
+             - isAutogenerated: 1
+             field_decl val test26.cpp 17:9 - field
+             - signed
+              integer_cst 32 - decl size
+             field_decl ptrval test26.cpp 18:12 - field
+             - unsigned
+              integer_cst 64 - decl size
+             field_decl arr test26.cpp 19:14 - field
+             - signed
+              integer_cst 96 - decl size
+             field_decl str1 test26.cpp 20:17 - field
+             - signed
+              integer_cst 64 - decl size
+             type_decl Data1 test26.cpp 7:1 - field
+             - isAutogenerated: 1
+           integer_cst 64 - parm size
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+       integer_cst 100 - operand
+function_decl func13 test26.cpp 219:10
+- isPublic: 1
+ method_type - function type
+  void_type - method return type
+   type_decl void <built-in> 0:0 - type name
+   - isAutogenerated: 1
+  record_type - method base type
+   type_decl Object1 test26.cpp 42:7 - type name
+   - isAutogenerated: 1
+   type_decl Object1 test26.cpp 43:1 - field
+   - isAutogenerated: 1
+  tree_list - arg types
+   pointer_type - value
+    record_type - nested type
+     type_decl Object1 test26.cpp 42:7 - type name
+     - isAutogenerated: 1
+     type_decl Object1 test26.cpp 43:1 - field
+     - isAutogenerated: 1
+   tree_list - chain
+    pointer_type - value
+     record_type - nested type
+      type_decl Data1 test26.cpp 6:8 - type name
+      - isAutogenerated: 1
+      field_decl val test26.cpp 17:9 - field
+      - signed
+       integer_cst 32 - decl size
+      field_decl ptrval test26.cpp 18:12 - field
+      - unsigned
+       integer_cst 64 - decl size
+      field_decl arr test26.cpp 19:14 - field
+      - signed
+       integer_cst 96 - decl size
+      field_decl str1 test26.cpp 20:17 - field
+      - signed
+       integer_cst 64 - decl size
+      type_decl Data1 test26.cpp 7:1 - field
+      - isAutogenerated: 1
+    tree_list - chain
+     void_type - value
+      type_decl void <built-in> 0:0 - type name
+      - isAutogenerated: 1
+ result_decl test26.cpp 220:5 - function result
+ - isAutogenerated: 1
+  void_type - result type
+   type_decl void <built-in> 0:0 - type name
+   - isAutogenerated: 1
+ parm_decl this test26.cpp 219:34 - argument
+ - isAutogenerated: 1
+  pointer_type - decl type
+   record_type - nested type
+    type_decl Object1 test26.cpp 42:7 - type name
+    - isAutogenerated: 1
+    type_decl Object1 test26.cpp 43:1 - field
+    - isAutogenerated: 1
+  integer_cst 64 - parm size
+ - isUsed: 1
+ parm_decl ptr1 test26.cpp 219:30 - argument
+  pointer_type - decl type
+   record_type - nested type
+    type_decl Data1 test26.cpp 6:8 - type name
+    - isAutogenerated: 1
+    field_decl val test26.cpp 17:9 - field
+    - signed
+     integer_cst 32 - decl size
+    field_decl ptrval test26.cpp 18:12 - field
+    - unsigned
+     integer_cst 64 - decl size
+    field_decl arr test26.cpp 19:14 - field
+    - signed
+     integer_cst 96 - decl size
+    field_decl str1 test26.cpp 20:17 - field
+    - signed
+     integer_cst 64 - decl size
+    type_decl Data1 test26.cpp 7:1 - field
+    - isAutogenerated: 1
+  integer_cst 64 - parm size
+ if_stmt test26.cpp 221:9 - code
+  truth_andif_expr test26.cpp 221:18 - condition
+   ne_expr - operand
+    nop_expr - operand
+     - isUsed: 1
+     parm_decl ptr1 test26.cpp 219:30 - operand
+      pointer_type - decl type
+       record_type - nested type
+        type_decl Data1 test26.cpp 6:8 - type name
+        - isAutogenerated: 1
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+        field_decl ptrval test26.cpp 18:12 - field
+        - unsigned
+         integer_cst 64 - decl size
+        field_decl arr test26.cpp 19:14 - field
+        - signed
+         integer_cst 96 - decl size
+        field_decl str1 test26.cpp 20:17 - field
+        - signed
+         integer_cst 64 - decl size
+        type_decl Data1 test26.cpp 7:1 - field
+        - isAutogenerated: 1
+      integer_cst 64 - parm size
+    integer_cst 0 - operand
+   eq_expr test26.cpp 221:23 - operand
+    var_decl k test26.cpp 40:5 - operand
+    - isUsed: 1
+     integer_cst 32 - decl size
+     integer_type - var type
+     - precisionBits: 32
+     - signed
+      type_decl int <built-in> 0:0 - type name
+      - isAutogenerated: 1
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
+    integer_cst 10 - operand
+  return_expr test26.cpp 223:13 - then
+  if_stmt test26.cpp 227:13 - else
+   ne_expr - condition
+    nop_expr - operand
+     - isUsed: 1
+     parm_decl ptr1 test26.cpp 219:30 - operand
+      pointer_type - decl type
+       record_type - nested type
+        type_decl Data1 test26.cpp 6:8 - type name
+        - isAutogenerated: 1
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+        field_decl ptrval test26.cpp 18:12 - field
+        - unsigned
+         integer_cst 64 - decl size
+        field_decl arr test26.cpp 19:14 - field
+        - signed
+         integer_cst 96 - decl size
+        field_decl str1 test26.cpp 20:17 - field
+        - signed
+         integer_cst 64 - decl size
+        type_decl Data1 test26.cpp 7:1 - field
+        - isAutogenerated: 1
+      integer_cst 64 - parm size
+    integer_cst 0 - operand
+   cleanup_point_expr test26.cpp 228:32 - then
+    expr_stmt test26.cpp 228:32 - operand
+     convert_expr - expresssion
+      modify_expr - operand
+       component_ref test26.cpp 228:23 - operand
+        indirect_ref - object
+         nop_expr - ref
+          - isUsed: 1
+          parm_decl ptr1 test26.cpp 219:30 - operand
+           pointer_type - decl type
+            record_type - nested type
+             type_decl Data1 test26.cpp 6:8 - type name
+             - isAutogenerated: 1
+             field_decl val test26.cpp 17:9 - field
+             - signed
+              integer_cst 32 - decl size
+             field_decl ptrval test26.cpp 18:12 - field
+             - unsigned
+              integer_cst 64 - decl size
+             field_decl arr test26.cpp 19:14 - field
+             - signed
+              integer_cst 96 - decl size
+             field_decl str1 test26.cpp 20:17 - field
+             - signed
+              integer_cst 64 - decl size
+             type_decl Data1 test26.cpp 7:1 - field
+             - isAutogenerated: 1
+           integer_cst 64 - parm size
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+       integer_cst 100 - operand
+function_decl func14 test26.cpp 232:10
+- isPublic: 1
+ method_type - function type
+  void_type - method return type
+   type_decl void <built-in> 0:0 - type name
+   - isAutogenerated: 1
+  record_type - method base type
+   type_decl Object1 test26.cpp 42:7 - type name
+   - isAutogenerated: 1
+   type_decl Object1 test26.cpp 43:1 - field
+   - isAutogenerated: 1
+  tree_list - arg types
+   pointer_type - value
+    record_type - nested type
+     type_decl Object1 test26.cpp 42:7 - type name
+     - isAutogenerated: 1
+     type_decl Object1 test26.cpp 43:1 - field
+     - isAutogenerated: 1
+   tree_list - chain
+    pointer_type - value
+     record_type - nested type
+      type_decl Data1 test26.cpp 6:8 - type name
+      - isAutogenerated: 1
+      field_decl val test26.cpp 17:9 - field
+      - signed
+       integer_cst 32 - decl size
+      field_decl ptrval test26.cpp 18:12 - field
+      - unsigned
+       integer_cst 64 - decl size
+      field_decl arr test26.cpp 19:14 - field
+      - signed
+       integer_cst 96 - decl size
+      field_decl str1 test26.cpp 20:17 - field
+      - signed
+       integer_cst 64 - decl size
+      type_decl Data1 test26.cpp 7:1 - field
+      - isAutogenerated: 1
+    tree_list - chain
+     void_type - value
+      type_decl void <built-in> 0:0 - type name
+      - isAutogenerated: 1
+ result_decl test26.cpp 233:5 - function result
+ - isAutogenerated: 1
+  void_type - result type
+   type_decl void <built-in> 0:0 - type name
+   - isAutogenerated: 1
+ parm_decl this test26.cpp 232:34 - argument
+ - isAutogenerated: 1
+  pointer_type - decl type
+   record_type - nested type
+    type_decl Object1 test26.cpp 42:7 - type name
+    - isAutogenerated: 1
+    type_decl Object1 test26.cpp 43:1 - field
+    - isAutogenerated: 1
+  integer_cst 64 - parm size
+ - isUsed: 1
+ parm_decl ptr1 test26.cpp 232:30 - argument
+  pointer_type - decl type
+   record_type - nested type
+    type_decl Data1 test26.cpp 6:8 - type name
+    - isAutogenerated: 1
+    field_decl val test26.cpp 17:9 - field
+    - signed
+     integer_cst 32 - decl size
+    field_decl ptrval test26.cpp 18:12 - field
+    - unsigned
+     integer_cst 64 - decl size
+    field_decl arr test26.cpp 19:14 - field
+    - signed
+     integer_cst 96 - decl size
+    field_decl str1 test26.cpp 20:17 - field
+    - signed
+     integer_cst 64 - decl size
+    type_decl Data1 test26.cpp 7:1 - field
+    - isAutogenerated: 1
+  integer_cst 64 - parm size
+ if_stmt test26.cpp 234:9 - code
+  truth_orif_expr test26.cpp 234:18 - condition
+   ne_expr - operand
+    nop_expr - operand
+     - isUsed: 1
+     parm_decl ptr1 test26.cpp 232:30 - operand
+      pointer_type - decl type
+       record_type - nested type
+        type_decl Data1 test26.cpp 6:8 - type name
+        - isAutogenerated: 1
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+        field_decl ptrval test26.cpp 18:12 - field
+        - unsigned
+         integer_cst 64 - decl size
+        field_decl arr test26.cpp 19:14 - field
+        - signed
+         integer_cst 96 - decl size
+        field_decl str1 test26.cpp 20:17 - field
+        - signed
+         integer_cst 64 - decl size
+        type_decl Data1 test26.cpp 7:1 - field
+        - isAutogenerated: 1
+      integer_cst 64 - parm size
+    integer_cst 0 - operand
+   eq_expr test26.cpp 234:23 - operand
+    var_decl k test26.cpp 40:5 - operand
+    - isUsed: 1
+     integer_cst 32 - decl size
+     integer_type - var type
+     - precisionBits: 32
+     - signed
+      type_decl int <built-in> 0:0 - type name
+      - isAutogenerated: 1
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
+    integer_cst 10 - operand
+  return_expr test26.cpp 236:13 - then
+  if_stmt test26.cpp 240:13 - else
+   ne_expr - condition
+    nop_expr - operand
+     - isUsed: 1
+     parm_decl ptr1 test26.cpp 232:30 - operand
+      pointer_type - decl type
+       record_type - nested type
+        type_decl Data1 test26.cpp 6:8 - type name
+        - isAutogenerated: 1
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+        field_decl ptrval test26.cpp 18:12 - field
+        - unsigned
+         integer_cst 64 - decl size
+        field_decl arr test26.cpp 19:14 - field
+        - signed
+         integer_cst 96 - decl size
+        field_decl str1 test26.cpp 20:17 - field
+        - signed
+         integer_cst 64 - decl size
+        type_decl Data1 test26.cpp 7:1 - field
+        - isAutogenerated: 1
+      integer_cst 64 - parm size
+    integer_cst 0 - operand
+   cleanup_point_expr test26.cpp 241:32 - then
+    expr_stmt test26.cpp 241:32 - operand
+     convert_expr - expresssion
+      modify_expr - operand
+       component_ref test26.cpp 241:23 - operand
+        indirect_ref - object
+         nop_expr - ref
+          - isUsed: 1
+          parm_decl ptr1 test26.cpp 232:30 - operand
+           pointer_type - decl type
+            record_type - nested type
+             type_decl Data1 test26.cpp 6:8 - type name
+             - isAutogenerated: 1
+             field_decl val test26.cpp 17:9 - field
+             - signed
+              integer_cst 32 - decl size
+             field_decl ptrval test26.cpp 18:12 - field
+             - unsigned
+              integer_cst 64 - decl size
+             field_decl arr test26.cpp 19:14 - field
+             - signed
+              integer_cst 96 - decl size
+             field_decl str1 test26.cpp 20:17 - field
+             - signed
+              integer_cst 64 - decl size
+             type_decl Data1 test26.cpp 7:1 - field
+             - isAutogenerated: 1
+           integer_cst 64 - parm size
+        field_decl val test26.cpp 17:9 - field
+        - signed
+         integer_cst 32 - decl size
+       integer_cst 100 - operand
 function_decl c_str /usr/include/c++/5/bits/basic_string.h 4215:7
 - isExternal: 1
 - isPublic: 1

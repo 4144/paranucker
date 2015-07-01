@@ -13744,7 +13744,12 @@ integer_cst 0: ptr1,
 eq_expr : ptr1, 
 var_decl k: ptr1, 
 integer_cst 1: ptr1, 
-return_expr : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 10: ptr1, 
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
@@ -13766,7 +13771,12 @@ integer_cst 0: ptr1,
 eq_expr : 
 var_decl k: 
 integer_cst 2: 
-return_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 20: 
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
@@ -13788,29 +13798,39 @@ integer_cst 0: ptr1,
 eq_expr : 
 var_decl k: 
 integer_cst 1: 
-return_expr : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 30: ptr1, 
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
-ne_expr : 
-parm_decl ptr1: 
-pointer_type : 
-record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-field_decl ptrval: 
-integer_cst 64: 
-field_decl arr: 
-integer_cst 96: 
-field_decl str1: 
-integer_cst 64: 
-type_decl Data1: 
-integer_cst 64: 
-integer_cst 0: 
-eq_expr : 
-var_decl k: 
-integer_cst 2: 
-return_expr : ptr1, 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+eq_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 2: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 40: ptr1, 
 statement_list : 
 if_stmt : 
 truth_andif_expr : 
@@ -13833,7 +13853,12 @@ integer_cst 0:
 eq_expr : 
 var_decl k: 
 integer_cst 4: 
-return_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 50: 
 if_stmt : 
 truth_andif_expr : 
 ne_expr : 
@@ -13855,7 +13880,12 @@ integer_cst 0:
 eq_expr : 
 var_decl k: 
 integer_cst 5: 
-return_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 60: 
 if_stmt : 
 truth_orif_expr : 
 eq_expr : 
@@ -13877,7 +13907,12 @@ integer_cst 0:
 eq_expr : 
 var_decl k: 
 integer_cst 4: 
-return_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 70: 
 if_stmt : 
 truth_orif_expr : 
 ne_expr : 
@@ -13899,7 +13934,12 @@ integer_cst 0:
 eq_expr : 
 var_decl k: 
 integer_cst 5: 
-return_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 80: 
 function_decl func7: 
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
@@ -13950,7 +13990,12 @@ integer_cst 0: ptr1,
 eq_expr : 
 var_decl k: 
 integer_cst 1: 
-return_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 10: 
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
@@ -13972,7 +14017,12 @@ integer_cst 0: ptr1,
 eq_expr : ptr1, 
 var_decl k: ptr1, 
 integer_cst 2: ptr1, 
-return_expr : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 20: ptr1, 
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 ne_expr : ptr1, 
@@ -13994,7 +14044,12 @@ integer_cst 0: ptr1,
 eq_expr : ptr1, 
 var_decl k: ptr1, 
 integer_cst 1: ptr1, 
-return_expr : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 30: ptr1, 
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
@@ -14016,7 +14071,12 @@ integer_cst 0: ptr1,
 eq_expr : 
 var_decl k: 
 integer_cst 2: 
-return_expr : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 40: ptr1, 
 statement_list : ptr1, 
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
@@ -14039,7 +14099,12 @@ integer_cst 0: ptr1,
 eq_expr : 
 var_decl k: 
 integer_cst 4: 
-return_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 50: 
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
@@ -14061,7 +14126,12 @@ integer_cst 0: ptr1,
 eq_expr : ptr1, 
 var_decl k: ptr1, 
 integer_cst 5: ptr1, 
-return_expr : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 60: ptr1, 
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 ne_expr : ptr1, 
@@ -14083,7 +14153,12 @@ integer_cst 0: ptr1,
 eq_expr : ptr1, 
 var_decl k: ptr1, 
 integer_cst 4: ptr1, 
-return_expr : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 70: ptr1, 
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
@@ -14105,7 +14180,12 @@ integer_cst 0: ptr1,
 eq_expr : 
 var_decl k: 
 integer_cst 5: 
-return_expr : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 80: ptr1, 
 function_decl func8: 
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
@@ -14160,80 +14240,72 @@ integer_cst 0: ptr1,
 eq_expr : 
 var_decl k: 
 integer_cst 1: 
-return_expr : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 10: ptr1, 
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
-ne_expr : 
-parm_decl ptr1: 
-pointer_type : 
-record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-field_decl ptrval: 
-integer_cst 64: 
-field_decl arr: 
-integer_cst 96: 
-field_decl str1: 
-integer_cst 64: 
-type_decl Data1: 
-integer_cst 64: 
-integer_cst 0: 
-eq_expr : 
-var_decl k: 
-integer_cst 2: 
-return_expr : ptr1, 
-if_stmt : ptr1, 
-truth_andif_expr : ptr1, 
-eq_expr : 
-test26.cpp:148:18: warning: Useless variable check 'ptr1'. It already was checked before
-             if (!ptr1 && k == 1)
-                  ^
-parm_decl ptr1: 
-pointer_type : 
-record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-field_decl ptrval: 
-integer_cst 64: 
-field_decl arr: 
-integer_cst 96: 
-field_decl str1: 
-integer_cst 64: 
-type_decl Data1: 
-integer_cst 64: 
-integer_cst 0: 
-eq_expr : 
-var_decl k: 
-integer_cst 1: 
-return_expr : ptr1, 
-if_stmt : ptr1, 
-truth_andif_expr : ptr1, 
-ne_expr : 
-parm_decl ptr1: 
-pointer_type : 
-record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-field_decl ptrval: 
-integer_cst 64: 
-field_decl arr: 
-integer_cst 96: 
-field_decl str1: 
-integer_cst 64: 
-type_decl Data1: 
-integer_cst 64: 
-integer_cst 0: 
-eq_expr : 
-var_decl k: 
-integer_cst 2: 
-return_expr : ptr1, 
-statement_list : ptr1, 
-if_stmt : ptr1, 
-truth_orif_expr : ptr1, 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 2: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 20: ptr1, 
+if_stmt : ptr1, 
+truth_andif_expr : ptr1, 
+eq_expr : ptr1, 
+test26.cpp:148:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 && k == 3)
+                  ^
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+eq_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 3: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 30: ptr1, 
+if_stmt : ptr1, 
+truth_andif_expr : ptr1, 
+ne_expr : ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -14252,79 +14324,127 @@ integer_cst 0: ptr1,
 eq_expr : 
 var_decl k: 
 integer_cst 4: 
-return_expr : ptr1, 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 40: 
+statement_list : ptr1, 
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
-ne_expr : 
-test26.cpp:157:22: warning: Useless variable check 'ptr1'. It already was checked before
-             if (ptr1 || k == 5)
-                      ^
-parm_decl ptr1: 
-pointer_type : 
-record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-field_decl ptrval: 
-integer_cst 64: 
-field_decl arr: 
-integer_cst 96: 
-field_decl str1: 
-integer_cst 64: 
-type_decl Data1: 
-integer_cst 64: 
-integer_cst 0: 
+eq_expr : ptr1, 
+test26.cpp:155:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 || k == 5)
+                  ^
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
 eq_expr : 
 var_decl k: 
 integer_cst 5: 
-return_expr : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 50: ptr1, 
+if_stmt : ptr1, 
+truth_orif_expr : ptr1, 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+eq_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 6: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 60: ptr1, 
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
-eq_expr : 
-parm_decl ptr1: 
-pointer_type : 
-record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-field_decl ptrval: 
-integer_cst 64: 
-field_decl arr: 
-integer_cst 96: 
-field_decl str1: 
-integer_cst 64: 
-type_decl Data1: 
-integer_cst 64: 
-integer_cst 0: 
-eq_expr : 
-var_decl k: 
-integer_cst 4: 
-return_expr : ptr1, 
+eq_expr : ptr1, 
+test26.cpp:159:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 && k == 7)
+                  ^
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+eq_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 7: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 70: ptr1, 
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
-ne_expr : 
-test26.cpp:161:22: warning: Useless variable check 'ptr1'. It already was checked before
-             if (ptr1 && k == 5)
-                      ^
-parm_decl ptr1: 
-pointer_type : 
-record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-field_decl ptrval: 
-integer_cst 64: 
-field_decl arr: 
-integer_cst 96: 
-field_decl str1: 
-integer_cst 64: 
-type_decl Data1: 
-integer_cst 64: 
-integer_cst 0: 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
 eq_expr : 
 var_decl k: 
-integer_cst 5: 
-return_expr : ptr1, 
+integer_cst 8: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 80: 
 function_decl func9: 
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
@@ -14379,10 +14499,18 @@ integer_cst 0:
 eq_expr : 
 var_decl k: 
 integer_cst 1: 
-return_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 10: 
 if_stmt : 
 truth_orif_expr : 
 eq_expr : 
+test26.cpp:172:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 || k == 2)
+                  ^
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -14401,12 +14529,17 @@ integer_cst 0:
 eq_expr : 
 var_decl k: 
 integer_cst 2: 
-return_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 20: 
 if_stmt : 
 truth_andif_expr : 
 ne_expr : 
 test26.cpp:174:22: warning: Useless variable check 'ptr1'. It already was checked before
-             if (ptr1 && k == 1)
+             if (ptr1 && k == 3)
                       ^
 parm_decl ptr1: 
 pointer_type : 
@@ -14425,11 +14558,19 @@ integer_cst 64:
 integer_cst 0: 
 eq_expr : 
 var_decl k: 
-integer_cst 1: 
-return_expr : 
+integer_cst 3: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 30: 
 if_stmt : 
 truth_andif_expr : 
 eq_expr : 
+test26.cpp:176:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 && k == 4)
+                  ^
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -14447,8 +14588,13 @@ integer_cst 64:
 integer_cst 0: 
 eq_expr : 
 var_decl k: 
-integer_cst 2: 
-return_expr : 
+integer_cst 4: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 40: 
 statement_list : ptr1, 
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
@@ -14470,13 +14616,18 @@ integer_cst 64: ptr1,
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
 var_decl k: ptr1, 
-integer_cst 4: ptr1, 
-return_expr : ptr1, 
+integer_cst 5: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 50: ptr1, 
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
 test26.cpp:183:18: warning: Useless variable check 'ptr1'. It already was checked before
-             if (!ptr1 || k == 5)
+             if (!ptr1 || k == 6)
                   ^
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
@@ -14495,36 +14646,94 @@ integer_cst 64: ptr1,
 integer_cst 0: ptr1, 
 eq_expr : 
 var_decl k: 
-integer_cst 5: 
-return_expr : ptr1, 
+integer_cst 6: 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 60: ptr1, 
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
-ne_expr : 
-parm_decl ptr1: 
-pointer_type : 
-record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-field_decl ptrval: 
-integer_cst 64: 
-field_decl arr: 
-integer_cst 96: 
-field_decl str1: 
-integer_cst 64: 
-type_decl Data1: 
-integer_cst 64: 
-integer_cst 0: 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
 eq_expr : 
 var_decl k: 
-integer_cst 4: 
-return_expr : ptr1, 
+integer_cst 7: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 70: 
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
-eq_expr : 
+eq_expr : ptr1, 
 test26.cpp:187:18: warning: Useless variable check 'ptr1'. It already was checked before
-             if (!ptr1 && k == 5)
+             if (!ptr1 && k == 8)
                   ^
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+eq_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 8: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 80: ptr1, 
+function_decl func10: 
+if_stmt : ptr1, 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+if_stmt : 
+ne_expr : 
+test26.cpp: In member function 'void Object1::func10(Data1*)':
+test26.cpp:196:13: warning: Useless variable check 'ptr1'. It already was checked before
+             if (ptr1)
+             ^
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -14540,10 +14749,307 @@ integer_cst 64:
 type_decl Data1: 
 integer_cst 64: 
 integer_cst 0: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_cst 100: 
+function_decl func11: 
+if_stmt : ptr1, 
+truth_andif_expr : ptr1, 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
 eq_expr : 
 var_decl k: 
-integer_cst 5: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 10: 
+if_stmt : 
+ne_expr : 
+test26.cpp: In member function 'void Object1::func11(Data1*)':
+test26.cpp:205:13: warning: Useless variable check 'ptr1'. It already was checked before
+             if (ptr1)
+             ^
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+integer_cst 0: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_cst 100: 
+function_decl func12: 
+if_stmt : ptr1, 
+truth_orif_expr : ptr1, 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+eq_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 10: ptr1, 
+if_stmt : ptr1, 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_cst 100: 
+function_decl func13: 
+if_stmt : ptr1, 
+truth_andif_expr : ptr1, 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+eq_expr : 
+var_decl k: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 10: 
+return_expr : 
+if_stmt : ptr1, 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_cst 100: 
+function_decl func14: 
+if_stmt : ptr1, 
+truth_orif_expr : ptr1, 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+eq_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 10: ptr1, 
 return_expr : ptr1, 
+if_stmt : ptr1, 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_cst 100: 
 function_decl c_str: 
 function_decl __stoa: 
 bind_expr : __convf, __idx, __name, __str, 

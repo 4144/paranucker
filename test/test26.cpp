@@ -90,24 +90,24 @@ class Object1
         if (!ptr1 || k == 3)
         {
             if (!ptr1 && k == 1)
-                return;
+                k = 10;
             if (ptr1 && k == 2)
-                return;
+                k = 20;
             if (!ptr1 || k == 1)
-                return;
+                k = 30;
             if (ptr1 || k == 2)
-                return;
+                k = 40;
         }
         else
         {
             if (!ptr1 && k == 4)
-                return;
+                k = 50;
             if (ptr1 && k == 5)
-                return;
+                k = 60;
             if (!ptr1 || k == 4)
-                return;
+                k = 70;
             if (ptr1 || k == 5)
-                return;
+                k = 80;
         }
     }
 
@@ -116,24 +116,24 @@ class Object1
         if (ptr1 || k == 3)
         {
             if (ptr1 && k == 1)
-                return;
+                k = 10;
             if (!ptr1 && k == 2)
-                return;
+                k = 20;
             if (ptr1 || k == 1)
-                return;
+                k = 30;
             if (!ptr1 || k == 2)
-                return;
+                k = 40;
         }
         else
         {
             if (ptr1 && k == 4)
-                return;
+                k = 50;
             if (!ptr1 && k == 5)
-                return;
+                k = 60;
             if (ptr1 || k == 4)
-                return;
+                k = 70;
             if (!ptr1 || k == 5)
-                return;
+                k = 80;
         }
     }
 
@@ -142,24 +142,24 @@ class Object1
         if (!ptr1 && k == 3)
         {
             if (!ptr1 || k == 1)
-                return;
+                k = 10;
             if (ptr1 || k == 2)
-                return;
-            if (!ptr1 && k == 1)
-                return;
-            if (ptr1 && k == 2)
-                return;
+                k = 20;
+            if (!ptr1 && k == 3)
+                k = 30;
+            if (ptr1 && k == 4)
+                k = 40;
         }
         else
         {
-            if (!ptr1 || k == 4)
-                return;
-            if (ptr1 || k == 5)
-                return;
-            if (!ptr1 && k == 4)
-                return;
-            if (ptr1 && k == 5)
-                return;
+            if (!ptr1 || k == 5)
+                k = 50;
+            if (ptr1 || k == 6)
+                k = 60;
+            if (!ptr1 && k == 7)
+                k = 70;
+            if (ptr1 && k == 8)
+                k = 80;
         }
     }
 
@@ -168,24 +168,77 @@ class Object1
         if (ptr1 && k == 3)
         {
             if (ptr1 || k == 1)
-                return;
+                k = 10;
             if (!ptr1 || k == 2)
-                return;
-            if (ptr1 && k == 1)
-                return;
-            if (!ptr1 && k == 2)
-                return;
+                k = 20;
+            if (ptr1 && k == 3)
+                k = 30;
+            if (!ptr1 && k == 4)
+                k = 40;
         }
         else
         {
-            if (ptr1 || k == 4)
-                return;
-            if (!ptr1 || k == 5)
-                return;
-            if (ptr1 && k == 4)
-                return;
-            if (!ptr1 && k == 5)
-                return;
+            if (ptr1 || k == 5)
+                k = 50;
+            if (!ptr1 || k == 6)
+                k = 60;
+            if (ptr1 && k == 7)
+                k = 70;
+            if (!ptr1 && k == 8)
+                k = 80;
+        }
+    }
+
+    void func10(Data1 *const ptr1)
+    {
+        if (ptr1)
+        {
+            if (ptr1)
+                ptr1->val = 100;
+        }
+    }
+
+    void func11(Data1 *const ptr1)
+    {
+        if (ptr1 && k == 10)
+        {
+            if (ptr1)
+                ptr1->val = 100;
+        }
+    }
+
+    void func12(Data1 *const ptr1)
+    {
+        if (ptr1 || k == 10)
+        {
+            if (ptr1)
+                ptr1->val = 100;
+        }
+    }
+
+    void func13(Data1 *const ptr1)
+    {
+        if (ptr1 && k == 10)
+        {
+            return;
+        }
+        else
+        {
+            if (ptr1)
+                ptr1->val = 100;
+        }
+    }
+
+    void func14(Data1 *const ptr1)
+    {
+        if (ptr1 || k == 10)
+        {
+            return;
+        }
+        else
+        {
+            if (ptr1)
+                ptr1->val = 100;
         }
     }
 };
