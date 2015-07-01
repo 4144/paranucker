@@ -6,3 +6,29 @@ test26.cpp: In member function 'void Object1::func2(Data1*)':
 test26.cpp:57:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1 && k == 1)
                   ^
+test26.cpp: In member function 'void Object1::func8(Data1*)':
+test26.cpp:144:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 || k == 1)
+                  ^
+test26.cpp:148:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 && k == 1)
+                  ^
+test26.cpp:157:22: warning: Useless variable check 'ptr1'. It already was checked before
+             if (ptr1 || k == 5)
+                      ^
+test26.cpp:161:22: warning: Useless variable check 'ptr1'. It already was checked before
+             if (ptr1 && k == 5)
+                      ^
+test26.cpp: In member function 'void Object1::func9(Data1*)':
+test26.cpp:170:22: warning: Useless variable check 'ptr1'. It already was checked before
+             if (ptr1 || k == 1)
+                      ^
+test26.cpp:174:22: warning: Useless variable check 'ptr1'. It already was checked before
+             if (ptr1 && k == 1)
+                      ^
+test26.cpp:183:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 || k == 5)
+                  ^
+test26.cpp:187:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 && k == 5)
+                  ^

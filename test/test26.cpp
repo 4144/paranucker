@@ -84,4 +84,108 @@ class Object1
 
         delete ptr1;
     }
+
+    void func6(Data1 *const ptr1)
+    {
+        if (!ptr1 || k == 3)
+        {
+            if (!ptr1 && k == 1)
+                return;
+            if (ptr1 && k == 2)
+                return;
+            if (!ptr1 || k == 1)
+                return;
+            if (ptr1 || k == 2)
+                return;
+        }
+        else
+        {
+            if (!ptr1 && k == 4)
+                return;
+            if (ptr1 && k == 5)
+                return;
+            if (!ptr1 || k == 4)
+                return;
+            if (ptr1 || k == 5)
+                return;
+        }
+    }
+
+    void func7(Data1 *const ptr1)
+    {
+        if (ptr1 || k == 3)
+        {
+            if (ptr1 && k == 1)
+                return;
+            if (!ptr1 && k == 2)
+                return;
+            if (ptr1 || k == 1)
+                return;
+            if (!ptr1 || k == 2)
+                return;
+        }
+        else
+        {
+            if (ptr1 && k == 4)
+                return;
+            if (!ptr1 && k == 5)
+                return;
+            if (ptr1 || k == 4)
+                return;
+            if (!ptr1 || k == 5)
+                return;
+        }
+    }
+
+    void func8(Data1 *const ptr1)
+    {
+        if (!ptr1 && k == 3)
+        {
+            if (!ptr1 || k == 1)
+                return;
+            if (ptr1 || k == 2)
+                return;
+            if (!ptr1 && k == 1)
+                return;
+            if (ptr1 && k == 2)
+                return;
+        }
+        else
+        {
+            if (!ptr1 || k == 4)
+                return;
+            if (ptr1 || k == 5)
+                return;
+            if (!ptr1 && k == 4)
+                return;
+            if (ptr1 && k == 5)
+                return;
+        }
+    }
+
+    void func9(Data1 *const ptr1)
+    {
+        if (ptr1 && k == 3)
+        {
+            if (ptr1 || k == 1)
+                return;
+            if (!ptr1 || k == 2)
+                return;
+            if (ptr1 && k == 1)
+                return;
+            if (!ptr1 && k == 2)
+                return;
+        }
+        else
+        {
+            if (ptr1 || k == 4)
+                return;
+            if (!ptr1 || k == 5)
+                return;
+            if (ptr1 && k == 4)
+                return;
+            if (!ptr1 && k == 5)
+                return;
+        }
+    }
 };

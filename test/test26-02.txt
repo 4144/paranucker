@@ -311,6 +311,10 @@ test26.cpp: In static member function 'static void Object1::func5(Data2*)':
 test26.cpp:85:16: warning: Using parameter 'ptr1' without checking for null pointer
          delete ptr1;
                 ^
+func6: pointer_type ptr1, 
+func7: pointer_type ptr1, 
+func8: pointer_type ptr1, 
+func9: pointer_type ptr1, 
 __stoa: pointer_type __convf, pointer_type __name, pointer_type __str, pointer_type __idx, 
 __stoa: pointer_type __convf, pointer_type __name, pointer_type __str, pointer_type __idx, 
 __stoa: pointer_type __convf, pointer_type __name, pointer_type __str, pointer_type __idx, 
