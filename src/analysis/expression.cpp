@@ -23,6 +23,7 @@
 #include "logger.h"
 
 #include "analysis/analysis.h"
+#include "analysis/collections.h"
 #include "analysis/function.h"
 #include "analysis/reports.h"
 #include "analysis/statement.h"

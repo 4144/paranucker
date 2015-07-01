@@ -38,32 +38,9 @@ namespace Analysis
 
     int findBackLocation(Node *node);
 
-    void addNullVar(WalkItem &wi,
-                    const std::string &var);
-
-    void addLinkedVar(WalkItem &wi,
-                      std::string parent,
-                      const std::string &var);
-
-    void removeNeedCheckNullVar(WalkItem &wi, std::string str);
-
-    void removeNeedCheckNullVarsSetAll(WalkItem &wi,
-                                       std::set<std::string> &vars);
-
-    void removeNeedCheckNullVarsSet(WalkItem &wi,
-                                    std::set<std::string> &vars);
-
     Node *skipNop(Node *node);
 
     Node *skipBackNop(Node *node);
-
-    void mergeNullChecked(WalkItem &wi1, WalkItem &wi2);
-
-    void mergeNonNullChecked(WalkItem &wi1, WalkItem &wi2);
-
-    void intersectNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2);
-
-    void intersectNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2);
 }
 
 #endif // ANALYSIS_ANALYSIS_H
