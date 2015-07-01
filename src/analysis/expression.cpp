@@ -211,6 +211,7 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
         if (wi.needCheckNullVars.find(var) != wi.needCheckNullVars.end())
         {
             wo.checkedNonNullVars.insert(var);
+            wo.knownNonNullVars.insert(var);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
             return;
@@ -320,6 +321,7 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
         if (wi.needCheckNullVars.find(var) != wi.needCheckNullVars.end())
         {
             wo.checkedNullVars.insert(var);
+            wo.knownNullVars.insert(var);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
             if (wi.knownNullVars.find(var) != wi.knownNullVars.end())
@@ -347,9 +349,9 @@ void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi
     removeNeedCheckNullVarsSetAll(wi2, wo1.checkedNullVars);
     wi2.needCheckNullVars.insert(wo1.checkedNonNullVars.begin(),
         wo1.checkedNonNullVars.end());
-    wi2.knownNonNullVars.insert(wo1.checkedNonNullVars.begin(),
+    wi2.knownVars.insert(wo1.checkedNonNullVars.begin(),
         wo1.checkedNonNullVars.end());
-    wi2.knownNullVars.insert(wo1.checkedNullVars.begin(),
+    wi2.knownVars.insert(wo1.checkedNullVars.begin(),
         wo1.checkedNullVars.end());
     Log::dumpWI(node, "wi2 ", wi2);
     walkTree(node2, wi2, wo2);
@@ -360,8 +362,9 @@ void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi
     // probably condition wrong
     if (wo2.cleanExpr)
         mergeNullChecked(wo, wo2);
-    // need check for cleanExpr?
     intersectNonNullChecked(wo, wo1, wo2);
+
+    // need intersect knownNull/knownNonNull
 
     wo.cleanExpr = true;
     wo.stopWalking = true;
@@ -400,6 +403,14 @@ void analyseAndCondition(Node *node, Node *node1, Node *node2, const WalkItem &w
     {
         mergeNonNullChecked(wo, wo2);
     }
+    wo.knownNullVars.insert(wo1.knownNullVars.begin(),
+        wo1.knownNullVars.end());
+    wo.knownNullVars.insert(wo2.knownNullVars.begin(),
+        wo2.knownNullVars.end());
+    wo.knownNonNullVars.insert(wo1.knownNonNullVars.begin(),
+        wo1.knownNonNullVars.end());
+    wo.knownNonNullVars.insert(wo2.knownNonNullVars.begin(),
+        wo2.knownNonNullVars.end());
     wo.cleanExpr = wo1.cleanExpr && wo2.cleanExpr;
     wo.uselessExpr = wo1.uselessExpr && wo2.uselessExpr;
 }

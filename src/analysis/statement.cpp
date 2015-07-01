@@ -63,10 +63,10 @@ void analyseCondition(Node *node,
     removeNeedCheckNullVarsSetAll(wi2, wco.checkedNonNullVars);
     wi2.needCheckNullVars.insert(wco.checkedNullVars.begin(),
         wco.checkedNullVars.end());
-    wi2.knownNonNullVars.insert(wco.checkedNonNullVars.begin(),
-        wco.checkedNonNullVars.end());
-    wi2.knownNullVars.insert(wco.checkedNullVars.begin(),
-        wco.checkedNullVars.end());
+    wi2.knownNonNullVars.insert(wco.knownNonNullVars.begin(),
+        wco.knownNonNullVars.end());
+    wi2.knownNullVars.insert(wco.knownNullVars.begin(),
+        wco.knownNullVars.end());
     Log::dumpWI(node, "wi2 then ", wi2);
 
     reportParmDeclNullPointer(node,
@@ -79,10 +79,10 @@ void analyseCondition(Node *node,
     removeNeedCheckNullVarsSetAll(wi3, wco.checkedNullVars);
     wi3.needCheckNullVars.insert(wco.checkedNonNullVars.begin(),
         wco.checkedNonNullVars.end());
-    wi3.knownNullVars.insert(wco.checkedNonNullVars.begin(),
-        wco.checkedNonNullVars.end());
-    wi3.knownNonNullVars.insert(wco.checkedNullVars.begin(),
-        wco.checkedNullVars.end());
+    wi3.knownNullVars.insert(wco.knownNonNullVars.begin(),
+        wco.knownNonNullVars.end());
+    wi3.knownNonNullVars.insert(wco.knownNullVars.begin(),
+        wco.knownNullVars.end());
     Log::dumpWI(node, "wi3 else ", wi3);
 
     reportParmDeclNullPointer(node,
