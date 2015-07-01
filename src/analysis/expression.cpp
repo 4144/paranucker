@@ -216,7 +216,8 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
             wo.uselessExpr = false;
             return;
         }
-        else if (wi.knownNonNullVars.find(var) != wi.knownNonNullVars.end())
+        else if (wi.knownNonNullVars.find(var) != wi.knownNonNullVars.end() ||
+                 wi.knownNullVars.find(var) != wi.knownNullVars.end())
         {
             bool doReport(true);
             // exception for delete operator. it check for var != 0 before really delete
@@ -324,13 +325,15 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
             wo.knownNullVars.insert(var);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
-            if (wi.knownNullVars.find(var) != wi.knownNullVars.end())
+            if (wi.knownNullVars.find(var) != wi.knownNullVars.end() ||
+                wi.knownNonNullVars.find(var) != wi.knownNonNullVars.end())
             {
                 reportUselessCheck(node, var);
             }
             return;
         }
-        else if (wi.knownNullVars.find(var) != wi.knownNullVars.end())
+        else if (wi.knownNullVars.find(var) != wi.knownNullVars.end() ||
+                 wi.knownNonNullVars.find(var) != wi.knownNonNullVars.end())
         {
             reportUselessCheck(node, var);
         }
