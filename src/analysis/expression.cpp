@@ -24,6 +24,7 @@
 
 #include "analysis/analysis.h"
 #include "analysis/collections.h"
+#include "analysis/checks.h"
 #include "analysis/function.h"
 #include "analysis/reports.h"
 #include "analysis/statement.h"
@@ -581,6 +582,12 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
                     function = decl;
                     FunctionDeclNode *declNode = static_cast<FunctionDeclNode*>(
                         decl);
+                    if (declNode->label == "paranuckerInternalTest")
+                    {
+                        checkState(node, wi);
+                        wo.stopWalking = true;
+                        return;
+                    }
                     if (declNode->functionType == FUNCTION_TYPE)
                     {
                         enableCheck = false;

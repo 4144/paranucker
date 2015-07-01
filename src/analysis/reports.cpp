@@ -130,4 +130,25 @@ void reportParmDeclAttrNullPointer(Node *mainNode,
     }
 }
 
+void reportWrongCheck(Node *node)
+{
+    Log::warn(findBackLocation(node),
+        "warning: wrong call to internal debug function. Three arguments required",
+        "");
+}
+
+void reportCollectionsDifferent(Node *node,
+                                const std::string &name,
+                                std::string str1,
+                                std::string str2)
+{
+    std::string str = "warning: internal collections '%s' is different.\nwant: " +
+        str2 +
+        "\n get: " +
+        str1;
+    Log::warn(findBackLocation(node),
+        str,
+        name);
+}
+
 }

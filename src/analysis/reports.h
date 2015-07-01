@@ -46,6 +46,13 @@ namespace Analysis
 
     bool checkForReport(Node *node,
                         const WalkItem &wi);
+
+    void reportWrongCheck(Node *node);
+
+    void reportCollectionsDifferent(Node *node,
+                                    const std::string &name,
+                                    std::string str1,
+                                    std::string str2);
 }
 
 #endif // ANALYSIS_REPORTS_H
