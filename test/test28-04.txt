@@ -1,0 +1,10 @@
+test28.cpp: In member function 'void Object1::func9(Data1*)':
+test28.cpp:182:13: warning: Useless variable check 'ptr1'. It already was checked before
+             if (ptr1)
+             ^
+test28.cpp:193:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1)
+                  ^
+test28.cpp:218:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1)
+                  ^
