@@ -220,3 +220,30 @@ want: ptr1,
  get: 
                  paranuckerInternalTest("=", "knownNullVars", "ptr1");
                                        ^
+func10: pointer_type ptr1, 
+test28.cpp: In member function 'void Object1::func10(Data1*)':
+test28.cpp:242:35: warning: warning: internal collections 'knownNonNullVars' is different.
+want: ptr1,
+ get: 
+             paranuckerInternalTest("=", "knownNonNullVars", "ptr1");
+                                   ^
+test28.cpp:244:35: warning: warning: internal collections 'needCheckNullVars' is different.
+want: 
+ get: ptr1,
+             paranuckerInternalTest("=", "needCheckNullVars", "");
+                                   ^
+test28.cpp:256:35: warning: warning: internal collections 'knownNullVars' is different.
+want: ptr1,
+ get: 
+             paranuckerInternalTest("=", "knownNullVars", "ptr1");
+                                   ^
+test28.cpp:261:35: warning: warning: internal collections 'knownNullVars' is different.
+want: ptr1,
+ get: 
+             paranuckerInternalTest("=", "knownNullVars", "ptr1");
+                                   ^
+test28.cpp:262:35: warning: warning: internal collections 'needCheckNullVars' is different.
+want: 
+ get: ptr1,
+             paranuckerInternalTest("=", "needCheckNullVars", "");
+                                   ^
