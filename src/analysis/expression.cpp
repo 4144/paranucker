@@ -120,8 +120,8 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
         if (arg == INDIRECT_REF)
         {
             // var2 not found in known checking pointer
-            if (wi.needCheckNullVars.find(var2) == wi.needCheckNullVars.end() &&
-                wi.knownVars.find(var2) == wi.knownVars.end())
+            if (isNotIn(var2, wi.needCheckNullVars) &&
+                isNotIn(var2, wi.knownVars))
             {
                 wo.removeNullVars.insert(var1);
             }
@@ -132,14 +132,14 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
         }
         else if (!var1.empty() && !var2.empty())
         {
-            if (wi.needCheckNullVars.find(var2) != wi.needCheckNullVars.end())
+            if (isIn(var2, wi.needCheckNullVars))
             {
                 addNullVar(wo, var1);
                 addLinkedVar(wo, var2, var1);
             }
             // var2 not found in known checking pointer
-            else if (wi.needCheckNullVars.find(var2) == wi.needCheckNullVars.end() &&
-                     wi.knownVars.find(var2) == wi.knownVars.end())
+            else if (isNotIn(var2, wi.needCheckNullVars) &&
+                     isNotIn(var2, wi.knownVars))
             {
                 wo.removeNullVars.insert(var1);
             }
@@ -208,7 +208,7 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
         node2 == INTEGER_CST &&
         node2->label == "0")
     {
-        if (wi.needCheckNullVars.find(var) != wi.needCheckNullVars.end())
+        if (isIn(var, wi.needCheckNullVars))
         {
             wo.checkedNonNullVars.insert(var);
             wo.knownNonNullVars.insert(var);
@@ -216,8 +216,8 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
             wo.uselessExpr = false;
             return;
         }
-        else if (wi.knownNonNullVars.find(var) != wi.knownNonNullVars.end() ||
-                 wi.knownNullVars.find(var) != wi.knownNullVars.end())
+        else if (isIn(var, wi.knownNonNullVars) ||
+                 isIn(var, wi.knownNullVars))
         {
             bool doReport(true);
             // exception for delete operator. it check for var != 0 before really delete
@@ -319,21 +319,21 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
         node2 == INTEGER_CST &&
         node2->label == "0")
     {
-        if (wi.needCheckNullVars.find(var) != wi.needCheckNullVars.end())
+        if (isIn(var, wi.needCheckNullVars))
         {
             wo.checkedNullVars.insert(var);
             wo.knownNullVars.insert(var);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
-            if (wi.knownNullVars.find(var) != wi.knownNullVars.end() ||
-                wi.knownNonNullVars.find(var) != wi.knownNonNullVars.end())
+            if (isIn(var, wi.knownNullVars) ||
+                isIn(var, wi.knownNonNullVars))
             {
                 reportUselessCheck(node, var);
             }
             return;
         }
-        else if (wi.knownNullVars.find(var) != wi.knownNullVars.end() ||
-                 wi.knownNonNullVars.find(var) != wi.knownNonNullVars.end())
+        else if (isIn(var, wi.knownNullVars) ||
+                 isIn(var, wi.knownNonNullVars))
         {
             reportUselessCheck(node, var);
         }
@@ -630,7 +630,7 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
         }
         else
         {
-            if (nullAttrs.find(param) != nullAttrs.end())
+            if (isIn(param, nullAttrs))
                 reportParmDeclAttrNullPointer(node, node2, wi);
         }
         walkTree(node2, wi, wo2);
@@ -678,7 +678,7 @@ void handleSetVar(Node *node1,
     const std::string var2 = getVariableName(node2);
     if (var1.empty() || var2.empty())
         return;
-    if (wi.needCheckNullVars.find(var2) == wi.needCheckNullVars.end())
+    if (isNotIn(var2, wi.needCheckNullVars))
         return;
     addNullVar(wo, var1);
     addLinkedVar(wo, var2, var1);

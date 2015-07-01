@@ -44,3 +44,9 @@
     Log::dumpInt(node, \
         "- "#method": %d", \
         node->method)
+
+#define isIn(value, collection) \
+    ((collection).find(value) != (collection).end())
+
+#define isNotIn(value, collection) \
+    ((collection).find(value) == (collection).end())
