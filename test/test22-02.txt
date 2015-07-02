@@ -181,10 +181,6 @@ func1: pointer_type ptr1,
 func2: pointer_type ptr1, 
 func3: pointer_type ptr1, 
 func4: pointer_type ptr1, 
-test22.cpp: In member function 'void Object1::func4(Data1*)':
-test22.cpp:56:25: warning: Using parameter 'ptr1' without checking for null pointer
-         if (ptr1->ftest1() == 100)
-                         ^
 Data1: 
 __base_dtor : 
 __comp_dtor : 

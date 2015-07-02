@@ -297,20 +297,8 @@ Data1:
 __base_dtor : 
 __comp_dtor : 
 func3: pointer_type ptr1, 
-test26.cpp: In member function 'void Object1::func3(Data1*)':
-test26.cpp:68:16: warning: Using parameter 'ptr1' without checking for null pointer
-         delete ptr1;
-                ^
 func4: pointer_type ptr1, 
-test26.cpp: In member function 'void Object1::func4(Data1*)':
-test26.cpp:77:16: warning: Using parameter 'ptr1' without checking for null pointer
-         delete ptr1;
-                ^
 func5: pointer_type ptr1, 
-test26.cpp: In static member function 'static void Object1::func5(Data2*)':
-test26.cpp:85:16: warning: Using parameter 'ptr1' without checking for null pointer
-         delete ptr1;
-                ^
 func6: pointer_type ptr1, 
 func7: pointer_type ptr1, 
 func8: pointer_type ptr1, 
