@@ -16,6 +16,11 @@ class Object1
     Data1 *tmp1;
     Data1 *tmp2;
 
+    Data1 *getData()
+    {
+        return tmp1;
+    }
+
     void func1(Data1 *const ptr1)
     {
         paranuckerInternalTest("=", "knownVars", "ptr1");
@@ -292,5 +297,18 @@ class Object1
             paranuckerInternalTest("=", "needCheckNullVars", "");
             return;
         }
+    }
+
+    void func12(Data1 *ptr1)
+    {
+        paranuckerInternalTest("=", "knownVars", "ptr1");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
+        ptr1 = getData();
+        paranuckerInternalTest("=", "knownVars", "");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "");
     }
 };
