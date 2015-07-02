@@ -127,6 +127,9 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
                 isNotIn(var2, wi.knownVars))
             {
                 wo.removeNullVars.insert(var1);
+                wo.knownVars.erase(var1);
+                wo.knownNullVars.erase(var1);
+                wo.knownNonNullVars.erase(var1);
             }
 
             reportParmDeclNullPointer(node,
@@ -144,9 +147,8 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
             }
             else
             {   // have var1 and var2 (var1 = var2)
-                if (isIn(var2, wi.needCheckNullVars))
+                if (isIn(var2, wi.knownVars))
                 {
-                    addNullVar(wo, var1);
                     addLinkedVar(wo, var2, var1);
                 }
                 // var2 not found in known checking pointer
@@ -705,7 +707,6 @@ void handleSetVar(Node *node1,
         return;
     if (isNotIn(var2, wi.needCheckNullVars))
         return;
-    addNullVar(wo, var1);
     addLinkedVar(wo, var2, var1);
 }
 

@@ -126,6 +126,28 @@ void addLinkedVar(WalkItem &wi,
                   std::string parent,
                   const std::string &var)
 {
+    if (isIn(parent, wi.addNullVars) ||
+        isIn(parent, wi.needCheckNullVars))
+    {
+        wi.addNullVars.insert(var);
+        wi.removeNullVars.erase(var);
+    }
+    if (isIn(parent, wi.removeNullVars))
+    {
+        wi.removeNullVars.insert(var);
+        wi.addNullVars.erase(var);
+    }
+    if (isIn(parent, wi.knownNullVars))
+    {
+        wi.knownNullVars.insert(var);
+        wi.knownNonNullVars.erase(var);
+    }
+    else if (isIn(parent, wi.knownNonNullVars))
+    {
+        wi.knownNonNullVars.insert(var);
+        wi.knownNullVars.erase(var);
+    }
+
     // found parent as already linked var. need change parent to real parent
     if (isIn(parent, wi.linkedReverseVars))
         parent = wi.linkedReverseVars[parent];
