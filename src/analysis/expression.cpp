@@ -145,6 +145,9 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
                      isNotIn(var2, wi.knownVars))
             {
                 wo.removeNullVars.insert(var1);
+                wo.knownVars.erase(var1);
+                wo.knownNullVars.erase(var1);
+                wo.knownNonNullVars.erase(var1);
             }
         }
     }
