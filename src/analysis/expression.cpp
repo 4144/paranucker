@@ -563,6 +563,9 @@ void analyseNonLvalueExpr(NonLvalueExprNode *node, const WalkItem &wi, WalkItem 
 
 void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
+    if (checkCommand(FindArgs))
+        return;
+
     WalkItem wo2 = wo;
     walkTree(node->chain, wi, wo2);
     Log::dumpWI(node, "wo chain ", wo2);
