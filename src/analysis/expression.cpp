@@ -378,12 +378,21 @@ void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi
     walkTree(node2, wi2, wo2);
     Log::dumpWI(node, "wo2 ", wo2);
     // probably condition wrong
-    if (wo1.cleanExpr)
-        mergeNullChecked(wo, wo1);
+//    if (wo1.cleanExpr)
+//        mergeNullChecked(wo, wo1);
     // probably condition wrong
-    if (wo2.cleanExpr)
-        mergeNullChecked(wo, wo2);
+//    if (wo2.cleanExpr)
+//        mergeNullChecked(wo, wo2);
+//    if (wo1.cleanExpr && !wo2.cleanExpr)
+//    {
+//        mergeNonNullChecked(wo, wo1);
+//    }
+//    if (wo2.cleanExpr && !wo1.cleanExpr)
+//    {
+//        mergeNonNullChecked(wo, wo2);
+//    }
     intersectNonNullChecked(wo, wo1, wo2);
+    intersectNullChecked(wo, wo1, wo2);
 
     // need intersect knownNull/knownNonNull
 

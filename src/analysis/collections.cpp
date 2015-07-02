@@ -192,4 +192,12 @@ void intersectNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
     }
 }
 
+void removeFromNeedCheckNullVars(WalkItem &wi, std::set<std::string> &vars)
+{
+    FOR_EACH (it, vars)
+    {
+        wi.needCheckNullVars.erase(it);
+    }
+}
+
 }

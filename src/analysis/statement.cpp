@@ -62,13 +62,20 @@ void analyseCondition(Node *node,
     Log::dumpWI(node, "wco ", wco);
 
     WalkItem wi2 = wi;
-    removeNeedCheckNullVarsSetAll(wi2, wco.checkedNonNullVars);
+    if (wco.cleanExpr)
+        removeNeedCheckNullVarsSetAll(wi2, wco.checkedNonNullVars);
     wi2.needCheckNullVars.insert(wco.checkedNullVars.begin(),
         wco.checkedNullVars.end());
-    wi2.knownNonNullVars.insert(wco.knownNonNullVars.begin(),
-        wco.knownNonNullVars.end());
-    wi2.knownNullVars.insert(wco.knownNullVars.begin(),
-        wco.knownNullVars.end());
+//    wi2.knownNonNullVars.insert(wco.knownNonNullVars.begin(),
+//        wco.knownNonNullVars.end());
+//    wi2.knownNullVars.insert(wco.knownNullVars.begin(),
+//        wco.knownNullVars.end());
+    wi2.knownNullVars.insert(wco.checkedNullVars.begin(),
+        wco.checkedNullVars.end());
+    wi2.knownNonNullVars.insert(wco.checkedNonNullVars.begin(),
+        wco.checkedNonNullVars.end());
+    wi2.needCheckNullVars = wi2.knownVars;
+    removeFromNeedCheckNullVars(wi2, wi2.knownNonNullVars);
     wo2 = wi2;
     Log::dumpWI(node, "wi2 then ", wi2);
 
@@ -79,13 +86,39 @@ void analyseCondition(Node *node,
     Log::dumpWI(node, "wo2 then ", wo2);
 
     WalkItem wi3 = wi;
-    removeNeedCheckNullVarsSetAll(wi3, wco.checkedNullVars);
-    wi3.needCheckNullVars.insert(wco.checkedNonNullVars.begin(),
-        wco.checkedNonNullVars.end());
-    wi3.knownNullVars.insert(wco.knownNonNullVars.begin(),
-        wco.knownNonNullVars.end());
-    wi3.knownNonNullVars.insert(wco.knownNullVars.begin(),
-        wco.knownNullVars.end());
+//    if (wco.cleanExpr)
+//        removeNeedCheckNullVarsSetAll(wi3, wco.checkedNullVars);
+//    wi3.needCheckNullVars.insert(wco.checkedNonNullVars.begin(),
+//        wco.checkedNonNullVars.end());
+//    wi3.knownNonNullVars.insert(wco.knownNullVars.begin(),
+//        wco.knownNullVars.end());
+//    wi3.knownNullVars.insert(wco.knownNonNullVars.begin(),
+//        wco.knownNonNullVars.end());
+//    wi3.needCheckNullVars = wi3.knownVars;
+//    removeFromNeedCheckNullVars(wi3, wi3.knownNonNullVars);
+    if (wo2.cleanExpr)
+        mergeNullChecked(wi3, wo2);
+    // ?
+    mergeNonNullChecked(wi3, wo2);
+    if (wo2.isReturned)
+    {
+        // add variable for ignore for all parent nodes except special like IF_STMT
+        FOR_EACH (it, wco.checkedNullVars)
+        {
+            wi3.removeNullVarsAll.insert(it);
+            wi3.knownNonNullVars.insert(it);
+            removeNeedCheckNullVar(wi3, it);
+        }
+        if (wco.cleanExpr)
+        {
+            FOR_EACH (it, wco.checkedNonNullVars)
+            {
+                wi3.knownNullVars.insert(it);
+            }
+        }
+    }
+
+
     wo3 = wi3;
     Log::dumpWI(node, "wi3 else ", wi3);
 

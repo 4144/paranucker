@@ -55,6 +55,9 @@ namespace Analysis
     void intersectNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2);
 
     void intersectNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2);
+
+    void removeFromNeedCheckNullVars(WalkItem &wi,
+                                     std::set<std::string> &vars);
 }
 
 #endif // ANALYSIS_COLLECTIONS_H

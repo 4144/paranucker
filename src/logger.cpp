@@ -206,7 +206,7 @@ void dumpWI(Node *const node,
             const std::string &name,
             const WalkItem &wi)
 {
-    return;
+    //return;
     Log::log("%s%s%s %s",
         node->getIndent().c_str(),
         name.c_str(),
