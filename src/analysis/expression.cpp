@@ -133,21 +133,31 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
                 static_cast<IndirectRefNode*>(arg)->ref,
                 wi);
         }
-        else if (!var1.empty() && !var2.empty())
+        else if (!var1.empty())
         {
-            if (isIn(var2, wi.needCheckNullVars))
-            {
-                addNullVar(wo, var1);
-                addLinkedVar(wo, var2, var1);
-            }
-            // var2 not found in known checking pointer
-            else if (isNotIn(var2, wi.needCheckNullVars) &&
-                     isNotIn(var2, wi.knownVars))
-            {
+            if (var2.empty())
+            {   // have var1 only (var1 = UNKNOWN)
                 wo.removeNullVars.insert(var1);
                 wo.knownVars.erase(var1);
                 wo.knownNullVars.erase(var1);
                 wo.knownNonNullVars.erase(var1);
+            }
+            else
+            {   // have var1 and var2 (var1 = var2)
+                if (isIn(var2, wi.needCheckNullVars))
+                {
+                    addNullVar(wo, var1);
+                    addLinkedVar(wo, var2, var1);
+                }
+                // var2 not found in known checking pointer
+                else if (isNotIn(var2, wi.needCheckNullVars) &&
+                         isNotIn(var2, wi.knownVars))
+                {
+                    wo.removeNullVars.insert(var1);
+                    wo.knownVars.erase(var1);
+                    wo.knownNullVars.erase(var1);
+                    wo.knownNonNullVars.erase(var1);
+                }
             }
         }
     }
