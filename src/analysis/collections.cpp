@@ -147,6 +147,7 @@ void addLinkedVar(WalkItem &wi,
         wi.knownNonNullVars.insert(var);
         wi.knownNullVars.erase(var);
     }
+    wi.knownVars.insert(var);
 
     // found parent as already linked var. need change parent to real parent
     if (isIn(parent, wi.linkedReverseVars))
