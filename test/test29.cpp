@@ -381,4 +381,64 @@ class Object1
         paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
     }
 
+    void func15(Data1 *ptr2)
+    {
+        paranuckerInternalTest("=", "knownVars", "ptr2");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr2");
+        // null || 10 -> continue
+        // null || 9  -> continue
+        // 123  || 10 -> continue
+        // 123  || 9  -> return
+        // wco if_stmt  clean checkedElseNonNullVars:ptr2,  needCheckNullVars:ptr2,  knownVars:ptr2,
+        if (!ptr2 || k == 10)
+        {
+            paranuckerInternalTest("=", "knownVars", "ptr2");
+            paranuckerInternalTest("=", "knownNonNullVars", "");
+            paranuckerInternalTest("=", "knownNullVars", "");
+            paranuckerInternalTest("=", "needCheckNullVars", "ptr2");
+        }
+        else
+        {
+            paranuckerInternalTest("=", "knownVars", "ptr2");
+            paranuckerInternalTest("=", "knownNonNullVars", "ptr2");
+            paranuckerInternalTest("=", "knownNullVars", "");
+            paranuckerInternalTest("=", "needCheckNullVars", "");
+            return;
+        }
+        paranuckerInternalTest("=", "knownVars", "ptr2");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr2");
+    }
+
+    void func16(Data1 *ptr2)
+    {
+        paranuckerInternalTest("=", "knownVars", "ptr2");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr2");
+        // wco if_stmt  clean checkedElseNonNullVars:ptr2,  needCheckNullVars:ptr2,  knownVars:ptr2,
+        if (!ptr2 || k == 10)
+        {
+            paranuckerInternalTest("=", "knownVars", "ptr2");
+            paranuckerInternalTest("=", "knownNonNullVars", "");
+            paranuckerInternalTest("=", "knownNullVars", "");
+            paranuckerInternalTest("=", "needCheckNullVars", "ptr2");
+            return;
+        }
+        else
+        {
+            paranuckerInternalTest("=", "knownVars", "ptr2");
+            paranuckerInternalTest("=", "knownNonNullVars", "ptr2");
+            paranuckerInternalTest("=", "knownNullVars", "");
+            paranuckerInternalTest("=", "needCheckNullVars", "");
+            return;
+        }
+        paranuckerInternalTest("=", "knownVars", "ptr2");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "");
+    }
 };
