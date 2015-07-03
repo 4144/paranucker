@@ -1,0 +1,4 @@
+test30.cpp: In member function 'void Object1::func2(Data1*)':
+test30.cpp:69:28: warning: Using parameter 'ptr1' without checking for null pointer
+         if (!ptr1 && ptr1->val == 10)
+                            ^
