@@ -142,7 +142,7 @@ void reportCollectionsDifferent(Node *node,
                                 std::string str1,
                                 std::string str2)
 {
-    std::string str = "warning: internal collections '%s' is different.\nwant: " +
+    std::string str = "internal collections '%s' is different.\nwant: " +
         str2 +
         "\n get: " +
         str1;
