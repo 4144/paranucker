@@ -133,14 +133,41 @@ std::set<std::string> getCollection(Node *node,
     }
 }
 
-std::set<std::string> splitArgs(std::string args)
+std::set<std::string> getLinkedCollection(Node *node,
+                                          const std::string &name,
+                                          const std::string &var,
+                                          WalkItem wi)
+{
+    if (name == "linkedVars")
+    {
+        return wi.linkedVars[var];
+    }
+    else if (name == "linkedReverseVars")
+    {
+        std::set<std::string> tmpSet;
+        if (isIn(var, wi.linkedReverseVars))
+            tmpSet.insert(wi.linkedReverseVars[var]);
+        return tmpSet;
+    }
+    else
+    {
+        reportWrongCheck(node);
+        return std::set<std::string>();
+    }
+}
+
+std::set<std::string> splitArgs(std::string args,
+                                const int startIndex)
 {
     std::set<std::string> tokens;
     size_t idx = 0;
+    int cnt = 0;
     while ((idx = args.find(" ")) != std::string::npos)
     {
-        tokens.insert(args.substr(0, idx));
+        if (cnt >= startIndex)
+            tokens.insert(args.substr(0, idx));
         args = args.substr(idx + 1);
+        cnt ++;
     }
     if (!args.empty())
         tokens.insert(args);
@@ -160,8 +187,30 @@ void checkState(CallExprNode *node, const WalkItem &wi)
         return;
     }
     std::string name = args[1];
-    std::set<std::string> col1 = getCollection(node, name, wi);
-    std::set<std::string> col2 = splitArgs(args[2]);
+    std::set<std::string> col1;
+    std::set<std::string> col2;
+    if (name == "linkedVars" || name == "linkedReverseVars")
+    {
+        const size_t idx = args[2].find(" ");
+        std::string var;
+        if (idx == std::string::npos)
+        {
+            var = args[2];
+            args[2] = std::string();
+        }
+        else
+        {
+            var = args[2].substr(0, idx);
+            args[2] = args[2].substr(idx + 1);
+        }
+        col1 = getLinkedCollection(node, name, var, wi);
+        col2 = splitArgs(args[2], 0);
+    }
+    else
+    {
+        col1 = getCollection(node, name, wi);
+        col2 = splitArgs(args[2], 0);
+    }
     if (args[0] == "=")
         checkStateEqual(node, name, col1, col2);
     else if (args[1] == "in")
