@@ -228,7 +228,7 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
     {
         if (isIn(var, wi.needCheckNullVars))
         {
-            wo.checkedNonNullVars.insert(var);
+            wo.checkedThenNonNullVars.insert(var);
             wo.knownNonNullVars.insert(var);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
@@ -339,7 +339,7 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
     {
         if (isIn(var, wi.needCheckNullVars))
         {
-            wo.checkedNullVars.insert(var);
+            wo.checkedThenNullVars.insert(var);
             wo.knownNullVars.insert(var);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
@@ -367,32 +367,32 @@ void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi
     walkTree(node1, wi, wo1);
     Log::dumpWI(node, "wo1 ", wo1);
     WalkItem wi2 = wi;
-    removeNeedCheckNullVarsSetAll(wi2, wo1.checkedNullVars);
-    wi2.needCheckNullVars.insert(wo1.checkedNonNullVars.begin(),
-        wo1.checkedNonNullVars.end());
-    wi2.knownVars.insert(wo1.checkedNonNullVars.begin(),
-        wo1.checkedNonNullVars.end());
-    wi2.knownVars.insert(wo1.checkedNullVars.begin(),
-        wo1.checkedNullVars.end());
+    removeNeedCheckNullVarsSetAll(wi2, wo1.checkedThenNullVars);
+    wi2.needCheckNullVars.insert(wo1.checkedThenNonNullVars.begin(),
+        wo1.checkedThenNonNullVars.end());
+    wi2.knownVars.insert(wo1.checkedThenNonNullVars.begin(),
+        wo1.checkedThenNonNullVars.end());
+    wi2.knownVars.insert(wo1.checkedThenNullVars.begin(),
+        wo1.checkedThenNullVars.end());
     Log::dumpWI(node, "wi2 ", wi2);
     walkTree(node2, wi2, wo2);
     Log::dumpWI(node, "wo2 ", wo2);
     // probably condition wrong
 //    if (wo1.cleanExpr)
-//        mergeNullChecked(wo, wo1);
+//        mergeThenNullChecked(wo, wo1);
     // probably condition wrong
 //    if (wo2.cleanExpr)
-//        mergeNullChecked(wo, wo2);
+//        mergeThenNullChecked(wo, wo2);
 //    if (wo1.cleanExpr && !wo2.cleanExpr)
 //    {
-//        mergeNonNullChecked(wo, wo1);
+//        mergeThenNonNullChecked(wo, wo1);
 //    }
 //    if (wo2.cleanExpr && !wo1.cleanExpr)
 //    {
-//        mergeNonNullChecked(wo, wo2);
+//        mergeThenNonNullChecked(wo, wo2);
 //    }
-    intersectNonNullChecked(wo, wo1, wo2);
-    intersectNullChecked(wo, wo1, wo2);
+    intersectThenNonNullChecked(wo, wo1, wo2);
+    intersectThenNullChecked(wo, wo1, wo2);
 
     // need intersect knownNull/knownNonNull
 
@@ -408,13 +408,13 @@ void analyseAndCondition(Node *node, Node *node1, Node *node2, const WalkItem &w
     walkTree(node1, wi, wo1);
     Log::dumpWI(node, "wo1 ", wo1);
     WalkItem wi2 = wi;
-    removeNeedCheckNullVarsSetAll(wi2, wo1.checkedNonNullVars);
-    wi2.needCheckNullVars.insert(wo1.checkedNullVars.begin(),
-        wo1.checkedNullVars.end());
-    wi2.knownNullVars.insert(wo1.checkedNullVars.begin(),
-        wo1.checkedNullVars.end());
-    wi2.knownNonNullVars.insert(wo1.checkedNonNullVars.begin(),
-        wo1.checkedNonNullVars.end());
+    removeNeedCheckNullVarsSetAll(wi2, wo1.checkedThenNonNullVars);
+    wi2.needCheckNullVars.insert(wo1.checkedThenNullVars.begin(),
+        wo1.checkedThenNullVars.end());
+    wi2.knownNullVars.insert(wo1.checkedThenNullVars.begin(),
+        wo1.checkedThenNullVars.end());
+    wi2.knownNonNullVars.insert(wo1.checkedThenNonNullVars.begin(),
+        wo1.checkedThenNonNullVars.end());
     Log::dumpWI(node, "wi2 ", wi2);
     walkTree(node2, wi2, wo2);
     Log::dumpWI(node, "wo2 ", wo2);
@@ -423,15 +423,15 @@ void analyseAndCondition(Node *node, Node *node1, Node *node2, const WalkItem &w
     // probably condition wrong
     if (!wo1.uselessExpr && !wo2.uselessExpr)
     {   // need combine wo1 and wo2
-        intersectNullChecked(wo, wo1, wo2);
+        intersectThenNullChecked(wo, wo1, wo2);
     }
     if (!wo1.uselessExpr)
     {
-        mergeNonNullChecked(wo, wo1);
+        mergeThenNonNullChecked(wo, wo1);
     }
     if (!wo2.uselessExpr)
     {
-        mergeNonNullChecked(wo, wo2);
+        mergeThenNonNullChecked(wo, wo2);
     }
     wo.knownNullVars.insert(wo1.knownNullVars.begin(),
         wo1.knownNullVars.end());
@@ -520,8 +520,8 @@ void analyseCompoundExpr(CompoundExprNode *node, const WalkItem &wi, WalkItem &w
     // probably condition wrong
     if (wo2.cleanExpr)
     {
-        mergeNullChecked(wo, wo2);
-        mergeNonNullChecked(wo, wo2);
+        mergeThenNullChecked(wo, wo2);
+        mergeThenNonNullChecked(wo, wo2);
     }
 
     wo.cleanExpr = true;

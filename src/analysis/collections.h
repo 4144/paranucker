@@ -48,13 +48,13 @@ namespace Analysis
     void removeNeedCheckNullVarsSet(WalkItem &wi,
                                     std::set<std::string> &vars);
 
-    void mergeNullChecked(WalkItem &wi1, WalkItem &wi2);
+    void mergeThenNullChecked(WalkItem &wi1, WalkItem &wi2);
 
-    void mergeNonNullChecked(WalkItem &wi1, WalkItem &wi2);
+    void mergeThenNonNullChecked(WalkItem &wi1, WalkItem &wi2);
 
-    void intersectNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2);
+    void intersectThenNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2);
 
-    void intersectNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2);
+    void intersectThenNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2);
 
     void removeFromNeedCheckNullVars(WalkItem &wi,
                                      std::set<std::string> &vars);

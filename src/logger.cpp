@@ -206,7 +206,8 @@ void dumpWI(Node *const node,
             const std::string &name,
             const WalkItem &wi)
 {
-    //return;
+    if (name != "wco " && (node->parent || node != FUNCTION_DECL || name != "analyseNode wi in "))
+        return;
     Log::log("%s%s%s %s",
         node->getIndent().c_str(),
         name.c_str(),
@@ -218,8 +219,8 @@ void dumpWI(Node *const node,
         Log::log(" useless");
     if (wi.isReturned)
         Log::log(" returned");
-    dumpWIProps(" checkedNullVars:", wi.checkedNullVars)
-    dumpWIProps(" checkedNonNullVars:", wi.checkedNonNullVars)
+    dumpWIProps(" checkedThenNullVars:", wi.checkedThenNullVars)
+    dumpWIProps(" checkedThenNonNullVars:", wi.checkedThenNonNullVars)
     dumpWIProps(" needCheckNullVars:", wi.needCheckNullVars)
     dumpWIProps(" knownVars:", wi.knownVars)
     dumpWIProps(" knownNullVars:", wi.knownNullVars)

@@ -159,36 +159,36 @@ void addLinkedVar(WalkItem &wi,
 }
 
 // merger two checked for null var sets
-void mergeNullChecked(WalkItem &wi1, WalkItem &wi2)
+void mergeThenNullChecked(WalkItem &wi1, WalkItem &wi2)
 {
-    wi1.checkedNullVars.insert(wi2.checkedNullVars.begin(),
-        wi2.checkedNullVars.end());
+    wi1.checkedThenNullVars.insert(wi2.checkedThenNullVars.begin(),
+        wi2.checkedThenNullVars.end());
 }
 
 // merger two checked for non null var sets
-void mergeNonNullChecked(WalkItem &wi1, WalkItem &wi2)
+void mergeThenNonNullChecked(WalkItem &wi1, WalkItem &wi2)
 {
-    wi1.checkedNonNullVars.insert(wi2.checkedNonNullVars.begin(),
-        wi2.checkedNonNullVars.end());
+    wi1.checkedThenNonNullVars.insert(wi2.checkedThenNonNullVars.begin(),
+        wi2.checkedThenNonNullVars.end());
 }
 
 // intersect two checked for null sets
-void intersectNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
+void intersectThenNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
 {
-    FOR_EACH (it, wi1.checkedNullVars)
+    FOR_EACH (it, wi1.checkedThenNullVars)
     {
-        if (isIn(it, wi2.checkedNullVars))
-            wi.checkedNullVars.insert(it);
+        if (isIn(it, wi2.checkedThenNullVars))
+            wi.checkedThenNullVars.insert(it);
     }
 }
 
 // intersect two checked for non null sets
-void intersectNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
+void intersectThenNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
 {
-    FOR_EACH (it, wi1.checkedNonNullVars)
+    FOR_EACH (it, wi1.checkedThenNonNullVars)
     {
-        if (isIn(it, wi2.checkedNonNullVars))
-            wi.checkedNonNullVars.insert(it);
+        if (isIn(it, wi2.checkedThenNonNullVars))
+            wi.checkedThenNonNullVars.insert(it);
     }
 }
 
