@@ -124,6 +124,8 @@ std::set<std::string> getCollection(Node *node,
     else convertCollection(addNullVars)
     else convertCollection(checkedThenNullVars)
     else convertCollection(checkedThenNonNullVars)
+    else convertCollection(checkedElseNullVars)
+    else convertCollection(checkedElseNonNullVars)
     else
     {
         reportWrongCheck(node);

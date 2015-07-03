@@ -40,6 +40,8 @@ struct WalkItem
         addNullVars(),
         checkedThenNullVars(),
         checkedThenNonNullVars(),
+        checkedElseNullVars(),
+        checkedElseNonNullVars(),
         linkedVars(),
         linkedReverseVars(),
         stopWalking(false),
@@ -59,6 +61,8 @@ struct WalkItem
         addNullVars(item.addNullVars),
         checkedThenNullVars(item.checkedThenNullVars),
         checkedThenNonNullVars(item.checkedThenNonNullVars),
+        checkedElseNullVars(item.checkedElseNullVars),
+        checkedElseNonNullVars(item.checkedElseNonNullVars),
         linkedVars(item.linkedVars),
         linkedReverseVars(item.linkedReverseVars),
         stopWalking(item.stopWalking),
@@ -75,8 +79,10 @@ struct WalkItem
     StringSet removeNullVarsAll;     // need remove vars from parent checkNullVars with linked vars
     StringSet removeNullVars;        // need remove vars from parent checkNullVars without linked vars
     StringSet addNullVars;           // need add vars to parent checkNullVars
-    StringSet checkedThenNullVars;   // vars checked for null in expressions
-    StringSet checkedThenNonNullVars;  // vars checked for nonnull in expressions
+    StringSet checkedThenNullVars;   // vars checked for null in expressions for then case
+    StringSet checkedThenNonNullVars;  // vars checked for nonnull in expressions for then case
+    StringSet checkedElseNullVars;   // vars checked for null in expressions for else case
+    StringSet checkedElseNonNullVars;  // vars checked for nonnull in expressions for else case
     StringMapSet linkedVars;         // linked vars. map <parent, set(vars)>
     StringMap linkedReverseVars;     // linked vars. map <child, parent>
     bool stopWalking;   // stop walking on tree after this node

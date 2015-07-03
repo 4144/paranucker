@@ -50,11 +50,19 @@ namespace Analysis
 
     void mergeThenNullChecked(WalkItem &wi1, WalkItem &wi2);
 
+    void mergeElseNullChecked(WalkItem &wi1, WalkItem &wi2);
+
     void mergeThenNonNullChecked(WalkItem &wi1, WalkItem &wi2);
+
+    void mergeElseNonNullChecked(WalkItem &wi1, WalkItem &wi2);
 
     void intersectThenNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2);
 
+    void intersectElseNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2);
+
     void intersectThenNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2);
+
+    void intersectElseNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2);
 
     void removeFromNeedCheckNullVars(WalkItem &wi,
                                      std::set<std::string> &vars);

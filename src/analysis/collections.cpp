@@ -165,11 +165,25 @@ void mergeThenNullChecked(WalkItem &wi1, WalkItem &wi2)
         wi2.checkedThenNullVars.end());
 }
 
+// merger two checked for null var sets
+void mergeElseNullChecked(WalkItem &wi1, WalkItem &wi2)
+{
+    wi1.checkedElseNullVars.insert(wi2.checkedElseNullVars.begin(),
+        wi2.checkedElseNullVars.end());
+}
+
 // merger two checked for non null var sets
 void mergeThenNonNullChecked(WalkItem &wi1, WalkItem &wi2)
 {
     wi1.checkedThenNonNullVars.insert(wi2.checkedThenNonNullVars.begin(),
         wi2.checkedThenNonNullVars.end());
+}
+
+// merger two checked for non null var sets
+void mergeElseNonNullChecked(WalkItem &wi1, WalkItem &wi2)
+{
+    wi1.checkedElseNonNullVars.insert(wi2.checkedElseNonNullVars.begin(),
+        wi2.checkedElseNonNullVars.end());
 }
 
 // intersect two checked for null sets
@@ -182,6 +196,16 @@ void intersectThenNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
     }
 }
 
+// intersect two checked for null sets
+void intersectElseNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
+{
+    FOR_EACH (it, wi1.checkedElseNullVars)
+    {
+        if (isIn(it, wi2.checkedElseNullVars))
+            wi.checkedElseNullVars.insert(it);
+    }
+}
+
 // intersect two checked for non null sets
 void intersectThenNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
 {
@@ -189,6 +213,16 @@ void intersectThenNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
     {
         if (isIn(it, wi2.checkedThenNonNullVars))
             wi.checkedThenNonNullVars.insert(it);
+    }
+}
+
+// intersect two checked for non null sets
+void intersectElseNonNullChecked(WalkItem &wi, WalkItem &wi1, WalkItem &wi2)
+{
+    FOR_EACH (it, wi1.checkedElseNonNullVars)
+    {
+        if (isIn(it, wi2.checkedElseNonNullVars))
+            wi.checkedElseNonNullVars.insert(it);
     }
 }
 

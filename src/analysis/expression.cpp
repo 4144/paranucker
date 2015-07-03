@@ -229,6 +229,7 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
         if (isIn(var, wi.needCheckNullVars))
         {
             wo.checkedThenNonNullVars.insert(var);
+            wo.checkedElseNullVars.insert(var);
             wo.knownNonNullVars.insert(var);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
@@ -340,6 +341,7 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
         if (isIn(var, wi.needCheckNullVars))
         {
             wo.checkedThenNullVars.insert(var);
+            wo.checkedElseNonNullVars.insert(var);
             wo.knownNullVars.insert(var);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
@@ -393,6 +395,8 @@ void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi
 //    }
     intersectThenNonNullChecked(wo, wo1, wo2);
     intersectThenNullChecked(wo, wo1, wo2);
+    intersectElseNonNullChecked(wo, wo1, wo2);
+    intersectElseNullChecked(wo, wo1, wo2);
 
     // need intersect knownNull/knownNonNull
 

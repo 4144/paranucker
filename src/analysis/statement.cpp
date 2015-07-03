@@ -86,16 +86,21 @@ void analyseCondition(Node *node,
     Log::dumpWI(node, "wo2 then ", wo2);
 
     WalkItem wi3 = wi;
-//    if (wco.cleanExpr)
-//        removeNeedCheckNullVarsSetAll(wi3, wco.checkedThenNullVars);
-//    wi3.needCheckNullVars.insert(wco.checkedThenNonNullVars.begin(),
-//        wco.checkedThenNonNullVars.end());
+    if (wco.cleanExpr)
+        removeNeedCheckNullVarsSetAll(wi3, wco.checkedElseNullVars);
+    wi3.needCheckNullVars.insert(wco.checkedElseNonNullVars.begin(),
+        wco.checkedElseNonNullVars.end());
 //    wi3.knownNonNullVars.insert(wco.knownNullVars.begin(),
 //        wco.knownNullVars.end());
 //    wi3.knownNullVars.insert(wco.knownNonNullVars.begin(),
 //        wco.knownNonNullVars.end());
-//    wi3.needCheckNullVars = wi3.knownVars;
-//    removeFromNeedCheckNullVars(wi3, wi3.knownNonNullVars);
+    wi3.knownNullVars.insert(wco.checkedElseNullVars.begin(),
+        wco.checkedElseNullVars.end());
+    wi3.knownNonNullVars.insert(wco.checkedElseNonNullVars.begin(),
+        wco.checkedElseNonNullVars.end());
+    wi3.needCheckNullVars = wi3.knownVars;
+    removeFromNeedCheckNullVars(wi3, wi3.knownNonNullVars);
+/*
     if (wo2.cleanExpr)
         mergeThenNullChecked(wi3, wo2);
     // ?
@@ -117,7 +122,7 @@ void analyseCondition(Node *node,
             }
         }
     }
-
+*/
 
     wo3 = wi3;
     Log::dumpWI(node, "wi3 else ", wi3);
@@ -130,12 +135,12 @@ void analyseCondition(Node *node,
 
     // probably condition wrong
     if (wo2.cleanExpr)
-        mergeThenNullChecked(wo, wo2);
+        mergeElseNullChecked(wo, wo2);
     // probably condition wrong
     if (wo3.cleanExpr)
-        mergeThenNullChecked(wo, wo3);
+        mergeElseNullChecked(wo, wo3);
     // need check for cleanExpr?
-    intersectThenNonNullChecked(wo, wo2, wo3);
+    intersectElseNonNullChecked(wo, wo2, wo3);
 
     if (wo2.isReturned)
     {
@@ -157,7 +162,7 @@ void analyseCondition(Node *node,
     if (wo3.isReturned)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
-        FOR_EACH (it, wco.checkedThenNonNullVars)
+        FOR_EACH (it, wco.checkedElseNullVars)
         {
             wo.removeNullVarsAll.insert(it);
             wo.knownNonNullVars.insert(it);
@@ -165,7 +170,7 @@ void analyseCondition(Node *node,
         }
         if (wco.cleanExpr)
         {
-            FOR_EACH (it, wco.checkedThenNullVars)
+            FOR_EACH (it, wco.checkedElseNonNullVars)
             {
                 wo.knownNullVars.insert(it);
             }
