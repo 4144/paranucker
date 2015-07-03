@@ -19,6 +19,8 @@
 
 #include "analysis/analysis.h"
 
+#include "logger.h"
+
 #include "analysis/walkitem.h"
 
 #include "localconsts.h"
@@ -231,6 +233,46 @@ void removeFromNeedCheckNullVars(WalkItem &wi, std::set<std::string> &vars)
     FOR_EACH (it, vars)
     {
         wi.needCheckNullVars.erase(it);
+    }
+}
+
+void addKnownNullVarsWithLinked(WalkItem &wo, WalkItem &wi, std::set<std::string> &vars)
+{
+    wo.knownNullVars.insert(vars.begin(),
+        vars.end());
+    FOR_EACH (it, vars)
+    {
+        auto it2 = wi.linkedVars.find(it);
+        if (it2 == wi.linkedVars.end() && isIn(it, wi.linkedReverseVars))
+        {
+            wo.knownNullVars.insert(wi.linkedReverseVars[it]);
+            it2 = wi.linkedVars.find(wi.linkedReverseVars[it]);
+        }
+        if (it2 != wi.linkedVars.end())
+        {
+            const StringSet &linked = (*it2).second;
+            wo.knownNullVars.insert(linked.begin(), linked.end());
+        }
+    }
+}
+
+void addKnownNonNullVarsWithLinked(WalkItem &wo, WalkItem &wi, std::set<std::string> &vars)
+{
+    wo.knownNonNullVars.insert(vars.begin(),
+        vars.end());
+    FOR_EACH (it, vars)
+    {
+        auto it2 = wi.linkedVars.find(it);
+        if (it2 == wi.linkedVars.end() && isIn(it, wi.linkedReverseVars))
+        {
+            wo.knownNonNullVars.insert(wi.linkedReverseVars[it]);
+            it2 = wi.linkedVars.find(wi.linkedReverseVars[it]);
+        }
+        if (it2 != wi.linkedVars.end())
+        {
+            const StringSet &linked = (*it2).second;
+            wo.knownNonNullVars.insert(linked.begin(), linked.end());
+        }
     }
 }
 
