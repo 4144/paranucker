@@ -206,7 +206,7 @@ void dumpWI(Node *const node,
             const std::string &name,
             const WalkItem &wi)
 {
-    if (name != "wco " && (node->parent || node != FUNCTION_DECL || name != "analyseNode wi in "))
+//    if (name != "wco " && (node->parent || node != FUNCTION_DECL || name != "analyseNode wi in "))
         return;
     Log::log("%s%s%s %s",
         node->getIndent().c_str(),

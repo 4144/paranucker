@@ -395,8 +395,23 @@ void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi
 //    }
     intersectThenNonNullChecked(wo, wo1, wo2);
     intersectThenNullChecked(wo, wo1, wo2);
-    intersectElseNonNullChecked(wo, wo1, wo2);
-    intersectElseNullChecked(wo, wo1, wo2);
+//    intersectElseNonNullChecked(wo, wo1, wo2);
+//    intersectElseNullChecked(wo, wo1, wo2);
+
+    if (!wo1.uselessExpr && !wo2.uselessExpr)
+    {   // need combine wo1 and wo2
+        intersectElseNullChecked(wo, wo1, wo2);
+    }
+    if (!wo1.uselessExpr)
+    {
+        mergeElseNullChecked(wo, wo1);
+        mergeElseNonNullChecked(wo, wo1);
+    }
+    if (!wo2.uselessExpr)
+    {
+        mergeElseNullChecked(wo, wo2);
+        mergeElseNonNullChecked(wo, wo2);
+    }
 
     // need intersect knownNull/knownNonNull
 
@@ -425,17 +440,19 @@ void analyseAndCondition(Node *node, Node *node1, Node *node2, const WalkItem &w
 
     wo.stopWalking = true;
     // probably condition wrong
-    if (!wo1.uselessExpr && !wo2.uselessExpr)
-    {   // need combine wo1 and wo2
-        intersectThenNullChecked(wo, wo1, wo2);
-    }
-    if (!wo1.uselessExpr)
+//    if (!wo1.uselessExpr && !wo2.uselessExpr)
+//    {   // need combine wo1 and wo2
+//        intersectThenNullChecked(wo, wo1, wo2);
+//    }
+//    if (!wo1.uselessExpr)
     {
         mergeThenNonNullChecked(wo, wo1);
+        mergeThenNullChecked(wo, wo1);
     }
-    if (!wo2.uselessExpr)
+//    if (!wo2.uselessExpr)
     {
         mergeThenNonNullChecked(wo, wo2);
+        mergeThenNullChecked(wo, wo2);
     }
     wo.knownNullVars.insert(wo1.knownNullVars.begin(),
         wo1.knownNullVars.end());
@@ -445,6 +462,10 @@ void analyseAndCondition(Node *node, Node *node1, Node *node2, const WalkItem &w
         wo1.knownNonNullVars.end());
     wo.knownNonNullVars.insert(wo2.knownNonNullVars.begin(),
         wo2.knownNonNullVars.end());
+
+    intersectElseNonNullChecked(wo, wo1, wo2);
+    intersectElseNullChecked(wo, wo1, wo2);
+
     wo.cleanExpr = wo1.cleanExpr && wo2.cleanExpr;
     wo.uselessExpr = wo1.uselessExpr && wo2.uselessExpr;
 }

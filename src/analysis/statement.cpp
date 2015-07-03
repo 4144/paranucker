@@ -145,7 +145,7 @@ void analyseCondition(Node *node,
     if (wo2.isReturned)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
-        FOR_EACH (it, wco.checkedThenNullVars)
+        FOR_EACH (it, wco.checkedElseNonNullVars)
         {
             wo.removeNullVarsAll.insert(it);
             wo.knownNonNullVars.insert(it);
@@ -153,7 +153,7 @@ void analyseCondition(Node *node,
         }
         if (wco.cleanExpr)
         {
-            FOR_EACH (it, wco.checkedThenNonNullVars)
+            FOR_EACH (it, wco.checkedElseNullVars)
             {
                 wo.knownNullVars.insert(it);
             }
@@ -162,7 +162,7 @@ void analyseCondition(Node *node,
     if (wo3.isReturned)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
-        FOR_EACH (it, wco.checkedElseNullVars)
+        FOR_EACH (it, wco.checkedThenNonNullVars)
         {
             wo.removeNullVarsAll.insert(it);
             wo.knownNonNullVars.insert(it);
@@ -170,13 +170,12 @@ void analyseCondition(Node *node,
         }
         if (wco.cleanExpr)
         {
-            FOR_EACH (it, wco.checkedElseNonNullVars)
+            FOR_EACH (it, wco.checkedThenNullVars)
             {
                 wo.knownNullVars.insert(it);
             }
         }
     }
-
     if (wo2.isReturned && wo3.isReturned)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
