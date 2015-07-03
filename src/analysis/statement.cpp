@@ -179,9 +179,11 @@ void analyseCondition(Node *node,
     if (wo2.isReturned && wo3.isReturned)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
-        FOR_EACH (it, wo.needCheckNullVars)
+        FOR_EACH (it, wo.knownVars)
         {
             wo.removeNullVarsAll.insert(it);
+            wo.knownNullVars.erase(it);
+            wo.knownNonNullVars.erase(it);
         }
     }
 
