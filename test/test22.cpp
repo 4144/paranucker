@@ -78,6 +78,7 @@ class Object1
             return;
         }
     }
+
     void func8(Data1 *const ptr1)
     {
         if (!ptr1 || ptr1->val == 3 || !ptr1->ptrval)
@@ -114,5 +115,15 @@ class Object1
         Data1 *ptr2 = ptr1;
         if (ptr1)
             ptr2->val = 200;
+    }
+
+    void func12(Data1 *const ptr1)
+    {
+        if (!ptr1 || ptr1->val == 3)
+            return;
+
+        const int k = ptr1->arr[0];
+
+        int test1 = ptr1->val;
     }
 };
