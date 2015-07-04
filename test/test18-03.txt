@@ -212,7 +212,7 @@ integer_cst 32: ptr2,
 type_decl Data1: ptr2, 
 integer_cst 64: ptr2, 
 integer_cst 0: ptr2, 
-return_expr : ptr1, 
+return_expr : 
 cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr2, 
 convert_expr : ptr2, 

@@ -8161,6 +8161,108 @@ integer_cst 64: ptr1, ptr2,
 type_decl Data1: ptr1, ptr2, 
 block : ptr1, ptr2, 
 var_decl ptr2: ptr1, ptr2, 
+function_decl func12: 
+bind_expr : ptr1, 
+statement_list : ptr1, 
+if_stmt : ptr1, 
+truth_orif_expr : ptr1, 
+eq_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+eq_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_cst 3: 
+return_expr : ptr1, 
+decl_expr : ptr1, 
+var_decl k: 
+decl_expr : ptr1, 
+var_decl test1: 
+integer_cst 32: 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+var_decl k: ptr1, 
+integer_cst 32: 
+array_ref : 
+integer_cst 0: 
+integer_cst 4: 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+field_decl str1: 
+integer_cst 64: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+integer_cst 0: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+block : ptr1, 
+var_decl k: 
+var_decl test1: 
 function_decl fill: 
 cleanup_point_expr : __first, __last, 
 expr_stmt : __first, __last, 

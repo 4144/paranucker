@@ -2,6 +2,10 @@ test20.c: In function 'func2':
 test20.c:16:9: warning: Using variable 'ptr3' without checking for null pointer
      ptr3->val = 100;
          ^
+test20.c: In function 'func4':
+test20.c:31:14: warning: Useless variable check 'ptr1'. It already was checked before
+     else if (!ptr1 && ptr2)
+              ^
 test20.c: In function 'func6':
 test20.c:52:9: warning: Using variable 'ptr3' without checking for null pointer
      ptr3->val = 100;

@@ -95,6 +95,10 @@ integer_cst 100: ptr2,
 if_stmt : ptr1, ptr2, ptr3, 
 truth_andif_expr : ptr1, ptr2, ptr3, 
 eq_expr : ptr1, ptr2, ptr3, 
+test19.cpp: In function 'int func4(Data1*, Data1*)':
+test19.cpp:31:15: warning: Useless variable check 'ptr1'. It already was checked before
+     else if (!ptr1 && ptr2)
+               ^
 parm_decl ptr1: ptr1, ptr2, ptr3, 
 pointer_type : ptr1, ptr2, ptr3, 
 record_type : ptr1, ptr2, ptr3, 

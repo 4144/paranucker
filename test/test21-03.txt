@@ -4476,7 +4476,7 @@ var_decl ptr2:
 field_decl val: 
 integer_cst 32: 
 integer_cst 0: 
-return_expr : ptr1, ptr2, 
+return_expr : 
 init_expr : 
 result_decl : 
 integer_type : 

@@ -83,6 +83,10 @@ integer_cst 100: ptr2,
 cond_expr : ptr1, ptr2, ptr3, 
 truth_andif_expr : ptr1, ptr2, ptr3, 
 eq_expr : ptr1, ptr2, ptr3, 
+test20.c: In function 'func4':
+test20.c:31:14: warning: Useless variable check 'ptr1'. It already was checked before
+     else if (!ptr1 && ptr2)
+              ^
 parm_decl ptr1: ptr1, ptr2, ptr3, 
 pointer_type : ptr1, ptr2, ptr3, 
 record_type : ptr1, ptr2, ptr3, 

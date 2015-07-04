@@ -13835,6 +13835,10 @@ statement_list :
 if_stmt : 
 truth_andif_expr : 
 eq_expr : 
+test26.cpp: In member function 'void Object1::func6(Data1*)':
+test26.cpp:103:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 && k == 4)
+                  ^
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -13862,6 +13866,9 @@ integer_cst 50:
 if_stmt : 
 truth_andif_expr : 
 ne_expr : 
+test26.cpp:105:22: warning: Useless variable check 'ptr1'. It already was checked before
+             if (ptr1 && k == 5)
+                      ^
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -13889,6 +13896,9 @@ integer_cst 60:
 if_stmt : 
 truth_orif_expr : 
 eq_expr : 
+test26.cpp:107:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 || k == 4)
+                  ^
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -13916,6 +13926,9 @@ integer_cst 70:
 if_stmt : 
 truth_orif_expr : 
 ne_expr : 
+test26.cpp:109:22: warning: Useless variable check 'ptr1'. It already was checked before
+             if (ptr1 || k == 5)
+                      ^
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -14108,6 +14121,10 @@ integer_cst 50:
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
+test26.cpp: In member function 'void Object1::func7(Data1*)':
+test26.cpp:131:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 && k == 5)
+                  ^
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -14162,6 +14179,9 @@ integer_cst 70: ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
+test26.cpp:135:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1 || k == 5)
+                  ^
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -14334,9 +14354,6 @@ statement_list : ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
-test26.cpp:155:18: warning: Useless variable check 'ptr1'. It already was checked before
-             if (!ptr1 || k == 5)
-                  ^
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -14391,9 +14408,6 @@ integer_cst 60: ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
-test26.cpp:159:18: warning: Useless variable check 'ptr1'. It already was checked before
-             if (!ptr1 && k == 7)
-                  ^
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -14626,9 +14640,6 @@ integer_cst 50: ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
-test26.cpp:183:18: warning: Useless variable check 'ptr1'. It already was checked before
-             if (!ptr1 || k == 6)
-                  ^
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -14683,9 +14694,6 @@ integer_cst 70:
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
-test26.cpp:187:18: warning: Useless variable check 'ptr1'. It already was checked before
-             if (!ptr1 && k == 8)
-                  ^
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
