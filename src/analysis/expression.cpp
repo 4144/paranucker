@@ -126,10 +126,7 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
             if (isNotIn(var2, wi.needCheckNullVars) &&
                 isNotIn(var2, wi.knownVars))
             {
-                wo.removeNullVars.insert(var1);
-                wo.knownVars.erase(var1);
-                wo.knownNullVars.erase(var1);
-                wo.knownNonNullVars.erase(var1);
+                removeVar(wo, var1);
             }
 
             reportParmDeclNullPointer(node,
@@ -140,10 +137,7 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
         {
             if (var2.empty())
             {   // have var1 only (var1 = UNKNOWN)
-                wo.removeNullVars.insert(var1);
-                wo.knownVars.erase(var1);
-                wo.knownNullVars.erase(var1);
-                wo.knownNonNullVars.erase(var1);
+                removeVar(wo, var1);
             }
             else
             {   // have var1 and var2 (var1 = var2)
@@ -155,10 +149,7 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
                 else if (isNotIn(var2, wi.needCheckNullVars) &&
                          isNotIn(var2, wi.knownVars))
                 {
-                    wo.removeNullVars.insert(var1);
-                    wo.knownVars.erase(var1);
-                    wo.knownNullVars.erase(var1);
-                    wo.knownNonNullVars.erase(var1);
+                    removeVar(wo, var1);
                 }
             }
         }

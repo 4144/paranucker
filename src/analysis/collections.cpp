@@ -86,33 +86,54 @@ void removeNeedCheckNullVarsSetAll(WalkItem &wi, std::set<std::string> &vars)
     }
 }
 
+void removeNeedCheckNullVarOnly(WalkItem &wi, const std::string &var)
+{
+    if (isIn(var, wi.needCheckNullVars))
+    {
+        wi.needCheckNullVars.erase(var);
+    }
+    if (isIn(var, wi.addNullVars))
+    {
+        wi.addNullVars.erase(var);
+    }
+    auto it2 = wi.linkedVars.find(var);
+    if (it2 != wi.linkedVars.end())
+    {
+        const StringSet linked = (*it2).second;
+        std::string newParent = *(linked.begin());
+        wi.linkedReverseVars.erase(newParent);
+        wi.linkedVars[newParent] = linked;
+        wi.linkedVars.erase(var);
+        wi.linkedVars[newParent].erase(newParent);
+        if (wi.linkedVars[newParent].empty())
+        {
+            wi.linkedVars.erase(newParent);
+        }
+        else
+        {
+            const StringSet &linked2 = wi.linkedVars[newParent];
+            FOR_EACH (it3, linked2)
+            {
+                wi.linkedReverseVars[it3] = newParent;
+            }
+        }
+    }
+    if (isIn(var, wi.linkedReverseVars))
+    {
+        std::string parent = wi.linkedReverseVars[var];
+        wi.linkedVars[parent].erase(var);
+        if (wi.linkedVars[parent].empty())
+            wi.linkedVars.erase(parent);
+    }
+    wi.linkedReverseVars.erase(var);
+}
+
 // remove vars from checks for null pointer without linked vars
 void removeNeedCheckNullVarsSet(WalkItem &wi, std::set<std::string> &vars)
 {
     FOR_EACH (it, vars)
     {
-        if (isIn(it, wi.needCheckNullVars))
-        {
-            wi.needCheckNullVars.erase(it);
-        }
-        if (isIn(it, wi.addNullVars))
-        {
-            wi.addNullVars.erase(it);
-        }
-        auto it2 = wi.linkedVars.find(it);
-        if (it2 != wi.linkedVars.end())
-        {
-            const StringSet linked = (*it2).second;
-            std::string newParent = *(linked.begin());
-            wi.linkedVars[newParent] = linked;
-            wi.linkedVars.erase(it);
-            wi.linkedVars[newParent].erase(newParent);
-        }
-        auto it3 = wi.linkedReverseVars.find(it);
-        if (it3 != wi.linkedReverseVars.end())
-        {
-            wi.linkedReverseVars.erase(it);
-        }
+        removeNeedCheckNullVarOnly(wi, it);
     }
 }
 
@@ -128,6 +149,7 @@ void addLinkedVar(WalkItem &wi,
                   std::string parent,
                   const std::string &var)
 {
+    //Log::log("add var\n");
     if (isIn(parent, wi.addNullVars) ||
         isIn(parent, wi.needCheckNullVars))
     {
@@ -151,6 +173,14 @@ void addLinkedVar(WalkItem &wi,
     }
     wi.knownVars.insert(var);
 
+    if (isIn(var, wi.linkedReverseVars))
+    {
+        std::string oldParent = wi.linkedReverseVars[var];
+        wi.linkedVars[oldParent].erase(var);
+        if (wi.linkedVars.empty())
+            wi.linkedVars.erase(oldParent);
+    }
+
     // found parent as already linked var. need change parent to real parent
     if (isIn(parent, wi.linkedReverseVars))
         parent = wi.linkedReverseVars[parent];
@@ -158,6 +188,40 @@ void addLinkedVar(WalkItem &wi,
         wi.linkedVars[parent] = std::set<std::string>();
     wi.linkedVars[parent].insert(var);
     wi.linkedReverseVars[var] = parent;
+
+    // found what variable have linked vars to it.
+    // Need move all this vars to new parent.
+    if (isIn(var, wi.linkedVars))
+    {
+        StringSet linked = wi.linkedVars[var];
+        std::string newParent = *(linked.begin());
+        wi.linkedReverseVars.erase(newParent);
+        wi.linkedVars[newParent] = linked;
+        wi.linkedVars.erase(var);
+        wi.linkedVars[newParent].erase(newParent);
+        if (wi.linkedVars[newParent].empty())
+        {
+            wi.linkedVars.erase(newParent);
+        }
+        else
+        {
+            const StringSet &linked2 = wi.linkedVars[newParent];
+            FOR_EACH (it3, linked2)
+            {
+                wi.linkedReverseVars[it3] = newParent;
+            }
+        }
+/*
+        StringSet oldLinked = wi.linkedVars[var];
+        wi.linkedVars.erase(var);
+        wi.linkedVars[parent].insert(oldLinked.begin(),
+            oldLinked.end());
+        FOR_EACH (it, oldLinked)
+        {
+            wi.linkedReverseVars[it] = parent;
+        }
+*/
+    }
 }
 
 // merger two checked for null var sets
@@ -274,6 +338,15 @@ void addKnownNonNullVarsWithLinked(WalkItem &wo, WalkItem &wi, std::set<std::str
             wo.knownNonNullVars.insert(linked.begin(), linked.end());
         }
     }
+}
+
+void removeVar(WalkItem &wi, const std::string &var)
+{
+    wi.removeNullVars.insert(var);
+    wi.knownVars.erase(var);
+    wi.knownNullVars.erase(var);
+    wi.knownNonNullVars.erase(var);
+    removeNeedCheckNullVarOnly(wi, var);
 }
 
 }

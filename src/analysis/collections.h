@@ -74,6 +74,8 @@ namespace Analysis
     void addKnownNonNullVarsWithLinked(WalkItem &wo,
                                        WalkItem &wi,
                                        std::set<std::string> &vars);
+
+    void removeVar(WalkItem &wi, const std::string &var);
 }
 
 #endif // ANALYSIS_COLLECTIONS_H
