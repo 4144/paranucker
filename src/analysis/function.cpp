@@ -126,8 +126,12 @@ void getPossibleNullParameters(FunctionDeclNode *node, WalkItem &wi)
                     name->label.c_str());
             }
             wi.needCheckNullVars.insert(name->label);
-            wi.knownVars.insert(name->label);
         }
+        else
+        {
+            wi.knownNonNullVars.insert(name->label);
+        }
+        wi.knownVars.insert(name->label);
     }
     if (checkCommand(FindArgs))
         Log::log("\n");
