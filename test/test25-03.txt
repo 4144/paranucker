@@ -105,6 +105,10 @@ integer_cst 1: ptr0,
 function_decl test1: 
 if_stmt : 
 ne_expr : 
+test25.cpp: In member function 'int Object1::test1(Data1*)':
+test25.cpp:37:9: warning: Useless variable check 'ptr1'. It already was checked before
+         if (ptr1)
+         ^
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
