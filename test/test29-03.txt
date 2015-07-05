@@ -181,10 +181,14 @@ eq_expr : ptr1, ptr2,
 parm_decl ptr2: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data2: ptr1, ptr2, 
-field_decl : ptr1, ptr2, 
-integer_cst 256: ptr1, ptr2, 
-type_decl Data2: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+field_decl ptrval: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+field_decl arr: ptr1, ptr2, 
+integer_cst 96: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 return_expr : ptr1, ptr2, 
@@ -227,10 +231,14 @@ integer_cst 64:
 parm_decl ptr2: 
 pointer_type : 
 record_type : 
-type_decl Data2: 
-field_decl : 
-integer_cst 256: 
-type_decl Data2: 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+field_decl ptrval: 
+integer_cst 64: 
+field_decl arr: 
+integer_cst 96: 
+type_decl Data1: 
 integer_cst 64: 
 cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : 
@@ -547,10 +555,14 @@ ne_expr : ptr1, ptr2,
 parm_decl ptr2: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data2: ptr1, ptr2, 
-field_decl : ptr1, ptr2, 
-integer_cst 256: ptr1, ptr2, 
-type_decl Data2: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+field_decl ptrval: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+field_decl arr: ptr1, ptr2, 
+integer_cst 96: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 return_expr : ptr1, 
@@ -593,10 +605,14 @@ integer_cst 64: ptr1, ptr2,
 parm_decl ptr2: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data2: ptr1, ptr2, 
-field_decl : ptr1, ptr2, 
-integer_cst 256: ptr1, ptr2, 
-type_decl Data2: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+field_decl ptrval: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+field_decl arr: ptr1, ptr2, 
+integer_cst 96: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr1, ptr2, 
@@ -1406,7 +1422,7 @@ integer_cst 64: ptr1,
 integer_cst 0: ptr1, 
 ne_expr : 
 test29.cpp: In member function 'void Object1::func13(int*)':
-test29.cpp:338:28: warning: Useless variable check 'ptr1'. It already was checked before
+test29.cpp:339:28: warning: Useless variable check 'ptr1'. It already was checked before
          if ((ptr1 || ptr1) && ptr1)
                             ^
 parm_decl ptr1: 
@@ -1456,7 +1472,7 @@ expr_stmt : ptr1,
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-test29.cpp:350:35: warning: internal collections 'knownNullVars' is different.
+test29.cpp:351:35: warning: internal collections 'knownNullVars' is different.
 want: ptr1,
  get: 
              paranuckerInternalTest("=", "knownNullVars", "ptr1");
@@ -1481,7 +1497,7 @@ expr_stmt : ptr1,
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-test29.cpp:355:31: warning: internal collections 'knownNullVars' is different.
+test29.cpp:356:31: warning: internal collections 'knownNullVars' is different.
 want: ptr1,
  get: 
          paranuckerInternalTest("=", "knownNullVars", "ptr1");
@@ -1508,7 +1524,7 @@ integer_cst 64: ptr1,
 integer_cst 0: ptr1, 
 ne_expr : 
 test29.cpp: In member function 'void Object1::func14(int*)':
-test29.cpp:363:19: warning: Useless variable check 'ptr1'. It already was checked before
+test29.cpp:364:19: warning: Useless variable check 'ptr1'. It already was checked before
          if ((ptr1 && ptr1) || ptr1)
                    ^
 parm_decl ptr1: 
@@ -1814,3 +1830,91 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
+function_decl func17: 
+bind_expr : ptr1, ptr2, 
+statement_list : ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+call_expr : ptr1, ptr2, 
+addr_expr : ptr1, ptr2, 
+function_decl paranuckerInternalTest: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+call_expr : ptr1, ptr2, 
+addr_expr : ptr1, ptr2, 
+function_decl paranuckerInternalTest: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+call_expr : ptr1, ptr2, 
+addr_expr : ptr1, ptr2, 
+function_decl paranuckerInternalTest: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+call_expr : ptr1, ptr2, 
+addr_expr : ptr1, ptr2, 
+function_decl paranuckerInternalTest: ptr1, ptr2, 
+decl_expr : ptr1, ptr2, 
+var_decl ptr3: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+call_expr : ptr1, ptr2, 
+addr_expr : ptr1, ptr2, 
+function_decl paranuckerInternalTest: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+call_expr : ptr1, ptr2, 
+addr_expr : ptr1, ptr2, 
+function_decl paranuckerInternalTest: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+call_expr : ptr1, ptr2, 
+addr_expr : ptr1, ptr2, 
+function_decl paranuckerInternalTest: ptr1, ptr2, 
+cleanup_point_expr : ptr1, ptr2, 
+expr_stmt : ptr1, ptr2, 
+call_expr : ptr1, ptr2, 
+addr_expr : ptr1, ptr2, 
+function_decl paranuckerInternalTest: ptr1, ptr2, 
+var_decl ptr3: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+cond_expr : ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data2: ptr1, ptr2, 
+field_decl _vptr.Data2: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+field_decl : ptr1, ptr2, 
+integer_cst 256: ptr1, ptr2, 
+type_decl Data2: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+addr_expr : ptr1, 
+component_ref : ptr1, 
+indirect_ref : ptr1, 
+parm_decl ptr2: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data2: ptr1, 
+field_decl _vptr.Data2: ptr1, 
+integer_cst 64: ptr1, 
+field_decl : ptr1, 
+integer_cst 256: ptr1, 
+type_decl Data2: ptr1, 
+integer_cst 64: ptr1, 
+field_decl : ptr1, 
+integer_cst 256: ptr1, 
+integer_cst 0: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+field_decl ptrval: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+field_decl arr: ptr1, ptr2, 
+integer_cst 96: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+block : ptr1, ptr2, 
+var_decl ptr3: ptr1, ptr2, 

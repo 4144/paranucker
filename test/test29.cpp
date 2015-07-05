@@ -9,6 +9,7 @@ struct Data1
 
 struct Data2 : public Data1
 {
+    virtual ~Data2();
 };
 
 int k;
@@ -50,7 +51,7 @@ class Object1
         paranuckerInternalTest("=", "needCheckNullVars", "");
     }
 
-    void func2(Data1 *ptr1, Data2 *ptr2)
+    void func2(Data1 *ptr1, Data1 *ptr2)
     {
         paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
         paranuckerInternalTest("=", "knownNonNullVars", "");
@@ -62,7 +63,7 @@ class Object1
         paranuckerInternalTest("=", "knownNonNullVars", "ptr2");
         paranuckerInternalTest("=", "knownNullVars", "");
         paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
-        ptr1 = dynamic_cast<Data1*>(ptr2);
+        ptr1 = ptr2;
         paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
         paranuckerInternalTest("=", "knownNonNullVars", "ptr1 ptr2");
         paranuckerInternalTest("=", "knownNullVars", "");
@@ -115,7 +116,7 @@ class Object1
         paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
     }
 
-    void func5(Data1 *ptr1, Data2 *ptr2)
+    void func5(Data1 *ptr1, Data1 *ptr2)
     {
         paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
         paranuckerInternalTest("=", "knownNonNullVars", "");
@@ -127,7 +128,7 @@ class Object1
         paranuckerInternalTest("=", "knownNonNullVars", "");
         paranuckerInternalTest("=", "knownNullVars", "ptr2");
         paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
-        ptr1 = dynamic_cast<Data1*>(ptr2);
+        ptr1 = ptr2;
         paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
         paranuckerInternalTest("=", "knownNonNullVars", "");
         paranuckerInternalTest("=", "knownNullVars", "ptr1 ptr2");
@@ -440,5 +441,18 @@ class Object1
         paranuckerInternalTest("=", "knownNonNullVars", "");
         paranuckerInternalTest("=", "knownNullVars", "");
         paranuckerInternalTest("=", "needCheckNullVars", "");
+    }
+
+    void func17(Data1 *ptr1, const Data2 *const ptr2)
+    {
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
+        const Data1 *const ptr3 = dynamic_cast<const Data1* const>(ptr2);
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
     }
 };
