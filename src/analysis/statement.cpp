@@ -68,13 +68,8 @@ void analyseCondition(Node *node,
         wco.checkedThenNullVars.end());
     addKnownNullVarsWithLinked(wi2, wco, wco.checkedThenNullVars);
     addKnownNonNullVarsWithLinked(wi2, wco, wco.checkedThenNonNullVars);
-//    wi2.knownNullVars.insert(wco.checkedThenNullVars.begin(),
-//        wco.checkedThenNullVars.end());
-//    wi2.knownNonNullVars.insert(wco.checkedThenNonNullVars.begin(),
-//        wco.checkedThenNonNullVars.end());
     wi2.needCheckNullVars = wi2.knownVars;
     removeNeedCheckNullVarsSetAll(wi2, wi2.knownNonNullVars);
-//    removeFromNeedCheckNullVars(wi2, wi2.knownNonNullVars);
     wo2 = wi2;
     Log::dumpWI(node, "wi2 then ", wi2);
 
@@ -91,13 +86,8 @@ void analyseCondition(Node *node,
         wco.checkedElseNonNullVars.end());
     addKnownNullVarsWithLinked(wi3, wco, wco.checkedElseNullVars);
     addKnownNonNullVarsWithLinked(wi3, wco, wco.checkedElseNonNullVars);
-//    wi3.knownNullVars.insert(wco.checkedElseNullVars.begin(),
-//        wco.checkedElseNullVars.end());
-//    wi3.knownNonNullVars.insert(wco.checkedElseNonNullVars.begin(),
-//        wco.checkedElseNonNullVars.end());
     wi3.needCheckNullVars = wi3.knownVars;
     removeNeedCheckNullVarsSetAll(wi3, wi3.knownNonNullVars);
-//    removeFromNeedCheckNullVars(wi3, wi3.knownNonNullVars);
 
     wo3 = wi3;
     Log::dumpWI(node, "wi3 else ", wi3);
@@ -123,17 +113,12 @@ void analyseCondition(Node *node,
         FOR_EACH (it, wco.checkedElseNonNullVars)
         {
             wo.removeNullVarsAll.insert(it);
-            //wo.knownNonNullVars.insert(it);
             removeNeedCheckNullVar(wo, it);
         }
         addKnownNonNullVarsWithLinked(wo, wco, wco.checkedElseNonNullVars);
         if (wco.cleanExpr)
         {
             addKnownNullVarsWithLinked(wo, wco, wco.checkedElseNullVars);
-//            FOR_EACH (it, wco.checkedElseNullVars)
-//            {
-//                wo.knownNullVars.insert(it);
-//            }
         }
     }
     if (wo3.isReturned)
@@ -142,17 +127,12 @@ void analyseCondition(Node *node,
         FOR_EACH (it, wco.checkedThenNonNullVars)
         {
             wo.removeNullVarsAll.insert(it);
-            //wo.knownNonNullVars.insert(it);
             removeNeedCheckNullVar(wo, it);
         }
         addKnownNonNullVarsWithLinked(wo, wco, wco.checkedThenNonNullVars);
         if (wco.cleanExpr)
         {
             addKnownNullVarsWithLinked(wo, wco, wco.checkedThenNullVars);
-//            FOR_EACH (it, wco.checkedThenNullVars)
-//            {
-//                wo.knownNullVars.insert(it);
-//            }
         }
     }
     if (wo2.isReturned && wo3.isReturned)
