@@ -2,3 +2,7 @@ test30.cpp: In member function 'void Object1::func2(Data1*)':
 test30.cpp:69:28: warning: Using parameter 'ptr1' without checking for null pointer
          if (!ptr1 && ptr1->val == 10)
                             ^
+test30.cpp: In member function 'void Object1::func4(Data1*, Data1*)':
+test30.cpp:127:14: warning: Useless variable check 'ptr2'. It already was checked before
+         if (!ptr2)
+              ^

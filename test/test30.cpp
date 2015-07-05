@@ -117,4 +117,18 @@ class Object1
         paranuckerInternalTest("=", "knownNullVars", "");
         paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
     }
+
+    void func4(Data1 *ptr1, Data1 *ptr2) __attribute__((nonnull (3)))
+    {
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "knownNonNullVars", "ptr2");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
+        if (!ptr2)
+            return;
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "knownNonNullVars", "ptr2");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
+    }
 };
