@@ -38,6 +38,12 @@ namespace Analysis
 
     void getFunctionParamsNonNullAttributes(FunctionDeclNode *node,
                                             std::set<int> &arr);
+
+    TreeListNode *findFunctionDeclAttribute(FunctionDeclNode *node,
+                                            const std::string &name);
+
+    bool findTreeListPurpose(TreeListNode *list,
+                             const std::string &name);
 }
 
 #endif // ANALYSIS_FUNCTION_H

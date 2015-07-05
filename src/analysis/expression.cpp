@@ -83,6 +83,29 @@ std::string getVariableName(Node *node)
     return "";
 }
 
+bool isPointerArg(Node *node)
+{
+    if (!node)
+        return false;
+
+    node = skipNop(node);
+    if (!node)
+        return false;
+    if (node == PARM_DECL)
+    {
+        ParmDeclNode *decl = static_cast<ParmDeclNode*>(node);
+        if (skipNop(decl->declType) == POINTER_TYPE)
+            return true;
+    }
+    else if (node == VAR_DECL)
+    {
+        VarDeclNode *var = static_cast<VarDeclNode*>(node);
+        if (skipNop(var->varType) == POINTER_TYPE)
+            return true;
+    }
+    return false;
+}
+
 // return variable name in format object->field for component node
 std::string getComponentRefVariable(Node *node)
 {
@@ -137,7 +160,13 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
         {
             if (var2.empty())
             {   // have var1 only (var1 = UNKNOWN)
-                removeVar(wo, var1);
+                bool handled(false);
+                if (node->args[1] == CALL_EXPR && isPointerArg(arg))
+                {
+                    handled = handleSetVarToFunction(var1, node->args[1], wo);
+                }
+                if (!handled)
+                    removeVar(wo, var1);
             }
             else
             {   // have var1 and var2 (var1 = var2)
@@ -704,6 +733,37 @@ void handleSetVarDecl(Node *node,
     }
 }
 
+bool handleSetVarToFunction(const std::string &var,
+                            Node *node2,
+                            WalkItem &wo)
+{
+    CallExprNode *call = static_cast<CallExprNode*>(node2);
+    if (call->function != ADDR_EXPR)
+        return false;
+    AddrExprNode *addr = static_cast<AddrExprNode*>(call->function);
+    if (!addr ||
+        addr->args.empty() ||
+        addr->args[0] != FUNCTION_DECL)
+    {
+        return false;
+    }
+    FunctionDeclNode *func = static_cast<FunctionDeclNode*>(addr->args[0]);
+    removeVar(wo, var);
+    if (!func->functionType)
+        return false;
+
+    if (findTreeListPurpose(static_cast<TreeListNode*>(func->functionType->attribute),
+        "returns_nonnull"))
+    {   // function have attribute returns_nonnull. This mean result cant be null
+        addNonNullVar(wo, var);
+    }
+    else
+    {   // function not have attribute returns_nonnull. This mean result can be null
+        addUnknownVar(wo, var);
+    }
+    return true;
+}
+
 void handleSetVar(Node *node1,
                   Node *node2,
                   const WalkItem &wi,
@@ -712,11 +772,21 @@ void handleSetVar(Node *node1,
     // var1 = var2
     const std::string var1 = getVariableName(node1);
     const std::string var2 = getVariableName(node2);
-    if (var1.empty() || var2.empty())
+    if (var1.empty())
         return;
-    if (isNotIn(var2, wi.knownVars))
+    if (var2.empty())
+    {
+        node2 = skipNop(node2);
+        if (node2 == CALL_EXPR && isPointerArg(node1))
+            handleSetVarToFunction(var1, node2, wo);
         return;
-    addLinkedVar(wo, var2, var1);
+    }
+    else
+    {
+        if (isNotIn(var2, wi.knownVars))
+            return;
+        addLinkedVar(wo, var2, var1);
+    }
 }
 
 // field = var

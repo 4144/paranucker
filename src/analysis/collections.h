@@ -33,8 +33,11 @@ namespace Analysis
     void addNeedCheckNullVars(WalkItem &wi,
                               WalkItem &wo);
 
-    void addNullVar(WalkItem &wi,
-                    const std::string &var);
+    void addUnknownVar(WalkItem &wi,
+                       const std::string &var);
+
+    void addNonNullVar(WalkItem &wi,
+                       const std::string &var);
 
     void addLinkedVar(WalkItem &wi,
                       std::string parent,

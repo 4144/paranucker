@@ -57,6 +57,19 @@ void getFunctionArgTypes(FunctionDeclNode *node,
     }
 }
 
+bool findTreeListPurpose(TreeListNode *list,
+                         const std::string &name)
+{
+    FOR_TREE_LIST(list)
+    {
+        if (list->purpose && list->purpose->label == name)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
 // find in TREE_LIST purpose with given label and get value
 TreeListNode *findTreeListPurposeValue(TreeListNode *list,
                                        const std::string &name)
@@ -71,15 +84,24 @@ TreeListNode *findTreeListPurposeValue(TreeListNode *list,
     return nullptr;
 }
 
+TreeListNode *findFunctionDeclAttribute(FunctionDeclNode *node,
+                                        const std::string &name)
+{
+    // function not have type
+    if (!node->functionType)
+        return nullptr;
+    return findTreeListPurposeValue(
+        static_cast<TreeListNode*>(node->functionType->attribute),
+        name);
+}
+
 void getFunctionParamsNonNullAttributes(FunctionDeclNode *node,
                                         std::set<int> &arr)
 {
     // function not have type
     if (!node->functionType)
         return;
-    TreeListNode *list = findTreeListPurposeValue(
-        static_cast<TreeListNode*>(node->functionType->attribute),
-        "nonnull");
+    TreeListNode *list = findFunctionDeclAttribute(node, "nonnull");
     // no attribute nonnull
     if (!list)
         return;

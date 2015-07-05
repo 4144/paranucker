@@ -94,6 +94,10 @@ namespace Analysis
                           WalkItem &wo);
 
     std::string getComponentRefVariable(Node *node);
+
+    bool handleSetVarToFunction(const std::string &var,
+                                Node *node2,
+                                WalkItem &wo);
 }
 
 #endif // ANALYSIS_EXPRESSION_H
