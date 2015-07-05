@@ -1,0 +1,4 @@
+test32.cpp: In member function 'void Object1::func1(Data1*)':
+test32.cpp:48:14: warning: unused variable 'var1' [-Wunused-variable]
+         long var1 = reinterpret_cast<long>(ptr1);
+              ^

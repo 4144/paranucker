@@ -306,9 +306,9 @@ class Object1
         paranuckerInternalTest("=", "knownNullVars", "");
         paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
         ptr1 = getData();
-        paranuckerInternalTest("=", "knownVars", "");
+        paranuckerInternalTest("=", "knownVars", "ptr1");
         paranuckerInternalTest("=", "knownNonNullVars", "");
         paranuckerInternalTest("=", "knownNullVars", "");
-        paranuckerInternalTest("=", "needCheckNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
     }
 };
