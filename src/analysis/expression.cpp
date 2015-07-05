@@ -548,7 +548,7 @@ void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo)
         walkTree(node->args[2], wi2, wo);
     }
 
-    handleSetVarDecl(node->args[0], wi, wo);
+    handleSetVarDecl(node->args[0], wi2, wo);
     wo.stopWalking = true;
 }
 
@@ -714,7 +714,7 @@ void handleSetVar(Node *node1,
     const std::string var2 = getVariableName(node2);
     if (var1.empty() || var2.empty())
         return;
-    if (isNotIn(var2, wi.needCheckNullVars))
+    if (isNotIn(var2, wi.knownVars))
         return;
     addLinkedVar(wo, var2, var1);
 }

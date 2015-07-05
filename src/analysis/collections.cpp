@@ -149,7 +149,7 @@ void addLinkedVar(WalkItem &wi,
                   std::string parent,
                   const std::string &var)
 {
-    //Log::log("add var\n");
+    //Log::log("add var: %s, %s\n", parent.c_str(), var.c_str());
     if (isIn(parent, wi.addNullVars) ||
         isIn(parent, wi.needCheckNullVars))
     {
