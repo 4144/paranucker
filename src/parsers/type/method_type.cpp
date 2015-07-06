@@ -46,7 +46,6 @@ void parseMethodTypeNode(MethodTypeNode *node)
 
     fillTypeName(node);
 
-
     node->methodBaseType = static_cast<TypeNode*>(createParseNode(
         node,
         TYPE_METHOD_BASETYPE(node->gccNode),
