@@ -39,6 +39,9 @@ void parseTypeNameTypeNode(TypeNameTypeNode *node)
     setPrintField(node, TYPENAME_IS_RESOLVING_P, isResolving);
 #endif
 
+    if (!node->parseChilds)
+        return;
+
     fillTypeName(node);
     fillTypeAttributes(node);
 

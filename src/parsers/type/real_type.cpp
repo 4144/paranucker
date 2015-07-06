@@ -35,6 +35,9 @@ void parseRealTypeNode(RealTypeNode *node)
 
     setPrintField(node, TYPE_PRECISION, precisionBits);
 
+    if (!node->parseChilds)
+        return;
+
     fillTypeName(node);
     fillTypeAttributes(node);
 }

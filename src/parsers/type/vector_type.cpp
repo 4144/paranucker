@@ -35,6 +35,9 @@ void parseVectorTypeNode(VectorTypeNode *node)
 
     setPrintField(node, TYPE_VECTOR_SUBPARTS, vectorSize);
 
+    if (!node->parseChilds)
+        return;
+
     fillTypeName(node);
     fillTypeAttributes(node);
 

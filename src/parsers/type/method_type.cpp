@@ -35,15 +35,17 @@ void parseMethodTypeNode(MethodTypeNode *node)
 
     fillTypeAttributes(node);
 
+    node->returnType = static_cast<TypeNode*>(createParseNode(
+        node,
+        TREE_TYPE(node->gccNode),
+        "method return type",
+        node->parseChilds));
+
     if (!node->parseChilds)
         return;
 
     fillTypeName(node);
 
-    node->returnType = static_cast<TypeNode*>(createParseNode(
-        node,
-        TREE_TYPE(node->gccNode),
-        "method return type"));
 
     node->methodBaseType = static_cast<TypeNode*>(createParseNode(
         node,

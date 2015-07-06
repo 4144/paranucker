@@ -33,6 +33,9 @@ void parseUnionTypeNode(UnionTypeNode *node)
     fillType(node);
     Log::dump(node);
 
+    if (!node->parseChilds)
+        return;
+
     fillTypeName(node);
     fillTypeAttributes(node);
 

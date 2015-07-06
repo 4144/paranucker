@@ -59,6 +59,8 @@
 #include "nodes/ref/indirect_ref.h"
 #include "nodes/ref/objtype_ref.h"
 
+#include "nodes/type/method_type.h"
+
 #include <set>
 
 #include "localconsts.h"
@@ -102,6 +104,10 @@ bool isPointerArg(Node *node)
         VarDeclNode *var = static_cast<VarDeclNode*>(node);
         if (skipNop(var->varType) == POINTER_TYPE)
             return true;
+    }
+    else if (node == COMPONENT_REF)
+    {
+        return true;
     }
     return false;
 }
@@ -750,6 +756,16 @@ bool handleSetVarToFunction(const std::string &var,
     FunctionDeclNode *func = static_cast<FunctionDeclNode*>(addr->args[0]);
     removeVar(wo, var);
     if (!func->functionType)
+        return false;
+
+    Node *returnType;
+    if (func->functionType == FUNCTION_TYPE)
+        returnType = static_cast<FunctionTypeNode*>(func->functionType)->returnType;
+    else if (func->functionType == METHOD_TYPE)
+        returnType = static_cast<MethodTypeNode*>(func->functionType)->returnType;
+    else
+        return false;
+    if (returnType != POINTER_TYPE)
         return false;
 
     if (findTreeListPurpose(static_cast<TreeListNode*>(func->functionType->attribute),

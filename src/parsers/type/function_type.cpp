@@ -33,14 +33,16 @@ void parseFunctionTypeNode(FunctionTypeNode *node)
     fillType(node);
     Log::dump(node);
 
+    node->returnType = static_cast<TypeNode*>(createParseNode(
+        node,
+        TREE_TYPE(node->gccNode),
+        "function return type",
+        node->parseChilds));
+
     if (!node->parseChilds)
         return;
 
     fillTypeName(node);
-    node->returnType = static_cast<TypeNode*>(createParseNode(
-        node,
-        TREE_TYPE(node->gccNode),
-        "function return type"));
     fillTypeAttributes(node);
     node->argTypes = static_cast<TreeListNode*>(createParseNode(
         node,
