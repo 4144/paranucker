@@ -3946,6 +3946,7 @@ function_decl exception /usr/include/c++/5/exception 63:5
              - isExternal: 1
              - isPublic: 1
               method_type - function type
+               void_type - method return type
            nop_expr - value
             addr_expr - operand
              function_decl __deleting_dtor  /usr/include/c++/5/exception 64:13 - operand
@@ -3953,6 +3954,7 @@ function_decl exception /usr/include/c++/5/exception 63:5
              - isExternal: 1
              - isPublic: 1
               method_type - function type
+               void_type - method return type
            nop_expr - value
             addr_expr - operand
              function_decl what /usr/include/c++/5/exception 68:25 - operand
@@ -3960,6 +3962,7 @@ function_decl exception /usr/include/c++/5/exception 63:5
              - isExternal: 1
              - isPublic: 1
               method_type - function type
+               pointer_type - method return type
           array_type - var type
            pointer_type - element type
             type_decl __vtbl_ptr_type <built-in> 0:0 - type name
@@ -4106,6 +4109,7 @@ function_decl __base_ctor  /usr/include/c++/5/exception 63:5
              - isExternal: 1
              - isPublic: 1
               method_type - function type
+               void_type - method return type
            nop_expr - value
             addr_expr - operand
              function_decl __deleting_dtor  /usr/include/c++/5/exception 64:13 - operand
@@ -4113,6 +4117,7 @@ function_decl __base_ctor  /usr/include/c++/5/exception 63:5
              - isExternal: 1
              - isPublic: 1
               method_type - function type
+               void_type - method return type
            nop_expr - value
             addr_expr - operand
              function_decl what /usr/include/c++/5/exception 68:25 - operand
@@ -4120,6 +4125,7 @@ function_decl __base_ctor  /usr/include/c++/5/exception 63:5
              - isExternal: 1
              - isPublic: 1
               method_type - function type
+               pointer_type - method return type
           array_type - var type
            pointer_type - element type
             type_decl __vtbl_ptr_type <built-in> 0:0 - type name
@@ -4251,6 +4257,7 @@ function_decl bad_exception /usr/include/c++/5/exception 76:5
         function_decl __base_ctor  /usr/include/c++/5/exception 63:5 - operand
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        addr_expr - arg
         component_ref - operand
          indirect_ref - object
@@ -4353,6 +4360,7 @@ function_decl bad_exception /usr/include/c++/5/exception 76:5
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  void_type - method return type
               nop_expr - value
                addr_expr - operand
                 function_decl __deleting_dtor  /usr/include/c++/5/exception 80:13 - operand
@@ -4360,6 +4368,7 @@ function_decl bad_exception /usr/include/c++/5/exception 76:5
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  void_type - method return type
               nop_expr - value
                addr_expr - operand
                 function_decl what /usr/include/c++/5/exception 83:25 - operand
@@ -4367,6 +4376,7 @@ function_decl bad_exception /usr/include/c++/5/exception 76:5
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  pointer_type - method return type
              array_type - var type
               pointer_type - element type
                type_decl __vtbl_ptr_type <built-in> 0:0 - type name
@@ -4393,6 +4403,7 @@ function_decl bad_exception /usr/include/c++/5/exception 76:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref - operand
         indirect_ref - object
@@ -4473,6 +4484,7 @@ function_decl __base_ctor  /usr/include/c++/5/exception 76:5
         function_decl __base_ctor  /usr/include/c++/5/exception 63:5 - operand
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        addr_expr - arg
         component_ref - operand
          indirect_ref - object
@@ -4575,6 +4587,7 @@ function_decl __base_ctor  /usr/include/c++/5/exception 76:5
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  void_type - method return type
               nop_expr - value
                addr_expr - operand
                 function_decl __deleting_dtor  /usr/include/c++/5/exception 80:13 - operand
@@ -4582,6 +4595,7 @@ function_decl __base_ctor  /usr/include/c++/5/exception 76:5
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  void_type - method return type
               nop_expr - value
                addr_expr - operand
                 function_decl what /usr/include/c++/5/exception 83:25 - operand
@@ -4589,6 +4603,7 @@ function_decl __base_ctor  /usr/include/c++/5/exception 76:5
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  pointer_type - method return type
              array_type - var type
               pointer_type - element type
                type_decl __vtbl_ptr_type <built-in> 0:0 - type name
@@ -4615,6 +4630,7 @@ function_decl __base_ctor  /usr/include/c++/5/exception 76:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref - operand
         indirect_ref - object
@@ -4744,6 +4760,7 @@ function_decl bad_alloc /usr/include/c++/5/new 57:5
         function_decl __base_ctor  /usr/include/c++/5/exception 63:5 - operand
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        addr_expr - arg
         component_ref - operand
          indirect_ref - object
@@ -4846,6 +4863,7 @@ function_decl bad_alloc /usr/include/c++/5/new 57:5
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  void_type - method return type
               nop_expr - value
                addr_expr - operand
                 function_decl __deleting_dtor  /usr/include/c++/5/new 61:13 - operand
@@ -4853,6 +4871,7 @@ function_decl bad_alloc /usr/include/c++/5/new 57:5
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  void_type - method return type
               nop_expr - value
                addr_expr - operand
                 function_decl what /usr/include/c++/5/new 64:25 - operand
@@ -4860,6 +4879,7 @@ function_decl bad_alloc /usr/include/c++/5/new 57:5
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  pointer_type - method return type
              array_type - var type
               pointer_type - element type
                type_decl __vtbl_ptr_type <built-in> 0:0 - type name
@@ -4886,6 +4906,7 @@ function_decl bad_alloc /usr/include/c++/5/new 57:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref - operand
         indirect_ref - object
@@ -4966,6 +4987,7 @@ function_decl __base_ctor  /usr/include/c++/5/new 57:5
         function_decl __base_ctor  /usr/include/c++/5/exception 63:5 - operand
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        addr_expr - arg
         component_ref - operand
          indirect_ref - object
@@ -5068,6 +5090,7 @@ function_decl __base_ctor  /usr/include/c++/5/new 57:5
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  void_type - method return type
               nop_expr - value
                addr_expr - operand
                 function_decl __deleting_dtor  /usr/include/c++/5/new 61:13 - operand
@@ -5075,6 +5098,7 @@ function_decl __base_ctor  /usr/include/c++/5/new 57:5
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  void_type - method return type
               nop_expr - value
                addr_expr - operand
                 function_decl what /usr/include/c++/5/new 64:25 - operand
@@ -5082,6 +5106,7 @@ function_decl __base_ctor  /usr/include/c++/5/new 57:5
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  pointer_type - method return type
              array_type - var type
               pointer_type - element type
                type_decl __vtbl_ptr_type <built-in> 0:0 - type name
@@ -5108,6 +5133,7 @@ function_decl __base_ctor  /usr/include/c++/5/new 57:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref - operand
         indirect_ref - object
@@ -12547,6 +12573,7 @@ function_decl operator= /usr/include/c++/5/bits/stl_bvector.h 94:5
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          reference_type - method return type
        parm_decl this /usr/include/c++/5/bits/stl_bvector.h 94:40 - arg
        - isAutogenerated: 1
         pointer_type - decl type
@@ -12569,6 +12596,7 @@ function_decl operator= /usr/include/c++/5/bits/stl_bvector.h 94:5
           - isExternal: 1
           - isPublic: 1
            method_type - function type
+            boolean_type - method return type
          convert_expr - arg
           - isUsed: 1
           parm_decl __x /usr/include/c++/5/bits/stl_bvector.h 94:37 - operand
@@ -12684,6 +12712,7 @@ function_decl operator== /usr/include/c++/5/bits/stl_bvector.h 98:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         boolean_type - method return type
       parm_decl this /usr/include/c++/5/bits/stl_bvector.h 98:43 - arg
       - isAutogenerated: 1
        pointer_type - decl type
@@ -12705,6 +12734,7 @@ function_decl operator== /usr/include/c++/5/bits/stl_bvector.h 98:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         boolean_type - method return type
       convert_expr - arg
        - isUsed: 1
        parm_decl __x /usr/include/c++/5/bits/stl_bvector.h 98:38 - operand
@@ -12821,6 +12851,7 @@ function_decl operator< /usr/include/c++/5/bits/stl_bvector.h 102:5
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          boolean_type - method return type
        parm_decl this /usr/include/c++/5/bits/stl_bvector.h 102:42 - arg
        - isAutogenerated: 1
         pointer_type - decl type
@@ -12842,6 +12873,7 @@ function_decl operator< /usr/include/c++/5/bits/stl_bvector.h 102:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         boolean_type - method return type
       convert_expr - arg
        - isUsed: 1
        parm_decl __x /usr/include/c++/5/bits/stl_bvector.h 102:37 - operand
@@ -13251,6 +13283,7 @@ function_decl _Bit_iterator_base /usr/include/c++/5/bits/stl_bvector.h 142:5
        - isAutogenerated: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       nop_expr - arg
        parm_decl this /usr/include/c++/5/bits/stl_bvector.h 142:57 - operand
        - isAutogenerated: 1
@@ -13441,6 +13474,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 142:5
        - isAutogenerated: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       nop_expr - arg
        parm_decl this /usr/include/c++/5/bits/stl_bvector.h 142:57 - operand
        - isAutogenerated: 1
@@ -14673,6 +14707,7 @@ function_decl operator!= /usr/include/c++/5/bits/stl_bvector.h 191:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         boolean_type - method return type
       parm_decl this /usr/include/c++/5/bits/stl_bvector.h 191:47 - arg
       - isAutogenerated: 1
        pointer_type - decl type
@@ -14803,6 +14838,7 @@ function_decl operator> /usr/include/c++/5/bits/stl_bvector.h 195:5
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        boolean_type - method return type
      convert_expr - arg
       - isUsed: 1
       parm_decl __i /usr/include/c++/5/bits/stl_bvector.h 195:41 - operand
@@ -14935,6 +14971,7 @@ function_decl operator<= /usr/include/c++/5/bits/stl_bvector.h 199:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         boolean_type - method return type
       convert_expr - arg
        - isUsed: 1
        parm_decl __i /usr/include/c++/5/bits/stl_bvector.h 199:42 - operand
@@ -15067,6 +15104,7 @@ function_decl operator>= /usr/include/c++/5/bits/stl_bvector.h 203:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         boolean_type - method return type
       parm_decl this /usr/include/c++/5/bits/stl_bvector.h 203:47 - arg
       - isAutogenerated: 1
        pointer_type - decl type
@@ -15347,6 +15385,7 @@ function_decl _Bit_iterator /usr/include/c++/5/bits/stl_bvector.h 220:5
       function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 142:5 - operand
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -15439,6 +15478,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 220:5
       function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 142:5 - operand
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -15627,6 +15667,7 @@ function_decl _Bit_iterator /usr/include/c++/5/bits/stl_bvector.h 222:5
       function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 142:5 - operand
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -15776,6 +15817,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 222:5
       function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 142:5 - operand
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -16153,6 +16195,7 @@ function_decl operator* /usr/include/c++/5/bits/stl_bvector.h 230:5
         function_decl __comp_ctor  /usr/include/c++/5/bits/stl_bvector.h 75:5 - operand
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        var_decl /usr/include/c++/5/bits/stl_bvector.h 231:46 - slot
        - isAutogenerated: 1
        convert_expr - arg
@@ -16304,6 +16347,7 @@ function_decl operator++ /usr/include/c++/5/bits/stl_bvector.h 234:5
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -16502,6 +16546,7 @@ function_decl operator++ /usr/include/c++/5/bits/stl_bvector.h 241:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref - operand
         indirect_ref - object
@@ -16649,6 +16694,7 @@ function_decl operator-- /usr/include/c++/5/bits/stl_bvector.h 249:5
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -16847,6 +16893,7 @@ function_decl operator-- /usr/include/c++/5/bits/stl_bvector.h 256:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref - operand
         indirect_ref - object
@@ -17012,6 +17059,7 @@ function_decl operator+= /usr/include/c++/5/bits/stl_bvector.h 264:5
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -17185,6 +17233,7 @@ function_decl operator-= /usr/include/c++/5/bits/stl_bvector.h 271:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         reference_type - method return type
       parm_decl this /usr/include/c++/5/bits/stl_bvector.h 271:35 - arg
       - isAutogenerated: 1
        pointer_type - decl type
@@ -17420,6 +17469,7 @@ function_decl operator+ /usr/include/c++/5/bits/stl_bvector.h 278:5
             - isExternal: 1
             - isPublic: 1
              method_type - function type
+              reference_type - method return type
            addr_expr - arg
             var_decl __tmp /usr/include/c++/5/bits/stl_bvector.h 280:16 - operand
             - isUsed: 1
@@ -17608,6 +17658,7 @@ function_decl operator- /usr/include/c++/5/bits/stl_bvector.h 285:5
             - isExternal: 1
             - isPublic: 1
              method_type - function type
+              reference_type - method return type
            addr_expr - arg
             var_decl __tmp /usr/include/c++/5/bits/stl_bvector.h 287:16 - operand
             - isUsed: 1
@@ -17750,6 +17801,8 @@ function_decl operator[] /usr/include/c++/5/bits/stl_bvector.h 292:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         record_type - method return type
+          type_decl reference /usr/include/c++/5/bits/stl_bvector.h 216:29 - type name
       addr_expr - arg
        target_expr /usr/include/c++/5/bits/stl_bvector.h 293:22 - operand
         var_decl /usr/include/c++/5/bits/stl_bvector.h 293:24 - operand
@@ -17772,6 +17825,8 @@ function_decl operator[] /usr/include/c++/5/bits/stl_bvector.h 292:5
           - isExternal: 1
           - isPublic: 1
            method_type - function type
+            record_type - method return type
+             type_decl iterator /usr/include/c++/5/bits/stl_bvector.h 218:29 - type name
          parm_decl this /usr/include/c++/5/bits/stl_bvector.h 292:37 - arg
          - isAutogenerated: 1
           pointer_type - decl type
@@ -17919,6 +17974,8 @@ function_decl operator+ /usr/include/c++/5/bits/stl_bvector.h 297:3
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         record_type - method return type
+          type_decl iterator /usr/include/c++/5/bits/stl_bvector.h 218:29 - type name
       convert_expr - arg
        - isUsed: 1
        parm_decl __x /usr/include/c++/5/bits/stl_bvector.h 297:49 - operand
@@ -18014,6 +18071,7 @@ function_decl _Bit_const_iterator /usr/include/c++/5/bits/stl_bvector.h 307:5
       function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 142:5 - operand
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -18110,6 +18168,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 307:5
       function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 142:5 - operand
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -18305,6 +18364,7 @@ function_decl _Bit_const_iterator /usr/include/c++/5/bits/stl_bvector.h 309:5
       function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 142:5 - operand
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -18458,6 +18518,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 309:5
       function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 142:5 - operand
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -18702,6 +18763,7 @@ function_decl _Bit_const_iterator /usr/include/c++/5/bits/stl_bvector.h 312:5
       function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 142:5 - operand
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -18882,6 +18944,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 312:5
       function_decl __base_ctor  /usr/include/c++/5/bits/stl_bvector.h 142:5 - operand
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -19175,6 +19238,7 @@ function_decl _M_const_cast /usr/include/c++/5/bits/stl_bvector.h 316:5
         function_decl __comp_ctor  /usr/include/c++/5/bits/stl_bvector.h 222:5 - operand
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        var_decl /usr/include/c++/5/bits/stl_bvector.h 317:43 - slot
        - isAutogenerated: 1
        convert_expr - arg
@@ -19315,6 +19379,7 @@ function_decl operator* /usr/include/c++/5/bits/stl_bvector.h 320:5
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        boolean_type - method return type
      addr_expr - arg
       target_expr - operand
        var_decl /usr/include/c++/5/bits/stl_bvector.h 321:51 - operand
@@ -19336,6 +19401,7 @@ function_decl operator* /usr/include/c++/5/bits/stl_bvector.h 320:5
          function_decl __comp_ctor  /usr/include/c++/5/bits/stl_bvector.h 75:5 - operand
          - isPublic: 1
           method_type - function type
+           void_type - method return type
         var_decl /usr/include/c++/5/bits/stl_bvector.h 321:51 - slot
         - isAutogenerated: 1
         convert_expr - arg
@@ -19492,6 +19558,7 @@ function_decl operator++ /usr/include/c++/5/bits/stl_bvector.h 324:5
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -19700,6 +19767,7 @@ function_decl operator++ /usr/include/c++/5/bits/stl_bvector.h 331:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref - operand
         indirect_ref - object
@@ -19855,6 +19923,7 @@ function_decl operator-- /usr/include/c++/5/bits/stl_bvector.h 339:5
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -20063,6 +20132,7 @@ function_decl operator-- /usr/include/c++/5/bits/stl_bvector.h 346:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref - operand
         indirect_ref - object
@@ -20236,6 +20306,7 @@ function_decl operator+= /usr/include/c++/5/bits/stl_bvector.h 354:5
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -20417,6 +20488,7 @@ function_decl operator-= /usr/include/c++/5/bits/stl_bvector.h 361:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         reference_type - method return type
       parm_decl this /usr/include/c++/5/bits/stl_bvector.h 361:35 - arg
       - isAutogenerated: 1
        pointer_type - decl type
@@ -20664,6 +20736,7 @@ function_decl operator+ /usr/include/c++/5/bits/stl_bvector.h 368:5
             - isExternal: 1
             - isPublic: 1
              method_type - function type
+              reference_type - method return type
            addr_expr - arg
             var_decl __tmp /usr/include/c++/5/bits/stl_bvector.h 370:22 - operand
             - isUsed: 1
@@ -20861,6 +20934,7 @@ function_decl operator- /usr/include/c++/5/bits/stl_bvector.h 375:5
             - isExternal: 1
             - isPublic: 1
              method_type - function type
+              reference_type - method return type
            addr_expr - arg
             var_decl __tmp /usr/include/c++/5/bits/stl_bvector.h 377:22 - operand
             - isUsed: 1
@@ -20968,6 +21042,7 @@ function_decl operator[] /usr/include/c++/5/bits/stl_bvector.h 382:5
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        boolean_type - method return type
      addr_expr - arg
       target_expr /usr/include/c++/5/bits/stl_bvector.h 383:22 - operand
        var_decl /usr/include/c++/5/bits/stl_bvector.h 383:24 - operand
@@ -20991,6 +21066,8 @@ function_decl operator[] /usr/include/c++/5/bits/stl_bvector.h 382:5
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           record_type - method return type
+            type_decl const_iterator /usr/include/c++/5/bits/stl_bvector.h 305:34 - type name
         parm_decl this /usr/include/c++/5/bits/stl_bvector.h 382:37 - arg
         - isAutogenerated: 1
          pointer_type - decl type
@@ -21145,6 +21222,8 @@ function_decl operator+ /usr/include/c++/5/bits/stl_bvector.h 387:3
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         record_type - method return type
+          type_decl const_iterator /usr/include/c++/5/bits/stl_bvector.h 305:34 - type name
       convert_expr - arg
        - isUsed: 1
        parm_decl __x /usr/include/c++/5/bits/stl_bvector.h 387:55 - operand
@@ -21268,6 +21347,7 @@ function_decl __fill_bvector /usr/include/c++/5/bits/stl_bvector.h 391:3
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        reference_type - method return type
      addr_expr - arg
       - isUsed: 1
       parm_decl __first /usr/include/c++/5/bits/stl_bvector.h 391:32 - operand
@@ -21291,6 +21371,7 @@ function_decl __fill_bvector /usr/include/c++/5/bits/stl_bvector.h 391:3
      - isExternal: 1
      - isPublic: 1
       method_type - function type
+       boolean_type - method return type
     addr_expr - arg
      component_ref - operand
       - isUsed: 1
@@ -21344,6 +21425,7 @@ function_decl __fill_bvector /usr/include/c++/5/bits/stl_bvector.h 391:3
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         reference_type - method return type
       addr_expr - arg
        target_expr - operand
         var_decl /usr/include/c++/5/bits/stl_bvector.h 394:8 - operand
@@ -21365,6 +21447,8 @@ function_decl __fill_bvector /usr/include/c++/5/bits/stl_bvector.h 391:3
           - isExternal: 1
           - isPublic: 1
            method_type - function type
+            record_type - method return type
+             type_decl reference /usr/include/c++/5/bits/stl_bvector.h 216:29 - type name
          addr_expr - arg
           - isUsed: 1
           parm_decl __first /usr/include/c++/5/bits/stl_bvector.h 391:32 - operand
@@ -21671,6 +21755,7 @@ function_decl fill /usr/include/c++/5/bits/stl_bvector.h 398:3
          function_decl __comp_ctor  /usr/include/c++/5/bits/stl_bvector.h 222:5 - operand
          - isPublic: 1
           method_type - function type
+           void_type - method return type
         var_decl /usr/include/c++/5/bits/stl_bvector.h 403:59 - slot
         - isAutogenerated: 1
         convert_expr - arg
@@ -21740,6 +21825,7 @@ function_decl fill /usr/include/c++/5/bits/stl_bvector.h 398:3
          function_decl __comp_ctor  /usr/include/c++/5/bits/stl_bvector.h 222:5 - operand
          - isPublic: 1
           method_type - function type
+           void_type - method return type
         var_decl /usr/include/c++/5/bits/stl_bvector.h 404:45 - slot
         - isAutogenerated: 1
         convert_expr - arg
@@ -21970,6 +22056,7 @@ function_decl Data1 test22.cpp 8:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref test22.cpp 9:5 - operand
         indirect_ref - object
@@ -22006,6 +22093,7 @@ function_decl Data1 test22.cpp 8:5
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref test22.cpp 9:5 - operand
        indirect_ref - object
@@ -22117,6 +22205,7 @@ function_decl __base_ctor  test22.cpp 8:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref test22.cpp 9:5 - operand
         indirect_ref - object
@@ -22153,6 +22242,7 @@ function_decl __base_ctor  test22.cpp 8:5
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref test22.cpp 9:5 - operand
        indirect_ref - object
@@ -22429,6 +22519,7 @@ function_decl Data1 test22.cpp 12:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref test22.cpp 13:20 - operand
         indirect_ref - object
@@ -22465,6 +22556,7 @@ function_decl Data1 test22.cpp 12:5
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref test22.cpp 13:20 - operand
        indirect_ref - object
@@ -22668,6 +22760,7 @@ function_decl __base_ctor  test22.cpp 12:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref test22.cpp 13:20 - operand
         indirect_ref - object
@@ -22704,6 +22797,7 @@ function_decl __base_ctor  test22.cpp 12:5
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref test22.cpp 13:20 - operand
        indirect_ref - object
@@ -23155,6 +23249,7 @@ function_decl func1 test22.cpp 37:9
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        var_decl vec1 test22.cpp 39:29 - operand
        - isUsed: 1
@@ -23168,6 +23263,7 @@ function_decl func1 test22.cpp 37:9
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           void_type - method return type
         addr_expr - arg
          var_decl vec1 test22.cpp 39:29 - operand
          - isUsed: 1
@@ -23200,6 +23296,7 @@ function_decl func1 test22.cpp 37:9
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       var_decl vec1 test22.cpp 39:29 - operand
       - isUsed: 1
@@ -23581,6 +23678,9 @@ function_decl func4 test22.cpp 54:10
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        integer_type - method return type
+        - precisionBits: 32
+        - signed
      nop_expr - arg
       - isUsed: 1
       parm_decl ptr1 test22.cpp 54:29 - operand
@@ -23710,6 +23810,7 @@ function_decl Data1 test22.cpp 6:8
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        addr_expr - arg
         component_ref test22.cpp 6:8 - operand
          indirect_ref - object
@@ -23865,6 +23966,7 @@ function_decl __base_dtor  test22.cpp 6:8
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        addr_expr - arg
         component_ref test22.cpp 6:8 - operand
          indirect_ref - object
@@ -24117,6 +24219,7 @@ function_decl func5 test22.cpp 62:10
        function_decl __comp_ctor  test22.cpp 12:5 - operand
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        var_decl data test22.cpp 64:15 - operand
        - isUsed: 1
@@ -24149,6 +24252,7 @@ function_decl func5 test22.cpp 62:10
       - isAutogenerated: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       var_decl data test22.cpp 64:15 - operand
       - isUsed: 1
@@ -24769,6 +24873,7 @@ function_decl func9 test22.cpp 92:10
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         boolean_type - method return type
       addr_expr - arg
        component_ref test22.cpp 94:28 - operand
         indirect_ref - object
@@ -24807,6 +24912,7 @@ function_decl func9 test22.cpp 92:10
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         reference_type - method return type
       addr_expr - arg
        component_ref test22.cpp 96:15 - operand
         indirect_ref - object
@@ -25634,6 +25740,7 @@ function_decl _Alloc_hider /usr/include/c++/5/bits/basic_string.h 2668:14
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        nop_expr - arg
         parm_decl this /usr/include/c++/5/bits/basic_string.h 2840:58 - operand
         - isAutogenerated: 1
@@ -25729,6 +25836,7 @@ function_decl __base_dtor  /usr/include/c++/5/bits/basic_string.h 2668:14
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        nop_expr - arg
         parm_decl this /usr/include/c++/5/bits/basic_string.h 2840:58 - operand
         - isAutogenerated: 1
@@ -25942,6 +26050,7 @@ function_decl basic_string /usr/include/c++/5/bits/basic_string.h 2838:7
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref /usr/include/c++/5/bits/basic_string.h 2840:58 - operand
         indirect_ref - object
@@ -25989,6 +26098,7 @@ function_decl basic_string /usr/include/c++/5/bits/basic_string.h 2838:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          pointer_type - method return type
        convert_expr - arg
         call_expr /usr/include/c++/5/bits/basic_string.h 2840:33 - operand
          addr_expr - function
@@ -26051,6 +26161,7 @@ function_decl basic_string /usr/include/c++/5/bits/basic_string.h 2838:7
             - isExternal: 1
             - isPublic: 1
              method_type - function type
+              void_type - method return type
            var_decl /usr/include/c++/5/bits/basic_string.h 2840:58 - slot
            - isUsed: 1
            - isAutogenerated: 1
@@ -26062,6 +26173,7 @@ function_decl basic_string /usr/include/c++/5/bits/basic_string.h 2838:7
             - isExternal: 1
             - isPublic: 1
              method_type - function type
+              void_type - method return type
            addr_expr - arg
             var_decl /usr/include/c++/5/bits/basic_string.h 2840:58 - operand
             - isUsed: 1
@@ -26074,6 +26186,7 @@ function_decl basic_string /usr/include/c++/5/bits/basic_string.h 2838:7
       - isAutogenerated: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref /usr/include/c++/5/bits/basic_string.h 2840:58 - operand
        indirect_ref - object
@@ -26245,6 +26358,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/basic_string.h 2838:7
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref /usr/include/c++/5/bits/basic_string.h 2840:58 - operand
         indirect_ref - object
@@ -26292,6 +26406,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/basic_string.h 2838:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          pointer_type - method return type
        convert_expr - arg
         call_expr /usr/include/c++/5/bits/basic_string.h 2840:33 - operand
          addr_expr - function
@@ -26354,6 +26469,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/basic_string.h 2838:7
             - isExternal: 1
             - isPublic: 1
              method_type - function type
+              void_type - method return type
            var_decl /usr/include/c++/5/bits/basic_string.h 2840:58 - slot
            - isUsed: 1
            - isAutogenerated: 1
@@ -26365,6 +26481,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/basic_string.h 2838:7
             - isExternal: 1
             - isPublic: 1
              method_type - function type
+              void_type - method return type
            addr_expr - arg
             var_decl /usr/include/c++/5/bits/basic_string.h 2840:58 - operand
             - isUsed: 1
@@ -26377,6 +26494,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/basic_string.h 2838:7
       - isAutogenerated: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref /usr/include/c++/5/bits/basic_string.h 2840:58 - operand
        indirect_ref - object
@@ -26693,12 +26811,14 @@ function_decl basic_string /usr/include/c++/5/bits/basic_string.h 2942:7
            - isExternal: 1
            - isPublic: 1
             method_type - function type
+             void_type - method return type
           call_expr /usr/include/c++/5/bits/basic_string.h 2943:15 - arg
            addr_expr - function
             function_decl _M_rep /usr/include/c++/5/bits/basic_string.h 2696:7 - operand
             - isExternal: 1
             - isPublic: 1
              method_type - function type
+              pointer_type - method return type
            - isUsed: 1
            parm_decl this /usr/include/c++/5/bits/basic_string.h 2942:21 - arg
            - isAutogenerated: 1
@@ -26788,6 +26908,8 @@ function_decl basic_string /usr/include/c++/5/bits/basic_string.h 2942:7
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  record_type - method return type
+                   type_decl allocator_type /usr/include/c++/5/bits/basic_string.h 2516:30 - type name
                var_decl /usr/include/c++/5/bits/basic_string.h 2943:9 - slot
                - isUsed: 1
                - isAutogenerated: 1
@@ -26832,6 +26954,7 @@ function_decl basic_string /usr/include/c++/5/bits/basic_string.h 2942:7
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  void_type - method return type
                addr_expr - arg
                 var_decl /usr/include/c++/5/bits/basic_string.h 2943:9 - operand
                 - isUsed: 1
@@ -26842,6 +26965,7 @@ function_decl basic_string /usr/include/c++/5/bits/basic_string.h 2942:7
         - isAutogenerated: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        addr_expr - arg
         component_ref /usr/include/c++/5/bits/basic_string.h 2943:54 - operand
          indirect_ref - object
@@ -27065,12 +27189,14 @@ function_decl __base_dtor  /usr/include/c++/5/bits/basic_string.h 2942:7
            - isExternal: 1
            - isPublic: 1
             method_type - function type
+             void_type - method return type
           call_expr /usr/include/c++/5/bits/basic_string.h 2943:15 - arg
            addr_expr - function
             function_decl _M_rep /usr/include/c++/5/bits/basic_string.h 2696:7 - operand
             - isExternal: 1
             - isPublic: 1
              method_type - function type
+              pointer_type - method return type
            - isUsed: 1
            parm_decl this /usr/include/c++/5/bits/basic_string.h 2942:21 - arg
            - isAutogenerated: 1
@@ -27160,6 +27286,8 @@ function_decl __base_dtor  /usr/include/c++/5/bits/basic_string.h 2942:7
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  record_type - method return type
+                   type_decl allocator_type /usr/include/c++/5/bits/basic_string.h 2516:30 - type name
                var_decl /usr/include/c++/5/bits/basic_string.h 2943:9 - slot
                - isUsed: 1
                - isAutogenerated: 1
@@ -27204,6 +27332,7 @@ function_decl __base_dtor  /usr/include/c++/5/bits/basic_string.h 2942:7
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  void_type - method return type
                addr_expr - arg
                 var_decl /usr/include/c++/5/bits/basic_string.h 2943:9 - operand
                 - isUsed: 1
@@ -27214,6 +27343,7 @@ function_decl __base_dtor  /usr/include/c++/5/bits/basic_string.h 2942:7
         - isAutogenerated: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        addr_expr - arg
         component_ref /usr/include/c++/5/bits/basic_string.h 2943:54 - operand
          indirect_ref - object
@@ -27545,6 +27675,7 @@ function_decl vector /usr/include/c++/5/bits/stl_vector.h 253:7
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref - operand
         indirect_ref - object
@@ -27595,6 +27726,7 @@ function_decl vector /usr/include/c++/5/bits/stl_vector.h 253:7
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -27759,6 +27891,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/stl_vector.h 253:7
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        component_ref - operand
         indirect_ref - object
@@ -27809,6 +27942,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/stl_vector.h 253:7
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref - operand
        indirect_ref - object
@@ -28218,6 +28352,7 @@ function_decl vector /usr/include/c++/5/bits/stl_vector.h 423:7
               - isExternal: 1
               - isPublic: 1
                method_type - function type
+                reference_type - method return type
              addr_expr - arg
               component_ref - operand
                indirect_ref - object
@@ -28267,6 +28402,7 @@ function_decl vector /usr/include/c++/5/bits/stl_vector.h 423:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        addr_expr - arg
         component_ref - operand
          indirect_ref - object
@@ -28591,6 +28727,7 @@ function_decl __base_dtor  /usr/include/c++/5/bits/stl_vector.h 423:7
               - isExternal: 1
               - isPublic: 1
                method_type - function type
+                reference_type - method return type
              addr_expr - arg
               component_ref - operand
                indirect_ref - object
@@ -28640,6 +28777,7 @@ function_decl __base_dtor  /usr/include/c++/5/bits/stl_vector.h 423:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        addr_expr - arg
         component_ref - operand
          indirect_ref - object
@@ -29297,6 +29435,7 @@ function_decl push_back /usr/include/c++/5/bits/stl_vector.h 913:7
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      - isUsed: 1
      parm_decl this /usr/include/c++/5/bits/stl_vector.h 913:38 - arg
      - isAutogenerated: 1
@@ -29356,6 +29495,8 @@ function_decl push_back /usr/include/c++/5/bits/stl_vector.h 913:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          record_type - method return type
+           type_decl iterator /usr/include/c++/5/bits/stl_vector.h 231:61 - type name
        - isUsed: 1
        parm_decl this /usr/include/c++/5/bits/stl_vector.h 913:38 - arg
        - isAutogenerated: 1
@@ -29553,6 +29694,9 @@ function_decl empty /usr/include/c++/5/bits/basic_string.h 3217:7
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         integer_type - method return type
+         - precisionBits: 64
+         - unsigned
       - isUsed: 1
       parm_decl this /usr/include/c++/5/bits/basic_string.h 3217:15 - arg
       - isAutogenerated: 1
@@ -29750,6 +29894,7 @@ function_decl operator[] /usr/include/c++/5/bits/basic_string.h 3249:7
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      parm_decl this /usr/include/c++/5/bits/basic_string.h 3249:33 - arg
      - isAutogenerated: 1
       pointer_type - decl type
@@ -29809,6 +29954,7 @@ function_decl operator[] /usr/include/c++/5/bits/basic_string.h 3249:7
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           pointer_type - method return type
         parm_decl this /usr/include/c++/5/bits/basic_string.h 3249:33 - arg
         - isAutogenerated: 1
          pointer_type - decl type
@@ -30506,6 +30652,7 @@ function_decl allocator /usr/include/c++/5/bits/allocator.h 113:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        nop_expr - arg
         parm_decl this /usr/include/c++/5/bits/allocator.h 113:25 - operand
         - isAutogenerated: 1
@@ -30560,6 +30707,7 @@ function_decl allocator /usr/include/c++/5/bits/allocator.h 113:7
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       nop_expr - arg
        parm_decl this /usr/include/c++/5/bits/allocator.h 113:25 - operand
        - isAutogenerated: 1
@@ -30763,6 +30911,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/allocator.h 113:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        nop_expr - arg
         parm_decl this /usr/include/c++/5/bits/allocator.h 113:25 - operand
         - isAutogenerated: 1
@@ -30817,6 +30966,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/allocator.h 113:7
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       nop_expr - arg
        parm_decl this /usr/include/c++/5/bits/allocator.h 113:25 - operand
        - isAutogenerated: 1
@@ -31188,6 +31338,7 @@ function_decl allocator /usr/include/c++/5/bits/allocator.h 121:7
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           void_type - method return type
         nop_expr - arg
          parm_decl this /usr/include/c++/5/bits/allocator.h 121:26 - operand
          - isAutogenerated: 1
@@ -31446,6 +31597,7 @@ function_decl __base_dtor  /usr/include/c++/5/bits/allocator.h 121:7
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           void_type - method return type
         nop_expr - arg
          parm_decl this /usr/include/c++/5/bits/allocator.h 121:26 - operand
          - isAutogenerated: 1
@@ -31860,6 +32012,7 @@ function_decl _Alloc_hider /usr/include/c++/5/bits/basic_string.h 2670:2
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       nop_expr - arg
        parm_decl this /usr/include/c++/5/bits/basic_string.h 2670:47 - operand
        - isAutogenerated: 1
@@ -31963,6 +32116,7 @@ function_decl _Alloc_hider /usr/include/c++/5/bits/basic_string.h 2670:2
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      nop_expr - arg
       parm_decl this /usr/include/c++/5/bits/basic_string.h 2670:47 - operand
       - isAutogenerated: 1
@@ -32145,6 +32299,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/basic_string.h 2670:2
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       nop_expr - arg
        parm_decl this /usr/include/c++/5/bits/basic_string.h 2670:47 - operand
        - isAutogenerated: 1
@@ -32248,6 +32403,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/basic_string.h 2670:2
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      nop_expr - arg
       parm_decl this /usr/include/c++/5/bits/basic_string.h 2670:47 - operand
       - isAutogenerated: 1
@@ -32624,6 +32780,7 @@ function_decl _M_rep /usr/include/c++/5/bits/basic_string.h 2696:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          pointer_type - method return type
        parm_decl this /usr/include/c++/5/bits/basic_string.h 2696:16 - arg
        - isAutogenerated: 1
         pointer_type - decl type
@@ -32950,6 +33107,7 @@ function_decl get_allocator /usr/include/c++/5/bits/basic_string.h 4232:7
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       var_decl /usr/include/c++/5/bits/basic_string.h 4233:16 - slot
       - isUsed: 1
       - isAutogenerated: 1
@@ -33005,6 +33163,7 @@ function_decl get_allocator /usr/include/c++/5/bits/basic_string.h 4232:7
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       addr_expr - arg
        var_decl /usr/include/c++/5/bits/basic_string.h 4233:16 - operand
        - isUsed: 1
@@ -33293,6 +33452,7 @@ function_decl _M_dispose /usr/include/c++/5/bits/basic_string.h 2633:2
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       - isUsed: 1
       parm_decl this /usr/include/c++/5/bits/basic_string.h 2633:30 - arg
       - isAutogenerated: 1
@@ -33457,6 +33617,7 @@ function_decl _Vector_impl /usr/include/c++/5/bits/stl_vector.h 79:14
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        nop_expr - arg
         parm_decl this /usr/include/c++/5/bits/stl_vector.h 257:15 - operand
         - isAutogenerated: 1
@@ -33588,6 +33749,7 @@ function_decl __base_dtor  /usr/include/c++/5/bits/stl_vector.h 79:14
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        nop_expr - arg
         parm_decl this /usr/include/c++/5/bits/stl_vector.h 257:15 - operand
         - isAutogenerated: 1
@@ -33803,6 +33965,7 @@ function_decl _Vector_base /usr/include/c++/5/bits/stl_vector.h 124:7
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           void_type - method return type
         var_decl /usr/include/c++/5/bits/stl_vector.h 125:17 - slot
         - isAutogenerated: 1
          integer_cst 192 - decl size
@@ -33830,6 +33993,7 @@ function_decl _Vector_base /usr/include/c++/5/bits/stl_vector.h 124:7
       - isAutogenerated: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref /usr/include/c++/5/bits/stl_vector.h 125:17 - operand
        indirect_ref - object
@@ -33950,6 +34114,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/stl_vector.h 124:7
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           void_type - method return type
         var_decl /usr/include/c++/5/bits/stl_vector.h 125:17 - slot
         - isUsed: 1
         - isAutogenerated: 1
@@ -33978,6 +34143,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/stl_vector.h 124:7
       - isAutogenerated: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      addr_expr - arg
       component_ref /usr/include/c++/5/bits/stl_vector.h 125:17 - operand
        indirect_ref - object
@@ -34159,6 +34325,7 @@ function_decl _Vector_base /usr/include/c++/5/bits/stl_vector.h 159:7
            - isExternal: 1
            - isPublic: 1
             method_type - function type
+             void_type - method return type
           - isUsed: 1
           parm_decl this /usr/include/c++/5/bits/stl_vector.h 159:21 - arg
           - isAutogenerated: 1
@@ -34273,6 +34440,7 @@ function_decl _Vector_base /usr/include/c++/5/bits/stl_vector.h 159:7
         - isAutogenerated: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        addr_expr - arg
         component_ref /usr/include/c++/5/bits/stl_vector.h 161:36 - operand
          indirect_ref - object
@@ -34403,6 +34571,7 @@ function_decl __base_dtor  /usr/include/c++/5/bits/stl_vector.h 159:7
            - isExternal: 1
            - isPublic: 1
             method_type - function type
+             void_type - method return type
           - isUsed: 1
           parm_decl this /usr/include/c++/5/bits/stl_vector.h 159:21 - arg
           - isAutogenerated: 1
@@ -34517,6 +34686,7 @@ function_decl __base_dtor  /usr/include/c++/5/bits/stl_vector.h 159:7
         - isAutogenerated: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        addr_expr - arg
         component_ref /usr/include/c++/5/bits/stl_vector.h 161:36 - operand
          indirect_ref - object
@@ -35407,6 +35577,7 @@ function_decl construct /usr/include/c++/5/ext/alloc_traits.h 188:19
      - isExternal: 1
      - isPublic: 1
       method_type - function type
+       void_type - method return type
     nop_expr - arg
      convert_expr - operand
       - isUsed: 1
@@ -36090,6 +36261,7 @@ function_decl _M_insert_aux /usr/include/c++/5/bits/vector.tcc 326:5
               - isExternal: 1
               - isPublic: 1
                method_type - function type
+                reference_type - method return type
              addr_expr - arg
               - isUsed: 1
               parm_decl __position /usr/include/c++/5/bits/vector.tcc 327:28 - operand
@@ -36221,6 +36393,7 @@ function_decl _M_insert_aux /usr/include/c++/5/bits/vector.tcc 326:5
              - isExternal: 1
              - isPublic: 1
               method_type - function type
+               reference_type - method return type
             addr_expr - arg
              - isUsed: 1
              parm_decl __position /usr/include/c++/5/bits/vector.tcc 327:28 - operand
@@ -36270,6 +36443,9 @@ function_decl _M_insert_aux /usr/include/c++/5/bits/vector.tcc 326:5
             - isExternal: 1
             - isPublic: 1
              method_type - function type
+              integer_type - method return type
+              - precisionBits: 64
+              - unsigned
            - isUsed: 1
            parm_decl this /usr/include/c++/5/bits/vector.tcc 327:54 - arg
            - isAutogenerated: 1
@@ -36380,6 +36556,8 @@ function_decl _M_insert_aux /usr/include/c++/5/bits/vector.tcc 326:5
                   - isExternal: 1
                   - isPublic: 1
                    method_type - function type
+                    record_type - method return type
+                     type_decl iterator /usr/include/c++/5/bits/stl_vector.h 231:61 - type name
                  - isUsed: 1
                  parm_decl this /usr/include/c++/5/bits/vector.tcc 327:54 - arg
                  - isAutogenerated: 1
@@ -36451,6 +36629,7 @@ function_decl _M_insert_aux /usr/include/c++/5/bits/vector.tcc 326:5
             - isExternal: 1
             - isPublic: 1
              method_type - function type
+              pointer_type - method return type
            addr_expr - arg
             component_ref - operand
              indirect_ref - object
@@ -36691,6 +36870,7 @@ function_decl _M_insert_aux /usr/include/c++/5/bits/vector.tcc 326:5
                  - isExternal: 1
                  - isPublic: 1
                   method_type - function type
+                   reference_type - method return type
                 addr_expr - arg
                  - isUsed: 1
                  parm_decl __position /usr/include/c++/5/bits/vector.tcc 327:28 - operand
@@ -36718,6 +36898,7 @@ function_decl _M_insert_aux /usr/include/c++/5/bits/vector.tcc 326:5
                  function_decl _M_get_Tp_allocator /usr/include/c++/5/bits/stl_vector.h 113:7 - operand
                  - isPublic: 1
                   method_type - function type
+                   reference_type - method return type
                 addr_expr - arg
                  component_ref - operand
                   indirect_ref - object
@@ -36788,6 +36969,7 @@ function_decl _M_insert_aux /usr/include/c++/5/bits/vector.tcc 326:5
                  - isExternal: 1
                  - isPublic: 1
                   method_type - function type
+                   reference_type - method return type
                 addr_expr - arg
                  - isUsed: 1
                  parm_decl __position /usr/include/c++/5/bits/vector.tcc 327:28 - operand
@@ -36865,6 +37047,7 @@ function_decl _M_insert_aux /usr/include/c++/5/bits/vector.tcc 326:5
                  function_decl _M_get_Tp_allocator /usr/include/c++/5/bits/stl_vector.h 113:7 - operand
                  - isPublic: 1
                   method_type - function type
+                   reference_type - method return type
                 addr_expr - arg
                  component_ref - operand
                   indirect_ref - object
@@ -37021,6 +37204,7 @@ function_decl _M_insert_aux /usr/include/c++/5/bits/vector.tcc 326:5
                   function_decl _M_get_Tp_allocator /usr/include/c++/5/bits/stl_vector.h 113:7 - operand
                   - isPublic: 1
                    method_type - function type
+                    reference_type - method return type
                  addr_expr - arg
                   component_ref - operand
                    indirect_ref - object
@@ -37072,6 +37256,7 @@ function_decl _M_insert_aux /usr/include/c++/5/bits/vector.tcc 326:5
               - isExternal: 1
               - isPublic: 1
                method_type - function type
+                void_type - method return type
              addr_expr - arg
               component_ref - operand
                indirect_ref - object
@@ -37251,6 +37436,7 @@ function_decl _M_insert_aux /usr/include/c++/5/bits/vector.tcc 326:5
              function_decl _M_get_Tp_allocator /usr/include/c++/5/bits/stl_vector.h 113:7 - operand
              - isPublic: 1
               method_type - function type
+               reference_type - method return type
             addr_expr - arg
              component_ref - operand
               indirect_ref - object
@@ -37302,6 +37488,7 @@ function_decl _M_insert_aux /usr/include/c++/5/bits/vector.tcc 326:5
           - isExternal: 1
           - isPublic: 1
            method_type - function type
+            void_type - method return type
          addr_expr - arg
           component_ref - operand
            indirect_ref - object
@@ -37892,6 +38079,7 @@ function_decl end /usr/include/c++/5/bits/stl_vector.h 565:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        var_decl /usr/include/c++/5/bits/stl_vector.h 566:48 - slot
        - isAutogenerated: 1
        convert_expr - arg
@@ -38098,6 +38286,7 @@ function_decl size /usr/include/c++/5/bits/basic_string.h 3120:7
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           pointer_type - method return type
         parm_decl this /usr/include/c++/5/bits/basic_string.h 3120:14 - arg
         - isAutogenerated: 1
          pointer_type - decl type
@@ -38267,12 +38456,14 @@ function_decl _M_leak /usr/include/c++/5/bits/basic_string.h 2710:7
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        boolean_type - method return type
      call_expr /usr/include/c++/5/bits/basic_string.h 2712:13 - arg
       addr_expr - function
        function_decl _M_rep /usr/include/c++/5/bits/basic_string.h 2696:7 - operand
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         pointer_type - method return type
       parm_decl this /usr/include/c++/5/bits/basic_string.h 2710:15 - arg
       - isAutogenerated: 1
        pointer_type - decl type
@@ -38315,6 +38506,7 @@ function_decl _M_leak /usr/include/c++/5/bits/basic_string.h 2710:7
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      parm_decl this /usr/include/c++/5/bits/basic_string.h 2710:15 - arg
      - isAutogenerated: 1
       pointer_type - decl type
@@ -39429,6 +39621,7 @@ function_decl allocator /usr/include/c++/5/bits/allocator.h 115:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        nop_expr - arg
         parm_decl this /usr/include/c++/5/bits/allocator.h 115:45 - operand
         - isAutogenerated: 1
@@ -39530,6 +39723,7 @@ function_decl allocator /usr/include/c++/5/bits/allocator.h 115:7
        function_decl __base_dtor  /usr/include/c++/5/ext/new_allocator.h 86:7 - operand
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       nop_expr - arg
        parm_decl this /usr/include/c++/5/bits/allocator.h 115:45 - operand
        - isAutogenerated: 1
@@ -39821,6 +40015,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/allocator.h 115:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        nop_expr - arg
         parm_decl this /usr/include/c++/5/bits/allocator.h 115:45 - operand
         - isAutogenerated: 1
@@ -39922,6 +40117,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/allocator.h 115:7
        function_decl __base_dtor  /usr/include/c++/5/ext/new_allocator.h 86:7 - operand
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       nop_expr - arg
        parm_decl this /usr/include/c++/5/bits/allocator.h 115:45 - operand
        - isAutogenerated: 1
@@ -40276,6 +40472,7 @@ function_decl _Vector_impl /usr/include/c++/5/bits/stl_vector.h 86:2
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       nop_expr - arg
        parm_decl this /usr/include/c++/5/bits/stl_vector.h 86:15 - operand
        - isAutogenerated: 1
@@ -40390,6 +40587,7 @@ function_decl _Vector_impl /usr/include/c++/5/bits/stl_vector.h 86:2
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      nop_expr - arg
       parm_decl this /usr/include/c++/5/bits/stl_vector.h 86:15 - operand
       - isAutogenerated: 1
@@ -40483,6 +40681,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/stl_vector.h 86:2
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       nop_expr - arg
        parm_decl this /usr/include/c++/5/bits/stl_vector.h 86:15 - operand
        - isAutogenerated: 1
@@ -40597,6 +40796,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/stl_vector.h 86:2
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        void_type - method return type
      nop_expr - arg
       parm_decl this /usr/include/c++/5/bits/stl_vector.h 86:15 - operand
       - isAutogenerated: 1
@@ -40912,6 +41112,7 @@ function_decl allocator /usr/include/c++/5/bits/allocator.h 121:7
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           void_type - method return type
         nop_expr - arg
          parm_decl this /usr/include/c++/5/bits/allocator.h 121:26 - operand
          - isAutogenerated: 1
@@ -41259,6 +41460,7 @@ function_decl __base_dtor  /usr/include/c++/5/bits/allocator.h 121:7
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           void_type - method return type
         nop_expr - arg
          parm_decl this /usr/include/c++/5/bits/allocator.h 121:26 - operand
          - isAutogenerated: 1
@@ -42995,6 +43197,9 @@ function_decl _M_check_len /usr/include/c++/5/bits/stl_vector.h 1422:7
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           integer_type - method return type
+           - precisionBits: 64
+           - unsigned
         parm_decl this /usr/include/c++/5/bits/stl_vector.h 1422:52 - arg
         - isAutogenerated: 1
          pointer_type - decl type
@@ -43035,6 +43240,9 @@ function_decl _M_check_len /usr/include/c++/5/bits/stl_vector.h 1422:7
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           integer_type - method return type
+           - precisionBits: 64
+           - unsigned
         parm_decl this /usr/include/c++/5/bits/stl_vector.h 1422:52 - arg
         - isAutogenerated: 1
          pointer_type - decl type
@@ -43117,6 +43325,9 @@ function_decl _M_check_len /usr/include/c++/5/bits/stl_vector.h 1422:7
           - isExternal: 1
           - isPublic: 1
            method_type - function type
+            integer_type - method return type
+            - precisionBits: 64
+            - unsigned
          parm_decl this /usr/include/c++/5/bits/stl_vector.h 1422:52 - arg
          - isAutogenerated: 1
           pointer_type - decl type
@@ -43178,6 +43389,9 @@ function_decl _M_check_len /usr/include/c++/5/bits/stl_vector.h 1422:7
                 - isExternal: 1
                 - isPublic: 1
                  method_type - function type
+                  integer_type - method return type
+                  - precisionBits: 64
+                  - unsigned
                parm_decl this /usr/include/c++/5/bits/stl_vector.h 1422:52 - arg
                - isAutogenerated: 1
                 pointer_type - decl type
@@ -43245,6 +43459,9 @@ function_decl _M_check_len /usr/include/c++/5/bits/stl_vector.h 1422:7
            - isExternal: 1
            - isPublic: 1
             method_type - function type
+             integer_type - method return type
+             - precisionBits: 64
+             - unsigned
           parm_decl this /usr/include/c++/5/bits/stl_vector.h 1422:52 - arg
           - isAutogenerated: 1
            pointer_type - decl type
@@ -43289,6 +43506,9 @@ function_decl _M_check_len /usr/include/c++/5/bits/stl_vector.h 1422:7
            - isExternal: 1
            - isPublic: 1
             method_type - function type
+             integer_type - method return type
+             - precisionBits: 64
+             - unsigned
           parm_decl this /usr/include/c++/5/bits/stl_vector.h 1422:52 - arg
           - isAutogenerated: 1
            pointer_type - decl type
@@ -43332,6 +43552,9 @@ function_decl _M_check_len /usr/include/c++/5/bits/stl_vector.h 1422:7
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           integer_type - method return type
+           - precisionBits: 64
+           - unsigned
         parm_decl this /usr/include/c++/5/bits/stl_vector.h 1422:52 - arg
         - isAutogenerated: 1
          pointer_type - decl type
@@ -43552,6 +43775,7 @@ function_decl begin /usr/include/c++/5/bits/stl_vector.h 547:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        var_decl /usr/include/c++/5/bits/stl_vector.h 548:47 - slot
        - isAutogenerated: 1
        convert_expr - arg
@@ -43729,6 +43953,7 @@ function_decl operator- /usr/include/c++/5/bits/stl_iterator.h 923:5
           function_decl base /usr/include/c++/5/bits/stl_iterator.h 805:7 - operand
           - isPublic: 1
            method_type - function type
+            reference_type - method return type
          convert_expr - arg
           - isUsed: 1
           parm_decl __lhs /usr/include/c++/5/bits/stl_iterator.h 923:63 - operand
@@ -43756,6 +43981,7 @@ function_decl operator- /usr/include/c++/5/bits/stl_iterator.h 923:5
           function_decl base /usr/include/c++/5/bits/stl_iterator.h 805:7 - operand
           - isPublic: 1
            method_type - function type
+            reference_type - method return type
          convert_expr - arg
           - isUsed: 1
           parm_decl __rhs /usr/include/c++/5/bits/stl_iterator.h 924:56 - operand
@@ -44626,6 +44852,7 @@ function_decl destroy /usr/include/c++/5/ext/alloc_traits.h 191:17
      - isExternal: 1
      - isPublic: 1
       method_type - function type
+       void_type - method return type
     nop_expr - arg
      convert_expr - operand
       - isUsed: 1
@@ -45787,6 +46014,7 @@ function_decl allocator /usr/include/c++/5/bits/allocator.h 113:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        nop_expr - arg
         parm_decl this /usr/include/c++/5/bits/allocator.h 113:25 - operand
         - isAutogenerated: 1
@@ -45859,6 +46087,7 @@ function_decl allocator /usr/include/c++/5/bits/allocator.h 113:7
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       nop_expr - arg
        parm_decl this /usr/include/c++/5/bits/allocator.h 113:25 - operand
        - isAutogenerated: 1
@@ -46133,6 +46362,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/allocator.h 113:7
         - isExternal: 1
         - isPublic: 1
          method_type - function type
+          void_type - method return type
        nop_expr - arg
         parm_decl this /usr/include/c++/5/bits/allocator.h 113:25 - operand
         - isAutogenerated: 1
@@ -46205,6 +46435,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/allocator.h 113:7
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         void_type - method return type
       nop_expr - arg
        parm_decl this /usr/include/c++/5/bits/allocator.h 113:25 - operand
        - isAutogenerated: 1
@@ -46939,6 +47170,7 @@ function_decl deallocate /usr/include/c++/5/ext/alloc_traits.h 184:17
      - isExternal: 1
      - isPublic: 1
       method_type - function type
+       void_type - method return type
     nop_expr - arg
      convert_expr - operand
       - isUsed: 1
@@ -47713,6 +47945,7 @@ function_decl max_size /usr/include/c++/5/bits/stl_vector.h 659:7
          - isExternal: 1
          - isPublic: 1
           method_type - function type
+           reference_type - method return type
         addr_expr - arg
          component_ref - operand
           indirect_ref - object
@@ -48361,6 +48594,7 @@ function_decl allocate /usr/include/c++/5/ext/alloc_traits.h 181:5
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         pointer_type - method return type
       nop_expr - arg
        convert_expr - operand
         - isUsed: 1
@@ -50043,6 +50277,9 @@ function_decl max_size /usr/include/c++/5/ext/alloc_traits.h 194:22
       - isExternal: 1
       - isPublic: 1
        method_type - function type
+        integer_type - method return type
+        - precisionBits: 64
+        - unsigned
      nop_expr - arg
       convert_expr - operand
        - isUsed: 1
@@ -50508,6 +50745,9 @@ function_decl allocate /usr/include/c++/5/ext/new_allocator.h 99:7
        - isExternal: 1
        - isPublic: 1
         method_type - function type
+         integer_type - method return type
+         - precisionBits: 64
+         - unsigned
       - isUsed: 1
       parm_decl this /usr/include/c++/5/ext/new_allocator.h 99:46 - arg
       - isAutogenerated: 1
