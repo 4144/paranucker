@@ -35,6 +35,28 @@ void addNeedCheckNullVars(WalkItem &wi, WalkItem &wo)
     {
         wo.needCheckNullVars.insert(it);
         wo.knownVars.insert(it);
+/*
+        wo.knownNonNullVars.erase(it);
+        wo.knownNullVars.erase(it);
+        wo.removeNullVars.erase(it);
+        wo.removeNullVarsAll.erase(it);
+        wo.addNullVars.insert(it);
+*/
+    }
+}
+
+// add variables null pointer checks
+void addNeedCheckNullVars2(WalkItem &wi, WalkItem &wo)
+{
+    FOR_EACH (it, wi.addNullVars)
+    {
+        wo.needCheckNullVars.insert(it);
+        wo.knownVars.insert(it);
+        wo.knownNonNullVars.erase(it);
+        wo.knownNullVars.erase(it);
+        wo.removeNullVars.erase(it);
+        wo.removeNullVarsAll.erase(it);
+        wo.addNullVars.insert(it);
     }
 }
 
@@ -360,6 +382,14 @@ void removeVar(WalkItem &wi, const std::string &var)
     wi.knownNullVars.erase(var);
     wi.knownNonNullVars.erase(var);
     removeNeedCheckNullVarOnly(wi, var);
+}
+
+void enforceNeedCheckNullVars(WalkItem &wi)
+{
+    FOR_EACH (it, wi.needCheckNullVars)
+    {
+        wi.removeNullVars.erase(it);
+    }
 }
 
 }

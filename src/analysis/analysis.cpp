@@ -56,6 +56,7 @@
 #include "nodes/ref/component_ref.h"
 
 #include "nodes/stmt/if_stmt.h"
+#include "nodes/stmt/while_stmt.h"
 
 #include "localconsts.h"
 
@@ -198,7 +199,7 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
 
     // remove check for vars what was requested from some childs.
     // Except IF_STMT. Removing handled inside analyse function.
-    if (node != IF_STMT)
+    if (node != IF_STMT && node != WHILE_STMT)
     {
         removeNeedCheckNullVarsSetAll(wi2, wi2.removeNullVarsAll);
     }
@@ -275,6 +276,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             break;
         case IF_STMT:
             analyseIfStmt(static_cast<IfStmtNode*>(node), wi2, wo);
+            break;
+        case WHILE_STMT:
+            analyseWhileStmt(static_cast<WhileStmtNode*>(node), wi2, wo);
             break;
         case COMPONENT_REF:
             analyseComponentRef(static_cast<ComponentRefNode*>(node), wi2, wo);

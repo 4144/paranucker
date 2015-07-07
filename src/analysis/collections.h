@@ -33,6 +33,9 @@ namespace Analysis
     void addNeedCheckNullVars(WalkItem &wi,
                               WalkItem &wo);
 
+    void addNeedCheckNullVars2(WalkItem &wi,
+                               WalkItem &wo);
+
     void addUnknownVar(WalkItem &wi,
                        const std::string &var);
 
@@ -79,6 +82,8 @@ namespace Analysis
                                        std::set<std::string> &vars);
 
     void removeVar(WalkItem &wi, const std::string &var);
+
+    void enforceNeedCheckNullVars(WalkItem &wi);
 }
 
 #endif // ANALYSIS_COLLECTIONS_H

@@ -25,6 +25,7 @@
 struct IfStmtNode;
 struct Node;
 struct WalkItem;
+struct WhileStmtNode;
 
 namespace Analysis
 {
@@ -38,6 +39,10 @@ namespace Analysis
     void analyseIfStmt(IfStmtNode *node,
                        const WalkItem &wi,
                        WalkItem &wo);
+
+    void analyseWhileStmt(WhileStmtNode *node,
+                          const WalkItem &wi,
+                          WalkItem &wo);
 }
 
 #endif // ANALYSIS_STATEMENT_H

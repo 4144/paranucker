@@ -35,6 +35,7 @@
 #include "nodes/ref/indirect_ref.h"
 
 #include "nodes/stmt/if_stmt.h"
+#include "nodes/stmt/while_stmt.h"
 
 #include <set>
 
@@ -121,6 +122,10 @@ void analyseCondition(Node *node,
             addKnownNullVarsWithLinked(wo, wco, wco.checkedElseNullVars);
         }
     }
+    else
+    {
+//        addNeedCheckNullVars2(wo2, wo);
+    }
     if (wo3.isReturned)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
@@ -134,6 +139,10 @@ void analyseCondition(Node *node,
         {
             addKnownNullVarsWithLinked(wo, wco, wco.checkedThenNullVars);
         }
+    }
+    else
+    {
+//        addNeedCheckNullVars2(wo3, wo);
     }
     if (wo2.isReturned && wo3.isReturned)
     {
@@ -164,6 +173,71 @@ void analyseIfStmt(IfStmtNode *node, const WalkItem &wi, WalkItem &wo)
         node->elseNode,
         wi,
         wo);
+}
+
+void analyseWhileStmt(WhileStmtNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    // need condition node
+    if (!node->condition || checkCommand(FindArgs))
+        return;
+
+    Node *condNode = skipNop(node->condition);
+    Node *bodyNode = skipNop(node->body);
+    if (!condNode)
+        return;
+
+    WalkItem wci = wi;
+    WalkItem wco = wo;
+    WalkItem wo2 = wo;
+
+    walkTree(condNode, wci, wco);
+    Log::dumpWI(node, "wco ", wco);
+
+    WalkItem wi2 = wi;
+    if (wco.cleanExpr)
+        removeNeedCheckNullVarsSetAll(wi2, wco.checkedThenNonNullVars);
+//    wi2.needCheckNullVars.insert(wco.checkedThenNullVars.begin(),
+//        wco.checkedThenNullVars.end());
+    addKnownNullVarsWithLinked(wi2, wco, wco.checkedThenNullVars);
+    addKnownNonNullVarsWithLinked(wi2, wco, wco.checkedThenNonNullVars);
+    wi2.needCheckNullVars = wi2.knownVars;
+    enforceNeedCheckNullVars(wi2);
+    removeNeedCheckNullVarsSetAll(wi2, wi2.knownNonNullVars);
+    wo2 = wi2;
+    Log::dumpWI(node, "wi2 body ", wi2);
+
+    reportParmDeclNullPointer(node,
+        bodyNode,
+        wi2);
+    walkTree(bodyNode, wi2, wo2);
+    Log::dumpWI(node, "wo2 body ", wo2);
+
+    if (wo2.cleanExpr)
+        mergeElseNullChecked(wo, wo2);
+
+    if (wo2.isReturned)
+    {
+        // add variable for ignore for all parent nodes except special like IF_STMT
+        FOR_EACH (it, wco.checkedElseNonNullVars)
+        {
+            wo.removeNullVarsAll.insert(it);
+            removeNeedCheckNullVar(wo, it);
+        }
+        addKnownNonNullVarsWithLinked(wo, wco, wco.checkedElseNonNullVars);
+        if (wco.cleanExpr)
+        {
+            addKnownNullVarsWithLinked(wo, wco, wco.checkedElseNullVars);
+        }
+    }
+    else
+    {
+//        addNeedCheckNullVars2(wo2, wo);
+    }
+
+    wo.isReturned = false;
+    wo.cleanExpr = true;
+    wo.stopWalking = true;
+    wo.uselessExpr = false;
 }
 
 }
