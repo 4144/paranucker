@@ -29,6 +29,7 @@ function_decl _mm_empty /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 49:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
 function_decl _m_empty /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 55:1
 - isExternal: 1
 - isPublic: 1
@@ -65,6 +66,7 @@ function_decl _m_empty /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 55:1
         tree_list - chain
          identifier_node __gnu_inline__ - purpose
       function_type - function type
+       void_type - function return type
 function_decl _mm_cvtsi32_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 62:1
 - isExternal: 1
 - isPublic: 1
@@ -154,6 +156,8 @@ function_decl _mm_cvtsi32_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     - isUsed: 1
     parm_decl __i /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 62:23 - arg
      integer_type - decl type
@@ -260,6 +264,8 @@ function_decl _m_from_int /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 68:
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __i /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 68:18 - arg
       integer_type - decl type
@@ -727,6 +733,9 @@ function_decl _mm_cvtsi64_si32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __i /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 105:25 - operand
@@ -834,6 +843,9 @@ function_decl _m_to_int /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 111:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __i /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 111:18 - arg
       vector_type - decl type
@@ -1259,6 +1271,8 @@ function_decl _mm_packs_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 144:23 - operand
@@ -1427,6 +1441,8 @@ function_decl _m_packsswb /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 150
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 150:20 - arg
       vector_type - decl type
@@ -1589,6 +1605,8 @@ function_decl _mm_packs_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 159:23 - operand
@@ -1757,6 +1775,8 @@ function_decl _m_packssdw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 165
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 165:20 - arg
       vector_type - decl type
@@ -1919,6 +1939,8 @@ function_decl _mm_packs_pu16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 174:23 - operand
@@ -2087,6 +2109,8 @@ function_decl _m_packuswb /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 180
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 180:20 - arg
       vector_type - decl type
@@ -2249,6 +2273,8 @@ function_decl _mm_unpackhi_pi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 188:25 - operand
@@ -2417,6 +2443,8 @@ function_decl _m_punpckhbw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 19
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 194:21 - arg
       vector_type - decl type
@@ -2579,6 +2607,8 @@ function_decl _mm_unpackhi_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 202:26 - operand
@@ -2747,6 +2777,8 @@ function_decl _m_punpckhwd /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 20
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 208:21 - arg
       vector_type - decl type
@@ -2908,6 +2940,8 @@ function_decl _mm_unpackhi_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 216:26 - operand
@@ -3076,6 +3110,8 @@ function_decl _m_punpckhdq /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 22
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 222:21 - arg
       vector_type - decl type
@@ -3238,6 +3274,8 @@ function_decl _mm_unpacklo_pi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 230:25 - operand
@@ -3406,6 +3444,8 @@ function_decl _m_punpcklbw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 23
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 236:21 - arg
       vector_type - decl type
@@ -3568,6 +3608,8 @@ function_decl _mm_unpacklo_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 244:26 - operand
@@ -3736,6 +3778,8 @@ function_decl _m_punpcklwd /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 25
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 250:21 - arg
       vector_type - decl type
@@ -3897,6 +3941,8 @@ function_decl _mm_unpacklo_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 258:26 - operand
@@ -4065,6 +4111,8 @@ function_decl _m_punpckldq /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 26
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 264:21 - arg
       vector_type - decl type
@@ -4227,6 +4275,8 @@ function_decl _mm_add_pi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 271
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 271:20 - operand
@@ -4395,6 +4445,8 @@ function_decl _m_paddb /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 277:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 277:17 - arg
       vector_type - decl type
@@ -4557,6 +4609,8 @@ function_decl _mm_add_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 28
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 284:21 - operand
@@ -4725,6 +4779,8 @@ function_decl _m_paddw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 290:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 290:17 - arg
       vector_type - decl type
@@ -4886,6 +4942,8 @@ function_decl _mm_add_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 29
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 297:21 - operand
@@ -5054,6 +5112,8 @@ function_decl _m_paddd /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 303:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 303:17 - arg
       vector_type - decl type
@@ -5216,6 +5276,8 @@ function_decl _mm_add_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 31
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 1
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 316:21 - operand
@@ -5380,6 +5442,8 @@ function_decl _mm_adds_pi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 32
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 328:21 - operand
@@ -5548,6 +5612,8 @@ function_decl _m_paddsb /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 334:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 334:18 - arg
       vector_type - decl type
@@ -5710,6 +5776,8 @@ function_decl _mm_adds_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 3
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 342:22 - operand
@@ -5878,6 +5946,8 @@ function_decl _m_paddsw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 348:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 348:18 - arg
       vector_type - decl type
@@ -6040,6 +6110,8 @@ function_decl _mm_adds_pu8 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 35
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 356:21 - operand
@@ -6208,6 +6280,8 @@ function_decl _m_paddusb /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 362:
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 362:19 - arg
       vector_type - decl type
@@ -6370,6 +6444,8 @@ function_decl _mm_adds_pu16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 3
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 370:22 - operand
@@ -6538,6 +6614,8 @@ function_decl _m_paddusw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 376:
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 376:19 - arg
       vector_type - decl type
@@ -6700,6 +6778,8 @@ function_decl _mm_sub_pi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 383
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 383:20 - operand
@@ -6868,6 +6948,8 @@ function_decl _m_psubb /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 389:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 389:17 - arg
       vector_type - decl type
@@ -7030,6 +7112,8 @@ function_decl _mm_sub_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 39
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 396:21 - operand
@@ -7198,6 +7282,8 @@ function_decl _m_psubw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 402:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 402:17 - arg
       vector_type - decl type
@@ -7359,6 +7445,8 @@ function_decl _mm_sub_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 40
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 409:21 - operand
@@ -7527,6 +7615,8 @@ function_decl _m_psubd /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 415:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 415:17 - arg
       vector_type - decl type
@@ -7689,6 +7779,8 @@ function_decl _mm_sub_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 42
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 1
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 428:21 - operand
@@ -7853,6 +7945,8 @@ function_decl _mm_subs_pi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 44
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 440:21 - operand
@@ -8021,6 +8115,8 @@ function_decl _m_psubsb /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 446:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 446:18 - arg
       vector_type - decl type
@@ -8183,6 +8279,8 @@ function_decl _mm_subs_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 4
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 454:22 - operand
@@ -8351,6 +8449,8 @@ function_decl _m_psubsw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 460:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 460:18 - arg
       vector_type - decl type
@@ -8513,6 +8613,8 @@ function_decl _mm_subs_pu8 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 46
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 468:21 - operand
@@ -8681,6 +8783,8 @@ function_decl _m_psubusb /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 474:
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 474:19 - arg
       vector_type - decl type
@@ -8843,6 +8947,8 @@ function_decl _mm_subs_pu16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 4
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 482:22 - operand
@@ -9011,6 +9117,8 @@ function_decl _m_psubusw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 488:
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 488:19 - arg
       vector_type - decl type
@@ -9172,6 +9280,8 @@ function_decl _mm_madd_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 4
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     view_convert_expr - arg
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 497:22 - operand
@@ -9340,6 +9450,8 @@ function_decl _m_pmaddwd /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 503:
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 503:19 - arg
       vector_type - decl type
@@ -9502,6 +9614,8 @@ function_decl _mm_mulhi_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 511:23 - operand
@@ -9670,6 +9784,8 @@ function_decl _m_pmulhw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 517:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 517:18 - arg
       vector_type - decl type
@@ -9832,6 +9948,8 @@ function_decl _mm_mullo_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 525:23 - operand
@@ -10000,6 +10118,8 @@ function_decl _m_pmullw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 531:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 531:18 - arg
       vector_type - decl type
@@ -10162,6 +10282,8 @@ function_decl _mm_sll_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 53
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 538:21 - operand
@@ -10330,6 +10452,8 @@ function_decl _m_psllw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 544:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 544:17 - arg
       vector_type - decl type
@@ -10482,6 +10606,8 @@ function_decl _mm_slli_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 5
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 550:22 - operand
@@ -10634,6 +10760,8 @@ function_decl _m_psllwi /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 556:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 556:18 - arg
       vector_type - decl type
@@ -10790,6 +10918,8 @@ function_decl _mm_sll_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 56
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 563:21 - operand
@@ -10958,6 +11088,8 @@ function_decl _m_pslld /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 569:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 569:17 - arg
       vector_type - decl type
@@ -11109,6 +11241,8 @@ function_decl _mm_slli_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 5
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 575:22 - operand
@@ -11261,6 +11395,8 @@ function_decl _m_pslldi /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 581:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 581:18 - arg
       vector_type - decl type
@@ -11418,6 +11554,8 @@ function_decl _mm_sll_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 58
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 1
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 588:21 - operand
@@ -11586,6 +11724,8 @@ function_decl _m_psllq /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 594:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 594:17 - arg
       vector_type - decl type
@@ -11738,6 +11878,8 @@ function_decl _mm_slli_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 6
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 1
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 600:22 - operand
@@ -11890,6 +12032,8 @@ function_decl _m_psllqi /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 606:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 606:18 - arg
       vector_type - decl type
@@ -12047,6 +12191,8 @@ function_decl _mm_sra_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 61
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 613:21 - operand
@@ -12215,6 +12361,8 @@ function_decl _m_psraw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 619:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 619:17 - arg
       vector_type - decl type
@@ -12367,6 +12515,8 @@ function_decl _mm_srai_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 6
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 625:22 - operand
@@ -12519,6 +12669,8 @@ function_decl _m_psrawi /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 631:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 631:18 - arg
       vector_type - decl type
@@ -12675,6 +12827,8 @@ function_decl _mm_sra_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 63
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 638:21 - operand
@@ -12843,6 +12997,8 @@ function_decl _m_psrad /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 644:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 644:17 - arg
       vector_type - decl type
@@ -12994,6 +13150,8 @@ function_decl _mm_srai_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 6
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 650:22 - operand
@@ -13146,6 +13304,8 @@ function_decl _m_psradi /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 656:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 656:18 - arg
       vector_type - decl type
@@ -13303,6 +13463,8 @@ function_decl _mm_srl_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 66
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 663:21 - operand
@@ -13471,6 +13633,8 @@ function_decl _m_psrlw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 669:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 669:17 - arg
       vector_type - decl type
@@ -13623,6 +13787,8 @@ function_decl _mm_srli_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 6
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 675:22 - operand
@@ -13775,6 +13941,8 @@ function_decl _m_psrlwi /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 681:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 681:18 - arg
       vector_type - decl type
@@ -13931,6 +14099,8 @@ function_decl _mm_srl_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 68
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 688:21 - operand
@@ -14099,6 +14269,8 @@ function_decl _m_psrld /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 694:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 694:17 - arg
       vector_type - decl type
@@ -14250,6 +14422,8 @@ function_decl _mm_srli_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 7
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 700:22 - operand
@@ -14402,6 +14576,8 @@ function_decl _m_psrldi /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 706:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 706:18 - arg
       vector_type - decl type
@@ -14559,6 +14735,8 @@ function_decl _mm_srl_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 71
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 1
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 713:21 - operand
@@ -14727,6 +14905,8 @@ function_decl _m_psrlq /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 719:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 719:17 - arg
       vector_type - decl type
@@ -14879,6 +15059,8 @@ function_decl _mm_srli_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 7
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 1
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 725:22 - operand
@@ -15031,6 +15213,8 @@ function_decl _m_psrlqi /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 731:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 731:18 - arg
       vector_type - decl type
@@ -15187,6 +15371,8 @@ function_decl _mm_and_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 73
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     - isUsed: 1
     parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 738:21 - arg
      vector_type - decl type
@@ -15353,6 +15539,8 @@ function_decl _m_pand /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 744:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 744:16 - arg
       vector_type - decl type
@@ -15514,6 +15702,8 @@ function_decl _mm_andnot_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     - isUsed: 1
     parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 752:24 - arg
      vector_type - decl type
@@ -15680,6 +15870,8 @@ function_decl _m_pandn /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 758:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 758:17 - arg
       vector_type - decl type
@@ -15841,6 +16033,8 @@ function_decl _mm_or_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 765
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     - isUsed: 1
     parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 765:20 - arg
      vector_type - decl type
@@ -16007,6 +16201,8 @@ function_decl _m_por /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 771:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 771:15 - arg
       vector_type - decl type
@@ -16168,6 +16364,8 @@ function_decl _mm_xor_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 77
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     - isUsed: 1
     parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 778:21 - arg
      vector_type - decl type
@@ -16334,6 +16532,8 @@ function_decl _m_pxor /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 784:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 784:16 - arg
       vector_type - decl type
@@ -16496,6 +16696,8 @@ function_decl _mm_cmpeq_pi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 7
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 792:22 - operand
@@ -16664,6 +16866,8 @@ function_decl _m_pcmpeqb /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 798:
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 798:19 - arg
       vector_type - decl type
@@ -16826,6 +17030,8 @@ function_decl _mm_cmpgt_pi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 8
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 804:22 - operand
@@ -16994,6 +17200,8 @@ function_decl _m_pcmpgtb /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 810:
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 810:19 - arg
       vector_type - decl type
@@ -17156,6 +17364,8 @@ function_decl _mm_cmpeq_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 818:23 - operand
@@ -17324,6 +17534,8 @@ function_decl _m_pcmpeqw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 824:
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 824:19 - arg
       vector_type - decl type
@@ -17486,6 +17698,8 @@ function_decl _mm_cmpgt_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 830:23 - operand
@@ -17654,6 +17868,8 @@ function_decl _m_pcmpgtw /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 836:
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 836:19 - arg
       vector_type - decl type
@@ -17815,6 +18031,8 @@ function_decl _mm_cmpeq_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 844:23 - operand
@@ -17983,6 +18201,8 @@ function_decl _m_pcmpeqd /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 850:
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 850:19 - arg
       vector_type - decl type
@@ -18144,6 +18364,8 @@ function_decl _mm_cmpgt_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 856:23 - operand
@@ -18312,6 +18534,8 @@ function_decl _m_pcmpgtd /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 862:
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __m1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 862:19 - arg
       vector_type - decl type
@@ -18517,6 +18741,8 @@ function_decl _mm_set_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 87
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     - isUsed: 1
     parm_decl __i0 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 876:29 - arg
      integer_type - decl type
@@ -18689,6 +18915,8 @@ function_decl _mm_set_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 88
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      nop_expr - arg
       - isUsed: 1
       parm_decl __w0 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 883:57 - operand
@@ -18975,6 +19203,8 @@ function_decl _mm_set_pi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 890
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      nop_expr - arg
       - isUsed: 1
       parm_decl __b0 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 891:45 - operand
@@ -19185,6 +19415,8 @@ function_decl _mm_setr_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 8
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __i1 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 899:30 - arg
       integer_type - decl type
@@ -19361,6 +19593,8 @@ function_decl _mm_setr_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 9
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      nop_expr - arg
       - isUsed: 1
       parm_decl __w3 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 905:58 - operand
@@ -19651,6 +19885,8 @@ function_decl _mm_setr_pi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 91
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      nop_expr - arg
       - isUsed: 1
       parm_decl __b7 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 912:46 - operand
@@ -19841,6 +20077,8 @@ function_decl _mm_set1_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 9
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __i /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 919:20 - arg
       integer_type - decl type
@@ -19957,6 +20195,8 @@ function_decl _mm_set1_pi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 9
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      nop_expr - arg
       - isUsed: 1
       parm_decl __w /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 926:22 - operand
@@ -20100,6 +20340,8 @@ function_decl _mm_set1_pi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 93
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      nop_expr - arg
       - isUsed: 1
       parm_decl __b /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h 933:20 - operand
@@ -20268,6 +20510,9 @@ function_decl __bswap_32 /usr/include/x86_64-linux-gnu/bits/byteswap.h 45:1
         tree_list - chain
          identifier_node const - purpose
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - unsigned
     - isUsed: 1
     parm_decl __bsx /usr/include/x86_64-linux-gnu/bits/byteswap.h 45:26 - arg
      integer_type - decl type
@@ -20341,6 +20586,9 @@ function_decl __bswap_64 /usr/include/x86_64-linux-gnu/bits/byteswap.h 109:1
         tree_list - chain
          identifier_node const - purpose
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 64
+       - unsigned
     - isUsed: 1
     parm_decl __bsx /usr/include/x86_64-linux-gnu/bits/byteswap.h 109:24 - arg
      integer_type - decl type
@@ -20445,6 +20693,7 @@ function_decl _mm_malloc /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 38:
             tree_list - chain
              identifier_node malloc - purpose
           function_type - function type
+           pointer_type - function return type
         - isUsed: 1
         parm_decl size /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 38:20 - arg
          integer_type - decl type
@@ -20513,6 +20762,15 @@ function_decl _mm_malloc /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 38:
           tree_list - chain
            identifier_node leaf - purpose
          function_type - function type
+          integer_type - function return type
+          - precisionBits: 32
+          - signed
+          tree_list - attribute
+           identifier_node __nonnull__ - purpose
+           tree_list - value
+            integer_cst 1 - value
+           tree_list - chain
+            identifier_node nonnull - purpose
        addr_expr - arg
         var_decl ptr /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 40:9 - operand
         - isUsed: 1
@@ -20597,6 +20855,7 @@ function_decl _mm_free /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 52:1
        tree_list - chain
         identifier_node leaf - purpose
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl ptr /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h 52:18 - arg
      pointer_type - decl type
@@ -20863,6 +21122,8 @@ function_decl _mm_add_ss crashtest02.h 125:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 125:20 - operand
@@ -20990,6 +21251,8 @@ function_decl _mm_sub_ss crashtest02.h 131:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 131:20 - operand
@@ -21117,6 +21380,8 @@ function_decl _mm_mul_ss crashtest02.h 137:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 137:20 - operand
@@ -21244,6 +21509,8 @@ function_decl _mm_div_ss crashtest02.h 143:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 143:20 - operand
@@ -21349,6 +21616,8 @@ function_decl _mm_sqrt_ss crashtest02.h 149:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 149:21 - operand
@@ -21441,6 +21710,8 @@ function_decl _mm_rcp_ss crashtest02.h 155:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 155:20 - operand
@@ -21533,6 +21804,8 @@ function_decl _mm_rsqrt_ss crashtest02.h 161:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 161:22 - operand
@@ -21647,6 +21920,8 @@ function_decl _mm_min_ss crashtest02.h 167:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 167:20 - operand
@@ -21774,6 +22049,8 @@ function_decl _mm_max_ss crashtest02.h 173:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 173:20 - operand
@@ -22351,6 +22628,8 @@ function_decl _mm_sqrt_ps crashtest02.h 205:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 205:21 - operand
@@ -22443,6 +22722,8 @@ function_decl _mm_rcp_ps crashtest02.h 211:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 211:20 - operand
@@ -22535,6 +22816,8 @@ function_decl _mm_rsqrt_ps crashtest02.h 217:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 217:22 - operand
@@ -22649,6 +22932,8 @@ function_decl _mm_min_ps crashtest02.h 223:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 223:20 - operand
@@ -22776,6 +23061,8 @@ function_decl _mm_max_ps crashtest02.h 229:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 229:20 - operand
@@ -22903,6 +23190,8 @@ function_decl _mm_and_ps crashtest02.h 237:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     - isUsed: 1
     parm_decl __A crashtest02.h 237:20 - arg
      vector_type - decl type
@@ -23028,6 +23317,8 @@ function_decl _mm_andnot_ps crashtest02.h 243:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     - isUsed: 1
     parm_decl __A crashtest02.h 243:23 - arg
      vector_type - decl type
@@ -23153,6 +23444,8 @@ function_decl _mm_or_ps crashtest02.h 249:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     - isUsed: 1
     parm_decl __A crashtest02.h 249:19 - arg
      vector_type - decl type
@@ -23278,6 +23571,8 @@ function_decl _mm_xor_ps crashtest02.h 255:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     - isUsed: 1
     parm_decl __A crashtest02.h 255:20 - arg
      vector_type - decl type
@@ -23403,6 +23698,8 @@ function_decl _mm_cmpeq_ss crashtest02.h 265:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 265:22 - operand
@@ -23530,6 +23827,8 @@ function_decl _mm_cmplt_ss crashtest02.h 271:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 271:22 - operand
@@ -23657,6 +23956,8 @@ function_decl _mm_cmple_ss crashtest02.h 277:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 277:22 - operand
@@ -23784,6 +24085,8 @@ function_decl _mm_cmpgt_ss crashtest02.h 283:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 283:22 - operand
@@ -23805,6 +24108,8 @@ function_decl _mm_cmpgt_ss crashtest02.h 283:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __B crashtest02.h 283:34 - operand
@@ -23932,6 +24237,8 @@ function_decl _mm_cmpge_ss crashtest02.h 293:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 293:22 - operand
@@ -23953,6 +24260,8 @@ function_decl _mm_cmpge_ss crashtest02.h 293:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __B crashtest02.h 293:34 - operand
@@ -24080,6 +24389,8 @@ function_decl _mm_cmpneq_ss crashtest02.h 303:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 303:23 - operand
@@ -24207,6 +24518,8 @@ function_decl _mm_cmpnlt_ss crashtest02.h 309:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 309:23 - operand
@@ -24334,6 +24647,8 @@ function_decl _mm_cmpnle_ss crashtest02.h 315:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 315:23 - operand
@@ -24461,6 +24776,8 @@ function_decl _mm_cmpngt_ss crashtest02.h 321:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 321:23 - operand
@@ -24482,6 +24799,8 @@ function_decl _mm_cmpngt_ss crashtest02.h 321:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __B crashtest02.h 321:35 - operand
@@ -24609,6 +24928,8 @@ function_decl _mm_cmpnge_ss crashtest02.h 331:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 331:23 - operand
@@ -24630,6 +24951,8 @@ function_decl _mm_cmpnge_ss crashtest02.h 331:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __B crashtest02.h 331:35 - operand
@@ -24757,6 +25080,8 @@ function_decl _mm_cmpord_ss crashtest02.h 341:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 341:23 - operand
@@ -24884,6 +25209,8 @@ function_decl _mm_cmpunord_ss crashtest02.h 347:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 347:25 - operand
@@ -25011,6 +25338,8 @@ function_decl _mm_cmpeq_ps crashtest02.h 357:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 357:22 - operand
@@ -25138,6 +25467,8 @@ function_decl _mm_cmplt_ps crashtest02.h 363:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 363:22 - operand
@@ -25265,6 +25596,8 @@ function_decl _mm_cmple_ps crashtest02.h 369:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 369:22 - operand
@@ -25392,6 +25725,8 @@ function_decl _mm_cmpgt_ps crashtest02.h 375:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 375:22 - operand
@@ -25519,6 +25854,8 @@ function_decl _mm_cmpge_ps crashtest02.h 381:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 381:22 - operand
@@ -25646,6 +25983,8 @@ function_decl _mm_cmpneq_ps crashtest02.h 387:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 387:23 - operand
@@ -25773,6 +26112,8 @@ function_decl _mm_cmpnlt_ps crashtest02.h 393:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 393:23 - operand
@@ -25900,6 +26241,8 @@ function_decl _mm_cmpnle_ps crashtest02.h 399:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 399:23 - operand
@@ -26027,6 +26370,8 @@ function_decl _mm_cmpngt_ps crashtest02.h 405:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 405:23 - operand
@@ -26154,6 +26499,8 @@ function_decl _mm_cmpnge_ps crashtest02.h 411:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 411:23 - operand
@@ -26281,6 +26628,8 @@ function_decl _mm_cmpord_ps crashtest02.h 417:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 417:23 - operand
@@ -26408,6 +26757,8 @@ function_decl _mm_cmpunord_ps crashtest02.h 423:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 423:25 - operand
@@ -26532,6 +26883,9 @@ function_decl _mm_comieq_ss crashtest02.h 432:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 432:23 - operand
@@ -26656,6 +27010,9 @@ function_decl _mm_comilt_ss crashtest02.h 438:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 438:23 - operand
@@ -26780,6 +27137,9 @@ function_decl _mm_comile_ss crashtest02.h 444:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 444:23 - operand
@@ -26904,6 +27264,9 @@ function_decl _mm_comigt_ss crashtest02.h 450:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 450:23 - operand
@@ -27028,6 +27391,9 @@ function_decl _mm_comige_ss crashtest02.h 456:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 456:23 - operand
@@ -27152,6 +27518,9 @@ function_decl _mm_comineq_ss crashtest02.h 462:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 462:24 - operand
@@ -27276,6 +27645,9 @@ function_decl _mm_ucomieq_ss crashtest02.h 468:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 468:24 - operand
@@ -27400,6 +27772,9 @@ function_decl _mm_ucomilt_ss crashtest02.h 474:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 474:24 - operand
@@ -27524,6 +27899,9 @@ function_decl _mm_ucomile_ss crashtest02.h 480:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 480:24 - operand
@@ -27648,6 +28026,9 @@ function_decl _mm_ucomigt_ss crashtest02.h 486:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 486:24 - operand
@@ -27772,6 +28153,9 @@ function_decl _mm_ucomige_ss crashtest02.h 492:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 492:24 - operand
@@ -27896,6 +28280,9 @@ function_decl _mm_ucomineq_ss crashtest02.h 498:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 498:25 - operand
@@ -27998,6 +28385,9 @@ function_decl _mm_cvtss_si32 crashtest02.h 506:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 506:24 - operand
@@ -28092,6 +28482,9 @@ function_decl _mm_cvt_ss2si crashtest02.h 512:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __A crashtest02.h 512:23 - arg
       vector_type - decl type
@@ -28180,6 +28573,9 @@ function_decl _mm_cvtss_si64 crashtest02.h 523:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 64
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 523:24 - operand
@@ -28269,6 +28665,9 @@ function_decl _mm_cvtss_si64x crashtest02.h 530:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 64
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 530:25 - operand
@@ -28373,6 +28772,8 @@ function_decl _mm_cvtps_pi32 crashtest02.h 539:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 539:24 - operand
@@ -28482,6 +28883,8 @@ function_decl _mm_cvt_ps2pi crashtest02.h 545:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A crashtest02.h 545:23 - arg
       vector_type - decl type
@@ -28570,6 +28973,9 @@ function_decl _mm_cvttss_si32 crashtest02.h 552:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 552:25 - operand
@@ -28664,6 +29070,9 @@ function_decl _mm_cvtt_ss2si crashtest02.h 558:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __A crashtest02.h 558:24 - arg
       vector_type - decl type
@@ -28752,6 +29161,9 @@ function_decl _mm_cvttss_si64 crashtest02.h 568:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 64
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 568:25 - operand
@@ -28841,6 +29253,9 @@ function_decl _mm_cvttss_si64x crashtest02.h 575:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 64
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 575:26 - operand
@@ -28945,6 +29360,8 @@ function_decl _mm_cvttps_pi32 crashtest02.h 584:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 584:25 - operand
@@ -29054,6 +29471,8 @@ function_decl _mm_cvtt_ps2pi crashtest02.h 590:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A crashtest02.h 590:24 - arg
       vector_type - decl type
@@ -29165,6 +29584,8 @@ function_decl _mm_cvtsi32_ss crashtest02.h 597:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 597:24 - operand
@@ -29293,6 +29714,8 @@ function_decl _mm_cvt_si2ss crashtest02.h 603:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      - isUsed: 1
      parm_decl __A crashtest02.h 603:23 - arg
       vector_type - decl type
@@ -29415,6 +29838,8 @@ function_decl _mm_cvtsi64_ss crashtest02.h 613:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 613:24 - operand
@@ -29538,6 +29963,8 @@ function_decl _mm_cvtsi64x_ss crashtest02.h 620:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 620:25 - operand
@@ -29671,6 +30098,8 @@ function_decl _mm_cvtpi32_ps crashtest02.h 629:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 629:24 - operand
@@ -29815,6 +30244,8 @@ function_decl _mm_cvt_pi2ps crashtest02.h 635:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      - isUsed: 1
      parm_decl __A crashtest02.h 635:23 - arg
       vector_type - decl type
@@ -30004,6 +30435,8 @@ function_decl _mm_cvtpi16_ps crashtest02.h 642:1
          - isExternal: 1
          - isPublic: 1
           function_type - function type
+           vector_type - function return type
+           - vectorSize: 4
         vector_cst - arg
          integer_cst 0 - element
          integer_cst 0 - element
@@ -30041,6 +30474,8 @@ function_decl _mm_cvtpi16_ps crashtest02.h 642:1
           - isExternal: 1
           - isPublic: 1
            function_type - function type
+            vector_type - function return type
+            - vectorSize: 4
          view_convert_expr - arg
           - isUsed: 1
           parm_decl __A crashtest02.h 642:23 - operand
@@ -30075,6 +30510,8 @@ function_decl _mm_cvtpi16_ps crashtest02.h 642:1
           - isExternal: 1
           - isPublic: 1
            function_type - function type
+            vector_type - function return type
+            - vectorSize: 4
          view_convert_expr - arg
           - isUsed: 1
           parm_decl __A crashtest02.h 642:23 - operand
@@ -30112,6 +30549,8 @@ function_decl _mm_cvtpi16_ps crashtest02.h 642:1
             tree_list - chain
              identifier_node __gnu_inline__ - purpose
           function_type - function type
+           vector_type - function return type
+           - vectorSize: 4
    cleanup_point_expr crashtest02.h 659:50 - statement
     expr_stmt crashtest02.h 659:50 - operand
      convert_expr - expresssion
@@ -30126,6 +30565,8 @@ function_decl _mm_cvtpi16_ps crashtest02.h 642:1
          - isExternal: 1
          - isPublic: 1
           function_type - function type
+           vector_type - function return type
+           - vectorSize: 4
         var_decl __zero crashtest02.h 646:10 - arg
         - isUsed: 1
         var_decl __losi crashtest02.h 645:18 - arg
@@ -30144,6 +30585,8 @@ function_decl _mm_cvtpi16_ps crashtest02.h 642:1
          - isExternal: 1
          - isPublic: 1
           function_type - function type
+           vector_type - function return type
+           - vectorSize: 4
         var_decl __ra crashtest02.h 646:18 - arg
         - isUsed: 1
         var_decl __hisi crashtest02.h 645:10 - arg
@@ -30170,6 +30613,8 @@ function_decl _mm_cvtpi16_ps crashtest02.h 642:1
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 4
       var_decl __ra crashtest02.h 646:18 - arg
       - isUsed: 1
       var_decl __rb crashtest02.h 646:24 - arg
@@ -30334,6 +30779,8 @@ function_decl _mm_cvtpu16_ps crashtest02.h 667:1
           - isExternal: 1
           - isPublic: 1
            function_type - function type
+            vector_type - function return type
+            - vectorSize: 4
          view_convert_expr - arg
           - isUsed: 1
           parm_decl __A crashtest02.h 667:23 - operand
@@ -30371,6 +30818,8 @@ function_decl _mm_cvtpu16_ps crashtest02.h 667:1
           - isExternal: 1
           - isPublic: 1
            function_type - function type
+            vector_type - function return type
+            - vectorSize: 4
          view_convert_expr - arg
           - isUsed: 1
           parm_decl __A crashtest02.h 667:23 - operand
@@ -30411,6 +30860,8 @@ function_decl _mm_cvtpu16_ps crashtest02.h 667:1
             tree_list - chain
              identifier_node __gnu_inline__ - purpose
           function_type - function type
+           vector_type - function return type
+           - vectorSize: 4
    cleanup_point_expr crashtest02.h 678:50 - statement
     expr_stmt crashtest02.h 678:50 - operand
      convert_expr - expresssion
@@ -30425,6 +30876,8 @@ function_decl _mm_cvtpu16_ps crashtest02.h 667:1
          - isExternal: 1
          - isPublic: 1
           function_type - function type
+           vector_type - function return type
+           - vectorSize: 4
         var_decl __zero crashtest02.h 670:10 - arg
         - isUsed: 1
         var_decl __losi crashtest02.h 669:18 - arg
@@ -30443,6 +30896,8 @@ function_decl _mm_cvtpu16_ps crashtest02.h 667:1
          - isExternal: 1
          - isPublic: 1
           function_type - function type
+           vector_type - function return type
+           - vectorSize: 4
         var_decl __ra crashtest02.h 670:18 - arg
         - isUsed: 1
         var_decl __hisi crashtest02.h 669:10 - arg
@@ -30469,6 +30924,8 @@ function_decl _mm_cvtpu16_ps crashtest02.h 667:1
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 4
       var_decl __ra crashtest02.h 670:18 - arg
       - isUsed: 1
       var_decl __rb crashtest02.h 670:24 - arg
@@ -30583,6 +31040,8 @@ function_decl _mm_cvtpi8_ps crashtest02.h 686:1
          - isExternal: 1
          - isPublic: 1
           function_type - function type
+           vector_type - function return type
+           - vectorSize: 8
         vector_cst - arg
          integer_cst 0 - element
          integer_cst 0 - element
@@ -30638,6 +31097,8 @@ function_decl _mm_cvtpi8_ps crashtest02.h 686:1
           - isExternal: 1
           - isPublic: 1
            function_type - function type
+            vector_type - function return type
+            - vectorSize: 8
          view_convert_expr - arg
           - isUsed: 1
           parm_decl __A crashtest02.h 686:22 - operand
@@ -30684,6 +31145,8 @@ function_decl _mm_cvtpi8_ps crashtest02.h 686:1
            tree_list - chain
             identifier_node __gnu_inline__ - purpose
          function_type - function type
+          vector_type - function return type
+          - vectorSize: 4
        - isUsed: 1
        parm_decl __A crashtest02.h 686:22 - arg
         vector_type - decl type
@@ -30798,6 +31261,8 @@ function_decl _mm_cvtpu8_ps crashtest02.h 703:1
          - isExternal: 1
          - isPublic: 1
           function_type - function type
+           vector_type - function return type
+           - vectorSize: 8
         view_convert_expr - arg
          - isUsed: 1
          parm_decl __A crashtest02.h 703:21 - operand
@@ -30851,6 +31316,8 @@ function_decl _mm_cvtpu8_ps crashtest02.h 703:1
           tree_list - chain
            identifier_node __gnu_inline__ - purpose
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 4
       - isUsed: 1
       parm_decl __A crashtest02.h 703:21 - arg
        vector_type - decl type
@@ -30995,6 +31462,8 @@ function_decl _mm_cvtpi32x2_ps crashtest02.h 711:1
             tree_list - chain
              identifier_node __gnu_inline__ - purpose
           function_type - function type
+           vector_type - function return type
+           - vectorSize: 4
    decl_expr crashtest02.h 714:62 - statement
     var_decl __sfa crashtest02.h 714:10 - operand
     - isUsed: 1
@@ -31007,6 +31476,8 @@ function_decl _mm_cvtpi32x2_ps crashtest02.h 711:1
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 4
       var_decl __zero crashtest02.h 713:10 - arg
       - isUsed: 1
       non_lvalue_expr - arg
@@ -31045,6 +31516,8 @@ function_decl _mm_cvtpi32x2_ps crashtest02.h 711:1
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 4
       var_decl __sfa crashtest02.h 714:10 - arg
       - isUsed: 1
       non_lvalue_expr - arg
@@ -31093,6 +31566,8 @@ function_decl _mm_cvtpi32x2_ps crashtest02.h 711:1
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 4
       var_decl __sfa crashtest02.h 714:10 - arg
       - isUsed: 1
       var_decl __sfb crashtest02.h 715:10 - arg
@@ -31198,6 +31673,8 @@ function_decl _mm_cvtps_pi16 crashtest02.h 721:1
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 4
       var_decl __hisf crashtest02.h 723:10 - arg
       - isUsed: 1
       var_decl __hisf crashtest02.h 723:10 - arg
@@ -31221,6 +31698,8 @@ function_decl _mm_cvtps_pi16 crashtest02.h 721:1
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 2
       var_decl __hisf crashtest02.h 723:10 - arg
       - isUsed: 1
      vector_type - var type
@@ -31246,6 +31725,8 @@ function_decl _mm_cvtps_pi16 crashtest02.h 721:1
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 2
       var_decl __losf crashtest02.h 724:10 - arg
       - isUsed: 1
      vector_type - var type
@@ -31286,6 +31767,8 @@ function_decl _mm_cvtps_pi16 crashtest02.h 721:1
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          vector_type - function return type
+          - vectorSize: 4
        var_decl __hisi crashtest02.h 725:10 - arg
        - isUsed: 1
        var_decl __losi crashtest02.h 726:10 - arg
@@ -31402,6 +31885,8 @@ function_decl _mm_cvtps_pi8 crashtest02.h 732:1
              tree_list - chain
               identifier_node __gnu_inline__ - purpose
            function_type - function type
+            vector_type - function return type
+            - vectorSize: 2
          - isUsed: 1
          parm_decl __A crashtest02.h 732:22 - arg
           vector_type - decl type
@@ -31441,6 +31926,8 @@ function_decl _mm_cvtps_pi8 crashtest02.h 732:1
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          vector_type - function return type
+          - vectorSize: 8
        var_decl __tmp crashtest02.h 734:10 - arg
        - isUsed: 1
        vector_cst - arg
@@ -31552,6 +32039,8 @@ function_decl _mm_unpackhi_ps crashtest02.h 753:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 753:25 - operand
@@ -31679,6 +32168,8 @@ function_decl _mm_unpacklo_ps crashtest02.h 760:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 760:25 - operand
@@ -31816,6 +32307,8 @@ function_decl _mm_loadh_pi crashtest02.h 768:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __A crashtest02.h 768:22 - operand
@@ -31932,6 +32425,7 @@ function_decl _mm_storeh_pi crashtest02.h 775:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     nop_expr - arg
      - isUsed: 1
      parm_decl __P crashtest02.h 775:23 - operand
@@ -32064,6 +32558,8 @@ function_decl _mm_movehl_ps crashtest02.h 782:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 782:23 - operand
@@ -32191,6 +32687,8 @@ function_decl _mm_movelh_ps crashtest02.h 789:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 789:23 - operand
@@ -32328,6 +32826,8 @@ function_decl _mm_loadl_pi crashtest02.h 797:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __A crashtest02.h 797:22 - operand
@@ -32444,6 +32944,7 @@ function_decl _mm_storel_pi crashtest02.h 804:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     nop_expr - arg
      - isUsed: 1
      parm_decl __P crashtest02.h 804:23 - operand
@@ -32551,6 +33052,9 @@ function_decl _mm_movemask_ps crashtest02.h 811:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 811:25 - operand
@@ -32618,6 +33122,9 @@ function_decl _mm_getcsr crashtest02.h 818:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - unsigned
 function_decl _MM_GET_EXCEPTION_STATE crashtest02.h 825:1
 - isExternal: 1
 - isPublic: 1
@@ -32678,6 +33185,9 @@ function_decl _MM_GET_EXCEPTION_STATE crashtest02.h 825:1
           tree_list - chain
            identifier_node __gnu_inline__ - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - unsigned
      integer_cst 63 - operand
 function_decl _MM_GET_EXCEPTION_MASK crashtest02.h 831:1
 - isExternal: 1
@@ -32739,6 +33249,9 @@ function_decl _MM_GET_EXCEPTION_MASK crashtest02.h 831:1
           tree_list - chain
            identifier_node __gnu_inline__ - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - unsigned
      integer_cst 8064 - operand
 function_decl _MM_GET_ROUNDING_MODE crashtest02.h 837:1
 - isExternal: 1
@@ -32800,6 +33313,9 @@ function_decl _MM_GET_ROUNDING_MODE crashtest02.h 837:1
           tree_list - chain
            identifier_node __gnu_inline__ - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - unsigned
      integer_cst 24576 - operand
 function_decl _MM_GET_FLUSH_ZERO_MODE crashtest02.h 843:1
 - isExternal: 1
@@ -32861,6 +33377,9 @@ function_decl _MM_GET_FLUSH_ZERO_MODE crashtest02.h 843:1
           tree_list - chain
            identifier_node __gnu_inline__ - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - unsigned
      integer_cst 32768 - operand
 function_decl _mm_setcsr crashtest02.h 850:1
 - isExternal: 1
@@ -32913,6 +33432,7 @@ function_decl _mm_setcsr crashtest02.h 850:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __I crashtest02.h 850:26 - arg
      integer_type - decl type
@@ -32980,6 +33500,7 @@ function_decl _MM_SET_EXCEPTION_STATE crashtest02.h 857:1
         tree_list - chain
          identifier_node __gnu_inline__ - purpose
       function_type - function type
+       void_type - function return type
     bit_ior_expr crashtest02.h 859:48 - arg
      bit_and_expr crashtest02.h 859:28 - operand
       call_expr crashtest02.h 859:25 - operand
@@ -32994,6 +33515,9 @@ function_decl _MM_SET_EXCEPTION_STATE crashtest02.h 857:1
            tree_list - chain
             identifier_node __gnu_inline__ - purpose
          function_type - function type
+          integer_type - function return type
+          - precisionBits: 32
+          - unsigned
       integer_cst 4294967232 - operand
      - isUsed: 1
      parm_decl __mask crashtest02.h 857:38 - operand
@@ -33062,6 +33586,7 @@ function_decl _MM_SET_EXCEPTION_MASK crashtest02.h 863:1
         tree_list - chain
          identifier_node __gnu_inline__ - purpose
       function_type - function type
+       void_type - function return type
     bit_ior_expr crashtest02.h 865:46 - arg
      bit_and_expr crashtest02.h 865:28 - operand
       call_expr crashtest02.h 865:25 - operand
@@ -33076,6 +33601,9 @@ function_decl _MM_SET_EXCEPTION_MASK crashtest02.h 863:1
            tree_list - chain
             identifier_node __gnu_inline__ - purpose
          function_type - function type
+          integer_type - function return type
+          - precisionBits: 32
+          - unsigned
       integer_cst 4294959231 - operand
      - isUsed: 1
      parm_decl __mask crashtest02.h 863:38 - operand
@@ -33144,6 +33672,7 @@ function_decl _MM_SET_ROUNDING_MODE crashtest02.h 869:1
         tree_list - chain
          identifier_node __gnu_inline__ - purpose
       function_type - function type
+       void_type - function return type
     bit_ior_expr crashtest02.h 871:47 - arg
      bit_and_expr crashtest02.h 871:28 - operand
       call_expr crashtest02.h 871:25 - operand
@@ -33158,6 +33687,9 @@ function_decl _MM_SET_ROUNDING_MODE crashtest02.h 869:1
            tree_list - chain
             identifier_node __gnu_inline__ - purpose
          function_type - function type
+          integer_type - function return type
+          - precisionBits: 32
+          - unsigned
       integer_cst 4294942719 - operand
      - isUsed: 1
      parm_decl __mode crashtest02.h 869:37 - operand
@@ -33226,6 +33758,7 @@ function_decl _MM_SET_FLUSH_ZERO_MODE crashtest02.h 875:1
         tree_list - chain
          identifier_node __gnu_inline__ - purpose
       function_type - function type
+       void_type - function return type
     bit_ior_expr crashtest02.h 877:52 - arg
      bit_and_expr crashtest02.h 877:28 - operand
       call_expr crashtest02.h 877:25 - operand
@@ -33240,6 +33773,9 @@ function_decl _MM_SET_FLUSH_ZERO_MODE crashtest02.h 875:1
            tree_list - chain
             identifier_node __gnu_inline__ - purpose
          function_type - function type
+          integer_type - function return type
+          - precisionBits: 32
+          - unsigned
       integer_cst 4294934527 - operand
      - isUsed: 1
      parm_decl __mode crashtest02.h 875:39 - operand
@@ -33537,6 +34073,8 @@ function_decl _mm_set_ps1 crashtest02.h 895:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      - isUsed: 1
      parm_decl __F crashtest02.h 895:20 - arg
       real_type - decl type
@@ -33620,6 +34158,8 @@ function_decl _mm_load_ss crashtest02.h 902:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      nop_expr - arg
       indirect_ref - operand
        - isUsed: 1
@@ -33706,6 +34246,8 @@ function_decl _mm_load1_ps crashtest02.h 909:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      nop_expr - arg
       indirect_ref - operand
        - isUsed: 1
@@ -33792,6 +34334,8 @@ function_decl _mm_load_ps1 crashtest02.h 915:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      - isUsed: 1
      parm_decl __P crashtest02.h 915:28 - arg
       pointer_type - decl type
@@ -33944,6 +34488,8 @@ function_decl _mm_loadu_ps crashtest02.h 929:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      - isUsed: 1
      parm_decl __P crashtest02.h 929:28 - arg
       pointer_type - decl type
@@ -34048,6 +34594,8 @@ function_decl _mm_loadr_ps crashtest02.h 936:1
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 4
       var_decl __tmp crashtest02.h 938:10 - arg
       - isUsed: 1
       var_decl __tmp crashtest02.h 938:10 - arg
@@ -34699,6 +35247,7 @@ function_decl _mm_storeu_ps crashtest02.h 978:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __P crashtest02.h 978:23 - arg
      pointer_type - decl type
@@ -34807,6 +35356,8 @@ function_decl _mm_store1_ps crashtest02.h 985:1
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 4
       var_decl __va crashtest02.h 987:10 - arg
       - isUsed: 1
       var_decl __va crashtest02.h 987:10 - arg
@@ -34833,6 +35384,7 @@ function_decl _mm_store1_ps crashtest02.h 985:1
           tree_list - chain
            identifier_node __gnu_inline__ - purpose
         function_type - function type
+         void_type - function return type
       - isUsed: 1
       parm_decl __P crashtest02.h 985:23 - arg
        pointer_type - decl type
@@ -34920,6 +35472,7 @@ function_decl _mm_store_ps1 crashtest02.h 993:1
         tree_list - chain
          identifier_node __gnu_inline__ - purpose
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __P crashtest02.h 993:23 - arg
      pointer_type - decl type
@@ -35027,6 +35580,8 @@ function_decl _mm_storer_ps crashtest02.h 1000:1
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 4
       var_decl __va crashtest02.h 1002:10 - arg
       - isUsed: 1
       var_decl __va crashtest02.h 1002:10 - arg
@@ -35053,6 +35608,7 @@ function_decl _mm_storer_ps crashtest02.h 1000:1
           tree_list - chain
            identifier_node __gnu_inline__ - purpose
         function_type - function type
+         void_type - function return type
       - isUsed: 1
       parm_decl __P crashtest02.h 1000:23 - arg
        pointer_type - decl type
@@ -35169,6 +35725,8 @@ function_decl _mm_move_ss crashtest02.h 1009:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 1009:21 - operand
@@ -35325,6 +35883,8 @@ function_decl _mm_max_pi16 crashtest02.h 1058:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A crashtest02.h 1058:21 - operand
@@ -35493,6 +36053,8 @@ function_decl _m_pmaxsw crashtest02.h 1064:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A crashtest02.h 1064:18 - arg
       vector_type - decl type
@@ -35655,6 +36217,8 @@ function_decl _mm_max_pu8 crashtest02.h 1071:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A crashtest02.h 1071:20 - operand
@@ -35823,6 +36387,8 @@ function_decl _m_pmaxub crashtest02.h 1077:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A crashtest02.h 1077:18 - arg
       vector_type - decl type
@@ -35985,6 +36551,8 @@ function_decl _mm_min_pi16 crashtest02.h 1084:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A crashtest02.h 1084:21 - operand
@@ -36153,6 +36721,8 @@ function_decl _m_pminsw crashtest02.h 1090:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A crashtest02.h 1090:18 - arg
       vector_type - decl type
@@ -36315,6 +36885,8 @@ function_decl _mm_min_pu8 crashtest02.h 1097:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A crashtest02.h 1097:20 - operand
@@ -36483,6 +37055,8 @@ function_decl _m_pminub crashtest02.h 1103:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A crashtest02.h 1103:18 - arg
       vector_type - decl type
@@ -36599,6 +37173,9 @@ function_decl _mm_movemask_pi8 crashtest02.h 1110:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     view_convert_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 1110:25 - operand
@@ -36705,6 +37282,9 @@ function_decl _m_pmovmskb crashtest02.h 1116:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __A crashtest02.h 1116:20 - arg
       vector_type - decl type
@@ -36851,6 +37431,8 @@ function_decl _mm_mulhi_pu16 crashtest02.h 1124:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A crashtest02.h 1124:23 - operand
@@ -37019,6 +37601,8 @@ function_decl _m_pmulhuw crashtest02.h 1130:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A crashtest02.h 1130:19 - arg
       vector_type - decl type
@@ -37166,6 +37750,7 @@ function_decl _mm_maskmove_si64 crashtest02.h 1160:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     view_convert_expr - arg
      - isUsed: 1
      parm_decl __A crashtest02.h 1160:26 - operand
@@ -37333,6 +37918,7 @@ function_decl _m_maskmovq crashtest02.h 1166:1
         tree_list - chain
          identifier_node __gnu_inline__ - purpose
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __A crashtest02.h 1166:20 - arg
      vector_type - decl type
@@ -37508,6 +38094,8 @@ function_decl _mm_avg_pu8 crashtest02.h 1173:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A crashtest02.h 1173:20 - operand
@@ -37676,6 +38264,8 @@ function_decl _m_pavgb crashtest02.h 1179:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A crashtest02.h 1179:17 - arg
       vector_type - decl type
@@ -37838,6 +38428,8 @@ function_decl _mm_avg_pu16 crashtest02.h 1186:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A crashtest02.h 1186:21 - operand
@@ -38006,6 +38598,8 @@ function_decl _m_pavgw crashtest02.h 1192:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A crashtest02.h 1192:17 - arg
       vector_type - decl type
@@ -38168,6 +38762,8 @@ function_decl _mm_sad_pu8 crashtest02.h 1201:1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 1
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A crashtest02.h 1201:20 - operand
@@ -38336,6 +38932,8 @@ function_decl _m_psadbw crashtest02.h 1207:1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A crashtest02.h 1207:18 - arg
       vector_type - decl type
@@ -38461,6 +39059,7 @@ function_decl _mm_stream_pi crashtest02.h 1214:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     nop_expr - arg
      - isUsed: 1
      parm_decl __P crashtest02.h 1214:23 - operand
@@ -38563,6 +39162,7 @@ function_decl _mm_stream_ps crashtest02.h 1221:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __P crashtest02.h 1221:23 - arg
      pointer_type - decl type
@@ -38615,6 +39215,7 @@ function_decl _mm_sfence crashtest02.h 1229:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
 function_decl _mm_set_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 61:1
 - isExternal: 1
 - isPublic: 1
@@ -38886,6 +39487,8 @@ function_decl _mm_set_pd1 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 74
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __F /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 74:21 - arg
       real_type - decl type
@@ -39372,6 +39975,8 @@ function_decl _mm_move_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 11
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 110:22 - operand
@@ -39542,6 +40147,8 @@ function_decl _mm_loadu_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __P /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 124:29 - arg
       pointer_type - decl type
@@ -39626,6 +40233,8 @@ function_decl _mm_load1_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      nop_expr - arg
       indirect_ref - operand
        - isUsed: 1
@@ -39712,6 +40321,8 @@ function_decl _mm_load_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 13
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      nop_expr - arg
       indirect_ref - operand
        - isUsed: 1
@@ -39798,6 +40409,8 @@ function_decl _mm_load_pd1 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __P /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 144:29 - arg
       pointer_type - decl type
@@ -39890,6 +40503,8 @@ function_decl _mm_loadr_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1
             tree_list - chain
              identifier_node __gnu_inline__ - purpose
           function_type - function type
+           vector_type - function return type
+           - vectorSize: 2
         - isUsed: 1
         parm_decl __P /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 151:29 - arg
          pointer_type - decl type
@@ -39920,6 +40535,8 @@ function_decl _mm_loadr_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 2
       var_decl __tmp /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 153:11 - arg
       - isUsed: 1
       var_decl __tmp /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 153:11 - arg
@@ -40079,6 +40696,7 @@ function_decl _mm_storeu_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __P /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 166:24 - arg
      pointer_type - decl type
@@ -40361,6 +40979,7 @@ function_decl _mm_storel_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
         tree_list - chain
          identifier_node __gnu_inline__ - purpose
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __P /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 185:24 - arg
      pointer_type - decl type
@@ -40557,6 +41176,7 @@ function_decl _mm_store1_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
         tree_list - chain
          identifier_node __gnu_inline__ - purpose
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __P /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 200:24 - arg
      pointer_type - decl type
@@ -40573,6 +41193,8 @@ function_decl _mm_store1_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 200:37 - arg
       vector_type - decl type
@@ -40670,6 +41292,7 @@ function_decl _mm_store_pd1 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
         tree_list - chain
          identifier_node __gnu_inline__ - purpose
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __P /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 206:24 - arg
      pointer_type - decl type
@@ -40762,6 +41385,7 @@ function_decl _mm_storer_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
         tree_list - chain
          identifier_node __gnu_inline__ - purpose
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __P /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 213:24 - arg
      pointer_type - decl type
@@ -40778,6 +41402,8 @@ function_decl _mm_storer_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 213:37 - arg
       vector_type - decl type
@@ -40887,6 +41513,9 @@ function_decl _mm_cvtsi128_si32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintri
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     view_convert_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 219:28 - operand
@@ -41356,6 +41985,8 @@ function_decl _mm_add_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 247
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 247:21 - operand
@@ -41601,6 +42232,8 @@ function_decl _mm_sub_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 259
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 259:21 - operand
@@ -41846,6 +42479,8 @@ function_decl _mm_mul_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 271
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 271:21 - operand
@@ -42091,6 +42726,8 @@ function_decl _mm_div_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 283
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 283:21 - operand
@@ -42196,6 +42833,8 @@ function_decl _mm_sqrt_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 28
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 289:22 - operand
@@ -42300,6 +42939,8 @@ function_decl _mm_sqrt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 29
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 296:22 - operand
@@ -42359,6 +43000,8 @@ function_decl _mm_sqrt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 29
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 2
       non_lvalue_expr - arg
        var_decl __tmp /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 298:10 - operand
        - isUsed: 1
@@ -42466,6 +43109,8 @@ function_decl _mm_min_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 303
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 303:21 - operand
@@ -42593,6 +43238,8 @@ function_decl _mm_min_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 309
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 309:21 - operand
@@ -42720,6 +43367,8 @@ function_decl _mm_max_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 315
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 315:21 - operand
@@ -42847,6 +43496,8 @@ function_decl _mm_max_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 321
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 321:21 - operand
@@ -42974,6 +43625,8 @@ function_decl _mm_and_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 327
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 327:21 - operand
@@ -43101,6 +43754,8 @@ function_decl _mm_andnot_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 333:24 - operand
@@ -43228,6 +43883,8 @@ function_decl _mm_or_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 339:
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 339:20 - operand
@@ -43355,6 +44012,8 @@ function_decl _mm_xor_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 345
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 345:21 - operand
@@ -43482,6 +44141,8 @@ function_decl _mm_cmpeq_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 3
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 351:23 - operand
@@ -43609,6 +44270,8 @@ function_decl _mm_cmplt_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 3
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 357:23 - operand
@@ -43736,6 +44399,8 @@ function_decl _mm_cmple_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 3
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 363:23 - operand
@@ -43863,6 +44528,8 @@ function_decl _mm_cmpgt_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 3
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 369:23 - operand
@@ -43990,6 +44657,8 @@ function_decl _mm_cmpge_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 3
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 375:23 - operand
@@ -44117,6 +44786,8 @@ function_decl _mm_cmpneq_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 381:24 - operand
@@ -44244,6 +44915,8 @@ function_decl _mm_cmpnlt_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 387:24 - operand
@@ -44371,6 +45044,8 @@ function_decl _mm_cmpnle_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 393:24 - operand
@@ -44498,6 +45173,8 @@ function_decl _mm_cmpngt_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 399:24 - operand
@@ -44625,6 +45302,8 @@ function_decl _mm_cmpnge_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 405:24 - operand
@@ -44752,6 +45431,8 @@ function_decl _mm_cmpord_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 411:24 - operand
@@ -44879,6 +45560,8 @@ function_decl _mm_cmpunord_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 417:26 - operand
@@ -45006,6 +45689,8 @@ function_decl _mm_cmpeq_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 4
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 423:23 - operand
@@ -45133,6 +45818,8 @@ function_decl _mm_cmplt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 4
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 429:23 - operand
@@ -45260,6 +45947,8 @@ function_decl _mm_cmple_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 4
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 435:23 - operand
@@ -45387,6 +46076,8 @@ function_decl _mm_cmpgt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 4
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 441:23 - operand
@@ -45408,6 +46099,8 @@ function_decl _mm_cmpgt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 4
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __B /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 441:36 - operand
@@ -45535,6 +46228,8 @@ function_decl _mm_cmpge_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 4
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 451:23 - operand
@@ -45556,6 +46251,8 @@ function_decl _mm_cmpge_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 4
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __B /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 451:36 - operand
@@ -45683,6 +46380,8 @@ function_decl _mm_cmpneq_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 461:24 - operand
@@ -45810,6 +46509,8 @@ function_decl _mm_cmpnlt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 467:24 - operand
@@ -45937,6 +46638,8 @@ function_decl _mm_cmpnle_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 473:24 - operand
@@ -46064,6 +46767,8 @@ function_decl _mm_cmpngt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 479:24 - operand
@@ -46085,6 +46790,8 @@ function_decl _mm_cmpngt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __B /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 479:37 - operand
@@ -46212,6 +46919,8 @@ function_decl _mm_cmpnge_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 489:24 - operand
@@ -46233,6 +46942,8 @@ function_decl _mm_cmpnge_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __B /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 489:37 - operand
@@ -46360,6 +47071,8 @@ function_decl _mm_cmpord_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 499:24 - operand
@@ -46487,6 +47200,8 @@ function_decl _mm_cmpunord_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 505:26 - operand
@@ -46611,6 +47326,9 @@ function_decl _mm_comieq_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 511:24 - operand
@@ -46735,6 +47453,9 @@ function_decl _mm_comilt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 517:24 - operand
@@ -46859,6 +47580,9 @@ function_decl _mm_comile_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 523:24 - operand
@@ -46983,6 +47707,9 @@ function_decl _mm_comigt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 529:24 - operand
@@ -47107,6 +47834,9 @@ function_decl _mm_comige_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 535:24 - operand
@@ -47231,6 +47961,9 @@ function_decl _mm_comineq_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 541:25 - operand
@@ -47355,6 +48088,9 @@ function_decl _mm_ucomieq_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 547:25 - operand
@@ -47479,6 +48215,9 @@ function_decl _mm_ucomilt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 553:25 - operand
@@ -47603,6 +48342,9 @@ function_decl _mm_ucomile_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 559:25 - operand
@@ -47727,6 +48469,9 @@ function_decl _mm_ucomigt_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 565:25 - operand
@@ -47851,6 +48596,9 @@ function_decl _mm_ucomige_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 571:25 - operand
@@ -47975,6 +48723,9 @@ function_decl _mm_ucomineq_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 577:26 - operand
@@ -48288,6 +49039,8 @@ function_decl _mm_set_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __q1 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 591:22 - operand
@@ -49600,6 +50353,8 @@ function_decl _mm_set1_epi64x /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 625:28 - arg
       integer_type - decl type
@@ -49726,6 +50481,8 @@ function_decl _mm_set1_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 631:23 - arg
       vector_type - decl type
@@ -49852,6 +50609,8 @@ function_decl _mm_set1_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 637:21 - arg
       integer_type - decl type
@@ -49990,6 +50749,8 @@ function_decl _mm_set1_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      nop_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 643:23 - operand
@@ -50181,6 +50942,8 @@ function_decl _mm_set1_epi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      nop_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 649:21 - operand
@@ -50507,6 +51270,8 @@ function_decl _mm_setr_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __q1 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 659:35 - arg
       vector_type - decl type
@@ -50693,6 +51458,8 @@ function_decl _mm_setr_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      - isUsed: 1
      parm_decl __q3 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 665:51 - arg
       integer_type - decl type
@@ -50971,6 +51738,8 @@ function_decl _mm_setr_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      nop_expr - arg
       - isUsed: 1
       parm_decl __q7 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 672:52 - operand
@@ -51477,6 +52246,8 @@ function_decl _mm_setr_epi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      nop_expr - arg
       - isUsed: 1
       parm_decl __q15 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 681:50 - operand
@@ -51883,6 +52654,8 @@ function_decl _mm_loadu_si128 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         vector_type - function return type
+         - vectorSize: 16
       nop_expr - arg
        - isUsed: 1
        parm_decl __P /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 696:33 - operand
@@ -52007,6 +52780,8 @@ function_decl _mm_loadl_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      vector_cst - arg
       integer_cst 0 - element
       integer_cst 0 - element
@@ -52244,6 +53019,7 @@ function_decl _mm_storeu_si128 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     nop_expr - arg
      - isUsed: 1
      parm_decl __P /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 714:28 - operand
@@ -52662,6 +53438,8 @@ function_decl _mm_movpi64_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintri
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      vector_cst - arg
       integer_cst 0 - element
       integer_cst 0 - element
@@ -52780,6 +53558,8 @@ function_decl _mm_move_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 738:25 - operand
@@ -53071,6 +53851,8 @@ function_decl _mm_cvtepi32_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     view_convert_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 759:26 - operand
@@ -53175,6 +53957,8 @@ function_decl _mm_cvtepi32_ps /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     view_convert_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 765:26 - operand
@@ -53284,6 +54068,8 @@ function_decl _mm_cvtpd_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 771:26 - operand
@@ -53388,6 +54174,8 @@ function_decl _mm_cvtpd_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 777:25 - operand
@@ -53480,6 +54268,8 @@ function_decl _mm_cvtpd_ps /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 7
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 783:23 - operand
@@ -53585,6 +54375,8 @@ function_decl _mm_cvttpd_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 789:27 - operand
@@ -53689,6 +54481,8 @@ function_decl _mm_cvttpd_pi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 795:26 - operand
@@ -53789,6 +54583,8 @@ function_decl _mm_cvtpi32_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 801:23 - operand
@@ -53898,6 +54694,8 @@ function_decl _mm_cvtps_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 807:25 - operand
@@ -54003,6 +54801,8 @@ function_decl _mm_cvttps_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 813:26 - operand
@@ -54095,6 +54895,8 @@ function_decl _mm_cvtps_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 8
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 819:22 - operand
@@ -54184,6 +54986,9 @@ function_decl _mm_cvtsd_si32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 825:25 - operand
@@ -54273,6 +55078,9 @@ function_decl _mm_cvtsd_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 64
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 833:25 - operand
@@ -54362,6 +55170,9 @@ function_decl _mm_cvtsd_si64x /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 64
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 840:26 - operand
@@ -54451,6 +55262,9 @@ function_decl _mm_cvttsd_si32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 847:26 - operand
@@ -54540,6 +55354,9 @@ function_decl _mm_cvttsd_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 64
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 855:26 - operand
@@ -54629,6 +55446,9 @@ function_decl _mm_cvttsd_si64x /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 64
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 862:27 - operand
@@ -54743,6 +55563,8 @@ function_decl _mm_cvtsd_ss /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 8
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 4
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 869:22 - operand
@@ -54868,6 +55690,8 @@ function_decl _mm_cvtsi32_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 875:25 - operand
@@ -54991,6 +55815,8 @@ function_decl _mm_cvtsi64_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 883:25 - operand
@@ -55114,6 +55940,8 @@ function_decl _mm_cvtsi64x_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 890:26 - operand
@@ -55239,6 +56067,8 @@ function_decl _mm_cvtss_sd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 8
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 897:23 - operand
@@ -55366,6 +56196,8 @@ function_decl _mm_unpackhi_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 915:26 - operand
@@ -55493,6 +56325,8 @@ function_decl _mm_unpacklo_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 921:26 - operand
@@ -55612,6 +56446,8 @@ function_decl _mm_loadh_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 9
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 927:23 - operand
@@ -55726,6 +56562,8 @@ function_decl _mm_loadl_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 9
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 933:23 - operand
@@ -55823,6 +56661,9 @@ function_decl _mm_movemask_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 939:26 - operand
@@ -55966,6 +56807,8 @@ function_decl _mm_packs_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 16
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 945:26 - operand
@@ -56130,6 +56973,8 @@ function_decl _mm_packs_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 951:26 - operand
@@ -56294,6 +57139,8 @@ function_decl _mm_packus_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 16
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 957:27 - operand
@@ -56458,6 +57305,8 @@ function_decl _mm_unpackhi_epi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintri
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 16
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 963:28 - operand
@@ -56622,6 +57471,8 @@ function_decl _mm_unpackhi_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintr
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 969:29 - operand
@@ -56786,6 +57637,8 @@ function_decl _mm_unpackhi_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintr
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 975:29 - operand
@@ -56949,6 +57802,8 @@ function_decl _mm_unpackhi_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintr
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 981:29 - operand
@@ -57113,6 +57968,8 @@ function_decl _mm_unpacklo_epi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintri
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 16
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 987:28 - operand
@@ -57277,6 +58134,8 @@ function_decl _mm_unpacklo_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintr
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 993:29 - operand
@@ -57441,6 +58300,8 @@ function_decl _mm_unpacklo_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintr
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 999:29 - operand
@@ -57604,6 +58465,8 @@ function_decl _mm_unpacklo_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintr
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1005:29 - operand
@@ -58396,6 +59259,8 @@ function_decl _mm_adds_epi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 16
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1035:24 - operand
@@ -58560,6 +59425,8 @@ function_decl _mm_adds_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1041:25 - operand
@@ -58724,6 +59591,8 @@ function_decl _mm_adds_epu8 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 16
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1047:24 - operand
@@ -58888,6 +59757,8 @@ function_decl _mm_adds_epu16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1053:25 - operand
@@ -59680,6 +60551,8 @@ function_decl _mm_subs_epi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 16
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1083:24 - operand
@@ -59844,6 +60717,8 @@ function_decl _mm_subs_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1089:25 - operand
@@ -60008,6 +60883,8 @@ function_decl _mm_subs_epu8 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 16
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1095:24 - operand
@@ -60172,6 +61049,8 @@ function_decl _mm_subs_epu16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1101:25 - operand
@@ -60336,6 +61215,8 @@ function_decl _mm_madd_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1107:25 - operand
@@ -60500,6 +61381,8 @@ function_decl _mm_mulhi_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1113:26 - operand
@@ -60821,6 +61704,8 @@ function_decl _mm_mul_su32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 1
      non_lvalue_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1125:21 - operand
@@ -60984,6 +61869,8 @@ function_decl _mm_mul_epu32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     view_convert_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1131:24 - operand
@@ -61138,6 +62025,8 @@ function_decl _mm_slli_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1137:25 - operand
@@ -61286,6 +62175,8 @@ function_decl _mm_slli_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1143:25 - operand
@@ -61433,6 +62324,8 @@ function_decl _mm_slli_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1149:25 - operand
@@ -61581,6 +62474,8 @@ function_decl _mm_srai_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1155:25 - operand
@@ -61729,6 +62624,8 @@ function_decl _mm_srai_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1161:25 - operand
@@ -61877,6 +62774,8 @@ function_decl _mm_srli_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1202:25 - operand
@@ -62025,6 +62924,8 @@ function_decl _mm_srli_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1208:25 - operand
@@ -62172,6 +63073,8 @@ function_decl _mm_srli_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1214:25 - operand
@@ -62330,6 +63233,8 @@ function_decl _mm_sll_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1220:24 - operand
@@ -62494,6 +63399,8 @@ function_decl _mm_sll_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1226:24 - operand
@@ -62657,6 +63564,8 @@ function_decl _mm_sll_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1232:24 - operand
@@ -62821,6 +63730,8 @@ function_decl _mm_sra_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1238:24 - operand
@@ -62985,6 +63896,8 @@ function_decl _mm_sra_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1244:24 - operand
@@ -63149,6 +64062,8 @@ function_decl _mm_srl_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1250:24 - operand
@@ -63313,6 +64228,8 @@ function_decl _mm_srl_epi32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 4
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1256:24 - operand
@@ -63476,6 +64393,8 @@ function_decl _mm_srl_epi64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1262:24 - operand
@@ -63796,6 +64715,8 @@ function_decl _mm_andnot_si128 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     non_lvalue_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1274:27 - operand
@@ -65687,6 +66608,8 @@ function_decl _mm_max_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1366:24 - operand
@@ -65851,6 +66774,8 @@ function_decl _mm_max_epu8 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 16
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1372:23 - operand
@@ -66015,6 +66940,8 @@ function_decl _mm_min_epi16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1378:24 - operand
@@ -66179,6 +67106,8 @@ function_decl _mm_min_epu8 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 16
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1384:23 - operand
@@ -66297,6 +67226,9 @@ function_decl _mm_movemask_epi8 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintri
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     view_convert_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1390:28 - operand
@@ -66444,6 +67376,8 @@ function_decl _mm_mulhi_epu16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1396:26 - operand
@@ -66593,6 +67527,7 @@ function_decl _mm_maskmoveu_si128 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmint
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     view_convert_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1429:30 - operand
@@ -66770,6 +67705,8 @@ function_decl _mm_avg_epu8 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 16
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1435:23 - operand
@@ -66934,6 +67871,8 @@ function_decl _mm_avg_epu16 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 8
      view_convert_expr - arg
       - isUsed: 1
       parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1441:24 - operand
@@ -67097,6 +68036,8 @@ function_decl _mm_sad_epu8 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       vector_type - function return type
+       - vectorSize: 2
     view_convert_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1447:23 - operand
@@ -67204,6 +68145,7 @@ function_decl _mm_stream_si32 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1453:23 - arg
      pointer_type - decl type
@@ -67300,6 +68242,7 @@ function_decl _mm_stream_si64 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1460:33 - arg
      pointer_type - decl type
@@ -67416,6 +68359,7 @@ function_decl _mm_stream_si128 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     nop_expr - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1467:28 - operand
@@ -67518,6 +68462,7 @@ function_decl _mm_stream_pd /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1473:24 - arg
      pointer_type - decl type
@@ -67582,6 +68527,7 @@ function_decl _mm_clflush /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 14
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     - isUsed: 1
     parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1479:26 - arg
      pointer_type - decl type
@@ -67620,6 +68566,7 @@ function_decl _mm_lfence /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 148
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
 function_decl _mm_mfence /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1491:1
 - isExternal: 1
 - isPublic: 1
@@ -67651,6 +68598,7 @@ function_decl _mm_mfence /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 149
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
 function_decl _mm_cvtsi32_si128 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1497:1
 - isExternal: 1
 - isPublic: 1
@@ -67745,6 +68693,8 @@ function_decl _mm_cvtsi32_si128 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintri
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      integer_cst 0 - arg
      integer_cst 0 - arg
      integer_cst 0 - arg
@@ -67853,6 +68803,8 @@ function_decl _mm_cvtsi64_si128 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintri
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      integer_cst 0 - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1505:30 - arg
@@ -67959,6 +68911,8 @@ function_decl _mm_cvtsi64x_si128 /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintr
          tree_list - chain
           identifier_node __gnu_inline__ - purpose
        function_type - function type
+        vector_type - function return type
+        - vectorSize: 2
      integer_cst 0 - arg
      - isUsed: 1
      parm_decl __A /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h 1512:31 - arg
@@ -68554,3 +69508,4 @@ function_decl _mm_pause crashtest02.h 1262:1
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type

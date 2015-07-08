@@ -70,6 +70,9 @@ function_decl __bswap_32 crashtest01.h 45:1
         tree_list - chain
          identifier_node const - purpose
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - unsigned
     - isUsed: 1
     parm_decl __bsx crashtest01.h 45:26 - arg
      integer_type - decl type
@@ -143,6 +146,9 @@ function_decl __bswap_64 crashtest01.h 109:1
         tree_list - chain
          identifier_node const - purpose
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 64
+       - unsigned
     - isUsed: 1
     parm_decl __bsx crashtest01.h 109:24 - arg
      integer_type - decl type

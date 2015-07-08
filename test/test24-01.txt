@@ -971,6 +971,9 @@ function_decl func7 test24.c 70:6
      function_decl test1 test24.c 66:5 - operand
      - isPublic: 1
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
    array_type - var type
     pointer_type - element type
      function_type - nested type

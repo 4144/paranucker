@@ -217,6 +217,7 @@ function_decl func1 test30.cpp 28:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -237,6 +238,7 @@ function_decl func1 test30.cpp 28:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -257,6 +259,7 @@ function_decl func1 test30.cpp 28:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -277,6 +280,7 @@ function_decl func1 test30.cpp 28:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -345,6 +349,7 @@ function_decl func1 test30.cpp 28:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -365,6 +370,7 @@ function_decl func1 test30.cpp 28:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -385,6 +391,7 @@ function_decl func1 test30.cpp 28:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -405,6 +412,7 @@ function_decl func1 test30.cpp 28:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -427,6 +435,7 @@ function_decl func1 test30.cpp 28:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -447,6 +456,7 @@ function_decl func1 test30.cpp 28:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -467,6 +477,7 @@ function_decl func1 test30.cpp 28:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -487,6 +498,7 @@ function_decl func1 test30.cpp 28:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -507,6 +519,7 @@ function_decl func1 test30.cpp 28:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -527,6 +540,7 @@ function_decl func1 test30.cpp 28:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -547,6 +561,7 @@ function_decl func1 test30.cpp 28:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -567,6 +582,7 @@ function_decl func1 test30.cpp 28:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -676,6 +692,7 @@ function_decl func2 test30.cpp 59:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -696,6 +713,7 @@ function_decl func2 test30.cpp 59:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -716,6 +734,7 @@ function_decl func2 test30.cpp 59:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -736,6 +755,7 @@ function_decl func2 test30.cpp 59:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -804,6 +824,7 @@ function_decl func2 test30.cpp 59:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -824,6 +845,7 @@ function_decl func2 test30.cpp 59:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -844,6 +866,7 @@ function_decl func2 test30.cpp 59:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -864,6 +887,7 @@ function_decl func2 test30.cpp 59:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -886,6 +910,7 @@ function_decl func2 test30.cpp 59:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -906,6 +931,7 @@ function_decl func2 test30.cpp 59:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -926,6 +952,7 @@ function_decl func2 test30.cpp 59:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -946,6 +973,7 @@ function_decl func2 test30.cpp 59:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -966,6 +994,7 @@ function_decl func2 test30.cpp 59:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -986,6 +1015,7 @@ function_decl func2 test30.cpp 59:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1006,6 +1036,7 @@ function_decl func2 test30.cpp 59:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1026,6 +1057,7 @@ function_decl func2 test30.cpp 59:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1135,6 +1167,7 @@ function_decl func3 test30.cpp 90:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1155,6 +1188,7 @@ function_decl func3 test30.cpp 90:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1175,6 +1209,7 @@ function_decl func3 test30.cpp 90:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1195,6 +1230,7 @@ function_decl func3 test30.cpp 90:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1263,6 +1299,7 @@ function_decl func3 test30.cpp 90:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -1283,6 +1320,7 @@ function_decl func3 test30.cpp 90:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -1303,6 +1341,7 @@ function_decl func3 test30.cpp 90:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -1323,6 +1362,7 @@ function_decl func3 test30.cpp 90:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -1345,6 +1385,7 @@ function_decl func3 test30.cpp 90:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -1365,6 +1406,7 @@ function_decl func3 test30.cpp 90:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -1385,6 +1427,7 @@ function_decl func3 test30.cpp 90:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -1405,6 +1448,7 @@ function_decl func3 test30.cpp 90:10
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          void_type - function return type
        nop_expr - arg
         addr_expr - operand
          string_cst = - operand
@@ -1425,6 +1469,7 @@ function_decl func3 test30.cpp 90:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1445,6 +1490,7 @@ function_decl func3 test30.cpp 90:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1465,6 +1511,7 @@ function_decl func3 test30.cpp 90:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1485,6 +1532,7 @@ function_decl func3 test30.cpp 90:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1631,6 +1679,7 @@ function_decl func4 test30.cpp 121:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1651,6 +1700,7 @@ function_decl func4 test30.cpp 121:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1671,6 +1721,7 @@ function_decl func4 test30.cpp 121:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1691,6 +1742,7 @@ function_decl func4 test30.cpp 121:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1733,6 +1785,7 @@ function_decl func4 test30.cpp 121:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1753,6 +1806,7 @@ function_decl func4 test30.cpp 121:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1773,6 +1827,7 @@ function_decl func4 test30.cpp 121:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand
@@ -1793,6 +1848,7 @@ function_decl func4 test30.cpp 121:10
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       addr_expr - operand
        string_cst = - operand

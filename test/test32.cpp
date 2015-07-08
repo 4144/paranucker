@@ -18,6 +18,12 @@ Data1 *getfData1()
     return 0;
 }
 
+Data1 *getfData2() __attribute__((returns_nonnull));
+Data1 *getfData2()
+{
+    return 0;
+}
+
 void paranuckerInternalTest(const char *action, const char *collection, const char *values);
 
 class Object1
@@ -26,6 +32,12 @@ class Object1
     Data1 *tmp2;
     Data1 *tmp3;
     int val1;
+
+    Object1() :
+        tmp3(getfData2())
+    {
+        tmp3->val = 100;
+    }
 
     Data1 *getData1()
     {

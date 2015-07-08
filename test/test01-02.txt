@@ -112,6 +112,7 @@
 8 addr_expr 
 9 function_decl test01.cpp
 10 function_type 
+11 integer_type 
 8 integer_cst 
 8 integer_cst 
 4 decl_expr test01.cpp
@@ -132,6 +133,13 @@
 9 tree_list 
 10 identifier_node 
 9 function_type 
+10 void_type 
+10 tree_list 
+11 identifier_node 
+11 tree_list 
+12 integer_cst 
+12 tree_list 
+13 integer_cst 
 7 integer_cst 
 7 addr_expr 
 8 var_decl test01.cpp
@@ -342,6 +350,7 @@
 6 addr_expr 
 7 function_decl test01.cpp
 8 function_type 
+9 void_type 
 6 integer_cst 
 6 integer_cst 
 3 if_stmt test01.cpp

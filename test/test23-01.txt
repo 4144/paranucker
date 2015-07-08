@@ -488,6 +488,9 @@ function_decl __lg /usr/include/c++/5/bits/stl_algobase.h 1012:3
             tree_list - chain
              identifier_node const - purpose
           function_type - function type
+           integer_type - function return type
+           - precisionBits: 32
+           - signed
         nop_expr - arg
          - isUsed: 1
          parm_decl __n /usr/include/c++/5/bits/stl_algobase.h 1012:12 - operand
@@ -583,6 +586,9 @@ function_decl __lg /usr/include/c++/5/bits/stl_algobase.h 1016:3
            tree_list - chain
             identifier_node const - purpose
          function_type - function type
+          integer_type - function return type
+          - precisionBits: 32
+          - signed
        - isUsed: 1
        parm_decl __n /usr/include/c++/5/bits/stl_algobase.h 1016:17 - arg
         integer_type - decl type
@@ -677,6 +683,9 @@ function_decl __lg /usr/include/c++/5/bits/stl_algobase.h 1020:3
             tree_list - chain
              identifier_node const - purpose
           function_type - function type
+           integer_type - function return type
+           - precisionBits: 32
+           - signed
         nop_expr - arg
          - isUsed: 1
          parm_decl __n /usr/include/c++/5/bits/stl_algobase.h 1020:13 - operand
@@ -765,6 +774,9 @@ function_decl __lg /usr/include/c++/5/bits/stl_algobase.h 1024:3
            tree_list - chain
             identifier_node const - purpose
          function_type - function type
+          integer_type - function return type
+          - precisionBits: 32
+          - signed
        - isUsed: 1
        parm_decl __n /usr/include/c++/5/bits/stl_algobase.h 1024:22 - arg
         integer_type - decl type
@@ -857,6 +869,9 @@ function_decl __lg /usr/include/c++/5/bits/stl_algobase.h 1028:3
             tree_list - chain
              identifier_node const - purpose
           function_type - function type
+           integer_type - function return type
+           - precisionBits: 32
+           - signed
         nop_expr - arg
          - isUsed: 1
          parm_decl __n /usr/include/c++/5/bits/stl_algobase.h 1028:18 - operand
@@ -946,6 +961,9 @@ function_decl __lg /usr/include/c++/5/bits/stl_algobase.h 1032:3
             tree_list - chain
              identifier_node const - purpose
           function_type - function type
+           integer_type - function return type
+           - precisionBits: 32
+           - signed
         - isUsed: 1
         parm_decl __n /usr/include/c++/5/bits/stl_algobase.h 1032:27 - arg
          integer_type - decl type
@@ -1353,6 +1371,11 @@ function_decl compare /usr/include/c++/5/bits/char_traits.h 258:7
         tree_list - chain
          identifier_node pure - purpose
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
+       tree_list - attribute
+        identifier_node nonnull - purpose
     nop_expr - arg
      - isUsed: 1
      parm_decl __s1 /usr/include/c++/5/bits/char_traits.h 258:32 - operand
@@ -1457,6 +1480,11 @@ function_decl length /usr/include/c++/5/bits/char_traits.h 262:7
         tree_list - chain
          identifier_node pure - purpose
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 64
+       - unsigned
+       tree_list - attribute
+        identifier_node nonnull - purpose
     - isUsed: 1
     parm_decl __s /usr/include/c++/5/bits/char_traits.h 262:31 - arg
      pointer_type - decl type
@@ -1586,6 +1614,9 @@ function_decl find /usr/include/c++/5/bits/char_traits.h 266:7
          tree_list - chain
           identifier_node pure - purpose
        function_type - function type
+        pointer_type - function return type
+        tree_list - attribute
+         identifier_node nonnull - purpose
      nop_expr - arg
       - isUsed: 1
       parm_decl __s /usr/include/c++/5/bits/char_traits.h 266:29 - operand
@@ -1737,6 +1768,14 @@ function_decl move /usr/include/c++/5/bits/char_traits.h 270:7
          tree_list - chain
           identifier_node leaf - purpose
         function_type - function type
+         pointer_type - function return type
+         tree_list - attribute
+          identifier_node nonnull - purpose
+          tree_list - chain
+           identifier_node fn spec - purpose
+           tree_list - value
+            string_cst 1 - value
+            - stringLength: 1
       nop_expr - arg
        - isUsed: 1
        parm_decl __s1 /usr/include/c++/5/bits/char_traits.h 270:23 - operand
@@ -1887,6 +1926,14 @@ function_decl copy /usr/include/c++/5/bits/char_traits.h 274:7
          tree_list - chain
           identifier_node leaf - purpose
         function_type - function type
+         pointer_type - function return type
+         tree_list - attribute
+          identifier_node nonnull - purpose
+          tree_list - chain
+           identifier_node fn spec - purpose
+           tree_list - value
+            string_cst 1 - value
+            - stringLength: 1
       nop_expr - arg
        - isUsed: 1
        parm_decl __s1 /usr/include/c++/5/bits/char_traits.h 274:23 - operand
@@ -2035,6 +2082,14 @@ function_decl assign /usr/include/c++/5/bits/char_traits.h 278:7
          tree_list - chain
           identifier_node leaf - purpose
         function_type - function type
+         pointer_type - function return type
+         tree_list - attribute
+          identifier_node nonnull - purpose
+          tree_list - chain
+           identifier_node fn spec - purpose
+           tree_list - value
+            string_cst 1 - value
+            - stringLength: 1
       nop_expr - arg
        - isUsed: 1
        parm_decl __s /usr/include/c++/5/bits/char_traits.h 278:25 - operand
@@ -2420,6 +2475,9 @@ function_decl not_eof /usr/include/c++/5/bits/char_traits.h 300:7
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          integer_type - function return type
+          - precisionBits: 32
+          - signed
      nop_expr - operand
       indirect_ref - operand
        - isUsed: 1
@@ -2804,6 +2862,9 @@ function_decl compare /usr/include/c++/5/bits/char_traits.h 329:7
       tree_list - attribute
        identifier_node __pure__ - purpose
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
     - isUsed: 1
     parm_decl __s1 /usr/include/c++/5/bits/char_traits.h 329:32 - arg
      pointer_type - decl type
@@ -2897,6 +2958,9 @@ function_decl length /usr/include/c++/5/bits/char_traits.h 333:7
       tree_list - attribute
        identifier_node __pure__ - purpose
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 64
+       - unsigned
     - isUsed: 1
     parm_decl __s /usr/include/c++/5/bits/char_traits.h 333:31 - arg
      pointer_type - decl type
@@ -3013,6 +3077,7 @@ function_decl find /usr/include/c++/5/bits/char_traits.h 337:7
        tree_list - attribute
         identifier_node __pure__ - purpose
        function_type - function type
+        pointer_type - function return type
      - isUsed: 1
      parm_decl __s /usr/include/c++/5/bits/char_traits.h 337:29 - arg
       pointer_type - decl type
@@ -3149,6 +3214,7 @@ function_decl move /usr/include/c++/5/bits/char_traits.h 341:7
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         pointer_type - function return type
       - isUsed: 1
       parm_decl __s1 /usr/include/c++/5/bits/char_traits.h 341:23 - arg
        pointer_type - decl type
@@ -3283,6 +3349,7 @@ function_decl copy /usr/include/c++/5/bits/char_traits.h 345:7
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         pointer_type - function return type
       - isUsed: 1
       parm_decl __s1 /usr/include/c++/5/bits/char_traits.h 345:23 - arg
        pointer_type - decl type
@@ -3415,6 +3482,7 @@ function_decl assign /usr/include/c++/5/bits/char_traits.h 349:7
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         pointer_type - function return type
       - isUsed: 1
       parm_decl __s /usr/include/c++/5/bits/char_traits.h 349:25 - arg
        pointer_type - decl type
@@ -3775,6 +3843,7 @@ function_decl not_eof /usr/include/c++/5/bits/char_traits.h 369:7
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         boolean_type - function return type
       nop_expr - arg
        convert_expr - operand
         - isUsed: 1
@@ -3807,6 +3876,9 @@ function_decl not_eof /usr/include/c++/5/bits/char_traits.h 369:7
            - isExternal: 1
            - isPublic: 1
             function_type - function type
+             integer_type - function return type
+             - precisionBits: 32
+             - unsigned
      integer_cst 0 - operand
      nop_expr - operand
       indirect_ref - operand
@@ -5593,6 +5665,7 @@ function_decl __convert_from_v /usr/include/x86_64-linux-gnu/c++/5/bits/c++local
          - isExternal: 1
          - isPublic: 1
           function_type - function type
+           pointer_type - function return type
         nop_expr - arg
          indirect_ref - operand
           - isUsed: 1
@@ -5662,6 +5735,7 @@ function_decl __convert_from_v /usr/include/x86_64-linux-gnu/c++/5/bits/c++local
          tree_list - chain
           identifier_node leaf - purpose
         function_type - function type
+         void_type - function return type
       nop_expr - arg
        addr_expr - operand
         var_decl __args /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h 88:23 - operand
@@ -5706,6 +5780,21 @@ function_decl __convert_from_v /usr/include/x86_64-linux-gnu/c++/5/bits/c++local
           tree_list - attribute
            identifier_node nothrow - purpose
           function_type - function type
+           integer_type - function return type
+           - precisionBits: 32
+           - signed
+           tree_list - attribute
+            identifier_node nonnull - purpose
+            tree_list - value
+             integer_cst 3 - value
+            tree_list - chain
+             identifier_node format - purpose
+             tree_list - value
+              identifier_node printf - value
+              tree_list - chain
+               integer_cst 3 - value
+               tree_list - chain
+                integer_cst 0 - value
         - isUsed: 1
         parm_decl __out /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h 70:12 - arg
          pointer_type - decl type
@@ -5763,6 +5852,7 @@ function_decl __convert_from_v /usr/include/x86_64-linux-gnu/c++/5/bits/c++local
          tree_list - chain
           identifier_node leaf - purpose
         function_type - function type
+         void_type - function return type
       nop_expr - arg
        addr_expr - operand
         var_decl __args /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h 88:23 - operand
@@ -5776,6 +5866,7 @@ function_decl __convert_from_v /usr/include/x86_64-linux-gnu/c++/5/bits/c++local
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          pointer_type - function return type
        var_decl __old /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h 75:16 - arg
        - isUsed: 1
    return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h 108:12 - statement
@@ -5873,6 +5964,9 @@ function_decl __bswap_32 /usr/include/x86_64-linux-gnu/bits/byteswap.h 45:1
         tree_list - chain
          identifier_node const - purpose
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - unsigned
     - isUsed: 1
     parm_decl __bsx /usr/include/x86_64-linux-gnu/bits/byteswap.h 45:26 - arg
      integer_type - decl type
@@ -5946,6 +6040,9 @@ function_decl __bswap_64 /usr/include/x86_64-linux-gnu/bits/byteswap.h 109:1
         tree_list - chain
          identifier_node const - purpose
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 64
+       - unsigned
     - isUsed: 1
     parm_decl __bsx /usr/include/x86_64-linux-gnu/bits/byteswap.h 109:24 - arg
      integer_type - decl type
@@ -7280,6 +7377,9 @@ function_decl __defer /usr/include/pthread.h 574:8
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      integer_cst 0 - arg
      addr_expr - arg
       component_ref /usr/include/pthread.h 575:10 - operand
@@ -7392,6 +7492,9 @@ function_decl __restore /usr/include/pthread.h 576:8
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      nop_expr - arg
       component_ref /usr/include/pthread.h 576:52 - operand
        indirect_ref - object
@@ -7463,6 +7566,13 @@ function_decl __gthread_active_p /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-d
        tree_list - chain
         identifier_node weakref - purpose
       function_type - function type
+       integer_type - function return type
+       - precisionBits: 32
+       - signed
+       tree_list - attribute
+        identifier_node __nonnull__ - purpose
+        tree_list - value
+         integer_cst 1 - value
    pointer_type - var type
     void_type - nested type
      type_decl void <built-in> 0:0 - type name
@@ -7610,6 +7720,15 @@ function_decl __gthread_create /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-def
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
+        tree_list - attribute
+         identifier_node __nonnull__ - purpose
+         tree_list - value
+          integer_cst 1 - value
+          tree_list - chain
+           integer_cst 3 - value
      - isUsed: 1
      parm_decl __threadid /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 659:32 - arg
       pointer_type - decl type
@@ -7726,6 +7845,9 @@ function_decl __gthread_join /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-defau
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __threadid /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 666:29 - arg
       integer_type - decl type
@@ -7809,6 +7931,9 @@ function_decl __gthread_detach /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-def
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __threadid /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 672:31 - arg
       integer_type - decl type
@@ -7900,6 +8025,9 @@ function_decl __gthread_equal /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-defa
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __t1 /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 678:30 - arg
       integer_type - decl type
@@ -7962,6 +8090,9 @@ function_decl __gthread_self /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-defau
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 64
+        - unsigned
 function_decl __gthread_yield /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 690:1
  function_type - function type
   integer_type - function return type
@@ -8012,6 +8143,9 @@ function_decl __gthread_yield /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-defa
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
 function_decl __gthread_once /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 696:1
  function_type - function type
   integer_type - function return type
@@ -8086,6 +8220,9 @@ function_decl __gthread_once /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-defau
      addr_expr - function
       function_decl __gthread_active_p /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 247:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
     integer_cst 0 - operand
   cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 699:50 - then
    return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 699:50 - operand
@@ -8112,6 +8249,15 @@ function_decl __gthread_once /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-defau
          tree_list - chain
           identifier_node weakref - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - signed
+         tree_list - attribute
+          identifier_node __nonnull__ - purpose
+          tree_list - value
+           integer_cst 1 - value
+           tree_list - chain
+            integer_cst 2 - value
       - isUsed: 1
       parm_decl __once /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 696:35 - arg
        pointer_type - decl type
@@ -8251,6 +8397,13 @@ function_decl __gthread_key_create /usr/include/x86_64-linux-gnu/c++/5/bits/gthr
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
+        tree_list - attribute
+         identifier_node __nonnull__ - purpose
+         tree_list - value
+          integer_cst 1 - value
      - isUsed: 1
      parm_decl __key /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 705:40 - arg
       pointer_type - decl type
@@ -8347,6 +8500,9 @@ function_decl __gthread_key_delete /usr/include/x86_64-linux-gnu/c++/5/bits/gthr
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __key /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 711:39 - arg
       integer_type - decl type
@@ -8413,6 +8569,7 @@ function_decl __gthread_getspecific /usr/include/x86_64-linux-gnu/c++/5/bits/gth
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        pointer_type - function return type
      - isUsed: 1
      parm_decl __key /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 717:40 - arg
       integer_type - decl type
@@ -8503,6 +8660,9 @@ function_decl __gthread_setspecific /usr/include/x86_64-linux-gnu/c++/5/bits/gth
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __key /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 723:40 - arg
       integer_type - decl type
@@ -8577,6 +8737,9 @@ function_decl __gthread_mutex_init_function /usr/include/x86_64-linux-gnu/c++/5/
      addr_expr - function
       function_decl __gthread_active_p /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 247:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
     integer_cst 0 - operand
   cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 732:49 - then
    expr_stmt /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 732:49 - operand
@@ -8592,6 +8755,13 @@ function_decl __gthread_mutex_init_function /usr/include/x86_64-linux-gnu/c++/5/
          tree_list - chain
           identifier_node weakref - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - signed
+         tree_list - attribute
+          identifier_node __nonnull__ - purpose
+          tree_list - value
+           integer_cst 1 - value
       - isUsed: 1
       parm_decl __mutex /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 729:51 - arg
        pointer_type - decl type
@@ -8680,6 +8850,9 @@ function_decl __gthread_mutex_destroy /usr/include/x86_64-linux-gnu/c++/5/bits/g
      addr_expr - function
       function_decl __gthread_active_p /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 247:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
     integer_cst 0 - operand
   cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 739:52 - then
    return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 739:52 - operand
@@ -8706,6 +8879,13 @@ function_decl __gthread_mutex_destroy /usr/include/x86_64-linux-gnu/c++/5/bits/g
          tree_list - chain
           identifier_node weakref - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - signed
+         tree_list - attribute
+          identifier_node __nonnull__ - purpose
+          tree_list - value
+           integer_cst 1 - value
       - isUsed: 1
       parm_decl __mutex /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 736:45 - arg
        pointer_type - decl type
@@ -8807,6 +8987,9 @@ function_decl __gthread_mutex_lock /usr/include/x86_64-linux-gnu/c++/5/bits/gthr
      addr_expr - function
       function_decl __gthread_active_p /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 247:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
     integer_cst 0 - operand
   cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 748:49 - then
    return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 748:49 - operand
@@ -8833,6 +9016,13 @@ function_decl __gthread_mutex_lock /usr/include/x86_64-linux-gnu/c++/5/bits/gthr
          tree_list - chain
           identifier_node weakref - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - signed
+         tree_list - attribute
+          identifier_node __nonnull__ - purpose
+          tree_list - value
+           integer_cst 1 - value
       - isUsed: 1
       parm_decl __mutex /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 745:42 - arg
        pointer_type - decl type
@@ -8934,6 +9124,9 @@ function_decl __gthread_mutex_trylock /usr/include/x86_64-linux-gnu/c++/5/bits/g
      addr_expr - function
       function_decl __gthread_active_p /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 247:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
     integer_cst 0 - operand
   cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 757:52 - then
    return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 757:52 - operand
@@ -8960,6 +9153,13 @@ function_decl __gthread_mutex_trylock /usr/include/x86_64-linux-gnu/c++/5/bits/g
          tree_list - chain
           identifier_node weakref - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - signed
+         tree_list - attribute
+          identifier_node __nonnull__ - purpose
+          tree_list - value
+           integer_cst 1 - value
       - isUsed: 1
       parm_decl __mutex /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 754:45 - arg
        pointer_type - decl type
@@ -9087,6 +9287,9 @@ function_decl __gthread_mutex_timedlock /usr/include/x86_64-linux-gnu/c++/5/bits
      addr_expr - function
       function_decl __gthread_active_p /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 247:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
     integer_cst 0 - operand
   cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 768:69 - then
    return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 768:69 - operand
@@ -9113,6 +9316,15 @@ function_decl __gthread_mutex_timedlock /usr/include/x86_64-linux-gnu/c++/5/bits
          tree_list - chain
           identifier_node weakref - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - signed
+         tree_list - attribute
+          identifier_node __nonnull__ - purpose
+          tree_list - value
+           integer_cst 1 - value
+           tree_list - chain
+            integer_cst 2 - value
       - isUsed: 1
       parm_decl __mutex /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 764:47 - arg
        pointer_type - decl type
@@ -9228,6 +9440,9 @@ function_decl __gthread_mutex_unlock /usr/include/x86_64-linux-gnu/c++/5/bits/gt
      addr_expr - function
       function_decl __gthread_active_p /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 247:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
     integer_cst 0 - operand
   cleanup_point_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 778:51 - then
    return_expr /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 778:51 - operand
@@ -9254,6 +9469,13 @@ function_decl __gthread_mutex_unlock /usr/include/x86_64-linux-gnu/c++/5/bits/gt
          tree_list - chain
           identifier_node weakref - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - signed
+         tree_list - attribute
+          identifier_node __nonnull__ - purpose
+          tree_list - value
+           integer_cst 1 - value
       - isUsed: 1
       parm_decl __mutex /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 775:44 - arg
        pointer_type - decl type
@@ -9366,6 +9588,9 @@ function_decl __gthread_recursive_mutex_lock /usr/include/x86_64-linux-gnu/c++/5
      addr_expr - function
       function_decl __gthread_mutex_lock /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 745:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __mutex /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 808:62 - arg
       pointer_type - decl type
@@ -9464,6 +9689,9 @@ function_decl __gthread_recursive_mutex_trylock /usr/include/x86_64-linux-gnu/c+
      addr_expr - function
       function_decl __gthread_mutex_trylock /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 754:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __mutex /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 814:65 - arg
       pointer_type - decl type
@@ -9588,6 +9816,9 @@ function_decl __gthread_recursive_mutex_timedlock /usr/include/x86_64-linux-gnu/
      addr_expr - function
       function_decl __gthread_mutex_timedlock /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 764:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __mutex /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 821:67 - arg
       pointer_type - decl type
@@ -9700,6 +9931,9 @@ function_decl __gthread_recursive_mutex_unlock /usr/include/x86_64-linux-gnu/c++
      addr_expr - function
       function_decl __gthread_mutex_unlock /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 775:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __mutex /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 829:64 - arg
       pointer_type - decl type
@@ -9798,6 +10032,9 @@ function_decl __gthread_recursive_mutex_destroy /usr/include/x86_64-linux-gnu/c+
      addr_expr - function
       function_decl __gthread_mutex_destroy /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 736:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __mutex /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 835:65 - arg
       pointer_type - decl type
@@ -9903,6 +10140,13 @@ function_decl __gthread_cond_broadcast /usr/include/x86_64-linux-gnu/c++/5/bits/
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
+        tree_list - attribute
+         identifier_node __nonnull__ - purpose
+         tree_list - value
+          integer_cst 1 - value
      - isUsed: 1
      parm_decl __cond /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 850:45 - arg
       pointer_type - decl type
@@ -10008,6 +10252,13 @@ function_decl __gthread_cond_signal /usr/include/x86_64-linux-gnu/c++/5/bits/gth
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
+        tree_list - attribute
+         identifier_node __nonnull__ - purpose
+         tree_list - value
+          integer_cst 1 - value
      - isUsed: 1
      parm_decl __cond /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 856:42 - arg
       pointer_type - decl type
@@ -10149,6 +10400,15 @@ function_decl __gthread_cond_wait /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
+        tree_list - attribute
+         identifier_node __nonnull__ - purpose
+         tree_list - value
+          integer_cst 1 - value
+          tree_list - chain
+           integer_cst 2 - value
      - isUsed: 1
      parm_decl __cond /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 862:40 - arg
       pointer_type - decl type
@@ -10335,6 +10595,17 @@ function_decl __gthread_cond_timedwait /usr/include/x86_64-linux-gnu/c++/5/bits/
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
+        tree_list - attribute
+         identifier_node __nonnull__ - purpose
+         tree_list - value
+          integer_cst 1 - value
+          tree_list - chain
+           integer_cst 2 - value
+           tree_list - chain
+            integer_cst 3 - value
      - isUsed: 1
      parm_decl __cond /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 868:45 - arg
       pointer_type - decl type
@@ -10502,6 +10773,9 @@ function_decl __gthread_cond_wait_recursive /usr/include/x86_64-linux-gnu/c++/5/
      addr_expr - function
       function_decl __gthread_cond_wait /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 862:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
      - isUsed: 1
      parm_decl __cond /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 875:50 - arg
       pointer_type - decl type
@@ -10626,6 +10900,13 @@ function_decl __gthread_cond_destroy /usr/include/x86_64-linux-gnu/c++/5/bits/gt
         tree_list - chain
          identifier_node weakref - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
+        tree_list - attribute
+         identifier_node __nonnull__ - purpose
+         tree_list - value
+          integer_cst 1 - value
      - isUsed: 1
      parm_decl __cond /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 882:43 - arg
       pointer_type - decl type
@@ -10733,6 +11014,9 @@ function_decl __exchange_and_add /usr/include/c++/5/ext/atomicity.h 48:3
          tree_list - chain
           identifier_node leaf - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - unsigned
       nop_expr - arg
        - isUsed: 1
        parm_decl __mem /usr/include/c++/5/ext/atomicity.h 48:45 - operand
@@ -10827,6 +11111,9 @@ function_decl __atomic_add /usr/include/c++/5/ext/atomicity.h 52:3
          tree_list - chain
           identifier_node leaf - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - unsigned
       nop_expr - arg
        - isUsed: 1
        parm_decl __mem /usr/include/c++/5/ext/atomicity.h 52:39 - operand
@@ -11165,6 +11452,9 @@ function_decl __exchange_and_add_dispatch /usr/include/c++/5/ext/atomicity.h 78:
      addr_expr - function
       function_decl __gthread_active_p /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 247:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
     integer_cst 0 - operand
   cleanup_point_expr /usr/include/c++/5/ext/atomicity.h 82:45 - then
    return_expr /usr/include/c++/5/ext/atomicity.h 82:45 - operand
@@ -11183,6 +11473,9 @@ function_decl __exchange_and_add_dispatch /usr/include/c++/5/ext/atomicity.h 78:
       addr_expr - function
        function_decl __exchange_and_add /usr/include/c++/5/ext/atomicity.h 48:3 - operand
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - signed
       nop_expr - arg
        - isUsed: 1
        parm_decl __mem /usr/include/c++/5/ext/atomicity.h 78:45 - operand
@@ -11223,6 +11516,9 @@ function_decl __exchange_and_add_dispatch /usr/include/c++/5/ext/atomicity.h 78:
       addr_expr - function
        function_decl __exchange_and_add_single /usr/include/c++/5/ext/atomicity.h 65:3 - operand
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - signed
       - isUsed: 1
       parm_decl __mem /usr/include/c++/5/ext/atomicity.h 78:45 - arg
        pointer_type - decl type
@@ -11308,6 +11604,9 @@ function_decl __atomic_add_dispatch /usr/include/c++/5/ext/atomicity.h 92:3
      addr_expr - function
       function_decl __gthread_active_p /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h 247:1 - operand
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 32
+        - signed
     integer_cst 0 - operand
   cleanup_point_expr /usr/include/c++/5/ext/atomicity.h 96:33 - then
    expr_stmt /usr/include/c++/5/ext/atomicity.h 96:33 - operand
@@ -11315,6 +11614,7 @@ function_decl __atomic_add_dispatch /usr/include/c++/5/ext/atomicity.h 92:3
      addr_expr - function
       function_decl __atomic_add /usr/include/c++/5/ext/atomicity.h 52:3 - operand
        function_type - function type
+        void_type - function return type
      nop_expr - arg
       - isUsed: 1
       parm_decl __mem /usr/include/c++/5/ext/atomicity.h 92:39 - operand
@@ -11344,6 +11644,7 @@ function_decl __atomic_add_dispatch /usr/include/c++/5/ext/atomicity.h 92:3
      addr_expr - function
       function_decl __atomic_add_single /usr/include/c++/5/ext/atomicity.h 73:3 - operand
        function_type - function type
+        void_type - function return type
      - isUsed: 1
      parm_decl __mem /usr/include/c++/5/ext/atomicity.h 92:39 - arg
       pointer_type - decl type
@@ -21619,6 +21920,7 @@ function_decl fill /usr/include/c++/5/bits/stl_bvector.h 398:3
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         void_type - function return type
       pointer_plus_expr /usr/include/c++/5/bits/stl_bvector.h 402:25 - arg
        component_ref /usr/include/c++/5/bits/stl_bvector.h 402:20 - operand
         component_ref - object
@@ -21703,6 +22005,7 @@ function_decl fill /usr/include/c++/5/bits/stl_bvector.h 398:3
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         void_type - function return type
       target_expr - arg
        var_decl /usr/include/c++/5/bits/stl_bvector.h 403:65 - operand
        - isAutogenerated: 1
@@ -21804,6 +22107,7 @@ function_decl fill /usr/include/c++/5/bits/stl_bvector.h 398:3
        - isExternal: 1
        - isPublic: 1
         function_type - function type
+         void_type - function return type
       target_expr - arg
        var_decl /usr/include/c++/5/bits/stl_bvector.h 404:45 - operand
        - isAutogenerated: 1
@@ -21903,6 +22207,7 @@ function_decl fill /usr/include/c++/5/bits/stl_bvector.h 398:3
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        void_type - function return type
      target_expr - arg
       var_decl /usr/include/c++/5/bits/stl_bvector.h 407:42 - operand
       - isAutogenerated: 1
@@ -25479,12 +25784,14 @@ function_decl fill /usr/include/c++/5/bits/stl_algobase.h 736:5
      - isExternal: 1
      - isPublic: 1
       function_type - function type
+       void_type - function return type
     call_expr /usr/include/c++/5/bits/stl_algobase.h 743:38 - arg
      addr_expr - function
       function_decl __niter_base /usr/include/c++/5/bits/stl_algobase.h 282:5 - operand
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        pointer_type - function return type
      - isUsed: 1
      parm_decl __first /usr/include/c++/5/bits/stl_algobase.h 736:27 - arg
       pointer_type - decl type
@@ -25502,6 +25809,7 @@ function_decl fill /usr/include/c++/5/bits/stl_algobase.h 736:5
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        pointer_type - function return type
      - isUsed: 1
      parm_decl __last /usr/include/c++/5/bits/stl_algobase.h 736:53 - arg
       pointer_type - decl type
@@ -25971,6 +26279,7 @@ function_decl basic_string /usr/include/c++/5/bits/basic_string.h 2838:7
           - isExternal: 1
           - isPublic: 1
            function_type - function type
+            reference_type - function return type
       nop_expr - arg
        nop_expr - operand
         addr_expr - operand
@@ -26279,6 +26588,7 @@ function_decl __base_ctor  /usr/include/c++/5/bits/basic_string.h 2838:7
           - isExternal: 1
           - isPublic: 1
            function_type - function type
+            reference_type - function return type
       nop_expr - arg
        nop_expr - operand
         addr_expr - operand
@@ -27488,6 +27798,7 @@ function_decl __niter_base /usr/include/c++/5/bits/stl_algobase.h 282:5
       - isExternal: 1
       - isPublic: 1
        function_type - function type
+        pointer_type - function return type
      - isUsed: 1
      parm_decl __it /usr/include/c++/5/bits/stl_algobase.h 282:28 - arg
       pointer_type - decl type
@@ -27765,6 +28076,7 @@ function_decl _S_empty_rep /usr/include/c++/5/bits/basic_string.h 2827:7
         - isExternal: 1
         - isPublic: 1
          function_type - function type
+          reference_type - function return type
 function_decl _M_refdata /usr/include/c++/5/bits/basic_string.h 2618:2
 - isExternal: 1
 - isPublic: 1
@@ -30787,6 +31099,9 @@ function_decl _M_dispose /usr/include/c++/5/bits/basic_string.h 2633:2
          tree_list - chain
           identifier_node const - purpose
        function_type - function type
+        integer_type - function return type
+        - precisionBits: 64
+        - signed
      ne_expr - arg
       convert_expr - operand
        call_expr /usr/include/c++/5/bits/basic_string.h 2636:46 - operand
@@ -30795,6 +31110,7 @@ function_decl _M_dispose /usr/include/c++/5/bits/basic_string.h 2633:2
          - isExternal: 1
          - isPublic: 1
           function_type - function type
+           reference_type - function return type
       nop_expr - operand
        - isUsed: 1
        parm_decl this /usr/include/c++/5/bits/basic_string.h 2633:30 - operand
@@ -30828,6 +31144,9 @@ function_decl _M_dispose /usr/include/c++/5/bits/basic_string.h 2633:2
         tree_list - attribute
          identifier_node __unused__ - purpose
         function_type - function type
+         integer_type - function return type
+         - precisionBits: 32
+         - signed
       addr_expr - arg
        component_ref /usr/include/c++/5/bits/basic_string.h 2641:51 - operand
         component_ref - object
