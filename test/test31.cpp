@@ -240,6 +240,9 @@ class Object1
             paranuckerInternalTest("=", "knownNonNullVars", "");
             paranuckerInternalTest("=", "knownNullVars", "ptr1 this->tmp1 this->tmp2");
             paranuckerInternalTest("=", "needCheckNullVars", "ptr1 this->tmp1 this->tmp2");
+            paranuckerInternalTest("=", "addNullVars", "this->tmp1 this->tmp2");
+            paranuckerInternalTest("=", "removeNullVars", "");
+            paranuckerInternalTest("=", "removeNullVarsAll", "");
             if (!ptr1)
             {
                 paranuckerInternalTest("=", "linkedVars", "ptr1 this->tmp1 this->tmp2");
@@ -250,6 +253,9 @@ class Object1
                 paranuckerInternalTest("=", "knownNonNullVars", "");
                 paranuckerInternalTest("=", "knownNullVars", "ptr1 this->tmp1 this->tmp2");
                 paranuckerInternalTest("=", "needCheckNullVars", "ptr1 this->tmp1 this->tmp2");
+                paranuckerInternalTest("=", "addNullVars", "this->tmp1 this->tmp2");
+                paranuckerInternalTest("=", "removeNullVars", "");
+                paranuckerInternalTest("=", "removeNullVarsAll", "");
             }
             paranuckerInternalTest("=", "linkedVars", "ptr1 this->tmp1 this->tmp2");
             paranuckerInternalTest("=", "linkedReverseVars", "this->tmp1 ptr1");
@@ -259,6 +265,9 @@ class Object1
             paranuckerInternalTest("=", "knownNonNullVars", "");
             paranuckerInternalTest("=", "knownNullVars", "ptr1 this->tmp1 this->tmp2");
             paranuckerInternalTest("=", "needCheckNullVars", "ptr1 this->tmp1 this->tmp2");
+            paranuckerInternalTest("=", "addNullVars", "this->tmp1 this->tmp2");
+            paranuckerInternalTest("=", "removeNullVars", "");
+            paranuckerInternalTest("=", "removeNullVarsAll", "");
             return;
         }
         else
@@ -271,6 +280,8 @@ class Object1
             paranuckerInternalTest("=", "knownNonNullVars", "ptr1 this->tmp1 this->tmp2");
             paranuckerInternalTest("=", "knownNullVars", "");
             paranuckerInternalTest("=", "needCheckNullVars", "");
+            paranuckerInternalTest("=", "removeNullVars", "");
+            paranuckerInternalTest("=", "removeNullVarsAll", "");
             if (tmp1)
             {
                 paranuckerInternalTest("=", "linkedVars", "ptr1 this->tmp1 this->tmp2");
@@ -281,6 +292,8 @@ class Object1
                 paranuckerInternalTest("=", "knownNonNullVars", "ptr1 this->tmp1 this->tmp2");
                 paranuckerInternalTest("=", "knownNullVars", "");
                 paranuckerInternalTest("=", "needCheckNullVars", "");
+                paranuckerInternalTest("=", "removeNullVars", "");
+                paranuckerInternalTest("=", "removeNullVarsAll", "");
             }
         }
         paranuckerInternalTest("=", "linkedVars", "ptr1 this->tmp1 this->tmp2");
@@ -291,6 +304,8 @@ class Object1
         paranuckerInternalTest("=", "knownNonNullVars", "ptr1 this->tmp1 this->tmp2");
         paranuckerInternalTest("=", "knownNullVars", "");
         paranuckerInternalTest("=", "needCheckNullVars", "");
+        paranuckerInternalTest("=", "removeNullVars", "");
+        paranuckerInternalTest("=", "removeNullVarsAll", "this->tmp2");
     }
 
     void func8(Data1 *ptr1)
@@ -721,11 +736,10 @@ class Object1
             paranuckerInternalTest("=", "linkedReverseVars", "this->tmp2 ptr1");
             paranuckerInternalTest("=", "linkedReverseVars", "this->tmp3 ptr2");
         }
-        // here probably need check this->tmp3. but for now this is impossible to check
-        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2 this->tmp1 this->tmp2");
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2 this->tmp1 this->tmp2 this->tmp3");
         paranuckerInternalTest("=", "knownNonNullVars", "");
         paranuckerInternalTest("=", "knownNullVars", "");
-        paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2 this->tmp1 this->tmp2");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2 this->tmp1 this->tmp2 this->tmp3");
         paranuckerInternalTest("=", "linkedVars", "ptr1 this->tmp1 this->tmp2");
         paranuckerInternalTest("=", "linkedVars", "ptr2");
         paranuckerInternalTest("=", "linkedVars", "this->tmp1");

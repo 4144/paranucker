@@ -1193,10 +1193,25 @@ expr_stmt : ptr1, this->tmp1, this->tmp2,
 call_expr : ptr1, this->tmp1, this->tmp2, 
 addr_expr : ptr1, this->tmp1, this->tmp2, 
 function_decl paranuckerInternalTest: ptr1, this->tmp1, this->tmp2, 
+cleanup_point_expr : ptr1, this->tmp1, this->tmp2, 
+expr_stmt : ptr1, this->tmp1, this->tmp2, 
+call_expr : ptr1, this->tmp1, this->tmp2, 
+addr_expr : ptr1, this->tmp1, this->tmp2, 
+function_decl paranuckerInternalTest: ptr1, this->tmp1, this->tmp2, 
+cleanup_point_expr : ptr1, this->tmp1, this->tmp2, 
+expr_stmt : ptr1, this->tmp1, this->tmp2, 
+call_expr : ptr1, this->tmp1, this->tmp2, 
+addr_expr : ptr1, this->tmp1, this->tmp2, 
+function_decl paranuckerInternalTest: ptr1, this->tmp1, this->tmp2, 
+cleanup_point_expr : ptr1, this->tmp1, this->tmp2, 
+expr_stmt : ptr1, this->tmp1, this->tmp2, 
+call_expr : ptr1, this->tmp1, this->tmp2, 
+addr_expr : ptr1, this->tmp1, this->tmp2, 
+function_decl paranuckerInternalTest: ptr1, this->tmp1, this->tmp2, 
 if_stmt : ptr1, this->tmp1, this->tmp2, 
 eq_expr : ptr1, this->tmp1, this->tmp2, 
 test31.cpp: In member function 'void Object1::func7(Data1*)':
-test31.cpp:243:18: warning: Useless variable check 'ptr1'. It already was checked before
+test31.cpp:246:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1)
                   ^
 parm_decl ptr1: ptr1, this->tmp1, this->tmp2, 
@@ -1213,6 +1228,36 @@ type_decl Data1: ptr1, this->tmp1, this->tmp2,
 integer_cst 64: ptr1, this->tmp1, this->tmp2, 
 integer_cst 0: ptr1, this->tmp1, this->tmp2, 
 statement_list : ptr1, this->tmp1, this->tmp2, 
+cleanup_point_expr : ptr1, this->tmp1, this->tmp2, 
+expr_stmt : ptr1, this->tmp1, this->tmp2, 
+call_expr : ptr1, this->tmp1, this->tmp2, 
+addr_expr : ptr1, this->tmp1, this->tmp2, 
+function_decl paranuckerInternalTest: ptr1, this->tmp1, this->tmp2, 
+cleanup_point_expr : ptr1, this->tmp1, this->tmp2, 
+expr_stmt : ptr1, this->tmp1, this->tmp2, 
+call_expr : ptr1, this->tmp1, this->tmp2, 
+addr_expr : ptr1, this->tmp1, this->tmp2, 
+function_decl paranuckerInternalTest: ptr1, this->tmp1, this->tmp2, 
+cleanup_point_expr : ptr1, this->tmp1, this->tmp2, 
+expr_stmt : ptr1, this->tmp1, this->tmp2, 
+call_expr : ptr1, this->tmp1, this->tmp2, 
+addr_expr : ptr1, this->tmp1, this->tmp2, 
+function_decl paranuckerInternalTest: ptr1, this->tmp1, this->tmp2, 
+cleanup_point_expr : ptr1, this->tmp1, this->tmp2, 
+expr_stmt : ptr1, this->tmp1, this->tmp2, 
+call_expr : ptr1, this->tmp1, this->tmp2, 
+addr_expr : ptr1, this->tmp1, this->tmp2, 
+function_decl paranuckerInternalTest: ptr1, this->tmp1, this->tmp2, 
+cleanup_point_expr : ptr1, this->tmp1, this->tmp2, 
+expr_stmt : ptr1, this->tmp1, this->tmp2, 
+call_expr : ptr1, this->tmp1, this->tmp2, 
+addr_expr : ptr1, this->tmp1, this->tmp2, 
+function_decl paranuckerInternalTest: ptr1, this->tmp1, this->tmp2, 
+cleanup_point_expr : ptr1, this->tmp1, this->tmp2, 
+expr_stmt : ptr1, this->tmp1, this->tmp2, 
+call_expr : ptr1, this->tmp1, this->tmp2, 
+addr_expr : ptr1, this->tmp1, this->tmp2, 
+function_decl paranuckerInternalTest: ptr1, this->tmp1, this->tmp2, 
 cleanup_point_expr : ptr1, this->tmp1, this->tmp2, 
 expr_stmt : ptr1, this->tmp1, this->tmp2, 
 call_expr : ptr1, this->tmp1, this->tmp2, 
@@ -1335,9 +1380,19 @@ expr_stmt :
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl paranuckerInternalTest: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl paranuckerInternalTest: 
 if_stmt : 
 ne_expr : 
-test31.cpp:274:13: warning: Useless variable check 'this->tmp1'. It already was checked before
+test31.cpp:285:13: warning: Useless variable check 'this->tmp1'. It already was checked before
              if (tmp1)
              ^
 component_ref : 
@@ -1394,6 +1449,26 @@ call_expr :
 addr_expr : 
 function_decl paranuckerInternalTest: 
 cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl paranuckerInternalTest: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl paranuckerInternalTest: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl paranuckerInternalTest: 
+cleanup_point_expr : ptr1, this->tmp1, this->tmp2, 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl paranuckerInternalTest: 
+cleanup_point_expr : ptr1, this->tmp1, this->tmp2, 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -4099,63 +4174,63 @@ expr_stmt : ptr2, this->tmp3,
 call_expr : ptr2, this->tmp3, 
 addr_expr : ptr2, this->tmp3, 
 function_decl paranuckerInternalTest: ptr2, this->tmp3, 
-cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
-call_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
-cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
-call_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
-cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
-call_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
-cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
-call_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
-cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
-call_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
-cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
-call_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
-cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
-call_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
-cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
-call_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
-cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
-call_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
-cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
-call_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
-cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
-call_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
-cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
-call_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
-function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
+cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+call_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+call_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+call_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+call_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+call_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+call_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+call_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+call_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+call_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+call_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+call_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+cleanup_point_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+expr_stmt : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+call_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+addr_expr : ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 
+function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, this->tmp3, 

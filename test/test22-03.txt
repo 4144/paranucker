@@ -11539,23 +11539,23 @@ var_decl __len: __new_finish, __new_start,
 var_decl __elems_before: __new_finish, __new_start, 
 var_decl __new_start: __new_finish, __new_start, 
 var_decl __new_finish: __new_finish, __new_start, 
-block : 
-block : 
-var_decl __x_copy: 
-block : 
-var_decl __len: 
-var_decl __elems_before: 
-var_decl __new_start: 
-var_decl __new_finish: 
-block : 
-block : 
-block : 
-var_decl __x_copy: 
-block : 
-var_decl __len: 
-var_decl __elems_before: 
-var_decl __new_start: 
-var_decl __new_finish: 
+block : __new_finish, __new_start, 
+block : __new_finish, __new_start, 
+var_decl __x_copy: __new_finish, __new_start, 
+block : __new_finish, __new_start, 
+var_decl __len: __new_finish, __new_start, 
+var_decl __elems_before: __new_finish, __new_start, 
+var_decl __new_start: __new_finish, __new_start, 
+var_decl __new_finish: __new_finish, __new_start, 
+block : __new_finish, __new_start, 
+block : __new_finish, __new_start, 
+block : __new_finish, __new_start, 
+var_decl __x_copy: __new_finish, __new_start, 
+block : __new_finish, __new_start, 
+var_decl __len: __new_finish, __new_start, 
+var_decl __elems_before: __new_finish, __new_start, 
+var_decl __new_start: __new_finish, __new_start, 
+var_decl __new_finish: __new_finish, __new_start, 
 function_decl end: 
 cleanup_point_expr : 
 return_expr : 

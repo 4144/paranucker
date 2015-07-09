@@ -3,9 +3,9 @@ test31.cpp:100:13: warning: Useless variable check 'this->tmp1'. It already was 
              if (tmp1)
              ^
 test31.cpp: In member function 'void Object1::func7(Data1*)':
-test31.cpp:243:18: warning: Useless variable check 'ptr1'. It already was checked before
+test31.cpp:246:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1)
                   ^
-test31.cpp:274:13: warning: Useless variable check 'this->tmp1'. It already was checked before
+test31.cpp:285:13: warning: Useless variable check 'this->tmp1'. It already was checked before
              if (tmp1)
              ^
