@@ -23,6 +23,3 @@ test34.cpp: In member function 'void Object1::func7(Data1*)':
 test34.cpp:268:21: warning: Useless variable check 'ptr1'. It already was checked before
          while (ptr1 && ptr1->val == 100)
                      ^
-test34.cpp:268:30: warning: Using parameter 'ptr1' without checking for null pointer
-         while (ptr1 && ptr1->val == 100)
-                              ^
