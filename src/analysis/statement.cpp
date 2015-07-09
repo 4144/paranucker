@@ -233,6 +233,8 @@ void analyseWhileStmt(WhileStmtNode *node, const WalkItem &wi, WalkItem &wo)
 
         const Command oldCommand = command;
         disableCommand(DetectUseless);
+        // after this wo2 changed for cond node
+        addNeedCheckNullVars(wo2, wo2);
         wci = wo2;
         wco = wo2;
         walkTree(condNode, wci, wco);
