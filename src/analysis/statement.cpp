@@ -232,6 +232,11 @@ void analyseWhileStmt(WhileStmtNode *node, const WalkItem &wi, WalkItem &wo)
     else if (bodyNode)
     {
         addNeedCheckNullVars2(wo2, wo);
+
+        wci = wo;
+        wco = wo;
+        walkTree(condNode, wci, wco);
+        Log::dumpWI(node, "wco2 ", wco);
     }
 
     wo.isReturned = false;
