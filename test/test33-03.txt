@@ -106,6 +106,20 @@ integer_cst 64:
 field_decl val: 
 integer_cst 32: 
 integer_cst 100: 
+ne_expr : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
 cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
