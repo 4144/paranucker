@@ -19,6 +19,7 @@
 
 #include "analysis/reports.h"
 
+#include "command.h"
 #include "logger.h"
 
 #include "analysis/analysis.h"
@@ -46,6 +47,8 @@ bool checkForReport(Node *node,
 void reportUselessCheck(Node *node,
                         const std::string &var)
 {
+    if (!checkCommand(DetectUseless))
+        return;
     Log::warn(findBackLocation(node),
         "Useless variable check '%s'. It already was checked before",
         var);

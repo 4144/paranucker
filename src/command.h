@@ -21,6 +21,8 @@
 #define COMMAND_H
 
 #define checkCommand(val) ((command & Command::val) == Command::val)
+#define disableCommand(val) command = static_cast<Command>(static_cast<int>( \
+    command | Command::val) ^ static_cast<int>(Command::val))
 
 enum Command : int
 {
@@ -31,7 +33,8 @@ enum Command : int
     MemoryUsage        = 8,
     FindArgs           = 16,
     DetectNullPointers = 32,
-    DumpNullPointers   = 64
+    DumpNullPointers   = 64,
+    DetectUseless      = 128
 };
 
 extern Command command;

@@ -196,8 +196,6 @@ void analyseWhileStmt(WhileStmtNode *node, const WalkItem &wi, WalkItem &wo)
     WalkItem wi2 = wi;
     if (wco.cleanExpr)
         removeNeedCheckNullVarsSetAll(wi2, wco.checkedThenNonNullVars);
-//    wi2.needCheckNullVars.insert(wco.checkedThenNullVars.begin(),
-//        wco.checkedThenNullVars.end());
     addKnownNullVarsWithLinked(wi2, wco, wco.checkedThenNullVars);
     addKnownNonNullVarsWithLinked(wi2, wco, wco.checkedThenNonNullVars);
     wi2.needCheckNullVars = wi2.knownVars;
@@ -233,9 +231,12 @@ void analyseWhileStmt(WhileStmtNode *node, const WalkItem &wi, WalkItem &wo)
     {
         addNeedCheckNullVars2(wo2, wo);
 
-        wci = wo;
-        wco = wo;
+        const Command oldCommand = command;
+        disableCommand(DetectUseless);
+        wci = wo2;
+        wco = wo2;
         walkTree(condNode, wci, wco);
+        command = oldCommand;
         Log::dumpWI(node, "wco2 ", wco);
     }
 

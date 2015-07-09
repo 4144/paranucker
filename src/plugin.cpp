@@ -40,6 +40,12 @@ Command command = Command::DetectNullPointers;
 std::map<tree, Node*> foundNodesMap;
 std::map<Node*, Node*> updateNodesMap;
 
+Command operator |(const Command &cmd1, const Command &cmd2)
+{
+    return static_cast<Command>(static_cast<int>(cmd1)
+        | static_cast<int>(cmd2));
+}
+
 static void pre_generic(void *gcc_data,
                         void *user_data A_UNUSED)
 {
@@ -94,11 +100,13 @@ int plugin_init (struct plugin_name_args *plugin_info,
             }
             else if (cmd == "detectnullpointers")
             {
-                command = Command::DetectNullPointers;
+                command = Command::DetectNullPointers |
+                    Command::DetectUseless;
             }
             else if (cmd == "dumpnullpointers")
             {
-                command = Command::DumpNullPointers;
+                command = Command::DumpNullPointers |
+                    Command::DetectUseless;
             }
             else
             {
