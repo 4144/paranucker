@@ -122,9 +122,9 @@ void analyseCondition(Node *node,
             addKnownNullVarsWithLinked(wo, wco, wco.checkedElseNullVars);
         }
     }
-    else
+    else if (thenNode)
     {
-//        addNeedCheckNullVars2(wo2, wo);
+        addNeedCheckNullVars2(wo2, wo);
     }
     if (wo3.isReturned)
     {
@@ -140,9 +140,9 @@ void analyseCondition(Node *node,
             addKnownNullVarsWithLinked(wo, wco, wco.checkedThenNullVars);
         }
     }
-    else
+    else if (elseNode)
     {
-//        addNeedCheckNullVars2(wo3, wo);
+        addNeedCheckNullVars2(wo3, wo);
     }
     if (wo2.isReturned && wo3.isReturned)
     {
@@ -229,9 +229,9 @@ void analyseWhileStmt(WhileStmtNode *node, const WalkItem &wi, WalkItem &wo)
             addKnownNullVarsWithLinked(wo, wco, wco.checkedElseNullVars);
         }
     }
-    else
+    else if (bodyNode)
     {
-//        addNeedCheckNullVars2(wo2, wo);
+        addNeedCheckNullVars2(wo2, wo);
     }
 
     wo.isReturned = false;

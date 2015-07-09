@@ -35,13 +35,6 @@ void addNeedCheckNullVars(WalkItem &wi, WalkItem &wo)
     {
         wo.needCheckNullVars.insert(it);
         wo.knownVars.insert(it);
-/*
-        wo.knownNonNullVars.erase(it);
-        wo.knownNullVars.erase(it);
-        wo.removeNullVars.erase(it);
-        wo.removeNullVarsAll.erase(it);
-        wo.addNullVars.insert(it);
-*/
     }
 }
 
@@ -50,13 +43,16 @@ void addNeedCheckNullVars2(WalkItem &wi, WalkItem &wo)
 {
     FOR_EACH (it, wi.addNullVars)
     {
-        wo.needCheckNullVars.insert(it);
-        wo.knownVars.insert(it);
-        wo.knownNonNullVars.erase(it);
-        wo.knownNullVars.erase(it);
-        wo.removeNullVars.erase(it);
-        wo.removeNullVarsAll.erase(it);
-        wo.addNullVars.insert(it);
+        if (isNotIn(it, wo.addNullVars))
+        {
+            wo.needCheckNullVars.insert(it);
+            wo.knownVars.insert(it);
+            wo.knownNonNullVars.erase(it);
+            wo.knownNullVars.erase(it);
+            wo.removeNullVars.erase(it);
+            wo.removeNullVarsAll.erase(it);
+            wo.addNullVars.insert(it);
+        }
     }
 }
 
@@ -167,6 +163,7 @@ void addUnknownVar(WalkItem &wi,
     wi.knownNonNullVars.erase(var);
     wi.addNullVars.insert(var);
     wi.removeNullVars.erase(var);
+    wi.removeNullVarsAll.erase(var);
 }
 
 void addNonNullVar(WalkItem &wi,
@@ -184,7 +181,7 @@ void addLinkedVar(WalkItem &wi,
                   std::string parent,
                   const std::string &var)
 {
-    //Log::log("add var: %s, %s\n", parent.c_str(), var.c_str());
+    //Log::log("addLinkedVar: %s, %s\n", parent.c_str(), var.c_str());
     if (isIn(parent, wi.addNullVars) ||
         isIn(parent, wi.needCheckNullVars))
     {

@@ -165,12 +165,13 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
         else if (!var1.empty())
         {
             if (var2.empty())
-            {   // have var1 only (var1 = UNKNOWN)
+            {   // have var1 only (var1 = UNKNOWN or var1 = function(...))
                 bool handled(false);
                 if (node->args[1] == CALL_EXPR && isPointerArg(arg))
                 {
                     handled = handleSetVarToFunction(var1, node->args[1], wo);
                 }
+                // have var1 only (var1 = UNKNOWN)
                 if (!handled)
                     removeVar(wo, var1);
             }
