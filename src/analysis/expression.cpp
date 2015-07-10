@@ -152,20 +152,25 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
         if (arg == INDIRECT_REF)
         {
             // var2 not found in known checking pointer
+            reportParmDeclNullPointer(node,
+                static_cast<IndirectRefNode*>(arg)->ref,
+                wi);
+
             if (isNotIn(var2, wi.needCheckNullVars) &&
                 isNotIn(var2, wi.knownVars))
             {
                 removeVar(wo, var1);
             }
-
-            reportParmDeclNullPointer(node,
-                static_cast<IndirectRefNode*>(arg)->ref,
-                wi);
         }
         else if (!var1.empty())
         {
             if (var2.empty())
             {   // have var1 only (var1 = UNKNOWN or var1 = function(...))
+
+                walkTree(arg, wi, wo);
+                walkTree(node->args[1], wi, wo);
+                wo.stopWalking = true;
+
                 bool handled(false);
                 if (node->args[1] == CALL_EXPR && isPointerArg(arg))
                 {
