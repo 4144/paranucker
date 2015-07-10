@@ -1,4 +1,4 @@
 test29.cpp: In member function 'void Object1::func17(Data1*, const Data2*)':
-test29.cpp:452:28: warning: unused variable 'ptr3' [-Wunused-variable]
+test29.cpp:457:28: warning: unused variable 'ptr3' [-Wunused-variable]
          const Data1 *const ptr3 = dynamic_cast<const Data1* const>(ptr2);
                             ^

@@ -1,0 +1,4 @@
+test35.cpp: In member function 'void Object1::func3()':
+test35.cpp:127:26: warning: Using variable 'ptr1' without checking for null pointer
+             ptr1 = ptr1->ptrval->getData3();
+                          ^

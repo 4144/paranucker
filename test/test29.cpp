@@ -26,6 +26,11 @@ class Object1
         return tmp1;
     }
 
+    Data2 *getData2()
+    {
+        return nullptr;
+    }
+
     void func1(Data1 *ptr1, Data1 *ptr2)
     {
         paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
@@ -454,5 +459,20 @@ class Object1
         paranuckerInternalTest("=", "knownNonNullVars", "");
         paranuckerInternalTest("=", "knownNullVars", "");
         paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
+    }
+
+    int func18()
+    {
+        Data1 *ptr1 = dynamic_cast<Data1*>(getData2());
+        tmp2 = ptr1;
+        if (tmp2)
+        {
+            if (k == 10)
+            {
+                int val = ptr1->val;
+                return val;
+            }
+        }
+        return 0;
     }
 };
