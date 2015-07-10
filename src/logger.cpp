@@ -219,6 +219,8 @@ void dumpWI(Node *const node,
         Log::log(" useless");
     if (wi.isReturned)
         Log::log(" returned");
+    if (wi.isContinued)
+        Log::log(" continued");
     dumpWIProps(" checkedThenNullVars:", wi.checkedThenNullVars)
     dumpWIProps(" checkedThenNonNullVars:", wi.checkedThenNonNullVars)
     dumpWIProps(" checkedElseNullVars:", wi.checkedElseNullVars)

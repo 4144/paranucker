@@ -22,6 +22,7 @@
 
 #include "includes.h"
 
+struct ContinueStmtNode;
 struct IfStmtNode;
 struct Node;
 struct WalkItem;
@@ -43,6 +44,10 @@ namespace Analysis
     void analyseWhileStmt(WhileStmtNode *node,
                           const WalkItem &wi,
                           WalkItem &wo);
+
+    void analyseContinueStmt(ContinueStmtNode *node,
+                             const WalkItem &wi,
+                             WalkItem &wo);
 }
 
 #endif // ANALYSIS_STATEMENT_H

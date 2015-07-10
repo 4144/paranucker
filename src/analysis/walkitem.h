@@ -46,6 +46,7 @@ struct WalkItem
         linkedReverseVars(),
         stopWalking(false),
         isReturned(false),
+        isContinued(false),
         cleanExpr(false),
         uselessExpr(true)
     {
@@ -67,6 +68,7 @@ struct WalkItem
         linkedReverseVars(item.linkedReverseVars),
         stopWalking(item.stopWalking),
         isReturned(item.isReturned),
+        isContinued(item.isContinued),
         cleanExpr(item.cleanExpr),
         uselessExpr(item.uselessExpr)
     {
@@ -87,6 +89,7 @@ struct WalkItem
     StringMap linkedReverseVars;     // linked vars. map <child, parent>
     bool stopWalking;   // stop walking on tree after this node
     bool isReturned;    // set if return present in child nodes
+    bool isContinued;   // set if continue present in child nodes
     bool cleanExpr;     // set if expression is only variable check without compound conditions
     bool uselessExpr;   // set if some part of expression is unknown and not checking parameters
 };

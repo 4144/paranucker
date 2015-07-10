@@ -34,6 +34,7 @@
 
 #include "nodes/ref/indirect_ref.h"
 
+#include "nodes/stmt/continue_stmt.h"
 #include "nodes/stmt/if_stmt.h"
 #include "nodes/stmt/while_stmt.h"
 
@@ -108,7 +109,7 @@ void analyseCondition(Node *node,
     // need check for cleanExpr?
     intersectElseNonNullChecked(wo, wo2, wo3);
 
-    if (wo2.isReturned)
+    if (wo2.isReturned || wo2.isContinued)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
         FOR_EACH (it, wco.checkedElseNonNullVars)
@@ -126,7 +127,7 @@ void analyseCondition(Node *node,
     {
         addNeedCheckNullVars2(wo2, wo);
     }
-    if (wo3.isReturned)
+    if (wo3.isReturned || wo3.isContinued)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
         FOR_EACH (it, wco.checkedThenNonNullVars)
@@ -144,7 +145,7 @@ void analyseCondition(Node *node,
     {
         addNeedCheckNullVars2(wo3, wo);
     }
-    if (wo2.isReturned && wo3.isReturned)
+    if ((wo2.isReturned || wo2.isContinued) && (wo3.isReturned || wo3.isContinued))
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
         FOR_EACH (it, wo.knownVars)
@@ -156,6 +157,7 @@ void analyseCondition(Node *node,
     }
 
     wo.isReturned = false;
+    wo.isContinued = false;
     wo.cleanExpr = true;
     wo.stopWalking = true;
     wo.uselessExpr = false;
@@ -213,7 +215,7 @@ void analyseWhileStmt(WhileStmtNode *node, const WalkItem &wi, WalkItem &wo)
     if (wo2.cleanExpr)
         mergeElseNullChecked(wo, wo2);
 
-    if (wo2.isReturned)
+    if (wo2.isReturned || wo2.isContinued)
     {
         // add variable for ignore for all parent nodes except special like IF_STMT
         FOR_EACH (it, wco.checkedElseNonNullVars)
@@ -243,9 +245,15 @@ void analyseWhileStmt(WhileStmtNode *node, const WalkItem &wi, WalkItem &wo)
     }
 
     wo.isReturned = false;
+    wo.isContinued = false;
     wo.cleanExpr = true;
     wo.stopWalking = true;
     wo.uselessExpr = false;
+}
+
+void analyseContinueStmt(ContinueStmtNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    wo.isContinued = true;
 }
 
 }

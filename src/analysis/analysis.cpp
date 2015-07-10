@@ -55,6 +55,7 @@
 
 #include "nodes/ref/component_ref.h"
 
+#include "nodes/stmt/continue_stmt.h"
 #include "nodes/stmt/if_stmt.h"
 #include "nodes/stmt/while_stmt.h"
 
@@ -98,6 +99,7 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     removeNeedCheckNullVarsSet(wi2, wi2.removeNullVars);
 
     const bool isReturned = wo.isReturned;
+    const bool isContinued = wo.isContinued;
 
     WalkItem wo2 = wo;
     if (command != Command::DumpNullPointers)
@@ -117,6 +119,7 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
         wi2.knownNullVars = wo2.knownNullVars;
         wi2.knownNonNullVars = wo2.knownNonNullVars;
         wi2.isReturned = wi2.isReturned || wo2.isReturned;
+        wi2.isContinued = wi2.isContinued || wo2.isContinued;
         wi2.linkedVars = wo2.linkedVars;
         wi2.linkedReverseVars = wo2.linkedReverseVars;
         wo2.stopWalking = false;
@@ -126,6 +129,7 @@ void walkTree(Node *node, const WalkItem &wi, WalkItem &wo)
     wo.removeNullVars = wi2.removeNullVars;
     wo.addNullVars = wi2.addNullVars;
     wo.isReturned = wo.isReturned || isReturned || wo2.isReturned;
+    wo.isContinued = wo.isContinued || isContinued || wo2.isContinued;
     wo.linkedVars = wi2.linkedVars;
     wo.linkedReverseVars = wi2.linkedReverseVars;
     wo.knownVars = wo2.knownVars;
@@ -279,6 +283,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             break;
         case WHILE_STMT:
             analyseWhileStmt(static_cast<WhileStmtNode*>(node), wi2, wo);
+            break;
+        case CONTINUE_STMT:
+            analyseContinueStmt(static_cast<ContinueStmtNode*>(node), wi2, wo);
             break;
         case COMPONENT_REF:
             analyseComponentRef(static_cast<ComponentRefNode*>(node), wi2, wo);
