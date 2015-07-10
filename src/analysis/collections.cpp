@@ -17,10 +17,11 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "analysis/analysis.h"
+#include "analysis/collections.h"
 
 #include "logger.h"
 
+#include "analysis/analysis.h"
 #include "analysis/walkitem.h"
 
 #include "localconsts.h"
@@ -52,6 +53,7 @@ void addNeedCheckNullVars2(WalkItem &wi, WalkItem &wo)
             wo.removeNullVars.erase(it);
             wo.removeNullVarsAll.erase(it);
             wo.addNullVars.insert(it);
+            removeLinkVarOnly(wo, it);
         }
     }
 }
@@ -104,16 +106,8 @@ void removeNeedCheckNullVarsSetAll(WalkItem &wi, std::set<std::string> &vars)
     }
 }
 
-void removeNeedCheckNullVarOnly(WalkItem &wi, const std::string &var)
+void removeLinkVarOnly(WalkItem &wi, const std::string &var)
 {
-    if (isIn(var, wi.needCheckNullVars))
-    {
-        wi.needCheckNullVars.erase(var);
-    }
-    if (isIn(var, wi.addNullVars))
-    {
-        wi.addNullVars.erase(var);
-    }
     auto it2 = wi.linkedVars.find(var);
     if (it2 != wi.linkedVars.end())
     {
@@ -144,6 +138,19 @@ void removeNeedCheckNullVarOnly(WalkItem &wi, const std::string &var)
             wi.linkedVars.erase(parent);
     }
     wi.linkedReverseVars.erase(var);
+}
+
+void removeNeedCheckNullVarOnly(WalkItem &wi, const std::string &var)
+{
+    if (isIn(var, wi.needCheckNullVars))
+    {
+        wi.needCheckNullVars.erase(var);
+    }
+    if (isIn(var, wi.addNullVars))
+    {
+        wi.addNullVars.erase(var);
+    }
+    removeLinkVarOnly(wi, var);
 }
 
 // remove vars from checks for null pointer without linked vars
