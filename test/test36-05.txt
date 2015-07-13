@@ -1,0 +1,12 @@
+test36.cpp: In member function 'void Object1::func1()':
+test36.cpp:39:16: warning: unused variable 'ptr1' [-Wunused-variable]
+         Data1 *ptr1 = new Data1;
+                ^
+test36.cpp: In member function 'void Object1::func2()':
+test36.cpp:54:16: warning: unused variable 'ptr1' [-Wunused-variable]
+         Data1 *ptr1 = new Data1[10];
+                ^
+test36.cpp: In member function 'void Object1::func3()':
+test36.cpp:69:14: warning: unused variable 'ptr1' [-Wunused-variable]
+         int *ptr1 = new int[10];
+              ^
