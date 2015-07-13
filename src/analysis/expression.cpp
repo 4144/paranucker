@@ -775,7 +775,9 @@ bool handleSetVarToFunction(const std::string &var,
         return false;
 
     if (findTreeListPurpose(static_cast<TreeListNode*>(func->functionType->attribute),
-        "returns_nonnull"))
+        "returns_nonnull") ||
+        func->label == "operator new" ||
+        func->label == "operator new []")
     {   // function have attribute returns_nonnull. This mean result cant be null
         addNonNullVar(wo, var);
     }
