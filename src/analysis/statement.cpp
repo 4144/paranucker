@@ -234,6 +234,8 @@ void analyseWhileStmt(WhileStmtNode *node, const WalkItem &wi, WalkItem &wo)
     else if (bodyNode)
     {
         addNeedCheckNullVars2(wo2, wo);
+        WalkItem wo2Saved = wo2;
+        WalkItem wcoSaved = wco;
 
         const Command oldCommand = command;
         disableCommand(DetectUseless);
@@ -245,7 +247,7 @@ void analyseWhileStmt(WhileStmtNode *node, const WalkItem &wi, WalkItem &wo)
         command = oldCommand;
         Log::dumpWI(node, "wco2 ", wco);
 
-        removeNeedCheckNullVars2(wco, wo2, wo);
+        removeNeedCheckNullVars2(wcoSaved, wo2Saved, wo);
     }
 
     wo.isReturned = false;
