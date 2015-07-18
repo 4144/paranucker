@@ -1,0 +1,8 @@
+getData3: 
+getData1: 
+getData2: 
+func1: pointer_type ptr1, 
+func2: pointer_type ptr1, 
+func3: pointer_type ptr1, 
+func4: pointer_type ptr1, 
+func5: pointer_type ptr1, 
