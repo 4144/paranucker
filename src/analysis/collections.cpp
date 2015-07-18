@@ -58,6 +58,20 @@ void addNeedCheckNullVars2(WalkItem &wi, WalkItem &wo)
     }
 }
 
+void removeNeedCheckNullVars2(WalkItem &wco, WalkItem &wi, WalkItem &wo)
+{
+    FOR_EACH (it, wi.knownNonNullVars)
+    {
+        // check what it presend in if condition like if (!it) and in else like if (it)
+        if (isIn(it, wco.checkedThenNullVars) &&
+            isIn(it, wco.checkedElseNonNullVars))
+        {
+            removeNeedCheckNullVarOnly(wo, it);
+            addNonNullVar(wo, it);
+        }
+    }
+}
+
 // remove one variable from null pointer checks
 void removeNeedCheckNullVar(WalkItem &wi, std::string str)
 {
@@ -376,6 +390,23 @@ void addKnownNonNullVarsWithLinked(WalkItem &wo, WalkItem &wi, std::set<std::str
             const StringSet &linked = (*it2).second;
             wo.knownNonNullVars.insert(linked.begin(), linked.end());
         }
+    }
+}
+
+void addKnownNonNullVarWithLinked(WalkItem &wo, WalkItem &wi, const std::string &var)
+{
+    wo.knownNonNullVars.insert(var);
+    auto it2 = wi.linkedVars.find(var);
+    if (it2 == wi.linkedVars.end() &&
+        isIn(var, wi.linkedReverseVars))
+    {
+        wo.knownNonNullVars.insert(wi.linkedReverseVars[var]);
+        it2 = wi.linkedVars.find(wi.linkedReverseVars[var]);
+    }
+    if (it2 != wi.linkedVars.end())
+    {
+        const StringSet &linked = (*it2).second;
+        wo.knownNonNullVars.insert(linked.begin(), linked.end());
     }
 }
 

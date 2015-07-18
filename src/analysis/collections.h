@@ -86,6 +86,12 @@ namespace Analysis
     void enforceNeedCheckNullVars(WalkItem &wi);
 
     void removeLinkVarOnly(WalkItem &wi, const std::string &var);
+
+    void removeNeedCheckNullVars2(WalkItem &wco, WalkItem &wi, WalkItem &wo);
+
+    void addKnownNonNullVarWithLinked(WalkItem &wo, WalkItem &wi, const std::string &var);
+
+    void removeNeedCheckNullVarOnly(WalkItem &wi, const std::string &var);
 }
 
 #endif // ANALYSIS_COLLECTIONS_H

@@ -126,6 +126,7 @@ void analyseCondition(Node *node,
     else if (thenNode)
     {
         addNeedCheckNullVars2(wo2, wo);
+        removeNeedCheckNullVars2(wco, wo2, wo);
     }
     if (wo3.isReturned || wo3.isContinued)
     {
@@ -144,6 +145,7 @@ void analyseCondition(Node *node,
     else if (elseNode)
     {
         addNeedCheckNullVars2(wo3, wo);
+        removeNeedCheckNullVars2(wco, wo2, wo);
     }
     if ((wo2.isReturned || wo2.isContinued) && (wo3.isReturned || wo3.isContinued))
     {
@@ -242,6 +244,8 @@ void analyseWhileStmt(WhileStmtNode *node, const WalkItem &wi, WalkItem &wo)
         walkTree(condNode, wci, wco);
         command = oldCommand;
         Log::dumpWI(node, "wco2 ", wco);
+
+        removeNeedCheckNullVars2(wco, wo2, wo);
     }
 
     wo.isReturned = false;
