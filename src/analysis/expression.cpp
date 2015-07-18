@@ -167,14 +167,17 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
             if (var2.empty())
             {   // have var1 only (var1 = UNKNOWN or var1 = function(...))
 
+                if (node->args.size() < 2)
+                    return;
+                Node *arg1 = skipNop(node->args[1]);
                 walkTree(arg, wi, wo);
-                walkTree(node->args[1], wi, wo);
+                walkTree(arg1, wi, wo);
                 wo.stopWalking = true;
 
                 bool handled(false);
-                if (node->args[1] == CALL_EXPR && isPointerArg(arg))
+                if (arg1 == CALL_EXPR && isPointerArg(arg))
                 {
-                    handled = handleSetVarToFunction(var1, node->args[1], wo);
+                    handled = handleSetVarToFunction(var1, arg1, wo);
                 }
                 // have var1 only (var1 = UNKNOWN)
                 if (!handled)
