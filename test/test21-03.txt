@@ -1643,25 +1643,25 @@ integer_cst 64:
 field_decl _M_offset: 
 integer_cst 32: 
 integer_cst 0: 
-cleanup_point_expr : 
-expr_stmt : 
-convert_expr : 
-preincrement_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-field_decl _M_offset: 
-integer_cst 32: 
-type_decl _Bit_iterator_base: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-integer_cst 8: 
+cleanup_point_expr : this->_M_offset, 
+expr_stmt : this->_M_offset, 
+convert_expr : this->_M_offset, 
+preincrement_expr : this->_M_offset, 
+component_ref : this->_M_offset, 
+indirect_ref : this->_M_offset, 
+parm_decl this: this->_M_offset, 
+pointer_type : this->_M_offset, 
+record_type : this->_M_offset, 
+type_decl _Bit_iterator_base: this->_M_offset, 
+field_decl _M_p: this->_M_offset, 
+integer_cst 64: this->_M_offset, 
+field_decl _M_offset: this->_M_offset, 
+integer_cst 32: this->_M_offset, 
+type_decl _Bit_iterator_base: this->_M_offset, 
+integer_cst 64: this->_M_offset, 
+field_decl _M_p: this->_M_offset, 
+integer_cst 64: this->_M_offset, 
+integer_cst 8: this->_M_offset, 
 function_decl _M_bump_down: 
 if_stmt : 
 cleanup_point_expr : 
