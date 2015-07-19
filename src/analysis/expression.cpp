@@ -806,6 +806,8 @@ void handleSetVar(Node *node1,
         node2 = skipNop(node2);
         if (node2 == CALL_EXPR && isPointerArg(node1))
             handleSetVarToFunction(var1, node2, wo);
+        else if (node2 == INTEGER_CST && node2->label == "0")
+            addNullVar(wo, var1);
         return;
     }
     else

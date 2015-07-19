@@ -187,6 +187,17 @@ void addUnknownVar(WalkItem &wi,
     wi.removeNullVarsAll.erase(var);
 }
 
+void addNullVar(WalkItem &wi,
+                const std::string &var)
+{
+    wi.knownVars.insert(var);
+    wi.knownNullVars.insert(var);
+    wi.knownNonNullVars.erase(var);
+    wi.addNullVars.insert(var);
+    wi.removeNullVars.erase(var);
+    wi.removeNullVarsAll.erase(var);
+}
+
 void addNonNullVar(WalkItem &wi,
                    const std::string &var)
 {
