@@ -150,13 +150,25 @@ void analyseCondition(Node *node,
         removeKnownNullVars2(wo3, wo);
     }
     if ((wo2.isReturned || wo2.isContinued) && (wo3.isReturned || wo3.isContinued))
-    {
+    {   // all branches returned or breaked
         // add variable for ignore for all parent nodes except special like IF_STMT
         FOR_EACH (it, wo.knownVars)
         {
             wo.removeNullVarsAll.insert(it);
             wo.knownNullVars.erase(it);
             wo.knownNonNullVars.erase(it);
+        }
+    }
+    else if (thenNode && elseNode)
+    {   // non branches returned or breaked
+        FOR_EACH (it, wo2.knownNonNullVars)
+        {
+            if (isIn(it, wo3.knownNonNullVars) &&
+                isNotIn(it, wo.knownNonNullVars))
+            {   // check if var in both branches known as non null
+                removeNeedCheckNullVarOnly(wo, it);
+                addNonNullVar(wo, it);
+            }
         }
     }
 
