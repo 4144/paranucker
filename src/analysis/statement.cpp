@@ -170,6 +170,14 @@ void analyseCondition(Node *node,
                 addNonNullVar(wo, it);
             }
         }
+        FOR_EACH (it, wo2.knownNullVars)
+        {
+            if (isIn(it, wo3.knownNullVars) &&
+                isNotIn(it, wo.knownNullVars))
+            {
+                addNullVar(wo, it);
+            }
+        }
     }
 
     wo.isReturned = false;
