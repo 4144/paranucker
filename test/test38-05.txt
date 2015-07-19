@@ -1,0 +1,15 @@
+test38.cpp: In member function 'void Object1::func3()':
+test38.cpp:182:14: warning: Useless variable check 'ptr1'. It already was checked before
+         if (!ptr1)
+              ^
+test38.cpp: In member function 'void Object1::func4()':
+test38.cpp:297:14: warning: Useless variable check 'ptr1'. It already was checked before
+         if (!ptr1)
+              ^
+test38.cpp: In member function 'void Object1::func5()':
+test38.cpp:412:14: warning: Useless variable check 'ptr1'. It already was checked before
+         if (!ptr1)
+              ^
+test38.cpp:477:18: warning: Useless variable check 'ptr1'. It already was checked before
+             if (!ptr1)
+                  ^

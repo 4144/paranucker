@@ -1,0 +1,4 @@
+test21.cpp: In member function 'int Object1::func5(Data1*)':
+test21.cpp:65:13: warning: Useless variable check 'ptr3'. It already was checked before
+             if (ptr3)
+             ^

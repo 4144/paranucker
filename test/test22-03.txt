@@ -3678,40 +3678,40 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-field_decl _M_mask: 
-integer_cst 64: 
-type_decl _Bit_reference: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-integer_cst 0: 
-cleanup_point_expr : 
-expr_stmt : 
-convert_expr : 
-init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-field_decl _M_mask: 
-integer_cst 64: 
-type_decl _Bit_reference: 
-integer_cst 64: 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_cst 0: 
+component_ref : this->_M_p, 
+indirect_ref : this->_M_p, 
+parm_decl this: this->_M_p, 
+pointer_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Bit_reference: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_mask: this->_M_p, 
+integer_cst 64: this->_M_p, 
+type_decl _Bit_reference: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+integer_cst 0: this->_M_p, 
+cleanup_point_expr : this->_M_p, 
+expr_stmt : this->_M_p, 
+convert_expr : this->_M_p, 
+init_expr : this->_M_p, 
+component_ref : this->_M_mask, this->_M_p, 
+indirect_ref : this->_M_mask, this->_M_p, 
+parm_decl this: this->_M_mask, this->_M_p, 
+pointer_type : this->_M_mask, this->_M_p, 
+record_type : this->_M_mask, this->_M_p, 
+type_decl _Bit_reference: this->_M_mask, this->_M_p, 
+field_decl _M_p: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+field_decl _M_mask: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+type_decl _Bit_reference: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+field_decl _M_mask: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+integer_cst 0: this->_M_mask, this->_M_p, 
 block : 
 function_decl __base_ctor : 
 bind_expr : 
@@ -3720,40 +3720,40 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-field_decl _M_mask: 
-integer_cst 64: 
-type_decl _Bit_reference: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-integer_cst 0: 
-cleanup_point_expr : 
-expr_stmt : 
-convert_expr : 
-init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-field_decl _M_mask: 
-integer_cst 64: 
-type_decl _Bit_reference: 
-integer_cst 64: 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_cst 0: 
+component_ref : this->_M_p, 
+indirect_ref : this->_M_p, 
+parm_decl this: this->_M_p, 
+pointer_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Bit_reference: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_mask: this->_M_p, 
+integer_cst 64: this->_M_p, 
+type_decl _Bit_reference: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+integer_cst 0: this->_M_p, 
+cleanup_point_expr : this->_M_p, 
+expr_stmt : this->_M_p, 
+convert_expr : this->_M_p, 
+init_expr : this->_M_p, 
+component_ref : this->_M_mask, this->_M_p, 
+indirect_ref : this->_M_mask, this->_M_p, 
+parm_decl this: this->_M_mask, this->_M_p, 
+pointer_type : this->_M_mask, this->_M_p, 
+record_type : this->_M_mask, this->_M_p, 
+type_decl _Bit_reference: this->_M_mask, this->_M_p, 
+field_decl _M_p: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+field_decl _M_mask: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+type_decl _Bit_reference: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+field_decl _M_mask: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+integer_cst 0: this->_M_mask, this->_M_p, 
 block : 
 function_decl __comp_ctor : 
 statement_list : 
@@ -11758,80 +11758,80 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Vector_impl: 
-field_decl _M_start: 
-integer_cst 64: 
-field_decl _M_finish: 
-integer_cst 64: 
-field_decl _M_end_of_storage: 
-integer_cst 64: 
-type_decl _Vector_impl: 
-integer_cst 64: 
-field_decl _M_start: 
-integer_cst 64: 
-integer_cst 0: 
-cleanup_point_expr : 
-expr_stmt : 
-convert_expr : 
-init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Vector_impl: 
-field_decl _M_start: 
-integer_cst 64: 
-field_decl _M_finish: 
-integer_cst 64: 
-field_decl _M_end_of_storage: 
-integer_cst 64: 
-type_decl _Vector_impl: 
-integer_cst 64: 
-field_decl _M_finish: 
-integer_cst 64: 
-integer_cst 0: 
-cleanup_point_expr : 
-expr_stmt : 
-convert_expr : 
-init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Vector_impl: 
-field_decl _M_start: 
-integer_cst 64: 
-field_decl _M_finish: 
-integer_cst 64: 
-field_decl _M_end_of_storage: 
-integer_cst 64: 
-type_decl _Vector_impl: 
-integer_cst 64: 
-field_decl _M_end_of_storage: 
-integer_cst 64: 
-integer_cst 0: 
-call_expr : 
-addr_expr : 
-function_decl __base_dtor : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Vector_impl: 
-field_decl _M_start: 
-integer_cst 64: 
-field_decl _M_finish: 
-integer_cst 64: 
-field_decl _M_end_of_storage: 
-integer_cst 64: 
-type_decl _Vector_impl: 
-integer_cst 64: 
+component_ref : this->_M_start, 
+indirect_ref : this->_M_start, 
+parm_decl this: this->_M_start, 
+pointer_type : this->_M_start, 
+record_type : this->_M_start, 
+type_decl _Vector_impl: this->_M_start, 
+field_decl _M_start: this->_M_start, 
+integer_cst 64: this->_M_start, 
+field_decl _M_finish: this->_M_start, 
+integer_cst 64: this->_M_start, 
+field_decl _M_end_of_storage: this->_M_start, 
+integer_cst 64: this->_M_start, 
+type_decl _Vector_impl: this->_M_start, 
+integer_cst 64: this->_M_start, 
+field_decl _M_start: this->_M_start, 
+integer_cst 64: this->_M_start, 
+integer_cst 0: this->_M_start, 
+cleanup_point_expr : this->_M_start, 
+expr_stmt : this->_M_start, 
+convert_expr : this->_M_start, 
+init_expr : this->_M_start, 
+component_ref : this->_M_finish, this->_M_start, 
+indirect_ref : this->_M_finish, this->_M_start, 
+parm_decl this: this->_M_finish, this->_M_start, 
+pointer_type : this->_M_finish, this->_M_start, 
+record_type : this->_M_finish, this->_M_start, 
+type_decl _Vector_impl: this->_M_finish, this->_M_start, 
+field_decl _M_start: this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_finish, this->_M_start, 
+field_decl _M_finish: this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_finish, this->_M_start, 
+field_decl _M_end_of_storage: this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_finish, this->_M_start, 
+type_decl _Vector_impl: this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_finish, this->_M_start, 
+field_decl _M_finish: this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_finish, this->_M_start, 
+integer_cst 0: this->_M_finish, this->_M_start, 
+cleanup_point_expr : this->_M_finish, this->_M_start, 
+expr_stmt : this->_M_finish, this->_M_start, 
+convert_expr : this->_M_finish, this->_M_start, 
+init_expr : this->_M_finish, this->_M_start, 
+component_ref : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+indirect_ref : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+parm_decl this: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+pointer_type : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+record_type : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+type_decl _Vector_impl: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_start: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_finish: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_end_of_storage: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+type_decl _Vector_impl: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_end_of_storage: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 0: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+call_expr : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+addr_expr : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+function_decl __base_dtor : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+parm_decl this: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+pointer_type : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+record_type : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+type_decl _Vector_impl: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_start: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_finish: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_end_of_storage: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+type_decl _Vector_impl: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
 block : 
 function_decl __base_ctor : 
 bind_expr : 
@@ -11859,80 +11859,80 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Vector_impl: 
-field_decl _M_start: 
-integer_cst 64: 
-field_decl _M_finish: 
-integer_cst 64: 
-field_decl _M_end_of_storage: 
-integer_cst 64: 
-type_decl _Vector_impl: 
-integer_cst 64: 
-field_decl _M_start: 
-integer_cst 64: 
-integer_cst 0: 
-cleanup_point_expr : 
-expr_stmt : 
-convert_expr : 
-init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Vector_impl: 
-field_decl _M_start: 
-integer_cst 64: 
-field_decl _M_finish: 
-integer_cst 64: 
-field_decl _M_end_of_storage: 
-integer_cst 64: 
-type_decl _Vector_impl: 
-integer_cst 64: 
-field_decl _M_finish: 
-integer_cst 64: 
-integer_cst 0: 
-cleanup_point_expr : 
-expr_stmt : 
-convert_expr : 
-init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Vector_impl: 
-field_decl _M_start: 
-integer_cst 64: 
-field_decl _M_finish: 
-integer_cst 64: 
-field_decl _M_end_of_storage: 
-integer_cst 64: 
-type_decl _Vector_impl: 
-integer_cst 64: 
-field_decl _M_end_of_storage: 
-integer_cst 64: 
-integer_cst 0: 
-call_expr : 
-addr_expr : 
-function_decl __base_dtor : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Vector_impl: 
-field_decl _M_start: 
-integer_cst 64: 
-field_decl _M_finish: 
-integer_cst 64: 
-field_decl _M_end_of_storage: 
-integer_cst 64: 
-type_decl _Vector_impl: 
-integer_cst 64: 
+component_ref : this->_M_start, 
+indirect_ref : this->_M_start, 
+parm_decl this: this->_M_start, 
+pointer_type : this->_M_start, 
+record_type : this->_M_start, 
+type_decl _Vector_impl: this->_M_start, 
+field_decl _M_start: this->_M_start, 
+integer_cst 64: this->_M_start, 
+field_decl _M_finish: this->_M_start, 
+integer_cst 64: this->_M_start, 
+field_decl _M_end_of_storage: this->_M_start, 
+integer_cst 64: this->_M_start, 
+type_decl _Vector_impl: this->_M_start, 
+integer_cst 64: this->_M_start, 
+field_decl _M_start: this->_M_start, 
+integer_cst 64: this->_M_start, 
+integer_cst 0: this->_M_start, 
+cleanup_point_expr : this->_M_start, 
+expr_stmt : this->_M_start, 
+convert_expr : this->_M_start, 
+init_expr : this->_M_start, 
+component_ref : this->_M_finish, this->_M_start, 
+indirect_ref : this->_M_finish, this->_M_start, 
+parm_decl this: this->_M_finish, this->_M_start, 
+pointer_type : this->_M_finish, this->_M_start, 
+record_type : this->_M_finish, this->_M_start, 
+type_decl _Vector_impl: this->_M_finish, this->_M_start, 
+field_decl _M_start: this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_finish, this->_M_start, 
+field_decl _M_finish: this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_finish, this->_M_start, 
+field_decl _M_end_of_storage: this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_finish, this->_M_start, 
+type_decl _Vector_impl: this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_finish, this->_M_start, 
+field_decl _M_finish: this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_finish, this->_M_start, 
+integer_cst 0: this->_M_finish, this->_M_start, 
+cleanup_point_expr : this->_M_finish, this->_M_start, 
+expr_stmt : this->_M_finish, this->_M_start, 
+convert_expr : this->_M_finish, this->_M_start, 
+init_expr : this->_M_finish, this->_M_start, 
+component_ref : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+indirect_ref : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+parm_decl this: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+pointer_type : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+record_type : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+type_decl _Vector_impl: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_start: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_finish: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_end_of_storage: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+type_decl _Vector_impl: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_end_of_storage: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 0: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+call_expr : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+addr_expr : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+function_decl __base_dtor : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+parm_decl this: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+pointer_type : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+record_type : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+type_decl _Vector_impl: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_start: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_finish: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+field_decl _M_end_of_storage: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+type_decl _Vector_impl: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
+integer_cst 64: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
 block : 
 function_decl __comp_ctor : 
 statement_list : 

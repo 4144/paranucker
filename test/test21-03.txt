@@ -1035,40 +1035,40 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-field_decl _M_mask: 
-integer_cst 64: 
-type_decl _Bit_reference: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-integer_cst 0: 
-cleanup_point_expr : 
-expr_stmt : 
-convert_expr : 
-init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-field_decl _M_mask: 
-integer_cst 64: 
-type_decl _Bit_reference: 
-integer_cst 64: 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_cst 0: 
+component_ref : this->_M_p, 
+indirect_ref : this->_M_p, 
+parm_decl this: this->_M_p, 
+pointer_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Bit_reference: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_mask: this->_M_p, 
+integer_cst 64: this->_M_p, 
+type_decl _Bit_reference: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+integer_cst 0: this->_M_p, 
+cleanup_point_expr : this->_M_p, 
+expr_stmt : this->_M_p, 
+convert_expr : this->_M_p, 
+init_expr : this->_M_p, 
+component_ref : this->_M_mask, this->_M_p, 
+indirect_ref : this->_M_mask, this->_M_p, 
+parm_decl this: this->_M_mask, this->_M_p, 
+pointer_type : this->_M_mask, this->_M_p, 
+record_type : this->_M_mask, this->_M_p, 
+type_decl _Bit_reference: this->_M_mask, this->_M_p, 
+field_decl _M_p: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+field_decl _M_mask: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+type_decl _Bit_reference: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+field_decl _M_mask: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+integer_cst 0: this->_M_mask, this->_M_p, 
 block : 
 function_decl __base_ctor : 
 bind_expr : 
@@ -1077,40 +1077,40 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-field_decl _M_mask: 
-integer_cst 64: 
-type_decl _Bit_reference: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-integer_cst 0: 
-cleanup_point_expr : 
-expr_stmt : 
-convert_expr : 
-init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-field_decl _M_mask: 
-integer_cst 64: 
-type_decl _Bit_reference: 
-integer_cst 64: 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_cst 0: 
+component_ref : this->_M_p, 
+indirect_ref : this->_M_p, 
+parm_decl this: this->_M_p, 
+pointer_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Bit_reference: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_mask: this->_M_p, 
+integer_cst 64: this->_M_p, 
+type_decl _Bit_reference: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+integer_cst 0: this->_M_p, 
+cleanup_point_expr : this->_M_p, 
+expr_stmt : this->_M_p, 
+convert_expr : this->_M_p, 
+init_expr : this->_M_p, 
+component_ref : this->_M_mask, this->_M_p, 
+indirect_ref : this->_M_mask, this->_M_p, 
+parm_decl this: this->_M_mask, this->_M_p, 
+pointer_type : this->_M_mask, this->_M_p, 
+record_type : this->_M_mask, this->_M_p, 
+type_decl _Bit_reference: this->_M_mask, this->_M_p, 
+field_decl _M_p: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+field_decl _M_mask: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+type_decl _Bit_reference: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+field_decl _M_mask: this->_M_mask, this->_M_p, 
+integer_cst 64: this->_M_mask, this->_M_p, 
+integer_cst 0: this->_M_mask, this->_M_p, 
 block : 
 function_decl __comp_ctor : 
 statement_list : 
@@ -4435,137 +4435,137 @@ bind_expr : ptr1,
 statement_list : ptr1, 
 cleanup_point_expr : ptr1, 
 decl_expr : ptr1, 
+var_decl tmpvar: ptr1, tmpvar, 
+decl_expr : ptr1, tmpvar, 
+var_decl ptr2: ptr1, ptr2, tmpvar, 
+integer_cst 64: ptr1, ptr2, tmpvar, 
+parm_decl ptr1: ptr1, ptr2, tmpvar, 
+pointer_type : ptr1, ptr2, tmpvar, 
+void_type : ptr1, ptr2, tmpvar, 
+type_decl void: ptr1, ptr2, tmpvar, 
+integer_cst 64: ptr1, ptr2, tmpvar, 
+pointer_type : ptr1, ptr2, tmpvar, 
+record_type : ptr1, ptr2, tmpvar, 
+type_decl Data1: ptr1, ptr2, tmpvar, 
+field_decl val: ptr1, ptr2, tmpvar, 
+integer_cst 32: ptr1, ptr2, tmpvar, 
+type_decl Data1: ptr1, ptr2, tmpvar, 
+if_stmt : ptr1, ptr2, tmpvar, 
+eq_expr : ptr1, ptr2, tmpvar, 
+parm_decl ptr1: ptr1, ptr2, tmpvar, 
+pointer_type : ptr1, ptr2, tmpvar, 
+void_type : ptr1, ptr2, tmpvar, 
+type_decl void: ptr1, ptr2, tmpvar, 
+integer_cst 64: ptr1, ptr2, tmpvar, 
+integer_cst 0: ptr1, ptr2, tmpvar, 
+return_expr : ptr1, ptr2, tmpvar, 
+init_expr : ptr1, ptr2, tmpvar, 
+result_decl : ptr1, ptr2, tmpvar, 
+integer_type : ptr1, ptr2, tmpvar, 
+type_decl int: ptr1, ptr2, tmpvar, 
+integer_cst 32: ptr1, ptr2, tmpvar, 
+integer_cst -2147483648: ptr1, ptr2, tmpvar, 
+integer_cst 2147483647: ptr1, ptr2, tmpvar, 
+integer_cst 32: ptr1, ptr2, tmpvar, 
+integer_cst 0: ptr1, ptr2, tmpvar, 
+if_stmt : ptr1, ptr2, tmpvar, 
+ne_expr : ptr1, ptr2, tmpvar, 
+component_ref : tmpvar, 
+indirect_ref : tmpvar, 
+var_decl ptr2: tmpvar, 
+field_decl val: tmpvar, 
+integer_cst 32: tmpvar, 
+integer_cst 0: tmpvar, 
+return_expr : tmpvar, 
+init_expr : tmpvar, 
+result_decl : tmpvar, 
+integer_type : tmpvar, 
+type_decl int: tmpvar, 
+integer_cst 32: tmpvar, 
+integer_cst -2147483648: tmpvar, 
+integer_cst 2147483647: tmpvar, 
+integer_cst 32: tmpvar, 
+integer_cst 3: tmpvar, 
+return_expr : ptr1, ptr2, tmpvar, 
+init_expr : tmpvar, 
+result_decl : tmpvar, 
+integer_type : tmpvar, 
+type_decl int: tmpvar, 
+integer_cst 32: tmpvar, 
+integer_cst -2147483648: tmpvar, 
+integer_cst 2147483647: tmpvar, 
+integer_cst 32: tmpvar, 
+integer_cst 0: tmpvar, 
 var_decl tmpvar: ptr1, 
-decl_expr : ptr1, 
-var_decl ptr2: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-parm_decl ptr1: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-void_type : ptr1, ptr2, 
-type_decl void: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-if_stmt : ptr1, ptr2, 
-eq_expr : ptr1, ptr2, 
-parm_decl ptr1: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-void_type : ptr1, ptr2, 
-type_decl void: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-return_expr : ptr1, ptr2, 
-init_expr : ptr1, ptr2, 
-result_decl : ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-if_stmt : ptr1, ptr2, 
-ne_expr : ptr1, ptr2, 
-component_ref : 
-indirect_ref : 
-var_decl ptr2: 
-field_decl val: 
-integer_cst 32: 
-integer_cst 0: 
-return_expr : 
-init_expr : 
-result_decl : 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-integer_cst 32: 
-integer_cst 3: 
-return_expr : ptr1, ptr2, 
-init_expr : 
-result_decl : 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-integer_cst 32: 
-integer_cst 0: 
-var_decl tmpvar: ptr1, 
-integer_cst 32: 
-integer_cst 0: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-block : ptr1, 
-var_decl tmpvar: 
-var_decl ptr2: 
+integer_cst 32: tmpvar, 
+integer_cst 0: tmpvar, 
+integer_type : tmpvar, 
+type_decl int: tmpvar, 
+integer_cst 32: tmpvar, 
+integer_cst -2147483648: tmpvar, 
+integer_cst 2147483647: tmpvar, 
+block : ptr1, tmpvar, 
+var_decl tmpvar: tmpvar, 
+var_decl ptr2: tmpvar, 
 function_decl func2: 
 bind_expr : ptr1, 
 statement_list : ptr1, 
 cleanup_point_expr : ptr1, 
 decl_expr : ptr1, 
+var_decl attempts: attempts, ptr1, 
+decl_expr : attempts, ptr1, 
+var_decl ptr2: attempts, ptr1, ptr2, 
+integer_cst 64: attempts, ptr1, ptr2, 
+parm_decl ptr1: attempts, ptr1, ptr2, 
+pointer_type : attempts, ptr1, ptr2, 
+void_type : attempts, ptr1, ptr2, 
+type_decl void: attempts, ptr1, ptr2, 
+integer_cst 64: attempts, ptr1, ptr2, 
+pointer_type : attempts, ptr1, ptr2, 
+record_type : attempts, ptr1, ptr2, 
+type_decl Data1: attempts, ptr1, ptr2, 
+field_decl val: attempts, ptr1, ptr2, 
+integer_cst 32: attempts, ptr1, ptr2, 
+type_decl Data1: attempts, ptr1, ptr2, 
+if_stmt : attempts, ptr1, ptr2, 
+eq_expr : attempts, ptr1, ptr2, 
+var_decl ptr2: attempts, ptr1, ptr2, 
+integer_cst 0: attempts, ptr1, ptr2, 
+return_expr : attempts, ptr1, ptr2, 
+init_expr : attempts, ptr1, ptr2, 
+result_decl : attempts, ptr1, ptr2, 
+integer_type : attempts, ptr1, ptr2, 
+type_decl int: attempts, ptr1, ptr2, 
+integer_cst 32: attempts, ptr1, ptr2, 
+integer_cst -2147483648: attempts, ptr1, ptr2, 
+integer_cst 2147483647: attempts, ptr1, ptr2, 
+integer_cst 32: attempts, ptr1, ptr2, 
+integer_cst 0: attempts, ptr1, ptr2, 
+decl_expr : attempts, ptr1, ptr2, 
+var_decl outFilename: attempts, 
+integer_cst 32: attempts, 
+component_ref : attempts, 
+indirect_ref : attempts, 
+var_decl ptr2: attempts, 
+field_decl val: attempts, 
+integer_cst 32: attempts, 
+integer_type : attempts, 
+type_decl int: attempts, 
+integer_cst 32: attempts, 
+integer_cst -2147483648: attempts, 
+integer_cst 2147483647: attempts, 
 var_decl attempts: ptr1, 
-decl_expr : ptr1, 
-var_decl ptr2: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-parm_decl ptr1: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-void_type : ptr1, ptr2, 
-type_decl void: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-if_stmt : ptr1, ptr2, 
-eq_expr : ptr1, ptr2, 
-var_decl ptr2: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-return_expr : ptr1, ptr2, 
-init_expr : ptr1, ptr2, 
-result_decl : ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-decl_expr : ptr1, ptr2, 
-var_decl outFilename: 
-integer_cst 32: 
-component_ref : 
-indirect_ref : 
-var_decl ptr2: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-var_decl attempts: ptr1, 
-integer_cst 32: 
-integer_cst 0: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-block : ptr1, 
-var_decl attempts: 
-var_decl ptr2: 
-var_decl outFilename: 
+integer_cst 32: attempts, 
+integer_cst 0: attempts, 
+integer_type : attempts, 
+type_decl int: attempts, 
+integer_cst 32: attempts, 
+integer_cst -2147483648: attempts, 
+integer_cst 2147483647: attempts, 
+block : attempts, ptr1, 
+var_decl attempts: attempts, 
+var_decl ptr2: attempts, 
+var_decl outFilename: attempts, 
 function_decl func3: 
 bind_expr : ptr1, 
 statement_list : ptr1, 
@@ -4623,23 +4623,23 @@ bind_expr : ptr1,
 statement_list : ptr1, 
 cleanup_point_expr : ptr1, 
 decl_expr : ptr1, 
-var_decl ptr2: ptr1, 
-bind_expr : ptr1, 
-if_stmt : ptr1, 
-truth_andif_expr : ptr1, 
-ne_expr : ptr1, 
-parm_decl ptr1: ptr1, 
-pointer_type : ptr1, 
-record_type : ptr1, 
-type_decl Data1: ptr1, 
-field_decl val: ptr1, 
-integer_cst 32: ptr1, 
-type_decl Data1: ptr1, 
-integer_cst 64: ptr1, 
-integer_cst 0: ptr1, 
-ne_expr : 
-var_decl ptr2: 
-integer_cst 0: 
+var_decl ptr2: ptr1, ptr2, 
+bind_expr : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_andif_expr : ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+parm_decl ptr1: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+ne_expr : ptr2, 
+var_decl ptr2: ptr2, 
+integer_cst 0: ptr2, 
 bind_expr : 
 decl_expr : 
 var_decl k: 
@@ -4664,44 +4664,44 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 block : 
 var_decl k: 
-block : ptr1, 
-block : ptr1, 
-var_decl k: ptr1, 
+block : ptr1, ptr2, 
+block : ptr1, ptr2, 
+var_decl k: ptr1, ptr2, 
 var_decl ptr2: ptr1, 
-integer_cst 64: ptr1, 
-integer_cst 0: ptr1, 
-pointer_type : ptr1, 
-record_type : ptr1, 
-type_decl Data1: ptr1, 
-field_decl val: ptr1, 
-integer_cst 32: ptr1, 
-type_decl Data1: ptr1, 
-block : ptr1, 
-var_decl ptr2: ptr1, 
-block : ptr1, 
-block : ptr1, 
-var_decl k: ptr1, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+block : ptr1, ptr2, 
+var_decl ptr2: ptr1, ptr2, 
+block : ptr1, ptr2, 
+block : ptr1, ptr2, 
+var_decl k: ptr1, ptr2, 
 function_decl func5: 
 bind_expr : ptr1, 
 statement_list : ptr1, 
 cleanup_point_expr : ptr1, 
 decl_expr : ptr1, 
-var_decl ptr2: ptr1, 
-decl_expr : ptr1, 
-var_decl z: ptr1, 
-integer_cst 32: ptr1, 
-integer_type : ptr1, 
-type_decl int: ptr1, 
-integer_cst 32: ptr1, 
-integer_cst -2147483648: ptr1, 
-integer_cst 2147483647: ptr1, 
-bind_expr : ptr1, 
-if_stmt : ptr1, 
-truth_andif_expr : ptr1, 
-truth_andif_expr : ptr1, 
-ne_expr : ptr1, 
-var_decl ptr2: ptr1, 
-integer_cst 0: ptr1, 
+var_decl ptr2: ptr1, ptr2, 
+decl_expr : ptr1, ptr2, 
+var_decl z: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+bind_expr : ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_andif_expr : ptr1, ptr2, 
+truth_andif_expr : ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+var_decl ptr2: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
 ne_expr : ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
@@ -4722,6 +4722,10 @@ var_decl ptr3:
 bind_expr : 
 if_stmt : 
 ne_expr : 
+test21.cpp: In member function 'int Object1::func5(Data1*)':
+test21.cpp:65:13: warning: Useless variable check 'ptr3'. It already was checked before
+             if (ptr3)
+             ^
 var_decl ptr3: 
 integer_cst 0: 
 bind_expr : 
@@ -4795,46 +4799,46 @@ block :
 block : 
 block : 
 var_decl k2: 
-block : ptr1, 
-block : ptr1, 
-var_decl ptr3: ptr1, 
-block : ptr1, 
-block : ptr1, 
-block : ptr1, 
-block : ptr1, 
-var_decl k2: ptr1, 
+block : ptr1, ptr2, 
+block : ptr1, ptr2, 
+var_decl ptr3: ptr1, ptr2, 
+block : ptr1, ptr2, 
+block : ptr1, ptr2, 
+block : ptr1, ptr2, 
+block : ptr1, ptr2, 
+var_decl k2: ptr1, ptr2, 
 var_decl ptr2: ptr1, 
-integer_cst 64: ptr1, 
-integer_cst 0: ptr1, 
-pointer_type : ptr1, 
-record_type : ptr1, 
-type_decl Data1: ptr1, 
-field_decl val: ptr1, 
-integer_cst 32: ptr1, 
-type_decl Data1: ptr1, 
-block : ptr1, 
-var_decl ptr2: ptr1, 
-var_decl z: ptr1, 
-block : ptr1, 
-block : ptr1, 
-var_decl ptr3: ptr1, 
-block : ptr1, 
-block : ptr1, 
-block : ptr1, 
-block : ptr1, 
-var_decl k2: ptr1, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+block : ptr1, ptr2, 
+var_decl ptr2: ptr1, ptr2, 
+var_decl z: ptr1, ptr2, 
+block : ptr1, ptr2, 
+block : ptr1, ptr2, 
+var_decl ptr3: ptr1, ptr2, 
+block : ptr1, ptr2, 
+block : ptr1, ptr2, 
+block : ptr1, ptr2, 
+block : ptr1, ptr2, 
+var_decl k2: ptr1, ptr2, 
 function_decl func6: 
 bind_expr : ptr1, 
 statement_list : ptr1, 
 cleanup_point_expr : ptr1, 
 decl_expr : ptr1, 
-var_decl ptr2: ptr1, 
-if_stmt : ptr1, 
-truth_andif_expr : ptr1, 
-truth_andif_expr : ptr1, 
-ne_expr : ptr1, 
-var_decl ptr2: ptr1, 
-integer_cst 0: ptr1, 
+var_decl ptr2: ptr1, ptr2, 
+if_stmt : ptr1, ptr2, 
+truth_andif_expr : ptr1, ptr2, 
+truth_andif_expr : ptr1, ptr2, 
+ne_expr : ptr1, ptr2, 
+var_decl ptr2: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
 ne_expr : ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
@@ -4872,16 +4876,16 @@ integer_cst 64:
 field_decl val: 
 integer_cst 32: 
 var_decl ptr2: ptr1, 
-integer_cst 64: ptr1, 
-integer_cst 0: ptr1, 
-pointer_type : ptr1, 
-record_type : ptr1, 
-type_decl Data1: ptr1, 
-field_decl val: ptr1, 
-integer_cst 32: ptr1, 
-type_decl Data1: ptr1, 
-block : ptr1, 
-var_decl ptr2: ptr1, 
+integer_cst 64: ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+block : ptr1, ptr2, 
+var_decl ptr2: ptr1, ptr2, 
 function_decl fill: 
 cleanup_point_expr : __first, __last, 
 expr_stmt : __first, __last, 
