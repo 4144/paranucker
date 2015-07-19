@@ -58,6 +58,17 @@ void addNeedCheckNullVars2(WalkItem &wi, WalkItem &wo)
     }
 }
 
+void removeKnownNullVars2(WalkItem &wi, WalkItem &wo)
+{
+    FOR_EACH (it, wo.knownNullVars)
+    {
+        if (isNotIn(it, wi.knownNullVars))
+        {
+            wo.knownNullVars.erase(it);
+        }
+    }
+}
+
 void removeNeedCheckNullVars2(WalkItem &wco, WalkItem &wi, WalkItem &wo)
 {
     FOR_EACH (it, wi.knownNonNullVars)
