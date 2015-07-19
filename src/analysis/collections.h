@@ -90,7 +90,9 @@ namespace Analysis
 
     void removeLinkVarOnly(WalkItem &wi, const std::string &var);
 
-    void removeNeedCheckNullVars2(WalkItem &wco, WalkItem &wi, WalkItem &wo);
+    void removeNeedCheckNullVarsThen(WalkItem &wco, WalkItem &wi, WalkItem &wo);
+
+    void removeNeedCheckNullVarsElse(WalkItem &wco, WalkItem &wi, WalkItem &wo);
 
     void addKnownNonNullVarWithLinked(WalkItem &wo, WalkItem &wi, const std::string &var);
 

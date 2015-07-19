@@ -69,13 +69,27 @@ void removeKnownNullVars2(WalkItem &wi, WalkItem &wo)
     }
 }
 
-void removeNeedCheckNullVars2(WalkItem &wco, WalkItem &wi, WalkItem &wo)
+void removeNeedCheckNullVarsThen(WalkItem &wco, WalkItem &wi, WalkItem &wo)
 {
     FOR_EACH (it, wi.knownNonNullVars)
     {
         // check what it presend in if condition like if (!it) and in else like if (it)
         if (isIn(it, wco.checkedThenNullVars) &&
             isIn(it, wco.checkedElseNonNullVars))
+        {
+            removeNeedCheckNullVarOnly(wo, it);
+            addNonNullVar(wo, it);
+        }
+    }
+}
+
+void removeNeedCheckNullVarsElse(WalkItem &wco, WalkItem &wi, WalkItem &wo)
+{
+    FOR_EACH (it, wi.knownNonNullVars)
+    {
+        // check what it presend in if condition like if (!it) and in else like if (it)
+        if (isIn(it, wco.checkedElseNullVars) &&
+            isIn(it, wco.checkedThenNonNullVars))
         {
             removeNeedCheckNullVarOnly(wo, it);
             addNonNullVar(wo, it);
