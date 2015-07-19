@@ -179,6 +179,11 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
                 {
                     handled = handleSetVarToFunction(var1, arg1, wo);
                 }
+                else if (arg1 == INTEGER_CST && arg1->label == "0")
+                {
+                    addNullVar(wo, var1);
+                    handled = true;
+                }
                 // have var1 only (var1 = UNKNOWN)
                 if (!handled)
                     removeVar(wo, var1);
