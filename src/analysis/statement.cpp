@@ -34,6 +34,7 @@
 
 #include "nodes/ref/indirect_ref.h"
 
+#include "nodes/stmt/break_stmt.h"
 #include "nodes/stmt/continue_stmt.h"
 #include "nodes/stmt/if_stmt.h"
 #include "nodes/stmt/while_stmt.h"
@@ -281,6 +282,11 @@ void analyseWhileStmt(WhileStmtNode *node, const WalkItem &wi, WalkItem &wo)
 }
 
 void analyseContinueStmt(ContinueStmtNode *node, const WalkItem &wi, WalkItem &wo)
+{
+    wo.isContinued = true;
+}
+
+void analyseBreakStmt(BreakStmtNode *node, const WalkItem &wi, WalkItem &wo)
 {
     wo.isContinued = true;
 }

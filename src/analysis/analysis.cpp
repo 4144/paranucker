@@ -55,6 +55,7 @@
 
 #include "nodes/ref/component_ref.h"
 
+#include "nodes/stmt/break_stmt.h"
 #include "nodes/stmt/continue_stmt.h"
 #include "nodes/stmt/if_stmt.h"
 #include "nodes/stmt/while_stmt.h"
@@ -277,6 +278,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             break;
         case VAR_DECL:
             analyseVarDecl(static_cast<VarDeclNode*>(node), wi2, wo);
+            break;
+        case BREAK_STMT:
+            analyseBreakStmt(static_cast<BreakStmtNode*>(node), wi2, wo);
             break;
         case IF_STMT:
             analyseIfStmt(static_cast<IfStmtNode*>(node), wi2, wo);
