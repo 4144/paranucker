@@ -11,8 +11,18 @@ struct Data1
     }
 };
 
-struct Data2 : public Data1
+struct Data2
 {
+    int val;
+    Data1 *ptrval;
+    int arr[3];
+    virtual ~Data2()
+    {
+    }
+    Data1 *getData3()
+    {
+        return ptrval;
+    }
 };
 
 int k;
@@ -23,6 +33,7 @@ class Object1
 {
     Data1 *tmp1;
     Data1 *tmp2;
+    Data2 *tmp3;
 
     Data1 *getData1()
     {
@@ -92,5 +103,20 @@ class Object1
         paranuckerInternalTest("=", "linkedVars", "this->tmp1");
         paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
         paranuckerInternalTest("=", "linkedReverseVars", "this->tmp1");
+    }
+
+    void func5()
+    {
+        tmp3 = new Data2;
+        paranuckerInternalTest("=", "knownVars", "this->tmp3");
+        paranuckerInternalTest("=", "knownNonNullVars", "this->tmp3");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "");
+        paranuckerInternalTest("=", "addNullVars", "");
+        paranuckerInternalTest("=", "removeNullVarsAll", "");
+        paranuckerInternalTest("=", "linkedVars", "ptr1");
+        paranuckerInternalTest("=", "linkedVars", "this->tmp3");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
+        paranuckerInternalTest("=", "linkedReverseVars", "this->tmp3");
     }
 };
