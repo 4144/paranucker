@@ -50,6 +50,7 @@
 #include "nodes/expr/truthandif_expr.h"
 #include "nodes/expr/truthor_expr.h"
 #include "nodes/expr/truthorif_expr.h"
+#include "nodes/expr/trycatch_expr.h"
 
 #include "nodes/decl/function_decl.h"
 #include "nodes/decl/var_decl.h"
@@ -768,7 +769,33 @@ bool handleSetVarToFunction(const std::string &var,
         return handleSetVarToFunctionBack(var, node2, wo);
 
     if (node2 != CALL_EXPR)
-        return handleSetVarToFunctionBack(var, node2, wo);
+    {
+        if (node2 != COMPOUND_EXPR)
+            return handleSetVarToFunctionBack(var, node2, wo);
+        CompoundExprNode *comp = static_cast<CompoundExprNode*>(node2);
+        if (comp->args.empty())
+            return handleSetVarToFunctionBack(var, node2, wo);
+        node2 = skipNop(comp->args[comp->args.size() - 1]);
+        if (node2 != COMPOUND_EXPR)
+            return handleSetVarToFunctionBack(var, node2, wo);
+        comp = static_cast<CompoundExprNode*>(node2);
+        if (comp->args.empty())
+            return handleSetVarToFunctionBack(var, node2, wo);
+        if (skipNop(comp->args[0]) == TRY_CATCH_EXPR)
+        {
+            TryCatchExprNode *tryCatch = static_cast<TryCatchExprNode*>(skipNop(comp->args[0]));
+            if (tryCatch->args.empty())
+                return handleSetVarToFunctionBack(var, node2, wo);
+            node2 = tryCatch->args[0];
+        }
+        else
+        {
+            node2 = comp->args[0];
+        }
+
+        if (node2 != CALL_EXPR)
+            return handleSetVarToFunctionBack(var, node2, wo);
+    }
 
     CallExprNode *call = static_cast<CallExprNode*>(node2);
     if (!call || skipNop(call->function) != ADDR_EXPR)
@@ -782,24 +809,28 @@ bool handleSetVarToFunction(const std::string &var,
     }
     FunctionDeclNode *func = static_cast<FunctionDeclNode*>(skipNop(addr->args[0]));
     removeVar(wo, var);
-    if (!func->functionType)
-        return false;
 
-    Node *returnType;
-    if (skipNop(func->functionType) == FUNCTION_TYPE)
-        returnType = static_cast<FunctionTypeNode*>(skipNop(func->functionType))->returnType;
-    else if (skipNop(func->functionType) == METHOD_TYPE)
-        returnType = static_cast<MethodTypeNode*>(skipNop(func->functionType))->returnType;
-    else
-        return false;
-    returnType = skipNop(returnType);
-    if (returnType != POINTER_TYPE)
-        return false;
+    if (func->label != "__comp_ctor ")
+    {
+        if (!func->functionType)
+            return false;
+        Node *returnType;
+        if (skipNop(func->functionType) == FUNCTION_TYPE)
+            returnType = static_cast<FunctionTypeNode*>(skipNop(func->functionType))->returnType;
+        else if (skipNop(func->functionType) == METHOD_TYPE)
+            returnType = static_cast<MethodTypeNode*>(skipNop(func->functionType))->returnType;
+        else
+            return false;
+        returnType = skipNop(returnType);
+        if (returnType != POINTER_TYPE)
+            return false;
+    }
 
     if (findTreeListPurpose(static_cast<TreeListNode*>(func->functionType->attribute),
         "returns_nonnull") ||
         func->label == "operator new" ||
-        func->label == "operator new []")
+        func->label == "operator new []" ||
+        func->label == "__comp_ctor ")
     {   // function have attribute returns_nonnull. This mean result cant be null
         addNonNullVar(wo, var);
     }
