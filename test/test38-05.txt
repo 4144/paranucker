@@ -13,3 +13,7 @@ test38.cpp:412:14: warning: Useless variable check 'ptr1'. It already was checke
 test38.cpp:477:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1)
                   ^
+test38.cpp: In member function 'void Object1::func6(Data1*)':
+test38.cpp:530:23: warning: unused variable 'start' [-Wunused-variable]
+         unsigned long start = 0;
+                       ^

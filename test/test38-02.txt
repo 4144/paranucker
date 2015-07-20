@@ -6,3 +6,4 @@ func2:
 func3: 
 func4: 
 func5: 
+func6: pointer_type ptr1, 
