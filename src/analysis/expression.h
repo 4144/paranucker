@@ -96,6 +96,7 @@ namespace Analysis
     std::string getComponentRefVariable(Node *node);
 
     bool handleSetVarToFunction(const std::string &var,
+                                Node *node1,
                                 Node *node2,
                                 WalkItem &wo);
 }

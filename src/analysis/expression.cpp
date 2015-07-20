@@ -175,15 +175,7 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
                 wo.stopWalking = true;
 
                 bool handled(false);
-                if (arg1 == CALL_EXPR && isPointerArg(arg))
-                {
-                    handled = handleSetVarToFunction(var1, arg1, wo);
-                }
-                else if (arg1 == INTEGER_CST && arg1->label == "0")
-                {
-                    addNullVar(wo, var1);
-                    handled = true;
-                }
+                handled = handleSetVarToFunction(var1, arg, arg1, wo);
                 // have var1 only (var1 = UNKNOWN)
                 if (!handled)
                     removeVar(wo, var1);
@@ -753,32 +745,54 @@ void handleSetVarDecl(Node *node,
     }
 }
 
+bool handleSetVarToFunctionBack(const std::string &var,
+                                Node *node2,
+                                WalkItem &wo)
+{
+    if (node2 == INTEGER_CST && node2->label == "0")
+    {
+        addNullVar(wo, var);
+        return true;
+    }
+    return false;
+}
+
 bool handleSetVarToFunction(const std::string &var,
+                            Node *node1,
                             Node *node2,
                             WalkItem &wo)
 {
+    node1 = skipNop(node1);
+    node2 = skipNop(node2);
+    if (!isPointerArg(node1))
+        return handleSetVarToFunctionBack(var, node2, wo);
+
+    if (node2 != CALL_EXPR)
+        return handleSetVarToFunctionBack(var, node2, wo);
+
     CallExprNode *call = static_cast<CallExprNode*>(node2);
-    if (call->function != ADDR_EXPR)
-        return false;
-    AddrExprNode *addr = static_cast<AddrExprNode*>(call->function);
+    if (!call || skipNop(call->function) != ADDR_EXPR)
+        return handleSetVarToFunctionBack(var, node2, wo);
+    AddrExprNode *addr = static_cast<AddrExprNode*>(skipNop(call->function));
     if (!addr ||
         addr->args.empty() ||
-        addr->args[0] != FUNCTION_DECL)
+        skipNop(addr->args[0]) != FUNCTION_DECL)
     {
         return false;
     }
-    FunctionDeclNode *func = static_cast<FunctionDeclNode*>(addr->args[0]);
+    FunctionDeclNode *func = static_cast<FunctionDeclNode*>(skipNop(addr->args[0]));
     removeVar(wo, var);
     if (!func->functionType)
         return false;
 
     Node *returnType;
-    if (func->functionType == FUNCTION_TYPE)
-        returnType = static_cast<FunctionTypeNode*>(func->functionType)->returnType;
-    else if (func->functionType == METHOD_TYPE)
-        returnType = static_cast<MethodTypeNode*>(func->functionType)->returnType;
+    if (skipNop(func->functionType) == FUNCTION_TYPE)
+        returnType = static_cast<FunctionTypeNode*>(skipNop(func->functionType))->returnType;
+    else if (skipNop(func->functionType) == METHOD_TYPE)
+        returnType = static_cast<MethodTypeNode*>(skipNop(func->functionType))->returnType;
     else
         return false;
+    returnType = skipNop(returnType);
     if (returnType != POINTER_TYPE)
         return false;
 
@@ -809,10 +823,7 @@ void handleSetVar(Node *node1,
     if (var2.empty())
     {
         node2 = skipNop(node2);
-        if (node2 == CALL_EXPR && isPointerArg(node1))
-            handleSetVarToFunction(var1, node2, wo);
-        else if (node2 == INTEGER_CST && node2->label == "0")
-            addNullVar(wo, var1);
+        handleSetVarToFunction(var1, node1, node2, wo);
         return;
     }
     else
