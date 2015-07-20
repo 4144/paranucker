@@ -741,8 +741,11 @@ void handleSetVarDecl(Node *node,
     if (node == VAR_DECL)
     {
         VarDeclNode *varDecl = static_cast<VarDeclNode*>(node);
-        Node *initial = skipNop(varDecl->initial);
-        handleSetVar(varDecl, initial, wi, wo);
+        if (skipNop(varDecl->varType) == POINTER_TYPE)
+        {
+            Node *initial = skipNop(varDecl->initial);
+            handleSetVar(varDecl, initial, wi, wo);
+        }
     }
 }
 
