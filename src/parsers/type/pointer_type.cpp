@@ -42,7 +42,7 @@ void parsePointerTypeNode(PointerTypeNode *node)
         node,
         TREE_TYPE(node->gccNode),
         "nested type",
-        5));
+        3));
 }
 
 }
