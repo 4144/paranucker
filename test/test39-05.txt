@@ -13,3 +13,7 @@ test39.cpp: In member function 'void Object1::func3(Data1*) const':
 test39.cpp:119:15: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->ptrval = 0;
                ^
+test39.cpp: In member function 'void Object1::func4() const':
+test39.cpp:152:16: warning: unused variable 'ptr1' [-Wunused-variable]
+         Data1 *ptr1 = &data2;
+                ^

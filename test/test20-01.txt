@@ -94,6 +94,10 @@ function_decl func1 test20.c 8:5
        integer_type - field type
        - precisionBits: 32
        - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     integer_cst 64 - parm size
    pointer_type - var type
     record_type - nested type
@@ -209,6 +213,10 @@ function_decl func2 test20.c 13:5
        integer_type - field type
        - precisionBits: 32
        - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     integer_cst 64 - parm size
    pointer_type - var type
     record_type - nested type
@@ -343,6 +351,10 @@ function_decl func3 test20.c 19:5
        integer_type - field type
        - precisionBits: 32
        - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     integer_cst 64 - parm size
    pointer_type - var type
     record_type - nested type
@@ -483,6 +495,10 @@ function_decl func4 test20.c 26:5
        integer_type - field type
        - precisionBits: 32
        - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     integer_cst 64 - parm size
    pointer_type - var type
     record_type - nested type
@@ -690,6 +706,10 @@ function_decl func5 test20.c 35:5
        integer_type - field type
        - precisionBits: 32
        - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     integer_cst 64 - parm size
    pointer_type - var type
     record_type - nested type
@@ -869,6 +889,10 @@ function_decl func6 test20.c 45:5
        integer_type - field type
        - precisionBits: 32
        - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     integer_cst 64 - parm size
    pointer_type - var type
     record_type - nested type
@@ -1109,6 +1133,10 @@ function_decl func7 test20.c 55:5
          integer_type - field type
          - precisionBits: 32
          - signed
+          type_decl int - type name
+          integer_cst 32 - type size
+          integer_cst -2147483648 - min value
+          integer_cst 2147483647 - max value
       integer_cst 64 - parm size
      pointer_type - var type
       record_type - nested type
@@ -1332,6 +1360,10 @@ function_decl func8 test20.c 70:5
          integer_type - field type
          - precisionBits: 32
          - signed
+          type_decl int - type name
+          integer_cst 32 - type size
+          integer_cst -2147483648 - min value
+          integer_cst 2147483647 - max value
       integer_cst 64 - parm size
      pointer_type - var type
       record_type - nested type

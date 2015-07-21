@@ -538,6 +538,10 @@ function_decl func7 test13.c 37:6
       integer_type - nested type
       - precisionBits: 32
       - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
      integer_cst 64 - parm size
     integer_cst 48 - operand
    pointer_type - var type
@@ -638,6 +642,10 @@ function_decl func8 test13.c 43:6
       integer_type - nested type
       - precisionBits: 32
       - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
      integer_cst 64 - parm size
    pointer_type - var type
     pointer_type - nested type

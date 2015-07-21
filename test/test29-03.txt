@@ -16,29 +16,11 @@ field_decl ptrval:
 integer_cst 64: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-field_decl ptrval: 
-integer_cst 64: 
-pointer_type : 
-field_decl arr: 
-integer_cst 96: 
-array_type : 
-type_decl Data1: 
 field_decl arr: 
 integer_cst 96: 
 array_type : 
 integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 integer_type : 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst 2: 
 type_decl Data1: 
 integer_cst 64: 
 component_ref : 
@@ -51,32 +33,10 @@ field_decl tmp1:
 integer_cst 64: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-field_decl ptrval: 
-integer_cst 64: 
-pointer_type : 
-field_decl arr: 
-integer_cst 96: 
-array_type : 
-type_decl Data1: 
 field_decl tmp2: 
 integer_cst 64: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-field_decl ptrval: 
-integer_cst 64: 
-pointer_type : 
-field_decl arr: 
-integer_cst 96: 
-array_type : 
-type_decl Data1: 
 type_decl Object1: 
 integer_cst 64: 
 field_decl tmp1: 
@@ -95,29 +55,11 @@ field_decl ptrval:
 integer_cst 64: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-field_decl ptrval: 
-integer_cst 64: 
-pointer_type : 
-field_decl arr: 
-integer_cst 96: 
-array_type : 
-type_decl Data1: 
 field_decl arr: 
 integer_cst 96: 
 array_type : 
 integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 integer_type : 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst 2: 
 type_decl Data1: 
 function_decl getData2: 
 return_expr : 
@@ -130,9 +72,6 @@ field_decl _vptr.Data2:
 integer_cst 64: 
 pointer_type : 
 pointer_type : 
-type_decl __vtbl_ptr_type: 
-function_type : 
-integer_type : 
 field_decl : 
 integer_cst 256: 
 record_type : 
@@ -140,19 +79,12 @@ type_decl Data1:
 field_decl val: 
 integer_cst 32: 
 integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 field_decl ptrval: 
 integer_cst 64: 
 pointer_type : 
-record_type : 
 field_decl arr: 
 integer_cst 96: 
 array_type : 
-integer_type : 
-integer_type : 
 type_decl Data1: 
 type_decl Data2: 
 integer_cst 64: 
@@ -196,29 +128,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
@@ -283,29 +197,11 @@ field_decl ptrval:
 integer_cst 64: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-field_decl ptrval: 
-integer_cst 64: 
-pointer_type : 
-field_decl arr: 
-integer_cst 96: 
-array_type : 
-type_decl Data1: 
 field_decl arr: 
 integer_cst 96: 
 array_type : 
 integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 integer_type : 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst 2: 
 type_decl Data1: 
 integer_cst 64: 
 parm_decl ptr2: 
@@ -323,29 +219,11 @@ field_decl ptrval:
 integer_cst 64: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-field_decl ptrval: 
-integer_cst 64: 
-pointer_type : 
-field_decl arr: 
-integer_cst 96: 
-array_type : 
-type_decl Data1: 
 field_decl arr: 
 integer_cst 96: 
 array_type : 
 integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 integer_type : 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst 2: 
 type_decl Data1: 
 integer_cst 64: 
 cleanup_point_expr : ptr1, ptr2, 
@@ -407,29 +285,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
@@ -473,29 +333,11 @@ field_decl ptrval:
 integer_cst 64: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-field_decl ptrval: 
-integer_cst 64: 
-pointer_type : 
-field_decl arr: 
-integer_cst 96: 
-array_type : 
-type_decl Data1: 
 field_decl arr: 
 integer_cst 96: 
 array_type : 
 integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 integer_type : 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst 2: 
 type_decl Data1: 
 integer_cst 64: 
 parm_decl ptr2: 
@@ -513,29 +355,11 @@ field_decl ptrval:
 integer_cst 64: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-field_decl ptrval: 
-integer_cst 64: 
-pointer_type : 
-field_decl arr: 
-integer_cst 96: 
-array_type : 
-type_decl Data1: 
 field_decl arr: 
 integer_cst 96: 
 array_type : 
 integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 integer_type : 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst 2: 
 type_decl Data1: 
 integer_cst 64: 
 cleanup_point_expr : ptr1, ptr2, 
@@ -600,29 +424,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
@@ -643,29 +449,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
@@ -709,29 +497,11 @@ field_decl ptrval:
 integer_cst 64: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-field_decl ptrval: 
-integer_cst 64: 
-pointer_type : 
-field_decl arr: 
-integer_cst 96: 
-array_type : 
-type_decl Data1: 
 field_decl arr: 
 integer_cst 96: 
 array_type : 
 integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 integer_type : 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst 2: 
 type_decl Data1: 
 integer_cst 64: 
 cleanup_point_expr : ptr1, ptr2, 
@@ -771,29 +541,11 @@ field_decl ptrval:
 integer_cst 64: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-field_decl ptrval: 
-integer_cst 64: 
-pointer_type : 
-field_decl arr: 
-integer_cst 96: 
-array_type : 
-type_decl Data1: 
 field_decl arr: 
 integer_cst 96: 
 array_type : 
 integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 integer_type : 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst 2: 
 type_decl Data1: 
 integer_cst 64: 
 var_decl ptr1: 
@@ -813,29 +565,11 @@ field_decl ptrval:
 integer_cst 64: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-field_decl ptrval: 
-integer_cst 64: 
-pointer_type : 
-field_decl arr: 
-integer_cst 96: 
-array_type : 
-type_decl Data1: 
 field_decl arr: 
 integer_cst 96: 
 array_type : 
 integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 integer_type : 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst 2: 
 type_decl Data1: 
 block : ptr2, 
 var_decl ptr1: 
@@ -878,29 +612,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
@@ -965,29 +681,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 parm_decl ptr2: ptr1, ptr2, 
@@ -1005,29 +703,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 cleanup_point_expr : ptr1, ptr2, 
@@ -1089,29 +769,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
@@ -1155,29 +817,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 parm_decl ptr2: ptr1, ptr2, 
@@ -1195,29 +839,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 cleanup_point_expr : ptr1, ptr2, 
@@ -1282,29 +908,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
@@ -1325,29 +933,11 @@ field_decl ptrval: ptr1,
 integer_cst 64: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
-type_decl Data1: ptr1, 
-field_decl val: ptr1, 
-integer_cst 32: ptr1, 
-integer_type : ptr1, 
-field_decl ptrval: ptr1, 
-integer_cst 64: ptr1, 
-pointer_type : ptr1, 
-field_decl arr: ptr1, 
-integer_cst 96: ptr1, 
-array_type : ptr1, 
-type_decl Data1: ptr1, 
 field_decl arr: ptr1, 
 integer_cst 96: ptr1, 
 array_type : ptr1, 
 integer_type : ptr1, 
-type_decl int: ptr1, 
-integer_cst 32: ptr1, 
-integer_cst -2147483648: ptr1, 
-integer_cst 2147483647: ptr1, 
 integer_type : ptr1, 
-integer_cst 64: ptr1, 
-integer_cst 0: ptr1, 
-integer_cst 2: ptr1, 
 type_decl Data1: ptr1, 
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
@@ -1391,29 +981,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 cleanup_point_expr : ptr1, ptr2, 
@@ -1453,29 +1025,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 var_decl ptr1: ptr1, ptr2, 
@@ -1495,29 +1049,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 block : ptr1, ptr2, 
 var_decl ptr1: ptr1, ptr2, 
@@ -1561,29 +1097,11 @@ field_decl ptrval: ptr2,
 integer_cst 64: ptr2, 
 pointer_type : ptr2, 
 record_type : ptr2, 
-type_decl Data1: ptr2, 
-field_decl val: ptr2, 
-integer_cst 32: ptr2, 
-integer_type : ptr2, 
-field_decl ptrval: ptr2, 
-integer_cst 64: ptr2, 
-pointer_type : ptr2, 
-field_decl arr: ptr2, 
-integer_cst 96: ptr2, 
-array_type : ptr2, 
-type_decl Data1: ptr2, 
 field_decl arr: ptr2, 
 integer_cst 96: ptr2, 
 array_type : ptr2, 
 integer_type : ptr2, 
-type_decl int: ptr2, 
-integer_cst 32: ptr2, 
-integer_cst -2147483648: ptr2, 
-integer_cst 2147483647: ptr2, 
 integer_type : ptr2, 
-integer_cst 64: ptr2, 
-integer_cst 0: ptr2, 
-integer_cst 2: ptr2, 
 type_decl Data1: ptr2, 
 integer_cst 64: ptr2, 
 integer_cst 0: ptr2, 
@@ -1699,29 +1217,11 @@ field_decl ptrval: ptr2,
 integer_cst 64: ptr2, 
 pointer_type : ptr2, 
 record_type : ptr2, 
-type_decl Data1: ptr2, 
-field_decl val: ptr2, 
-integer_cst 32: ptr2, 
-integer_type : ptr2, 
-field_decl ptrval: ptr2, 
-integer_cst 64: ptr2, 
-pointer_type : ptr2, 
-field_decl arr: ptr2, 
-integer_cst 96: ptr2, 
-array_type : ptr2, 
-type_decl Data1: ptr2, 
 field_decl arr: ptr2, 
 integer_cst 96: ptr2, 
 array_type : ptr2, 
 integer_type : ptr2, 
-type_decl int: ptr2, 
-integer_cst 32: ptr2, 
-integer_cst -2147483648: ptr2, 
-integer_cst 2147483647: ptr2, 
 integer_type : ptr2, 
-integer_cst 64: ptr2, 
-integer_cst 0: ptr2, 
-integer_cst 2: ptr2, 
 type_decl Data1: ptr2, 
 integer_cst 64: ptr2, 
 integer_cst 0: ptr2, 
@@ -1816,29 +1316,11 @@ field_decl ptrval: ptr2,
 integer_cst 64: ptr2, 
 pointer_type : ptr2, 
 record_type : ptr2, 
-type_decl Data1: ptr2, 
-field_decl val: ptr2, 
-integer_cst 32: ptr2, 
-integer_type : ptr2, 
-field_decl ptrval: ptr2, 
-integer_cst 64: ptr2, 
-pointer_type : ptr2, 
-field_decl arr: ptr2, 
-integer_cst 96: ptr2, 
-array_type : ptr2, 
-type_decl Data1: ptr2, 
 field_decl arr: ptr2, 
 integer_cst 96: ptr2, 
 array_type : ptr2, 
 integer_type : ptr2, 
-type_decl int: ptr2, 
-integer_cst 32: ptr2, 
-integer_cst -2147483648: ptr2, 
-integer_cst 2147483647: ptr2, 
 integer_type : ptr2, 
-integer_cst 64: ptr2, 
-integer_cst 0: ptr2, 
-integer_cst 2: ptr2, 
 type_decl Data1: ptr2, 
 integer_cst 64: ptr2, 
 integer_cst 0: ptr2, 
@@ -1954,29 +1436,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
@@ -1996,29 +1460,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
@@ -2535,29 +1981,11 @@ field_decl ptrval: ptr2,
 integer_cst 64: ptr2, 
 pointer_type : ptr2, 
 record_type : ptr2, 
-type_decl Data1: ptr2, 
-field_decl val: ptr2, 
-integer_cst 32: ptr2, 
-integer_type : ptr2, 
-field_decl ptrval: ptr2, 
-integer_cst 64: ptr2, 
-pointer_type : ptr2, 
-field_decl arr: ptr2, 
-integer_cst 96: ptr2, 
-array_type : ptr2, 
-type_decl Data1: ptr2, 
 field_decl arr: ptr2, 
 integer_cst 96: ptr2, 
 array_type : ptr2, 
 integer_type : ptr2, 
-type_decl int: ptr2, 
-integer_cst 32: ptr2, 
-integer_cst -2147483648: ptr2, 
-integer_cst 2147483647: ptr2, 
 integer_type : ptr2, 
-integer_cst 64: ptr2, 
-integer_cst 0: ptr2, 
-integer_cst 2: ptr2, 
 type_decl Data1: ptr2, 
 integer_cst 64: ptr2, 
 integer_cst 0: ptr2, 
@@ -2673,29 +2101,11 @@ field_decl ptrval: ptr2,
 integer_cst 64: ptr2, 
 pointer_type : ptr2, 
 record_type : ptr2, 
-type_decl Data1: ptr2, 
-field_decl val: ptr2, 
-integer_cst 32: ptr2, 
-integer_type : ptr2, 
-field_decl ptrval: ptr2, 
-integer_cst 64: ptr2, 
-pointer_type : ptr2, 
-field_decl arr: ptr2, 
-integer_cst 96: ptr2, 
-array_type : ptr2, 
-type_decl Data1: ptr2, 
 field_decl arr: ptr2, 
 integer_cst 96: ptr2, 
 array_type : ptr2, 
 integer_type : ptr2, 
-type_decl int: ptr2, 
-integer_cst 32: ptr2, 
-integer_cst -2147483648: ptr2, 
-integer_cst 2147483647: ptr2, 
 integer_type : ptr2, 
-integer_cst 64: ptr2, 
-integer_cst 0: ptr2, 
-integer_cst 2: ptr2, 
 type_decl Data1: ptr2, 
 integer_cst 64: ptr2, 
 integer_cst 0: ptr2, 
@@ -2822,6 +2232,9 @@ integer_cst 64: ptr1, ptr2,
 cond_expr : ptr1, ptr2, 
 ne_expr : ptr1, ptr2, 
 parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 addr_expr : ptr1, 
 component_ref : ptr1, 
@@ -2830,6 +2243,17 @@ parm_decl ptr2: ptr1,
 field_decl : ptr1, 
 integer_cst 256: ptr1, 
 record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+type_decl Data1: ptr1, 
 integer_cst 0: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
@@ -2845,29 +2269,11 @@ field_decl ptrval: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-field_decl ptrval: ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-pointer_type : ptr1, ptr2, 
-field_decl arr: ptr1, ptr2, 
-integer_cst 96: ptr1, ptr2, 
-array_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 field_decl arr: ptr1, ptr2, 
 integer_cst 96: ptr1, ptr2, 
 array_type : ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
-integer_cst 64: ptr1, ptr2, 
-integer_cst 0: ptr1, ptr2, 
-integer_cst 2: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 block : ptr1, ptr2, 
 var_decl ptr3: ptr1, ptr2, 
@@ -2895,32 +2301,10 @@ field_decl tmp1: ptr1,
 integer_cst 64: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
-type_decl Data1: ptr1, 
-field_decl val: ptr1, 
-integer_cst 32: ptr1, 
-integer_type : ptr1, 
-field_decl ptrval: ptr1, 
-integer_cst 64: ptr1, 
-pointer_type : ptr1, 
-field_decl arr: ptr1, 
-integer_cst 96: ptr1, 
-array_type : ptr1, 
-type_decl Data1: ptr1, 
 field_decl tmp2: ptr1, 
 integer_cst 64: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
-type_decl Data1: ptr1, 
-field_decl val: ptr1, 
-integer_cst 32: ptr1, 
-integer_type : ptr1, 
-field_decl ptrval: ptr1, 
-integer_cst 64: ptr1, 
-pointer_type : ptr1, 
-field_decl arr: ptr1, 
-integer_cst 96: ptr1, 
-array_type : ptr1, 
-type_decl Data1: ptr1, 
 type_decl Object1: ptr1, 
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
@@ -2939,32 +2323,10 @@ field_decl tmp1: ptr1,
 integer_cst 64: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
-type_decl Data1: ptr1, 
-field_decl val: ptr1, 
-integer_cst 32: ptr1, 
-integer_type : ptr1, 
-field_decl ptrval: ptr1, 
-integer_cst 64: ptr1, 
-pointer_type : ptr1, 
-field_decl arr: ptr1, 
-integer_cst 96: ptr1, 
-array_type : ptr1, 
-type_decl Data1: ptr1, 
 field_decl tmp2: ptr1, 
 integer_cst 64: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
-type_decl Data1: ptr1, 
-field_decl val: ptr1, 
-integer_cst 32: ptr1, 
-integer_type : ptr1, 
-field_decl ptrval: ptr1, 
-integer_cst 64: ptr1, 
-pointer_type : ptr1, 
-field_decl arr: ptr1, 
-integer_cst 96: ptr1, 
-array_type : ptr1, 
-type_decl Data1: ptr1, 
 type_decl Object1: ptr1, 
 integer_cst 64: ptr1, 
 field_decl : ptr1, 
@@ -3021,32 +2383,10 @@ field_decl tmp1: ptr1, this->tmp2,
 integer_cst 64: ptr1, this->tmp2, 
 pointer_type : ptr1, this->tmp2, 
 record_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
-field_decl val: ptr1, this->tmp2, 
-integer_cst 32: ptr1, this->tmp2, 
-integer_type : ptr1, this->tmp2, 
-field_decl ptrval: ptr1, this->tmp2, 
-integer_cst 64: ptr1, this->tmp2, 
-pointer_type : ptr1, this->tmp2, 
-field_decl arr: ptr1, this->tmp2, 
-integer_cst 96: ptr1, this->tmp2, 
-array_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
 field_decl tmp2: ptr1, this->tmp2, 
 integer_cst 64: ptr1, this->tmp2, 
 pointer_type : ptr1, this->tmp2, 
 record_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
-field_decl val: ptr1, this->tmp2, 
-integer_cst 32: ptr1, this->tmp2, 
-integer_type : ptr1, this->tmp2, 
-field_decl ptrval: ptr1, this->tmp2, 
-integer_cst 64: ptr1, this->tmp2, 
-pointer_type : ptr1, this->tmp2, 
-field_decl arr: ptr1, this->tmp2, 
-integer_cst 96: ptr1, this->tmp2, 
-array_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
 type_decl Object1: ptr1, this->tmp2, 
 integer_cst 64: ptr1, this->tmp2, 
 field_decl tmp2: ptr1, this->tmp2, 
@@ -3065,29 +2405,11 @@ field_decl ptrval: ptr1, this->tmp2,
 integer_cst 64: ptr1, this->tmp2, 
 pointer_type : ptr1, this->tmp2, 
 record_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
-field_decl val: ptr1, this->tmp2, 
-integer_cst 32: ptr1, this->tmp2, 
-integer_type : ptr1, this->tmp2, 
-field_decl ptrval: ptr1, this->tmp2, 
-integer_cst 64: ptr1, this->tmp2, 
-pointer_type : ptr1, this->tmp2, 
-field_decl arr: ptr1, this->tmp2, 
-integer_cst 96: ptr1, this->tmp2, 
-array_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
 field_decl arr: ptr1, this->tmp2, 
 integer_cst 96: ptr1, this->tmp2, 
 array_type : ptr1, this->tmp2, 
 integer_type : ptr1, this->tmp2, 
-type_decl int: ptr1, this->tmp2, 
-integer_cst 32: ptr1, this->tmp2, 
-integer_cst -2147483648: ptr1, this->tmp2, 
-integer_cst 2147483647: ptr1, this->tmp2, 
 integer_type : ptr1, this->tmp2, 
-integer_cst 64: ptr1, this->tmp2, 
-integer_cst 0: ptr1, this->tmp2, 
-integer_cst 2: ptr1, this->tmp2, 
 type_decl Data1: ptr1, this->tmp2, 
 var_decl ptr1: ptr1, this->tmp2, 
 bind_expr : ptr1, this->tmp2, 
@@ -3103,32 +2425,10 @@ field_decl tmp1: ptr1, this->tmp2,
 integer_cst 64: ptr1, this->tmp2, 
 pointer_type : ptr1, this->tmp2, 
 record_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
-field_decl val: ptr1, this->tmp2, 
-integer_cst 32: ptr1, this->tmp2, 
-integer_type : ptr1, this->tmp2, 
-field_decl ptrval: ptr1, this->tmp2, 
-integer_cst 64: ptr1, this->tmp2, 
-pointer_type : ptr1, this->tmp2, 
-field_decl arr: ptr1, this->tmp2, 
-integer_cst 96: ptr1, this->tmp2, 
-array_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
 field_decl tmp2: ptr1, this->tmp2, 
 integer_cst 64: ptr1, this->tmp2, 
 pointer_type : ptr1, this->tmp2, 
 record_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
-field_decl val: ptr1, this->tmp2, 
-integer_cst 32: ptr1, this->tmp2, 
-integer_type : ptr1, this->tmp2, 
-field_decl ptrval: ptr1, this->tmp2, 
-integer_cst 64: ptr1, this->tmp2, 
-pointer_type : ptr1, this->tmp2, 
-field_decl arr: ptr1, this->tmp2, 
-integer_cst 96: ptr1, this->tmp2, 
-array_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
 type_decl Object1: ptr1, this->tmp2, 
 integer_cst 64: ptr1, this->tmp2, 
 field_decl tmp2: ptr1, this->tmp2, 
@@ -3147,29 +2447,11 @@ field_decl ptrval: ptr1, this->tmp2,
 integer_cst 64: ptr1, this->tmp2, 
 pointer_type : ptr1, this->tmp2, 
 record_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
-field_decl val: ptr1, this->tmp2, 
-integer_cst 32: ptr1, this->tmp2, 
-integer_type : ptr1, this->tmp2, 
-field_decl ptrval: ptr1, this->tmp2, 
-integer_cst 64: ptr1, this->tmp2, 
-pointer_type : ptr1, this->tmp2, 
-field_decl arr: ptr1, this->tmp2, 
-integer_cst 96: ptr1, this->tmp2, 
-array_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
 field_decl arr: ptr1, this->tmp2, 
 integer_cst 96: ptr1, this->tmp2, 
 array_type : ptr1, this->tmp2, 
 integer_type : ptr1, this->tmp2, 
-type_decl int: ptr1, this->tmp2, 
-integer_cst 32: ptr1, this->tmp2, 
-integer_cst -2147483648: ptr1, this->tmp2, 
-integer_cst 2147483647: ptr1, this->tmp2, 
 integer_type : ptr1, this->tmp2, 
-integer_cst 64: ptr1, this->tmp2, 
-integer_cst 0: ptr1, this->tmp2, 
-integer_cst 2: ptr1, this->tmp2, 
 type_decl Data1: ptr1, this->tmp2, 
 integer_cst 0: ptr1, this->tmp2, 
 bind_expr : 
@@ -3255,29 +2537,11 @@ field_decl ptrval: ptr1, this->tmp2,
 integer_cst 64: ptr1, this->tmp2, 
 pointer_type : ptr1, this->tmp2, 
 record_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
-field_decl val: ptr1, this->tmp2, 
-integer_cst 32: ptr1, this->tmp2, 
-integer_type : ptr1, this->tmp2, 
-field_decl ptrval: ptr1, this->tmp2, 
-integer_cst 64: ptr1, this->tmp2, 
-pointer_type : ptr1, this->tmp2, 
-field_decl arr: ptr1, this->tmp2, 
-integer_cst 96: ptr1, this->tmp2, 
-array_type : ptr1, this->tmp2, 
-type_decl Data1: ptr1, this->tmp2, 
 field_decl arr: ptr1, this->tmp2, 
 integer_cst 96: ptr1, this->tmp2, 
 array_type : ptr1, this->tmp2, 
 integer_type : ptr1, this->tmp2, 
-type_decl int: ptr1, this->tmp2, 
-integer_cst 32: ptr1, this->tmp2, 
-integer_cst -2147483648: ptr1, this->tmp2, 
-integer_cst 2147483647: ptr1, this->tmp2, 
 integer_type : ptr1, this->tmp2, 
-integer_cst 64: ptr1, this->tmp2, 
-integer_cst 0: ptr1, this->tmp2, 
-integer_cst 2: ptr1, this->tmp2, 
 type_decl Data1: ptr1, this->tmp2, 
 block : ptr1, this->tmp2, 
 var_decl ptr1: ptr1, this->tmp2, 
