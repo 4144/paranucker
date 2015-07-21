@@ -1,7 +1,9 @@
 getfData1: 
 getfData2: 
 Object1: 
+getfData2: 
 __base_ctor : 
+getfData2: 
 __comp_ctor : 
 getData1: 
 getData2: 
@@ -12,4 +14,6 @@ func3: pointer_type ptr1,
 func4: pointer_type ptr1, 
 func5: pointer_type ptr1, 
 func6: pointer_type ptr1, 
+getfData1: 
 func7: pointer_type ptr1, 
+getfData1: 

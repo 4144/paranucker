@@ -45,8 +45,12 @@ __base_ctor :
 __comp_ctor : 
 bad_exception: 
 __base_ctor : 
+__base_ctor : 
+__base_ctor : 
 __comp_ctor : 
 bad_alloc: 
+__base_ctor : 
+__base_ctor : 
 __base_ctor : 
 __comp_ctor : 
 operator new: pointer_type __p, 
@@ -73,33 +77,52 @@ __gthread_equal:
 __gthread_self: 
 __gthread_yield: 
 __gthread_once: pointer_type __once, pointer_type __func, 
+__gthread_active_p: 
 __gthread_key_create: pointer_type __key, pointer_type __dtor, 
 __gthread_key_delete: 
 __gthread_getspecific: 
 __gthread_setspecific: pointer_type __ptr, 
 __gthread_mutex_init_function: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_mutex_destroy: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_mutex_lock: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_mutex_trylock: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_mutex_timedlock: pointer_type __mutex, pointer_type __abs_timeout, 
+__gthread_active_p: 
 __gthread_mutex_unlock: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_recursive_mutex_lock: pointer_type __mutex, 
+__gthread_mutex_lock: pointer_type __mutex, 
 __gthread_recursive_mutex_trylock: pointer_type __mutex, 
+__gthread_mutex_trylock: pointer_type __mutex, 
 __gthread_recursive_mutex_timedlock: pointer_type __mutex, pointer_type __abs_timeout, 
+__gthread_mutex_timedlock: pointer_type __mutex, pointer_type __abs_timeout, 
 __gthread_recursive_mutex_unlock: pointer_type __mutex, 
+__gthread_mutex_unlock: pointer_type __mutex, 
 __gthread_recursive_mutex_destroy: pointer_type __mutex, 
+__gthread_mutex_destroy: pointer_type __mutex, 
 __gthread_cond_broadcast: pointer_type __cond, 
 __gthread_cond_signal: pointer_type __cond, 
 __gthread_cond_wait: pointer_type __cond, pointer_type __mutex, 
 __gthread_cond_timedwait: pointer_type __cond, pointer_type __mutex, pointer_type __abs_timeout, 
 __gthread_cond_wait_recursive: pointer_type __cond, pointer_type __mutex, 
+__gthread_cond_wait: pointer_type __cond, pointer_type __mutex, 
 __gthread_cond_destroy: pointer_type __cond, 
 __exchange_and_add: pointer_type __mem, 
 __atomic_add: pointer_type __mem, 
 __exchange_and_add_single: pointer_type __mem, 
 __atomic_add_single: pointer_type __mem, 
 __exchange_and_add_dispatch: pointer_type __mem, 
+__gthread_active_p: 
+__exchange_and_add: pointer_type __mem, 
+__exchange_and_add_single: pointer_type __mem, 
 __atomic_add_dispatch: pointer_type __mem, 
+__gthread_active_p: 
+__atomic_add: pointer_type __mem, 
+__atomic_add_single: pointer_type __mem, 
 _Bit_reference: pointer_type __x, 
 __base_ctor : pointer_type __x, 
 __comp_ctor : pointer_type __x, 
@@ -116,7 +139,9 @@ iterator:
 __base_ctor : 
 __comp_ctor : 
 _Bit_iterator_base: pointer_type __x, 
+__base_ctor : 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __comp_ctor : pointer_type __x, 
 _M_bump_up: 
 _M_bump_down: 
@@ -129,13 +154,18 @@ operator<=:
 operator>=: 
 operator-: 
 _Bit_iterator: 
+__base_ctor : pointer_type __x, 
 __base_ctor : 
+__base_ctor : pointer_type __x, 
 __comp_ctor : 
 _Bit_iterator: pointer_type __x, 
+__base_ctor : pointer_type __x, 
+__base_ctor : pointer_type __x, 
 __base_ctor : pointer_type __x, 
 __comp_ctor : pointer_type __x, 
 _M_const_cast: 
 operator*: 
+__comp_ctor : pointer_type __x, 
 operator++: 
 operator++: 
 operator--: 
@@ -147,16 +177,24 @@ operator-:
 operator[]: 
 operator+: 
 _Bit_const_iterator: 
+__base_ctor : pointer_type __x, 
 __base_ctor : 
+__base_ctor : pointer_type __x, 
 __comp_ctor : 
 _Bit_const_iterator: pointer_type __x, 
 __base_ctor : pointer_type __x, 
+__base_ctor : pointer_type __x, 
+__base_ctor : pointer_type __x, 
 __comp_ctor : pointer_type __x, 
 _Bit_const_iterator: 
+__base_ctor : pointer_type __x, 
 __base_ctor : 
+__base_ctor : pointer_type __x, 
 __comp_ctor : 
 _M_const_cast: 
+__comp_ctor : pointer_type __x, 
 operator*: 
+__comp_ctor : pointer_type __x, 
 operator++: 
 operator++: 
 operator--: 
@@ -169,6 +207,8 @@ operator[]:
 operator+: 
 __fill_bvector: 
 fill: 
+__comp_ctor : pointer_type __x, 
+__comp_ctor : pointer_type __x, 
 Data1: 
 __base_ctor : 
 __comp_ctor : 
@@ -185,6 +225,8 @@ Data1:
 __base_dtor : 
 __comp_dtor : 
 func5: pointer_type ptr1, 
+__comp_ctor : pointer_type ptr0, 
+__comp_dtor : 
 func6: pointer_type ptr1, 
 func7: pointer_type ptr1, 
 func8: pointer_type ptr1, 
@@ -209,15 +251,27 @@ _Vector_impl:
 __base_dtor : 
 __comp_dtor : 
 _Vector_base: 
+__comp_dtor : 
 __base_ctor : 
+__comp_dtor : 
 __comp_ctor : 
 _Vector_base: 
+__comp_dtor : 
 __base_dtor : 
+__comp_dtor : 
 __comp_dtor : 
 _M_get_Tp_allocator: 
 _Destroy: pointer_type __first, pointer_type __last, 
 construct: pointer_type __p, 
 _M_insert_aux: 
+construct: pointer_type __p, 
+construct: pointer_type __p, 
+_M_get_Tp_allocator: 
+_M_get_Tp_allocator: 
+_Destroy: pointer_type __first, pointer_type __last, 
+_M_get_Tp_allocator: 
+_Destroy: pointer_type __first, pointer_type __last, 
+_M_get_Tp_allocator: 
 end: 
 _S_base: pointer_type __it, 
 new_allocator: 
@@ -241,6 +295,8 @@ operator*:
 _M_check_len: pointer_type __s, 
 begin: 
 operator-: 
+base: 
+base: 
 _M_allocate: 
 __uninitialized_move_if_noexcept_a: pointer_type __first, pointer_type __last, pointer_type __result, 
 destroy: pointer_type __p, 
@@ -272,6 +328,7 @@ __comp_ctor :
 deallocate: pointer_type __p, 
 _S_base: pointer_type __it, 
 __niter_base: pointer_type __it, 
+_S_base: pointer_type __it, 
 __copy_move_backward_a: pointer_type __first, pointer_type __last, pointer_type __result, 
 max_size: 
 _M_get_Tp_allocator: 
@@ -281,6 +338,11 @@ __copy_move_b: pointer_type __first, pointer_type __last, pointer_type __result,
 max_size: 
 __uninit_copy: pointer_type __first, pointer_type __last, pointer_type __result, 
 copy: pointer_type __first, pointer_type __last, pointer_type __result, 
+__miter_base: pointer_type __it, 
+__miter_base: pointer_type __it, 
 __copy_move_a2: pointer_type __first, pointer_type __last, pointer_type __result, 
+__niter_base: pointer_type __it, 
+__niter_base: pointer_type __it, 
+__niter_base: pointer_type __it, 
 __copy_move_a: pointer_type __first, pointer_type __last, pointer_type __result, 
 __copy_m: pointer_type __first, pointer_type __last, pointer_type __result, 

@@ -10,6 +10,13 @@ function_decl func1 test16.c 8:6
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
    tree_list - chain
     pointer_type - value
      record_type - nested type
@@ -17,6 +24,13 @@ function_decl func1 test16.c 8:6
       field_decl val test16.c 3:9 - field
       - signed
        integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     tree_list - chain
      void_type - value
       type_decl void - type name
@@ -32,6 +46,13 @@ function_decl func1 test16.c 8:6
     field_decl val test16.c 3:9 - field
     - signed
      integer_cst 32 - decl size
+     integer_type - field type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  parm_decl ptr2 test16.c 8:46 - argument
   pointer_type - decl type
@@ -40,6 +61,13 @@ function_decl func1 test16.c 8:6
     field_decl val test16.c 3:9 - field
     - signed
      integer_cst 32 - decl size
+     integer_type - field type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  bind_expr test16.c 9:1 - code
   statement_list - operand
@@ -54,6 +82,13 @@ function_decl func1 test16.c 8:6
          field_decl val test16.c 3:9 - field
          - signed
           integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+           type_decl int - type name
+           integer_cst 32 - type size
+           integer_cst -2147483648 - min value
+           integer_cst 2147483647 - max value
        integer_cst 64 - parm size
       integer_cst 0 - operand
      eq_expr test16.c 10:28 - operand
@@ -67,10 +102,24 @@ function_decl func1 test16.c 8:6
            field_decl val test16.c 3:9 - field
            - signed
             integer_cst 32 - decl size
+            integer_type - field type
+            - precisionBits: 32
+            - signed
+             type_decl int - type name
+             integer_cst 32 - type size
+             integer_cst -2147483648 - min value
+             integer_cst 2147483647 - max value
          integer_cst 64 - parm size
        field_decl val test16.c 3:9 - field
        - signed
         integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+         type_decl int - type name
+         integer_cst 32 - type size
+         integer_cst -2147483648 - min value
+         integer_cst 2147483647 - max value
       integer_cst 100 - operand
     return_expr test16.c 12:9 - operand
    modify_expr test16.c 15:15 - statement
@@ -84,10 +133,24 @@ function_decl func1 test16.c 8:6
          field_decl val test16.c 3:9 - field
          - signed
           integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+           type_decl int - type name
+           integer_cst 32 - type size
+           integer_cst -2147483648 - min value
+           integer_cst 2147483647 - max value
        integer_cst 64 - parm size
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
     integer_cst 200 - operand
   block - operand
 function_decl func2 test16.c 18:6
@@ -102,6 +165,13 @@ function_decl func2 test16.c 18:6
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
    tree_list - chain
     pointer_type - value
      record_type - nested type
@@ -109,6 +179,13 @@ function_decl func2 test16.c 18:6
       field_decl val test16.c 3:9 - field
       - signed
        integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     tree_list - chain
      void_type - value
       type_decl void - type name
@@ -124,6 +201,13 @@ function_decl func2 test16.c 18:6
     field_decl val test16.c 3:9 - field
     - signed
      integer_cst 32 - decl size
+     integer_type - field type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  parm_decl ptr2 test16.c 18:46 - argument
   pointer_type - decl type
@@ -132,6 +216,13 @@ function_decl func2 test16.c 18:6
     field_decl val test16.c 3:9 - field
     - signed
      integer_cst 32 - decl size
+     integer_type - field type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  bind_expr test16.c 19:1 - code
   statement_list - operand
@@ -146,6 +237,13 @@ function_decl func2 test16.c 18:6
          field_decl val test16.c 3:9 - field
          - signed
           integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+           type_decl int - type name
+           integer_cst 32 - type size
+           integer_cst -2147483648 - min value
+           integer_cst 2147483647 - max value
        integer_cst 64 - parm size
       integer_cst 0 - operand
      eq_expr test16.c 20:27 - operand
@@ -159,10 +257,24 @@ function_decl func2 test16.c 18:6
            field_decl val test16.c 3:9 - field
            - signed
             integer_cst 32 - decl size
+            integer_type - field type
+            - precisionBits: 32
+            - signed
+             type_decl int - type name
+             integer_cst 32 - type size
+             integer_cst -2147483648 - min value
+             integer_cst 2147483647 - max value
          integer_cst 64 - parm size
        field_decl val test16.c 3:9 - field
        - signed
         integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+         type_decl int - type name
+         integer_cst 32 - type size
+         integer_cst -2147483648 - min value
+         integer_cst 2147483647 - max value
       integer_cst 100 - operand
     statement_list - operand
      modify_expr test16.c 22:19 - statement
@@ -176,10 +288,24 @@ function_decl func2 test16.c 18:6
            field_decl val test16.c 3:9 - field
            - signed
             integer_cst 32 - decl size
+            integer_type - field type
+            - precisionBits: 32
+            - signed
+             type_decl int - type name
+             integer_cst 32 - type size
+             integer_cst -2147483648 - min value
+             integer_cst 2147483647 - max value
          integer_cst 64 - parm size
        field_decl val test16.c 3:9 - field
        - signed
         integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+         type_decl int - type name
+         integer_cst 32 - type size
+         integer_cst -2147483648 - min value
+         integer_cst 2147483647 - max value
       integer_cst 200 - operand
      return_expr test16.c 23:9 - statement
    modify_expr test16.c 26:15 - statement
@@ -193,10 +319,24 @@ function_decl func2 test16.c 18:6
          field_decl val test16.c 3:9 - field
          - signed
           integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+           type_decl int - type name
+           integer_cst 32 - type size
+           integer_cst -2147483648 - min value
+           integer_cst 2147483647 - max value
        integer_cst 64 - parm size
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
     integer_cst 300 - operand
   block - operand
 function_decl func3 test16.c 29:6
@@ -211,6 +351,13 @@ function_decl func3 test16.c 29:6
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
    tree_list - chain
     pointer_type - value
      record_type - nested type
@@ -218,6 +365,13 @@ function_decl func3 test16.c 29:6
       field_decl val test16.c 3:9 - field
       - signed
        integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     tree_list - chain
      void_type - value
       type_decl void - type name
@@ -233,6 +387,13 @@ function_decl func3 test16.c 29:6
     field_decl val test16.c 3:9 - field
     - signed
      integer_cst 32 - decl size
+     integer_type - field type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  parm_decl ptr2 test16.c 29:46 - argument
   pointer_type - decl type
@@ -241,6 +402,13 @@ function_decl func3 test16.c 29:6
     field_decl val test16.c 3:9 - field
     - signed
      integer_cst 32 - decl size
+     integer_type - field type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  bind_expr test16.c 30:1 - code
   statement_list - operand
@@ -255,6 +423,13 @@ function_decl func3 test16.c 29:6
          field_decl val test16.c 3:9 - field
          - signed
           integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+           type_decl int - type name
+           integer_cst 32 - type size
+           integer_cst -2147483648 - min value
+           integer_cst 2147483647 - max value
        integer_cst 64 - parm size
       integer_cst 0 - operand
      eq_expr test16.c 31:27 - operand
@@ -268,10 +443,24 @@ function_decl func3 test16.c 29:6
            field_decl val test16.c 3:9 - field
            - signed
             integer_cst 32 - decl size
+            integer_type - field type
+            - precisionBits: 32
+            - signed
+             type_decl int - type name
+             integer_cst 32 - type size
+             integer_cst -2147483648 - min value
+             integer_cst 2147483647 - max value
          integer_cst 64 - parm size
        field_decl val test16.c 3:9 - field
        - signed
         integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+         type_decl int - type name
+         integer_cst 32 - type size
+         integer_cst -2147483648 - min value
+         integer_cst 2147483647 - max value
       integer_cst 100 - operand
     return_expr test16.c 33:9 - operand
    modify_expr test16.c 36:15 - statement
@@ -285,10 +474,24 @@ function_decl func3 test16.c 29:6
          field_decl val test16.c 3:9 - field
          - signed
           integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+           type_decl int - type name
+           integer_cst 32 - type size
+           integer_cst -2147483648 - min value
+           integer_cst 2147483647 - max value
        integer_cst 64 - parm size
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
     integer_cst 200 - operand
   block - operand
 function_decl func4 test16.c 39:6
@@ -303,6 +506,13 @@ function_decl func4 test16.c 39:6
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
    tree_list - chain
     pointer_type - value
      record_type - nested type
@@ -310,6 +520,13 @@ function_decl func4 test16.c 39:6
       field_decl val test16.c 3:9 - field
       - signed
        integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     tree_list - chain
      void_type - value
       type_decl void - type name
@@ -325,6 +542,13 @@ function_decl func4 test16.c 39:6
     field_decl val test16.c 3:9 - field
     - signed
      integer_cst 32 - decl size
+     integer_type - field type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  parm_decl ptr2 test16.c 39:46 - argument
   pointer_type - decl type
@@ -333,6 +557,13 @@ function_decl func4 test16.c 39:6
     field_decl val test16.c 3:9 - field
     - signed
      integer_cst 32 - decl size
+     integer_type - field type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  bind_expr test16.c 40:1 - code
   statement_list - operand
@@ -347,6 +578,13 @@ function_decl func4 test16.c 39:6
          field_decl val test16.c 3:9 - field
          - signed
           integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+           type_decl int - type name
+           integer_cst 32 - type size
+           integer_cst -2147483648 - min value
+           integer_cst 2147483647 - max value
        integer_cst 64 - parm size
       integer_cst 0 - operand
      eq_expr test16.c 41:28 - operand
@@ -360,10 +598,24 @@ function_decl func4 test16.c 39:6
            field_decl val test16.c 3:9 - field
            - signed
             integer_cst 32 - decl size
+            integer_type - field type
+            - precisionBits: 32
+            - signed
+             type_decl int - type name
+             integer_cst 32 - type size
+             integer_cst -2147483648 - min value
+             integer_cst 2147483647 - max value
          integer_cst 64 - parm size
        field_decl val test16.c 3:9 - field
        - signed
         integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+         type_decl int - type name
+         integer_cst 32 - type size
+         integer_cst -2147483648 - min value
+         integer_cst 2147483647 - max value
       integer_cst 100 - operand
     return_expr test16.c 43:9 - operand
    modify_expr test16.c 46:15 - statement
@@ -377,10 +629,24 @@ function_decl func4 test16.c 39:6
          field_decl val test16.c 3:9 - field
          - signed
           integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+           type_decl int - type name
+           integer_cst 32 - type size
+           integer_cst -2147483648 - min value
+           integer_cst 2147483647 - max value
        integer_cst 64 - parm size
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
     integer_cst 200 - operand
   block - operand
 function_decl func5 test16.c 49:6
@@ -395,6 +661,13 @@ function_decl func5 test16.c 49:6
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
    tree_list - chain
     pointer_type - value
      record_type - nested type
@@ -402,6 +675,13 @@ function_decl func5 test16.c 49:6
       field_decl val test16.c 3:9 - field
       - signed
        integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     tree_list - chain
      void_type - value
       type_decl void - type name
@@ -417,6 +697,13 @@ function_decl func5 test16.c 49:6
     field_decl val test16.c 3:9 - field
     - signed
      integer_cst 32 - decl size
+     integer_type - field type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  - isUsed: 1
  parm_decl ptr2 test16.c 49:46 - argument
@@ -426,6 +713,13 @@ function_decl func5 test16.c 49:6
     field_decl val test16.c 3:9 - field
     - signed
      integer_cst 32 - decl size
+     integer_type - field type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  bind_expr test16.c 50:1 - code
   statement_list - operand
@@ -441,6 +735,13 @@ function_decl func5 test16.c 49:6
           field_decl val test16.c 3:9 - field
           - signed
            integer_cst 32 - decl size
+           integer_type - field type
+           - precisionBits: 32
+           - signed
+            type_decl int - type name
+            integer_cst 32 - type size
+            integer_cst -2147483648 - min value
+            integer_cst 2147483647 - max value
         integer_cst 64 - parm size
        integer_cst 0 - operand
       eq_expr test16.c 51:29 - operand
@@ -454,10 +755,24 @@ function_decl func5 test16.c 49:6
             field_decl val test16.c 3:9 - field
             - signed
              integer_cst 32 - decl size
+             integer_type - field type
+             - precisionBits: 32
+             - signed
+              type_decl int - type name
+              integer_cst 32 - type size
+              integer_cst -2147483648 - min value
+              integer_cst 2147483647 - max value
           integer_cst 64 - parm size
         field_decl val test16.c 3:9 - field
         - signed
          integer_cst 32 - decl size
+         integer_type - field type
+         - precisionBits: 32
+         - signed
+          type_decl int - type name
+          integer_cst 32 - type size
+          integer_cst -2147483648 - min value
+          integer_cst 2147483647 - max value
        integer_cst 100 - operand
      truth_orif_expr test16.c 51:47 - operand
       eq_expr test16.c 51:41 - operand
@@ -469,6 +784,13 @@ function_decl func5 test16.c 49:6
           field_decl val test16.c 3:9 - field
           - signed
            integer_cst 32 - decl size
+           integer_type - field type
+           - precisionBits: 32
+           - signed
+            type_decl int - type name
+            integer_cst 32 - type size
+            integer_cst -2147483648 - min value
+            integer_cst 2147483647 - max value
         integer_cst 64 - parm size
        integer_cst 0 - operand
       eq_expr test16.c 51:60 - operand
@@ -482,10 +804,24 @@ function_decl func5 test16.c 49:6
             field_decl val test16.c 3:9 - field
             - signed
              integer_cst 32 - decl size
+             integer_type - field type
+             - precisionBits: 32
+             - signed
+              type_decl int - type name
+              integer_cst 32 - type size
+              integer_cst -2147483648 - min value
+              integer_cst 2147483647 - max value
           integer_cst 64 - parm size
         field_decl val test16.c 3:9 - field
         - signed
          integer_cst 32 - decl size
+         integer_type - field type
+         - precisionBits: 32
+         - signed
+          type_decl int - type name
+          integer_cst 32 - type size
+          integer_cst -2147483648 - min value
+          integer_cst 2147483647 - max value
        integer_cst 200 - operand
     return_expr test16.c 53:9 - operand
    modify_expr test16.c 56:15 - statement
@@ -499,10 +835,24 @@ function_decl func5 test16.c 49:6
          field_decl val test16.c 3:9 - field
          - signed
           integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+           type_decl int - type name
+           integer_cst 32 - type size
+           integer_cst -2147483648 - min value
+           integer_cst 2147483647 - max value
        integer_cst 64 - parm size
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
     integer_cst 300 - operand
    modify_expr test16.c 57:15 - statement
     component_ref test16.c 57:9 - operand
@@ -515,10 +865,24 @@ function_decl func5 test16.c 49:6
          field_decl val test16.c 3:9 - field
          - signed
           integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+           type_decl int - type name
+           integer_cst 32 - type size
+           integer_cst -2147483648 - min value
+           integer_cst 2147483647 - max value
        integer_cst 64 - parm size
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
     integer_cst 400 - operand
   block - operand
 function_decl func6 test16.c 60:6
@@ -533,6 +897,13 @@ function_decl func6 test16.c 60:6
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
    tree_list - chain
     pointer_type - value
      record_type - nested type
@@ -540,6 +911,13 @@ function_decl func6 test16.c 60:6
       field_decl val test16.c 3:9 - field
       - signed
        integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     tree_list - chain
      void_type - value
       type_decl void - type name
@@ -555,6 +933,13 @@ function_decl func6 test16.c 60:6
     field_decl val test16.c 3:9 - field
     - signed
      integer_cst 32 - decl size
+     integer_type - field type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  - isUsed: 1
  parm_decl ptr2 test16.c 60:46 - argument
@@ -564,6 +949,13 @@ function_decl func6 test16.c 60:6
     field_decl val test16.c 3:9 - field
     - signed
      integer_cst 32 - decl size
+     integer_type - field type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
   integer_cst 64 - parm size
  bind_expr test16.c 61:1 - code
   statement_list - operand
@@ -579,6 +971,13 @@ function_decl func6 test16.c 60:6
           field_decl val test16.c 3:9 - field
           - signed
            integer_cst 32 - decl size
+           integer_type - field type
+           - precisionBits: 32
+           - signed
+            type_decl int - type name
+            integer_cst 32 - type size
+            integer_cst -2147483648 - min value
+            integer_cst 2147483647 - max value
         integer_cst 64 - parm size
        integer_cst 0 - operand
       eq_expr test16.c 62:29 - operand
@@ -592,10 +991,24 @@ function_decl func6 test16.c 60:6
             field_decl val test16.c 3:9 - field
             - signed
              integer_cst 32 - decl size
+             integer_type - field type
+             - precisionBits: 32
+             - signed
+              type_decl int - type name
+              integer_cst 32 - type size
+              integer_cst -2147483648 - min value
+              integer_cst 2147483647 - max value
           integer_cst 64 - parm size
         field_decl val test16.c 3:9 - field
         - signed
          integer_cst 32 - decl size
+         integer_type - field type
+         - precisionBits: 32
+         - signed
+          type_decl int - type name
+          integer_cst 32 - type size
+          integer_cst -2147483648 - min value
+          integer_cst 2147483647 - max value
        integer_cst 100 - operand
      truth_orif_expr test16.c 62:47 - operand
       eq_expr test16.c 62:41 - operand
@@ -607,6 +1020,13 @@ function_decl func6 test16.c 60:6
           field_decl val test16.c 3:9 - field
           - signed
            integer_cst 32 - decl size
+           integer_type - field type
+           - precisionBits: 32
+           - signed
+            type_decl int - type name
+            integer_cst 32 - type size
+            integer_cst -2147483648 - min value
+            integer_cst 2147483647 - max value
         integer_cst 64 - parm size
        integer_cst 0 - operand
       eq_expr test16.c 62:60 - operand
@@ -620,10 +1040,24 @@ function_decl func6 test16.c 60:6
             field_decl val test16.c 3:9 - field
             - signed
              integer_cst 32 - decl size
+             integer_type - field type
+             - precisionBits: 32
+             - signed
+              type_decl int - type name
+              integer_cst 32 - type size
+              integer_cst -2147483648 - min value
+              integer_cst 2147483647 - max value
           integer_cst 64 - parm size
         field_decl val test16.c 3:9 - field
         - signed
          integer_cst 32 - decl size
+         integer_type - field type
+         - precisionBits: 32
+         - signed
+          type_decl int - type name
+          integer_cst 32 - type size
+          integer_cst -2147483648 - min value
+          integer_cst 2147483647 - max value
        integer_cst 200 - operand
     return_expr test16.c 64:9 - operand
    modify_expr test16.c 67:15 - statement
@@ -637,10 +1071,24 @@ function_decl func6 test16.c 60:6
          field_decl val test16.c 3:9 - field
          - signed
           integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+           type_decl int - type name
+           integer_cst 32 - type size
+           integer_cst -2147483648 - min value
+           integer_cst 2147483647 - max value
        integer_cst 64 - parm size
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
     integer_cst 300 - operand
    modify_expr test16.c 68:15 - statement
     component_ref test16.c 68:9 - operand
@@ -653,9 +1101,23 @@ function_decl func6 test16.c 60:6
          field_decl val test16.c 3:9 - field
          - signed
           integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+           type_decl int - type name
+           integer_cst 32 - type size
+           integer_cst -2147483648 - min value
+           integer_cst 2147483647 - max value
        integer_cst 64 - parm size
      field_decl val test16.c 3:9 - field
      - signed
       integer_cst 32 - decl size
+      integer_type - field type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
     integer_cst 400 - operand
   block - operand

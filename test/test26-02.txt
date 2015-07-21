@@ -74,6 +74,8 @@ __base_ctor :
 __comp_ctor : 
 bad_exception: 
 __base_ctor : 
+__base_ctor : 
+__base_ctor : 
 __comp_ctor : 
 exception_ptr: 
 __base_ctor : 
@@ -82,6 +84,7 @@ exception_ptr:
 __base_ctor : 
 __comp_ctor : 
 operator=: 
+__comp_ctor : 
 operator 6: 
 swap: 
 nested_exception: 
@@ -91,8 +94,12 @@ rethrow_nested:
 nested_ptr: 
 bad_alloc: 
 __base_ctor : 
+__base_ctor : 
+__base_ctor : 
 __comp_ctor : 
 bad_array_new_length: 
+__base_ctor : 
+__base_ctor : 
 __base_ctor : 
 __comp_ctor : 
 operator new: pointer_type __p, 
@@ -119,33 +126,52 @@ __gthread_equal:
 __gthread_self: 
 __gthread_yield: 
 __gthread_once: pointer_type __once, pointer_type __func, 
+__gthread_active_p: 
 __gthread_key_create: pointer_type __key, pointer_type __dtor, 
 __gthread_key_delete: 
 __gthread_getspecific: 
 __gthread_setspecific: pointer_type __ptr, 
 __gthread_mutex_init_function: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_mutex_destroy: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_mutex_lock: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_mutex_trylock: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_mutex_timedlock: pointer_type __mutex, pointer_type __abs_timeout, 
+__gthread_active_p: 
 __gthread_mutex_unlock: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_recursive_mutex_lock: pointer_type __mutex, 
+__gthread_mutex_lock: pointer_type __mutex, 
 __gthread_recursive_mutex_trylock: pointer_type __mutex, 
+__gthread_mutex_trylock: pointer_type __mutex, 
 __gthread_recursive_mutex_timedlock: pointer_type __mutex, pointer_type __abs_timeout, 
+__gthread_mutex_timedlock: pointer_type __mutex, pointer_type __abs_timeout, 
 __gthread_recursive_mutex_unlock: pointer_type __mutex, 
+__gthread_mutex_unlock: pointer_type __mutex, 
 __gthread_recursive_mutex_destroy: pointer_type __mutex, 
+__gthread_mutex_destroy: pointer_type __mutex, 
 __gthread_cond_broadcast: pointer_type __cond, 
 __gthread_cond_signal: pointer_type __cond, 
 __gthread_cond_wait: pointer_type __cond, pointer_type __mutex, 
 __gthread_cond_timedwait: pointer_type __cond, pointer_type __mutex, pointer_type __abs_timeout, 
 __gthread_cond_wait_recursive: pointer_type __cond, pointer_type __mutex, 
+__gthread_cond_wait: pointer_type __cond, pointer_type __mutex, 
 __gthread_cond_destroy: pointer_type __cond, 
 __exchange_and_add: pointer_type __mem, 
 __atomic_add: pointer_type __mem, 
 __exchange_and_add_single: pointer_type __mem, 
 __atomic_add_single: pointer_type __mem, 
 __exchange_and_add_dispatch: pointer_type __mem, 
+__gthread_active_p: 
+__exchange_and_add: pointer_type __mem, 
+__exchange_and_add_single: pointer_type __mem, 
 __atomic_add_dispatch: pointer_type __mem, 
+__gthread_active_p: 
+__atomic_add: pointer_type __mem, 
+__atomic_add_single: pointer_type __mem, 
 abs: 
 div: 
 abs: 
@@ -226,7 +252,9 @@ iterator:
 __base_ctor : 
 __comp_ctor : 
 _Bit_iterator_base: pointer_type __x, 
+__base_ctor : 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __comp_ctor : pointer_type __x, 
 _M_bump_up: 
 _M_bump_down: 
@@ -239,13 +267,18 @@ operator<=:
 operator>=: 
 operator-: 
 _Bit_iterator: 
+__base_ctor : pointer_type __x, 
 __base_ctor : 
+__base_ctor : pointer_type __x, 
 __comp_ctor : 
 _Bit_iterator: pointer_type __x, 
+__base_ctor : pointer_type __x, 
+__base_ctor : pointer_type __x, 
 __base_ctor : pointer_type __x, 
 __comp_ctor : pointer_type __x, 
 _M_const_cast: 
 operator*: 
+__comp_ctor : pointer_type __x, 
 operator++: 
 operator++: 
 operator--: 
@@ -257,16 +290,24 @@ operator-:
 operator[]: 
 operator+: 
 _Bit_const_iterator: 
+__base_ctor : pointer_type __x, 
 __base_ctor : 
+__base_ctor : pointer_type __x, 
 __comp_ctor : 
 _Bit_const_iterator: pointer_type __x, 
 __base_ctor : pointer_type __x, 
+__base_ctor : pointer_type __x, 
+__base_ctor : pointer_type __x, 
 __comp_ctor : pointer_type __x, 
 _Bit_const_iterator: 
+__base_ctor : pointer_type __x, 
 __base_ctor : 
+__base_ctor : pointer_type __x, 
 __comp_ctor : 
 _M_const_cast: 
+__comp_ctor : pointer_type __x, 
 operator*: 
+__comp_ctor : pointer_type __x, 
 operator++: 
 operator++: 
 operator--: 
@@ -279,6 +320,8 @@ operator[]:
 operator+: 
 __fill_bvector: 
 fill: 
+__comp_ctor : pointer_type __x, 
+__comp_ctor : pointer_type __x, 
 Data1: 
 __base_ctor : 
 __comp_ctor : 
@@ -291,13 +334,16 @@ Data2:
 __base_dtor : 
 __comp_dtor : 
 __deleting_dtor : 
+__comp_dtor : 
 func1: pointer_type ptr1, 
 func2: pointer_type ptr1, 
 Data1: 
 __base_dtor : 
 __comp_dtor : 
 func3: pointer_type ptr1, 
+__comp_dtor : 
 func4: pointer_type ptr1, 
+__comp_dtor : 
 func5: pointer_type ptr1, 
 func6: pointer_type ptr1, 
 func7: pointer_type ptr1, 
@@ -346,15 +392,21 @@ data:
 length: 
 fill: pointer_type __first, pointer_type __last, 
 basic_string: pointer_type __beg, pointer_type __end, 
+__comp_dtor : 
 __base_ctor : pointer_type __beg, pointer_type __end, 
+__comp_dtor : 
 __comp_ctor : pointer_type __beg, pointer_type __end, 
 basic_string: pointer_type __beg, pointer_type __end, 
+__comp_dtor : 
 __base_ctor : pointer_type __beg, pointer_type __end, 
+__comp_dtor : 
 __comp_ctor : pointer_type __beg, pointer_type __end, 
 _M_data: 
 _M_rep: 
 _M_data: 
+_M_data: 
 _M_rep: 
+_M_data: 
 __niter_base: pointer_type __it, 
 __fill_a: pointer_type __first, pointer_type __last, 
 new_allocator: 

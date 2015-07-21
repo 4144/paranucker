@@ -51,29 +51,39 @@ record_type : ptr2,
 type_decl Object1: ptr2, 
 field_decl k: ptr2, 
 integer_cst 32: ptr2, 
+integer_type : ptr2, 
+type_decl int: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst -2147483648: ptr2, 
+integer_cst 2147483647: ptr2, 
 type_decl Object1: ptr2, 
 integer_cst 64: ptr2, 
 field_decl k: ptr2, 
 integer_cst 32: ptr2, 
+integer_type : ptr2, 
+type_decl int: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst -2147483648: ptr2, 
+integer_cst 2147483647: ptr2, 
 integer_cst 0: ptr2, 
-cleanup_point_expr : ptr2, this->k, 
-expr_stmt : ptr2, this->k, 
-convert_expr : ptr2, this->k, 
-modify_expr : ptr2, this->k, 
+cleanup_point_expr : ptr2, 
+expr_stmt : ptr2, 
+convert_expr : ptr2, 
+modify_expr : ptr2, 
 test08.cpp: In member function 'void Object1::func2(int*)':
 test08.cpp:20:20: warning: Using parameter 'ptr2' without checking for null pointer
          *ptr2 = 200;
                     ^
-indirect_ref : ptr2, this->k, 
-parm_decl ptr2: ptr2, this->k, 
-pointer_type : ptr2, this->k, 
-integer_type : ptr2, this->k, 
-type_decl int: ptr2, this->k, 
-integer_cst 32: ptr2, this->k, 
-integer_cst -2147483648: ptr2, this->k, 
-integer_cst 2147483647: ptr2, this->k, 
-integer_cst 64: ptr2, this->k, 
-integer_cst 200: ptr2, this->k, 
+indirect_ref : ptr2, 
+parm_decl ptr2: ptr2, 
+pointer_type : ptr2, 
+integer_type : ptr2, 
+type_decl int: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst -2147483648: ptr2, 
+integer_cst 2147483647: ptr2, 
+integer_cst 64: ptr2, 
+integer_cst 200: ptr2, 
 function_decl func3: 
 statement_list : ptr3, 
 if_stmt : ptr3, 
@@ -131,26 +141,36 @@ record_type :
 type_decl Object1: 
 field_decl k: 
 integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 type_decl Object1: 
 integer_cst 64: 
 field_decl k: 
 integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 integer_cst 0: 
 return_expr : ptr4, 
-cleanup_point_expr : ptr4, this->k, 
-expr_stmt : this->k, 
-convert_expr : this->k, 
-modify_expr : this->k, 
-indirect_ref : this->k, 
-parm_decl ptr4: this->k, 
-pointer_type : this->k, 
-integer_type : this->k, 
-type_decl int: this->k, 
-integer_cst 32: this->k, 
-integer_cst -2147483648: this->k, 
-integer_cst 2147483647: this->k, 
-integer_cst 64: this->k, 
-integer_cst 400: this->k, 
+cleanup_point_expr : ptr4, 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+indirect_ref : 
+parm_decl ptr4: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+integer_cst 400: 
 function_decl func5: 
 statement_list : ptr5, 
 if_stmt : ptr5, 

@@ -9,4 +9,5 @@ func5: pointer_type ptr1,
 func6: pointer_type ptr1, 
 test1: pointer_type w1, pointer_type w2, 
 func7: pointer_type w1, pointer_type w2, 
+test1: 
 func8: pointer_type fptr, 

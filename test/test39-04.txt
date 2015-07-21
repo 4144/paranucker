@@ -1,0 +1,15 @@
+test39.cpp: In member function 'void Object1::func1(Data1*) const':
+test39.cpp:63:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 100;
+               ^
+test39.cpp:73:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 0;
+               ^
+test39.cpp: In member function 'void Object1::func2(Data1*) const':
+test39.cpp:96:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->ptrval = reinterpret_cast<Data1*>(1);
+               ^
+test39.cpp: In member function 'void Object1::func3(Data1*) const':
+test39.cpp:119:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->ptrval = 0;
+               ^

@@ -1,0 +1,13 @@
+getData3: 
+getData4: 
+Data2: 
+__base_dtor : 
+__comp_dtor : 
+__deleting_dtor : 
+__comp_dtor : 
+getData3: 
+getData1: 
+getData2: 
+func1: pointer_type ptr1, 
+func2: pointer_type ptr1, 
+func3: pointer_type ptr1, 

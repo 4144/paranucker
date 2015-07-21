@@ -1,0 +1,1887 @@
+function_decl getData3: 
+return_expr : 
+init_expr : 
+result_decl : 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data1: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data1: 
+integer_cst 64: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data1: 
+function_decl getData4: 
+return_expr : 
+init_expr : 
+result_decl : 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data1: 
+integer_cst 64: 
+integer_cst 0: 
+function_decl Data2: 
+must_not_throw_expr : 
+statement_list : 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data2: 
+integer_cst 64: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+pointer_plus_expr : 
+addr_expr : 
+var_decl _ZTV5Data2: 
+integer_cst 256: 
+constructor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 3: 
+integer_cst 0: 
+addr_expr : 
+var_decl _ZTI5Data2: 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+function_decl __deleting_dtor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 3: 
+integer_cst 16: 
+cleanup_stmt : 
+statement_list : 
+modify_expr : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data2: 
+integer_cst 64: 
+constructor : 
+record_type : 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+block : 
+label_expr : 
+label_decl : 
+if_stmt : 
+ne_expr : 
+bit_and_expr : 
+parm_decl __in_chrg: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+integer_cst 1: 
+integer_cst 0: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl operator delete: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data2: 
+integer_cst 64: 
+function_decl __base_dtor : 
+must_not_throw_expr : 
+statement_list : 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data2: 
+integer_cst 64: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+pointer_plus_expr : 
+addr_expr : 
+var_decl _ZTV5Data2: 
+integer_cst 256: 
+constructor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 3: 
+integer_cst 0: 
+addr_expr : 
+var_decl _ZTI5Data2: 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+function_decl __deleting_dtor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 3: 
+integer_cst 16: 
+try_finally : 
+statement_list : 
+modify_expr : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data2: 
+integer_cst 64: 
+constructor : 
+record_type : 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+block : 
+label_expr : 
+label_decl : 
+cond_expr : 
+ne_expr : 
+bit_and_expr : 
+integer_cst 0: 
+integer_cst 1: 
+integer_cst 0: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl operator delete: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data2: 
+integer_cst 64: 
+integer_cst 0: 
+function_decl __comp_dtor : 
+statement_list : 
+function_decl __deleting_dtor : 
+statement_list : 
+call_expr : 
+addr_expr : 
+function_decl __comp_dtor : 
+statement_list : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data2: 
+integer_cst 64: 
+label_expr : 
+label_decl : 
+call_expr : 
+addr_expr : 
+function_decl operator delete: 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data2: 
+integer_cst 64: 
+function_decl getData3: 
+return_expr : 
+init_expr : 
+result_decl : 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data1: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data2: 
+integer_cst 64: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data1: 
+function_decl getData1: 
+return_expr : 
+init_expr : 
+result_decl : 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data1: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Object1: 
+field_decl tmp1: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl tmp2: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl tmp3: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data2: 
+type_decl Object1: 
+integer_cst 64: 
+field_decl tmp2: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data1: 
+function_decl getData2: 
+return_expr : 
+init_expr : 
+result_decl : 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data1: 
+integer_cst 64: 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Object1: 
+field_decl tmp1: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl tmp2: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl tmp3: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl _vptr.Data2: 
+integer_cst 64: 
+pointer_type : 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data2: 
+type_decl Object1: 
+integer_cst 64: 
+field_decl tmp2: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 2: 
+type_decl Data1: 
+function_decl func1: 
+statement_list : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+component_ref : ptr1, 
+test39.cpp: In member function 'void Object1::func1(Data1*) const':
+test39.cpp:63:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 100;
+               ^
+indirect_ref : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_type : ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+integer_cst 2: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 100: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+component_ref : ptr1, 
+test39.cpp:73:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 0;
+               ^
+indirect_ref : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_type : ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+integer_cst 2: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 0: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+function_decl func2: 
+statement_list : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+component_ref : ptr1, 
+test39.cpp: In member function 'void Object1::func2(Data1*) const':
+test39.cpp:96:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->ptrval = reinterpret_cast<Data1*>(1);
+               ^
+indirect_ref : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_type : ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+integer_cst 2: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_type : ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+integer_cst 2: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 1: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+function_decl func3: 
+statement_list : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl paranuckerInternalTest: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+component_ref : ptr1, 
+test39.cpp: In member function 'void Object1::func3(Data1*) const':
+test39.cpp:119:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->ptrval = 0;
+               ^
+indirect_ref : ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_type : ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+integer_cst 2: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_type : ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+integer_cst 2: ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 0: ptr1, 
+cleanup_point_expr : ptr1, ptr1->ptrval, 
+expr_stmt : ptr1, ptr1->ptrval, 
+call_expr : ptr1, ptr1->ptrval, 
+addr_expr : ptr1, ptr1->ptrval, 
+function_decl paranuckerInternalTest: ptr1, ptr1->ptrval, 
+cleanup_point_expr : ptr1, ptr1->ptrval, 
+expr_stmt : ptr1, ptr1->ptrval, 
+call_expr : ptr1, ptr1->ptrval, 
+addr_expr : ptr1, ptr1->ptrval, 
+function_decl paranuckerInternalTest: ptr1, ptr1->ptrval, 
+cleanup_point_expr : ptr1, ptr1->ptrval, 
+expr_stmt : ptr1, ptr1->ptrval, 
+call_expr : ptr1, ptr1->ptrval, 
+addr_expr : ptr1, ptr1->ptrval, 
+function_decl paranuckerInternalTest: ptr1, ptr1->ptrval, 
+cleanup_point_expr : ptr1, ptr1->ptrval, 
+expr_stmt : ptr1, ptr1->ptrval, 
+call_expr : ptr1, ptr1->ptrval, 
+addr_expr : ptr1, ptr1->ptrval, 
+function_decl paranuckerInternalTest: ptr1, ptr1->ptrval, 
+cleanup_point_expr : ptr1, ptr1->ptrval, 
+expr_stmt : ptr1, ptr1->ptrval, 
+call_expr : ptr1, ptr1->ptrval, 
+addr_expr : ptr1, ptr1->ptrval, 
+function_decl paranuckerInternalTest: ptr1, ptr1->ptrval, 
+cleanup_point_expr : ptr1, ptr1->ptrval, 
+expr_stmt : ptr1, ptr1->ptrval, 
+call_expr : ptr1, ptr1->ptrval, 
+addr_expr : ptr1, ptr1->ptrval, 
+function_decl paranuckerInternalTest: ptr1, ptr1->ptrval, 
+cleanup_point_expr : ptr1, ptr1->ptrval, 
+expr_stmt : ptr1, ptr1->ptrval, 
+call_expr : ptr1, ptr1->ptrval, 
+addr_expr : ptr1, ptr1->ptrval, 
+function_decl paranuckerInternalTest: ptr1, ptr1->ptrval, 
+cleanup_point_expr : ptr1, ptr1->ptrval, 
+expr_stmt : ptr1, ptr1->ptrval, 
+call_expr : ptr1, ptr1->ptrval, 
+addr_expr : ptr1, ptr1->ptrval, 
+function_decl paranuckerInternalTest: ptr1, ptr1->ptrval, 
+cleanup_point_expr : ptr1, ptr1->ptrval, 
+expr_stmt : ptr1, ptr1->ptrval, 
+call_expr : ptr1, ptr1->ptrval, 
+addr_expr : ptr1, ptr1->ptrval, 
+function_decl paranuckerInternalTest: ptr1, ptr1->ptrval, 

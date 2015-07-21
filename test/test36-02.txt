@@ -1,8 +1,10 @@
 getData3: 
+getData4: 
 Data2: 
 __base_dtor : 
 __comp_dtor : 
 __deleting_dtor : 
+__comp_dtor : 
 getData3: 
 getData1: 
 getData2: 
@@ -14,3 +16,5 @@ Data2:
 __base_ctor : 
 __comp_ctor : 
 func5: 
+__comp_ctor : 
+func6: 
