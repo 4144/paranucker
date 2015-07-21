@@ -283,6 +283,11 @@ void addLinkedVar(WalkItem &wi,
     if (isIn(var, wi.linkedVars))
     {
         StringSet linked = wi.linkedVars[var];
+        if (linked.empty())
+        {
+            wi.linkedVars.erase(var);
+            return;
+        }
         std::string newParent = *(linked.begin());
         wi.linkedReverseVars.erase(newParent);
         wi.linkedVars[newParent] = linked;
@@ -300,16 +305,6 @@ void addLinkedVar(WalkItem &wi,
                 wi.linkedReverseVars[it3] = newParent;
             }
         }
-/*
-        StringSet oldLinked = wi.linkedVars[var];
-        wi.linkedVars.erase(var);
-        wi.linkedVars[parent].insert(oldLinked.begin(),
-            oldLinked.end());
-        FOR_EACH (it, oldLinked)
-        {
-            wi.linkedReverseVars[it] = parent;
-        }
-*/
     }
 }
 
