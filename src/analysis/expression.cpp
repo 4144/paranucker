@@ -777,6 +777,12 @@ bool handleSetVarToFunction(const std::string &var,
     if (!isPointerArg(node1))
         return handleSetVarToFunctionBack(var, node2, wo);
 
+    if (node2 == nullptr)
+    {   // type *var;
+        addUnknownVar(wo, var);
+        return true;
+    }
+
     if (node2 != CALL_EXPR)
     {
         if (node2 != COMPOUND_EXPR)
