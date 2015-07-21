@@ -41,7 +41,7 @@ void parseFunctionTypeNode(FunctionTypeNode *node)
 
     fillTypeAttributes(node);
 
-    if (!node->parseChilds)
+    if (node->parseChilds <= 0)
         return;
 
     fillTypeName(node);

@@ -52,7 +52,7 @@ void parseCallExprNode(CallExprNode *node)
         Log::dump(node, "- function: %s", node->functionName.c_str());
     }
 
-//    if (!node->parseChilds)
+//    if (node->parseChilds <= 0)
 //        return;
 
     const int argsCount = call_expr_nargs(node->gccNode);

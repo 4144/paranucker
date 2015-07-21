@@ -41,7 +41,7 @@ void parseMethodTypeNode(MethodTypeNode *node)
         "method return type",
         node->parseChilds));
 
-    if (!node->parseChilds)
+    if (node->parseChilds <= 0)
         return;
 
     fillTypeName(node);

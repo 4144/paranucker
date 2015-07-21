@@ -37,7 +37,7 @@ void parseVectorTypeNode(VectorTypeNode *node)
 
     fillTypeAttributes(node);
 
-    if (!node->parseChilds)
+    if (node->parseChilds <= 0)
         return;
 
     fillTypeName(node);

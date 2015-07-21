@@ -36,7 +36,7 @@ namespace Generic
 Node *createParseNode(Node *parent,
                       tree gccNode,
                       std::string tag,
-                      bool parseChilds)
+                      int parseChilds)
 {
     return createParseNode(parent,
         gccNode,
@@ -49,7 +49,7 @@ Node *createParseNode(Node *parent,
                       tree gccNode,
                       tree_code wantType,
                       std::string tag,
-                      bool parseChilds)
+                      int parseChilds)
 {
     if (gccNode == NULL_TREE)
     {
@@ -96,7 +96,12 @@ Node *createParseNode(Node *parent,
     {
         node->parent = parent;
         node->gccNode = gccNode;
-        node->parseChilds = parseChilds;
+        if (!parent || parseChilds < parent->parseChilds - 1)
+            node->parseChilds = parseChilds;
+        else
+            node->parseChilds = parent->parseChilds - 1;
+        if (node->parseChilds < 0)
+            node->parseChilds = 0;
 
         if (wantType != ERROR_MARK &&
             TREE_CODE(node->gccNode) != wantType)

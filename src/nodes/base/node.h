@@ -42,7 +42,7 @@ struct Node
         column(-1),
         treeNumber(0),
         indent(0),
-        parseChilds(true),
+        parseChilds(INT_MAX),
         noLabel(false),
         complete(false)
     {
@@ -75,7 +75,7 @@ struct Node
     int column;
     int treeNumber;
     int indent;
-    bool parseChilds;
+    int parseChilds;
     bool noLabel;
     bool complete;
 };

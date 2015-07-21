@@ -37,7 +37,7 @@ void parseExprStmtNode(ExprStmtNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
-    if (!node->parseChilds)
+    if (node->parseChilds <= 0)
         return;
 
     node->expression = static_cast<ExprNode*>(createParseNode(

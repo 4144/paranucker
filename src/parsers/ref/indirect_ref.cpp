@@ -34,7 +34,7 @@ void parseIndirectRefNode(IndirectRefNode *node)
     fillRefLocation(node);
     Log::dump(node);
 
-//    if (!node->parseChilds)
+//    if (node->parseChilds <= 0)
 //        return;
 
     node->ref = static_cast<DeclNode*>(getRefOperand(node, 0, "ref"));

@@ -40,7 +40,7 @@ void parseEnumeralTypeNode(EnumeralTypeNode *node)
     else
         Log::dumpRaw(node, "- signed");
 
-    if (!node->parseChilds)
+    if (node->parseChilds <= 0)
         return;
 
     fillTypeName(node);

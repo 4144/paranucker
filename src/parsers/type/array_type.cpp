@@ -35,7 +35,7 @@ void parseArrayTypeNode(ArrayTypeNode *node)
 
     setPrintField(node, TYPE_STRING_FLAG, isString);
 
-    if (!node->parseChilds)
+    if (node->parseChilds <= 0)
         return;
 
     fillTypeName(node);

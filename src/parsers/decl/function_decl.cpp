@@ -54,7 +54,7 @@ void parseFunctionDeclNode(FunctionDeclNode *node)
         "function type",
         node->parseChilds));
 
-    if (!node->parseChilds)
+    if (node->parseChilds <= 0)
         return;
 
     node->result = static_cast<ResultDeclNode*>(createParseNode(

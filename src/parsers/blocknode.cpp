@@ -39,7 +39,7 @@ void parseBlockNode(BlockNode *node)
     }
     Log::dump(node);
 
-    if (!node->parseChilds)
+    if (node->parseChilds <= 0)
         return;
 
     FOR_CHAIN(node->gccNode, it, BLOCK_VARS, DECL_CHAIN)
@@ -76,7 +76,7 @@ void parseBlockNode(BlockNode *node)
             node,
             it,
             "block chain",
-            false));
+            0));
     }
 */
     FOR_CHAIN(node->gccNode, it, BLOCK_FRAGMENT_CHAIN, BLOCK_FRAGMENT_CHAIN)

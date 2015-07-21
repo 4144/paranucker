@@ -75,7 +75,7 @@ void parseFieldDeclNode(FieldDeclNode *node)
         node,
         TREE_TYPE(node->gccNode),
         "field type",
-        node->parseChilds));
+        5));
 }
 
 }

@@ -45,13 +45,13 @@ namespace Generic
     Node *createParseNode(Node *parent,
                           tree gccNode,
                           std::string tag = "",
-                          bool parseChilds = true);
+                          int parseChilds = INT_MAX);
 
     Node *createParseNode(Node *parent,
                           tree gccNode,
                           tree_code wantType,
                           std::string tag = "",
-                          bool parseChilds = true);
+                          int parseChilds = INT_MAX);
 }
 
 #endif // PARSERS_GENERIC_H

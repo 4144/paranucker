@@ -34,7 +34,7 @@ void parseAddrExprNode(AddrExprNode *node)
     fillExprLocation(node);
     Log::dump(node);
 
-//    if (!node->parseChilds)
+//    if (node->parseChilds <= 0)
 //        return;
 
 //    fillExprOperands(node);
@@ -48,7 +48,7 @@ void parseAddrExprNode(AddrExprNode *node)
             node,
             gccNode,
             "operand",
-            false));
+            5));
     }
     else
     {

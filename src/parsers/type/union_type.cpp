@@ -35,7 +35,7 @@ void parseUnionTypeNode(UnionTypeNode *node)
 
     fillTypeAttributes(node);
 
-    if (!node->parseChilds)
+    if (node->parseChilds <= 0)
         return;
 
     fillTypeName(node);
@@ -48,7 +48,7 @@ void parseUnionTypeNode(UnionTypeNode *node)
         node,
         TYPE_METHODS(node->gccNode),
         "type methods",
-        false);
+        5);
 }
 
 }

@@ -33,7 +33,7 @@ void parsePointerTypeNode(PointerTypeNode *node)
     fillType(node);
     Log::dump(node);
 
-    if (!node->parseChilds)
+    if (node->parseChilds <= 0)
         return;
 
     fillTypeName(node);
@@ -42,7 +42,7 @@ void parsePointerTypeNode(PointerTypeNode *node)
         node,
         TREE_TYPE(node->gccNode),
         "nested type",
-        false));
+        5));
 }
 
 }
