@@ -1,5 +1,7 @@
 struct Data1;
 
+void paranuckerInternalTest(const char *action, const char *collection, const char *values);
+
 struct Data1
 {
     Data1()
@@ -80,15 +82,103 @@ class Object1
 
     void func3(Data1 *ptr1)
     {
+        paranuckerInternalTest("=", "knownVars", "ptr1");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
+        paranuckerInternalTest("=", "addNullVars", "");
+        paranuckerInternalTest("=", "removeNullVars", "");
+        paranuckerInternalTest("=", "removeNullVarsAll", "");
+        paranuckerInternalTest("=", "linkedVars", "ptr1");
+        paranuckerInternalTest("=", "linkedVars", "ptr2");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr2");
         Data1 *ptr2;
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "addNullVars", "ptr2");
+        paranuckerInternalTest("=", "removeNullVars", "");
+        paranuckerInternalTest("=", "removeNullVarsAll", "");
+        paranuckerInternalTest("=", "linkedVars", "ptr1");
+        paranuckerInternalTest("=", "linkedVars", "ptr2");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr2");
         ptr1->val = 100;
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "addNullVars", "ptr2");
+        paranuckerInternalTest("=", "removeNullVars", "");
+        paranuckerInternalTest("=", "removeNullVarsAll", "");
+        paranuckerInternalTest("=", "linkedVars", "ptr1");
+        paranuckerInternalTest("=", "linkedVars", "ptr2");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr2");
         ptr1 = ptr2;
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "addNullVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "removeNullVars", "");
+        paranuckerInternalTest("=", "removeNullVarsAll", "");
+        paranuckerInternalTest("=", "linkedVars", "ptr1");
+        paranuckerInternalTest("=", "linkedVars", "ptr2 ptr1");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr2");
         ptr2->val = 200;
         if (!ptr1)
         {
+            paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
+            paranuckerInternalTest("=", "knownNonNullVars", "");
+            paranuckerInternalTest("=", "knownNullVars", "ptr1 ptr2");
+            paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
+            paranuckerInternalTest("=", "addNullVars", "ptr1 ptr2");
+            paranuckerInternalTest("=", "removeNullVars", "");
+            paranuckerInternalTest("=", "removeNullVarsAll", "");
+            paranuckerInternalTest("=", "linkedVars", "ptr1");
+            paranuckerInternalTest("=", "linkedVars", "ptr2 ptr1");
+            paranuckerInternalTest("=", "linkedReverseVars", "ptr1 ptr2");
+            paranuckerInternalTest("=", "linkedReverseVars", "ptr2");
             ptr1->val = 300;
+            paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
+            paranuckerInternalTest("=", "knownNonNullVars", "");
+            paranuckerInternalTest("=", "knownNullVars", "ptr1 ptr2");
+            paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
+            paranuckerInternalTest("=", "addNullVars", "ptr1 ptr2");
+            paranuckerInternalTest("=", "removeNullVars", "");
+            paranuckerInternalTest("=", "removeNullVarsAll", "");
+            paranuckerInternalTest("=", "linkedVars", "ptr1");
+            paranuckerInternalTest("=", "linkedVars", "ptr2 ptr1");
+            paranuckerInternalTest("=", "linkedReverseVars", "ptr1 ptr2");
+            paranuckerInternalTest("=", "linkedReverseVars", "ptr2");
         }
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "addNullVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "removeNullVars", "");
+        paranuckerInternalTest("=", "removeNullVarsAll", "");
+        paranuckerInternalTest("=", "linkedVars", "ptr1");
+        paranuckerInternalTest("=", "linkedVars", "ptr2 ptr1");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr2");
         ptr1->val = 400;
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "addNullVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "removeNullVars", "");
+        paranuckerInternalTest("=", "removeNullVarsAll", "");
+        paranuckerInternalTest("=", "linkedVars", "ptr1");
+        paranuckerInternalTest("=", "linkedVars", "ptr2 ptr1");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr1 ptr2");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr2");
     }
 
     void func4(Data1 *const ptr1)

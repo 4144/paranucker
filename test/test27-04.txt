@@ -1,70 +1,107 @@
 test27.cpp: In member function 'void Object1::func1(Data1*)':
-test27.cpp:53:19: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:55:19: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->val = 300;
                    ^
-test27.cpp:54:19: warning: Using field 'this->tmp1' without checking for null pointer
+test27.cpp:56:19: warning: Using field 'this->tmp1' without checking for null pointer
              tmp1->val = 400;
                    ^
-test27.cpp:56:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:58:15: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 500;
                ^
-test27.cpp:57:15: warning: Using field 'this->tmp1' without checking for null pointer
+test27.cpp:59:15: warning: Using field 'this->tmp1' without checking for null pointer
          tmp1->val = 600;
                ^
 test27.cpp: In member function 'void Object1::func2(Data1*)':
-test27.cpp:72:19: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:74:19: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->val = 400;
                    ^
-test27.cpp:73:19: warning: Using field 'this->tmp1' without checking for null pointer
+test27.cpp:75:19: warning: Using field 'this->tmp1' without checking for null pointer
              tmp1->val = 500;
                    ^
-test27.cpp:74:19: warning: Using field 'this->tmp2' without checking for null pointer
+test27.cpp:76:19: warning: Using field 'this->tmp2' without checking for null pointer
              tmp2->val = 600;
                    ^
-test27.cpp:76:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:78:15: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 700;
                ^
-test27.cpp:77:15: warning: Using field 'this->tmp1' without checking for null pointer
+test27.cpp:79:15: warning: Using field 'this->tmp1' without checking for null pointer
          tmp1->val = 800;
                ^
-test27.cpp:78:15: warning: Using field 'this->tmp2' without checking for null pointer
+test27.cpp:80:15: warning: Using field 'this->tmp2' without checking for null pointer
          tmp2->val = 900;
                ^
 test27.cpp: In member function 'void Object1::func3(Data1*)':
-test27.cpp:84:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:108:15: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 100;
                ^
-test27.cpp: In member function 'void Object1::func4(Data1*)':
-test27.cpp:102:19: warning: Using parameter 'ptr1' without checking for null pointer
-             ptr1->val = 100;
-                   ^
-test27.cpp:107:19: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:132:15: warning: Using variable 'ptr2' without checking for null pointer
+         ptr2->val = 200;
+               ^
+test27.cpp:146:19: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->val = 300;
                    ^
-test27.cpp:110:15: warning: Using parameter 'ptr1' without checking for null pointer
-         ptr1->val = 500;
-               ^
-test27.cpp: In member function 'void Object1::func5(Data1*, Data1*)':
-test27.cpp:117:15: warning: Using parameter 'ptr1' without checking for null pointer
-         ptr1->val = 100;
-               ^
-test27.cpp:125:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:170:15: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 400;
                ^
-test27.cpp: In member function 'void Object1::func6(Data1*, Data1*)':
-test27.cpp:132:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp: In member function 'void Object1::func4(Data1*)':
+test27.cpp:192:19: warning: Using parameter 'ptr1' without checking for null pointer
+             ptr1->val = 100;
+                   ^
+test27.cpp:197:19: warning: Using parameter 'ptr1' without checking for null pointer
+             ptr1->val = 300;
+                   ^
+test27.cpp:198:19: warning: Using field 'this->tmp1' without checking for null pointer
+             tmp1->val = 400;
+                   ^
+test27.cpp:200:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 500;
+               ^
+test27.cpp:201:15: warning: Using field 'this->tmp1' without checking for null pointer
+         tmp1->val = 600;
+               ^
+test27.cpp: In member function 'void Object1::func5(Data1*, Data1*)':
+test27.cpp:207:15: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 100;
                ^
-test27.cpp:140:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:209:15: warning: Using variable 'ptr2' without checking for null pointer
+         ptr2->val = 200;
+               ^
+test27.cpp:212:19: warning: Using parameter 'ptr1' without checking for null pointer
+             ptr1->val = 300;
+                   ^
+test27.cpp:215:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 400;
+               ^
+test27.cpp:217:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 500;
+               ^
+test27.cpp: In member function 'void Object1::func6(Data1*, Data1*)':
+test27.cpp:222:15: warning: Using parameter 'ptr1' without checking for null pointer
+         ptr1->val = 100;
+               ^
+test27.cpp:230:15: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 400;
                ^
 test27.cpp: In member function 'void Object1::func7(Data1*, Data1*)':
-test27.cpp:149:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:239:15: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 100;
                ^
-test27.cpp:157:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:241:15: warning: Using variable 'ptr2' without checking for null pointer
+         ptr2->val = 200;
+               ^
+test27.cpp:244:19: warning: Using parameter 'ptr1' without checking for null pointer
+             ptr1->val = 300;
+                   ^
+test27.cpp:247:15: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 400;
                ^
-test27.cpp:159:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:249:15: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 500;
                ^
+test27.cpp: In member function 'void Object1::func8(Data1*, Data1*)':
+test27.cpp:259:15: warning: Using variable 'ptr2' without checking for null pointer
+         ptr2->val = 200;
+               ^
+test27.cpp:262:19: warning: Using parameter 'ptr1' without checking for null pointer
+             ptr1->val = 300;
+                   ^

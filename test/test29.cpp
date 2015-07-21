@@ -78,16 +78,16 @@ class Object1
     Data1 *func3(Data1 *ptr2)
     {
         Data1 *ptr1;
-        paranuckerInternalTest("=", "knownVars", "ptr2");
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
         paranuckerInternalTest("=", "knownNonNullVars", "");
         paranuckerInternalTest("=", "knownNullVars", "");
-        paranuckerInternalTest("=", "needCheckNullVars", "ptr2");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
         if (!ptr2)
             return 0;
-        paranuckerInternalTest("=", "knownVars", "ptr2");
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
         paranuckerInternalTest("=", "knownNonNullVars", "ptr2");
         paranuckerInternalTest("=", "knownNullVars", "");
-        paranuckerInternalTest("=", "needCheckNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
         ptr1 = ptr2;
         paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
         paranuckerInternalTest("=", "knownNonNullVars", "ptr1 ptr2");
@@ -143,16 +143,16 @@ class Object1
     Data1 *func6(Data1 *ptr2)
     {
         Data1 *ptr1;
-        paranuckerInternalTest("=", "knownVars", "ptr2");
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
         paranuckerInternalTest("=", "knownNonNullVars", "");
         paranuckerInternalTest("=", "knownNullVars", "");
-        paranuckerInternalTest("=", "needCheckNullVars", "ptr2");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
         if (ptr2)
             return 0;
-        paranuckerInternalTest("=", "knownVars", "ptr2");
+        paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
         paranuckerInternalTest("=", "knownNonNullVars", "");
         paranuckerInternalTest("=", "knownNullVars", "ptr2");
-        paranuckerInternalTest("=", "needCheckNullVars", "ptr2");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1 ptr2");
         ptr1 = ptr2;
         paranuckerInternalTest("=", "knownVars", "ptr1 ptr2");
         paranuckerInternalTest("=", "knownNonNullVars", "");

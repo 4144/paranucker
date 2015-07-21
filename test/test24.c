@@ -54,7 +54,7 @@ void func4(struct Data1 *ptr1)
 void func5(struct Data1 *ptr1)
 {
     struct Data1 *data;
-    // here should be reported data and may be fptr2
+
     (*data->fptr2[1])(ptr1);
 }
 

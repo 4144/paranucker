@@ -1992,11 +1992,11 @@ function_decl __convert_from_v:
 bind_expr : __fmt, __out, 
 statement_list : __fmt, __out, 
 decl_expr : __fmt, __out, 
-var_decl __old: __fmt, __out, 
-cleanup_point_expr : __fmt, __out, 
-expr_stmt : __fmt, __out, 
-convert_expr : __fmt, __out, 
-init_expr : __fmt, __out, 
+var_decl __old: __fmt, __old, __out, 
+cleanup_point_expr : __fmt, __old, __out, 
+expr_stmt : __fmt, __old, __out, 
+convert_expr : __fmt, __old, __out, 
+init_expr : __fmt, __old, __out, 
 var_decl __old: __fmt, __old, __out, 
 call_expr : __fmt, __old, __out, 
 addr_expr : __fmt, __old, __out, 
@@ -18126,53 +18126,53 @@ type_decl difference_type:
 type_decl allocator_type: 
 integer_cst 64: 
 decl_expr : 
-var_decl __new_start: 
-integer_cst 64: 
-pointer_type : 
-type_decl pointer: 
-pointer_type : 
-record_type : 
-type_decl Struct1: 
-field_decl str: 
-integer_cst 64: 
-record_type : 
-type_decl string: 
-var_decl npos: 
-integer_cst 64: 
-integer_type : 
-field_decl _M_dataplus: 
-integer_cst 64: 
-record_type : 
-type_decl basic_string: 
-type_decl _CharT_alloc_type: 
-type_decl traits_type: 
-type_decl value_type: 
-type_decl allocator_type: 
-type_decl size_type: 
-type_decl difference_type: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_pointer: 
-type_decl iterator: 
-type_decl const_iterator: 
-type_decl const_reverse_iterator: 
-type_decl reverse_iterator: 
-type_decl _Rep_base: 
-type_decl _Rep: 
-type_decl _Alloc_hider: 
-field_decl num: 
-integer_cst 32: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-type_decl Struct1: 
-cleanup_point_expr : 
-expr_stmt : 
-convert_expr : 
-init_expr : 
+var_decl __new_start: __new_start, 
+integer_cst 64: __new_start, 
+pointer_type : __new_start, 
+type_decl pointer: __new_start, 
+pointer_type : __new_start, 
+record_type : __new_start, 
+type_decl Struct1: __new_start, 
+field_decl str: __new_start, 
+integer_cst 64: __new_start, 
+record_type : __new_start, 
+type_decl string: __new_start, 
+var_decl npos: __new_start, 
+integer_cst 64: __new_start, 
+integer_type : __new_start, 
+field_decl _M_dataplus: __new_start, 
+integer_cst 64: __new_start, 
+record_type : __new_start, 
+type_decl basic_string: __new_start, 
+type_decl _CharT_alloc_type: __new_start, 
+type_decl traits_type: __new_start, 
+type_decl value_type: __new_start, 
+type_decl allocator_type: __new_start, 
+type_decl size_type: __new_start, 
+type_decl difference_type: __new_start, 
+type_decl reference: __new_start, 
+type_decl const_reference: __new_start, 
+type_decl pointer: __new_start, 
+type_decl const_pointer: __new_start, 
+type_decl iterator: __new_start, 
+type_decl const_iterator: __new_start, 
+type_decl const_reverse_iterator: __new_start, 
+type_decl reverse_iterator: __new_start, 
+type_decl _Rep_base: __new_start, 
+type_decl _Rep: __new_start, 
+type_decl _Alloc_hider: __new_start, 
+field_decl num: __new_start, 
+integer_cst 32: __new_start, 
+integer_type : __new_start, 
+type_decl int: __new_start, 
+integer_cst 32: __new_start, 
+integer_cst -2147483648: __new_start, 
+integer_cst 2147483647: __new_start, 
+type_decl Struct1: __new_start, 
+cleanup_point_expr : __new_start, 
+expr_stmt : __new_start, 
+convert_expr : __new_start, 
+init_expr : __new_start, 
 var_decl __new_start: __new_start, 
 call_expr : __new_start, 
 addr_expr : __new_start, 

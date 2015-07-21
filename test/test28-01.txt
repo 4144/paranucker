@@ -14286,8 +14286,8 @@ function_decl func10 test28.cpp 237:10
    decl_expr test28.cpp 239:16 - statement
     var_decl ptr2 test28.cpp 239:16 - operand
     - isUsed: 1
-   cleanup_point_expr test28.cpp 240:57 - statement
-    expr_stmt test28.cpp 240:57 - operand
+   cleanup_point_expr test28.cpp 240:62 - statement
+    expr_stmt test28.cpp 240:62 - operand
      call_expr test28.cpp 240:31 - expresssion
       addr_expr - function
        function_decl paranuckerInternalTest test28.cpp 12:6 - operand
@@ -14363,8 +14363,8 @@ function_decl func10 test28.cpp 237:10
         - stringLength: 10
       nop_expr - arg
        addr_expr - operand
-        string_cst ptr1 - operand
-        - stringLength: 5
+        string_cst ptr1 ptr2 - operand
+        - stringLength: 10
    cleanup_point_expr test28.cpp 241:60 - statement
     expr_stmt test28.cpp 241:60 - operand
      call_expr test28.cpp 241:31 - expresssion
@@ -14523,8 +14523,8 @@ function_decl func10 test28.cpp 237:10
        addr_expr - operand
         string_cst - operand
         - stringLength: 1
-   cleanup_point_expr test28.cpp 243:65 - statement
-    expr_stmt test28.cpp 243:65 - operand
+   cleanup_point_expr test28.cpp 243:70 - statement
+    expr_stmt test28.cpp 243:70 - operand
      call_expr test28.cpp 243:31 - expresssion
       addr_expr - function
        function_decl paranuckerInternalTest test28.cpp 12:6 - operand
@@ -14600,8 +14600,8 @@ function_decl func10 test28.cpp 237:10
         - stringLength: 18
       nop_expr - arg
        addr_expr - operand
-        string_cst ptr1 - operand
-        - stringLength: 5
+        string_cst ptr1 ptr2 - operand
+        - stringLength: 10
    if_stmt test28.cpp 244:9 - statement
     truth_andif_expr test28.cpp 244:18 - condition
      ne_expr - operand
@@ -14791,8 +14791,8 @@ function_decl func10 test28.cpp 237:10
       var_decl ptr2 test28.cpp 239:16 - operand
       - isUsed: 1
     statement_list - then
-     cleanup_point_expr test28.cpp 246:61 - statement
-      expr_stmt test28.cpp 246:61 - operand
+     cleanup_point_expr test28.cpp 246:66 - statement
+      expr_stmt test28.cpp 246:66 - operand
        call_expr test28.cpp 246:35 - expresssion
         addr_expr - function
          function_decl paranuckerInternalTest test28.cpp 12:6 - operand
@@ -14868,8 +14868,8 @@ function_decl func10 test28.cpp 237:10
           - stringLength: 10
         nop_expr - arg
          addr_expr - operand
-          string_cst ptr1 - operand
-          - stringLength: 5
+          string_cst ptr1 ptr2 - operand
+          - stringLength: 10
      cleanup_point_expr test28.cpp 247:68 - statement
       expr_stmt test28.cpp 247:68 - operand
        call_expr test28.cpp 247:35 - expresssion
@@ -15028,8 +15028,8 @@ function_decl func10 test28.cpp 237:10
          addr_expr - operand
           string_cst - operand
           - stringLength: 1
-     cleanup_point_expr test28.cpp 249:65 - statement
-      expr_stmt test28.cpp 249:65 - operand
+     cleanup_point_expr test28.cpp 249:69 - statement
+      expr_stmt test28.cpp 249:69 - operand
        call_expr test28.cpp 249:35 - expresssion
         addr_expr - function
          function_decl paranuckerInternalTest test28.cpp 12:6 - operand
@@ -15105,11 +15105,11 @@ function_decl func10 test28.cpp 237:10
           - stringLength: 18
         nop_expr - arg
          addr_expr - operand
-          string_cst - operand
-          - stringLength: 1
+          string_cst ptr2 - operand
+          - stringLength: 5
      return_expr test28.cpp 250:13 - statement
-   cleanup_point_expr test28.cpp 252:57 - statement
-    expr_stmt test28.cpp 252:57 - operand
+   cleanup_point_expr test28.cpp 252:62 - statement
+    expr_stmt test28.cpp 252:62 - operand
      call_expr test28.cpp 252:31 - expresssion
       addr_expr - function
        function_decl paranuckerInternalTest test28.cpp 12:6 - operand
@@ -15185,8 +15185,8 @@ function_decl func10 test28.cpp 237:10
         - stringLength: 10
       nop_expr - arg
        addr_expr - operand
-        string_cst ptr1 - operand
-        - stringLength: 5
+        string_cst ptr1 ptr2 - operand
+        - stringLength: 10
    cleanup_point_expr test28.cpp 253:60 - statement
     expr_stmt test28.cpp 253:60 - operand
      call_expr test28.cpp 253:31 - expresssion
@@ -15345,8 +15345,8 @@ function_decl func10 test28.cpp 237:10
        addr_expr - operand
         string_cst - operand
         - stringLength: 1
-   cleanup_point_expr test28.cpp 255:65 - statement
-    expr_stmt test28.cpp 255:65 - operand
+   cleanup_point_expr test28.cpp 255:70 - statement
+    expr_stmt test28.cpp 255:70 - operand
      call_expr test28.cpp 255:31 - expresssion
       addr_expr - function
        function_decl paranuckerInternalTest test28.cpp 12:6 - operand
@@ -15422,8 +15422,8 @@ function_decl func10 test28.cpp 237:10
         - stringLength: 18
       nop_expr - arg
        addr_expr - operand
-        string_cst ptr1 - operand
-        - stringLength: 5
+        string_cst ptr1 ptr2 - operand
+        - stringLength: 10
    if_stmt test28.cpp 257:9 - statement
     eq_expr test28.cpp 257:14 - condition
      - isUsed: 1
@@ -15489,8 +15489,8 @@ function_decl func10 test28.cpp 237:10
       integer_cst 64 - parm size
      integer_cst 0 - operand
     statement_list - then
-     cleanup_point_expr test28.cpp 259:61 - statement
-      expr_stmt test28.cpp 259:61 - operand
+     cleanup_point_expr test28.cpp 259:66 - statement
+      expr_stmt test28.cpp 259:66 - operand
        call_expr test28.cpp 259:35 - expresssion
         addr_expr - function
          function_decl paranuckerInternalTest test28.cpp 12:6 - operand
@@ -15566,8 +15566,8 @@ function_decl func10 test28.cpp 237:10
           - stringLength: 10
         nop_expr - arg
          addr_expr - operand
-          string_cst ptr1 - operand
-          - stringLength: 5
+          string_cst ptr1 ptr2 - operand
+          - stringLength: 10
      cleanup_point_expr test28.cpp 260:64 - statement
       expr_stmt test28.cpp 260:64 - operand
        call_expr test28.cpp 260:35 - expresssion
@@ -15726,8 +15726,8 @@ function_decl func10 test28.cpp 237:10
          addr_expr - operand
           string_cst ptr1 - operand
           - stringLength: 5
-     cleanup_point_expr test28.cpp 262:69 - statement
-      expr_stmt test28.cpp 262:69 - operand
+     cleanup_point_expr test28.cpp 262:74 - statement
+      expr_stmt test28.cpp 262:74 - operand
        call_expr test28.cpp 262:35 - expresssion
         addr_expr - function
          function_decl paranuckerInternalTest test28.cpp 12:6 - operand
@@ -15803,8 +15803,8 @@ function_decl func10 test28.cpp 237:10
           - stringLength: 18
         nop_expr - arg
          addr_expr - operand
-          string_cst ptr1 - operand
-          - stringLength: 5
+          string_cst ptr1 ptr2 - operand
+          - stringLength: 10
      cleanup_point_expr test28.cpp 263:24 - statement
       expr_stmt test28.cpp 263:24 - operand
        convert_expr - expresssion
@@ -15990,8 +15990,8 @@ function_decl func10 test28.cpp 237:10
                 integer_cst 2 - max value
              type_decl Data1 test28.cpp 4:1 - field
              - isAutogenerated: 1
-     cleanup_point_expr test28.cpp 264:57 - statement
-      expr_stmt test28.cpp 264:57 - operand
+     cleanup_point_expr test28.cpp 264:61 - statement
+      expr_stmt test28.cpp 264:61 - operand
        call_expr test28.cpp 264:35 - expresssion
         addr_expr - function
          function_decl paranuckerInternalTest test28.cpp 12:6 - operand
@@ -16067,8 +16067,8 @@ function_decl func10 test28.cpp 237:10
           - stringLength: 10
         nop_expr - arg
          addr_expr - operand
-          string_cst - operand
-          - stringLength: 1
+          string_cst ptr2 - operand
+          - stringLength: 5
      cleanup_point_expr test28.cpp 265:64 - statement
       expr_stmt test28.cpp 265:64 - operand
        call_expr test28.cpp 265:35 - expresssion
@@ -16227,8 +16227,8 @@ function_decl func10 test28.cpp 237:10
          addr_expr - operand
           string_cst - operand
           - stringLength: 1
-     cleanup_point_expr test28.cpp 267:65 - statement
-      expr_stmt test28.cpp 267:65 - operand
+     cleanup_point_expr test28.cpp 267:69 - statement
+      expr_stmt test28.cpp 267:69 - operand
        call_expr test28.cpp 267:35 - expresssion
         addr_expr - function
          function_decl paranuckerInternalTest test28.cpp 12:6 - operand
@@ -16304,8 +16304,8 @@ function_decl func10 test28.cpp 237:10
           - stringLength: 18
         nop_expr - arg
          addr_expr - operand
-          string_cst - operand
-          - stringLength: 1
+          string_cst ptr2 - operand
+          - stringLength: 5
   block - operand
    var_decl ptr2 test28.cpp 239:16 - block vars
    - isUsed: 1
