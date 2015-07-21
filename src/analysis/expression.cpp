@@ -756,9 +756,12 @@ bool handleSetVarToFunctionBack(const std::string &var,
                                 Node *node2,
                                 WalkItem &wo)
 {
-    if (node2 == INTEGER_CST && node2->label == "0")
+    if (node2 == INTEGER_CST)
     {
-        addNullVar(wo, var);
+        if (node2->label == "0")
+            addNullVar(wo, var);
+        else
+            addNonNullVar(wo, var);
         return true;
     }
     return false;
