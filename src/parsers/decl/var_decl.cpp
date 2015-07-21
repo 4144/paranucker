@@ -89,10 +89,10 @@ void parseVarDeclNode(VarDeclNode *node)
         foundNodesMap[node->gccNode] = node;
     }
 
+    fillDeclAttributes(node);
+
     if (node->parseChilds <= 0)
         return;
-
-    fillDeclAttributes(node);
 
     node->declSize = static_cast<IntegerCstNode*>(createParseNode(
         node,
@@ -105,7 +105,7 @@ void parseVarDeclNode(VarDeclNode *node)
         node,
         DECL_INITIAL(node->gccNode),
         "initial",
-        3);
+        5);
 
     node->varType = static_cast<TypeNode*>(createParseNode(
         node,

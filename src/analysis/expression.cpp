@@ -783,6 +783,20 @@ bool handleSetVarToFunction(const std::string &var,
         return true;
     }
 
+    if (node2 == ADDR_EXPR)
+    {
+        AddrExprNode *addr = static_cast<AddrExprNode*>(node2);
+        if (!addr->args.empty() && addr->args[0] == VAR_DECL)
+        {
+            VarDeclNode *varDecl = static_cast<VarDeclNode*>(addr->args[0]);
+            if (varDecl->varType != POINTER_TYPE)
+            {
+                addNonNullVar(wo, var);
+                return true;
+            }
+        }
+    }
+
     if (node2 != CALL_EXPR)
     {
         if (node2 != COMPOUND_EXPR)
