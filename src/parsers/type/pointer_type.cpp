@@ -41,7 +41,8 @@ void parsePointerTypeNode(PointerTypeNode *node)
     node->nestedType = static_cast<TypeNode*>(createParseNode(
         node,
         TREE_TYPE(node->gccNode),
-        "nested type"));
+        "nested type",
+        false));
 }
 
 }

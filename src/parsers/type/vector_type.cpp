@@ -35,12 +35,12 @@ void parseVectorTypeNode(VectorTypeNode *node)
 
     setPrintField(node, TYPE_VECTOR_SUBPARTS, vectorSize);
 
+    fillTypeAttributes(node);
+
     if (!node->parseChilds)
         return;
 
     fillTypeName(node);
-    fillTypeAttributes(node);
-
     // TREE_TYPE - element type
 
     node->elementType = static_cast<TypeNode*>(createParseNode(

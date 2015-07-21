@@ -33,11 +33,12 @@ void parseVoidTypeNode(VoidTypeNode *node)
     fillType(node);
     Log::dump(node);
 
+    fillTypeAttributes(node);
+
     if (!node->parseChilds)
         return;
 
     fillTypeName(node);
-    fillTypeAttributes(node);
 }
 
 }

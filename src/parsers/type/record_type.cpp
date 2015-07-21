@@ -33,11 +33,12 @@ void parseRecordTypeNode(RecordTypeNode *node)
     fillType(node);
     Log::dump(node);
 
-    fillTypeName(node);
     fillTypeAttributes(node);
 
     if (!node->parseChilds)
         return;
+
+    fillTypeName(node);
 
     FOR_CHAIN(node->gccNode, it, TYPE_FIELDS, DECL_CHAIN)
     {

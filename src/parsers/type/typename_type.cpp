@@ -39,12 +39,12 @@ void parseTypeNameTypeNode(TypeNameTypeNode *node)
     setPrintField(node, TYPENAME_IS_RESOLVING_P, isResolving);
 #endif
 
+    fillTypeAttributes(node);
+
     if (!node->parseChilds)
         return;
 
     fillTypeName(node);
-    fillTypeAttributes(node);
-
 #ifdef ENABLE_CXXLANG
     node->fullName = createParseNode(
         node,

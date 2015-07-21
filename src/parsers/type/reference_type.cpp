@@ -33,11 +33,12 @@ void parseReferenceTypeNode(ReferenceTypeNode *node)
     fillType(node);
     Log::dump(node);
 
+    fillTypeAttributes(node);
+
     if (!node->parseChilds)
         return;
 
     fillTypeName(node);
-    fillTypeAttributes(node);
     node->nestedType = static_cast<TypeNode*>(createParseNode(
         node,
         TREE_TYPE(node->gccNode),

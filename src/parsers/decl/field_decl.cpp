@@ -70,6 +70,12 @@ void parseFieldDeclNode(FieldDeclNode *node)
         node,
         DECL_QUALIFIER(node->gccNode),
         "qualifier");
+
+    node->fieldType = static_cast<TypeNode*>(createParseNode(
+        node,
+        TREE_TYPE(node->gccNode),
+        "field type",
+        node->parseChilds));
 }
 
 }

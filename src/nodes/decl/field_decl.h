@@ -34,6 +34,7 @@ struct FieldDeclNode : public DeclNode
         DeclNode(),
         declSize(nullptr),
         declBitType(nullptr),
+        fieldType(nullptr),
         initial(nullptr),
         qualifier(nullptr),
         isBitField(false),
@@ -45,6 +46,7 @@ struct FieldDeclNode : public DeclNode
 
     IntegerCstNode *declSize;
     TypeNode *declBitType;
+    TypeNode *fieldType;
     Node *initial;
     Node *qualifier;
     bool isBitField;

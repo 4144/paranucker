@@ -33,12 +33,12 @@ void parseUnionTypeNode(UnionTypeNode *node)
     fillType(node);
     Log::dump(node);
 
+    fillTypeAttributes(node);
+
     if (!node->parseChilds)
         return;
 
     fillTypeName(node);
-    fillTypeAttributes(node);
-
     FOR_CHAIN(node->gccNode, it, TYPE_FIELDS, DECL_CHAIN)
     {
         node->fields.push_back(static_cast<DeclNode*>(
