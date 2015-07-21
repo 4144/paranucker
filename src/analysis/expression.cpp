@@ -127,6 +127,9 @@ std::string getComponentRefVariable(Node *node)
         if (object == INDIRECT_REF &&
             field == FIELD_DECL)
         {
+            FieldDeclNode *fieldDecl = static_cast<FieldDeclNode*>(field);
+            if (fieldDecl->fieldType != POINTER_TYPE)
+                return str;
             IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
             Node *ref = skipNop(indirect->ref);
             if (ref == PARM_DECL || ref == VAR_DECL)
