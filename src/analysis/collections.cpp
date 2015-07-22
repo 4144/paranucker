@@ -151,6 +151,11 @@ void removeLinkVarOnly(WalkItem &wi, const std::string &var)
     if (it2 != wi.linkedVars.end())
     {
         const StringSet linked = (*it2).second;
+        if (linked.empty())
+        {
+            wi.linkedVars.erase(var);
+            return;
+        }
         std::string newParent = *(linked.begin());
         wi.linkedReverseVars.erase(newParent);
         wi.linkedVars[newParent] = linked;
