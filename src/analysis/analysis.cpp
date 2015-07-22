@@ -53,6 +53,7 @@
 #include "nodes/expr/truthor_expr.h"
 #include "nodes/expr/truthorif_expr.h"
 
+#include "nodes/ref/array_ref.h"
 #include "nodes/ref/component_ref.h"
 
 #include "nodes/stmt/break_stmt.h"
@@ -290,6 +291,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             break;
         case CONTINUE_STMT:
             analyseContinueStmt(static_cast<ContinueStmtNode*>(node), wi2, wo);
+            break;
+        case ARRAY_REF:
+            analyseArrayRef(static_cast<ArrayRefNode*>(node), wi2, wo);
             break;
         case COMPONENT_REF:
             analyseComponentRef(static_cast<ComponentRefNode*>(node), wi2, wo);

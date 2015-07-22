@@ -22,12 +22,14 @@
 
 #include "includes.h"
 
+struct ArrayRefNode;
 struct ComponentRefNode;
 struct WalkItem;
 
 namespace Analysis
 {
     void analyseComponentRef(ComponentRefNode *node, const WalkItem &wi, WalkItem &wo);
+    void analyseArrayRef(ArrayRefNode *node, const WalkItem &wi, WalkItem &wo);
 }
 
 #endif // ANALYSIS_REF_H

@@ -44,6 +44,8 @@ struct TruthOrExprNode;
 struct TruthOrIfExprNode;
 struct WalkItem;
 
+#include <vector>
+
 namespace Analysis
 {
     void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo);
@@ -94,6 +96,10 @@ namespace Analysis
                           WalkItem &wo);
 
     std::string getComponentRefVariable(Node *node);
+
+    std::vector<std::string> getComponentRefParts(Node *node);
+
+    std::vector<std::string> getComponentRefLeftParts(Node *node);
 
     bool handleSetVarToFunction(const std::string &var,
                                 Node *node1,

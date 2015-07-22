@@ -79,6 +79,7 @@ void analyseCondition(Node *node,
     reportParmDeclNullPointer(node,
         thenNode,
         wi2);
+    reportParmDeclLeftNullPointer(node, thenNode, wi2);
     walkTree(thenNode, wi2, wo2);
     Log::dumpWI(node, "wo2 then ", wo2);
 
@@ -98,6 +99,7 @@ void analyseCondition(Node *node,
     reportParmDeclNullPointer(node,
         elseNode,
         wi3);
+    reportParmDeclLeftNullPointer(node, elseNode, wi3);
     walkTree(elseNode, wi3, wo3);
     Log::dumpWI(node, "wo3 else ", wo3);
 

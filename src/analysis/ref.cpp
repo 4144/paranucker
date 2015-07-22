@@ -30,6 +30,7 @@
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/pointerplus_expr.h"
 
+#include "nodes/ref/array_ref.h"
 #include "nodes/ref/component_ref.h"
 #include "nodes/ref/indirect_ref.h"
 
@@ -57,6 +58,20 @@ void analyseComponentRef(ComponentRefNode *node,
             wi);
     }
 */
+}
+
+void analyseArrayRef(ArrayRefNode *node,
+                     const WalkItem &wi,
+                     WalkItem &wo A_UNUSED)
+{
+    // need atleast one arg for check
+    if (node->args.empty() || checkCommand(FindArgs))
+        return;
+
+    FOR_EACH(it, node->args)
+    {
+        reportParmDeclNullPointer(node, it, wi);
+    }
 }
 
 }

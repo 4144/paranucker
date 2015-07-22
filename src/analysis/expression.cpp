@@ -60,6 +60,7 @@
 #include "nodes/ref/indirect_ref.h"
 #include "nodes/ref/objtype_ref.h"
 
+#include "nodes/type/array_type.h"
 #include "nodes/type/method_type.h"
 
 #include <set>
@@ -141,6 +142,78 @@ std::string getComponentRefVariable(Node *node)
     return str;
 }
 
+std::vector<std::string> getComponentRefParts(Node *node)
+{
+    std::vector<std::string> str;
+    ComponentRefNode *const comp = static_cast<ComponentRefNode*>(skipNop(node));
+    if (comp &&
+        comp->object &&
+        comp->field)
+    {
+        Node *object = skipNop(comp->object);
+        Node *field = skipNop(comp->field);
+        if (object == INDIRECT_REF &&
+            field == FIELD_DECL)
+        {
+            FieldDeclNode *fieldDecl = static_cast<FieldDeclNode*>(field);
+            IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
+            Node *ref = skipNop(indirect->ref);
+            if (ref == PARM_DECL)
+            {
+                ParmDeclNode *parmDecl = static_cast<ParmDeclNode*>(ref);
+                if (parmDecl->declType == POINTER_TYPE)
+                    str.push_back(ref->label);
+            }
+            if (ref == VAR_DECL)
+            {
+                VarDeclNode *varDecl = static_cast<VarDeclNode*>(ref);
+                if (varDecl->varType == POINTER_TYPE)
+                    str.push_back(ref->label);
+            }
+            if (ref == PARM_DECL || ref == VAR_DECL)
+            {
+                if (skipNop(fieldDecl->fieldType) != POINTER_TYPE)
+                {
+                    if (skipNop(fieldDecl->fieldType) != ARRAY_TYPE)
+                        return str;
+                    ArrayTypeNode *arr = static_cast<ArrayTypeNode*>(skipNop(fieldDecl->fieldType));
+                    if (arr->elementType != POINTER_TYPE)
+                        return str;
+                }
+                str.push_back(std::string(ref->label).append("->").append(field->label));
+            }
+        }
+    }
+    return str;
+}
+
+std::vector<std::string> getComponentRefLeftParts(Node *node)
+{
+    std::vector<std::string> str;
+    ComponentRefNode *const comp = static_cast<ComponentRefNode*>(skipNop(node));
+    if (comp &&
+        comp->object &&
+        comp->field)
+    {
+        Node *object = skipNop(comp->object);
+        Node *field = skipNop(comp->field);
+        if (object == INDIRECT_REF &&
+            field == FIELD_DECL)
+        {
+//            FieldDeclNode *fieldDecl = static_cast<FieldDeclNode*>(field);
+//            if (fieldDecl->fieldType != POINTER_TYPE)
+//                return str;
+            IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
+            Node *ref = skipNop(indirect->ref);
+            if (ref == PARM_DECL || ref == VAR_DECL)
+            {
+                str.push_back(ref->label);
+            }
+        }
+    }
+    return str;
+}
+
 void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
 {
     // need atleast one arg for check
@@ -159,15 +232,24 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
             ComponentRefNode *comp = static_cast<ComponentRefNode*>(arg);
             if (skipNop(comp->object) == INDIRECT_REF)
                 arg0 = skipNop(comp->object);
+
+            if (arg0 == INDIRECT_REF)
+            {
+                // var2 not found in known checking pointer
+                reportParmDeclNullPointer(node,
+                    static_cast<IndirectRefNode*>(arg0)->ref,
+                    wi);
+            }
         }
-        if (arg0 == INDIRECT_REF)
+        if (arg == INDIRECT_REF)
         {
             // var2 not found in known checking pointer
             reportParmDeclNullPointer(node,
-                static_cast<IndirectRefNode*>(arg0)->ref,
+                static_cast<IndirectRefNode*>(arg)->ref,
                 wi);
 
-            if (isNotIn(var2, wi.needCheckNullVars) &&
+            if (!var1.empty() &&
+                isNotIn(var2, wi.needCheckNullVars) &&
                 isNotIn(var2, wi.knownVars))
             {
                 removeVar(wo, var1);
@@ -262,6 +344,9 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
     Node *node1 = skipNop(node->args[0]);
     // INTEGER_CST?
     Node *node2 = skipNop(node->args[1]);
+
+    reportParmDeclLeftNullPointer(node, node1, wi);
+    reportParmDeclLeftNullPointer(node, node2, wi);
 
     std::string var = getVariableName(node1);
     // if (var != 0)
@@ -375,6 +460,10 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
     Node *node1 = skipNop(node->args[0]);
     // INTEGER_CST?
     Node *node2 = skipNop(node->args[1]);
+
+    reportParmDeclLeftNullPointer(node, node1, wi);
+    reportParmDeclLeftNullPointer(node, node2, wi);
+
     std::string var = getVariableName(node1);
     // if (var == 0)
     if (!var.empty() &&

@@ -28,6 +28,9 @@
 
 #include "nodes/base/node.h"
 
+#include "nodes/decl/parm_decl.h"
+#include "nodes/decl/var_decl.h"
+
 #include "localconsts.h"
 
 namespace Analysis
@@ -66,7 +69,9 @@ void reportParmDeclNullPointer(Node *mainNode,
         {
             if (node == PARM_DECL)
             {
-                if (isIn(node->label, wi.needCheckNullVars))
+                ParmDeclNode *parmDecl = static_cast<ParmDeclNode*>(node);
+                if (parmDecl->declType == POINTER_TYPE &&
+                    isIn(node->label, wi.needCheckNullVars))
                 {
                     Log::warn(findBackLocation(mainNode),
                         "Using parameter '%s' without checking for null pointer",
@@ -75,7 +80,9 @@ void reportParmDeclNullPointer(Node *mainNode,
             }
             else if (node == VAR_DECL)
             {
-                if (isIn(node->label, wi.needCheckNullVars))
+                VarDeclNode *varDecl = static_cast<VarDeclNode*>(node);
+                if (varDecl->varType == POINTER_TYPE &&
+                    isIn(node->label, wi.needCheckNullVars))
                 {
                     Log::warn(findBackLocation(mainNode),
                         "Using variable '%s' without checking for null pointer",
@@ -85,12 +92,64 @@ void reportParmDeclNullPointer(Node *mainNode,
         }
         else if (node == COMPONENT_REF)
         {
-            std::string var = getComponentRefVariable(node);
-            if (isIn(var, wi.needCheckNullVars))
+            auto vars = getComponentRefParts(node);
+            FOR_EACH (var, vars)
             {
-                Log::warn(findBackLocation(mainNode),
-                    "Using field '%s' without checking for null pointer",
-                    var);
+                if (isIn(var, wi.needCheckNullVars) ||
+                    isNotIn(var, wi.knownVars))
+                {
+                    Log::warn(findBackLocation(mainNode),
+                        "Using variable '%s' without checking for null pointer",
+                        var);
+                }
+            }
+        }
+    }
+}
+
+// report about null pointer if need for node
+void reportParmDeclLeftNullPointer(Node *mainNode,
+                                   Node *node,
+                                   const WalkItem &wi)
+{
+    node = skipNop(node);
+    if (node)
+    {
+        if (node == COMPONENT_REF)
+        {
+            auto vars = getComponentRefLeftParts(node);
+            FOR_EACH (var, vars)
+            {
+                if (isIn(var, wi.needCheckNullVars))
+                {
+                    Log::warn(findBackLocation(mainNode),
+                        "Using field '%s' without checking for null pointer",
+                        var);
+                }
+            }
+        }
+    }
+}
+
+// report about null pointer if need for node
+void reportComponentRefNullPointer(Node *mainNode,
+                                   Node *node,
+                                   const WalkItem &wi)
+{
+    node = skipNop(node);
+    if (node)
+    {
+        if (node == COMPONENT_REF)
+        {
+            auto vars = getComponentRefParts(node);
+            FOR_EACH (var, vars)
+            {
+                if (isIn(var, wi.needCheckNullVars))
+                {
+                    Log::warn(findBackLocation(mainNode),
+                        "Using field '%s' without checking for null pointer",
+                        var);
+                }
             }
         }
     }
