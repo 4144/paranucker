@@ -153,11 +153,18 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
         std::string var1 = getVariableName(arg);
         std::string var2 = getVariableName(node->args[1]);
 
-        if (arg == INDIRECT_REF)
+        Node *arg0 = arg;
+        if (arg == COMPONENT_REF)
+        {
+            ComponentRefNode *comp = static_cast<ComponentRefNode*>(arg);
+            if (skipNop(comp->object) == INDIRECT_REF)
+                arg0 = skipNop(comp->object);
+        }
+        if (arg0 == INDIRECT_REF)
         {
             // var2 not found in known checking pointer
             reportParmDeclNullPointer(node,
-                static_cast<IndirectRefNode*>(arg)->ref,
+                static_cast<IndirectRefNode*>(arg0)->ref,
                 wi);
 
             if (isNotIn(var2, wi.needCheckNullVars) &&
@@ -786,14 +793,14 @@ bool handleSetVarToFunction(const std::string &var,
     if (node2 == ADDR_EXPR)
     {
         AddrExprNode *addr = static_cast<AddrExprNode*>(node2);
-        if (!addr->args.empty() && addr->args[0] == VAR_DECL)
+        if (!addr->args.empty() && skipNop(addr->args[0]) == VAR_DECL)
         {
-            VarDeclNode *varDecl = static_cast<VarDeclNode*>(addr->args[0]);
-            if (varDecl->varType != POINTER_TYPE)
-            {
+            VarDeclNode *varDecl = static_cast<VarDeclNode*>(skipNop(addr->args[0]));
+            if (skipNop(varDecl->varType) != POINTER_TYPE)
                 addNonNullVar(wo, var);
-                return true;
-            }
+            else
+                addUnknownVar(wo, var);
+            return true;
         }
     }
 
@@ -888,9 +895,10 @@ void handleSetVar(Node *node1,
     }
     else
     {
-        if (isNotIn(var2, wi.knownVars))
-            return;
-        addLinkedVar(wo, var2, var1);
+        if (isIn(var2, wi.knownVars))
+            addLinkedVar(wo, var2, var1);
+        else
+            addUnknownVar(wo, var1);
     }
 }
 
