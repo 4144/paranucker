@@ -49,39 +49,31 @@ void parseVarDeclNode(VarDeclNode *node)
     {
         VarDeclNode *const oldNode = static_cast<VarDeclNode*>(
             foundNodesMap[node->gccNode]);
-        if (!oldNode->complete)
+        if (node->parseChilds <= 0)
         {
-            if (node->parseChilds <= 0)
-            {
-                updateNodesMap[node] = oldNode;
-                return;
-            }
-
-            node->declSize = static_cast<IntegerCstNode*>(createParseNode(
-                node,
-                DECL_SIZE(node->gccNode),
-                INTEGER_CST,
-                "decl size 2",
-                3));
-
-            node->initial = createParseNode(
-                node,
-                DECL_INITIAL(node->gccNode),
-                "initial 2",
-                3);
-
-            node->varType = static_cast<TypeNode*>(createParseNode(
-                node,
-                TREE_TYPE(node->gccNode),
-                "var type 2",
-                3));
+            updateNodesMap[node] = oldNode;
+            return;
         }
-        else
-        {
-            node->declSize = oldNode->declSize;
-            node->varType = oldNode->varType;
-            node->initial = oldNode->initial;
-        }
+
+        node->declSize = static_cast<IntegerCstNode*>(createParseNode(
+            node,
+            DECL_SIZE(node->gccNode),
+            INTEGER_CST,
+            "decl size 2",
+            3));
+
+        node->initial = createParseNode(
+            node,
+            DECL_INITIAL(node->gccNode),
+            "initial 2",
+            3);
+
+        node->varType = static_cast<TypeNode*>(createParseNode(
+            node,
+            TREE_TYPE(node->gccNode),
+            "var type 2",
+            3));
+
         return;
     }
     else
