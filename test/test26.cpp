@@ -81,7 +81,7 @@ class Object1
     {
         if (!ptr1)
             return;
-
+        // here false report. some how need add ignore because delete here
         delete ptr1;
     }
 

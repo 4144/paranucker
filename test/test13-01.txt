@@ -334,6 +334,15 @@ function_decl func5 test13.c 25:6
    decl_expr test13.c 27:9 - statement
     var_decl var1 test13.c 27:9 - operand
     - isUsed: 1
+     integer_cst 32 - decl size 2
+     integer_cst 1 - initial 2
+     integer_type - var type 2
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
    modify_expr test13.c 28:17 - statement
     indirect_ref test13.c 28:5 - operand
      pointer_plus_expr test13.c 28:12 - ref
@@ -353,11 +362,29 @@ function_decl func5 test13.c 25:6
         nop_expr - operand
          var_decl var1 test13.c 27:9 - operand
          - isUsed: 1
+          integer_cst 32 - decl size 2
+          integer_cst 1 - initial 2
+          integer_type - var type 2
+          - precisionBits: 32
+          - signed
+           type_decl int - type name
+           integer_cst 32 - type size
+           integer_cst -2147483648 - min value
+           integer_cst 2147483647 - max value
         integer_cst 4 - operand
     integer_cst 400 - operand
   block - operand
    var_decl var1 test13.c 27:9 - block vars
    - isUsed: 1
+    integer_cst 32 - decl size 2
+    integer_cst 1 - initial 2
+    integer_type - var type 2
+    - precisionBits: 32
+    - signed
+     type_decl int - type name
+     integer_cst 32 - type size
+     integer_cst -2147483648 - min value
+     integer_cst 2147483647 - max value
 function_decl func6 test13.c 31:6
 - isPublic: 1
  function_type - function type
@@ -452,14 +479,74 @@ function_decl func6 test13.c 31:6
    decl_expr test13.c 33:10 - statement
     var_decl var2 test13.c 33:10 - operand
     - isUsed: 1
+     integer_cst 64 - decl size 2
+     - isUsed: 1
+     parm_decl b test13.c 31:24 - initial 2
+      pointer_type - decl type
+       integer_type - nested type
+       - precisionBits: 32
+       - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
+      integer_cst 64 - parm size
+     pointer_type - var type 2
+      integer_type - nested type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
    modify_expr test13.c 34:11 - statement
     indirect_ref test13.c 34:5 - operand
      var_decl var2 test13.c 33:10 - ref
      - isUsed: 1
+      integer_cst 64 - decl size 2
+      - isUsed: 1
+      parm_decl b test13.c 31:24 - initial 2
+       pointer_type - decl type
+        integer_type - nested type
+        - precisionBits: 32
+        - signed
+         type_decl int - type name
+         integer_cst 32 - type size
+         integer_cst -2147483648 - min value
+         integer_cst 2147483647 - max value
+       integer_cst 64 - parm size
+      pointer_type - var type 2
+       integer_type - nested type
+       - precisionBits: 32
+       - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     integer_cst 500 - operand
   block - operand
    var_decl var2 test13.c 33:10 - block vars
    - isUsed: 1
+    integer_cst 64 - decl size 2
+    - isUsed: 1
+    parm_decl b test13.c 31:24 - initial 2
+     pointer_type - decl type
+      integer_type - nested type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
+     integer_cst 64 - parm size
+    pointer_type - var type 2
+     integer_type - nested type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
 function_decl func7 test13.c 37:6
 - isPublic: 1
  function_type - function type
@@ -556,14 +643,68 @@ function_decl func7 test13.c 37:6
    decl_expr test13.c 39:10 - statement
     var_decl var3 test13.c 39:10 - operand
     - isUsed: 1
+     integer_cst 64 - decl size 2
+     pointer_plus_expr test13.c 39:20 - initial 2
+      - isUsed: 1
+      parm_decl b test13.c 37:24 - operand
+       pointer_type - decl type
+        integer_type - nested type
+        - precisionBits: 32
+        - signed
+       integer_cst 64 - parm size
+      integer_cst 48 - operand
+     pointer_type - var type 2
+      integer_type - nested type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
    modify_expr test13.c 40:11 - statement
     indirect_ref test13.c 40:5 - operand
      var_decl var3 test13.c 39:10 - ref
      - isUsed: 1
+      integer_cst 64 - decl size 2
+      pointer_plus_expr test13.c 39:20 - initial 2
+       - isUsed: 1
+       parm_decl b test13.c 37:24 - operand
+        pointer_type - decl type
+         integer_type - nested type
+         - precisionBits: 32
+         - signed
+        integer_cst 64 - parm size
+       integer_cst 48 - operand
+      pointer_type - var type 2
+       integer_type - nested type
+       - precisionBits: 32
+       - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
     integer_cst 600 - operand
   block - operand
    var_decl var3 test13.c 39:10 - block vars
    - isUsed: 1
+    integer_cst 64 - decl size 2
+    pointer_plus_expr test13.c 39:20 - initial 2
+     - isUsed: 1
+     parm_decl b test13.c 37:24 - operand
+      pointer_type - decl type
+       integer_type - nested type
+       - precisionBits: 32
+       - signed
+      integer_cst 64 - parm size
+     integer_cst 48 - operand
+    pointer_type - var type 2
+     integer_type - nested type
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
 function_decl func8 test13.c 43:6
 - isPublic: 1
  function_type - function type
@@ -660,12 +801,66 @@ function_decl func8 test13.c 43:6
    decl_expr test13.c 45:11 - statement
     var_decl var4 test13.c 45:11 - operand
     - isUsed: 1
+     integer_cst 64 - decl size 2
+     addr_expr test13.c 45:18 - initial 2
+      - isUsed: 1
+      parm_decl bptr test13.c 43:24 - operand
+       pointer_type - decl type
+        integer_type - nested type
+        - precisionBits: 32
+        - signed
+       integer_cst 64 - parm size
+     pointer_type - var type 2
+      pointer_type - nested type
+       integer_type - nested type
+       - precisionBits: 32
+       - signed
+        type_decl int - type name
+        integer_cst 32 - type size
+        integer_cst -2147483648 - min value
+        integer_cst 2147483647 - max value
    modify_expr test13.c 46:12 - statement
     indirect_ref test13.c 46:5 - operand
      indirect_ref test13.c 46:6 - ref
       var_decl var4 test13.c 45:11 - ref
       - isUsed: 1
+       integer_cst 64 - decl size 2
+       addr_expr test13.c 45:18 - initial 2
+        - isUsed: 1
+        parm_decl bptr test13.c 43:24 - operand
+         pointer_type - decl type
+          integer_type - nested type
+          - precisionBits: 32
+          - signed
+         integer_cst 64 - parm size
+       pointer_type - var type 2
+        pointer_type - nested type
+         integer_type - nested type
+         - precisionBits: 32
+         - signed
+          type_decl int - type name
+          integer_cst 32 - type size
+          integer_cst -2147483648 - min value
+          integer_cst 2147483647 - max value
     integer_cst 700 - operand
   block - operand
    var_decl var4 test13.c 45:11 - block vars
    - isUsed: 1
+    integer_cst 64 - decl size 2
+    addr_expr test13.c 45:18 - initial 2
+     - isUsed: 1
+     parm_decl bptr test13.c 43:24 - operand
+      pointer_type - decl type
+       integer_type - nested type
+       - precisionBits: 32
+       - signed
+      integer_cst 64 - parm size
+    pointer_type - var type 2
+     pointer_type - nested type
+      integer_type - nested type
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value

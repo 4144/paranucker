@@ -679,11 +679,11 @@ cleanup_point_expr : ptr1, this->tmp1,
 expr_stmt : ptr1, this->tmp1, 
 convert_expr : ptr1, this->tmp1, 
 modify_expr : ptr1, this->tmp1, 
-component_ref : ptr1, this->tmp1, 
 test27.cpp: In member function 'void Object1::func1(Data1*)':
-test27.cpp:55:19: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:55:28: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->val = 300;
-                   ^
+                            ^
+component_ref : ptr1, this->tmp1, 
 indirect_ref : ptr1, this->tmp1, 
 parm_decl ptr1: ptr1, this->tmp1, 
 pointer_type : ptr1, this->tmp1, 
@@ -719,10 +719,10 @@ cleanup_point_expr : ptr1, this->tmp1,
 expr_stmt : ptr1, this->tmp1, 
 convert_expr : ptr1, this->tmp1, 
 modify_expr : ptr1, this->tmp1, 
-component_ref : ptr1, this->tmp1, 
-test27.cpp:56:19: warning: Using field 'this->tmp1' without checking for null pointer
+test27.cpp:56:28: warning: Using variable 'this->tmp1' without checking for null pointer
              tmp1->val = 400;
-                   ^
+                            ^
+component_ref : ptr1, this->tmp1, 
 indirect_ref : ptr1, this->tmp1, 
 component_ref : ptr1, this->tmp1, 
 indirect_ref : ptr1, this->tmp1, 
@@ -774,10 +774,10 @@ cleanup_point_expr : ptr1, this->tmp1,
 expr_stmt : ptr1, this->tmp1, 
 convert_expr : ptr1, this->tmp1, 
 modify_expr : ptr1, this->tmp1, 
-component_ref : ptr1, this->tmp1, 
-test27.cpp:58:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:58:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 500;
-               ^
+                        ^
+component_ref : ptr1, this->tmp1, 
 indirect_ref : ptr1, this->tmp1, 
 parm_decl ptr1: ptr1, this->tmp1, 
 pointer_type : ptr1, this->tmp1, 
@@ -813,10 +813,10 @@ cleanup_point_expr : ptr1, this->tmp1,
 expr_stmt : ptr1, this->tmp1, 
 convert_expr : ptr1, this->tmp1, 
 modify_expr : ptr1, this->tmp1, 
-component_ref : ptr1, this->tmp1, 
-test27.cpp:59:15: warning: Using field 'this->tmp1' without checking for null pointer
+test27.cpp:59:24: warning: Using variable 'this->tmp1' without checking for null pointer
          tmp1->val = 600;
-               ^
+                        ^
+component_ref : ptr1, this->tmp1, 
 indirect_ref : ptr1, this->tmp1, 
 component_ref : ptr1, this->tmp1, 
 indirect_ref : ptr1, this->tmp1, 
@@ -1197,11 +1197,11 @@ cleanup_point_expr : ptr1, this->tmp1, this->tmp2,
 expr_stmt : ptr1, this->tmp1, this->tmp2, 
 convert_expr : ptr1, this->tmp1, this->tmp2, 
 modify_expr : ptr1, this->tmp1, this->tmp2, 
-component_ref : ptr1, this->tmp1, this->tmp2, 
 test27.cpp: In member function 'void Object1::func2(Data1*)':
-test27.cpp:74:19: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:74:28: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->val = 400;
-                   ^
+                            ^
+component_ref : ptr1, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, this->tmp1, this->tmp2, 
 parm_decl ptr1: ptr1, this->tmp1, this->tmp2, 
 pointer_type : ptr1, this->tmp1, this->tmp2, 
@@ -1237,10 +1237,10 @@ cleanup_point_expr : ptr1, this->tmp1, this->tmp2,
 expr_stmt : ptr1, this->tmp1, this->tmp2, 
 convert_expr : ptr1, this->tmp1, this->tmp2, 
 modify_expr : ptr1, this->tmp1, this->tmp2, 
-component_ref : ptr1, this->tmp1, this->tmp2, 
-test27.cpp:75:19: warning: Using field 'this->tmp1' without checking for null pointer
+test27.cpp:75:28: warning: Using variable 'this->tmp1' without checking for null pointer
              tmp1->val = 500;
-                   ^
+                            ^
+component_ref : ptr1, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, this->tmp1, this->tmp2, 
 component_ref : ptr1, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, this->tmp1, this->tmp2, 
@@ -1292,10 +1292,10 @@ cleanup_point_expr : ptr1, this->tmp1, this->tmp2,
 expr_stmt : ptr1, this->tmp1, this->tmp2, 
 convert_expr : ptr1, this->tmp1, this->tmp2, 
 modify_expr : ptr1, this->tmp1, this->tmp2, 
-component_ref : ptr1, this->tmp1, this->tmp2, 
-test27.cpp:76:19: warning: Using field 'this->tmp2' without checking for null pointer
+test27.cpp:76:28: warning: Using variable 'this->tmp2' without checking for null pointer
              tmp2->val = 600;
-                   ^
+                            ^
+component_ref : ptr1, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, this->tmp1, this->tmp2, 
 component_ref : ptr1, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, this->tmp1, this->tmp2, 
@@ -1347,10 +1347,10 @@ cleanup_point_expr : ptr1, this->tmp1, this->tmp2,
 expr_stmt : ptr1, this->tmp1, this->tmp2, 
 convert_expr : ptr1, this->tmp1, this->tmp2, 
 modify_expr : ptr1, this->tmp1, this->tmp2, 
-component_ref : ptr1, this->tmp1, this->tmp2, 
-test27.cpp:78:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:78:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 700;
-               ^
+                        ^
+component_ref : ptr1, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, this->tmp1, this->tmp2, 
 parm_decl ptr1: ptr1, this->tmp1, this->tmp2, 
 pointer_type : ptr1, this->tmp1, this->tmp2, 
@@ -1386,10 +1386,10 @@ cleanup_point_expr : ptr1, this->tmp1, this->tmp2,
 expr_stmt : ptr1, this->tmp1, this->tmp2, 
 convert_expr : ptr1, this->tmp1, this->tmp2, 
 modify_expr : ptr1, this->tmp1, this->tmp2, 
-component_ref : ptr1, this->tmp1, this->tmp2, 
-test27.cpp:79:15: warning: Using field 'this->tmp1' without checking for null pointer
+test27.cpp:79:24: warning: Using variable 'this->tmp1' without checking for null pointer
          tmp1->val = 800;
-               ^
+                        ^
+component_ref : ptr1, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, this->tmp1, this->tmp2, 
 component_ref : ptr1, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, this->tmp1, this->tmp2, 
@@ -1441,10 +1441,10 @@ cleanup_point_expr : ptr1, this->tmp1, this->tmp2,
 expr_stmt : ptr1, this->tmp1, this->tmp2, 
 convert_expr : ptr1, this->tmp1, this->tmp2, 
 modify_expr : ptr1, this->tmp1, this->tmp2, 
-component_ref : ptr1, this->tmp1, this->tmp2, 
-test27.cpp:80:15: warning: Using field 'this->tmp2' without checking for null pointer
+test27.cpp:80:24: warning: Using variable 'this->tmp2' without checking for null pointer
          tmp2->val = 900;
-               ^
+                        ^
+component_ref : ptr1, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, this->tmp1, this->tmp2, 
 component_ref : ptr1, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, this->tmp1, this->tmp2, 
@@ -1552,6 +1552,20 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 decl_expr : ptr1, 
 var_decl ptr2: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+field_decl ptrval: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+field_decl arr: ptr1, ptr2, 
+integer_cst 96: ptr1, ptr2, 
+array_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
 cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr1, ptr2, 
 call_expr : ptr1, ptr2, 
@@ -1611,11 +1625,11 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-component_ref : ptr1, ptr2, 
 test27.cpp: In member function 'void Object1::func3(Data1*)':
-test27.cpp:108:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:108:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 100;
-               ^
+                        ^
+component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
@@ -1729,6 +1743,20 @@ integer_type : ptr1, ptr2,
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 var_decl ptr2: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+field_decl ptrval: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+field_decl arr: ptr1, ptr2, 
+integer_cst 96: ptr1, ptr2, 
+array_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
 cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr1, ptr2, 
 call_expr : ptr1, ptr2, 
@@ -1788,12 +1816,26 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-component_ref : ptr1, ptr2, 
-test27.cpp:132:15: warning: Using variable 'ptr2' without checking for null pointer
+test27.cpp:132:24: warning: Using variable 'ptr2' without checking for null pointer
          ptr2->val = 200;
-               ^
+                        ^
+component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 var_decl ptr2: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+field_decl ptrval: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+field_decl arr: ptr1, ptr2, 
+integer_cst 96: ptr1, ptr2, 
+array_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
 field_decl val: ptr1, ptr2, 
 integer_cst 32: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
@@ -1887,10 +1929,10 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-component_ref : ptr1, ptr2, 
-test27.cpp:146:19: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:146:28: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->val = 300;
-                   ^
+                            ^
+component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
@@ -2036,10 +2078,10 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-component_ref : ptr1, ptr2, 
-test27.cpp:170:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:170:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 400;
-               ^
+                        ^
+component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
@@ -2150,11 +2192,39 @@ integer_type : ptr1, ptr2,
 type_decl Data1: ptr1, ptr2, 
 block : ptr1, ptr2, 
 var_decl ptr2: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+field_decl ptrval: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+field_decl arr: ptr1, ptr2, 
+integer_cst 96: ptr1, ptr2, 
+array_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
 function_decl func4: 
 bind_expr : ptr1, 
 statement_list : ptr1, 
 decl_expr : ptr1, 
 var_decl ptr2: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+field_decl ptrval: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+field_decl arr: ptr1, ptr2, 
+integer_cst 96: ptr1, ptr2, 
+array_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
 cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
@@ -2262,6 +2332,20 @@ integer_type : ptr1, ptr2, this->tmp1,
 integer_type : ptr1, ptr2, this->tmp1, 
 type_decl Data1: ptr1, ptr2, this->tmp1, 
 var_decl ptr2: ptr1, ptr2, this->tmp1, 
+integer_cst 64: ptr1, ptr2, this->tmp1, 
+pointer_type : ptr1, ptr2, this->tmp1, 
+record_type : ptr1, ptr2, this->tmp1, 
+type_decl Data1: ptr1, ptr2, this->tmp1, 
+field_decl val: ptr1, ptr2, this->tmp1, 
+integer_cst 32: ptr1, ptr2, this->tmp1, 
+integer_type : ptr1, ptr2, this->tmp1, 
+field_decl ptrval: ptr1, ptr2, this->tmp1, 
+integer_cst 64: ptr1, ptr2, this->tmp1, 
+pointer_type : ptr1, ptr2, this->tmp1, 
+field_decl arr: ptr1, ptr2, this->tmp1, 
+integer_cst 96: ptr1, ptr2, this->tmp1, 
+array_type : ptr1, ptr2, this->tmp1, 
+type_decl Data1: ptr1, ptr2, this->tmp1, 
 if_stmt : ptr1, ptr2, this->tmp1, 
 ne_expr : ptr1, ptr2, this->tmp1, 
 component_ref : ptr1, ptr2, this->tmp1, 
@@ -2308,11 +2392,11 @@ cleanup_point_expr : ptr1,
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
-component_ref : ptr1, 
 test27.cpp: In member function 'void Object1::func4(Data1*)':
-test27.cpp:192:19: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:192:28: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->val = 100;
-                   ^
+                            ^
+component_ref : ptr1, 
 indirect_ref : ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
@@ -2401,10 +2485,10 @@ cleanup_point_expr : ptr1, ptr2, this->tmp1,
 expr_stmt : ptr1, ptr2, this->tmp1, 
 convert_expr : ptr1, ptr2, this->tmp1, 
 modify_expr : ptr1, ptr2, this->tmp1, 
-component_ref : ptr1, ptr2, this->tmp1, 
-test27.cpp:197:19: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:197:28: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->val = 300;
-                   ^
+                            ^
+component_ref : ptr1, ptr2, this->tmp1, 
 indirect_ref : ptr1, ptr2, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, this->tmp1, 
 pointer_type : ptr1, ptr2, this->tmp1, 
@@ -2440,10 +2524,10 @@ cleanup_point_expr : ptr1, ptr2, this->tmp1,
 expr_stmt : ptr1, ptr2, this->tmp1, 
 convert_expr : ptr1, ptr2, this->tmp1, 
 modify_expr : ptr1, ptr2, this->tmp1, 
-component_ref : ptr1, ptr2, this->tmp1, 
-test27.cpp:198:19: warning: Using field 'this->tmp1' without checking for null pointer
+test27.cpp:198:28: warning: Using variable 'this->tmp1' without checking for null pointer
              tmp1->val = 400;
-                   ^
+                            ^
+component_ref : ptr1, ptr2, this->tmp1, 
 indirect_ref : ptr1, ptr2, this->tmp1, 
 component_ref : ptr1, ptr2, this->tmp1, 
 indirect_ref : ptr1, ptr2, this->tmp1, 
@@ -2495,10 +2579,10 @@ cleanup_point_expr : ptr1, ptr2, this->tmp1,
 expr_stmt : ptr1, ptr2, this->tmp1, 
 convert_expr : ptr1, ptr2, this->tmp1, 
 modify_expr : ptr1, ptr2, this->tmp1, 
-component_ref : ptr1, ptr2, this->tmp1, 
-test27.cpp:200:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:200:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 500;
-               ^
+                        ^
+component_ref : ptr1, ptr2, this->tmp1, 
 indirect_ref : ptr1, ptr2, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, this->tmp1, 
 pointer_type : ptr1, ptr2, this->tmp1, 
@@ -2534,10 +2618,10 @@ cleanup_point_expr : ptr1, ptr2, this->tmp1,
 expr_stmt : ptr1, ptr2, this->tmp1, 
 convert_expr : ptr1, ptr2, this->tmp1, 
 modify_expr : ptr1, ptr2, this->tmp1, 
-component_ref : ptr1, ptr2, this->tmp1, 
-test27.cpp:201:15: warning: Using field 'this->tmp1' without checking for null pointer
+test27.cpp:201:24: warning: Using variable 'this->tmp1' without checking for null pointer
          tmp1->val = 600;
-               ^
+                        ^
+component_ref : ptr1, ptr2, this->tmp1, 
 indirect_ref : ptr1, ptr2, this->tmp1, 
 component_ref : ptr1, ptr2, this->tmp1, 
 indirect_ref : ptr1, ptr2, this->tmp1, 
@@ -2609,20 +2693,48 @@ integer_type : ptr1, ptr2, this->tmp1,
 type_decl Data1: ptr1, ptr2, this->tmp1, 
 block : ptr1, ptr2, this->tmp1, 
 var_decl ptr2: ptr1, ptr2, this->tmp1, 
+integer_cst 64: ptr1, ptr2, this->tmp1, 
+pointer_type : ptr1, ptr2, this->tmp1, 
+record_type : ptr1, ptr2, this->tmp1, 
+type_decl Data1: ptr1, ptr2, this->tmp1, 
+field_decl val: ptr1, ptr2, this->tmp1, 
+integer_cst 32: ptr1, ptr2, this->tmp1, 
+integer_type : ptr1, ptr2, this->tmp1, 
+field_decl ptrval: ptr1, ptr2, this->tmp1, 
+integer_cst 64: ptr1, ptr2, this->tmp1, 
+pointer_type : ptr1, ptr2, this->tmp1, 
+field_decl arr: ptr1, ptr2, this->tmp1, 
+integer_cst 96: ptr1, ptr2, this->tmp1, 
+array_type : ptr1, ptr2, this->tmp1, 
+type_decl Data1: ptr1, ptr2, this->tmp1, 
 function_decl func5: 
 bind_expr : ptr1, ptr3, 
 statement_list : ptr1, ptr3, 
 decl_expr : ptr1, ptr3, 
 var_decl ptr2: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+record_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
+field_decl val: ptr1, ptr2, ptr3, 
+integer_cst 32: ptr1, ptr2, ptr3, 
+integer_type : ptr1, ptr2, ptr3, 
+field_decl ptrval: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+field_decl arr: ptr1, ptr2, ptr3, 
+integer_cst 96: ptr1, ptr2, ptr3, 
+array_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
 cleanup_point_expr : ptr1, ptr2, ptr3, 
 expr_stmt : ptr1, ptr2, ptr3, 
 convert_expr : ptr1, ptr2, ptr3, 
 modify_expr : ptr1, ptr2, ptr3, 
-component_ref : ptr1, ptr2, ptr3, 
 test27.cpp: In member function 'void Object1::func5(Data1*, Data1*)':
-test27.cpp:207:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:207:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 100;
-               ^
+                        ^
+component_ref : ptr1, ptr2, ptr3, 
 indirect_ref : ptr1, ptr2, ptr3, 
 parm_decl ptr1: ptr1, ptr2, ptr3, 
 pointer_type : ptr1, ptr2, ptr3, 
@@ -2681,16 +2793,44 @@ integer_type : ptr1, ptr2, ptr3,
 type_decl Data1: ptr1, ptr2, ptr3, 
 integer_cst 64: ptr1, ptr2, ptr3, 
 var_decl ptr2: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+record_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
+field_decl val: ptr1, ptr2, ptr3, 
+integer_cst 32: ptr1, ptr2, ptr3, 
+integer_type : ptr1, ptr2, ptr3, 
+field_decl ptrval: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+field_decl arr: ptr1, ptr2, ptr3, 
+integer_cst 96: ptr1, ptr2, ptr3, 
+array_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
 cleanup_point_expr : ptr1, ptr2, ptr3, 
 expr_stmt : ptr1, ptr2, ptr3, 
 convert_expr : ptr1, ptr2, ptr3, 
 modify_expr : ptr1, ptr2, ptr3, 
-component_ref : ptr1, ptr2, ptr3, 
-test27.cpp:209:15: warning: Using variable 'ptr2' without checking for null pointer
+test27.cpp:209:24: warning: Using variable 'ptr2' without checking for null pointer
          ptr2->val = 200;
-               ^
+                        ^
+component_ref : ptr1, ptr2, ptr3, 
 indirect_ref : ptr1, ptr2, ptr3, 
 var_decl ptr2: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+record_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
+field_decl val: ptr1, ptr2, ptr3, 
+integer_cst 32: ptr1, ptr2, ptr3, 
+integer_type : ptr1, ptr2, ptr3, 
+field_decl ptrval: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+field_decl arr: ptr1, ptr2, ptr3, 
+integer_cst 96: ptr1, ptr2, ptr3, 
+array_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
 field_decl val: ptr1, ptr2, ptr3, 
 integer_cst 32: ptr1, ptr2, ptr3, 
 integer_type : ptr1, ptr2, ptr3, 
@@ -2728,10 +2868,10 @@ cleanup_point_expr : ptr1, ptr2, ptr3,
 expr_stmt : ptr1, ptr2, ptr3, 
 convert_expr : ptr1, ptr2, ptr3, 
 modify_expr : ptr1, ptr2, ptr3, 
-component_ref : ptr1, ptr2, ptr3, 
-test27.cpp:212:19: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:212:28: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->val = 300;
-                   ^
+                            ^
+component_ref : ptr1, ptr2, ptr3, 
 indirect_ref : ptr1, ptr2, ptr3, 
 parm_decl ptr1: ptr1, ptr2, ptr3, 
 pointer_type : ptr1, ptr2, ptr3, 
@@ -2815,10 +2955,10 @@ cleanup_point_expr : ptr1, ptr2, ptr3,
 expr_stmt : ptr1, ptr2, ptr3, 
 convert_expr : ptr1, ptr2, ptr3, 
 modify_expr : ptr1, ptr2, ptr3, 
-component_ref : ptr1, ptr2, ptr3, 
-test27.cpp:215:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:215:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 400;
-               ^
+                        ^
+component_ref : ptr1, ptr2, ptr3, 
 indirect_ref : ptr1, ptr2, ptr3, 
 parm_decl ptr1: ptr1, ptr2, ptr3, 
 pointer_type : ptr1, ptr2, ptr3, 
@@ -2877,14 +3017,28 @@ integer_type : ptr1, ptr2, ptr3,
 type_decl Data1: ptr1, ptr2, ptr3, 
 integer_cst 64: ptr1, ptr2, ptr3, 
 var_decl ptr2: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+record_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
+field_decl val: ptr1, ptr2, ptr3, 
+integer_cst 32: ptr1, ptr2, ptr3, 
+integer_type : ptr1, ptr2, ptr3, 
+field_decl ptrval: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+field_decl arr: ptr1, ptr2, ptr3, 
+integer_cst 96: ptr1, ptr2, ptr3, 
+array_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
 cleanup_point_expr : ptr1, ptr2, ptr3, 
 expr_stmt : ptr1, ptr2, ptr3, 
 convert_expr : ptr1, ptr2, ptr3, 
 modify_expr : ptr1, ptr2, ptr3, 
-component_ref : ptr1, ptr2, ptr3, 
-test27.cpp:217:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:217:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 500;
-               ^
+                        ^
+component_ref : ptr1, ptr2, ptr3, 
 indirect_ref : ptr1, ptr2, ptr3, 
 parm_decl ptr1: ptr1, ptr2, ptr3, 
 pointer_type : ptr1, ptr2, ptr3, 
@@ -2940,17 +3094,31 @@ integer_type : ptr1, ptr2, ptr3,
 type_decl Data1: ptr1, ptr2, ptr3, 
 block : ptr1, ptr2, ptr3, 
 var_decl ptr2: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+record_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
+field_decl val: ptr1, ptr2, ptr3, 
+integer_cst 32: ptr1, ptr2, ptr3, 
+integer_type : ptr1, ptr2, ptr3, 
+field_decl ptrval: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+field_decl arr: ptr1, ptr2, ptr3, 
+integer_cst 96: ptr1, ptr2, ptr3, 
+array_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
 function_decl func6: 
 statement_list : ptr1, ptr3, 
 cleanup_point_expr : ptr1, ptr3, 
 expr_stmt : ptr1, ptr3, 
 convert_expr : ptr1, ptr3, 
 modify_expr : ptr1, ptr3, 
-component_ref : ptr1, ptr3, 
 test27.cpp: In member function 'void Object1::func6(Data1*, Data1*)':
-test27.cpp:222:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:222:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 100;
-               ^
+                        ^
+component_ref : ptr1, ptr3, 
 indirect_ref : ptr1, ptr3, 
 parm_decl ptr1: ptr1, ptr3, 
 pointer_type : ptr1, ptr3, 
@@ -3050,6 +3218,9 @@ cleanup_point_expr : ptr1, ptr3,
 expr_stmt : ptr3, 
 convert_expr : ptr3, 
 modify_expr : ptr3, 
+test27.cpp:224:24: warning: Using variable 'this->tmp1' without checking for null pointer
+         tmp1->val = 200;
+                        ^
 component_ref : ptr3, 
 indirect_ref : ptr3, 
 component_ref : ptr3, 
@@ -3211,10 +3382,10 @@ cleanup_point_expr : ptr1, ptr3,
 expr_stmt : ptr1, ptr3, 
 convert_expr : ptr1, ptr3, 
 modify_expr : ptr1, ptr3, 
-component_ref : ptr1, ptr3, 
-test27.cpp:230:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:230:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 400;
-               ^
+                        ^
+component_ref : ptr1, ptr3, 
 indirect_ref : ptr1, ptr3, 
 parm_decl ptr1: ptr1, ptr3, 
 pointer_type : ptr1, ptr3, 
@@ -3351,6 +3522,20 @@ bind_expr : ptr1, ptr3,
 statement_list : ptr1, ptr3, 
 decl_expr : ptr1, ptr3, 
 var_decl ptr2: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+record_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
+field_decl val: ptr1, ptr2, ptr3, 
+integer_cst 32: ptr1, ptr2, ptr3, 
+integer_type : ptr1, ptr2, ptr3, 
+field_decl ptrval: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+field_decl arr: ptr1, ptr2, ptr3, 
+integer_cst 96: ptr1, ptr2, ptr3, 
+array_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
 cleanup_point_expr : ptr1, ptr2, ptr3, 
 expr_stmt : ptr1, ptr2, ptr3, 
 convert_expr : ptr1, ptr2, ptr3, 
@@ -3419,11 +3604,11 @@ cleanup_point_expr : ptr1, ptr2, ptr3, this->tmp1,
 expr_stmt : ptr1, ptr2, ptr3, this->tmp1, 
 convert_expr : ptr1, ptr2, ptr3, this->tmp1, 
 modify_expr : ptr1, ptr2, ptr3, this->tmp1, 
-component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 test27.cpp: In member function 'void Object1::func7(Data1*, Data1*)':
-test27.cpp:239:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:239:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 100;
-               ^
+                        ^
+component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, ptr3, this->tmp1, 
 pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
@@ -3482,16 +3667,44 @@ integer_type : ptr1, ptr2, ptr3, this->tmp1,
 type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
 integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
 var_decl ptr2: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+record_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
+field_decl val: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 32: ptr1, ptr2, ptr3, this->tmp1, 
+integer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl ptrval: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl arr: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 96: ptr1, ptr2, ptr3, this->tmp1, 
+array_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
 cleanup_point_expr : ptr1, ptr2, ptr3, this->tmp1, 
 expr_stmt : ptr1, ptr2, ptr3, this->tmp1, 
 convert_expr : ptr1, ptr2, ptr3, this->tmp1, 
 modify_expr : ptr1, ptr2, ptr3, this->tmp1, 
-component_ref : ptr1, ptr2, ptr3, this->tmp1, 
-test27.cpp:241:15: warning: Using variable 'ptr2' without checking for null pointer
+test27.cpp:241:24: warning: Using variable 'ptr2' without checking for null pointer
          ptr2->val = 200;
-               ^
+                        ^
+component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 var_decl ptr2: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+record_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
+field_decl val: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 32: ptr1, ptr2, ptr3, this->tmp1, 
+integer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl ptrval: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl arr: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 96: ptr1, ptr2, ptr3, this->tmp1, 
+array_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
 field_decl val: ptr1, ptr2, ptr3, this->tmp1, 
 integer_cst 32: ptr1, ptr2, ptr3, this->tmp1, 
 integer_type : ptr1, ptr2, ptr3, this->tmp1, 
@@ -3529,10 +3742,10 @@ cleanup_point_expr : ptr1, ptr2, ptr3, this->tmp1,
 expr_stmt : ptr1, ptr2, ptr3, this->tmp1, 
 convert_expr : ptr1, ptr2, ptr3, this->tmp1, 
 modify_expr : ptr1, ptr2, ptr3, this->tmp1, 
-component_ref : ptr1, ptr2, ptr3, this->tmp1, 
-test27.cpp:244:19: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:244:28: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->val = 300;
-                   ^
+                            ^
+component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, ptr3, this->tmp1, 
 pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
@@ -3616,10 +3829,10 @@ cleanup_point_expr : ptr1, ptr2, ptr3, this->tmp1,
 expr_stmt : ptr1, ptr2, ptr3, this->tmp1, 
 convert_expr : ptr1, ptr2, ptr3, this->tmp1, 
 modify_expr : ptr1, ptr2, ptr3, this->tmp1, 
-component_ref : ptr1, ptr2, ptr3, this->tmp1, 
-test27.cpp:247:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:247:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 400;
-               ^
+                        ^
+component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, ptr3, this->tmp1, 
 pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
@@ -3719,10 +3932,10 @@ cleanup_point_expr : ptr1, ptr2, ptr3, this->tmp1,
 expr_stmt : ptr1, ptr2, ptr3, this->tmp1, 
 convert_expr : ptr1, ptr2, ptr3, this->tmp1, 
 modify_expr : ptr1, ptr2, ptr3, this->tmp1, 
-component_ref : ptr1, ptr2, ptr3, this->tmp1, 
-test27.cpp:249:15: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:249:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 500;
-               ^
+                        ^
+component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, ptr3, this->tmp1, 
 pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
@@ -3778,11 +3991,39 @@ integer_type : ptr1, ptr2, ptr3, this->tmp1,
 type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
 block : ptr1, ptr2, ptr3, this->tmp1, 
 var_decl ptr2: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+record_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
+field_decl val: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 32: ptr1, ptr2, ptr3, this->tmp1, 
+integer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl ptrval: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl arr: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 96: ptr1, ptr2, ptr3, this->tmp1, 
+array_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
 function_decl func8: 
 bind_expr : ptr1, ptr3, 
 statement_list : ptr1, ptr3, 
 decl_expr : ptr1, ptr3, 
 var_decl ptr2: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+record_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
+field_decl val: ptr1, ptr2, ptr3, 
+integer_cst 32: ptr1, ptr2, ptr3, 
+integer_type : ptr1, ptr2, ptr3, 
+field_decl ptrval: ptr1, ptr2, ptr3, 
+integer_cst 64: ptr1, ptr2, ptr3, 
+pointer_type : ptr1, ptr2, ptr3, 
+field_decl arr: ptr1, ptr2, ptr3, 
+integer_cst 96: ptr1, ptr2, ptr3, 
+array_type : ptr1, ptr2, ptr3, 
+type_decl Data1: ptr1, ptr2, ptr3, 
 cleanup_point_expr : ptr1, ptr2, ptr3, 
 expr_stmt : ptr1, ptr2, ptr3, 
 convert_expr : ptr1, ptr2, ptr3, 
@@ -3935,17 +4176,45 @@ integer_type : ptr1, ptr2, ptr3, this->tmp1,
 type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
 integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
 var_decl ptr2: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+record_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
+field_decl val: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 32: ptr1, ptr2, ptr3, this->tmp1, 
+integer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl ptrval: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl arr: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 96: ptr1, ptr2, ptr3, this->tmp1, 
+array_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
 cleanup_point_expr : ptr1, ptr2, ptr3, this->tmp1, 
 expr_stmt : ptr1, ptr2, ptr3, this->tmp1, 
 convert_expr : ptr1, ptr2, ptr3, this->tmp1, 
 modify_expr : ptr1, ptr2, ptr3, this->tmp1, 
-component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 test27.cpp: In member function 'void Object1::func8(Data1*, Data1*)':
-test27.cpp:259:15: warning: Using variable 'ptr2' without checking for null pointer
+test27.cpp:259:24: warning: Using variable 'ptr2' without checking for null pointer
          ptr2->val = 200;
-               ^
+                        ^
+component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 var_decl ptr2: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+record_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
+field_decl val: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 32: ptr1, ptr2, ptr3, this->tmp1, 
+integer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl ptrval: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl arr: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 96: ptr1, ptr2, ptr3, this->tmp1, 
+array_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
 field_decl val: ptr1, ptr2, ptr3, this->tmp1, 
 integer_cst 32: ptr1, ptr2, ptr3, this->tmp1, 
 integer_type : ptr1, ptr2, ptr3, this->tmp1, 
@@ -3983,10 +4252,10 @@ cleanup_point_expr : ptr1, ptr2, ptr3, this->tmp1,
 expr_stmt : ptr1, ptr2, ptr3, this->tmp1, 
 convert_expr : ptr1, ptr2, ptr3, this->tmp1, 
 modify_expr : ptr1, ptr2, ptr3, this->tmp1, 
-component_ref : ptr1, ptr2, ptr3, this->tmp1, 
-test27.cpp:262:19: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:262:28: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->val = 300;
-                   ^
+                            ^
+component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, ptr3, this->tmp1, 
 pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
@@ -4196,6 +4465,20 @@ expr_stmt : ptr1, ptr2, ptr3, this->tmp1,
 convert_expr : ptr1, ptr2, ptr3, this->tmp1, 
 modify_expr : ptr1, ptr2, ptr3, this->tmp1, 
 var_decl ptr2: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+record_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
+field_decl val: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 32: ptr1, ptr2, ptr3, this->tmp1, 
+integer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl ptrval: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl arr: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 96: ptr1, ptr2, ptr3, this->tmp1, 
+array_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, ptr3, this->tmp1, 
 pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
 record_type : ptr1, ptr2, ptr3, this->tmp1, 
@@ -4298,6 +4581,20 @@ integer_cst 500:
 if_stmt : ptr1, ptr2, ptr3, this->tmp1, 
 ne_expr : ptr1, ptr2, ptr3, this->tmp1, 
 var_decl ptr2: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+record_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
+field_decl val: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 32: ptr1, ptr2, ptr3, this->tmp1, 
+integer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl ptrval: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl arr: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 96: ptr1, ptr2, ptr3, this->tmp1, 
+array_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
 integer_cst 0: ptr1, ptr2, ptr3, this->tmp1, 
 cleanup_point_expr : 
 expr_stmt : 
@@ -4359,3 +4656,17 @@ integer_type : ptr1, ptr2, ptr3, this->tmp1,
 type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
 block : ptr1, ptr2, ptr3, this->tmp1, 
 var_decl ptr2: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+record_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 
+field_decl val: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 32: ptr1, ptr2, ptr3, this->tmp1, 
+integer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl ptrval: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 64: ptr1, ptr2, ptr3, this->tmp1, 
+pointer_type : ptr1, ptr2, ptr3, this->tmp1, 
+field_decl arr: ptr1, ptr2, ptr3, this->tmp1, 
+integer_cst 96: ptr1, ptr2, ptr3, this->tmp1, 
+array_type : ptr1, ptr2, ptr3, this->tmp1, 
+type_decl Data1: ptr1, ptr2, ptr3, this->tmp1, 

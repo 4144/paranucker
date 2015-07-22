@@ -1,9 +1,9 @@
 test23.cpp: In constructor 'Object1::Object1(Data1*)':
-test23.cpp:55:24: warning: Using field 'this->dataptr' without checking for null pointer
+test23.cpp:55:24: warning: Using variable 'this->dataptr' without checking for null pointer
          dataptr->ftest1();
                         ^
 test23.cpp: In constructor 'Object1::Object1(Data1*)':
-test23.cpp:55:24: warning: Using field 'this->dataptr' without checking for null pointer
+test23.cpp:55:24: warning: Using variable 'this->dataptr' without checking for null pointer
 test23.cpp: In member function 'void Object1::func3(Data1*)':
 test23.cpp:81:25: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->ftest1();

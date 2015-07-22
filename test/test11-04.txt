@@ -1,25 +1,25 @@
 test11.cpp: In member function 'void Object1::func2(Data1*, Data1*)':
-test11.cpp:29:15: warning: Using parameter 'ptr1' without checking for null pointer
+test11.cpp:29:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 300;
-               ^
+                        ^
 test11.cpp: In member function 'void Object1::func3(Data1*, Data1*)':
-test11.cpp:34:27: warning: Using parameter 'ptr1' without checking for null pointer
+test11.cpp:34:31: warning: Using field 'ptr1' without checking for null pointer
          if (ptr1 || ptr1->val == 100)
-                           ^
-test11.cpp:39:15: warning: Using parameter 'ptr1' without checking for null pointer
+                               ^
+test11.cpp:39:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 200;
-               ^
+                        ^
 test11.cpp: In member function 'void Object1::func4(Data1*, Data1*)':
-test11.cpp:44:28: warning: Using parameter 'ptr1' without checking for null pointer
+test11.cpp:44:32: warning: Using field 'ptr1' without checking for null pointer
          if (!ptr1 && ptr1->val == 100)
-                            ^
-test11.cpp:49:15: warning: Using parameter 'ptr1' without checking for null pointer
+                                ^
+test11.cpp:49:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 200;
-               ^
+                        ^
 test11.cpp: In member function 'void Object1::func6(Data1*, Data1*)':
-test11.cpp:70:15: warning: Using parameter 'ptr1' without checking for null pointer
+test11.cpp:70:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 300;
-               ^
-test11.cpp:71:15: warning: Using parameter 'ptr2' without checking for null pointer
+                        ^
+test11.cpp:71:24: warning: Using parameter 'ptr2' without checking for null pointer
          ptr2->val = 400;
-               ^
+                        ^

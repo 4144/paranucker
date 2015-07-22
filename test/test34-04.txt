@@ -1,24 +1,24 @@
 test34.cpp: In member function 'void Object1::func1(Data1*)':
-test34.cpp:60:15: warning: Using parameter 'ptr1' without checking for null pointer
+test34.cpp:60:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 200;
-               ^
+                        ^
 test34.cpp: In member function 'void Object1::func2(Data1*)':
-test34.cpp:90:15: warning: Using parameter 'ptr1' without checking for null pointer
+test34.cpp:90:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 200;
-               ^
+                        ^
 test34.cpp: In member function 'void Object1::func3(Data1*)':
-test34.cpp:102:19: warning: Using parameter 'ptr1' without checking for null pointer
+test34.cpp:102:23: warning: Using field 'ptr1' without checking for null pointer
          if (ptr1->val == 100)
-                   ^
+                       ^
 test34.cpp: In member function 'void Object1::func4(Data1*)':
-test34.cpp:138:22: warning: Using parameter 'ptr1' without checking for null pointer
+test34.cpp:138:26: warning: Using field 'ptr1' without checking for null pointer
          while (ptr1->val == 100)
-                      ^
-test34.cpp:138:22: warning: Using parameter 'ptr1' without checking for null pointer
+                          ^
+test34.cpp:138:26: warning: Using field 'ptr1' without checking for null pointer
 test34.cpp: In member function 'void Object1::func6(Data1*)':
-test34.cpp:225:22: warning: Using parameter 'ptr1' without checking for null pointer
+test34.cpp:225:26: warning: Using field 'ptr1' without checking for null pointer
          while (ptr1->val == 100)
-                      ^
+                          ^
 test34.cpp: In member function 'void Object1::func7(Data1*)':
 test34.cpp:268:21: warning: Useless variable check 'ptr1'. It already was checked before
          while (ptr1 && ptr1->val == 100)

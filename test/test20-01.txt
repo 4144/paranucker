@@ -114,8 +114,52 @@ function_decl func1 test20.c 8:5
        integer_cst 2147483647 - max value
   decl_expr test20.c 10:19 - operand
    var_decl ptr3 test20.c 10:19 - operand
+    integer_cst 64 - decl size 2
+    - isUsed: 1
+    parm_decl ptr1 test20.c 8:25 - initial 2
+     pointer_type - decl type
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+     integer_cst 64 - parm size
+    pointer_type - var type 2
+     record_type - nested type
+      identifier_node Data1 - type name
+      field_decl val test20.c 3:9 - field
+      - signed
+       integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
   block - operand
    var_decl ptr3 test20.c 10:19 - block vars
+    integer_cst 64 - decl size 2
+    - isUsed: 1
+    parm_decl ptr1 test20.c 8:25 - initial 2
+     pointer_type - decl type
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+     integer_cst 64 - parm size
+    pointer_type - var type 2
+     record_type - nested type
+      identifier_node Data1 - type name
+      field_decl val test20.c 3:9 - field
+      - signed
+       integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
 function_decl func2 test20.c 13:5
 - isPublic: 1
  function_type - function type
@@ -235,11 +279,55 @@ function_decl func2 test20.c 13:5
    decl_expr test20.c 15:19 - statement
     var_decl ptr3 test20.c 15:19 - operand
     - isUsed: 1
+     integer_cst 64 - decl size 2
+     - isUsed: 1
+     parm_decl ptr1 test20.c 13:25 - initial 2
+      pointer_type - decl type
+       record_type - nested type
+        identifier_node Data1 - type name
+        field_decl val test20.c 3:9 - field
+        - signed
+         integer_cst 32 - decl size
+         integer_type - field type
+         - precisionBits: 32
+         - signed
+      integer_cst 64 - parm size
+     pointer_type - var type 2
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
    modify_expr test20.c 16:15 - statement
     component_ref test20.c 16:9 - operand
      indirect_ref test20.c 16:9 - object
       var_decl ptr3 test20.c 15:19 - ref
       - isUsed: 1
+       integer_cst 64 - decl size 2
+       - isUsed: 1
+       parm_decl ptr1 test20.c 13:25 - initial 2
+        pointer_type - decl type
+         record_type - nested type
+          identifier_node Data1 - type name
+          field_decl val test20.c 3:9 - field
+          - signed
+           integer_cst 32 - decl size
+           integer_type - field type
+           - precisionBits: 32
+           - signed
+        integer_cst 64 - parm size
+       pointer_type - var type 2
+        record_type - nested type
+         identifier_node Data1 - type name
+         field_decl val test20.c 3:9 - field
+         - signed
+          integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
      field_decl val test20.c 3:9 - field
      - signed
       integer_cst 32 - decl size
@@ -254,6 +342,28 @@ function_decl func2 test20.c 13:5
   block - operand
    var_decl ptr3 test20.c 15:19 - block vars
    - isUsed: 1
+    integer_cst 64 - decl size 2
+    - isUsed: 1
+    parm_decl ptr1 test20.c 13:25 - initial 2
+     pointer_type - decl type
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+     integer_cst 64 - parm size
+    pointer_type - var type 2
+     record_type - nested type
+      identifier_node Data1 - type name
+      field_decl val test20.c 3:9 - field
+      - signed
+       integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
 function_decl func3 test20.c 19:5
 - isPublic: 1
  function_type - function type
@@ -373,16 +483,82 @@ function_decl func3 test20.c 19:5
    decl_expr test20.c 21:19 - statement
     var_decl ptr3 test20.c 21:19 - operand
     - isUsed: 1
+     integer_cst 64 - decl size 2
+     - isUsed: 1
+     parm_decl ptr1 test20.c 19:25 - initial 2
+      pointer_type - decl type
+       record_type - nested type
+        identifier_node Data1 - type name
+        field_decl val test20.c 3:9 - field
+        - signed
+         integer_cst 32 - decl size
+         integer_type - field type
+         - precisionBits: 32
+         - signed
+      integer_cst 64 - parm size
+     pointer_type - var type 2
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
    cond_expr test20.c 22:8 - statement
     ne_expr test20.c 22:9 - operand
      var_decl ptr3 test20.c 21:19 - operand
      - isUsed: 1
+      integer_cst 64 - decl size 2
+      - isUsed: 1
+      parm_decl ptr1 test20.c 19:25 - initial 2
+       pointer_type - decl type
+        record_type - nested type
+         identifier_node Data1 - type name
+         field_decl val test20.c 3:9 - field
+         - signed
+          integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+       integer_cst 64 - parm size
+      pointer_type - var type 2
+       record_type - nested type
+        identifier_node Data1 - type name
+        field_decl val test20.c 3:9 - field
+        - signed
+         integer_cst 32 - decl size
+         integer_type - field type
+         - precisionBits: 32
+         - signed
      integer_cst 0 - operand
     modify_expr test20.c 23:19 - operand
      component_ref test20.c 23:13 - operand
       indirect_ref test20.c 23:13 - object
        var_decl ptr3 test20.c 21:19 - ref
        - isUsed: 1
+        integer_cst 64 - decl size 2
+        - isUsed: 1
+        parm_decl ptr1 test20.c 19:25 - initial 2
+         pointer_type - decl type
+          record_type - nested type
+           identifier_node Data1 - type name
+           field_decl val test20.c 3:9 - field
+           - signed
+            integer_cst 32 - decl size
+            integer_type - field type
+            - precisionBits: 32
+            - signed
+         integer_cst 64 - parm size
+        pointer_type - var type 2
+         record_type - nested type
+          identifier_node Data1 - type name
+          field_decl val test20.c 3:9 - field
+          - signed
+           integer_cst 32 - decl size
+           integer_type - field type
+           - precisionBits: 32
+           - signed
       field_decl val test20.c 3:9 - field
       - signed
        integer_cst 32 - decl size
@@ -397,6 +573,28 @@ function_decl func3 test20.c 19:5
   block - operand
    var_decl ptr3 test20.c 21:19 - block vars
    - isUsed: 1
+    integer_cst 64 - decl size 2
+    - isUsed: 1
+    parm_decl ptr1 test20.c 19:25 - initial 2
+     pointer_type - decl type
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+     integer_cst 64 - parm size
+    pointer_type - var type 2
+     record_type - nested type
+      identifier_node Data1 - type name
+      field_decl val test20.c 3:9 - field
+      - signed
+       integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
 function_decl func4 test20.c 26:5
 - isPublic: 1
  function_type - function type
@@ -517,16 +715,82 @@ function_decl func4 test20.c 26:5
    decl_expr test20.c 28:19 - statement
     var_decl ptr3 test20.c 28:19 - operand
     - isUsed: 1
+     integer_cst 64 - decl size 2
+     - isUsed: 1
+     parm_decl ptr1 test20.c 26:25 - initial 2
+      pointer_type - decl type
+       record_type - nested type
+        identifier_node Data1 - type name
+        field_decl val test20.c 3:9 - field
+        - signed
+         integer_cst 32 - decl size
+         integer_type - field type
+         - precisionBits: 32
+         - signed
+      integer_cst 64 - parm size
+     pointer_type - var type 2
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
    cond_expr test20.c 29:8 - statement
     ne_expr test20.c 29:9 - operand
      var_decl ptr3 test20.c 28:19 - operand
      - isUsed: 1
+      integer_cst 64 - decl size 2
+      - isUsed: 1
+      parm_decl ptr1 test20.c 26:25 - initial 2
+       pointer_type - decl type
+        record_type - nested type
+         identifier_node Data1 - type name
+         field_decl val test20.c 3:9 - field
+         - signed
+          integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
+       integer_cst 64 - parm size
+      pointer_type - var type 2
+       record_type - nested type
+        identifier_node Data1 - type name
+        field_decl val test20.c 3:9 - field
+        - signed
+         integer_cst 32 - decl size
+         integer_type - field type
+         - precisionBits: 32
+         - signed
      integer_cst 0 - operand
     modify_expr test20.c 30:19 - operand
      component_ref test20.c 30:13 - operand
       indirect_ref test20.c 30:13 - object
        var_decl ptr3 test20.c 28:19 - ref
        - isUsed: 1
+        integer_cst 64 - decl size 2
+        - isUsed: 1
+        parm_decl ptr1 test20.c 26:25 - initial 2
+         pointer_type - decl type
+          record_type - nested type
+           identifier_node Data1 - type name
+           field_decl val test20.c 3:9 - field
+           - signed
+            integer_cst 32 - decl size
+            integer_type - field type
+            - precisionBits: 32
+            - signed
+         integer_cst 64 - parm size
+        pointer_type - var type 2
+         record_type - nested type
+          identifier_node Data1 - type name
+          field_decl val test20.c 3:9 - field
+          - signed
+           integer_cst 32 - decl size
+           integer_type - field type
+           - precisionBits: 32
+           - signed
       field_decl val test20.c 3:9 - field
       - signed
        integer_cst 32 - decl size
@@ -609,6 +873,28 @@ function_decl func4 test20.c 26:5
   block - operand
    var_decl ptr3 test20.c 28:19 - block vars
    - isUsed: 1
+    integer_cst 64 - decl size 2
+    - isUsed: 1
+    parm_decl ptr1 test20.c 26:25 - initial 2
+     pointer_type - decl type
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+     integer_cst 64 - parm size
+    pointer_type - var type 2
+     record_type - nested type
+      identifier_node Data1 - type name
+      field_decl val test20.c 3:9 - field
+      - signed
+       integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
 function_decl func5 test20.c 35:5
 - isPublic: 1
  function_type - function type
@@ -773,11 +1059,55 @@ function_decl func5 test20.c 35:5
    decl_expr test20.c 40:19 - statement
     var_decl ptr3 test20.c 40:19 - operand
     - isUsed: 1
+     integer_cst 64 - decl size 2
+     - isUsed: 1
+     parm_decl ptr1 test20.c 35:25 - initial 2
+      pointer_type - decl type
+       record_type - nested type
+        identifier_node Data1 - type name
+        field_decl val test20.c 3:9 - field
+        - signed
+         integer_cst 32 - decl size
+         integer_type - field type
+         - precisionBits: 32
+         - signed
+      integer_cst 64 - parm size
+     pointer_type - var type 2
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
    modify_expr test20.c 42:15 - statement
     component_ref test20.c 42:9 - operand
      indirect_ref test20.c 42:9 - object
       var_decl ptr3 test20.c 40:19 - ref
       - isUsed: 1
+       integer_cst 64 - decl size 2
+       - isUsed: 1
+       parm_decl ptr1 test20.c 35:25 - initial 2
+        pointer_type - decl type
+         record_type - nested type
+          identifier_node Data1 - type name
+          field_decl val test20.c 3:9 - field
+          - signed
+           integer_cst 32 - decl size
+           integer_type - field type
+           - precisionBits: 32
+           - signed
+        integer_cst 64 - parm size
+       pointer_type - var type 2
+        record_type - nested type
+         identifier_node Data1 - type name
+         field_decl val test20.c 3:9 - field
+         - signed
+          integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
      field_decl val test20.c 3:9 - field
      - signed
       integer_cst 32 - decl size
@@ -792,6 +1122,28 @@ function_decl func5 test20.c 35:5
   block - operand
    var_decl ptr3 test20.c 40:19 - block vars
    - isUsed: 1
+    integer_cst 64 - decl size 2
+    - isUsed: 1
+    parm_decl ptr1 test20.c 35:25 - initial 2
+     pointer_type - decl type
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+     integer_cst 64 - parm size
+    pointer_type - var type 2
+     record_type - nested type
+      identifier_node Data1 - type name
+      field_decl val test20.c 3:9 - field
+      - signed
+       integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
 function_decl func6 test20.c 45:5
 - isPublic: 1
  function_type - function type
@@ -956,11 +1308,55 @@ function_decl func6 test20.c 45:5
    decl_expr test20.c 50:19 - statement
     var_decl ptr3 test20.c 50:19 - operand
     - isUsed: 1
+     integer_cst 64 - decl size 2
+     - isUsed: 1
+     parm_decl ptr1 test20.c 45:25 - initial 2
+      pointer_type - decl type
+       record_type - nested type
+        identifier_node Data1 - type name
+        field_decl val test20.c 3:9 - field
+        - signed
+         integer_cst 32 - decl size
+         integer_type - field type
+         - precisionBits: 32
+         - signed
+      integer_cst 64 - parm size
+     pointer_type - var type 2
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
    modify_expr test20.c 52:15 - statement
     component_ref test20.c 52:9 - operand
      indirect_ref test20.c 52:9 - object
       var_decl ptr3 test20.c 50:19 - ref
       - isUsed: 1
+       integer_cst 64 - decl size 2
+       - isUsed: 1
+       parm_decl ptr1 test20.c 45:25 - initial 2
+        pointer_type - decl type
+         record_type - nested type
+          identifier_node Data1 - type name
+          field_decl val test20.c 3:9 - field
+          - signed
+           integer_cst 32 - decl size
+           integer_type - field type
+           - precisionBits: 32
+           - signed
+        integer_cst 64 - parm size
+       pointer_type - var type 2
+        record_type - nested type
+         identifier_node Data1 - type name
+         field_decl val test20.c 3:9 - field
+         - signed
+          integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
      field_decl val test20.c 3:9 - field
      - signed
       integer_cst 32 - decl size
@@ -975,6 +1371,28 @@ function_decl func6 test20.c 45:5
   block - operand
    var_decl ptr3 test20.c 50:19 - block vars
    - isUsed: 1
+    integer_cst 64 - decl size 2
+    - isUsed: 1
+    parm_decl ptr1 test20.c 45:25 - initial 2
+     pointer_type - decl type
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+     integer_cst 64 - parm size
+    pointer_type - var type 2
+     record_type - nested type
+      identifier_node Data1 - type name
+      field_decl val test20.c 3:9 - field
+      - signed
+       integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
 function_decl func7 test20.c 55:5
 - isPublic: 1
  function_type - function type
@@ -1072,6 +1490,14 @@ function_decl func7 test20.c 55:5
    decl_expr test20.c 57:9 - statement
     var_decl c test20.c 57:9 - operand
     - isUsed: 1
+     integer_cst 32 - decl size 2
+     integer_type - var type 2
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
    cond_expr test20.c 58:8 - statement
     ne_expr test20.c 58:11 - operand
      var_decl k test20.c 6:5 - operand
@@ -1086,6 +1512,14 @@ function_decl func7 test20.c 55:5
        integer_cst 2147483647 - max value
      var_decl c test20.c 57:9 - operand
      - isUsed: 1
+      integer_cst 32 - decl size 2
+      integer_type - var type 2
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
     cond_expr test20.c 60:12 - operand
      eq_expr test20.c 60:13 - operand
       - isUsed: 1
@@ -1186,6 +1620,28 @@ function_decl func7 test20.c 55:5
      indirect_ref test20.c 67:9 - object
       var_decl ptr3 test20.c 64:19 - ref
       - isUsed: 1
+       integer_cst 64 - decl size 2
+       - isUsed: 1
+       parm_decl ptr1 test20.c 55:25 - initial 2
+        pointer_type - decl type
+         record_type - nested type
+          identifier_node Data1 - type name
+          field_decl val test20.c 3:9 - field
+          - signed
+           integer_cst 32 - decl size
+           integer_type - field type
+           - precisionBits: 32
+           - signed
+        integer_cst 64 - parm size
+       pointer_type - var type 2
+        record_type - nested type
+         identifier_node Data1 - type name
+         field_decl val test20.c 3:9 - field
+         - signed
+          integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
      field_decl val test20.c 3:9 - field
      - signed
       integer_cst 32 - decl size
@@ -1200,8 +1656,38 @@ function_decl func7 test20.c 55:5
   block - operand
    var_decl c test20.c 57:9 - block vars
    - isUsed: 1
+    integer_cst 32 - decl size 2
+    integer_type - var type 2
+    - precisionBits: 32
+    - signed
+     type_decl int - type name
+     integer_cst 32 - type size
+     integer_cst -2147483648 - min value
+     integer_cst 2147483647 - max value
    var_decl ptr3 test20.c 64:19 - block vars
    - isUsed: 1
+    integer_cst 64 - decl size 2
+    - isUsed: 1
+    parm_decl ptr1 test20.c 55:25 - initial 2
+     pointer_type - decl type
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+     integer_cst 64 - parm size
+    pointer_type - var type 2
+     record_type - nested type
+      identifier_node Data1 - type name
+      field_decl val test20.c 3:9 - field
+      - signed
+       integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed
 function_decl func8 test20.c 70:5
 - isPublic: 1
  function_type - function type
@@ -1299,6 +1785,14 @@ function_decl func8 test20.c 70:5
    decl_expr test20.c 72:9 - statement
     var_decl c test20.c 72:9 - operand
     - isUsed: 1
+     integer_cst 32 - decl size 2
+     integer_type - var type 2
+     - precisionBits: 32
+     - signed
+      type_decl int - type name
+      integer_cst 32 - type size
+      integer_cst -2147483648 - min value
+      integer_cst 2147483647 - max value
    cond_expr test20.c 73:8 - statement
     ne_expr test20.c 73:11 - operand
      var_decl k test20.c 6:5 - operand
@@ -1313,6 +1807,14 @@ function_decl func8 test20.c 70:5
        integer_cst 2147483647 - max value
      var_decl c test20.c 72:9 - operand
      - isUsed: 1
+      integer_cst 32 - decl size 2
+      integer_type - var type 2
+      - precisionBits: 32
+      - signed
+       type_decl int - type name
+       integer_cst 32 - type size
+       integer_cst -2147483648 - min value
+       integer_cst 2147483647 - max value
     cond_expr test20.c 75:12 - operand
      ne_expr test20.c 75:13 - operand
       - isUsed: 1
@@ -1413,6 +1915,28 @@ function_decl func8 test20.c 70:5
      indirect_ref test20.c 82:9 - object
       var_decl ptr3 test20.c 79:19 - ref
       - isUsed: 1
+       integer_cst 64 - decl size 2
+       - isUsed: 1
+       parm_decl ptr1 test20.c 70:25 - initial 2
+        pointer_type - decl type
+         record_type - nested type
+          identifier_node Data1 - type name
+          field_decl val test20.c 3:9 - field
+          - signed
+           integer_cst 32 - decl size
+           integer_type - field type
+           - precisionBits: 32
+           - signed
+        integer_cst 64 - parm size
+       pointer_type - var type 2
+        record_type - nested type
+         identifier_node Data1 - type name
+         field_decl val test20.c 3:9 - field
+         - signed
+          integer_cst 32 - decl size
+          integer_type - field type
+          - precisionBits: 32
+          - signed
      field_decl val test20.c 3:9 - field
      - signed
       integer_cst 32 - decl size
@@ -1427,5 +1951,35 @@ function_decl func8 test20.c 70:5
   block - operand
    var_decl c test20.c 72:9 - block vars
    - isUsed: 1
+    integer_cst 32 - decl size 2
+    integer_type - var type 2
+    - precisionBits: 32
+    - signed
+     type_decl int - type name
+     integer_cst 32 - type size
+     integer_cst -2147483648 - min value
+     integer_cst 2147483647 - max value
    var_decl ptr3 test20.c 79:19 - block vars
    - isUsed: 1
+    integer_cst 64 - decl size 2
+    - isUsed: 1
+    parm_decl ptr1 test20.c 70:25 - initial 2
+     pointer_type - decl type
+      record_type - nested type
+       identifier_node Data1 - type name
+       field_decl val test20.c 3:9 - field
+       - signed
+        integer_cst 32 - decl size
+        integer_type - field type
+        - precisionBits: 32
+        - signed
+     integer_cst 64 - parm size
+    pointer_type - var type 2
+     record_type - nested type
+      identifier_node Data1 - type name
+      field_decl val test20.c 3:9 - field
+      - signed
+       integer_cst 32 - decl size
+       integer_type - field type
+       - precisionBits: 32
+       - signed

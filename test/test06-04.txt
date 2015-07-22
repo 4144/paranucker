@@ -163,6 +163,13 @@ statement_list : a,
 cleanup_point_expr : a, 
 decl_expr : a, 
 var_decl k: a, 
+integer_cst 32: a, 
+integer_cst 10: a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
 return_expr : a, 
 var_decl k: a, 
 integer_cst 32: a, 
@@ -174,9 +181,23 @@ integer_cst -2147483648: a,
 integer_cst 2147483647: a, 
 block : a, 
 var_decl k: a, 
+integer_cst 32: a, 
+integer_cst 10: a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
 block : 
 block : 
 var_decl k: 
+integer_cst 32: 
+integer_cst 10: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 cleanup_point_expr : a, 
 expr_stmt : 
 convert_expr : 
@@ -195,6 +216,13 @@ block : a,
 block : 
 block : 
 var_decl k: 
+integer_cst 32: 
+integer_cst 10: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 function_decl func7: 
 bind_expr : aptr, 
 statement_list : aptr, 
@@ -219,6 +247,13 @@ statement_list : aptr,
 cleanup_point_expr : aptr, 
 decl_expr : aptr, 
 var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 return_expr : aptr, 
 var_decl k: aptr, 
 integer_cst 32: aptr, 
@@ -230,18 +265,46 @@ integer_cst -2147483648: aptr,
 integer_cst 2147483647: aptr, 
 block : aptr, 
 var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 block : 
 block : 
 var_decl k: 
+integer_cst 32: 
+integer_cst 10: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 block : 
 block : 
 block : 
 var_decl k: 
+integer_cst 32: 
+integer_cst 10: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 block : aptr, 
 block : aptr, 
 block : aptr, 
 block : aptr, 
 var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 cleanup_point_expr : aptr, 
 expr_stmt : aptr, 
 convert_expr : aptr, 
@@ -266,6 +329,13 @@ block : aptr,
 block : aptr, 
 block : aptr, 
 var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 function_decl func8: 
 bind_expr : aptr, 
 statement_list : aptr, 
@@ -291,6 +361,13 @@ statement_list : aptr,
 cleanup_point_expr : aptr, 
 decl_expr : aptr, 
 var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 cleanup_point_expr : aptr, 
 decl_expr : aptr, 
 var_decl l: aptr, 
@@ -311,23 +388,79 @@ integer_cst -2147483648: aptr,
 integer_cst 2147483647: aptr, 
 block : aptr, 
 var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 var_decl l: aptr, 
+integer_cst 32: aptr, 
+integer_cst 20: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 block : aptr, 
 block : aptr, 
 var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 var_decl l: aptr, 
+integer_cst 32: aptr, 
+integer_cst 20: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 return_expr : aptr, 
 block : aptr, 
 block : aptr, 
 block : aptr, 
 var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 var_decl l: aptr, 
+integer_cst 32: aptr, 
+integer_cst 20: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 block : 
 block : 
 block : 
 block : 
 var_decl k: 
+integer_cst 32: 
+integer_cst 10: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 var_decl l: 
+integer_cst 32: 
+integer_cst 20: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 cleanup_point_expr : aptr, 
 expr_stmt : 
 convert_expr : 
@@ -348,4 +481,18 @@ block :
 block : 
 block : 
 var_decl k: 
+integer_cst 32: 
+integer_cst 10: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 var_decl l: 
+integer_cst 32: 
+integer_cst 20: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 

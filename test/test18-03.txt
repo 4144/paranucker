@@ -150,11 +150,11 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-component_ref : ptr1, ptr2, 
 test18.cpp: In function 'int func3(Data1*, Data1*)':
-test18.cpp:28:11: warning: Using parameter 'ptr1' without checking for null pointer
+test18.cpp:28:20: warning: Using parameter 'ptr1' without checking for null pointer
      ptr1->val = 100;
-           ^
+                    ^
+component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
@@ -220,11 +220,11 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-component_ref : ptr1, ptr2, 
 test18.cpp: In function 'void func4(Data1*, Data1*)':
-test18.cpp:40:11: warning: Using parameter 'ptr1' without checking for null pointer
+test18.cpp:40:20: warning: Using parameter 'ptr1' without checking for null pointer
      ptr1->val = 100;
-           ^
+                    ^
+component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 

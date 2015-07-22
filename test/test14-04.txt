@@ -153,6 +153,13 @@ bind_expr : a,
 statement_list : a, 
 decl_expr : a, 
 var_decl k: a, 
+integer_cst 32: a, 
+integer_cst 10: a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
 return_expr : a, 
 var_decl k: a, 
 integer_cst 32: a, 
@@ -164,6 +171,13 @@ integer_cst -2147483648: a,
 integer_cst 2147483647: a, 
 block : a, 
 var_decl k: a, 
+integer_cst 32: a, 
+integer_cst 10: a, 
+integer_type : a, 
+type_decl int: a, 
+integer_cst 32: a, 
+integer_cst -2147483648: a, 
+integer_cst 2147483647: a, 
 modify_expr : a, 
 indirect_ref : 
 parm_decl a: 
@@ -178,6 +192,13 @@ integer_cst 700:
 block : a, 
 block : 
 var_decl k: 
+integer_cst 32: 
+integer_cst 10: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 function_decl func7: 
 bind_expr : aptr, 
 statement_list : aptr, 
@@ -198,6 +219,13 @@ bind_expr : aptr,
 statement_list : aptr, 
 decl_expr : aptr, 
 var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 return_expr : aptr, 
 var_decl k: aptr, 
 integer_cst 32: aptr, 
@@ -209,6 +237,13 @@ integer_cst -2147483648: aptr,
 integer_cst 2147483647: aptr, 
 block : aptr, 
 var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 modify_expr : aptr, 
 test14.c: In function 'func7':
 test14.c:70:11: warning: Using parameter 'aptr' without checking for null pointer
@@ -227,6 +262,13 @@ integer_cst 800: aptr,
 block : aptr, 
 block : aptr, 
 var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 function_decl func8: 
 bind_expr : aptr, 
 statement_list : aptr, 
@@ -248,6 +290,13 @@ bind_expr : aptr,
 statement_list : aptr, 
 decl_expr : aptr, 
 var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 decl_expr : aptr, 
 var_decl l: aptr, 
 integer_cst 32: aptr, 
@@ -267,7 +316,21 @@ integer_cst -2147483648: aptr,
 integer_cst 2147483647: aptr, 
 block : aptr, 
 var_decl k: aptr, 
+integer_cst 32: aptr, 
+integer_cst 10: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 var_decl l: aptr, 
+integer_cst 32: aptr, 
+integer_cst 20: aptr, 
+integer_type : aptr, 
+type_decl int: aptr, 
+integer_cst 32: aptr, 
+integer_cst -2147483648: aptr, 
+integer_cst 2147483647: aptr, 
 return_expr : aptr, 
 modify_expr : aptr, 
 indirect_ref : 
@@ -283,4 +346,18 @@ integer_cst 900:
 block : aptr, 
 block : 
 var_decl k: 
+integer_cst 32: 
+integer_cst 10: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 var_decl l: 
+integer_cst 32: 
+integer_cst 20: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 

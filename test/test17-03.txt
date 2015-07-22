@@ -85,10 +85,10 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 32: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-component_ref : ptr1, ptr2, 
-test17.c:20:9: warning: Using parameter 'ptr1' without checking for null pointer
+test17.c:20:15: warning: Using parameter 'ptr1' without checking for null pointer
      ptr1->val = 100;
-         ^
+               ^
+component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
@@ -156,10 +156,10 @@ integer_cst 2147483647: ptr2,
 integer_cst 32: ptr2, 
 integer_cst 0: ptr2, 
 modify_expr : ptr1, ptr2, 
-component_ref : ptr1, ptr2, 
-test17.c:28:9: warning: Using parameter 'ptr1' without checking for null pointer
+test17.c:28:15: warning: Using parameter 'ptr1' without checking for null pointer
      ptr1->val = 100;
-         ^
+               ^
+component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
@@ -222,11 +222,11 @@ integer_cst 64: ptr1, ptr2,
 integer_cst 0: ptr1, ptr2, 
 return_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-component_ref : ptr1, ptr2, 
 test17.c: In function 'func4':
-test17.c:40:9: warning: Using parameter 'ptr1' without checking for null pointer
+test17.c:40:15: warning: Using parameter 'ptr1' without checking for null pointer
      ptr1->val = 100;
-         ^
+               ^
+component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 

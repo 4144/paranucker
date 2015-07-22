@@ -191,6 +191,12 @@ bind_expr : ptr1, ptr2,
 statement_list : ptr1, ptr2, 
 decl_expr : ptr1, ptr2, 
 var_decl c: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
 if_stmt : ptr1, ptr2, 
 truth_orif_expr : ptr1, ptr2, 
 eq_expr : ptr1, ptr2, 
@@ -217,6 +223,12 @@ integer_cst 32: ptr1, ptr2,
 integer_cst -2147483648: ptr1, ptr2, 
 integer_cst 2147483647: ptr1, ptr2, 
 var_decl c: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
 eq_expr : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
@@ -283,11 +295,23 @@ integer_cst -2147483648: ptr2,
 integer_cst 2147483647: ptr2, 
 block : ptr1, ptr2, 
 var_decl c: ptr2, 
+integer_cst 32: ptr2, 
+integer_type : ptr2, 
+type_decl int: ptr2, 
+integer_cst 32: ptr2, 
+integer_cst -2147483648: ptr2, 
+integer_cst 2147483647: ptr2, 
 function_decl func4: 
 bind_expr : ptr1, ptr2, 
 statement_list : ptr1, ptr2, 
 decl_expr : ptr1, ptr2, 
 var_decl c: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
 if_stmt : ptr1, ptr2, 
 truth_orif_expr : ptr1, ptr2, 
 truth_orif_expr : ptr1, ptr2, 
@@ -315,6 +339,12 @@ integer_cst 32: ptr1, ptr2,
 integer_cst -2147483648: ptr1, ptr2, 
 integer_cst 2147483647: ptr1, ptr2, 
 var_decl c: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
 eq_expr : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
@@ -387,11 +417,23 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 block : ptr1, ptr2, 
 var_decl c: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 function_decl func5: 
 bind_expr : ptr1, ptr2, 
 statement_list : ptr1, ptr2, 
 decl_expr : ptr1, ptr2, 
 var_decl c: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
 if_stmt : ptr1, ptr2, 
 truth_orif_expr : ptr1, ptr2, 
 truth_orif_expr : ptr1, ptr2, 
@@ -439,11 +481,23 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 var_decl c: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 var_decl c: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
 integer_cst 3: ptr1, ptr2, 
 cleanup_point_expr : 
 expr_stmt : 
@@ -503,6 +557,12 @@ integer_cst -2147483648: ptr1, ptr2,
 integer_cst 2147483647: ptr1, ptr2, 
 block : ptr1, ptr2, 
 var_decl c: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
 function_decl func6: 
 statement_list : ptr1, ptr2, 
 if_stmt : ptr1, ptr2, 

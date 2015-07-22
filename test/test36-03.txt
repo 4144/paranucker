@@ -815,11 +815,39 @@ bind_expr :
 statement_list : 
 decl_expr : 
 var_decl ptr1: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+type_decl Data1: ptr1, 
 cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 init_expr : ptr1, 
 var_decl ptr1: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
 call_expr : 
 addr_expr : 
 function_decl operator new: 
@@ -898,16 +926,58 @@ integer_type :
 type_decl Data1: 
 block : 
 var_decl ptr1: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
 function_decl func2: 
 bind_expr : 
 statement_list : 
 decl_expr : 
 var_decl ptr1: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+type_decl Data1: ptr1, 
 cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 init_expr : ptr1, 
 var_decl ptr1: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
 call_expr : 
 addr_expr : 
 function_decl operator new []: 
@@ -986,16 +1056,44 @@ integer_type :
 type_decl Data1: 
 block : 
 var_decl ptr1: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
 function_decl func3: 
 bind_expr : 
 statement_list : 
 decl_expr : 
 var_decl ptr1: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
 cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 init_expr : ptr1, 
 var_decl ptr1: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 call_expr : 
 addr_expr : 
 function_decl operator new []: 
@@ -1060,6 +1158,13 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 block : 
 var_decl ptr1: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 function_decl func4: 
 statement_list : 
 cleanup_point_expr : 
@@ -1440,11 +1545,23 @@ addr_expr :
 function_decl __comp_ctor : 
 statement_list : 
 var_decl : 
+integer_cst 64: 
+pointer_type : 
+void_type : 
+type_decl void: 
 call_expr : 
 addr_expr : 
 function_decl operator delete: 
 var_decl : 
+integer_cst 64: 
+pointer_type : 
+void_type : 
+type_decl void: 
 var_decl : 
+integer_cst 64: 
+pointer_type : 
+void_type : 
+type_decl void: 
 cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
@@ -1500,11 +1617,39 @@ bind_expr :
 statement_list : 
 decl_expr : 
 var_decl ptr1: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+type_decl Data1: ptr1, 
 cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 init_expr : ptr1, 
 var_decl ptr1: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+type_decl Data1: ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl getData4: ptr1, 
@@ -1551,6 +1696,20 @@ function_decl paranuckerInternalTest: ptr1,
 if_stmt : ptr1, 
 eq_expr : ptr1, 
 var_decl ptr1: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+type_decl Data1: ptr1, 
 integer_cst 0: ptr1, 
 statement_list : ptr1, 
 cleanup_point_expr : ptr1, 
@@ -1598,6 +1757,20 @@ expr_stmt : ptr1,
 convert_expr : ptr1, 
 modify_expr : ptr1, 
 var_decl ptr1: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+type_decl Data1: ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl operator new: ptr1, 
@@ -1755,6 +1928,20 @@ modify_expr :
 component_ref : 
 indirect_ref : 
 var_decl ptr1: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 
 field_decl val: 
 integer_cst 32: 
 integer_type : 
@@ -1832,3 +2019,17 @@ integer_type :
 type_decl Data1: 
 block : 
 var_decl ptr1: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+type_decl Data1: 

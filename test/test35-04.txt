@@ -1,4 +1,15 @@
-test35.cpp: In member function 'void Object1::func3()':
-test35.cpp:127:26: warning: Using variable 'ptr1' without checking for null pointer
+test35.cpp: In member function 'void Object1::func2()':
+test35.cpp:54:37: warning: Using variable 'this->tmp1' without checking for null pointer
+         Data1 *ptr1 = tmp1->getData3();
+                                     ^
+test35.cpp:77:42: warning: Using variable 'ptr1->ptrval' without checking for null pointer
              ptr1 = ptr1->ptrval->getData3();
-                          ^
+                                          ^
+test35.cpp: In member function 'void Object1::func3()':
+test35.cpp:93:37: warning: Using variable 'this->tmp1' without checking for null pointer
+         Data1 *ptr1 = tmp1->getData3();
+                                     ^
+test35.cpp:127:42: warning: Using variable 'ptr1' without checking for null pointer
+             ptr1 = ptr1->ptrval->getData3();
+                                          ^
+test35.cpp:127:42: warning: Using variable 'ptr1->ptrval' without checking for null pointer

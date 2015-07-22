@@ -74,7 +74,7 @@ class Object1
             paranuckerInternalTest("=", "linkedVars", "this->tmp1");
             paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
             paranuckerInternalTest("=", "linkedReverseVars", "this->tmp1");
-            ptr1 = ptr1->ptrval->getData3();
+            ptr1 = ptr1->ptrval->getData3();    // must not report ptr1->ptrval
             paranuckerInternalTest("=", "knownVars", "ptr1");
             paranuckerInternalTest("=", "knownNonNullVars", "");
             paranuckerInternalTest("=", "knownNullVars", "");
