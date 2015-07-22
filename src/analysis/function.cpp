@@ -138,7 +138,11 @@ void getPossibleNullParameters(FunctionDeclNode *node, WalkItem &wi)
             continue;
         const ParmDeclNode *const name = node->args[f];
         if (f == 0 && name->label == "this")
+        {
+            wi.knownVars.insert(name->label);
+            wi.knownNonNullVars.insert(name->label);
             continue;
+        }
         if (isNotIn(f + 1, nonNull))
         {
             if (checkCommand(FindArgs))
