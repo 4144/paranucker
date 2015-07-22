@@ -48,6 +48,7 @@ void analyseComponentRef(ComponentRefNode *node,
     if (!node->object || checkCommand(FindArgs))
         return;
 
+/*
     Node *arg = skipNop(node->object);
     if (arg == INDIRECT_REF)
     {
@@ -55,6 +56,7 @@ void analyseComponentRef(ComponentRefNode *node,
             static_cast<IndirectRefNode*>(arg)->ref,
             wi);
     }
+*/
 }
 
 }
