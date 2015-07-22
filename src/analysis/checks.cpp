@@ -60,7 +60,7 @@ std::string mergeCollection(const std::set<std::string> &col)
     std::string str;
     FOR_EACH(it, col)
     {
-        str.append(it).append(",");
+        str.append("'").append(it).append("',");
     }
     return str;
 }
@@ -209,6 +209,10 @@ void checkState(CallExprNode *node, const WalkItem &wi)
     else
     {
         col1 = getCollection(node, name, wi);
+        if (isIn("this", col1))
+        {
+            col1.erase("this");
+        }
         col2 = splitArgs(args[2], 0);
     }
     if (args[0] == "=")
