@@ -1,3 +1,4 @@
+getData3: 
 getfData1: 
 getfData2: 
 Object1: 
@@ -17,3 +18,4 @@ func6: pointer_type ptr1,
 getfData1: 
 func7: pointer_type ptr1, 
 getfData1: 
+func8: pointer_type ptr1, 

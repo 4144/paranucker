@@ -5,6 +5,10 @@ struct Data1
     int val;
     Data1 *ptrval;
     int arr[3];
+    Data1 *getData3() const
+    {
+        return ptrval;
+    }
 };
 
 struct Data2 : public Data1
@@ -196,5 +200,29 @@ class Object1
             paranuckerInternalTest("=", "linkedVars", "ptr1");
             paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
         }
+    }
+
+    void func8(Data1 *ptr1)
+    {
+        paranuckerInternalTest("=", "knownVars", "ptr1");
+        paranuckerInternalTest("=", "knownNonNullVars", "");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
+        paranuckerInternalTest("=", "linkedVars", "ptr1");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
+        Data1 *const var1 = getData2();
+        paranuckerInternalTest("=", "knownVars", "ptr1 var1");
+        paranuckerInternalTest("=", "knownNonNullVars", "var1");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
+        paranuckerInternalTest("=", "linkedVars", "ptr1");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
+        Data1 *var2 = var1->getData3();
+        paranuckerInternalTest("=", "knownVars", "ptr1 var1 var2");
+        paranuckerInternalTest("=", "knownNonNullVars", "var1");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "ptr1 var2");
+        paranuckerInternalTest("=", "linkedVars", "ptr1");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
     }
 };
