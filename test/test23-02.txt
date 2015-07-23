@@ -230,6 +230,7 @@ func6: pointer_type ptr1,
 func7: pointer_type ptr1, 
 func8: pointer_type ptr1, 
 func9: pointer_type ptr2, 
+func10: pointer_type ptr1, pointer_type ptr2, 
 fill: pointer_type __first, pointer_type __last, 
 _Alloc_hider: 
 __base_dtor : 

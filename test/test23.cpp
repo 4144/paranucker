@@ -121,4 +121,10 @@ class Object1
     {
         ptr1(ptr2);
     }
+
+    void func10(Data1 *ptr1, Data1 *ptr2)
+    {
+        FuncPtr3 fptr2 = &Data1::ftest3;
+        (ptr1->*fptr2)(ptr2);
+    }
 };
