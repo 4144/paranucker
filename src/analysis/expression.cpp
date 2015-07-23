@@ -959,6 +959,10 @@ bool handleSetVarToFunction(const std::string &var,
 {
     node1 = skipNop(node1);
     node2 = skipNop(node2);
+
+    reportParmDeclLeftNullPointer(node1, node1, wo);
+    reportParmDeclNullPointer(node2, node2, wo);
+
     if (!isPointerArg(node1))
         return handleSetVarToFunctionBack(var, node2, wo);
 
@@ -1090,6 +1094,8 @@ void analyseInitExpr(InitExprNode* node,
         return;
 
     handleSetVar(node->args[0], node->args[1], wi, wo);
+    reportParmDeclLeftNullPointer(node, node->args[0], wi);
+    reportParmDeclLeftNullPointer(node, node->args[1], wi);
 }
 
 }
