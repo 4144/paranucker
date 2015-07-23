@@ -25334,10 +25334,6 @@ call_expr :
 obj_type_ref : 
 indirect_ref : 
 pointer_plus_expr : 
-test26.cpp: In static member function 'static void Object1::func5(Data2*)':
-test26.cpp:85:16: warning: Using variable 'ptr1->_vptr.Data2' without checking for null pointer
-         delete ptr1;
-                ^
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 

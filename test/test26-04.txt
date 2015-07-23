@@ -6,10 +6,6 @@ test26.cpp: In member function 'void Object1::func2(Data1*)':
 test26.cpp:57:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1 && k == 1)
                   ^
-test26.cpp: In static member function 'static void Object1::func5(Data2*)':
-test26.cpp:85:16: warning: Using variable 'ptr1->_vptr.Data2' without checking for null pointer
-         delete ptr1;
-                ^
 test26.cpp: In member function 'void Object1::func6(Data1*)':
 test26.cpp:103:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1 && k == 4)
