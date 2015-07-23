@@ -22,5 +22,12 @@ test39.cpp:175:15: warning: unused variable 'data2' [-Wunused-variable]
          Data1 data2;
                ^
 test39.cpp:195:16: warning: unused variable 'ptr1' [-Wunused-variable]
-         Data1 *ptr1 = reinterpret_cast<Data1*>(&data1);         // probable here must no warning about &data1
+         Data1 *ptr1 = reinterpret_cast<Data1*>(&data1);
                 ^
+test39.cpp: In member function 'void Object1::func6(Data1*) const':
+test39.cpp:218:13: warning: variable 'arr' set but not used [-Wunused-but-set-variable]
+         int arr[10];
+             ^
+test39.cpp:228:27: warning: Using variable 'ptr1' without checking for null pointer
+         arr[1] = ptr1->val;
+                           ^
