@@ -24,5 +24,3 @@ test39.cpp:175:15: warning: unused variable 'data2' [-Wunused-variable]
 test39.cpp:195:16: warning: unused variable 'ptr1' [-Wunused-variable]
          Data1 *ptr1 = reinterpret_cast<Data1*>(&data1);         // probable here must no warning about &data1
                 ^
-test39.cpp:195:16: warning: Using variable 'data1' without checking for null pointer
-test39.cpp:195:16: warning: Using variable 'data1' without checking for null pointer

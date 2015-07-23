@@ -1810,10 +1810,6 @@ decl_expr : data1,
 var_decl ptr1: data1, ptr1, 
 integer_cst 64: data1, ptr1, 
 addr_expr : data1, ptr1, 
-test39.cpp: In member function 'void Object1::func5() const':
-test39.cpp:195:16: warning: Using variable 'data1' without checking for null pointer
-         Data1 *ptr1 = reinterpret_cast<Data1*>(&data1);         // probable here must no warning about &data1
-                ^
 var_decl data1: data1, ptr1, 
 integer_cst 64: data1, ptr1, 
 pointer_type : data1, ptr1, 
@@ -1980,7 +1976,6 @@ type_decl Data1: data1, ptr1,
 var_decl ptr1: data1, ptr1, 
 integer_cst 64: data1, ptr1, 
 addr_expr : data1, ptr1, 
-test39.cpp:195:16: warning: Using variable 'data1' without checking for null pointer
 var_decl data1: data1, ptr1, 
 integer_cst 64: data1, ptr1, 
 pointer_type : data1, ptr1, 

@@ -13,8 +13,3 @@ test39.cpp: In member function 'void Object1::func3(Data1*) const':
 test39.cpp:119:25: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->ptrval = 0;
                          ^
-test39.cpp: In member function 'void Object1::func5() const':
-test39.cpp:195:16: warning: Using variable 'data1' without checking for null pointer
-         Data1 *ptr1 = reinterpret_cast<Data1*>(&data1);         // probable here must no warning about &data1
-                ^
-test39.cpp:195:16: warning: Using variable 'data1' without checking for null pointer
