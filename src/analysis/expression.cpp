@@ -363,6 +363,12 @@ void analyseAddrExpr(AddrExprNode *node,
         }
     }
 
+    if (skipNop(node->args[0]) == VAR_DECL)
+    {
+        // do not report if found &ptr
+        if (!getVariableName(node->args[0]).empty())
+            return;
+    }
     reportParmDeclNullPointer(node, node->args[0], wi);
 }
 
