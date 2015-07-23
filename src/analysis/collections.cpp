@@ -393,6 +393,8 @@ void addKnownNullVarsWithLinked(WalkItem &wo, WalkItem &wi, std::set<std::string
 {
     wo.knownNullVars.insert(vars.begin(),
         vars.end());
+    wo.knownVars.insert(vars.begin(),
+        vars.end());
     FOR_EACH (it, vars)
     {
         auto it2 = wi.linkedVars.find(it);
@@ -412,6 +414,8 @@ void addKnownNullVarsWithLinked(WalkItem &wo, WalkItem &wi, std::set<std::string
 void addKnownNonNullVarsWithLinked(WalkItem &wo, WalkItem &wi, std::set<std::string> &vars)
 {
     wo.knownNonNullVars.insert(vars.begin(),
+        vars.end());
+    wo.knownVars.insert(vars.begin(),
         vars.end());
     FOR_EACH (it, vars)
     {
