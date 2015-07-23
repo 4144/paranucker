@@ -83,8 +83,11 @@ std::string getVariableName(Node *node)
     if (node == PARM_DECL)
     {
         ParmDeclNode *decl = static_cast<ParmDeclNode*>(node);
-        if (skipNop(decl->declType) != POINTER_TYPE)
+        if (skipNop(decl->declType) != nullptr &&
+            skipNop(decl->declType) != POINTER_TYPE)
+        {
             return "";
+        }
         return node->label;
     }
     if (node == VAR_DECL)
@@ -112,8 +115,11 @@ bool isPointerArg(Node *node)
     if (node == PARM_DECL)
     {
         ParmDeclNode *decl = static_cast<ParmDeclNode*>(node);
-        if (skipNop(decl->declType) == POINTER_TYPE)
+        if (skipNop(decl->declType) == nullptr ||
+            skipNop(decl->declType) == POINTER_TYPE)
+        {
             return true;
+        }
     }
     else if (node == VAR_DECL)
     {
@@ -150,8 +156,11 @@ std::string getComponentRefVariable(Node *node)
             if (ref == PARM_DECL)
             {
                 ParmDeclNode *decl = static_cast<ParmDeclNode*>(ref);
-                if (skipNop(decl->declType) != POINTER_TYPE)
+                if (skipNop(decl->declType) != nullptr &&
+                    skipNop(decl->declType) != POINTER_TYPE)
+                {
                     return str;
+                }
             }
             if (ref == VAR_DECL)
             {
@@ -187,8 +196,11 @@ std::vector<std::string> getComponentRefParts(Node *node)
             if (ref == PARM_DECL)
             {
                 ParmDeclNode *parmDecl = static_cast<ParmDeclNode*>(ref);
-                if (parmDecl->declType == POINTER_TYPE)
+                if (skipNop(parmDecl->declType) == nullptr ||
+                    skipNop(parmDecl->declType) == POINTER_TYPE)
+                {
                     str.push_back(ref->label);
+                }
             }
             if (ref == VAR_DECL)
             {
@@ -380,13 +392,13 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
         node2 == INTEGER_CST &&
         node2->label == "0")
     {
-        if (isIn(var, wi.needCheckNullVars))
-//            isNotIn(var, wi.knownVars))
+        if (isIn(var, wi.needCheckNullVars) ||
+            isNotIn(var, wi.knownVars))
         {
             wo.checkedThenNonNullVars.insert(var);
             wo.checkedElseNullVars.insert(var);
             wo.knownNonNullVars.insert(var);
-            //wo.knownVars.insert(var);
+            wo.knownVars.insert(var);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
             return;
@@ -498,11 +510,13 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
         node2 == INTEGER_CST &&
         node2->label == "0")
     {
-        if (isIn(var, wi.needCheckNullVars))
+        if (isIn(var, wi.needCheckNullVars) ||
+            isNotIn(var, wi.knownVars))
         {
             wo.checkedThenNullVars.insert(var);
             wo.checkedElseNonNullVars.insert(var);
             wo.knownNullVars.insert(var);
+            wo.knownVars.insert(var);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
             if (isIn(var, wi.knownNullVars) ||
