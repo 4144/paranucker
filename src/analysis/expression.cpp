@@ -62,6 +62,7 @@
 
 #include "nodes/type/array_type.h"
 #include "nodes/type/method_type.h"
+#include "nodes/type/reference_type.h"
 
 #include <set>
 
@@ -804,14 +805,14 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
                         wo.stopWalking = true;
                         return;
                     }
-                    if (declNode->functionType == FUNCTION_TYPE)
+                    if (skipNop(declNode->functionType) == FUNCTION_TYPE)
                     {
                         enableCheck = false;
                     }
                 }
             }
         }
-        else if (node->function == VAR_DECL)
+        else if (function == VAR_DECL)
         {
             enableCheck = false;
         }
@@ -821,7 +822,8 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
             {
                 ArrayRefNode *arrRef = static_cast<ArrayRefNode*>(function);
                 if (!arrRef->args.empty() &&
-                    (arrRef->args[0] == COMPONENT_REF || VAR_DECL))
+                    (skipNop(arrRef->args[0]) == COMPONENT_REF ||
+                    skipNop(arrRef->args[0]) == VAR_DECL))
                 {
                     function = arrRef->args[0];
                 }
@@ -830,7 +832,18 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
             {
                 ConvertExprNode *convExpr = static_cast<ConvertExprNode*>(function);
                 if (!convExpr->args.empty())
-                    function = convExpr->args[0];
+                    function = skipNop(convExpr->args[0]);
+                if (function == PARM_DECL)
+                {
+                    ParmDeclNode *parm = static_cast<ParmDeclNode*>(function);
+                    if (skipNop(parm->declType) == REFERENCE_TYPE)
+                    {
+                        ReferenceTypeNode *ref = static_cast<ReferenceTypeNode*>(
+                            skipNop(parm->declType));
+                        if (ref->nestedType == FUNCTION_TYPE)
+                            enableCheck = false;
+                    }
+                }
             }
             reportParmDeclNullPointer(node, function, wi);
             if (!getVariableName(function).empty())
@@ -855,6 +868,7 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
         }
         else
         {
+            reportParmDeclLeftNullPointer(node, node2, wi);
             if (isIn(param, nullAttrs))
                 reportParmDeclAttrNullPointer(node, node2, wi);
         }
