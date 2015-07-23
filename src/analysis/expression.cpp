@@ -80,10 +80,24 @@ std::string getVariableName(Node *node)
     if (!node)
         return "";
 
-    if (node == PARM_DECL || node == VAR_DECL)
+    if (node == PARM_DECL)
+    {
+        ParmDeclNode *decl = static_cast<ParmDeclNode*>(node);
+        if (skipNop(decl->declType) != POINTER_TYPE)
+            return "";
         return node->label;
+    }
+    if (node == VAR_DECL)
+    {
+        VarDeclNode *var = static_cast<VarDeclNode*>(node);
+        if (skipNop(var->varType) != POINTER_TYPE)
+            return "";
+        return node->label;
+    }
     else if (node == COMPONENT_REF)
+    {
         return getComponentRefVariable(node);
+    }
     return "";
 }
 
@@ -133,6 +147,18 @@ std::string getComponentRefVariable(Node *node)
                 return str;
             IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
             Node *ref = skipNop(indirect->ref);
+            if (ref == PARM_DECL)
+            {
+                ParmDeclNode *decl = static_cast<ParmDeclNode*>(ref);
+                if (skipNop(decl->declType) != POINTER_TYPE)
+                    return str;
+            }
+            if (ref == VAR_DECL)
+            {
+                VarDeclNode *varDecl = static_cast<VarDeclNode*>(ref);
+                if (varDecl->varType != POINTER_TYPE)
+                    return str;
+            }
             if (ref == PARM_DECL || ref == VAR_DECL)
             {
                 str.append(ref->label).append("->").append(field->label);
@@ -355,10 +381,12 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
         node2->label == "0")
     {
         if (isIn(var, wi.needCheckNullVars))
+//            isNotIn(var, wi.knownVars))
         {
             wo.checkedThenNonNullVars.insert(var);
             wo.checkedElseNullVars.insert(var);
             wo.knownNonNullVars.insert(var);
+            //wo.knownVars.insert(var);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
             return;
@@ -678,15 +706,21 @@ void analyseBindExpr(BindExprNode *node, const WalkItem &wi, WalkItem &wo)
         return;
 
     WalkItem wi2 = wi;
+//    Log::log("start args 1\n");
     walkTree(node->args[1], wi2, wo);
+//    Log::log("end args 1\n");
     wi2 = wo;
     Log::dumpWI(node, "wi2 ", wi2);
+//    Log::log("start args 0\n");
     walkTree(node->args[0], wi2, wo);
+//    Log::log("end args 0\n");
     if (sz > 2)
     {
         wi2 = wo;
         Log::dumpWI(node, "wi2 ", wi2);
+//        Log::log("start args 2\n");
         walkTree(node->args[2], wi2, wo);
+//        Log::log("end args 2\n");
     }
 
     handleSetVarDecl(node->args[0], wi2, wo);
