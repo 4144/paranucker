@@ -23,3 +23,7 @@ test23.cpp:117:28: warning: Using parameter 'ptr1' without checking for null poi
 test23.cpp:117:23: warning: Using parameter 'ptr1' without checking for null pointer
          (ptr1->*fptr2)(ptr1);
                        ^
+test23.cpp: In member function 'void Object1::func9(FuncPtr4, Data1*)':
+test23.cpp:122:13: warning: Using parameter 'ptr2' without checking for null pointer
+         ptr1(ptr2);
+             ^

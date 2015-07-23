@@ -1500,7 +1500,7 @@ integer_type :
 type_decl Data1: 
 integer_cst 64: 
 integer_cst 0: 
-statement_list : 
+statement_list : ptr1, 
 cleanup_point_expr : 
 expr_stmt : 
 call_expr : 

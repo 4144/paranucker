@@ -62,8 +62,8 @@ class Object1
             paranuckerInternalTest("=", "linkedReverseVars", "this->tmp1");
             if (tmp1)
             {
-                paranuckerInternalTest("=", "knownVars", "ptr1");
-                paranuckerInternalTest("=", "knownNonNullVars", "");
+                paranuckerInternalTest("=", "knownVars", "ptr1 this->tmp1");
+                paranuckerInternalTest("=", "knownNonNullVars", "this->tmp1");
                 paranuckerInternalTest("=", "knownNullVars", "ptr1");
                 paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
                 paranuckerInternalTest("=", "addNullVars", "");
@@ -74,8 +74,8 @@ class Object1
                 paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
                 paranuckerInternalTest("=", "linkedReverseVars", "this->tmp1");
                 ptr1 = getData1();
-                paranuckerInternalTest("=", "knownVars", "ptr1");
-                paranuckerInternalTest("=", "knownNonNullVars", "");
+                paranuckerInternalTest("=", "knownVars", "ptr1 this->tmp1");
+                paranuckerInternalTest("=", "knownNonNullVars", "this->tmp1");
                 paranuckerInternalTest("=", "knownNullVars", "");
                 paranuckerInternalTest("=", "needCheckNullVars", "ptr1");
                 paranuckerInternalTest("=", "addNullVars", "ptr1");

@@ -17179,6 +17179,10 @@ tree_list : ptr2,
 void_type : ptr2, 
 type_decl void: ptr2, 
 integer_cst 64: ptr2, 
+test23.cpp: In member function 'void Object1::func9(FuncPtr4, Data1*)':
+test23.cpp:122:13: warning: Using parameter 'ptr2' without checking for null pointer
+         ptr1(ptr2);
+             ^
 parm_decl ptr2: ptr2, 
 pointer_type : ptr2, 
 record_type : ptr2, 

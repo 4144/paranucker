@@ -16,9 +16,10 @@ field_decl val: ptr2,
 integer_cst 32: ptr2, 
 integer_type : ptr2, 
 test12.cpp: In member function 'void Object1::func1(Data1*, Data1*)':
-test12.cpp:13:13: warning: Using field 'ptr2' without checking for null pointer
+test12.cpp:13:13: warning: Using variable 'ptr2' without checking for null pointer
          int val1 = ptr1 ? ptr1->val : ptr2->val;
              ^
+test12.cpp:13:13: warning: Using field 'ptr2' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr2: ptr1, ptr2, 
@@ -92,6 +93,7 @@ parm_decl ptr1: ptr2,
 field_decl val: ptr2, 
 integer_cst 32: ptr2, 
 integer_type : ptr2, 
+test12.cpp:13:13: warning: Using variable 'ptr2' without checking for null pointer
 test12.cpp:13:13: warning: Using field 'ptr2' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
@@ -116,15 +118,17 @@ pointer_type : ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 test12.cpp: In member function 'void Object1::func2(Data1*, Data1*)':
-test12.cpp:18:13: warning: Using field 'ptr1' without checking for null pointer
+test12.cpp:18:13: warning: Using variable 'ptr1' without checking for null pointer
          int val1 = (!ptr1) ? ptr1->val : ptr2->val;
              ^
+test12.cpp:18:13: warning: Using field 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
 field_decl val: ptr1, ptr2, 
 integer_cst 32: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
+test12.cpp:18:13: warning: Using variable 'ptr2' without checking for null pointer
 test12.cpp:18:13: warning: Using field 'ptr2' without checking for null pointer
 component_ref : ptr2, 
 indirect_ref : ptr2, 
@@ -195,6 +199,7 @@ parm_decl ptr1: ptr1, ptr2,
 pointer_type : ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
+test12.cpp:18:13: warning: Using variable 'ptr1' without checking for null pointer
 test12.cpp:18:13: warning: Using field 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
@@ -202,6 +207,7 @@ parm_decl ptr1: ptr1, ptr2,
 field_decl val: ptr1, ptr2, 
 integer_cst 32: ptr1, ptr2, 
 integer_type : ptr1, ptr2, 
+test12.cpp:18:13: warning: Using variable 'ptr2' without checking for null pointer
 test12.cpp:18:13: warning: Using field 'ptr2' without checking for null pointer
 component_ref : ptr2, 
 indirect_ref : ptr2, 
@@ -234,9 +240,10 @@ field_decl val: ptr2,
 integer_cst 32: ptr2, 
 integer_type : ptr2, 
 test12.cpp: In member function 'void Object1::func3(Data1*, Data1*)':
-test12.cpp:23:13: warning: Using field 'ptr2' without checking for null pointer
+test12.cpp:23:13: warning: Using variable 'ptr2' without checking for null pointer
          int val1 = (ptr1 && !ptr2) ? ptr1->val : ptr2->val;
              ^
+test12.cpp:23:13: warning: Using field 'ptr2' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr2: ptr1, ptr2, 
@@ -314,6 +321,7 @@ parm_decl ptr1: ptr2,
 field_decl val: ptr2, 
 integer_cst 32: ptr2, 
 integer_type : ptr2, 
+test12.cpp:23:13: warning: Using variable 'ptr2' without checking for null pointer
 test12.cpp:23:13: warning: Using field 'ptr2' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
@@ -665,9 +673,10 @@ eq_expr : ptr1, ptr2,
 parm_decl ptr2: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 test12.cpp: In member function 'void Object1::func7(Data1*, Data1*)':
-test12.cpp:50:13: warning: Using field 'ptr2' without checking for null pointer
+test12.cpp:50:13: warning: Using variable 'ptr2' without checking for null pointer
          int tmp = ptr1 ? ptr1->val : (!ptr2 ? ptr2->val : 0);
              ^
+test12.cpp:50:13: warning: Using field 'ptr2' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr2: ptr1, ptr2, 
@@ -753,6 +762,7 @@ cond_expr : ptr1, ptr2,
 eq_expr : ptr1, ptr2, 
 parm_decl ptr2: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
+test12.cpp:50:13: warning: Using variable 'ptr2' without checking for null pointer
 test12.cpp:50:13: warning: Using field 'ptr2' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 

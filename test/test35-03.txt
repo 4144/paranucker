@@ -892,9 +892,6 @@ type_decl Data1:
 call_expr : 
 addr_expr : 
 function_decl getData3: 
-test35.cpp:77:42: warning: Using variable 'ptr1->ptrval' without checking for null pointer
-             ptr1 = ptr1->ptrval->getData3();
-                                          ^
 component_ref : 
 indirect_ref : 
 var_decl ptr1: 
@@ -1491,7 +1488,6 @@ function_decl getData3: ptr1,
 test35.cpp:127:42: warning: Using variable 'ptr1' without checking for null pointer
              ptr1 = ptr1->ptrval->getData3();
                                           ^
-test35.cpp:127:42: warning: Using variable 'ptr1->ptrval' without checking for null pointer
 component_ref : ptr1, 
 indirect_ref : ptr1, 
 var_decl ptr1: ptr1, 

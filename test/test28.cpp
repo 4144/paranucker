@@ -291,10 +291,10 @@ class Object1
 
         if (!ptr1)
         {
-            paranuckerInternalTest("=", "knownVars", "");
+            paranuckerInternalTest("=", "knownVars", "ptr1");
             paranuckerInternalTest("=", "knownNonNullVars", "");
-            paranuckerInternalTest("=", "knownNullVars", "");
-            paranuckerInternalTest("=", "needCheckNullVars", "");
+            paranuckerInternalTest("=", "knownNullVars", "ptr1");
+            paranuckerInternalTest("=", "needCheckNullVars", "");  // probably here should be ptr1
             return;
         }
     }
