@@ -343,6 +343,10 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
                 }
             }
         }
+        else
+        {
+            reportParmDeclNullPointer(node, node->args[1], wi);
+        }
     }
 }
 
