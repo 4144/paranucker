@@ -105,6 +105,8 @@ namespace Analysis
                                 Node *node1,
                                 Node *node2,
                                 WalkItem &wo);
+
+    bool isValidVar(const std::string &str);
 }
 
 #endif // ANALYSIS_EXPRESSION_H

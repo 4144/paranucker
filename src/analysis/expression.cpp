@@ -154,6 +154,8 @@ std::string getComponentRefVariable(Node *node)
                 return str;
             IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
             Node *ref = skipNop(indirect->ref);
+            if (ref && !isValidVar(ref->label))
+                return str;
             if (ref == PARM_DECL)
             {
                 ParmDeclNode *decl = static_cast<ParmDeclNode*>(ref);
@@ -171,11 +173,20 @@ std::string getComponentRefVariable(Node *node)
             }
             if (ref == PARM_DECL || ref == VAR_DECL)
             {
+                if (!isValidVar(field->label))
+                    return str;
                 str.append(ref->label).append("->").append(field->label);
             }
         }
     }
     return str;
+}
+
+bool isValidVar(const std::string &str)
+{
+    if (str.size() > 6 && str.substr(0, 6) == "_vptr.")
+        return false;
+    return true;
 }
 
 std::vector<std::string> getComponentRefParts(Node *node)
@@ -194,6 +205,8 @@ std::vector<std::string> getComponentRefParts(Node *node)
             FieldDeclNode *fieldDecl = static_cast<FieldDeclNode*>(field);
             IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
             Node *ref = skipNop(indirect->ref);
+            if (ref && !isValidVar(ref->label))
+                return str;
             if (ref == PARM_DECL)
             {
                 ParmDeclNode *parmDecl = static_cast<ParmDeclNode*>(ref);
@@ -219,6 +232,8 @@ std::vector<std::string> getComponentRefParts(Node *node)
                     if (arr->elementType != POINTER_TYPE)
                         return str;
                 }
+                if (!isValidVar(field->label))
+                    return str;
                 str.push_back(std::string(ref->label).append("->").append(field->label));
             }
         }
@@ -244,6 +259,8 @@ std::vector<std::string> getComponentRefLeftParts(Node *node)
 //                return str;
             IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
             Node *ref = skipNop(indirect->ref);
+            if (ref && !isValidVar(ref->label))
+                return str;
             if (ref == PARM_DECL || ref == VAR_DECL)
             {
                 str.push_back(ref->label);
