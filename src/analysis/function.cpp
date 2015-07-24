@@ -137,6 +137,8 @@ void getPossibleNullParameters(FunctionDeclNode *node, WalkItem &wi)
         if (!type || type != POINTER_TYPE)
             continue;
         const ParmDeclNode *const name = node->args[f];
+        if (name->label.empty())
+            continue;
         if (f == 0 && name->label == "this")
         {
             wi.knownVars.insert(name->label);
