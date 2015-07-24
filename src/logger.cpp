@@ -124,8 +124,12 @@ void dump(const Node *const node,
     else
         fprintf(stderr, "%s", str.c_str());
     vfprintf(stderr, text, ap);
-    if (node && !node->tag.empty())
-        fprintf(stderr, " - %s", node->tag.c_str());
+    if (node)
+    {
+        fprintf(stderr, " %d", node->parseChilds);
+        if (!node->tag.empty())
+            fprintf(stderr, " - %s", node->tag.c_str());
+    }
     fprintf(stderr, "\n");
 
     va_end(ap);
@@ -162,6 +166,7 @@ void dump(const Node *const node)
             node->line,
             node->column);
     }
+    fprintf(stderr, " %d", node->parseChilds);
     if (!node->tag.empty())
         fprintf(stderr, " - %s", node->tag.c_str());
 
@@ -198,7 +203,7 @@ void dumpAttr(const Node *const node, int num, bool isReturned)
         Log::log(comment); \
         FOR_EACH (it, name) \
         { \
-            Log::log("%s, ", it.c_str()); \
+            Log::log("'%s', ", it.c_str()); \
         } \
     }
 
