@@ -6,6 +6,19 @@ __comp_dtor :
 __deleting_dtor : 
 __comp_dtor : 
 getData3: 
+Data3: 
+__base_dtor : 
+__comp_dtor : 
+__deleting_dtor : 
+__comp_dtor : 
+Data3: 
+__comp_dtor : 
+__deleting_dtor : 
+__base_ctor : 
+__comp_dtor : 
+__deleting_dtor : 
+__comp_ctor : 
+getData3: 
 getData1: 
 getData2: 
 func1: 
@@ -22,3 +35,5 @@ __comp_ctor :
 func5: 
 __comp_ctor : 
 func6: 
+func7: 
+__comp_ctor : 

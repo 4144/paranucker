@@ -29,6 +29,26 @@ struct Data2
     }
 };
 
+struct Data3
+{
+    int val;
+    Data1 *ptrval;
+    int arr[3];
+    virtual ~Data3()
+    {
+    }
+
+    Data3(int v) :
+        val(v)
+    {
+    }
+
+    Data1 *getData3()
+    {
+        return ptrval;
+    }
+};
+
 int k;
 
 void paranuckerInternalTest(const char *action, const char *collection, const char *values);
@@ -38,6 +58,7 @@ class Object1
     Data1 *tmp1;
     Data1 *tmp2;
     Data2 *tmp3;
+    Data3 *tmp4;
 
     Data1 *getData1()
     {
@@ -186,5 +207,31 @@ class Object1
         paranuckerInternalTest("=", "removeNullVarsAll", "");
         paranuckerInternalTest("=", "linkedVars", "ptr1");
         paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
+    }
+
+    void func7()
+    {
+        tmp4 = new Data3(100);
+        paranuckerInternalTest("=", "knownVars", "this->tmp4");
+        paranuckerInternalTest("=", "knownNonNullVars", "this->tmp4");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "");
+        paranuckerInternalTest("=", "addNullVars", "");
+        paranuckerInternalTest("=", "removeNullVarsAll", "");
+        paranuckerInternalTest("=", "linkedVars", "ptr1");
+        paranuckerInternalTest("=", "linkedVars", "this->tmp4");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
+        paranuckerInternalTest("=", "linkedReverseVars", "this->tmp4");
+        tmp4->getData3();
+        paranuckerInternalTest("=", "knownVars", "this->tmp4");
+        paranuckerInternalTest("=", "knownNonNullVars", "this->tmp4");
+        paranuckerInternalTest("=", "knownNullVars", "");
+        paranuckerInternalTest("=", "needCheckNullVars", "");
+        paranuckerInternalTest("=", "addNullVars", "");
+        paranuckerInternalTest("=", "removeNullVarsAll", "");
+        paranuckerInternalTest("=", "linkedVars", "ptr1");
+        paranuckerInternalTest("=", "linkedVars", "this->tmp4");
+        paranuckerInternalTest("=", "linkedReverseVars", "ptr1");
+        paranuckerInternalTest("=", "linkedReverseVars", "this->tmp4");
     }
 };
