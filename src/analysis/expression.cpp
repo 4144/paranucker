@@ -1000,6 +1000,12 @@ bool handleSetVarToFunction(const std::string &var,
         comp = static_cast<CompoundExprNode*>(node2);
         if (comp->args.empty())
             return handleSetVarToFunctionBack(var, node2, wo);
+        if(comp->args.size() > 1 &&
+           skipNop(comp->args[0]) == TARGET_EXPR &&
+           skipNop(comp->args[1]) == COMPOUND_EXPR)
+        {
+            comp = static_cast<CompoundExprNode*>(skipNop(comp->args[1]));
+        }
         if (skipNop(comp->args[0]) == TRY_CATCH_EXPR)
         {
             TryCatchExprNode *tryCatch = static_cast<TryCatchExprNode*>(skipNop(comp->args[0]));
