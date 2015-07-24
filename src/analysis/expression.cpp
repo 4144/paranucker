@@ -968,7 +968,8 @@ bool handleSetVarToFunction(const std::string &var,
 
     if (node2 == nullptr)
     {   // type *var;
-        addUnknownVar(wo, var);
+        if (isNotIn(var, wo.knownVars))
+            addUnknownVar(wo, var);
         return true;
     }
 
