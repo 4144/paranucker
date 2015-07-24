@@ -55,8 +55,8 @@ __base_ctor :
 __comp_ctor : 
 operator new: pointer_type __p, 
 operator new []: pointer_type __p, 
-operator delete: pointer_type , pointer_type , 
-operator delete []: pointer_type , pointer_type , 
+operator delete: 
+operator delete []: 
 __convert_from_v: pointer_type __out, pointer_type __fmt, 
 __bswap_32: 
 __bswap_64: 
@@ -96,14 +96,19 @@ __gthread_mutex_unlock: pointer_type __mutex,
 __gthread_active_p: 
 __gthread_recursive_mutex_lock: pointer_type __mutex, 
 __gthread_mutex_lock: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_recursive_mutex_trylock: pointer_type __mutex, 
 __gthread_mutex_trylock: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_recursive_mutex_timedlock: pointer_type __mutex, pointer_type __abs_timeout, 
 __gthread_mutex_timedlock: pointer_type __mutex, pointer_type __abs_timeout, 
+__gthread_active_p: 
 __gthread_recursive_mutex_unlock: pointer_type __mutex, 
 __gthread_mutex_unlock: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_recursive_mutex_destroy: pointer_type __mutex, 
 __gthread_mutex_destroy: pointer_type __mutex, 
+__gthread_active_p: 
 __gthread_cond_broadcast: pointer_type __cond, 
 __gthread_cond_signal: pointer_type __cond, 
 __gthread_cond_wait: pointer_type __cond, pointer_type __mutex, 
@@ -156,12 +161,16 @@ operator-:
 _Bit_iterator: 
 __base_ctor : pointer_type __x, 
 __base_ctor : 
+__base_ctor : 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __comp_ctor : 
 _Bit_iterator: pointer_type __x, 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __base_ctor : pointer_type __x, 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __comp_ctor : pointer_type __x, 
 _M_const_cast: 
 operator*: 
@@ -179,17 +188,23 @@ operator+:
 _Bit_const_iterator: 
 __base_ctor : pointer_type __x, 
 __base_ctor : 
+__base_ctor : 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __comp_ctor : 
 _Bit_const_iterator: pointer_type __x, 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __base_ctor : pointer_type __x, 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __comp_ctor : pointer_type __x, 
 _Bit_const_iterator: 
 __base_ctor : pointer_type __x, 
 __base_ctor : 
+__base_ctor : 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __comp_ctor : 
 _M_const_cast: 
 __comp_ctor : pointer_type __x, 

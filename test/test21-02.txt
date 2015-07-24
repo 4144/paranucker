@@ -27,8 +27,8 @@ __base_ctor :
 __comp_ctor : 
 operator new: pointer_type __p, 
 operator new []: pointer_type __p, 
-operator delete: pointer_type , pointer_type , 
-operator delete []: pointer_type , pointer_type , 
+operator delete: 
+operator delete []: 
 _Bit_reference: pointer_type __x, 
 __base_ctor : pointer_type __x, 
 __comp_ctor : pointer_type __x, 
@@ -62,12 +62,16 @@ operator-:
 _Bit_iterator: 
 __base_ctor : pointer_type __x, 
 __base_ctor : 
+__base_ctor : 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __comp_ctor : 
 _Bit_iterator: pointer_type __x, 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __base_ctor : pointer_type __x, 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __comp_ctor : pointer_type __x, 
 _M_const_cast: 
 operator*: 
@@ -85,17 +89,23 @@ operator+:
 _Bit_const_iterator: 
 __base_ctor : pointer_type __x, 
 __base_ctor : 
+__base_ctor : 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __comp_ctor : 
 _Bit_const_iterator: pointer_type __x, 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __base_ctor : pointer_type __x, 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __comp_ctor : pointer_type __x, 
 _Bit_const_iterator: 
 __base_ctor : pointer_type __x, 
 __base_ctor : 
+__base_ctor : 
 __base_ctor : pointer_type __x, 
+__base_ctor : 
 __comp_ctor : 
 _M_const_cast: 
 __comp_ctor : pointer_type __x, 
