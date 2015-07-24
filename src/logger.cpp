@@ -203,7 +203,10 @@ void dumpAttr(const Node *const node, int num, bool isReturned)
         Log::log(comment); \
         FOR_EACH (it, name) \
         { \
-            Log::log("'%s', ", it.c_str()); \
+            if (it.empty()) \
+                Log::log("-empty-, "); \
+            else \
+                Log::log("%s, ", it.c_str()); \
         } \
     }
 
