@@ -44,6 +44,8 @@ struct WalkItem
         checkedElseNonNullVars(),
         linkedVars(),
         linkedReverseVars(),
+        num(-1),
+        isNum(false),
         stopWalking(false),
         isReturned(false),
         isContinued(false),
@@ -66,6 +68,8 @@ struct WalkItem
         checkedElseNonNullVars(item.checkedElseNonNullVars),
         linkedVars(item.linkedVars),
         linkedReverseVars(item.linkedReverseVars),
+        num(item.num),
+        isNum(item.isNum),
         stopWalking(item.stopWalking),
         isReturned(item.isReturned),
         isContinued(item.isContinued),
@@ -87,6 +91,8 @@ struct WalkItem
     StringSet checkedElseNonNullVars;  // vars checked for nonnull in expressions for else case
     StringMapSet linkedVars;         // linked vars. map <parent, set(vars)>
     StringMap linkedReverseVars;     // linked vars. map <child, parent>
+    int num;            // numerical number stored in node
+    bool isNum;         // true if number stored in node
     bool stopWalking;   // stop walking on tree after this node
     bool isReturned;    // set if return present in child nodes
     bool isContinued;   // set if continue present in child nodes

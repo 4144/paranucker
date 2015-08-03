@@ -4,6 +4,8 @@ SRC = analysis/analysis.cpp \
       analysis/checks.h \
       analysis/collections.cpp \
       analysis/collections.h \
+      analysis/cst.cpp \
+      analysis/cst.h \
       analysis/declaration.cpp \
       analysis/declaration.h \
       analysis/expression.cpp \

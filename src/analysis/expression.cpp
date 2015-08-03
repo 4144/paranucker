@@ -408,17 +408,20 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
 
     // PARM_DECL or VAR_DECL?
     Node *node1 = skipNop(node->args[0]);
-    // INTEGER_CST?
+    // integer 0?
     Node *node2 = skipNop(node->args[1]);
 
     reportParmDeclLeftNullPointer(node, node1, wi);
     reportParmDeclLeftNullPointer(node, node2, wi);
 
+    WalkItem wo2 = wo;
+    walkTree(node2, wi, wo2);
+
     std::string var = getVariableName(node1);
     // if (var != 0)
     if (!var.empty() &&
-        node2 == INTEGER_CST &&
-        node2->label == "0")
+        wo2.isNum &&
+        wo2.num == 0)
     {
         if (isIn(var, wi.needCheckNullVars) ||
             isNotIn(var, wi.knownVars))
@@ -531,17 +534,20 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
 
     // PARM_DECL or VAR_DECL ?
     Node *node1 = skipNop(node->args[0]);
-    // INTEGER_CST?
+    // integer 0?
     Node *node2 = skipNop(node->args[1]);
 
     reportParmDeclLeftNullPointer(node, node1, wi);
     reportParmDeclLeftNullPointer(node, node2, wi);
 
+    WalkItem wo2 = wo;
+    walkTree(node2, wi, wo2);
+
     std::string var = getVariableName(node1);
     // if (var == 0)
     if (!var.empty() &&
-        node2 == INTEGER_CST &&
-        node2->label == "0")
+        wo2.isNum &&
+        wo2.num == 0)
     {
         if (isIn(var, wi.needCheckNullVars) ||
             isNotIn(var, wi.knownVars))
@@ -951,9 +957,12 @@ bool handleSetVarToFunctionBack(const std::string &var,
                                 Node *node2,
                                 WalkItem &wo)
 {
-    if (node2 == INTEGER_CST)
+    WalkItem wo2 = wo;
+    walkTree(node2, wo, wo2);
+
+    if (wo2.isNum)
     {
-        if (node2->label == "0")
+        if (wo2.num == 0)
             addNullVar(wo, var);
         else
             addNonNullVar(wo, var);

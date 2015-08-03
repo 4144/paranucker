@@ -23,6 +23,7 @@
 #include "logger.h"
 
 #include "analysis/collections.h"
+#include "analysis/cst.h"
 #include "analysis/declaration.h"
 #include "analysis/expression.h"
 #include "analysis/function.h"
@@ -297,6 +298,9 @@ void analyseNode(Node *node, const WalkItem &wi, WalkItem &wo)
             break;
         case COMPONENT_REF:
             analyseComponentRef(static_cast<ComponentRefNode*>(node), wi2, wo);
+            break;
+        case INTEGER_CST:
+            analyseIntegerCst(static_cast<IntegerCstNode*>(node), wi2, wo);
             break;
         default:
             break;
