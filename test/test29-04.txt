@@ -2,16 +2,6 @@ test29.cpp: In member function 'void Object1::func13(int*)':
 test29.cpp:344:28: warning: Useless variable check 'ptr1'. It already was checked before
          if ((ptr1 || ptr1) && ptr1)
                             ^
-test29.cpp:356:35: warning: internal collections 'knownNullVars' is different.
-want: 'ptr1',
- get: 
-             paranuckerInternalTest("=", "knownNullVars", "ptr1");
-                                   ^
-test29.cpp:361:31: warning: internal collections 'knownNullVars' is different.
-want: 'ptr1',
- get: 
-         paranuckerInternalTest("=", "knownNullVars", "ptr1");
-                               ^
 test29.cpp: In member function 'void Object1::func14(int*)':
 test29.cpp:369:19: warning: Useless variable check 'ptr1'. It already was checked before
          if ((ptr1 && ptr1) || ptr1)

@@ -1916,11 +1916,6 @@ expr_stmt : ptr1,
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-test29.cpp:356:35: warning: internal collections 'knownNullVars' is different.
-want: 'ptr1',
- get: 
-             paranuckerInternalTest("=", "knownNullVars", "ptr1");
-                                   ^
 cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
@@ -1941,11 +1936,6 @@ expr_stmt : ptr1,
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-test29.cpp:361:31: warning: internal collections 'knownNullVars' is different.
-want: 'ptr1',
- get: 
-         paranuckerInternalTest("=", "knownNullVars", "ptr1");
-                               ^
 cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 

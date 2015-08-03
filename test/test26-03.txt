@@ -28047,15 +28047,15 @@ type_decl _Alloc_hider:
 type_decl Data1: 
 integer_cst 64: 
 integer_cst 0: 
-eq_expr : 
-var_decl k: 
-integer_cst 32: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-integer_cst 4: 
+eq_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 4: ptr1, 
 cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
@@ -28275,15 +28275,15 @@ type_decl _Alloc_hider:
 type_decl Data1: 
 integer_cst 64: 
 integer_cst 0: 
-eq_expr : 
-var_decl k: 
-integer_cst 32: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-integer_cst 5: 
+eq_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 5: ptr1, 
 cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
@@ -29725,15 +29725,15 @@ type_decl _Alloc_hider:
 type_decl Data1: 
 integer_cst 64: 
 integer_cst 0: 
-eq_expr : 
-var_decl k: 
-integer_cst 32: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-integer_cst 1: 
+eq_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 1: ptr1, 
 cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
@@ -29953,15 +29953,15 @@ type_decl _Alloc_hider:
 type_decl Data1: 
 integer_cst 64: 
 integer_cst 0: 
-eq_expr : 
-var_decl k: 
-integer_cst 32: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-integer_cst 4: 
+eq_expr : ptr1, 
+var_decl k: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 4: ptr1, 
 cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 

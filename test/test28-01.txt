@@ -11468,8 +11468,8 @@ function_decl func9 test28.cpp 179:10 2147483647
           addr_expr 2147483637 - operand
            string_cst ptr1 2147483636 - operand
            - stringLength: 5
-      cleanup_point_expr test28.cpp 202:65 2147483641 - statement
-       expr_stmt test28.cpp 202:65 2147483640 - operand
+      cleanup_point_expr test28.cpp 202:69 2147483641 - statement
+       expr_stmt test28.cpp 202:69 2147483640 - operand
         call_expr test28.cpp 202:39 2147483639 - expresssion
          addr_expr 2147483638 - function
           function_decl paranuckerInternalTest test28.cpp 12:6 20 - operand
@@ -11562,8 +11562,8 @@ function_decl func9 test28.cpp 179:10 2147483647
            - stringLength: 14
          nop_expr 2147483638 - arg
           addr_expr 2147483637 - operand
-           string_cst 2147483636 - operand
-           - stringLength: 1
+           string_cst ptr1 2147483636 - operand
+           - stringLength: 5
       cleanup_point_expr test28.cpp 203:69 2147483641 - statement
        expr_stmt test28.cpp 203:69 2147483640 - operand
         call_expr test28.cpp 203:39 2147483639 - expresssion

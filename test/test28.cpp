@@ -199,7 +199,7 @@ class Object1
             {
                 paranuckerInternalTest("=", "knownVars", "ptr1");
                 paranuckerInternalTest("=", "knownNonNullVars", "ptr1");
-                paranuckerInternalTest("=", "knownNullVars", "");
+                paranuckerInternalTest("=", "knownNullVars", "ptr1");
                 paranuckerInternalTest("=", "needCheckNullVars", "");
             }
         }
