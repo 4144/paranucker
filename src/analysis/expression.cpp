@@ -510,8 +510,13 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
                 }
             }
 
+            wo.checkedThenNonNullVars.insert(var);
+            wo.checkedElseNullVars.insert(var);
+            wo.cleanExpr = true;
+            wo.uselessExpr = false;
             if (doReport)
                 reportUselessCheck(node, var);
+            return;
         }
     }
     wo.cleanExpr = false;
@@ -557,7 +562,12 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
         else if (isIn(var, wi.knownNullVars) ||
                  isIn(var, wi.knownNonNullVars))
         {
+            wo.checkedThenNullVars.insert(var);
+            wo.checkedElseNonNullVars.insert(var);
             reportUselessCheck(node, var);
+            wo.cleanExpr = true;
+            wo.uselessExpr = false;
+            return;
         }
     }
     wo.cleanExpr = false;
