@@ -744,6 +744,10 @@ void analyseCompoundExpr(CompoundExprNode *node, const WalkItem &wi, WalkItem &w
     walkTree(node->args[sz - 1], wi, wo2);
     Log::dumpWI(node, "wo2 ", wo2);
 
+    // copy number value from last COMPOUND_EXPR child node
+    wo.isNum = wo2.isNum;
+    wo.num = wo2.num;
+
     // probably condition wrong
     if (wo2.cleanExpr)
     {
