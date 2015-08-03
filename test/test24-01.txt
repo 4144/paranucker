@@ -49,46 +49,6 @@ function_decl ftest2 test24.c 20:12 2147483647
    pointer_type 2147483644 - value
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test24.c 8:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
-     field_decl ptrval test24.c 9:19 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       record_type 0 - nested type
-     field_decl arr test24.c 10:9 2 - field
-     - signed
-      integer_cst 96 1 - decl size
-      array_type 1 - field type
-       integer_type 0 - element type
-       - precisionBits: 32
-       - signed
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
-     field_decl fptr1 test24.c 11:14 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       type_decl FuncPtr2 test24.c 4:16 0 - type name
-       function_type 0 - nested type
-        void_type 0 - function return type
-     field_decl fptr2 test24.c 12:14 2 - field
-     - signed
-      integer_cst 192 1 - decl size
-      array_type 1 - field type
-       pointer_type 0 - element type
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
    tree_list 2147483644 - chain
     void_type 2147483643 - value
      type_decl void 2147483642 - type name
@@ -106,46 +66,6 @@ function_decl ftest2 test24.c 20:12 2147483647
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test24.c 8:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
-    field_decl ptrval test24.c 9:19 2 - field
-    - unsigned
-     integer_cst 64 1 - decl size
-     pointer_type 1 - field type
-      record_type 0 - nested type
-    field_decl arr test24.c 10:9 2 - field
-    - signed
-     integer_cst 96 1 - decl size
-     array_type 1 - field type
-      integer_type 0 - element type
-      - precisionBits: 32
-      - signed
-      integer_type 0 - domain
-      - precisionBits: 64
-      - signed
-    field_decl fptr1 test24.c 11:14 2 - field
-    - unsigned
-     integer_cst 64 1 - decl size
-     pointer_type 1 - field type
-      type_decl FuncPtr2 test24.c 4:16 0 - type name
-      function_type 0 - nested type
-       void_type 0 - function return type
-    field_decl fptr2 test24.c 12:14 2 - field
-    - signed
-     integer_cst 192 1 - decl size
-     array_type 1 - field type
-      pointer_type 0 - element type
-      integer_type 0 - domain
-      - precisionBits: 64
-      - signed
   integer_cst 64 2147483645 - parm size
  bind_expr test24.c 21:1 2147483646 - code
   return_expr test24.c 22:12 2147483645 - operand
@@ -171,46 +91,6 @@ function_decl ftest3 test24.c 25:6 2147483647
    pointer_type 2147483644 - value
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test24.c 8:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
-     field_decl ptrval test24.c 9:19 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       record_type 0 - nested type
-     field_decl arr test24.c 10:9 2 - field
-     - signed
-      integer_cst 96 1 - decl size
-      array_type 1 - field type
-       integer_type 0 - element type
-       - precisionBits: 32
-       - signed
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
-     field_decl fptr1 test24.c 11:14 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       type_decl FuncPtr2 test24.c 4:16 0 - type name
-       function_type 0 - nested type
-        void_type 0 - function return type
-     field_decl fptr2 test24.c 12:14 2 - field
-     - signed
-      integer_cst 192 1 - decl size
-      array_type 1 - field type
-       pointer_type 0 - element type
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
    tree_list 2147483644 - chain
     void_type 2147483643 - value
      type_decl void 2147483642 - type name
@@ -222,46 +102,6 @@ function_decl ftest3 test24.c 25:6 2147483647
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test24.c 8:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
-    field_decl ptrval test24.c 9:19 2 - field
-    - unsigned
-     integer_cst 64 1 - decl size
-     pointer_type 1 - field type
-      record_type 0 - nested type
-    field_decl arr test24.c 10:9 2 - field
-    - signed
-     integer_cst 96 1 - decl size
-     array_type 1 - field type
-      integer_type 0 - element type
-      - precisionBits: 32
-      - signed
-      integer_type 0 - domain
-      - precisionBits: 64
-      - signed
-    field_decl fptr1 test24.c 11:14 2 - field
-    - unsigned
-     integer_cst 64 1 - decl size
-     pointer_type 1 - field type
-      type_decl FuncPtr2 test24.c 4:16 0 - type name
-      function_type 0 - nested type
-       void_type 0 - function return type
-    field_decl fptr2 test24.c 12:14 2 - field
-    - signed
-     integer_cst 192 1 - decl size
-     array_type 1 - field type
-      pointer_type 0 - element type
-      integer_type 0 - domain
-      - precisionBits: 64
-      - signed
   integer_cst 64 2147483645 - parm size
  bind_expr test24.c 26:1 2147483646 - code
   statement_list 2147483645 - operand
@@ -321,46 +161,6 @@ function_decl func2 test24.c 36:6 2147483647
    pointer_type 2147483644 - value
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test24.c 8:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
-     field_decl ptrval test24.c 9:19 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       record_type 0 - nested type
-     field_decl arr test24.c 10:9 2 - field
-     - signed
-      integer_cst 96 1 - decl size
-      array_type 1 - field type
-       integer_type 0 - element type
-       - precisionBits: 32
-       - signed
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
-     field_decl fptr1 test24.c 11:14 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       type_decl FuncPtr2 test24.c 4:16 0 - type name
-       function_type 0 - nested type
-        void_type 0 - function return type
-     field_decl fptr2 test24.c 12:14 2 - field
-     - signed
-      integer_cst 192 1 - decl size
-      array_type 1 - field type
-       pointer_type 0 - element type
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
    tree_list 2147483644 - chain
     void_type 2147483643 - value
      type_decl void 2147483642 - type name
@@ -373,46 +173,6 @@ function_decl func2 test24.c 36:6 2147483647
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test24.c 8:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
-    field_decl ptrval test24.c 9:19 2 - field
-    - unsigned
-     integer_cst 64 1 - decl size
-     pointer_type 1 - field type
-      record_type 0 - nested type
-    field_decl arr test24.c 10:9 2 - field
-    - signed
-     integer_cst 96 1 - decl size
-     array_type 1 - field type
-      integer_type 0 - element type
-      - precisionBits: 32
-      - signed
-      integer_type 0 - domain
-      - precisionBits: 64
-      - signed
-    field_decl fptr1 test24.c 11:14 2 - field
-    - unsigned
-     integer_cst 64 1 - decl size
-     pointer_type 1 - field type
-      type_decl FuncPtr2 test24.c 4:16 0 - type name
-      function_type 0 - nested type
-       void_type 0 - function return type
-    field_decl fptr2 test24.c 12:14 2 - field
-    - signed
-     integer_cst 192 1 - decl size
-     array_type 1 - field type
-      pointer_type 0 - element type
-      integer_type 0 - domain
-      - precisionBits: 64
-      - signed
   integer_cst 64 2147483645 - parm size
  bind_expr test24.c 37:1 2147483646 - code
   var_decl fptr2 test24.c 38:14 2147483645 - operand
@@ -458,46 +218,6 @@ function_decl func2 test24.c 36:6 2147483647
      pointer_type 2147483642 - decl type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
-       field_decl val test24.c 8:9 2 - field
-       - signed
-        integer_cst 32 1 - decl size
-        integer_type 1 - field type
-        - precisionBits: 32
-        - signed
-         type_decl int 0 - type name
-         integer_cst 32 0 - type size
-         integer_cst -2147483648 0 - min value
-         integer_cst 2147483647 0 - max value
-       field_decl ptrval test24.c 9:19 2 - field
-       - unsigned
-        integer_cst 64 1 - decl size
-        pointer_type 1 - field type
-         record_type 0 - nested type
-       field_decl arr test24.c 10:9 2 - field
-       - signed
-        integer_cst 96 1 - decl size
-        array_type 1 - field type
-         integer_type 0 - element type
-         - precisionBits: 32
-         - signed
-         integer_type 0 - domain
-         - precisionBits: 64
-         - signed
-       field_decl fptr1 test24.c 11:14 2 - field
-       - unsigned
-        integer_cst 64 1 - decl size
-        pointer_type 1 - field type
-         type_decl FuncPtr2 test24.c 4:16 0 - type name
-         function_type 0 - nested type
-          void_type 0 - function return type
-       field_decl fptr2 test24.c 12:14 2 - field
-       - signed
-        integer_cst 192 1 - decl size
-        array_type 1 - field type
-         pointer_type 0 - element type
-         integer_type 0 - domain
-         - precisionBits: 64
-         - signed
      integer_cst 64 2147483642 - parm size
   block 2147483645 - operand
    var_decl fptr2 test24.c 38:14 2147483644 - block vars
@@ -520,46 +240,6 @@ function_decl func3 test24.c 42:6 2147483647
    pointer_type 2147483644 - value
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test24.c 8:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
-     field_decl ptrval test24.c 9:19 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       record_type 0 - nested type
-     field_decl arr test24.c 10:9 2 - field
-     - signed
-      integer_cst 96 1 - decl size
-      array_type 1 - field type
-       integer_type 0 - element type
-       - precisionBits: 32
-       - signed
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
-     field_decl fptr1 test24.c 11:14 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       type_decl FuncPtr2 test24.c 4:16 0 - type name
-       function_type 0 - nested type
-        void_type 0 - function return type
-     field_decl fptr2 test24.c 12:14 2 - field
-     - signed
-      integer_cst 192 1 - decl size
-      array_type 1 - field type
-       pointer_type 0 - element type
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
    tree_list 2147483644 - chain
     void_type 2147483643 - value
      type_decl void 2147483642 - type name
@@ -572,46 +252,6 @@ function_decl func3 test24.c 42:6 2147483647
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test24.c 8:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
-    field_decl ptrval test24.c 9:19 2 - field
-    - unsigned
-     integer_cst 64 1 - decl size
-     pointer_type 1 - field type
-      record_type 0 - nested type
-    field_decl arr test24.c 10:9 2 - field
-    - signed
-     integer_cst 96 1 - decl size
-     array_type 1 - field type
-      integer_type 0 - element type
-      - precisionBits: 32
-      - signed
-      integer_type 0 - domain
-      - precisionBits: 64
-      - signed
-    field_decl fptr1 test24.c 11:14 2 - field
-    - unsigned
-     integer_cst 64 1 - decl size
-     pointer_type 1 - field type
-      type_decl FuncPtr2 test24.c 4:16 0 - type name
-      function_type 0 - nested type
-       void_type 0 - function return type
-    field_decl fptr2 test24.c 12:14 2 - field
-    - signed
-     integer_cst 192 1 - decl size
-     array_type 1 - field type
-      pointer_type 0 - element type
-      integer_type 0 - domain
-      - precisionBits: 64
-      - signed
   integer_cst 64 2147483645 - parm size
  bind_expr test24.c 43:1 2147483646 - code
   var_decl data test24.c 44:19 2147483645 - operand
@@ -620,46 +260,6 @@ function_decl func3 test24.c 42:6 2147483647
    pointer_type 2147483644 - var type
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test24.c 8:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
-     field_decl ptrval test24.c 9:19 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       record_type 0 - nested type
-     field_decl arr test24.c 10:9 2 - field
-     - signed
-      integer_cst 96 1 - decl size
-      array_type 1 - field type
-       integer_type 0 - element type
-       - precisionBits: 32
-       - signed
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
-     field_decl fptr1 test24.c 11:14 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       type_decl FuncPtr2 test24.c 4:16 0 - type name
-       function_type 0 - nested type
-        void_type 0 - function return type
-     field_decl fptr2 test24.c 12:14 2 - field
-     - signed
-      integer_cst 192 1 - decl size
-      array_type 1 - field type
-       pointer_type 0 - element type
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
   statement_list 2147483645 - operand
    decl_expr test24.c 44:19 2147483644 - statement
     var_decl data test24.c 44:19 2147483643 - operand
@@ -668,28 +268,6 @@ function_decl func3 test24.c 42:6 2147483647
      pointer_type 3 - var type 2
       record_type 2 - nested type
        identifier_node Data1 1 - type name
-       field_decl val test24.c 8:9 1 - field
-       - signed
-        integer_cst 32 0 - decl size
-        integer_type 0 - field type
-        - precisionBits: 32
-        - signed
-       field_decl ptrval test24.c 9:19 1 - field
-       - unsigned
-        integer_cst 64 0 - decl size
-        pointer_type 0 - field type
-       field_decl arr test24.c 10:9 1 - field
-       - signed
-        integer_cst 96 0 - decl size
-        array_type 0 - field type
-       field_decl fptr1 test24.c 11:14 1 - field
-       - unsigned
-        integer_cst 64 0 - decl size
-        pointer_type 0 - field type
-       field_decl fptr2 test24.c 12:14 1 - field
-       - signed
-        integer_cst 192 0 - decl size
-        array_type 0 - field type
    call_expr test24.c 45:5 2147483644 - statement
     component_ref test24.c 45:9 2147483643 - function
      indirect_ref test24.c 45:9 2147483642 - object
@@ -699,28 +277,6 @@ function_decl func3 test24.c 42:6 2147483647
        pointer_type 3 - var type 2
         record_type 2 - nested type
          identifier_node Data1 1 - type name
-         field_decl val test24.c 8:9 1 - field
-         - signed
-          integer_cst 32 0 - decl size
-          integer_type 0 - field type
-          - precisionBits: 32
-          - signed
-         field_decl ptrval test24.c 9:19 1 - field
-         - unsigned
-          integer_cst 64 0 - decl size
-          pointer_type 0 - field type
-         field_decl arr test24.c 10:9 1 - field
-         - signed
-          integer_cst 96 0 - decl size
-          array_type 0 - field type
-         field_decl fptr1 test24.c 11:14 1 - field
-         - unsigned
-          integer_cst 64 0 - decl size
-          pointer_type 0 - field type
-         field_decl fptr2 test24.c 12:14 1 - field
-         - signed
-          integer_cst 192 0 - decl size
-          array_type 0 - field type
      field_decl fptr1 test24.c 11:14 2147483642 - field
      - unsigned
       integer_cst 64 2147483641 - decl size
@@ -739,46 +295,6 @@ function_decl func3 test24.c 42:6 2147483647
      pointer_type 2147483642 - decl type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
-       field_decl val test24.c 8:9 2 - field
-       - signed
-        integer_cst 32 1 - decl size
-        integer_type 1 - field type
-        - precisionBits: 32
-        - signed
-         type_decl int 0 - type name
-         integer_cst 32 0 - type size
-         integer_cst -2147483648 0 - min value
-         integer_cst 2147483647 0 - max value
-       field_decl ptrval test24.c 9:19 2 - field
-       - unsigned
-        integer_cst 64 1 - decl size
-        pointer_type 1 - field type
-         record_type 0 - nested type
-       field_decl arr test24.c 10:9 2 - field
-       - signed
-        integer_cst 96 1 - decl size
-        array_type 1 - field type
-         integer_type 0 - element type
-         - precisionBits: 32
-         - signed
-         integer_type 0 - domain
-         - precisionBits: 64
-         - signed
-       field_decl fptr1 test24.c 11:14 2 - field
-       - unsigned
-        integer_cst 64 1 - decl size
-        pointer_type 1 - field type
-         type_decl FuncPtr2 test24.c 4:16 0 - type name
-         function_type 0 - nested type
-          void_type 0 - function return type
-       field_decl fptr2 test24.c 12:14 2 - field
-       - signed
-        integer_cst 192 1 - decl size
-        array_type 1 - field type
-         pointer_type 0 - element type
-         integer_type 0 - domain
-         - precisionBits: 64
-         - signed
      integer_cst 64 2147483642 - parm size
   block 2147483645 - operand
    var_decl data test24.c 44:19 2147483644 - block vars
@@ -787,28 +303,6 @@ function_decl func3 test24.c 42:6 2147483647
     pointer_type 3 - var type 2
      record_type 2 - nested type
       identifier_node Data1 1 - type name
-      field_decl val test24.c 8:9 1 - field
-      - signed
-       integer_cst 32 0 - decl size
-       integer_type 0 - field type
-       - precisionBits: 32
-       - signed
-      field_decl ptrval test24.c 9:19 1 - field
-      - unsigned
-       integer_cst 64 0 - decl size
-       pointer_type 0 - field type
-      field_decl arr test24.c 10:9 1 - field
-      - signed
-       integer_cst 96 0 - decl size
-       array_type 0 - field type
-      field_decl fptr1 test24.c 11:14 1 - field
-      - unsigned
-       integer_cst 64 0 - decl size
-       pointer_type 0 - field type
-      field_decl fptr2 test24.c 12:14 1 - field
-      - signed
-       integer_cst 192 0 - decl size
-       array_type 0 - field type
 function_decl func4 test24.c 48:6 2147483647
 - isPublic: 1
  function_type 2147483646 - function type
@@ -818,46 +312,6 @@ function_decl func4 test24.c 48:6 2147483647
    pointer_type 2147483644 - value
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test24.c 8:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
-     field_decl ptrval test24.c 9:19 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       record_type 0 - nested type
-     field_decl arr test24.c 10:9 2 - field
-     - signed
-      integer_cst 96 1 - decl size
-      array_type 1 - field type
-       integer_type 0 - element type
-       - precisionBits: 32
-       - signed
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
-     field_decl fptr1 test24.c 11:14 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       type_decl FuncPtr2 test24.c 4:16 0 - type name
-       function_type 0 - nested type
-        void_type 0 - function return type
-     field_decl fptr2 test24.c 12:14 2 - field
-     - signed
-      integer_cst 192 1 - decl size
-      array_type 1 - field type
-       pointer_type 0 - element type
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
    tree_list 2147483644 - chain
     void_type 2147483643 - value
      type_decl void 2147483642 - type name
@@ -870,46 +324,6 @@ function_decl func4 test24.c 48:6 2147483647
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test24.c 8:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
-    field_decl ptrval test24.c 9:19 2 - field
-    - unsigned
-     integer_cst 64 1 - decl size
-     pointer_type 1 - field type
-      record_type 0 - nested type
-    field_decl arr test24.c 10:9 2 - field
-    - signed
-     integer_cst 96 1 - decl size
-     array_type 1 - field type
-      integer_type 0 - element type
-      - precisionBits: 32
-      - signed
-      integer_type 0 - domain
-      - precisionBits: 64
-      - signed
-    field_decl fptr1 test24.c 11:14 2 - field
-    - unsigned
-     integer_cst 64 1 - decl size
-     pointer_type 1 - field type
-      type_decl FuncPtr2 test24.c 4:16 0 - type name
-      function_type 0 - nested type
-       void_type 0 - function return type
-    field_decl fptr2 test24.c 12:14 2 - field
-    - signed
-     integer_cst 192 1 - decl size
-     array_type 1 - field type
-      pointer_type 0 - element type
-      integer_type 0 - domain
-      - precisionBits: 64
-      - signed
   integer_cst 64 2147483645 - parm size
  bind_expr test24.c 49:1 2147483646 - code
   var_decl ptr2 test24.c 50:19 2147483645 - operand
@@ -918,46 +332,6 @@ function_decl func4 test24.c 48:6 2147483647
    pointer_type 2147483644 - var type
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test24.c 8:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
-     field_decl ptrval test24.c 9:19 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       record_type 0 - nested type
-     field_decl arr test24.c 10:9 2 - field
-     - signed
-      integer_cst 96 1 - decl size
-      array_type 1 - field type
-       integer_type 0 - element type
-       - precisionBits: 32
-       - signed
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
-     field_decl fptr1 test24.c 11:14 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       type_decl FuncPtr2 test24.c 4:16 0 - type name
-       function_type 0 - nested type
-        void_type 0 - function return type
-     field_decl fptr2 test24.c 12:14 2 - field
-     - signed
-      integer_cst 192 1 - decl size
-      array_type 1 - field type
-       pointer_type 0 - element type
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
   statement_list 2147483645 - operand
    decl_expr test24.c 50:19 2147483644 - statement
     var_decl ptr2 test24.c 50:19 2147483643 - operand
@@ -966,28 +340,6 @@ function_decl func4 test24.c 48:6 2147483647
      pointer_type 3 - var type 2
       record_type 2 - nested type
        identifier_node Data1 1 - type name
-       field_decl val test24.c 8:9 1 - field
-       - signed
-        integer_cst 32 0 - decl size
-        integer_type 0 - field type
-        - precisionBits: 32
-        - signed
-       field_decl ptrval test24.c 9:19 1 - field
-       - unsigned
-        integer_cst 64 0 - decl size
-        pointer_type 0 - field type
-       field_decl arr test24.c 10:9 1 - field
-       - signed
-        integer_cst 96 0 - decl size
-        array_type 0 - field type
-       field_decl fptr1 test24.c 11:14 1 - field
-       - unsigned
-        integer_cst 64 0 - decl size
-        pointer_type 0 - field type
-       field_decl fptr2 test24.c 12:14 1 - field
-       - signed
-        integer_cst 192 0 - decl size
-        array_type 0 - field type
    call_expr test24.c 51:5 2147483644 - statement
     component_ref test24.c 51:9 2147483643 - function
      indirect_ref test24.c 51:9 2147483642 - object
@@ -996,46 +348,6 @@ function_decl func4 test24.c 48:6 2147483647
        pointer_type 2147483640 - decl type
         record_type 3 - nested type
          identifier_node Data1 2 - type name
-         field_decl val test24.c 8:9 2 - field
-         - signed
-          integer_cst 32 1 - decl size
-          integer_type 1 - field type
-          - precisionBits: 32
-          - signed
-           type_decl int 0 - type name
-           integer_cst 32 0 - type size
-           integer_cst -2147483648 0 - min value
-           integer_cst 2147483647 0 - max value
-         field_decl ptrval test24.c 9:19 2 - field
-         - unsigned
-          integer_cst 64 1 - decl size
-          pointer_type 1 - field type
-           record_type 0 - nested type
-         field_decl arr test24.c 10:9 2 - field
-         - signed
-          integer_cst 96 1 - decl size
-          array_type 1 - field type
-           integer_type 0 - element type
-           - precisionBits: 32
-           - signed
-           integer_type 0 - domain
-           - precisionBits: 64
-           - signed
-         field_decl fptr1 test24.c 11:14 2 - field
-         - unsigned
-          integer_cst 64 1 - decl size
-          pointer_type 1 - field type
-           type_decl FuncPtr2 test24.c 4:16 0 - type name
-           function_type 0 - nested type
-            void_type 0 - function return type
-         field_decl fptr2 test24.c 12:14 2 - field
-         - signed
-          integer_cst 192 1 - decl size
-          array_type 1 - field type
-           pointer_type 0 - element type
-           integer_type 0 - domain
-           - precisionBits: 64
-           - signed
        integer_cst 64 2147483640 - parm size
      field_decl fptr1 test24.c 11:14 2147483642 - field
      - unsigned
@@ -1056,28 +368,6 @@ function_decl func4 test24.c 48:6 2147483647
      pointer_type 3 - var type 2
       record_type 2 - nested type
        identifier_node Data1 1 - type name
-       field_decl val test24.c 8:9 1 - field
-       - signed
-        integer_cst 32 0 - decl size
-        integer_type 0 - field type
-        - precisionBits: 32
-        - signed
-       field_decl ptrval test24.c 9:19 1 - field
-       - unsigned
-        integer_cst 64 0 - decl size
-        pointer_type 0 - field type
-       field_decl arr test24.c 10:9 1 - field
-       - signed
-        integer_cst 96 0 - decl size
-        array_type 0 - field type
-       field_decl fptr1 test24.c 11:14 1 - field
-       - unsigned
-        integer_cst 64 0 - decl size
-        pointer_type 0 - field type
-       field_decl fptr2 test24.c 12:14 1 - field
-       - signed
-        integer_cst 192 0 - decl size
-        array_type 0 - field type
   block 2147483645 - operand
    var_decl ptr2 test24.c 50:19 2147483644 - block vars
    - isUsed: 1
@@ -1085,28 +375,6 @@ function_decl func4 test24.c 48:6 2147483647
     pointer_type 3 - var type 2
      record_type 2 - nested type
       identifier_node Data1 1 - type name
-      field_decl val test24.c 8:9 1 - field
-      - signed
-       integer_cst 32 0 - decl size
-       integer_type 0 - field type
-       - precisionBits: 32
-       - signed
-      field_decl ptrval test24.c 9:19 1 - field
-      - unsigned
-       integer_cst 64 0 - decl size
-       pointer_type 0 - field type
-      field_decl arr test24.c 10:9 1 - field
-      - signed
-       integer_cst 96 0 - decl size
-       array_type 0 - field type
-      field_decl fptr1 test24.c 11:14 1 - field
-      - unsigned
-       integer_cst 64 0 - decl size
-       pointer_type 0 - field type
-      field_decl fptr2 test24.c 12:14 1 - field
-      - signed
-       integer_cst 192 0 - decl size
-       array_type 0 - field type
 function_decl func5 test24.c 54:6 2147483647
 - isPublic: 1
  function_type 2147483646 - function type
@@ -1116,46 +384,6 @@ function_decl func5 test24.c 54:6 2147483647
    pointer_type 2147483644 - value
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test24.c 8:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
-     field_decl ptrval test24.c 9:19 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       record_type 0 - nested type
-     field_decl arr test24.c 10:9 2 - field
-     - signed
-      integer_cst 96 1 - decl size
-      array_type 1 - field type
-       integer_type 0 - element type
-       - precisionBits: 32
-       - signed
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
-     field_decl fptr1 test24.c 11:14 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       type_decl FuncPtr2 test24.c 4:16 0 - type name
-       function_type 0 - nested type
-        void_type 0 - function return type
-     field_decl fptr2 test24.c 12:14 2 - field
-     - signed
-      integer_cst 192 1 - decl size
-      array_type 1 - field type
-       pointer_type 0 - element type
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
    tree_list 2147483644 - chain
     void_type 2147483643 - value
      type_decl void 2147483642 - type name
@@ -1168,46 +396,6 @@ function_decl func5 test24.c 54:6 2147483647
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test24.c 8:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
-    field_decl ptrval test24.c 9:19 2 - field
-    - unsigned
-     integer_cst 64 1 - decl size
-     pointer_type 1 - field type
-      record_type 0 - nested type
-    field_decl arr test24.c 10:9 2 - field
-    - signed
-     integer_cst 96 1 - decl size
-     array_type 1 - field type
-      integer_type 0 - element type
-      - precisionBits: 32
-      - signed
-      integer_type 0 - domain
-      - precisionBits: 64
-      - signed
-    field_decl fptr1 test24.c 11:14 2 - field
-    - unsigned
-     integer_cst 64 1 - decl size
-     pointer_type 1 - field type
-      type_decl FuncPtr2 test24.c 4:16 0 - type name
-      function_type 0 - nested type
-       void_type 0 - function return type
-    field_decl fptr2 test24.c 12:14 2 - field
-    - signed
-     integer_cst 192 1 - decl size
-     array_type 1 - field type
-      pointer_type 0 - element type
-      integer_type 0 - domain
-      - precisionBits: 64
-      - signed
   integer_cst 64 2147483645 - parm size
  bind_expr test24.c 55:1 2147483646 - code
   var_decl data test24.c 56:19 2147483645 - operand
@@ -1216,46 +404,6 @@ function_decl func5 test24.c 54:6 2147483647
    pointer_type 2147483644 - var type
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test24.c 8:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
-     field_decl ptrval test24.c 9:19 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       record_type 0 - nested type
-     field_decl arr test24.c 10:9 2 - field
-     - signed
-      integer_cst 96 1 - decl size
-      array_type 1 - field type
-       integer_type 0 - element type
-       - precisionBits: 32
-       - signed
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
-     field_decl fptr1 test24.c 11:14 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       type_decl FuncPtr2 test24.c 4:16 0 - type name
-       function_type 0 - nested type
-        void_type 0 - function return type
-     field_decl fptr2 test24.c 12:14 2 - field
-     - signed
-      integer_cst 192 1 - decl size
-      array_type 1 - field type
-       pointer_type 0 - element type
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
   statement_list 2147483645 - operand
    decl_expr test24.c 56:19 2147483644 - statement
     var_decl data test24.c 56:19 2147483643 - operand
@@ -1264,28 +412,6 @@ function_decl func5 test24.c 54:6 2147483647
      pointer_type 3 - var type 2
       record_type 2 - nested type
        identifier_node Data1 1 - type name
-       field_decl val test24.c 8:9 1 - field
-       - signed
-        integer_cst 32 0 - decl size
-        integer_type 0 - field type
-        - precisionBits: 32
-        - signed
-       field_decl ptrval test24.c 9:19 1 - field
-       - unsigned
-        integer_cst 64 0 - decl size
-        pointer_type 0 - field type
-       field_decl arr test24.c 10:9 1 - field
-       - signed
-        integer_cst 96 0 - decl size
-        array_type 0 - field type
-       field_decl fptr1 test24.c 11:14 1 - field
-       - unsigned
-        integer_cst 64 0 - decl size
-        pointer_type 0 - field type
-       field_decl fptr2 test24.c 12:14 1 - field
-       - signed
-        integer_cst 192 0 - decl size
-        array_type 0 - field type
    call_expr test24.c 58:5 2147483644 - statement
     array_ref test24.c 58:5 2147483643 - function
      integer_cst 0 2147483642 - low bound
@@ -1298,28 +424,6 @@ function_decl func5 test24.c 54:6 2147483647
         pointer_type 3 - var type 2
          record_type 2 - nested type
           identifier_node Data1 1 - type name
-          field_decl val test24.c 8:9 1 - field
-          - signed
-           integer_cst 32 0 - decl size
-           integer_type 0 - field type
-           - precisionBits: 32
-           - signed
-          field_decl ptrval test24.c 9:19 1 - field
-          - unsigned
-           integer_cst 64 0 - decl size
-           pointer_type 0 - field type
-          field_decl arr test24.c 10:9 1 - field
-          - signed
-           integer_cst 96 0 - decl size
-           array_type 0 - field type
-          field_decl fptr1 test24.c 11:14 1 - field
-          - unsigned
-           integer_cst 64 0 - decl size
-           pointer_type 0 - field type
-          field_decl fptr2 test24.c 12:14 1 - field
-          - signed
-           integer_cst 192 0 - decl size
-           array_type 0 - field type
       field_decl fptr2 test24.c 12:14 2147483641 - field
       - signed
        integer_cst 192 2147483640 - decl size
@@ -1346,46 +450,6 @@ function_decl func5 test24.c 54:6 2147483647
      pointer_type 2147483642 - decl type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
-       field_decl val test24.c 8:9 2 - field
-       - signed
-        integer_cst 32 1 - decl size
-        integer_type 1 - field type
-        - precisionBits: 32
-        - signed
-         type_decl int 0 - type name
-         integer_cst 32 0 - type size
-         integer_cst -2147483648 0 - min value
-         integer_cst 2147483647 0 - max value
-       field_decl ptrval test24.c 9:19 2 - field
-       - unsigned
-        integer_cst 64 1 - decl size
-        pointer_type 1 - field type
-         record_type 0 - nested type
-       field_decl arr test24.c 10:9 2 - field
-       - signed
-        integer_cst 96 1 - decl size
-        array_type 1 - field type
-         integer_type 0 - element type
-         - precisionBits: 32
-         - signed
-         integer_type 0 - domain
-         - precisionBits: 64
-         - signed
-       field_decl fptr1 test24.c 11:14 2 - field
-       - unsigned
-        integer_cst 64 1 - decl size
-        pointer_type 1 - field type
-         type_decl FuncPtr2 test24.c 4:16 0 - type name
-         function_type 0 - nested type
-          void_type 0 - function return type
-       field_decl fptr2 test24.c 12:14 2 - field
-       - signed
-        integer_cst 192 1 - decl size
-        array_type 1 - field type
-         pointer_type 0 - element type
-         integer_type 0 - domain
-         - precisionBits: 64
-         - signed
      integer_cst 64 2147483642 - parm size
   block 2147483645 - operand
    var_decl data test24.c 56:19 2147483644 - block vars
@@ -1394,28 +458,6 @@ function_decl func5 test24.c 54:6 2147483647
     pointer_type 3 - var type 2
      record_type 2 - nested type
       identifier_node Data1 1 - type name
-      field_decl val test24.c 8:9 1 - field
-      - signed
-       integer_cst 32 0 - decl size
-       integer_type 0 - field type
-       - precisionBits: 32
-       - signed
-      field_decl ptrval test24.c 9:19 1 - field
-      - unsigned
-       integer_cst 64 0 - decl size
-       pointer_type 0 - field type
-      field_decl arr test24.c 10:9 1 - field
-      - signed
-       integer_cst 96 0 - decl size
-       array_type 0 - field type
-      field_decl fptr1 test24.c 11:14 1 - field
-      - unsigned
-       integer_cst 64 0 - decl size
-       pointer_type 0 - field type
-      field_decl fptr2 test24.c 12:14 1 - field
-      - signed
-       integer_cst 192 0 - decl size
-       array_type 0 - field type
 function_decl func6 test24.c 61:6 2147483647
 - isPublic: 1
  function_type 2147483646 - function type
@@ -1457,46 +499,6 @@ function_decl func6 test24.c 61:6 2147483647
    pointer_type 2147483644 - var type
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test24.c 8:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
-     field_decl ptrval test24.c 9:19 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       record_type 0 - nested type
-     field_decl arr test24.c 10:9 2 - field
-     - signed
-      integer_cst 96 1 - decl size
-      array_type 1 - field type
-       integer_type 0 - element type
-       - precisionBits: 32
-       - signed
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
-     field_decl fptr1 test24.c 11:14 2 - field
-     - unsigned
-      integer_cst 64 1 - decl size
-      pointer_type 1 - field type
-       type_decl FuncPtr2 test24.c 4:16 0 - type name
-       function_type 0 - nested type
-        void_type 0 - function return type
-     field_decl fptr2 test24.c 12:14 2 - field
-     - signed
-      integer_cst 192 1 - decl size
-      array_type 1 - field type
-       pointer_type 0 - element type
-       integer_type 0 - domain
-       - precisionBits: 64
-       - signed
   statement_list 2147483645 - operand
    decl_expr test24.c 63:19 2147483644 - statement
     var_decl data test24.c 63:19 2147483643 - operand
@@ -1505,28 +507,6 @@ function_decl func6 test24.c 61:6 2147483647
      pointer_type 3 - var type 2
       record_type 2 - nested type
        identifier_node Data1 1 - type name
-       field_decl val test24.c 8:9 1 - field
-       - signed
-        integer_cst 32 0 - decl size
-        integer_type 0 - field type
-        - precisionBits: 32
-        - signed
-       field_decl ptrval test24.c 9:19 1 - field
-       - unsigned
-        integer_cst 64 0 - decl size
-        pointer_type 0 - field type
-       field_decl arr test24.c 10:9 1 - field
-       - signed
-        integer_cst 96 0 - decl size
-        array_type 0 - field type
-       field_decl fptr1 test24.c 11:14 1 - field
-       - unsigned
-        integer_cst 64 0 - decl size
-        pointer_type 0 - field type
-       field_decl fptr2 test24.c 12:14 1 - field
-       - signed
-        integer_cst 192 0 - decl size
-        array_type 0 - field type
    call_expr test24.c 64:5 2147483644 - statement
     indirect_ref test24.c 64:5 2147483643 - function
      pointer_plus_expr test24.c 64:11 2147483642 - ref
@@ -1549,28 +529,6 @@ function_decl func6 test24.c 61:6 2147483647
      pointer_type 3 - var type 2
       record_type 2 - nested type
        identifier_node Data1 1 - type name
-       field_decl val test24.c 8:9 1 - field
-       - signed
-        integer_cst 32 0 - decl size
-        integer_type 0 - field type
-        - precisionBits: 32
-        - signed
-       field_decl ptrval test24.c 9:19 1 - field
-       - unsigned
-        integer_cst 64 0 - decl size
-        pointer_type 0 - field type
-       field_decl arr test24.c 10:9 1 - field
-       - signed
-        integer_cst 96 0 - decl size
-        array_type 0 - field type
-       field_decl fptr1 test24.c 11:14 1 - field
-       - unsigned
-        integer_cst 64 0 - decl size
-        pointer_type 0 - field type
-       field_decl fptr2 test24.c 12:14 1 - field
-       - signed
-        integer_cst 192 0 - decl size
-        array_type 0 - field type
   block 2147483645 - operand
    var_decl data test24.c 63:19 2147483644 - block vars
    - isUsed: 1
@@ -1578,28 +536,6 @@ function_decl func6 test24.c 61:6 2147483647
     pointer_type 3 - var type 2
      record_type 2 - nested type
       identifier_node Data1 1 - type name
-      field_decl val test24.c 8:9 1 - field
-      - signed
-       integer_cst 32 0 - decl size
-       integer_type 0 - field type
-       - precisionBits: 32
-       - signed
-      field_decl ptrval test24.c 9:19 1 - field
-      - unsigned
-       integer_cst 64 0 - decl size
-       pointer_type 0 - field type
-      field_decl arr test24.c 10:9 1 - field
-      - signed
-       integer_cst 96 0 - decl size
-       array_type 0 - field type
-      field_decl fptr1 test24.c 11:14 1 - field
-      - unsigned
-       integer_cst 64 0 - decl size
-       pointer_type 0 - field type
-      field_decl fptr2 test24.c 12:14 1 - field
-      - signed
-       integer_cst 192 0 - decl size
-       array_type 0 - field type
 function_decl test1 test24.c 67:5 2147483647
 - isPublic: 1
  function_type 2147483646 - function type

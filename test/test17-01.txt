@@ -12,30 +12,10 @@ function_decl func1 test17.c 8:5 2147483647
    pointer_type 2147483644 - value
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test17.c 3:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
    tree_list 2147483644 - chain
     pointer_type 2147483643 - value
      record_type 3 - nested type
       identifier_node Data1 2 - type name
-      field_decl val test17.c 3:9 2 - field
-      - signed
-       integer_cst 32 1 - decl size
-       integer_type 1 - field type
-       - precisionBits: 32
-       - signed
-        type_decl int 0 - type name
-        integer_cst 32 0 - type size
-        integer_cst -2147483648 0 - min value
-        integer_cst 2147483647 0 - max value
     tree_list 2147483643 - chain
      void_type 2147483642 - value
       type_decl void 2147483641 - type name
@@ -54,31 +34,11 @@ function_decl func1 test17.c 8:5 2147483647
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test17.c 3:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
   integer_cst 64 2147483645 - parm size
  parm_decl ptr2 test17.c 8:45 2147483646 - argument
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test17.c 3:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
   integer_cst 64 2147483645 - parm size
  bind_expr test17.c 9:1 2147483646 - code
   statement_list 2147483645 - operand
@@ -89,16 +49,6 @@ function_decl func1 test17.c 8:5 2147483647
       pointer_type 2147483641 - decl type
        record_type 3 - nested type
         identifier_node Data1 2 - type name
-        field_decl val test17.c 3:9 2 - field
-        - signed
-         integer_cst 32 1 - decl size
-         integer_type 1 - field type
-         - precisionBits: 32
-         - signed
-          type_decl int 0 - type name
-          integer_cst 32 0 - type size
-          integer_cst -2147483648 0 - min value
-          integer_cst 2147483647 0 - max value
       integer_cst 64 2147483641 - parm size
      integer_cst 0 2147483642 - operand
     return_expr test17.c 11:15 2147483643 - operand
@@ -122,16 +72,6 @@ function_decl func1 test17.c 8:5 2147483647
        pointer_type 2147483640 - decl type
         record_type 3 - nested type
          identifier_node Data1 2 - type name
-         field_decl val test17.c 3:9 2 - field
-         - signed
-          integer_cst 32 1 - decl size
-          integer_type 1 - field type
-          - precisionBits: 32
-          - signed
-           type_decl int 0 - type name
-           integer_cst 32 0 - type size
-           integer_cst -2147483648 0 - min value
-           integer_cst 2147483647 0 - max value
        integer_cst 64 2147483640 - parm size
      field_decl val test17.c 3:9 2147483642 - field
      - signed
@@ -163,30 +103,10 @@ function_decl func2 test17.c 16:5 2147483647
    pointer_type 2147483644 - value
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test17.c 3:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
    tree_list 2147483644 - chain
     pointer_type 2147483643 - value
      record_type 3 - nested type
       identifier_node Data1 2 - type name
-      field_decl val test17.c 3:9 2 - field
-      - signed
-       integer_cst 32 1 - decl size
-       integer_type 1 - field type
-       - precisionBits: 32
-       - signed
-        type_decl int 0 - type name
-        integer_cst 32 0 - type size
-        integer_cst -2147483648 0 - min value
-        integer_cst 2147483647 0 - max value
     tree_list 2147483643 - chain
      void_type 2147483642 - value
       type_decl void 2147483641 - type name
@@ -205,31 +125,11 @@ function_decl func2 test17.c 16:5 2147483647
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test17.c 3:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
   integer_cst 64 2147483645 - parm size
  parm_decl ptr2 test17.c 16:45 2147483646 - argument
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test17.c 3:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
   integer_cst 64 2147483645 - parm size
  bind_expr test17.c 17:1 2147483646 - code
   statement_list 2147483645 - operand
@@ -242,16 +142,6 @@ function_decl func2 test17.c 16:5 2147483647
        pointer_type 2147483640 - decl type
         record_type 3 - nested type
          identifier_node Data1 2 - type name
-         field_decl val test17.c 3:9 2 - field
-         - signed
-          integer_cst 32 1 - decl size
-          integer_type 1 - field type
-          - precisionBits: 32
-          - signed
-           type_decl int 0 - type name
-           integer_cst 32 0 - type size
-           integer_cst -2147483648 0 - min value
-           integer_cst 2147483647 0 - max value
        integer_cst 64 2147483640 - parm size
       integer_cst 0 2147483641 - operand
     return_expr test17.c 19:16 2147483643 - operand
@@ -275,16 +165,6 @@ function_decl func2 test17.c 16:5 2147483647
        pointer_type 2147483640 - decl type
         record_type 3 - nested type
          identifier_node Data1 2 - type name
-         field_decl val test17.c 3:9 2 - field
-         - signed
-          integer_cst 32 1 - decl size
-          integer_type 1 - field type
-          - precisionBits: 32
-          - signed
-           type_decl int 0 - type name
-           integer_cst 32 0 - type size
-           integer_cst -2147483648 0 - min value
-           integer_cst 2147483647 0 - max value
        integer_cst 64 2147483640 - parm size
      field_decl val test17.c 3:9 2147483642 - field
      - signed
@@ -329,30 +209,10 @@ function_decl func3 test17.c 24:5 2147483647
    pointer_type 2147483644 - value
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test17.c 3:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
    tree_list 2147483644 - chain
     pointer_type 2147483643 - value
      record_type 3 - nested type
       identifier_node Data1 2 - type name
-      field_decl val test17.c 3:9 2 - field
-      - signed
-       integer_cst 32 1 - decl size
-       integer_type 1 - field type
-       - precisionBits: 32
-       - signed
-        type_decl int 0 - type name
-        integer_cst 32 0 - type size
-        integer_cst -2147483648 0 - min value
-        integer_cst 2147483647 0 - max value
     tree_list 2147483643 - chain
      void_type 2147483642 - value
       type_decl void 2147483641 - type name
@@ -371,31 +231,11 @@ function_decl func3 test17.c 24:5 2147483647
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test17.c 3:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
   integer_cst 64 2147483645 - parm size
  parm_decl ptr2 test17.c 24:45 2147483646 - argument
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test17.c 3:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
   integer_cst 64 2147483645 - parm size
  bind_expr test17.c 25:1 2147483646 - code
   statement_list 2147483645 - operand
@@ -408,16 +248,6 @@ function_decl func3 test17.c 24:5 2147483647
        pointer_type 2147483640 - decl type
         record_type 3 - nested type
          identifier_node Data1 2 - type name
-         field_decl val test17.c 3:9 2 - field
-         - signed
-          integer_cst 32 1 - decl size
-          integer_type 1 - field type
-          - precisionBits: 32
-          - signed
-           type_decl int 0 - type name
-           integer_cst 32 0 - type size
-           integer_cst -2147483648 0 - min value
-           integer_cst 2147483647 0 - max value
        integer_cst 64 2147483640 - parm size
       integer_cst 0 2147483641 - operand
     return_expr test17.c 27:16 2147483643 - operand
@@ -441,16 +271,6 @@ function_decl func3 test17.c 24:5 2147483647
        pointer_type 2147483640 - decl type
         record_type 3 - nested type
          identifier_node Data1 2 - type name
-         field_decl val test17.c 3:9 2 - field
-         - signed
-          integer_cst 32 1 - decl size
-          integer_type 1 - field type
-          - precisionBits: 32
-          - signed
-           type_decl int 0 - type name
-           integer_cst 32 0 - type size
-           integer_cst -2147483648 0 - min value
-           integer_cst 2147483647 0 - max value
        integer_cst 64 2147483640 - parm size
      field_decl val test17.c 3:9 2147483642 - field
      - signed
@@ -486,30 +306,10 @@ function_decl func4 test17.c 32:6 2147483647
    pointer_type 2147483644 - value
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test17.c 3:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
    tree_list 2147483644 - chain
     pointer_type 2147483643 - value
      record_type 3 - nested type
       identifier_node Data1 2 - type name
-      field_decl val test17.c 3:9 2 - field
-      - signed
-       integer_cst 32 1 - decl size
-       integer_type 1 - field type
-       - precisionBits: 32
-       - signed
-        type_decl int 0 - type name
-        integer_cst 32 0 - type size
-        integer_cst -2147483648 0 - min value
-        integer_cst 2147483647 0 - max value
     tree_list 2147483643 - chain
      void_type 2147483642 - value
       type_decl void 2147483641 - type name
@@ -522,31 +322,11 @@ function_decl func4 test17.c 32:6 2147483647
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test17.c 3:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
   integer_cst 64 2147483645 - parm size
  parm_decl ptr2 test17.c 32:46 2147483646 - argument
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test17.c 3:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
   integer_cst 64 2147483645 - parm size
  bind_expr test17.c 33:1 2147483646 - code
   statement_list 2147483645 - operand
@@ -570,16 +350,6 @@ function_decl func4 test17.c 32:6 2147483647
        pointer_type 2147483640 - decl type
         record_type 3 - nested type
          identifier_node Data1 2 - type name
-         field_decl val test17.c 3:9 2 - field
-         - signed
-          integer_cst 32 1 - decl size
-          integer_type 1 - field type
-          - precisionBits: 32
-          - signed
-           type_decl int 0 - type name
-           integer_cst 32 0 - type size
-           integer_cst -2147483648 0 - min value
-           integer_cst 2147483647 0 - max value
        integer_cst 64 2147483640 - parm size
       integer_cst 0 2147483641 - operand
      return_expr test17.c 37:13 2147483642 - operand
@@ -591,16 +361,6 @@ function_decl func4 test17.c 32:6 2147483647
        pointer_type 2147483640 - decl type
         record_type 3 - nested type
          identifier_node Data1 2 - type name
-         field_decl val test17.c 3:9 2 - field
-         - signed
-          integer_cst 32 1 - decl size
-          integer_type 1 - field type
-          - precisionBits: 32
-          - signed
-           type_decl int 0 - type name
-           integer_cst 32 0 - type size
-           integer_cst -2147483648 0 - min value
-           integer_cst 2147483647 0 - max value
        integer_cst 64 2147483640 - parm size
      field_decl val test17.c 3:9 2147483642 - field
      - signed
@@ -623,30 +383,10 @@ function_decl func5 test17.c 43:6 2147483647
    pointer_type 2147483644 - value
     record_type 3 - nested type
      identifier_node Data1 2 - type name
-     field_decl val test17.c 3:9 2 - field
-     - signed
-      integer_cst 32 1 - decl size
-      integer_type 1 - field type
-      - precisionBits: 32
-      - signed
-       type_decl int 0 - type name
-       integer_cst 32 0 - type size
-       integer_cst -2147483648 0 - min value
-       integer_cst 2147483647 0 - max value
    tree_list 2147483644 - chain
     pointer_type 2147483643 - value
      record_type 3 - nested type
       identifier_node Data1 2 - type name
-      field_decl val test17.c 3:9 2 - field
-      - signed
-       integer_cst 32 1 - decl size
-       integer_type 1 - field type
-       - precisionBits: 32
-       - signed
-        type_decl int 0 - type name
-        integer_cst 32 0 - type size
-        integer_cst -2147483648 0 - min value
-        integer_cst 2147483647 0 - max value
     tree_list 2147483643 - chain
      void_type 2147483642 - value
       type_decl void 2147483641 - type name
@@ -659,32 +399,12 @@ function_decl func5 test17.c 43:6 2147483647
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test17.c 3:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
   integer_cst 64 2147483645 - parm size
  - isUsed: 1
  parm_decl ptr2 test17.c 43:46 2147483646 - argument
   pointer_type 2147483645 - decl type
    record_type 3 - nested type
     identifier_node Data1 2 - type name
-    field_decl val test17.c 3:9 2 - field
-    - signed
-     integer_cst 32 1 - decl size
-     integer_type 1 - field type
-     - precisionBits: 32
-     - signed
-      type_decl int 0 - type name
-      integer_cst 32 0 - type size
-      integer_cst -2147483648 0 - min value
-      integer_cst 2147483647 0 - max value
   integer_cst 64 2147483645 - parm size
  bind_expr test17.c 44:1 2147483646 - code
   statement_list 2147483645 - operand
@@ -695,16 +415,6 @@ function_decl func5 test17.c 43:6 2147483647
       pointer_type 2147483641 - decl type
        record_type 3 - nested type
         identifier_node Data1 2 - type name
-        field_decl val test17.c 3:9 2 - field
-        - signed
-         integer_cst 32 1 - decl size
-         integer_type 1 - field type
-         - precisionBits: 32
-         - signed
-          type_decl int 0 - type name
-          integer_cst 32 0 - type size
-          integer_cst -2147483648 0 - min value
-          integer_cst 2147483647 0 - max value
       integer_cst 64 2147483641 - parm size
      integer_cst 0 2147483642 - operand
     return_expr test17.c 46:9 2147483643 - operand
@@ -715,16 +425,6 @@ function_decl func5 test17.c 43:6 2147483647
       pointer_type 2147483641 - decl type
        record_type 3 - nested type
         identifier_node Data1 2 - type name
-        field_decl val test17.c 3:9 2 - field
-        - signed
-         integer_cst 32 1 - decl size
-         integer_type 1 - field type
-         - precisionBits: 32
-         - signed
-          type_decl int 0 - type name
-          integer_cst 32 0 - type size
-          integer_cst -2147483648 0 - min value
-          integer_cst 2147483647 0 - max value
       integer_cst 64 2147483641 - parm size
      integer_cst 0 2147483642 - operand
     return_expr test17.c 49:9 2147483643 - operand
@@ -736,16 +436,6 @@ function_decl func5 test17.c 43:6 2147483647
        pointer_type 2147483640 - decl type
         record_type 3 - nested type
          identifier_node Data1 2 - type name
-         field_decl val test17.c 3:9 2 - field
-         - signed
-          integer_cst 32 1 - decl size
-          integer_type 1 - field type
-          - precisionBits: 32
-          - signed
-           type_decl int 0 - type name
-           integer_cst 32 0 - type size
-           integer_cst -2147483648 0 - min value
-           integer_cst 2147483647 0 - max value
        integer_cst 64 2147483640 - parm size
      field_decl val test17.c 3:9 2147483642 - field
      - signed

@@ -217,14 +217,6 @@ parm_decl this: ptr1, ptr2,
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
 type_decl Object1: ptr1, ptr2, 
-field_decl k: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
-type_decl Object1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 field_decl k: ptr1, ptr2, 
 integer_cst 32: ptr1, ptr2, 
@@ -340,14 +332,6 @@ indirect_ref : ptr1, ptr2,
 parm_decl this: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Object1: ptr1, ptr2, 
-field_decl k: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 type_decl Object1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 field_decl k: ptr1, ptr2, 
@@ -493,14 +477,6 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl Object1: 
-field_decl k: 
-integer_cst 32: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 type_decl Object1: 
 integer_cst 64: 
 field_decl k: 
@@ -1022,14 +998,6 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl Object1: 
-field_decl k: 
-integer_cst 32: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 type_decl Object1: 
 integer_cst 64: 
 field_decl k: 

@@ -5,17 +5,14 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl _Iter_less_iter: 
-type_decl _Iter_less_iter: 
 integer_cst 8: 
 target_expr : 
 var_decl : 
 integer_cst 8: 
 record_type : 
 type_decl _Iter_less_iter: 
-type_decl _Iter_less_iter: 
 constructor : 
 record_type : 
-type_decl _Iter_less_iter: 
 type_decl _Iter_less_iter: 
 function_decl __iter_less_val: 
 cleanup_point_expr : 
@@ -24,17 +21,14 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl _Iter_less_val: 
-type_decl _Iter_less_val: 
 integer_cst 8: 
 target_expr : 
 var_decl : 
 integer_cst 8: 
 record_type : 
 type_decl _Iter_less_val: 
-type_decl _Iter_less_val: 
 constructor : 
 record_type : 
-type_decl _Iter_less_val: 
 type_decl _Iter_less_val: 
 function_decl __iter_comp_val: 
 cleanup_point_expr : 
@@ -43,17 +37,14 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl _Iter_less_val: 
-type_decl _Iter_less_val: 
 integer_cst 8: 
 target_expr : 
 var_decl : 
 integer_cst 8: 
 record_type : 
 type_decl _Iter_less_val: 
-type_decl _Iter_less_val: 
 constructor : 
 record_type : 
-type_decl _Iter_less_val: 
 type_decl _Iter_less_val: 
 function_decl __val_less_iter: 
 cleanup_point_expr : 
@@ -62,17 +53,14 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl _Val_less_iter: 
-type_decl _Val_less_iter: 
 integer_cst 8: 
 target_expr : 
 var_decl : 
 integer_cst 8: 
 record_type : 
 type_decl _Val_less_iter: 
-type_decl _Val_less_iter: 
 constructor : 
 record_type : 
-type_decl _Val_less_iter: 
 type_decl _Val_less_iter: 
 function_decl __val_comp_iter: 
 cleanup_point_expr : 
@@ -81,17 +69,14 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl _Val_less_iter: 
-type_decl _Val_less_iter: 
 integer_cst 8: 
 target_expr : 
 var_decl : 
 integer_cst 8: 
 record_type : 
 type_decl _Val_less_iter: 
-type_decl _Val_less_iter: 
 constructor : 
 record_type : 
-type_decl _Val_less_iter: 
 type_decl _Val_less_iter: 
 function_decl __iter_equal_to_iter: 
 cleanup_point_expr : 
@@ -100,17 +85,14 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl _Iter_equal_to_iter: 
-type_decl _Iter_equal_to_iter: 
 integer_cst 8: 
 target_expr : 
 var_decl : 
 integer_cst 8: 
 record_type : 
 type_decl _Iter_equal_to_iter: 
-type_decl _Iter_equal_to_iter: 
 constructor : 
 record_type : 
-type_decl _Iter_equal_to_iter: 
 type_decl _Iter_equal_to_iter: 
 function_decl __iter_equal_to_val: 
 cleanup_point_expr : 
@@ -119,17 +101,14 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl _Iter_equal_to_val: 
-type_decl _Iter_equal_to_val: 
 integer_cst 8: 
 target_expr : 
 var_decl : 
 integer_cst 8: 
 record_type : 
 type_decl _Iter_equal_to_val: 
-type_decl _Iter_equal_to_val: 
 constructor : 
 record_type : 
-type_decl _Iter_equal_to_val: 
 type_decl _Iter_equal_to_val: 
 function_decl __iter_comp_val: 
 cleanup_point_expr : 
@@ -138,17 +117,14 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl _Iter_equal_to_val: 
-type_decl _Iter_equal_to_val: 
 integer_cst 8: 
 target_expr : 
 var_decl : 
 integer_cst 8: 
 record_type : 
 type_decl _Iter_equal_to_val: 
-type_decl _Iter_equal_to_val: 
 constructor : 
 record_type : 
-type_decl _Iter_equal_to_val: 
 type_decl _Iter_equal_to_val: 
 function_decl __lg: 
 return_expr : 
@@ -325,11 +301,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl exception: 
 integer_cst 64: 
 field_decl _vptr.exception: 
 integer_cst 64: 
@@ -366,9 +337,6 @@ var_decl _ZTISt9exception:
 integer_cst 128: 
 record_type : 
 type_decl __class_type_info_pseudo: 
-field_decl : 
-integer_cst 128: 
-record_type : 
 addr_expr : 
 function_decl __comp_dtor : 
 addr_expr : 
@@ -403,11 +371,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl exception: 
 integer_cst 64: 
 field_decl _vptr.exception: 
 integer_cst 64: 
@@ -444,9 +407,6 @@ var_decl _ZTISt9exception:
 integer_cst 128: 
 record_type : 
 type_decl __class_type_info_pseudo: 
-field_decl : 
-integer_cst 128: 
-record_type : 
 addr_expr : 
 function_decl __comp_dtor : 
 addr_expr : 
@@ -491,11 +451,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl exception: 
 integer_cst 64: 
 field_decl _vptr.exception: 
 integer_cst 64: 
@@ -532,9 +487,6 @@ var_decl _ZTISt9exception:
 integer_cst 128: 
 record_type : 
 type_decl __class_type_info_pseudo: 
-field_decl : 
-integer_cst 128: 
-record_type : 
 addr_expr : 
 function_decl __comp_dtor : 
 addr_expr : 
@@ -563,27 +515,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl bad_exception: 
-field_decl : 
-integer_cst 64: 
-record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-type_decl exception: 
-type_decl bad_exception: 
 integer_cst 64: 
 field_decl : 
 integer_cst 64: 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl __vtbl_ptr_type: 
-function_type : 
-integer_type : 
 type_decl exception: 
 cleanup_stmt : 
 statement_list : 
@@ -598,27 +533,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl bad_exception: 
-field_decl : 
-integer_cst 64: 
-record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-type_decl exception: 
-type_decl bad_exception: 
 integer_cst 64: 
 field_decl : 
 integer_cst 64: 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl __vtbl_ptr_type: 
-function_type : 
-integer_type : 
 type_decl exception: 
 field_decl _vptr.exception: 
 integer_cst 64: 
@@ -655,12 +573,6 @@ var_decl _ZTISt13bad_exception:
 integer_cst 192: 
 record_type : 
 type_decl __si_class_type_info_pseudo: 
-field_decl : 
-integer_cst 128: 
-record_type : 
-field_decl : 
-integer_cst 64: 
-pointer_type : 
 addr_expr : 
 function_decl __comp_dtor : 
 addr_expr : 
@@ -691,27 +603,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl bad_exception: 
-field_decl : 
-integer_cst 64: 
-record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-type_decl exception: 
-type_decl bad_exception: 
 integer_cst 64: 
 field_decl : 
 integer_cst 64: 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl __vtbl_ptr_type: 
-function_type : 
-integer_type : 
 type_decl exception: 
 block : 
 function_decl __base_ctor : 
@@ -734,11 +629,6 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
 type_decl exception: 
 integer_cst 64: 
 field_decl _vptr.exception: 
@@ -776,9 +666,6 @@ var_decl _ZTISt9exception:
 integer_cst 128: 
 record_type : 
 type_decl __class_type_info_pseudo: 
-field_decl : 
-integer_cst 128: 
-record_type : 
 addr_expr : 
 function_decl __comp_dtor : 
 addr_expr : 
@@ -807,27 +694,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl bad_exception: 
-field_decl : 
-integer_cst 64: 
-record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-type_decl exception: 
-type_decl bad_exception: 
 integer_cst 64: 
 field_decl : 
 integer_cst 64: 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl __vtbl_ptr_type: 
-function_type : 
-integer_type : 
 type_decl exception: 
 try_catch_expr : 
 statement_list : 
@@ -842,27 +712,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl bad_exception: 
-field_decl : 
-integer_cst 64: 
-record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-type_decl exception: 
-type_decl bad_exception: 
 integer_cst 64: 
 field_decl : 
 integer_cst 64: 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl __vtbl_ptr_type: 
-function_type : 
-integer_type : 
 type_decl exception: 
 field_decl _vptr.exception: 
 integer_cst 64: 
@@ -899,12 +752,6 @@ var_decl _ZTISt13bad_exception:
 integer_cst 192: 
 record_type : 
 type_decl __si_class_type_info_pseudo: 
-field_decl : 
-integer_cst 128: 
-record_type : 
-field_decl : 
-integer_cst 64: 
-pointer_type : 
 addr_expr : 
 function_decl __comp_dtor : 
 addr_expr : 
@@ -935,27 +782,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl bad_exception: 
-field_decl : 
-integer_cst 64: 
-record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-type_decl exception: 
-type_decl bad_exception: 
 integer_cst 64: 
 field_decl : 
 integer_cst 64: 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl __vtbl_ptr_type: 
-function_type : 
-integer_type : 
 type_decl exception: 
 block : 
 function_decl __comp_ctor : 
@@ -981,11 +811,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl exception: 
 integer_cst 64: 
 field_decl _vptr.exception: 
 integer_cst 64: 
@@ -1022,9 +847,6 @@ var_decl _ZTISt9exception:
 integer_cst 128: 
 record_type : 
 type_decl __class_type_info_pseudo: 
-field_decl : 
-integer_cst 128: 
-record_type : 
 addr_expr : 
 function_decl __comp_dtor : 
 addr_expr : 
@@ -1053,27 +875,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl bad_alloc: 
-field_decl : 
-integer_cst 64: 
-record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-type_decl exception: 
-type_decl bad_alloc: 
 integer_cst 64: 
 field_decl : 
 integer_cst 64: 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl __vtbl_ptr_type: 
-function_type : 
-integer_type : 
 type_decl exception: 
 cleanup_stmt : 
 statement_list : 
@@ -1088,27 +893,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl bad_alloc: 
-field_decl : 
-integer_cst 64: 
-record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-type_decl exception: 
-type_decl bad_alloc: 
 integer_cst 64: 
 field_decl : 
 integer_cst 64: 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl __vtbl_ptr_type: 
-function_type : 
-integer_type : 
 type_decl exception: 
 field_decl _vptr.exception: 
 integer_cst 64: 
@@ -1145,12 +933,6 @@ var_decl _ZTISt9bad_alloc:
 integer_cst 192: 
 record_type : 
 type_decl __si_class_type_info_pseudo: 
-field_decl : 
-integer_cst 128: 
-record_type : 
-field_decl : 
-integer_cst 64: 
-pointer_type : 
 addr_expr : 
 function_decl __comp_dtor : 
 addr_expr : 
@@ -1181,27 +963,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl bad_alloc: 
-field_decl : 
-integer_cst 64: 
-record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-type_decl exception: 
-type_decl bad_alloc: 
 integer_cst 64: 
 field_decl : 
 integer_cst 64: 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl __vtbl_ptr_type: 
-function_type : 
-integer_type : 
 type_decl exception: 
 block : 
 function_decl __base_ctor : 
@@ -1224,11 +989,6 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
 type_decl exception: 
 integer_cst 64: 
 field_decl _vptr.exception: 
@@ -1266,9 +1026,6 @@ var_decl _ZTISt9exception:
 integer_cst 128: 
 record_type : 
 type_decl __class_type_info_pseudo: 
-field_decl : 
-integer_cst 128: 
-record_type : 
 addr_expr : 
 function_decl __comp_dtor : 
 addr_expr : 
@@ -1297,27 +1054,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl bad_alloc: 
-field_decl : 
-integer_cst 64: 
-record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-type_decl exception: 
-type_decl bad_alloc: 
 integer_cst 64: 
 field_decl : 
 integer_cst 64: 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl __vtbl_ptr_type: 
-function_type : 
-integer_type : 
 type_decl exception: 
 try_catch_expr : 
 statement_list : 
@@ -1332,27 +1072,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl bad_alloc: 
-field_decl : 
-integer_cst 64: 
-record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-type_decl exception: 
-type_decl bad_alloc: 
 integer_cst 64: 
 field_decl : 
 integer_cst 64: 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl __vtbl_ptr_type: 
-function_type : 
-integer_type : 
 type_decl exception: 
 field_decl _vptr.exception: 
 integer_cst 64: 
@@ -1389,12 +1112,6 @@ var_decl _ZTISt9bad_alloc:
 integer_cst 192: 
 record_type : 
 type_decl __si_class_type_info_pseudo: 
-field_decl : 
-integer_cst 128: 
-record_type : 
-field_decl : 
-integer_cst 64: 
-pointer_type : 
 addr_expr : 
 function_decl __comp_dtor : 
 addr_expr : 
@@ -1425,27 +1142,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl bad_alloc: 
-field_decl : 
-integer_cst 64: 
-record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-type_decl exception: 
-type_decl bad_alloc: 
 integer_cst 64: 
 field_decl : 
 integer_cst 64: 
 record_type : 
-type_decl exception: 
-field_decl _vptr.exception: 
-integer_cst 64: 
-pointer_type : 
-pointer_type : 
-type_decl __vtbl_ptr_type: 
-function_type : 
-integer_type : 
 type_decl exception: 
 block : 
 function_decl __comp_ctor : 
@@ -1497,18 +1197,6 @@ parm_decl this: __x, this->_M_p,
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
 type_decl _Bit_reference: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_mask: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl _Bit_type: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst : __x, this->_M_p, 
-type_decl _Bit_reference: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
@@ -1535,18 +1223,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_reference: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_mask: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl _Bit_type: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst : __x, this->_M_p, 
 type_decl _Bit_reference: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_mask: __x, this->_M_p, 
@@ -1577,18 +1253,6 @@ parm_decl this: __x, this->_M_p,
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
 type_decl _Bit_reference: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_mask: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl _Bit_type: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst : __x, this->_M_p, 
-type_decl _Bit_reference: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
@@ -1615,18 +1279,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_reference: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_mask: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl _Bit_type: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst : __x, this->_M_p, 
 type_decl _Bit_reference: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_mask: __x, this->_M_p, 
@@ -1660,18 +1312,6 @@ parm_decl this: this->_M_p,
 pointer_type : this->_M_p, 
 record_type : this->_M_p, 
 type_decl _Bit_reference: this->_M_p, 
-field_decl _M_p: this->_M_p, 
-integer_cst 64: this->_M_p, 
-pointer_type : this->_M_p, 
-integer_type : this->_M_p, 
-field_decl _M_mask: this->_M_p, 
-integer_cst 64: this->_M_p, 
-integer_type : this->_M_p, 
-type_decl _Bit_type: this->_M_p, 
-integer_cst 64: this->_M_p, 
-integer_cst 0: this->_M_p, 
-integer_cst : this->_M_p, 
-type_decl _Bit_reference: this->_M_p, 
 integer_cst 64: this->_M_p, 
 field_decl _M_p: this->_M_p, 
 integer_cst 64: this->_M_p, 
@@ -1691,18 +1331,6 @@ indirect_ref : this->_M_p,
 parm_decl this: this->_M_p, 
 pointer_type : this->_M_p, 
 record_type : this->_M_p, 
-type_decl _Bit_reference: this->_M_p, 
-field_decl _M_p: this->_M_p, 
-integer_cst 64: this->_M_p, 
-pointer_type : this->_M_p, 
-integer_type : this->_M_p, 
-field_decl _M_mask: this->_M_p, 
-integer_cst 64: this->_M_p, 
-integer_type : this->_M_p, 
-type_decl _Bit_type: this->_M_p, 
-integer_cst 64: this->_M_p, 
-integer_cst 0: this->_M_p, 
-integer_cst : this->_M_p, 
 type_decl _Bit_reference: this->_M_p, 
 integer_cst 64: this->_M_p, 
 field_decl _M_mask: this->_M_p, 
@@ -1728,18 +1356,6 @@ parm_decl this: this->_M_p,
 pointer_type : this->_M_p, 
 record_type : this->_M_p, 
 type_decl _Bit_reference: this->_M_p, 
-field_decl _M_p: this->_M_p, 
-integer_cst 64: this->_M_p, 
-pointer_type : this->_M_p, 
-integer_type : this->_M_p, 
-field_decl _M_mask: this->_M_p, 
-integer_cst 64: this->_M_p, 
-integer_type : this->_M_p, 
-type_decl _Bit_type: this->_M_p, 
-integer_cst 64: this->_M_p, 
-integer_cst 0: this->_M_p, 
-integer_cst : this->_M_p, 
-type_decl _Bit_reference: this->_M_p, 
 integer_cst 64: this->_M_p, 
 field_decl _M_p: this->_M_p, 
 integer_cst 64: this->_M_p, 
@@ -1759,18 +1375,6 @@ indirect_ref : this->_M_p,
 parm_decl this: this->_M_p, 
 pointer_type : this->_M_p, 
 record_type : this->_M_p, 
-type_decl _Bit_reference: this->_M_p, 
-field_decl _M_p: this->_M_p, 
-integer_cst 64: this->_M_p, 
-pointer_type : this->_M_p, 
-integer_type : this->_M_p, 
-field_decl _M_mask: this->_M_p, 
-integer_cst 64: this->_M_p, 
-integer_type : this->_M_p, 
-type_decl _Bit_type: this->_M_p, 
-integer_cst 64: this->_M_p, 
-integer_cst 0: this->_M_p, 
-integer_cst : this->_M_p, 
 type_decl _Bit_reference: this->_M_p, 
 integer_cst 64: this->_M_p, 
 field_decl _M_mask: this->_M_p, 
@@ -1801,18 +1405,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -1827,18 +1419,6 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
 type_decl _Bit_reference: 
 integer_cst 64: 
 field_decl _M_mask: 
@@ -1870,18 +1450,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -1899,18 +1467,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -1925,18 +1481,6 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
 type_decl _Bit_reference: 
 integer_cst 64: 
 field_decl _M_mask: 
@@ -1957,18 +1501,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -1986,18 +1518,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -2014,18 +1534,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 integer_cst 64: 
 field_decl _M_mask: 
 integer_cst 64: 
@@ -2040,38 +1548,10 @@ result_decl :
 reference_type : 
 record_type : 
 type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 integer_cst 64: 
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
 type_decl _Bit_reference: 
 integer_cst 64: 
 function_decl operator=: 
@@ -2082,22 +1562,6 @@ result_decl :
 reference_type : 
 record_type : 
 type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 integer_cst 64: 
 convert_expr : 
 call_expr : 
@@ -2106,18 +1570,6 @@ function_decl operator=:
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
 type_decl _Bit_reference: 
 integer_cst 64: 
 convert_expr : 
@@ -2128,22 +1580,6 @@ convert_expr :
 parm_decl __x: 
 reference_type : 
 record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
 type_decl _Bit_reference: 
 integer_cst 64: 
 function_decl operator==: 
@@ -2163,22 +1599,6 @@ parm_decl __x:
 reference_type : 
 record_type : 
 type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 integer_cst 64: 
 call_expr : 
 addr_expr : 
@@ -2186,18 +1606,6 @@ function_decl operator 1:
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
 type_decl _Bit_reference: 
 integer_cst 64: 
 call_expr : 
@@ -2207,22 +1615,6 @@ convert_expr :
 parm_decl __x: 
 reference_type : 
 record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
 type_decl _Bit_reference: 
 integer_cst 64: 
 function_decl operator<: 
@@ -2242,18 +1634,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 integer_cst 64: 
 call_expr : 
 addr_expr : 
@@ -2262,22 +1642,6 @@ convert_expr :
 parm_decl __x: 
 reference_type : 
 record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
 type_decl _Bit_reference: 
 integer_cst 64: 
 function_decl flip: 
@@ -2291,18 +1655,6 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
 type_decl _Bit_reference: 
 integer_cst 64: 
 field_decl _M_p: 
@@ -2321,18 +1673,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -2347,18 +1687,6 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
 type_decl _Bit_reference: 
 integer_cst 64: 
 field_decl _M_mask: 
@@ -2393,18 +1721,6 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
-type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
 cleanup_point_expr : __x, 
 expr_stmt : __x, 
@@ -2415,18 +1731,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
@@ -2454,18 +1758,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_offset: __x, this->_M_p, 
@@ -2498,18 +1790,6 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
-type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
 cleanup_point_expr : __x, 
 expr_stmt : __x, 
@@ -2520,18 +1800,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
@@ -2559,18 +1827,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_offset: __x, this->_M_p, 
@@ -2602,18 +1858,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
@@ -2635,18 +1879,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
@@ -2665,18 +1897,6 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
@@ -2700,18 +1920,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
@@ -2733,18 +1941,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
@@ -2763,18 +1959,6 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
@@ -2821,18 +2005,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -2848,18 +2020,6 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
@@ -3027,18 +2187,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -3058,18 +2206,6 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_offset: 
@@ -3163,22 +2299,6 @@ parm_decl __i:
 reference_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -3194,18 +2314,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -3220,22 +2328,6 @@ indirect_ref :
 parm_decl __i: 
 reference_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
@@ -3253,22 +2345,6 @@ parm_decl __i:
 reference_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
@@ -3283,18 +2359,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
@@ -3308,22 +2372,6 @@ indirect_ref :
 parm_decl __i: 
 reference_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_offset: 
@@ -3348,18 +2396,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -3374,22 +2410,6 @@ indirect_ref :
 parm_decl __i: 
 reference_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
@@ -3408,22 +2428,6 @@ parm_decl __i:
 reference_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -3439,18 +2443,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -3465,22 +2457,6 @@ indirect_ref :
 parm_decl __i: 
 reference_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
@@ -3498,18 +2474,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
@@ -3523,22 +2487,6 @@ indirect_ref :
 parm_decl __i: 
 reference_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_offset: 
@@ -3564,39 +2512,11 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 convert_expr : 
 parm_decl __i: 
 reference_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 function_decl operator>: 
@@ -3615,38 +2535,10 @@ parm_decl __i:
 reference_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 function_decl operator<=: 
@@ -3666,38 +2558,10 @@ parm_decl __i:
 reference_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 parm_decl this: 
 pointer_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 function_decl operator>=: 
@@ -3716,39 +2580,11 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 convert_expr : 
 parm_decl __i: 
 reference_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 function_decl operator-: 
@@ -3772,22 +2608,6 @@ parm_decl __x:
 reference_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -3802,22 +2622,6 @@ indirect_ref :
 parm_decl __y: 
 reference_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_p: 
@@ -3836,22 +2640,6 @@ parm_decl __x:
 reference_type : 
 record_type : 
 type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
@@ -3865,22 +2653,6 @@ indirect_ref :
 parm_decl __y: 
 reference_type : 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 field_decl _M_offset: 
@@ -3911,18 +2683,6 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
-type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
 cleanup_point_expr : __x, 
 expr_stmt : __x, 
@@ -3933,18 +2693,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
@@ -3973,18 +2721,6 @@ parm_decl this: __x, this->_M_p,
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_offset: __x, this->_M_p, 
 integer_cst 32: __x, this->_M_p, 
@@ -4008,41 +2744,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 0: 
 integer_cst 0: 
@@ -4068,18 +2773,6 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
-type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
 cleanup_point_expr : __x, 
 expr_stmt : __x, 
@@ -4090,18 +2783,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
@@ -4130,18 +2811,6 @@ parm_decl this: __x, this->_M_p,
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_offset: __x, this->_M_p, 
 integer_cst 32: __x, this->_M_p, 
@@ -4165,41 +2834,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 0: 
 integer_cst 0: 
@@ -4227,18 +2865,6 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
-type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
 cleanup_point_expr : __x, 
 expr_stmt : __x, 
@@ -4249,18 +2875,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
@@ -4289,18 +2903,6 @@ parm_decl this: __x, this->_M_p,
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_offset: __x, this->_M_p, 
 integer_cst 32: __x, this->_M_p, 
@@ -4324,41 +2926,10 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator: __x, 
-field_decl : __x, 
-integer_cst 96: __x, 
-record_type : __x, 
-type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl _Bit_iterator_base: __x, 
-type_decl _Bit_iterator: __x, 
-type_decl reference: __x, 
-type_decl pointer: __x, 
-type_decl iterator: __x, 
 integer_cst 64: __x, 
 field_decl : __x, 
 integer_cst 96: __x, 
 record_type : __x, 
-type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-type_decl _Bit_type: __x, 
-integer_cst 64: __x, 
-integer_cst 0: __x, 
-integer_cst : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
 type_decl _Bit_iterator_base: __x, 
 parm_decl __x: __x, 
 pointer_type : __x, 
@@ -4397,18 +2968,6 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
-type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
 cleanup_point_expr : __x, 
 expr_stmt : __x, 
@@ -4419,18 +2978,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
@@ -4459,18 +3006,6 @@ parm_decl this: __x, this->_M_p,
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_offset: __x, this->_M_p, 
 integer_cst 32: __x, this->_M_p, 
@@ -4494,41 +3029,10 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator: __x, 
-field_decl : __x, 
-integer_cst 96: __x, 
-record_type : __x, 
-type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl _Bit_iterator_base: __x, 
-type_decl _Bit_iterator: __x, 
-type_decl reference: __x, 
-type_decl pointer: __x, 
-type_decl iterator: __x, 
 integer_cst 64: __x, 
 field_decl : __x, 
 integer_cst 96: __x, 
 record_type : __x, 
-type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-type_decl _Bit_type: __x, 
-integer_cst 64: __x, 
-integer_cst 0: __x, 
-integer_cst : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
 type_decl _Bit_iterator_base: __x, 
 parm_decl __x: __x, 
 pointer_type : __x, 
@@ -4555,80 +3059,17 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 target_expr : 
 var_decl : 
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 indirect_ref : 
 parm_decl this: 
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 function_decl operator*: 
 cleanup_point_expr : 
@@ -4637,22 +3078,6 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 integer_cst 128: 
 compound_expr : 
 target_expr : 
@@ -4660,22 +3085,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
@@ -4684,18 +3093,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 convert_expr : 
 void_cst : 
 component_ref : 
@@ -4705,41 +3102,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -4758,41 +3124,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_offset: 
 integer_cst 32: 
@@ -4805,18 +3140,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 function_decl operator++: 
 statement_list : 
 cleanup_point_expr : 
@@ -4831,41 +3154,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 return_expr : 
 init_expr : 
@@ -4873,50 +3165,11 @@ result_decl :
 reference_type : 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 parm_decl this: 
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 function_decl operator++: 
 bind_expr : 
@@ -4928,21 +3181,6 @@ indirect_ref :
 parm_decl this: 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
@@ -4955,41 +3193,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 cleanup_point_expr : 
 return_expr : 
@@ -4997,80 +3204,17 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 target_expr : 
 var_decl : 
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 var_decl __tmp: 
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
 type_decl iterator: 
 var_decl __tmp: 
 integer_cst 128: 
@@ -5080,30 +3224,6 @@ pointer_type :
 record_type : 
 integer_cst 64: 
 record_type : 
-type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
 type_decl iterator: 
 block : 
 var_decl __tmp: 
@@ -5111,21 +3231,6 @@ integer_cst 128:
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
 type_decl iterator: 
 function_decl operator--: 
 statement_list : 
@@ -5141,41 +3246,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 return_expr : 
 init_expr : 
@@ -5183,50 +3257,11 @@ result_decl :
 reference_type : 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 parm_decl this: 
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 function_decl operator--: 
 bind_expr : 
@@ -5237,21 +3272,6 @@ integer_cst 128:
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
 type_decl iterator: 
 cleanup_point_expr : 
 expr_stmt : 
@@ -5265,41 +3285,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 cleanup_point_expr : 
 return_expr : 
@@ -5307,80 +3296,17 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 target_expr : 
 var_decl : 
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 var_decl __tmp: 
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
 type_decl iterator: 
 var_decl __tmp: 
 integer_cst 128: 
@@ -5390,30 +3316,6 @@ pointer_type :
 record_type : 
 integer_cst 64: 
 record_type : 
-type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
 type_decl iterator: 
 block : 
 var_decl __tmp: 
@@ -5421,21 +3323,6 @@ integer_cst 128:
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
 type_decl iterator: 
 function_decl operator+=: 
 statement_list : 
@@ -5451,41 +3338,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 parm_decl __i: 
 integer_type : 
@@ -5500,50 +3356,11 @@ result_decl :
 reference_type : 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 parm_decl this: 
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 function_decl operator-=: 
 statement_list : 
@@ -5557,21 +3374,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 negate_expr : 
 parm_decl __i: 
@@ -5587,50 +3389,11 @@ result_decl :
 reference_type : 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 parm_decl this: 
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 function_decl operator+: 
 bind_expr : 
@@ -5642,50 +3405,11 @@ indirect_ref :
 parm_decl this: 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
 record_type : 
-type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
 type_decl iterator: 
 integer_cst 128: 
 target_expr : 
@@ -5693,30 +3417,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 indirect_ref : 
 call_expr : 
 addr_expr : 
@@ -5728,21 +3428,6 @@ indirect_ref :
 parm_decl this: 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 parm_decl __i: 
 integer_type : 
 type_decl difference_type: 
@@ -5759,51 +3444,12 @@ record_type :
 integer_cst 64: 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 block : 
 var_decl __tmp: 
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
 type_decl iterator: 
 function_decl operator-: 
 bind_expr : 
@@ -5815,50 +3461,11 @@ indirect_ref :
 parm_decl this: 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
 record_type : 
-type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
 type_decl iterator: 
 integer_cst 128: 
 target_expr : 
@@ -5866,30 +3473,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 indirect_ref : 
 call_expr : 
 addr_expr : 
@@ -5901,21 +3484,6 @@ indirect_ref :
 parm_decl this: 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 parm_decl __i: 
 integer_type : 
 type_decl difference_type: 
@@ -5932,51 +3500,12 @@ record_type :
 integer_cst 64: 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 block : 
 var_decl __tmp: 
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
 type_decl iterator: 
 function_decl operator[]: 
 cleanup_point_expr : 
@@ -5985,44 +3514,12 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 integer_cst 128: 
 target_expr : 
 var_decl : 
 integer_cst 128: 
 record_type : 
 type_decl reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 call_expr : 
 addr_expr : 
 function_decl operator*: 
@@ -6032,30 +3529,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 call_expr : 
 addr_expr : 
 function_decl operator+: 
@@ -6063,21 +3536,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 parm_decl __i: 
 integer_type : 
@@ -6093,59 +3551,11 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 target_expr : 
 var_decl : 
 integer_cst 128: 
 record_type : 
-type_decl iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
 type_decl iterator: 
 call_expr : 
 addr_expr : 
@@ -6155,30 +3565,6 @@ parm_decl __x:
 reference_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 parm_decl __n: 
 integer_type : 
@@ -6208,18 +3594,6 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
-type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
 cleanup_point_expr : __x, 
 expr_stmt : __x, 
@@ -6230,18 +3604,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
@@ -6270,18 +3632,6 @@ parm_decl this: __x, this->_M_p,
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_offset: __x, this->_M_p, 
 integer_cst 32: __x, this->_M_p, 
@@ -6305,42 +3655,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 0: 
 integer_cst 0: 
@@ -6366,18 +3684,6 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
-type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
 cleanup_point_expr : __x, 
 expr_stmt : __x, 
@@ -6388,18 +3694,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
@@ -6428,18 +3722,6 @@ parm_decl this: __x, this->_M_p,
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_offset: __x, this->_M_p, 
 integer_cst 32: __x, this->_M_p, 
@@ -6463,42 +3745,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 integer_cst 0: 
 integer_cst 0: 
@@ -6526,18 +3776,6 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
-type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
 cleanup_point_expr : __x, 
 expr_stmt : __x, 
@@ -6548,18 +3786,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
@@ -6588,18 +3814,6 @@ parm_decl this: __x, this->_M_p,
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_offset: __x, this->_M_p, 
 integer_cst 32: __x, this->_M_p, 
@@ -6623,42 +3837,10 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_const_iterator: __x, 
-field_decl : __x, 
-integer_cst 96: __x, 
-record_type : __x, 
-type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl _Bit_iterator_base: __x, 
-type_decl _Bit_const_iterator: __x, 
-type_decl reference: __x, 
-type_decl const_reference: __x, 
-type_decl pointer: __x, 
-type_decl const_iterator: __x, 
 integer_cst 64: __x, 
 field_decl : __x, 
 integer_cst 96: __x, 
 record_type : __x, 
-type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-type_decl _Bit_type: __x, 
-integer_cst 64: __x, 
-integer_cst 0: __x, 
-integer_cst : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
 type_decl _Bit_iterator_base: __x, 
 parm_decl __x: __x, 
 pointer_type : __x, 
@@ -6697,18 +3879,6 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
-type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
 cleanup_point_expr : __x, 
 expr_stmt : __x, 
@@ -6719,18 +3889,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
@@ -6759,18 +3917,6 @@ parm_decl this: __x, this->_M_p,
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_offset: __x, this->_M_p, 
 integer_cst 32: __x, this->_M_p, 
@@ -6794,42 +3940,10 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_const_iterator: __x, 
-field_decl : __x, 
-integer_cst 96: __x, 
-record_type : __x, 
-type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl _Bit_iterator_base: __x, 
-type_decl _Bit_const_iterator: __x, 
-type_decl reference: __x, 
-type_decl const_reference: __x, 
-type_decl pointer: __x, 
-type_decl const_iterator: __x, 
 integer_cst 64: __x, 
 field_decl : __x, 
 integer_cst 96: __x, 
 record_type : __x, 
-type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-type_decl _Bit_type: __x, 
-integer_cst 64: __x, 
-integer_cst 0: __x, 
-integer_cst : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
 type_decl _Bit_iterator_base: __x, 
 parm_decl __x: __x, 
 pointer_type : __x, 
@@ -6870,18 +3984,6 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
-type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
 cleanup_point_expr : __x, 
 expr_stmt : __x, 
@@ -6892,18 +3994,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
@@ -6932,18 +4022,6 @@ parm_decl this: __x, this->_M_p,
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_offset: __x, this->_M_p, 
 integer_cst 32: __x, this->_M_p, 
@@ -6967,42 +4045,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 component_ref : 
 component_ref : 
@@ -7012,50 +4058,10 @@ parm_decl __x:
 reference_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -7073,50 +4079,10 @@ parm_decl __x:
 reference_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_offset: 
 integer_cst 32: 
@@ -7147,18 +4113,6 @@ parm_decl this: __x,
 pointer_type : __x, 
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
-field_decl _M_p: __x, 
-integer_cst 64: __x, 
-pointer_type : __x, 
-integer_type : __x, 
-field_decl _M_offset: __x, 
-integer_cst 32: __x, 
-integer_type : __x, 
-type_decl unsigned int: __x, 
-integer_cst 32: __x, 
-integer_cst 0: __x, 
-integer_cst 4294967295: __x, 
-type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
 cleanup_point_expr : __x, 
 expr_stmt : __x, 
@@ -7169,18 +4123,6 @@ indirect_ref : __x, this->_M_p,
 parm_decl this: __x, this->_M_p, 
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_p: __x, this->_M_p, 
@@ -7209,18 +4151,6 @@ parm_decl this: __x, this->_M_p,
 pointer_type : __x, this->_M_p, 
 record_type : __x, this->_M_p, 
 type_decl _Bit_iterator_base: __x, this->_M_p, 
-field_decl _M_p: __x, this->_M_p, 
-integer_cst 64: __x, this->_M_p, 
-pointer_type : __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-field_decl _M_offset: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_type : __x, this->_M_p, 
-type_decl unsigned int: __x, this->_M_p, 
-integer_cst 32: __x, this->_M_p, 
-integer_cst 0: __x, this->_M_p, 
-integer_cst 4294967295: __x, this->_M_p, 
-type_decl _Bit_iterator_base: __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
 field_decl _M_offset: __x, this->_M_p, 
 integer_cst 32: __x, this->_M_p, 
@@ -7244,42 +4174,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 component_ref : 
 component_ref : 
@@ -7289,50 +4187,10 @@ parm_decl __x:
 reference_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -7350,50 +4208,10 @@ parm_decl __x:
 reference_type : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_offset: 
 integer_cst 32: 
@@ -7412,30 +4230,6 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 compound_expr : 
 target_expr : 
@@ -7443,30 +4237,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
@@ -7475,21 +4245,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 convert_expr : 
 void_cst : 
 component_ref : 
@@ -7499,42 +4254,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -7551,42 +4274,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_offset: 
 integer_cst 32: 
@@ -7599,21 +4290,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 function_decl operator*: 
 cleanup_point_expr : 
 return_expr : 
@@ -7631,22 +4307,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
@@ -7654,18 +4314,6 @@ statement_list : __x,
 var_decl : 
 integer_cst 128: 
 record_type : 
-type_decl _Bit_reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
 type_decl _Bit_reference: 
 convert_expr : 
 void_cst : 
@@ -7676,42 +4324,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -7730,42 +4346,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_offset: 
 integer_cst 32: 
@@ -7788,42 +4372,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 return_expr : 
 init_expr : 
@@ -7831,52 +4383,11 @@ result_decl :
 reference_type : 
 record_type : 
 type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 parm_decl this: 
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 function_decl operator++: 
 bind_expr : 
@@ -7887,22 +4398,6 @@ integer_cst 128:
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
 type_decl const_iterator: 
 cleanup_point_expr : 
 expr_stmt : 
@@ -7916,42 +4411,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 cleanup_point_expr : 
 return_expr : 
@@ -7959,83 +4422,17 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 128: 
 target_expr : 
 var_decl : 
 integer_cst 128: 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 var_decl __tmp: 
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
 type_decl const_iterator: 
 var_decl __tmp: 
 integer_cst 128: 
@@ -8045,31 +4442,6 @@ pointer_type :
 record_type : 
 integer_cst 64: 
 record_type : 
-type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
 type_decl const_iterator: 
 block : 
 var_decl __tmp: 
@@ -8077,22 +4449,6 @@ integer_cst 128:
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
 type_decl const_iterator: 
 function_decl operator--: 
 statement_list : 
@@ -8108,42 +4464,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 return_expr : 
 init_expr : 
@@ -8151,52 +4475,11 @@ result_decl :
 reference_type : 
 record_type : 
 type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 parm_decl this: 
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 function_decl operator--: 
 bind_expr : 
@@ -8208,22 +4491,6 @@ indirect_ref :
 parm_decl this: 
 record_type : 
 type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
@@ -8236,42 +4503,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 cleanup_point_expr : 
 return_expr : 
@@ -8279,83 +4514,17 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 128: 
 target_expr : 
 var_decl : 
 integer_cst 128: 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 var_decl __tmp: 
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
 type_decl const_iterator: 
 var_decl __tmp: 
 integer_cst 128: 
@@ -8365,31 +4534,6 @@ pointer_type :
 record_type : 
 integer_cst 64: 
 record_type : 
-type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
 type_decl const_iterator: 
 block : 
 var_decl __tmp: 
@@ -8397,22 +4541,6 @@ integer_cst 128:
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
 type_decl const_iterator: 
 function_decl operator+=: 
 statement_list : 
@@ -8428,42 +4556,10 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 parm_decl __i: 
 integer_type : 
@@ -8478,52 +4574,11 @@ result_decl :
 reference_type : 
 record_type : 
 type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 parm_decl this: 
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 function_decl operator-=: 
 statement_list : 
@@ -8537,22 +4592,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 negate_expr : 
 parm_decl __i: 
@@ -8568,52 +4607,11 @@ result_decl :
 reference_type : 
 record_type : 
 type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 parm_decl this: 
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 function_decl operator+: 
 bind_expr : 
@@ -8625,52 +4623,11 @@ indirect_ref :
 parm_decl this: 
 record_type : 
 type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
 record_type : 
-type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
 type_decl const_iterator: 
 integer_cst 128: 
 target_expr : 
@@ -8678,31 +4635,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 indirect_ref : 
 call_expr : 
 addr_expr : 
@@ -8714,22 +4646,6 @@ indirect_ref :
 parm_decl this: 
 record_type : 
 type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 parm_decl __i: 
 integer_type : 
 type_decl difference_type: 
@@ -8746,53 +4662,12 @@ record_type :
 integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 block : 
 var_decl __tmp: 
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
 type_decl const_iterator: 
 function_decl operator-: 
 bind_expr : 
@@ -8804,52 +4679,11 @@ indirect_ref :
 parm_decl this: 
 record_type : 
 type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
 record_type : 
-type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
 type_decl const_iterator: 
 integer_cst 128: 
 target_expr : 
@@ -8857,31 +4691,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 indirect_ref : 
 call_expr : 
 addr_expr : 
@@ -8892,22 +4701,6 @@ integer_cst 128:
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
 type_decl const_iterator: 
 parm_decl __i: 
 integer_type : 
@@ -8925,53 +4718,12 @@ record_type :
 integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 block : 
 var_decl __tmp: 
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
 record_type : 
-type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
 type_decl const_iterator: 
 function_decl operator[]: 
 cleanup_point_expr : 
@@ -8990,31 +4742,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 call_expr : 
 addr_expr : 
 function_decl operator+: 
@@ -9022,22 +4749,6 @@ parm_decl this:
 pointer_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 parm_decl __i: 
 integer_type : 
@@ -9053,61 +4764,11 @@ init_expr :
 result_decl : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 128: 
 target_expr : 
 var_decl : 
 integer_cst 128: 
 record_type : 
-type_decl const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
 type_decl const_iterator: 
 call_expr : 
 addr_expr : 
@@ -9117,31 +4778,6 @@ parm_decl __x:
 reference_type : 
 record_type : 
 type_decl _Bit_const_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_const_iterator: 
-type_decl reference: 
-type_decl const_reference: 
-type_decl pointer: 
-type_decl const_iterator: 
 integer_cst 64: 
 parm_decl __n: 
 integer_type : 
@@ -9161,30 +4797,6 @@ addr_expr :
 parm_decl __first: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 cleanup_point_expr : 
 call_expr : 
@@ -9195,100 +4807,20 @@ component_ref :
 parm_decl __first: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 addr_expr : 
 component_ref : 
 parm_decl __last: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 cleanup_point_expr : 
 expr_stmt : 
@@ -9302,22 +4834,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl reference: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_mask: 
-integer_cst 64: 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-type_decl _Bit_reference: 
 call_expr : 
 addr_expr : 
 function_decl operator*: 
@@ -9325,30 +4841,6 @@ addr_expr :
 parm_decl __first: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 convert_expr : 
 parm_decl __x: 
@@ -9366,50 +4858,10 @@ component_ref :
 parm_decl __last: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -9424,50 +4876,10 @@ component_ref :
 parm_decl __first: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -9482,50 +4894,10 @@ component_ref :
 parm_decl __last: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -9547,50 +4919,10 @@ component_ref :
 parm_decl __first: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -9606,50 +4938,10 @@ component_ref :
 parm_decl __last: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -9687,87 +4979,15 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 parm_decl __first: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 target_expr : 
 var_decl : 
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
@@ -9776,21 +4996,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 convert_expr : 
 void_cst : 
 pointer_plus_expr : 
@@ -9799,50 +5004,10 @@ component_ref :
 parm_decl __first: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -9870,30 +5035,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 aggr_init_expr : 
 addr_expr : 
 function_decl __comp_ctor : 
@@ -9902,21 +5043,6 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 convert_expr : 
 void_cst : 
 component_ref : 
@@ -9924,50 +5050,10 @@ component_ref :
 parm_decl __last: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 field_decl : 
 integer_cst 96: 
 record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
 type_decl _Bit_iterator_base: 
 field_decl _M_p: 
 integer_cst 64: 
@@ -9983,57 +5069,9 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 parm_decl __last: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 indirect_ref : 
 parm_decl __x: 
@@ -10051,114 +5089,18 @@ var_decl :
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 parm_decl __first: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 target_expr : 
 var_decl : 
 integer_cst 128: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 parm_decl __last: 
 record_type : 
 type_decl _Bit_iterator: 
-field_decl : 
-integer_cst 96: 
-record_type : 
-type_decl _Bit_iterator_base: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl _Bit_type: 
-integer_cst 64: 
-integer_cst 0: 
-integer_cst : 
-field_decl _M_offset: 
-integer_cst 32: 
-integer_type : 
-type_decl unsigned int: 
-integer_cst 32: 
-integer_cst 0: 
-integer_cst 4294967295: 
-type_decl _Bit_iterator_base: 
-type_decl _Bit_iterator: 
-type_decl reference: 
-type_decl pointer: 
-type_decl iterator: 
 integer_cst 128: 
 indirect_ref : 
 parm_decl __x: 
@@ -10189,14 +5131,6 @@ type_decl void: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 if_stmt : ptr1, ptr2, 
 eq_expr : ptr1, ptr2, 
@@ -10230,10 +5164,6 @@ void_type :
 integer_cst 64: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
 type_decl Data1: 
 field_decl val: 
 integer_cst 32: 
@@ -10289,10 +5219,6 @@ integer_cst 64:
 pointer_type : 
 record_type : 
 type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-type_decl Data1: 
 function_decl func2: 
 bind_expr : ptr1, 
 statement_list : ptr1, 
@@ -10317,14 +5243,6 @@ integer_cst 64: ptr1, ptr2,
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 if_stmt : ptr1, ptr2, 
 eq_expr : ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
@@ -10336,10 +5254,6 @@ void_type : ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 return_expr : ptr1, ptr2, 
@@ -10400,10 +5314,6 @@ integer_cst 64:
 pointer_type : 
 record_type : 
 type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-type_decl Data1: 
 var_decl outFilename: 
 integer_cst 32: 
 component_ref : 
@@ -10453,10 +5363,6 @@ integer_cst 64:
 pointer_type : 
 record_type : 
 type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-type_decl Data1: 
 decl_expr : ptr1, 
 var_decl val: 
 integer_cst 32: 
@@ -10489,14 +5395,6 @@ integer_cst 64:
 pointer_type : 
 record_type : 
 type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-type_decl Data1: 
 block : ptr1, 
 var_decl ptr2: 
 integer_cst 64: 
@@ -10506,10 +5404,6 @@ void_type :
 integer_cst 64: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
 type_decl Data1: 
 var_decl val: 
 integer_cst 32: 
@@ -10540,10 +5434,6 @@ integer_cst 0: ptr1, ptr2,
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 bind_expr : ptr1, ptr2, 
 if_stmt : ptr1, ptr2, 
 truth_andif_expr : ptr1, ptr2, 
@@ -10552,14 +5442,6 @@ integer_cst 0: ptr1, ptr2,
 parm_decl ptr1: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
@@ -10570,10 +5452,6 @@ integer_cst 64: ptr2,
 integer_cst 0: ptr2, 
 pointer_type : ptr2, 
 record_type : ptr2, 
-type_decl Data1: ptr2, 
-field_decl val: ptr2, 
-integer_cst 32: ptr2, 
-integer_type : ptr2, 
 type_decl Data1: ptr2, 
 integer_cst 0: ptr2, 
 bind_expr : 
@@ -10658,24 +5536,12 @@ integer_cst 0: ptr1, ptr2,
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 block : ptr1, ptr2, 
 var_decl ptr2: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 block : ptr1, ptr2, 
 block : ptr1, ptr2, 
@@ -10709,10 +5575,6 @@ integer_cst 0: ptr1, ptr2,
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 decl_expr : ptr1, ptr2, 
 var_decl z: ptr1, ptr2, 
 integer_cst 32: ptr1, ptr2, 
@@ -10733,24 +5595,12 @@ integer_cst 0: ptr1, ptr2,
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 ne_expr : ptr1, 
 integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
-type_decl Data1: ptr1, 
-field_decl val: ptr1, 
-integer_cst 32: ptr1, 
-integer_type : ptr1, 
-type_decl int: ptr1, 
-integer_cst 32: ptr1, 
-integer_cst -2147483648: ptr1, 
-integer_cst 2147483647: ptr1, 
 type_decl Data1: ptr1, 
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
@@ -10777,10 +5627,6 @@ record_type :
 pointer_type : 
 record_type : 
 type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-type_decl Data1: 
 bind_expr : 
 if_stmt : 
 ne_expr : 
@@ -10799,10 +5645,6 @@ record_type :
 pointer_type : 
 record_type : 
 type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-type_decl Data1: 
 integer_cst 0: 
 bind_expr : 
 bind_expr : 
@@ -10814,14 +5656,6 @@ indirect_ref :
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 type_decl Data1: 
 integer_cst 64: 
 field_decl val: 
@@ -10948,20 +5782,8 @@ integer_cst 0:
 pointer_type : 
 record_type : 
 type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-type_decl Data1: 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
 type_decl Data1: 
 block : 
 var_decl ptr3: 
@@ -10973,10 +5795,6 @@ pointer_type :
 record_type : 
 pointer_type : 
 record_type : 
-type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
 type_decl Data1: 
 block : 
 block : 
@@ -11009,10 +5827,6 @@ record_type : ptr1, ptr2,
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 block : ptr1, ptr2, 
 block : ptr1, ptr2, 
 block : ptr1, ptr2, 
@@ -11038,24 +5852,12 @@ integer_cst 0: ptr1, ptr2,
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 block : ptr1, ptr2, 
 var_decl ptr2: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 var_decl z: ptr1, ptr2, 
 integer_cst 32: ptr1, ptr2, 
@@ -11075,10 +5877,6 @@ pointer_type : ptr1, ptr2,
 record_type : ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 block : ptr1, ptr2, 
 block : ptr1, ptr2, 
@@ -11112,10 +5910,6 @@ integer_cst 0: ptr1, ptr2,
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 if_stmt : ptr1, ptr2, 
 truth_andif_expr : ptr1, ptr2, 
 truth_andif_expr : ptr1, ptr2, 
@@ -11127,24 +5921,12 @@ integer_cst 0: ptr1, ptr2,
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 ne_expr : ptr1, 
 integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
-type_decl Data1: ptr1, 
-field_decl val: ptr1, 
-integer_cst 32: ptr1, 
-integer_type : ptr1, 
-type_decl int: ptr1, 
-integer_cst 32: ptr1, 
-integer_cst -2147483648: ptr1, 
-integer_cst 2147483647: ptr1, 
 type_decl Data1: ptr1, 
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
@@ -11175,14 +5957,6 @@ parm_decl ptr1:
 pointer_type : 
 record_type : 
 type_decl Data1: 
-field_decl val: 
-integer_cst 32: 
-integer_type : 
-type_decl int: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-type_decl Data1: 
 integer_cst 64: 
 field_decl val: 
 integer_cst 32: 
@@ -11197,24 +5971,12 @@ integer_cst 0: ptr1, ptr2,
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
-type_decl int: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_cst -2147483648: ptr1, ptr2, 
-integer_cst 2147483647: ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
 block : ptr1, ptr2, 
 var_decl ptr2: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
-type_decl Data1: ptr1, ptr2, 
-field_decl val: ptr1, ptr2, 
-integer_cst 32: ptr1, ptr2, 
-integer_type : ptr1, ptr2, 
 type_decl Data1: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 function_decl fill: 
