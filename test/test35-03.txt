@@ -310,6 +310,7 @@ type_decl Data1: ptr1, this->tmp2,
 bind_expr : ptr1, this->tmp2, 
 if_stmt : ptr1, this->tmp2, 
 ne_expr : ptr1, this->tmp2, 
+integer_cst 0: ptr1, this->tmp2, 
 component_ref : ptr1, this->tmp2, 
 indirect_ref : ptr1, this->tmp2, 
 parm_decl this: ptr1, this->tmp2, 
@@ -353,6 +354,7 @@ bind_expr :
 bind_expr : 
 if_stmt : 
 eq_expr : 
+integer_cst 10: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -736,6 +738,7 @@ while_stmt : ptr1,
 truth_andif_expr : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 var_decl ptr1: ptr1, 
 integer_cst 64: ptr1, 
 pointer_type : ptr1, 
@@ -753,6 +756,7 @@ array_type : ptr1,
 type_decl Data1: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 3: 
 component_ref : 
 indirect_ref : 
 var_decl ptr1: 
@@ -779,6 +783,7 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 3: 
 ne_expr : 
+integer_cst 0: 
 component_ref : 
 indirect_ref : 
 var_decl ptr1: 
@@ -984,6 +989,7 @@ function_decl paranuckerInternalTest: ptr1,
 truth_andif_expr : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 var_decl ptr1: ptr1, 
 integer_cst 64: ptr1, 
 pointer_type : ptr1, 
@@ -1001,6 +1007,7 @@ array_type : ptr1,
 type_decl Data1: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 3: 
 component_ref : 
 indirect_ref : 
 var_decl ptr1: 
@@ -1027,6 +1034,7 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 3: 
 ne_expr : 
+integer_cst 0: 
 component_ref : 
 indirect_ref : 
 var_decl ptr1: 
@@ -1242,6 +1250,7 @@ while_stmt : ptr1,
 truth_andif_expr : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 var_decl ptr1: ptr1, 
 integer_cst 64: ptr1, 
 pointer_type : ptr1, 
@@ -1259,6 +1268,7 @@ array_type : ptr1,
 type_decl Data1: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 3: 
 component_ref : 
 indirect_ref : 
 var_decl ptr1: 
@@ -1285,6 +1295,7 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 3: 
 ne_expr : 
+integer_cst 0: 
 component_ref : 
 indirect_ref : 
 var_decl ptr1: 
@@ -1580,6 +1591,7 @@ function_decl paranuckerInternalTest: ptr1,
 truth_andif_expr : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 var_decl ptr1: ptr1, 
 integer_cst 64: ptr1, 
 pointer_type : ptr1, 
@@ -1597,6 +1609,7 @@ array_type : ptr1,
 type_decl Data1: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 3: 
 component_ref : 
 indirect_ref : 
 var_decl ptr1: 
@@ -1623,6 +1636,7 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 3: 
 ne_expr : 
+integer_cst 0: 
 component_ref : 
 indirect_ref : 
 var_decl ptr1: 

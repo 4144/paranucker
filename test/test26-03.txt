@@ -354,6 +354,15 @@ type_decl bool:
 integer_cst 8: 
 eq_expr : 
 indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
+integer_cst 64: 
+indirect_ref : 
 parm_decl __c1: 
 reference_type : 
 integer_type : 
@@ -657,6 +666,15 @@ type_decl bool:
 integer_cst 8: 
 eq_expr : 
 indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+indirect_ref : 
 parm_decl __c1: 
 reference_type : 
 integer_type : 
@@ -700,6 +718,9 @@ integer_cst 2147483647:
 integer_cst 32: 
 cond_expr : 
 ne_expr : 
+call_expr : 
+addr_expr : 
+function_decl eof: 
 indirect_ref : 
 parm_decl __c: 
 reference_type : 
@@ -755,6 +776,15 @@ boolean_type :
 type_decl bool: 
 integer_cst 8: 
 eq_expr : 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
 indirect_ref : 
 parm_decl __c1: 
 reference_type : 
@@ -1058,6 +1088,15 @@ type_decl bool:
 integer_cst 8: 
 eq_expr : 
 indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 64: 
+indirect_ref : 
 parm_decl __c1: 
 reference_type : 
 integer_type : 
@@ -1167,6 +1206,15 @@ boolean_type :
 type_decl bool: 
 integer_cst 8: 
 eq_expr : 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 16: 
+integer_cst 0: 
+integer_cst 65535: 
+integer_cst 64: 
 indirect_ref : 
 parm_decl __c1: 
 reference_type : 
@@ -1925,6 +1973,15 @@ type_decl bool:
 integer_cst 8: 
 eq_expr : 
 indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 16: 
+integer_cst 0: 
+integer_cst 65535: 
+integer_cst 64: 
+indirect_ref : 
 parm_decl __c1: 
 reference_type : 
 integer_type : 
@@ -2034,6 +2091,15 @@ boolean_type :
 type_decl bool: 
 integer_cst 8: 
 eq_expr : 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 64: 
 indirect_ref : 
 parm_decl __c1: 
 reference_type : 
@@ -2791,6 +2857,15 @@ boolean_type :
 type_decl bool: 
 integer_cst 8: 
 eq_expr : 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 64: 
 indirect_ref : 
 parm_decl __c1: 
 reference_type : 
@@ -3523,6 +3598,7 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+integer_cst 0: 
 component_ref : this->_M_exception_object, 
 indirect_ref : this->_M_exception_object, 
 parm_decl this: this->_M_exception_object, 
@@ -3549,6 +3625,7 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+integer_cst 0: 
 component_ref : this->_M_exception_object, 
 indirect_ref : this->_M_exception_object, 
 parm_decl this: this->_M_exception_object, 
@@ -3578,6 +3655,24 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl __o: 
+reference_type : 
+record_type : 
+type_decl exception_ptr: 
+field_decl _M_exception_object: 
+integer_cst 64: 
+pointer_type : 
+void_type : 
+type_decl void: 
+type_decl exception_ptr: 
+integer_cst 64: 
+field_decl _M_exception_object: 
+integer_cst 64: 
+pointer_type : 
+void_type : 
+type_decl void: 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -3645,6 +3740,24 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl __o: 
+reference_type : 
+record_type : 
+type_decl exception_ptr: 
+field_decl _M_exception_object: 
+integer_cst 64: 
+pointer_type : 
+void_type : 
+type_decl void: 
+type_decl exception_ptr: 
+integer_cst 64: 
+field_decl _M_exception_object: 
+integer_cst 64: 
+pointer_type : 
+void_type : 
+type_decl void: 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -3807,6 +3920,7 @@ boolean_type :
 type_decl bool: 
 integer_cst 8: 
 ne_expr : 
+integer_cst 0: 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -6495,6 +6609,7 @@ cleanup_stmt :
 statement_list : 
 if_stmt : 
 ne_expr : 
+integer_cst 0: 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -6689,6 +6804,7 @@ try_finally :
 statement_list : 
 cond_expr : 
 ne_expr : 
+integer_cst 0: 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -7026,6 +7142,8 @@ bind_expr :
 statement_list : 
 cleanup_point_expr : 
 decl_expr : 
+addr_expr : 
+function_decl __gthrw___pthread_key_create: 
 var_decl __gthread_active_ptr: 
 integer_cst 64: 
 addr_expr : 
@@ -7043,6 +7161,7 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 32: 
 ne_expr : 
+integer_cst 0: 
 var_decl __gthread_active_ptr: 
 integer_cst 64: 
 addr_expr : 
@@ -7066,6 +7185,8 @@ function_decl __gthrw___pthread_key_create:
 pointer_type : 
 void_type : 
 type_decl void: 
+addr_expr : 
+function_decl __gthrw___pthread_key_create: 
 function_decl __gthread_create: 
 cleanup_point_expr : __args, __func, __threadid, 
 return_expr : __args, __func, __threadid, 
@@ -7214,6 +7335,7 @@ function_decl __gthread_once:
 if_stmt : __func, __once, 
 cleanup_point_expr : __func, __once, 
 ne_expr : __func, __once, 
+integer_cst 0: __func, __once, 
 call_expr : __func, __once, 
 addr_expr : __func, __once, 
 function_decl __gthread_active_p: __func, __once, 
@@ -7221,6 +7343,8 @@ bind_expr : __func, __once,
 statement_list : __func, __once, 
 cleanup_point_expr : __func, __once, 
 decl_expr : __func, __once, 
+addr_expr : __func, __once, 
+function_decl __gthrw___pthread_key_create: __func, __once, 
 var_decl __gthread_active_ptr: __func, __once, 
 integer_cst 64: __func, __once, 
 addr_expr : __func, __once, 
@@ -7238,6 +7362,7 @@ integer_cst -2147483648: __func, __once,
 integer_cst 2147483647: __func, __once, 
 integer_cst 32: __func, __once, 
 ne_expr : __func, __once, 
+integer_cst 0: __func, __once, 
 var_decl __gthread_active_ptr: __func, __once, 
 integer_cst 64: __func, __once, 
 addr_expr : __func, __once, 
@@ -7261,6 +7386,8 @@ function_decl __gthrw___pthread_key_create: __func, __once,
 pointer_type : __func, __once, 
 void_type : __func, __once, 
 type_decl void: __func, __once, 
+addr_expr : __func, __once, 
+function_decl __gthrw___pthread_key_create: __func, __once, 
 integer_cst 0: __func, __once, 
 cleanup_point_expr : __func, __once, 
 return_expr : __func, __once, 
@@ -7405,6 +7532,7 @@ function_decl __gthread_mutex_init_function:
 if_stmt : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -7412,6 +7540,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -7429,6 +7559,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -7452,6 +7583,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 expr_stmt : __mutex, 
@@ -7512,6 +7645,7 @@ function_decl __gthread_mutex_destroy:
 if_stmt : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -7519,6 +7653,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -7536,6 +7672,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -7559,6 +7696,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -7635,6 +7774,7 @@ function_decl __gthread_mutex_lock:
 if_stmt : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -7642,6 +7782,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -7659,6 +7801,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -7682,6 +7825,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -7758,6 +7903,7 @@ function_decl __gthread_mutex_trylock:
 if_stmt : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -7765,6 +7911,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -7782,6 +7930,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -7805,6 +7954,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -7881,6 +8032,7 @@ function_decl __gthread_mutex_timedlock:
 if_stmt : __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 ne_expr : __abs_timeout, __mutex, 
+integer_cst 0: __abs_timeout, __mutex, 
 call_expr : __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
 function_decl __gthread_active_p: __abs_timeout, __mutex, 
@@ -7888,6 +8040,8 @@ bind_expr : __abs_timeout, __mutex,
 statement_list : __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 decl_expr : __abs_timeout, __mutex, 
+addr_expr : __abs_timeout, __mutex, 
+function_decl __gthrw___pthread_key_create: __abs_timeout, __mutex, 
 var_decl __gthread_active_ptr: __abs_timeout, __mutex, 
 integer_cst 64: __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
@@ -7905,6 +8059,7 @@ integer_cst -2147483648: __abs_timeout, __mutex,
 integer_cst 2147483647: __abs_timeout, __mutex, 
 integer_cst 32: __abs_timeout, __mutex, 
 ne_expr : __abs_timeout, __mutex, 
+integer_cst 0: __abs_timeout, __mutex, 
 var_decl __gthread_active_ptr: __abs_timeout, __mutex, 
 integer_cst 64: __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
@@ -7928,6 +8083,8 @@ function_decl __gthrw___pthread_key_create: __abs_timeout, __mutex,
 pointer_type : __abs_timeout, __mutex, 
 void_type : __abs_timeout, __mutex, 
 type_decl void: __abs_timeout, __mutex, 
+addr_expr : __abs_timeout, __mutex, 
+function_decl __gthrw___pthread_key_create: __abs_timeout, __mutex, 
 integer_cst 0: __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 return_expr : __abs_timeout, __mutex, 
@@ -8024,6 +8181,7 @@ function_decl __gthread_mutex_unlock:
 if_stmt : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -8031,6 +8189,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -8048,6 +8208,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -8071,6 +8232,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -8160,6 +8323,7 @@ function_decl __gthread_mutex_lock: __mutex,
 cond_expr : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -8167,6 +8331,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -8184,6 +8350,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -8207,6 +8374,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -8344,6 +8513,7 @@ function_decl __gthread_mutex_trylock: __mutex,
 cond_expr : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -8351,6 +8521,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -8368,6 +8540,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -8391,6 +8564,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -8528,6 +8703,7 @@ function_decl __gthread_mutex_timedlock: __abs_timeout, __mutex,
 cond_expr : __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 ne_expr : __abs_timeout, __mutex, 
+integer_cst 0: __abs_timeout, __mutex, 
 call_expr : __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
 function_decl __gthread_active_p: __abs_timeout, __mutex, 
@@ -8535,6 +8711,8 @@ bind_expr : __abs_timeout, __mutex,
 statement_list : __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 decl_expr : __abs_timeout, __mutex, 
+addr_expr : __abs_timeout, __mutex, 
+function_decl __gthrw___pthread_key_create: __abs_timeout, __mutex, 
 var_decl __gthread_active_ptr: __abs_timeout, __mutex, 
 integer_cst 64: __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
@@ -8552,6 +8730,7 @@ integer_cst -2147483648: __abs_timeout, __mutex,
 integer_cst 2147483647: __abs_timeout, __mutex, 
 integer_cst 32: __abs_timeout, __mutex, 
 ne_expr : __abs_timeout, __mutex, 
+integer_cst 0: __abs_timeout, __mutex, 
 var_decl __gthread_active_ptr: __abs_timeout, __mutex, 
 integer_cst 64: __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
@@ -8575,6 +8754,8 @@ function_decl __gthrw___pthread_key_create: __abs_timeout, __mutex,
 pointer_type : __abs_timeout, __mutex, 
 void_type : __abs_timeout, __mutex, 
 type_decl void: __abs_timeout, __mutex, 
+addr_expr : __abs_timeout, __mutex, 
+function_decl __gthrw___pthread_key_create: __abs_timeout, __mutex, 
 integer_cst 0: __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 return_expr : __abs_timeout, __mutex, 
@@ -8752,6 +8933,7 @@ function_decl __gthread_mutex_unlock: __mutex,
 cond_expr : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -8759,6 +8941,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -8776,6 +8960,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -8799,6 +8984,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -8936,6 +9123,7 @@ function_decl __gthread_mutex_destroy: __mutex,
 cond_expr : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -8943,6 +9131,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -8960,6 +9150,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -8983,6 +9174,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -9932,6 +10125,7 @@ function_decl __exchange_and_add_dispatch:
 if_stmt : __mem, 
 cleanup_point_expr : __mem, 
 ne_expr : __mem, 
+integer_cst 0: __mem, 
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __gthread_active_p: __mem, 
@@ -9939,6 +10133,8 @@ bind_expr : __mem,
 statement_list : __mem, 
 cleanup_point_expr : __mem, 
 decl_expr : __mem, 
+addr_expr : __mem, 
+function_decl __gthrw___pthread_key_create: __mem, 
 var_decl __gthread_active_ptr: __mem, 
 integer_cst 64: __mem, 
 addr_expr : __mem, 
@@ -9956,6 +10152,7 @@ integer_cst -2147483648: __mem,
 integer_cst 2147483647: __mem, 
 integer_cst 32: __mem, 
 ne_expr : __mem, 
+integer_cst 0: __mem, 
 var_decl __gthread_active_ptr: __mem, 
 integer_cst 64: __mem, 
 addr_expr : __mem, 
@@ -9979,6 +10176,8 @@ function_decl __gthrw___pthread_key_create: __mem,
 pointer_type : __mem, 
 void_type : __mem, 
 type_decl void: __mem, 
+addr_expr : __mem, 
+function_decl __gthrw___pthread_key_create: __mem, 
 integer_cst 0: __mem, 
 cleanup_point_expr : __mem, 
 return_expr : __mem, 
@@ -10164,6 +10363,7 @@ function_decl __atomic_add_dispatch:
 if_stmt : __mem, 
 cleanup_point_expr : __mem, 
 ne_expr : __mem, 
+integer_cst 0: __mem, 
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __gthread_active_p: __mem, 
@@ -10171,6 +10371,8 @@ bind_expr : __mem,
 statement_list : __mem, 
 cleanup_point_expr : __mem, 
 decl_expr : __mem, 
+addr_expr : __mem, 
+function_decl __gthrw___pthread_key_create: __mem, 
 var_decl __gthread_active_ptr: __mem, 
 integer_cst 64: __mem, 
 addr_expr : __mem, 
@@ -10188,6 +10390,7 @@ integer_cst -2147483648: __mem,
 integer_cst 2147483647: __mem, 
 integer_cst 32: __mem, 
 ne_expr : __mem, 
+integer_cst 0: __mem, 
 var_decl __gthread_active_ptr: __mem, 
 integer_cst 64: __mem, 
 addr_expr : __mem, 
@@ -10211,6 +10414,8 @@ function_decl __gthrw___pthread_key_create: __mem,
 pointer_type : __mem, 
 void_type : __mem, 
 type_decl void: __mem, 
+addr_expr : __mem, 
+function_decl __gthrw___pthread_key_create: __mem, 
 integer_cst 0: __mem, 
 cleanup_point_expr : __mem, 
 expr_stmt : __mem, 
@@ -15653,6 +15858,7 @@ integer_cst :
 integer_cst 64: 
 cond_expr : 
 ne_expr : 
+real_cst : 
 parm_decl __val: 
 real_type : 
 type_decl float: 
@@ -15681,6 +15887,7 @@ integer_cst :
 integer_cst 64: 
 cond_expr : 
 ne_expr : 
+real_cst : 
 parm_decl __val: 
 real_type : 
 type_decl double: 
@@ -16314,6 +16521,7 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+integer_cst 0: 
 component_ref : this->_M_p, 
 indirect_ref : this->_M_p, 
 parm_decl this: this->_M_p, 
@@ -16382,6 +16590,7 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+integer_cst 0: 
 component_ref : this->_M_p, 
 indirect_ref : this->_M_p, 
 parm_decl this: this->_M_p, 
@@ -16453,6 +16662,7 @@ boolean_type :
 type_decl bool: 
 integer_cst 8: 
 ne_expr : 
+integer_cst 0: 
 bit_and_expr : 
 indirect_ref : 
 component_ref : 
@@ -16817,6 +17027,31 @@ boolean_type :
 type_decl bool: 
 integer_cst 8: 
 eq_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator 6: 
+convert_expr : 
+parm_decl __x: 
+reference_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+field_decl _M_mask: 
+integer_cst 64: 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+type_decl _Bit_reference: 
+integer_cst 64: 
 call_expr : 
 addr_expr : 
 function_decl operator 6: 
@@ -17565,6 +17800,7 @@ function_decl _M_bump_up:
 if_stmt : 
 cleanup_point_expr : 
 eq_expr : 
+integer_cst 63: 
 postincrement_expr : 
 component_ref : 
 indirect_ref : 
@@ -17662,6 +17898,7 @@ function_decl _M_bump_down:
 if_stmt : 
 cleanup_point_expr : 
 eq_expr : 
+integer_cst 0: 
 postdecrement_expr : 
 component_ref : 
 indirect_ref : 
@@ -17864,6 +18101,7 @@ integer_cst -0:
 integer_cst 4294967295: 
 integer_cst 64: 
 integer_cst 8: 
+pointer_plus_expr : 
 cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
@@ -18127,6 +18365,37 @@ truth_andif_expr :
 eq_expr : 
 component_ref : 
 indirect_ref : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+component_ref : 
+indirect_ref : 
 parm_decl this: 
 pointer_type : 
 record_type : 
@@ -18184,6 +18453,36 @@ integer_cst 64:
 integer_cst 0: 
 integer_cst : 
 eq_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -18309,6 +18608,37 @@ integer_cst 0:
 integer_cst : 
 truth_andif_expr : 
 eq_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -24239,6 +24569,64 @@ if_stmt :
 ne_expr : 
 component_ref : 
 component_ref : 
+parm_decl __last: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+type_decl _Bit_iterator_base: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+field_decl : 
+integer_cst 96: 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+component_ref : 
+component_ref : 
 parm_decl __first: 
 record_type : 
 type_decl _Bit_iterator: 
@@ -26187,6 +26575,7 @@ label_expr :
 label_decl : 
 if_stmt : 
 ne_expr : 
+integer_cst 0: 
 bit_and_expr : 
 parm_decl __in_chrg: 
 integer_type : 
@@ -26321,6 +26710,7 @@ label_expr :
 label_decl : 
 cond_expr : 
 ne_expr : 
+integer_cst 0: 
 bit_and_expr : 
 integer_cst 0: 
 integer_cst 1: 
@@ -26377,6 +26767,7 @@ integer_cst 64:
 function_decl func1: 
 if_stmt : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -26429,6 +26820,7 @@ integer_cst 0: ptr1,
 if_stmt : 
 truth_andif_expr : 
 ne_expr : 
+integer_cst 0: 
 test26.cpp: In member function 'void Object1::func1(Data1*)':
 test26.cpp:48:22: warning: Useless variable check 'ptr1'. It already was checked before
              if (ptr1 && k == 1)
@@ -26483,6 +26875,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : 
+integer_cst 1: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -26495,6 +26888,7 @@ return_expr :
 function_decl func2: 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -26547,6 +26941,7 @@ integer_cst 0: ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 test26.cpp: In member function 'void Object1::func2(Data1*)':
 test26.cpp:57:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1 && k == 1)
@@ -26601,6 +26996,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 1: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -27134,6 +27530,7 @@ function_decl func3:
 statement_list : ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -27188,6 +27585,7 @@ cleanup_point_expr : ptr1,
 expr_stmt : 
 cond_expr : 
 ne_expr : 
+integer_cst 0: 
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -27346,6 +27744,7 @@ function_decl func4:
 statement_list : ptr1, 
 if_stmt : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -27400,6 +27799,7 @@ cleanup_point_expr : ptr1,
 expr_stmt : ptr1, 
 cond_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -27558,6 +27958,7 @@ function_decl func5:
 statement_list : ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -27574,6 +27975,7 @@ cleanup_point_expr : ptr1,
 expr_stmt : 
 cond_expr : 
 ne_expr : 
+integer_cst 0: 
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -27639,6 +28041,7 @@ function_decl func6:
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -27689,6 +28092,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 3: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -27701,6 +28105,7 @@ statement_list : ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -27751,6 +28156,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 1: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -27774,6 +28180,7 @@ integer_cst 10: ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -27824,6 +28231,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 2: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -27847,6 +28255,7 @@ integer_cst 20:
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -27897,6 +28306,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 1: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -27920,6 +28330,7 @@ integer_cst 30: ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -27970,6 +28381,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 2: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -27994,6 +28406,7 @@ statement_list :
 if_stmt : 
 truth_andif_expr : 
 eq_expr : 
+integer_cst 0: 
 test26.cpp: In member function 'void Object1::func6(Data1*)':
 test26.cpp:103:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1 && k == 4)
@@ -28048,6 +28461,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : ptr1, 
+integer_cst 4: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -28071,6 +28485,7 @@ integer_cst 50:
 if_stmt : 
 truth_andif_expr : 
 ne_expr : 
+integer_cst 0: 
 test26.cpp:105:22: warning: Useless variable check 'ptr1'. It already was checked before
              if (ptr1 && k == 5)
                       ^
@@ -28124,6 +28539,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : 
+integer_cst 5: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -28147,6 +28563,7 @@ integer_cst 60:
 if_stmt : 
 truth_orif_expr : 
 eq_expr : 
+integer_cst 0: 
 test26.cpp:107:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1 || k == 4)
                   ^
@@ -28200,6 +28617,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : 
+integer_cst 4: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -28223,6 +28641,7 @@ integer_cst 70:
 if_stmt : 
 truth_orif_expr : 
 ne_expr : 
+integer_cst 0: 
 test26.cpp:109:22: warning: Useless variable check 'ptr1'. It already was checked before
              if (ptr1 || k == 5)
                       ^
@@ -28276,6 +28695,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : ptr1, 
+integer_cst 5: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -28300,6 +28720,7 @@ function_decl func7:
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -28350,6 +28771,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 3: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -28362,6 +28784,7 @@ statement_list : ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -28412,6 +28835,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 1: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -28435,6 +28859,7 @@ integer_cst 10:
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -28485,6 +28910,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 2: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -28508,6 +28934,7 @@ integer_cst 20: ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -28558,6 +28985,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 1: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -28581,6 +29009,7 @@ integer_cst 30: ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -28631,6 +29060,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 2: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -28655,6 +29085,7 @@ statement_list : ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -28705,6 +29136,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 4: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -28728,6 +29160,7 @@ integer_cst 50:
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 test26.cpp: In member function 'void Object1::func7(Data1*)':
 test26.cpp:131:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1 && k == 5)
@@ -28782,6 +29215,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 5: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -28805,6 +29239,7 @@ integer_cst 60: ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -28855,6 +29290,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 4: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -28878,6 +29314,7 @@ integer_cst 70: ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 test26.cpp:135:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1 || k == 5)
                   ^
@@ -28931,6 +29368,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 5: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -28955,6 +29393,7 @@ function_decl func8:
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -29005,6 +29444,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 3: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -29017,6 +29457,7 @@ statement_list : ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 test26.cpp: In member function 'void Object1::func8(Data1*)':
 test26.cpp:144:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1 || k == 1)
@@ -29071,6 +29512,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 1: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -29094,6 +29536,7 @@ integer_cst 10: ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -29144,6 +29587,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 2: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -29167,6 +29611,7 @@ integer_cst 20: ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 test26.cpp:148:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1 && k == 3)
                   ^
@@ -29220,6 +29665,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 3: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -29243,6 +29689,7 @@ integer_cst 30: ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -29293,6 +29740,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 4: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -29317,6 +29765,7 @@ statement_list : ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -29367,6 +29816,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 5: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -29390,6 +29840,7 @@ integer_cst 50: ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -29440,6 +29891,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 6: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -29463,6 +29915,7 @@ integer_cst 60: ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -29513,6 +29966,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 7: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -29536,6 +29990,7 @@ integer_cst 70: ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -29586,6 +30041,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 8: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -29610,6 +30066,7 @@ function_decl func9:
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -29660,6 +30117,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 3: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -29672,6 +30130,7 @@ statement_list :
 if_stmt : 
 truth_orif_expr : 
 ne_expr : 
+integer_cst 0: 
 test26.cpp: In member function 'void Object1::func9(Data1*)':
 test26.cpp:170:22: warning: Useless variable check 'ptr1'. It already was checked before
              if (ptr1 || k == 1)
@@ -29726,6 +30185,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : ptr1, 
+integer_cst 1: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -29749,6 +30209,7 @@ integer_cst 10:
 if_stmt : 
 truth_orif_expr : 
 eq_expr : 
+integer_cst 0: 
 test26.cpp:172:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1 || k == 2)
                   ^
@@ -29802,6 +30263,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : 
+integer_cst 2: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -29825,6 +30287,7 @@ integer_cst 20:
 if_stmt : 
 truth_andif_expr : 
 ne_expr : 
+integer_cst 0: 
 test26.cpp:174:22: warning: Useless variable check 'ptr1'. It already was checked before
              if (ptr1 && k == 3)
                       ^
@@ -29878,6 +30341,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : 
+integer_cst 3: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -29901,6 +30365,7 @@ integer_cst 30:
 if_stmt : 
 truth_andif_expr : 
 eq_expr : 
+integer_cst 0: 
 test26.cpp:176:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1 && k == 4)
                   ^
@@ -29954,6 +30419,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : ptr1, 
+integer_cst 4: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -29978,6 +30444,7 @@ statement_list : ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -30028,6 +30495,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 5: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -30051,6 +30519,7 @@ integer_cst 50: ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -30101,6 +30570,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 6: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -30124,6 +30594,7 @@ integer_cst 60: ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -30174,6 +30645,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 7: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -30197,6 +30669,7 @@ integer_cst 70:
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -30247,6 +30720,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 8: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -30270,6 +30744,7 @@ integer_cst 80: ptr1,
 function_decl func10: 
 if_stmt : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -30321,6 +30796,7 @@ integer_cst 64: ptr1,
 integer_cst 0: ptr1, 
 if_stmt : 
 ne_expr : 
+integer_cst 0: 
 test26.cpp: In member function 'void Object1::func10(Data1*)':
 test26.cpp:196:13: warning: Useless variable check 'ptr1'. It already was checked before
              if (ptr1)
@@ -30440,6 +30916,7 @@ function_decl func11:
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -30490,6 +30967,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 10: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -30500,6 +30978,7 @@ integer_cst 2147483647:
 integer_cst 10: 
 if_stmt : 
 ne_expr : 
+integer_cst 0: 
 test26.cpp: In member function 'void Object1::func11(Data1*)':
 test26.cpp:205:13: warning: Useless variable check 'ptr1'. It already was checked before
              if (ptr1)
@@ -30619,6 +31098,7 @@ function_decl func12:
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -30669,6 +31149,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 10: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -30679,6 +31160,7 @@ integer_cst 2147483647: ptr1,
 integer_cst 10: ptr1, 
 if_stmt : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -30794,6 +31276,7 @@ function_decl func13:
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -30844,6 +31327,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 10: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -30855,6 +31339,7 @@ integer_cst 10:
 return_expr : 
 if_stmt : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -30970,6 +31455,7 @@ function_decl func14:
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -31020,6 +31506,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 10: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -31031,6 +31518,7 @@ integer_cst 10: ptr1,
 return_expr : ptr1, 
 if_stmt : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -31233,6 +31721,14 @@ integer_cst 2147483647: __convf, __endptr, __idx, __name, __str,
 integer_cst 32: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl char: __convf, __endptr, __idx, __name, __str, 
+integer_cst 8: __convf, __endptr, __idx, __name, __str, 
+integer_cst -128: __convf, __endptr, __idx, __name, __str, 
+integer_cst 127: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -31265,6 +31761,7 @@ integer_cst 64: __convf, __endptr, __idx, __name, __str,
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 truth_orif_expr : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -31323,6 +31820,7 @@ integer_cst -0: __convf, __endptr, __idx, __name, __str,
 integer_cst 4294967295: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -31500,6 +31998,14 @@ integer_cst 2147483647: __convf, __endptr, __idx, __name, __str,
 integer_cst 32: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl char: __convf, __endptr, __idx, __name, __str, 
+integer_cst 8: __convf, __endptr, __idx, __name, __str, 
+integer_cst -128: __convf, __endptr, __idx, __name, __str, 
+integer_cst 127: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -31531,6 +32037,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -31569,6 +32076,7 @@ integer_cst -0: __convf, __endptr, __idx, __name, __str,
 integer_cst 4294967295: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -31746,6 +32254,14 @@ integer_cst 2147483647: __convf, __endptr, __idx, __name, __str,
 integer_cst 32: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl char: __convf, __endptr, __idx, __name, __str, 
+integer_cst 8: __convf, __endptr, __idx, __name, __str, 
+integer_cst -128: __convf, __endptr, __idx, __name, __str, 
+integer_cst 127: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -31777,6 +32293,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -31815,6 +32332,7 @@ integer_cst 0: __convf, __endptr, __idx, __name, __str,
 integer_cst : __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -31992,6 +32510,14 @@ integer_cst 2147483647: __convf, __endptr, __idx, __name, __str,
 integer_cst 32: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl char: __convf, __endptr, __idx, __name, __str, 
+integer_cst 8: __convf, __endptr, __idx, __name, __str, 
+integer_cst -128: __convf, __endptr, __idx, __name, __str, 
+integer_cst 127: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -32023,6 +32549,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -32061,6 +32588,7 @@ integer_cst -0: __convf, __endptr, __idx, __name, __str,
 integer_cst 4294967295: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -32238,6 +32766,14 @@ integer_cst 2147483647: __convf, __endptr, __idx, __name, __str,
 integer_cst 32: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl char: __convf, __endptr, __idx, __name, __str, 
+integer_cst 8: __convf, __endptr, __idx, __name, __str, 
+integer_cst -128: __convf, __endptr, __idx, __name, __str, 
+integer_cst 127: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -32269,6 +32805,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -32307,6 +32844,7 @@ integer_cst 0: __convf, __endptr, __idx, __name, __str,
 integer_cst : __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -32465,6 +33003,14 @@ integer_cst -128: __convf, __endptr, __idx, __name, __str,
 integer_cst 127: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl char: __convf, __endptr, __idx, __name, __str, 
+integer_cst 8: __convf, __endptr, __idx, __name, __str, 
+integer_cst -128: __convf, __endptr, __idx, __name, __str, 
+integer_cst 127: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -32496,6 +33042,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -32528,6 +33075,7 @@ real_type : __convf, __endptr, __idx, __name, __str,
 type_decl float: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -32671,6 +33219,14 @@ integer_cst -128: __convf, __endptr, __idx, __name, __str,
 integer_cst 127: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl char: __convf, __endptr, __idx, __name, __str, 
+integer_cst 8: __convf, __endptr, __idx, __name, __str, 
+integer_cst -128: __convf, __endptr, __idx, __name, __str, 
+integer_cst 127: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -32702,6 +33258,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -32734,6 +33291,7 @@ real_type : __convf, __endptr, __idx, __name, __str,
 type_decl double: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -32877,6 +33435,14 @@ integer_cst -128: __convf, __endptr, __idx, __name, __str,
 integer_cst 127: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl char: __convf, __endptr, __idx, __name, __str, 
+integer_cst 8: __convf, __endptr, __idx, __name, __str, 
+integer_cst -128: __convf, __endptr, __idx, __name, __str, 
+integer_cst 127: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -32908,6 +33474,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -32940,6 +33507,7 @@ real_type : __convf, __endptr, __idx, __name, __str,
 type_decl long double: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -33691,6 +34259,30 @@ convert_expr :
 init_expr : 
 component_ref : 
 indirect_ref : 
+parm_decl : 
+reference_type : 
+record_type : 
+type_decl _Alloc_hider: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl char: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
+type_decl _Alloc_hider: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl char: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
+component_ref : 
+indirect_ref : 
 parm_decl this: 
 pointer_type : 
 record_type : 
@@ -33786,6 +34378,30 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl : 
+reference_type : 
+record_type : 
+type_decl _Alloc_hider: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl char: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
+type_decl _Alloc_hider: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl char: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -33940,6 +34556,14 @@ integer_cst 2147483647: __convf, __endptr, __idx, __name, __str,
 integer_cst 32: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl wchar_t: __convf, __endptr, __idx, __name, __str, 
+integer_cst 32: __convf, __endptr, __idx, __name, __str, 
+integer_cst -2147483648: __convf, __endptr, __idx, __name, __str, 
+integer_cst 2147483647: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -33972,6 +34596,7 @@ integer_cst 64: __convf, __endptr, __idx, __name, __str,
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 truth_orif_expr : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -34030,6 +34655,7 @@ integer_cst -0: __convf, __endptr, __idx, __name, __str,
 integer_cst 4294967295: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -34209,6 +34835,14 @@ integer_cst 2147483647: __convf, __endptr, __idx, __name, __str,
 integer_cst 32: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl wchar_t: __convf, __endptr, __idx, __name, __str, 
+integer_cst 32: __convf, __endptr, __idx, __name, __str, 
+integer_cst -2147483648: __convf, __endptr, __idx, __name, __str, 
+integer_cst 2147483647: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -34240,6 +34874,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -34278,6 +34913,7 @@ integer_cst -0: __convf, __endptr, __idx, __name, __str,
 integer_cst 4294967295: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -34457,6 +35093,14 @@ integer_cst 2147483647: __convf, __endptr, __idx, __name, __str,
 integer_cst 32: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl wchar_t: __convf, __endptr, __idx, __name, __str, 
+integer_cst 32: __convf, __endptr, __idx, __name, __str, 
+integer_cst -2147483648: __convf, __endptr, __idx, __name, __str, 
+integer_cst 2147483647: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -34488,6 +35132,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -34526,6 +35171,7 @@ integer_cst 0: __convf, __endptr, __idx, __name, __str,
 integer_cst : __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -34705,6 +35351,14 @@ integer_cst 2147483647: __convf, __endptr, __idx, __name, __str,
 integer_cst 32: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl wchar_t: __convf, __endptr, __idx, __name, __str, 
+integer_cst 32: __convf, __endptr, __idx, __name, __str, 
+integer_cst -2147483648: __convf, __endptr, __idx, __name, __str, 
+integer_cst 2147483647: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -34736,6 +35390,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -34774,6 +35429,7 @@ integer_cst -0: __convf, __endptr, __idx, __name, __str,
 integer_cst 4294967295: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -34953,6 +35609,14 @@ integer_cst 2147483647: __convf, __endptr, __idx, __name, __str,
 integer_cst 32: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl wchar_t: __convf, __endptr, __idx, __name, __str, 
+integer_cst 32: __convf, __endptr, __idx, __name, __str, 
+integer_cst -2147483648: __convf, __endptr, __idx, __name, __str, 
+integer_cst 2147483647: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -34984,6 +35648,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -35022,6 +35687,7 @@ integer_cst 0: __convf, __endptr, __idx, __name, __str,
 integer_cst : __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -35182,6 +35848,14 @@ integer_cst -2147483648: __convf, __endptr, __idx, __name, __str,
 integer_cst 2147483647: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl wchar_t: __convf, __endptr, __idx, __name, __str, 
+integer_cst 32: __convf, __endptr, __idx, __name, __str, 
+integer_cst -2147483648: __convf, __endptr, __idx, __name, __str, 
+integer_cst 2147483647: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -35213,6 +35887,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -35245,6 +35920,7 @@ real_type : __convf, __endptr, __idx, __name, __str,
 type_decl float: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -35390,6 +36066,14 @@ integer_cst -2147483648: __convf, __endptr, __idx, __name, __str,
 integer_cst 2147483647: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl wchar_t: __convf, __endptr, __idx, __name, __str, 
+integer_cst 32: __convf, __endptr, __idx, __name, __str, 
+integer_cst -2147483648: __convf, __endptr, __idx, __name, __str, 
+integer_cst 2147483647: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -35421,6 +36105,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -35453,6 +36138,7 @@ real_type : __convf, __endptr, __idx, __name, __str,
 type_decl double: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -35598,6 +36284,14 @@ integer_cst -2147483648: __convf, __endptr, __idx, __name, __str,
 integer_cst 2147483647: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+parm_decl __str: __convf, __endptr, __idx, __name, __str, 
+pointer_type : __convf, __endptr, __idx, __name, __str, 
+integer_type : __convf, __endptr, __idx, __name, __str, 
+type_decl wchar_t: __convf, __endptr, __idx, __name, __str, 
+integer_cst 32: __convf, __endptr, __idx, __name, __str, 
+integer_cst -2147483648: __convf, __endptr, __idx, __name, __str, 
+integer_cst 2147483647: __convf, __endptr, __idx, __name, __str, 
+integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 var_decl __endptr: __convf, __endptr, __idx, __name, __str, 
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
@@ -35629,6 +36323,7 @@ integer_cst 127: __convf, __endptr, __idx, __name, __str,
 integer_cst 64: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 eq_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 34: __convf, __endptr, __idx, __name, __str, 
 indirect_ref : __convf, __endptr, __idx, __name, __str, 
 call_expr : __convf, __endptr, __idx, __name, __str, 
 addr_expr : __convf, __endptr, __idx, __name, __str, 
@@ -35661,6 +36356,7 @@ real_type : __convf, __endptr, __idx, __name, __str,
 type_decl long double: __convf, __endptr, __idx, __name, __str, 
 if_stmt : __convf, __endptr, __idx, __name, __str, 
 ne_expr : __convf, __endptr, __idx, __name, __str, 
+integer_cst 0: __convf, __endptr, __idx, __name, __str, 
 parm_decl __idx: __convf, __endptr, __idx, __name, __str, 
 pointer_type : __convf, __endptr, __idx, __name, __str, 
 integer_type : __convf, __endptr, __idx, __name, __str, 
@@ -36436,6 +37132,30 @@ convert_expr :
 init_expr : 
 component_ref : 
 indirect_ref : 
+parm_decl : 
+reference_type : 
+record_type : 
+type_decl _Alloc_hider: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl wchar_t: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+type_decl _Alloc_hider: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl wchar_t: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+component_ref : 
+indirect_ref : 
 parm_decl this: 
 pointer_type : 
 record_type : 
@@ -36531,6 +37251,30 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl : 
+reference_type : 
+record_type : 
+type_decl _Alloc_hider: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl wchar_t: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+type_decl _Alloc_hider: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl wchar_t: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -38447,6 +39191,14 @@ integer_cst : __first, __last,
 integer_cst 64: __first, __last, 
 integer_cst 8: __first, __last, 
 ne_expr : __first, __last, 
+parm_decl __last: __first, __last, 
+pointer_type : __first, __last, 
+integer_type : __first, __last, 
+type_decl long unsigned int: __first, __last, 
+integer_cst 64: __first, __last, 
+integer_cst 0: __first, __last, 
+integer_cst : __first, __last, 
+integer_cst 64: __first, __last, 
 parm_decl __first: __first, __last, 
 pointer_type : __first, __last, 
 integer_type : __first, __last, 
@@ -39100,6 +39852,14 @@ if_stmt : __beg, __end,
 cleanup_point_expr : __beg, __end, 
 truth_andif_expr : __beg, __end, 
 eq_expr : __beg, __end, 
+parm_decl __end: __beg, __end, 
+pointer_type : __beg, __end, 
+integer_type : __beg, __end, 
+type_decl char: __beg, __end, 
+integer_cst 8: __beg, __end, 
+integer_cst -128: __beg, __end, 
+integer_cst 127: __beg, __end, 
+integer_cst 64: __beg, __end, 
 parm_decl __beg: __beg, __end, 
 pointer_type : __beg, __end, 
 integer_type : __beg, __end, 
@@ -39271,6 +40031,14 @@ integer_cst -128: __beg, __end,
 integer_cst 127: __beg, __end, 
 integer_cst 64: __beg, __end, 
 ne_expr : __beg, __end, 
+parm_decl __end: __beg, __end, 
+pointer_type : __beg, __end, 
+integer_type : __beg, __end, 
+type_decl char: __beg, __end, 
+integer_cst 8: __beg, __end, 
+integer_cst -128: __beg, __end, 
+integer_cst 127: __beg, __end, 
+integer_cst 64: __beg, __end, 
 parm_decl __beg: __beg, __end, 
 pointer_type : __beg, __end, 
 integer_type : __beg, __end, 
@@ -39662,6 +40430,14 @@ if_stmt : __beg, __end,
 cleanup_point_expr : __beg, __end, 
 truth_andif_expr : __beg, __end, 
 eq_expr : __beg, __end, 
+parm_decl __end: __beg, __end, 
+pointer_type : __beg, __end, 
+integer_type : __beg, __end, 
+type_decl wchar_t: __beg, __end, 
+integer_cst 32: __beg, __end, 
+integer_cst -2147483648: __beg, __end, 
+integer_cst 2147483647: __beg, __end, 
+integer_cst 64: __beg, __end, 
 parm_decl __beg: __beg, __end, 
 pointer_type : __beg, __end, 
 integer_type : __beg, __end, 
@@ -39871,6 +40647,14 @@ integer_cst -2147483648: __beg, __end,
 integer_cst 2147483647: __beg, __end, 
 integer_cst 64: __beg, __end, 
 ne_expr : __beg, __end, 
+parm_decl __end: __beg, __end, 
+pointer_type : __beg, __end, 
+integer_type : __beg, __end, 
+type_decl wchar_t: __beg, __end, 
+integer_cst 32: __beg, __end, 
+integer_cst -2147483648: __beg, __end, 
+integer_cst 2147483647: __beg, __end, 
+integer_cst 64: __beg, __end, 
 parm_decl __beg: __beg, __end, 
 pointer_type : __beg, __end, 
 integer_type : __beg, __end, 
@@ -40308,6 +41092,7 @@ boolean_type : __ptr,
 type_decl bool: __ptr, 
 integer_cst 8: __ptr, 
 eq_expr : __ptr, 
+integer_cst 0: __ptr, 
 parm_decl __ptr: __ptr, 
 pointer_type : __ptr, 
 integer_type : __ptr, 
@@ -40389,6 +41174,7 @@ boolean_type : __ptr,
 type_decl bool: __ptr, 
 integer_cst 8: __ptr, 
 eq_expr : __ptr, 
+integer_cst 0: __ptr, 
 parm_decl __ptr: __ptr, 
 pointer_type : __ptr, 
 integer_type : __ptr, 

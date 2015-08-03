@@ -25,10 +25,14 @@ test05.cpp:39:20: warning: Using parameter 'b' without checking for null pointer
 test05.cpp:39:20: warning: Using parameter 'b' without checking for null pointer
 test05.cpp:39:20: warning: Using parameter 'b' without checking for null pointer
 test05.cpp:39:20: warning: Using parameter 'b' without checking for null pointer
+test05.cpp:39:20: warning: Using parameter 'b' without checking for null pointer
+test05.cpp:39:20: warning: Using parameter 'b' without checking for null pointer
 test05.cpp: In function 'void func8(int, int*, char)':
 test05.cpp:45:11: warning: Using parameter 'bptr' without checking for null pointer
      int **var4 = &bptr;
            ^
+test05.cpp:45:11: warning: Using parameter 'bptr' without checking for null pointer
+test05.cpp:45:11: warning: Using parameter 'bptr' without checking for null pointer
 test05.cpp:45:11: warning: Using parameter 'bptr' without checking for null pointer
 test05.cpp:45:11: warning: Using parameter 'bptr' without checking for null pointer
 test05.cpp:45:11: warning: Using parameter 'bptr' without checking for null pointer

@@ -4,10 +4,14 @@ test22.cpp:45:28: warning: Using parameter 'ptr1' without checking for null poin
                             ^
 test22.cpp:45:28: warning: Using parameter 'ptr1' without checking for null pointer
 test22.cpp:45:28: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:45:28: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:45:28: warning: Using parameter 'ptr1' without checking for null pointer
 test22.cpp: In member function 'int Object1::func3(Data1*)':
 test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
          Data1** ptr2 = &ptr1;
                  ^
+test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
 test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
 test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
 test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer

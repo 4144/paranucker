@@ -255,6 +255,7 @@ function_decl paranuckerInternalTest: ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -279,6 +280,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
+integer_cst 10: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -345,6 +347,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 component_ref : ptr1, 
 indirect_ref : ptr1, 
 parm_decl this: ptr1, 
@@ -595,6 +598,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -874,6 +878,7 @@ bind_expr :
 statement_list : 
 cleanup_point_expr : 
 decl_expr : 
+integer_cst 0: 
 var_decl ptr1: ptr1, 
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
@@ -1025,11 +1030,13 @@ field_decl arr: ptr1,
 integer_cst 96: ptr1, 
 array_type : ptr1, 
 type_decl Data1: ptr1, 
+integer_cst 0: ptr1, 
 function_decl func3: 
 bind_expr : 
 statement_list : 
 cleanup_point_expr : 
 decl_expr : 
+integer_cst 0: 
 var_decl ptr1: ptr1, 
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
@@ -1103,6 +1110,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 test38.cpp: In member function 'void Object1::func3()':
 test38.cpp:182:14: warning: Useless variable check 'ptr1'. It already was checked before
          if (!ptr1)
@@ -1182,6 +1190,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 20: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -1395,6 +1404,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 var_decl ptr1: ptr1, 
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
@@ -1710,11 +1720,13 @@ field_decl arr: ptr1,
 integer_cst 96: ptr1, 
 array_type : ptr1, 
 type_decl Data1: ptr1, 
+integer_cst 0: ptr1, 
 function_decl func4: 
 bind_expr : 
 statement_list : 
 cleanup_point_expr : 
 decl_expr : 
+integer_cst 0: 
 var_decl ptr1: ptr1, 
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
@@ -1788,6 +1800,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 test38.cpp: In member function 'void Object1::func4()':
 test38.cpp:297:14: warning: Useless variable check 'ptr1'. It already was checked before
          if (!ptr1)
@@ -1867,6 +1880,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 while_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 20: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -2024,6 +2038,7 @@ call_expr : ptr1,
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
 eq_expr : ptr1, 
+integer_cst 20: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -2089,6 +2104,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 var_decl ptr1: ptr1, 
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
@@ -2404,11 +2420,13 @@ field_decl arr: ptr1,
 integer_cst 96: ptr1, 
 array_type : ptr1, 
 type_decl Data1: ptr1, 
+integer_cst 0: ptr1, 
 function_decl func5: 
 bind_expr : 
 statement_list : 
 cleanup_point_expr : 
 decl_expr : 
+integer_cst 0: 
 var_decl ptr1: ptr1, 
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
@@ -2482,6 +2500,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 test38.cpp: In member function 'void Object1::func5()':
 test38.cpp:412:14: warning: Useless variable check 'ptr1'. It already was checked before
          if (!ptr1)
@@ -2561,6 +2580,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 20: ptr1, 
 var_decl k: ptr1, 
 integer_cst 32: ptr1, 
 integer_type : ptr1, 
@@ -2831,6 +2851,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 test38.cpp:477:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1)
                   ^
@@ -3149,6 +3170,7 @@ field_decl arr: ptr1,
 integer_cst 96: ptr1, 
 array_type : ptr1, 
 type_decl Data1: ptr1, 
+integer_cst 0: ptr1, 
 function_decl func6: 
 bind_expr : ptr1, 
 statement_list : ptr1, 

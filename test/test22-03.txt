@@ -344,6 +344,15 @@ type_decl bool:
 integer_cst 8: 
 eq_expr : 
 indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 8: 
+integer_cst -128: 
+integer_cst 127: 
+integer_cst 64: 
+indirect_ref : 
 parm_decl __c1: 
 reference_type : 
 integer_type : 
@@ -643,6 +652,15 @@ type_decl bool:
 integer_cst 8: 
 eq_expr : 
 indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
+indirect_ref : 
 parm_decl __c1: 
 reference_type : 
 integer_type : 
@@ -684,6 +702,9 @@ integer_cst 2147483647:
 integer_cst 32: 
 cond_expr : 
 ne_expr : 
+call_expr : 
+addr_expr : 
+function_decl eof: 
 indirect_ref : 
 parm_decl __c: 
 reference_type : 
@@ -737,6 +758,15 @@ boolean_type :
 type_decl bool: 
 integer_cst 8: 
 eq_expr : 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl char_type: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 64: 
 indirect_ref : 
 parm_decl __c1: 
 reference_type : 
@@ -1035,6 +1065,15 @@ boolean_type :
 type_decl bool: 
 integer_cst 8: 
 eq_expr : 
+indirect_ref : 
+parm_decl __c2: 
+reference_type : 
+integer_type : 
+type_decl int_type: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+integer_cst 64: 
 indirect_ref : 
 parm_decl __c1: 
 reference_type : 
@@ -3011,6 +3050,7 @@ cleanup_stmt :
 statement_list : 
 if_stmt : 
 ne_expr : 
+integer_cst 0: 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -3204,6 +3244,7 @@ try_finally :
 statement_list : 
 cond_expr : 
 ne_expr : 
+integer_cst 0: 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -3541,6 +3582,8 @@ bind_expr :
 statement_list : 
 cleanup_point_expr : 
 decl_expr : 
+addr_expr : 
+function_decl __gthrw___pthread_key_create: 
 var_decl __gthread_active_ptr: 
 integer_cst 64: 
 addr_expr : 
@@ -3558,6 +3601,7 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 32: 
 ne_expr : 
+integer_cst 0: 
 var_decl __gthread_active_ptr: 
 integer_cst 64: 
 addr_expr : 
@@ -3581,6 +3625,8 @@ function_decl __gthrw___pthread_key_create:
 pointer_type : 
 void_type : 
 type_decl void: 
+addr_expr : 
+function_decl __gthrw___pthread_key_create: 
 function_decl __gthread_create: 
 cleanup_point_expr : __args, __func, __threadid, 
 return_expr : __args, __func, __threadid, 
@@ -3729,6 +3775,7 @@ function_decl __gthread_once:
 if_stmt : __func, __once, 
 cleanup_point_expr : __func, __once, 
 ne_expr : __func, __once, 
+integer_cst 0: __func, __once, 
 call_expr : __func, __once, 
 addr_expr : __func, __once, 
 function_decl __gthread_active_p: __func, __once, 
@@ -3736,6 +3783,8 @@ bind_expr : __func, __once,
 statement_list : __func, __once, 
 cleanup_point_expr : __func, __once, 
 decl_expr : __func, __once, 
+addr_expr : __func, __once, 
+function_decl __gthrw___pthread_key_create: __func, __once, 
 var_decl __gthread_active_ptr: __func, __once, 
 integer_cst 64: __func, __once, 
 addr_expr : __func, __once, 
@@ -3753,6 +3802,7 @@ integer_cst -2147483648: __func, __once,
 integer_cst 2147483647: __func, __once, 
 integer_cst 32: __func, __once, 
 ne_expr : __func, __once, 
+integer_cst 0: __func, __once, 
 var_decl __gthread_active_ptr: __func, __once, 
 integer_cst 64: __func, __once, 
 addr_expr : __func, __once, 
@@ -3776,6 +3826,8 @@ function_decl __gthrw___pthread_key_create: __func, __once,
 pointer_type : __func, __once, 
 void_type : __func, __once, 
 type_decl void: __func, __once, 
+addr_expr : __func, __once, 
+function_decl __gthrw___pthread_key_create: __func, __once, 
 integer_cst 0: __func, __once, 
 cleanup_point_expr : __func, __once, 
 return_expr : __func, __once, 
@@ -3920,6 +3972,7 @@ function_decl __gthread_mutex_init_function:
 if_stmt : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -3927,6 +3980,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -3944,6 +3999,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -3967,6 +4023,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 expr_stmt : __mutex, 
@@ -4027,6 +4085,7 @@ function_decl __gthread_mutex_destroy:
 if_stmt : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -4034,6 +4093,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -4051,6 +4112,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -4074,6 +4136,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -4150,6 +4214,7 @@ function_decl __gthread_mutex_lock:
 if_stmt : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -4157,6 +4222,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -4174,6 +4241,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -4197,6 +4265,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -4273,6 +4343,7 @@ function_decl __gthread_mutex_trylock:
 if_stmt : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -4280,6 +4351,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -4297,6 +4370,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -4320,6 +4394,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -4396,6 +4472,7 @@ function_decl __gthread_mutex_timedlock:
 if_stmt : __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 ne_expr : __abs_timeout, __mutex, 
+integer_cst 0: __abs_timeout, __mutex, 
 call_expr : __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
 function_decl __gthread_active_p: __abs_timeout, __mutex, 
@@ -4403,6 +4480,8 @@ bind_expr : __abs_timeout, __mutex,
 statement_list : __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 decl_expr : __abs_timeout, __mutex, 
+addr_expr : __abs_timeout, __mutex, 
+function_decl __gthrw___pthread_key_create: __abs_timeout, __mutex, 
 var_decl __gthread_active_ptr: __abs_timeout, __mutex, 
 integer_cst 64: __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
@@ -4420,6 +4499,7 @@ integer_cst -2147483648: __abs_timeout, __mutex,
 integer_cst 2147483647: __abs_timeout, __mutex, 
 integer_cst 32: __abs_timeout, __mutex, 
 ne_expr : __abs_timeout, __mutex, 
+integer_cst 0: __abs_timeout, __mutex, 
 var_decl __gthread_active_ptr: __abs_timeout, __mutex, 
 integer_cst 64: __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
@@ -4443,6 +4523,8 @@ function_decl __gthrw___pthread_key_create: __abs_timeout, __mutex,
 pointer_type : __abs_timeout, __mutex, 
 void_type : __abs_timeout, __mutex, 
 type_decl void: __abs_timeout, __mutex, 
+addr_expr : __abs_timeout, __mutex, 
+function_decl __gthrw___pthread_key_create: __abs_timeout, __mutex, 
 integer_cst 0: __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 return_expr : __abs_timeout, __mutex, 
@@ -4539,6 +4621,7 @@ function_decl __gthread_mutex_unlock:
 if_stmt : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -4546,6 +4629,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -4563,6 +4648,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -4586,6 +4672,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -4675,6 +4763,7 @@ function_decl __gthread_mutex_lock: __mutex,
 cond_expr : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -4682,6 +4771,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -4699,6 +4790,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -4722,6 +4814,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -4859,6 +4953,7 @@ function_decl __gthread_mutex_trylock: __mutex,
 cond_expr : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -4866,6 +4961,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -4883,6 +4980,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -4906,6 +5004,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -5043,6 +5143,7 @@ function_decl __gthread_mutex_timedlock: __abs_timeout, __mutex,
 cond_expr : __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 ne_expr : __abs_timeout, __mutex, 
+integer_cst 0: __abs_timeout, __mutex, 
 call_expr : __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
 function_decl __gthread_active_p: __abs_timeout, __mutex, 
@@ -5050,6 +5151,8 @@ bind_expr : __abs_timeout, __mutex,
 statement_list : __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 decl_expr : __abs_timeout, __mutex, 
+addr_expr : __abs_timeout, __mutex, 
+function_decl __gthrw___pthread_key_create: __abs_timeout, __mutex, 
 var_decl __gthread_active_ptr: __abs_timeout, __mutex, 
 integer_cst 64: __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
@@ -5067,6 +5170,7 @@ integer_cst -2147483648: __abs_timeout, __mutex,
 integer_cst 2147483647: __abs_timeout, __mutex, 
 integer_cst 32: __abs_timeout, __mutex, 
 ne_expr : __abs_timeout, __mutex, 
+integer_cst 0: __abs_timeout, __mutex, 
 var_decl __gthread_active_ptr: __abs_timeout, __mutex, 
 integer_cst 64: __abs_timeout, __mutex, 
 addr_expr : __abs_timeout, __mutex, 
@@ -5090,6 +5194,8 @@ function_decl __gthrw___pthread_key_create: __abs_timeout, __mutex,
 pointer_type : __abs_timeout, __mutex, 
 void_type : __abs_timeout, __mutex, 
 type_decl void: __abs_timeout, __mutex, 
+addr_expr : __abs_timeout, __mutex, 
+function_decl __gthrw___pthread_key_create: __abs_timeout, __mutex, 
 integer_cst 0: __abs_timeout, __mutex, 
 cleanup_point_expr : __abs_timeout, __mutex, 
 return_expr : __abs_timeout, __mutex, 
@@ -5267,6 +5373,7 @@ function_decl __gthread_mutex_unlock: __mutex,
 cond_expr : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -5274,6 +5381,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -5291,6 +5400,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -5314,6 +5424,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -5451,6 +5563,7 @@ function_decl __gthread_mutex_destroy: __mutex,
 cond_expr : __mutex, 
 cleanup_point_expr : __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 call_expr : __mutex, 
 addr_expr : __mutex, 
 function_decl __gthread_active_p: __mutex, 
@@ -5458,6 +5571,8 @@ bind_expr : __mutex,
 statement_list : __mutex, 
 cleanup_point_expr : __mutex, 
 decl_expr : __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -5475,6 +5590,7 @@ integer_cst -2147483648: __mutex,
 integer_cst 2147483647: __mutex, 
 integer_cst 32: __mutex, 
 ne_expr : __mutex, 
+integer_cst 0: __mutex, 
 var_decl __gthread_active_ptr: __mutex, 
 integer_cst 64: __mutex, 
 addr_expr : __mutex, 
@@ -5498,6 +5614,8 @@ function_decl __gthrw___pthread_key_create: __mutex,
 pointer_type : __mutex, 
 void_type : __mutex, 
 type_decl void: __mutex, 
+addr_expr : __mutex, 
+function_decl __gthrw___pthread_key_create: __mutex, 
 integer_cst 0: __mutex, 
 cleanup_point_expr : __mutex, 
 return_expr : __mutex, 
@@ -6447,6 +6565,7 @@ function_decl __exchange_and_add_dispatch:
 if_stmt : __mem, 
 cleanup_point_expr : __mem, 
 ne_expr : __mem, 
+integer_cst 0: __mem, 
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __gthread_active_p: __mem, 
@@ -6454,6 +6573,8 @@ bind_expr : __mem,
 statement_list : __mem, 
 cleanup_point_expr : __mem, 
 decl_expr : __mem, 
+addr_expr : __mem, 
+function_decl __gthrw___pthread_key_create: __mem, 
 var_decl __gthread_active_ptr: __mem, 
 integer_cst 64: __mem, 
 addr_expr : __mem, 
@@ -6471,6 +6592,7 @@ integer_cst -2147483648: __mem,
 integer_cst 2147483647: __mem, 
 integer_cst 32: __mem, 
 ne_expr : __mem, 
+integer_cst 0: __mem, 
 var_decl __gthread_active_ptr: __mem, 
 integer_cst 64: __mem, 
 addr_expr : __mem, 
@@ -6494,6 +6616,8 @@ function_decl __gthrw___pthread_key_create: __mem,
 pointer_type : __mem, 
 void_type : __mem, 
 type_decl void: __mem, 
+addr_expr : __mem, 
+function_decl __gthrw___pthread_key_create: __mem, 
 integer_cst 0: __mem, 
 cleanup_point_expr : __mem, 
 return_expr : __mem, 
@@ -6679,6 +6803,7 @@ function_decl __atomic_add_dispatch:
 if_stmt : __mem, 
 cleanup_point_expr : __mem, 
 ne_expr : __mem, 
+integer_cst 0: __mem, 
 call_expr : __mem, 
 addr_expr : __mem, 
 function_decl __gthread_active_p: __mem, 
@@ -6686,6 +6811,8 @@ bind_expr : __mem,
 statement_list : __mem, 
 cleanup_point_expr : __mem, 
 decl_expr : __mem, 
+addr_expr : __mem, 
+function_decl __gthrw___pthread_key_create: __mem, 
 var_decl __gthread_active_ptr: __mem, 
 integer_cst 64: __mem, 
 addr_expr : __mem, 
@@ -6703,6 +6830,7 @@ integer_cst -2147483648: __mem,
 integer_cst 2147483647: __mem, 
 integer_cst 32: __mem, 
 ne_expr : __mem, 
+integer_cst 0: __mem, 
 var_decl __gthread_active_ptr: __mem, 
 integer_cst 64: __mem, 
 addr_expr : __mem, 
@@ -6726,6 +6854,8 @@ function_decl __gthrw___pthread_key_create: __mem,
 pointer_type : __mem, 
 void_type : __mem, 
 type_decl void: __mem, 
+addr_expr : __mem, 
+function_decl __gthrw___pthread_key_create: __mem, 
 integer_cst 0: __mem, 
 cleanup_point_expr : __mem, 
 expr_stmt : __mem, 
@@ -6988,6 +7118,7 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+integer_cst 0: 
 component_ref : this->_M_p, 
 indirect_ref : this->_M_p, 
 parm_decl this: this->_M_p, 
@@ -7055,6 +7186,7 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+integer_cst 0: 
 component_ref : this->_M_p, 
 indirect_ref : this->_M_p, 
 parm_decl this: this->_M_p, 
@@ -7125,6 +7257,7 @@ boolean_type :
 type_decl bool: 
 integer_cst 8: 
 ne_expr : 
+integer_cst 0: 
 bit_and_expr : 
 indirect_ref : 
 component_ref : 
@@ -7487,6 +7620,31 @@ boolean_type :
 type_decl bool: 
 integer_cst 8: 
 eq_expr : 
+call_expr : 
+addr_expr : 
+function_decl operator 2: 
+convert_expr : 
+parm_decl __x: 
+reference_type : 
+record_type : 
+type_decl _Bit_reference: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+field_decl _M_mask: 
+integer_cst 64: 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+type_decl _Bit_reference: 
+integer_cst 64: 
 call_expr : 
 addr_expr : 
 function_decl operator 2: 
@@ -7901,6 +8059,7 @@ function_decl _M_bump_up:
 if_stmt : 
 cleanup_point_expr : 
 eq_expr : 
+integer_cst 63: 
 postincrement_expr : 
 component_ref : 
 indirect_ref : 
@@ -7998,6 +8157,7 @@ function_decl _M_bump_down:
 if_stmt : 
 cleanup_point_expr : 
 eq_expr : 
+integer_cst 0: 
 postdecrement_expr : 
 component_ref : 
 indirect_ref : 
@@ -8200,6 +8360,7 @@ integer_cst -0:
 integer_cst 4294967295: 
 integer_cst 64: 
 integer_cst 8: 
+pointer_plus_expr : 
 cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
@@ -8463,6 +8624,37 @@ truth_andif_expr :
 eq_expr : 
 component_ref : 
 indirect_ref : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+component_ref : 
+indirect_ref : 
 parm_decl this: 
 pointer_type : 
 record_type : 
@@ -8520,6 +8712,36 @@ integer_cst 64:
 integer_cst 0: 
 integer_cst : 
 eq_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -8645,6 +8867,37 @@ integer_cst 0:
 integer_cst : 
 truth_andif_expr : 
 eq_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl __i: 
+reference_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -14575,6 +14828,64 @@ if_stmt :
 ne_expr : 
 component_ref : 
 component_ref : 
+parm_decl __last: 
+record_type : 
+type_decl _Bit_iterator: 
+field_decl : 
+integer_cst 96: 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+type_decl _Bit_iterator_base: 
+type_decl _Bit_iterator: 
+type_decl reference: 
+type_decl pointer: 
+type_decl iterator: 
+integer_cst 128: 
+field_decl : 
+integer_cst 96: 
+record_type : 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+field_decl _M_offset: 
+integer_cst 32: 
+integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
+type_decl _Bit_iterator_base: 
+field_decl _M_p: 
+integer_cst 64: 
+pointer_type : 
+integer_type : 
+type_decl _Bit_type: 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst : 
+component_ref : 
+component_ref : 
 parm_decl __first: 
 record_type : 
 type_decl _Bit_iterator: 
@@ -16772,13 +17083,19 @@ type_decl allocator_type: ptr1,
 function_decl func2: 
 bind_expr : ptr1, 
 decl_expr : ptr1, 
-var_decl ptr2: ptr1, 
-integer_cst 64: ptr1, 
 pointer_plus_expr : ptr1, 
 test22.cpp: In member function 'int Object1::func2(Data1*)':
 test22.cpp:45:28: warning: Using parameter 'ptr1' without checking for null pointer
          Data1* ptr2 = ptr1 + 1;
                             ^
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 40: ptr1, 
+var_decl ptr2: ptr1, 
+integer_cst 64: ptr1, 
+pointer_plus_expr : ptr1, 
+test22.cpp:45:28: warning: Using parameter 'ptr1' without checking for null pointer
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 integer_cst 64: ptr1, 
@@ -16893,17 +17210,44 @@ field_decl str1: ptr1,
 integer_cst 64: ptr1, 
 record_type : ptr1, 
 type_decl Data1: ptr1, 
+pointer_plus_expr : ptr1, 
+test22.cpp:45:28: warning: Using parameter 'ptr1' without checking for null pointer
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 40: ptr1, 
 function_decl func3: 
 bind_expr : ptr1, 
 statement_list : ptr1, 
 decl_expr : ptr1, 
-var_decl ptr2: ptr1, 
-integer_cst 64: ptr1, 
 addr_expr : ptr1, 
 test22.cpp: In member function 'int Object1::func3(Data1*)':
 test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
          Data1** ptr2 = &ptr1;
                  ^
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+integer_cst 64: ptr1, 
+var_decl ptr2: ptr1, 
+integer_cst 64: ptr1, 
+addr_expr : ptr1, 
+test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -17030,10 +17374,31 @@ field_decl str1: ptr1,
 integer_cst 64: ptr1, 
 record_type : ptr1, 
 type_decl Data1: ptr1, 
+addr_expr : ptr1, 
+test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+field_decl arr: ptr1, 
+integer_cst 96: ptr1, 
+array_type : ptr1, 
+field_decl str1: ptr1, 
+integer_cst 64: ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
 function_decl func4: 
 if_stmt : ptr1, 
 cleanup_point_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 100: ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl ftest1: ptr1, 
@@ -18028,6 +18393,7 @@ bind_expr : ptr1,
 statement_list : ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -18138,6 +18504,7 @@ function_decl func7:
 if_stmt : ptr1, 
 cleanup_point_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 200: ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl ftest2: ptr1, 
@@ -18198,6 +18565,7 @@ if_stmt : ptr1,
 truth_orif_expr : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -18248,6 +18616,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 3: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -18307,6 +18676,7 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 3: 
 eq_expr : 
+integer_cst 0: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -18515,6 +18885,7 @@ if_stmt : ptr1,
 cleanup_point_expr : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -18782,6 +19153,7 @@ type_decl Data1: ptr1, ptr2,
 bind_expr : ptr1, ptr2, 
 if_stmt : ptr1, ptr2, 
 ne_expr : ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
 var_decl ptr2: ptr1, ptr2, 
 integer_cst 64: ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
@@ -19045,6 +19417,7 @@ record_type : ptr1, ptr2,
 type_decl Data1: ptr1, ptr2, 
 if_stmt : ptr1, ptr2, 
 ne_expr : ptr1, ptr2, 
+integer_cst 0: ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
 pointer_type : ptr1, ptr2, 
 record_type : ptr1, ptr2, 
@@ -19225,6 +19598,7 @@ statement_list : ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -19275,6 +19649,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 3: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -21115,6 +21490,163 @@ integer_cst 64:
 record_type : 
 type_decl Data1: 
 type_decl _Vector_impl: 
+field_decl _M_end_of_storage: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+field_decl str1: 
+integer_cst 64: 
+record_type : 
+type_decl Data1: 
+component_ref : 
+component_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl vector: 
+field_decl : 
+integer_cst 192: 
+record_type : 
+type_decl _Vector_base: 
+field_decl _M_impl: 
+integer_cst 192: 
+record_type : 
+type_decl _Vector_base: 
+type_decl _Tp_alloc_type: 
+type_decl pointer: 
+type_decl _Vector_impl: 
+type_decl allocator_type: 
+using_decl _M_allocate: 
+using_decl _M_deallocate: 
+using_decl _M_impl: 
+using_decl _M_get_Tp_allocator: 
+using_decl get_allocator: 
+type_decl vector: 
+type_decl _Alloc_value_type: 
+type_decl _Base: 
+type_decl _Tp_alloc_type: 
+type_decl _Alloc_traits: 
+type_decl value_type: 
+type_decl pointer: 
+type_decl const_pointer: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl iterator: 
+type_decl const_iterator: 
+type_decl const_reverse_iterator: 
+type_decl reverse_iterator: 
+type_decl size_type: 
+type_decl difference_type: 
+type_decl allocator_type: 
+integer_cst 64: 
+field_decl : 
+integer_cst 192: 
+record_type : 
+type_decl _Vector_base: 
+field_decl _M_impl: 
+integer_cst 192: 
+record_type : 
+type_decl _Vector_impl: 
+field_decl _M_start: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+field_decl _M_finish: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+field_decl _M_end_of_storage: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+type_decl _Vector_impl: 
+type_decl _Vector_base: 
+type_decl _Tp_alloc_type: 
+type_decl pointer: 
+type_decl _Vector_impl: 
+type_decl allocator_type: 
+field_decl _M_impl: 
+integer_cst 192: 
+record_type : 
+type_decl _Vector_impl: 
+field_decl _M_start: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+field_decl str1: 
+integer_cst 64: 
+record_type : 
+type_decl Data1: 
+field_decl _M_finish: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+field_decl str1: 
+integer_cst 64: 
+record_type : 
+type_decl Data1: 
+field_decl _M_end_of_storage: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+field_decl str1: 
+integer_cst 64: 
+record_type : 
+type_decl Data1: 
+type_decl _Vector_impl: 
 field_decl _M_finish: 
 integer_cst 64: 
 pointer_type : 
@@ -22029,6 +22561,14 @@ integer_cst : __first, __last,
 integer_cst 64: __first, __last, 
 integer_cst 8: __first, __last, 
 ne_expr : __first, __last, 
+parm_decl __last: __first, __last, 
+pointer_type : __first, __last, 
+integer_type : __first, __last, 
+type_decl long unsigned int: __first, __last, 
+integer_cst 64: __first, __last, 
+integer_cst 0: __first, __last, 
+integer_cst : __first, __last, 
+integer_cst 64: __first, __last, 
 parm_decl __first: __first, __last, 
 pointer_type : __first, __last, 
 integer_type : __first, __last, 
@@ -24613,6 +25153,163 @@ integer_cst 64:
 record_type : 
 type_decl Data1: 
 type_decl _Vector_impl: 
+field_decl _M_end_of_storage: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+field_decl str1: 
+integer_cst 64: 
+record_type : 
+type_decl Data1: 
+component_ref : 
+component_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl vector: 
+field_decl : 
+integer_cst 192: 
+record_type : 
+type_decl _Vector_base: 
+field_decl _M_impl: 
+integer_cst 192: 
+record_type : 
+type_decl _Vector_base: 
+type_decl _Tp_alloc_type: 
+type_decl pointer: 
+type_decl _Vector_impl: 
+type_decl allocator_type: 
+using_decl _M_allocate: 
+using_decl _M_deallocate: 
+using_decl _M_impl: 
+using_decl _M_get_Tp_allocator: 
+using_decl get_allocator: 
+type_decl vector: 
+type_decl _Alloc_value_type: 
+type_decl _Base: 
+type_decl _Tp_alloc_type: 
+type_decl _Alloc_traits: 
+type_decl value_type: 
+type_decl pointer: 
+type_decl const_pointer: 
+type_decl reference: 
+type_decl const_reference: 
+type_decl iterator: 
+type_decl const_iterator: 
+type_decl const_reverse_iterator: 
+type_decl reverse_iterator: 
+type_decl size_type: 
+type_decl difference_type: 
+type_decl allocator_type: 
+integer_cst 64: 
+field_decl : 
+integer_cst 192: 
+record_type : 
+type_decl _Vector_base: 
+field_decl _M_impl: 
+integer_cst 192: 
+record_type : 
+type_decl _Vector_impl: 
+field_decl _M_start: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+field_decl _M_finish: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+field_decl _M_end_of_storage: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+type_decl _Vector_impl: 
+type_decl _Vector_base: 
+type_decl _Tp_alloc_type: 
+type_decl pointer: 
+type_decl _Vector_impl: 
+type_decl allocator_type: 
+field_decl _M_impl: 
+integer_cst 192: 
+record_type : 
+type_decl _Vector_impl: 
+field_decl _M_start: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+field_decl str1: 
+integer_cst 64: 
+record_type : 
+type_decl Data1: 
+field_decl _M_finish: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+field_decl str1: 
+integer_cst 64: 
+record_type : 
+type_decl Data1: 
+field_decl _M_end_of_storage: 
+integer_cst 64: 
+pointer_type : 
+type_decl pointer: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+field_decl str1: 
+integer_cst 64: 
+record_type : 
+type_decl Data1: 
+type_decl _Vector_impl: 
 field_decl _M_finish: 
 integer_cst 64: 
 pointer_type : 
@@ -25603,6 +26300,10 @@ record_type :
 type_decl Data1: 
 integer_cst 8: 
 decl_expr : 
+indirect_ref : 
+parm_decl __x: 
+reference_type : 
+integer_cst 64: 
 var_decl __x_copy: 
 integer_cst 64: 
 indirect_ref : 
@@ -26124,6 +26825,12 @@ field_decl str1:
 integer_cst 64: 
 record_type : 
 type_decl Data1: 
+indirect_ref : 
+parm_decl __x: 
+reference_type : 
+pointer_type : 
+record_type : 
+integer_cst 64: 
 bind_expr : 
 statement_list : 
 decl_expr : 
@@ -26930,6 +27637,7 @@ field_decl str1: __new_finish, __new_start,
 integer_cst 64: __new_finish, __new_start, 
 record_type : __new_finish, __new_start, 
 type_decl Data1: __new_finish, __new_start, 
+integer_cst 0: __new_finish, __new_start, 
 integer_cst 0: __new_finish, __new_start, 
 cleanup_point_expr : __new_finish, __new_start, 
 expr_stmt : __new_finish, __new_start, 
@@ -28041,6 +28749,7 @@ function_decl __builtin_eh_pointer: __new_finish, __new_start,
 integer_cst 0: __new_finish, __new_start, 
 if_stmt : __new_finish, __new_start, 
 eq_expr : __new_finish, __new_start, 
+integer_cst 0: __new_finish, __new_start, 
 var_decl __new_finish: __new_finish, __new_start, 
 integer_cst 64: __new_finish, __new_start, 
 var_decl __new_start: __new_finish, __new_start, 
@@ -31117,6 +31826,7 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+integer_cst 0: 
 component_ref : this->_M_start, 
 indirect_ref : this->_M_start, 
 parm_decl this: this->_M_start, 
@@ -31165,6 +31875,7 @@ cleanup_point_expr : this->_M_start,
 expr_stmt : this->_M_start, 
 convert_expr : this->_M_start, 
 init_expr : this->_M_start, 
+integer_cst 0: this->_M_start, 
 component_ref : this->_M_finish, this->_M_start, 
 indirect_ref : this->_M_finish, this->_M_start, 
 parm_decl this: this->_M_finish, this->_M_start, 
@@ -31213,6 +31924,7 @@ cleanup_point_expr : this->_M_finish, this->_M_start,
 expr_stmt : this->_M_finish, this->_M_start, 
 convert_expr : this->_M_finish, this->_M_start, 
 init_expr : this->_M_finish, this->_M_start, 
+integer_cst 0: this->_M_finish, this->_M_start, 
 component_ref : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
 indirect_ref : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
 parm_decl this: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
@@ -31317,6 +32029,7 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+integer_cst 0: 
 component_ref : this->_M_start, 
 indirect_ref : this->_M_start, 
 parm_decl this: this->_M_start, 
@@ -31365,6 +32078,7 @@ cleanup_point_expr : this->_M_start,
 expr_stmt : this->_M_start, 
 convert_expr : this->_M_start, 
 init_expr : this->_M_start, 
+integer_cst 0: this->_M_start, 
 component_ref : this->_M_finish, this->_M_start, 
 indirect_ref : this->_M_finish, this->_M_start, 
 parm_decl this: this->_M_finish, this->_M_start, 
@@ -31413,6 +32127,7 @@ cleanup_point_expr : this->_M_finish, this->_M_start,
 expr_stmt : this->_M_finish, this->_M_start, 
 convert_expr : this->_M_finish, this->_M_start, 
 init_expr : this->_M_finish, this->_M_start, 
+integer_cst 0: this->_M_finish, this->_M_start, 
 component_ref : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
 indirect_ref : this->_M_end_of_storage, this->_M_finish, this->_M_start, 
 parm_decl this: this->_M_end_of_storage, this->_M_finish, this->_M_start, 
@@ -31610,6 +32325,7 @@ function_decl _M_deallocate:
 bind_expr : __p, 
 if_stmt : __p, 
 ne_expr : __p, 
+integer_cst 0: __p, 
 parm_decl __p: __p, 
 pointer_type : __p, 
 type_decl pointer: __p, 
@@ -31853,6 +32569,7 @@ void_type : __p,
 type_decl void: __p, 
 cond_expr : __p, 
 ne_expr : __p, 
+integer_cst 0: __p, 
 var_decl : __p, 
 integer_cst 64: __p, 
 pointer_type : __p, 
@@ -33095,6 +33812,7 @@ type_decl Data1:
 integer_cst 64: 
 cond_expr : 
 ne_expr : 
+integer_cst 0: 
 parm_decl __n: 
 integer_type : 
 type_decl size_t: 
@@ -33553,6 +34271,27 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+indirect_ref : 
+parm_decl __i: 
+reference_type : 
+pointer_type : 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+field_decl str1: 
+integer_cst 64: 
+record_type : 
+type_decl Data1: 
+integer_cst 64: 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -33619,6 +34358,27 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
+indirect_ref : 
+parm_decl __i: 
+reference_type : 
+pointer_type : 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+field_decl arr: 
+integer_cst 96: 
+array_type : 
+field_decl str1: 
+integer_cst 64: 
+record_type : 
+type_decl Data1: 
+integer_cst 64: 
 component_ref : 
 indirect_ref : 
 parm_decl this: 
@@ -35680,6 +36440,7 @@ integer_cst -0: __first, __last, __result,
 integer_cst 4294967295: __first, __last, __result, 
 if_stmt : __first, __last, __result, 
 ne_expr : __first, __last, __result, 
+integer_cst 0: __first, __last, __result, 
 var_decl _Num: __first, __last, __result, 
 integer_cst 64: __first, __last, __result, 
 exact_div_expr : __first, __last, __result, 
@@ -36695,6 +37456,7 @@ integer_cst -0: __first, __last, __result,
 integer_cst 4294967295: __first, __last, __result, 
 if_stmt : __first, __last, __result, 
 ne_expr : __first, __last, __result, 
+integer_cst 0: __first, __last, __result, 
 var_decl _Num: __first, __last, __result, 
 integer_cst 64: __first, __last, __result, 
 exact_div_expr : __first, __last, __result, 

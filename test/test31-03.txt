@@ -585,6 +585,7 @@ addr_expr : ptr1, this->tmp1,
 function_decl paranuckerInternalTest: ptr1, this->tmp1, 
 if_stmt : ptr1, this->tmp1, 
 ne_expr : ptr1, this->tmp1, 
+integer_cst 0: ptr1, this->tmp1, 
 parm_decl ptr1: ptr1, this->tmp1, 
 pointer_type : ptr1, this->tmp1, 
 record_type : ptr1, this->tmp1, 
@@ -651,6 +652,7 @@ addr_expr :
 function_decl paranuckerInternalTest: 
 if_stmt : 
 ne_expr : 
+integer_cst 0: 
 test31.cpp: In member function 'void Object1::func3(Data1*)':
 test31.cpp:100:13: warning: Useless variable check 'this->tmp1'. It already was checked before
              if (tmp1)
@@ -851,6 +853,7 @@ addr_expr : ptr1, this->tmp1,
 function_decl paranuckerInternalTest: ptr1, this->tmp1, 
 if_stmt : ptr1, this->tmp1, 
 ne_expr : ptr1, this->tmp1, 
+integer_cst 0: ptr1, this->tmp1, 
 parm_decl ptr1: ptr1, this->tmp1, 
 pointer_type : ptr1, this->tmp1, 
 record_type : ptr1, this->tmp1, 
@@ -1069,6 +1072,7 @@ type_decl Data1: ptr1, this->tmp1,
 integer_cst 64: ptr1, this->tmp1, 
 if_stmt : ptr1, this->tmp1, 
 eq_expr : ptr1, this->tmp1, 
+integer_cst 0: ptr1, this->tmp1, 
 parm_decl ptr1: ptr1, this->tmp1, 
 pointer_type : ptr1, this->tmp1, 
 record_type : ptr1, this->tmp1, 
@@ -1287,6 +1291,7 @@ type_decl Data1: ptr1, this->tmp1,
 integer_cst 64: ptr1, this->tmp1, 
 if_stmt : ptr1, this->tmp1, 
 eq_expr : ptr1, this->tmp1, 
+integer_cst 0: ptr1, this->tmp1, 
 component_ref : ptr1, this->tmp1, 
 indirect_ref : ptr1, this->tmp1, 
 parm_decl this: ptr1, this->tmp1, 
@@ -1593,6 +1598,7 @@ type_decl Data1: ptr1, this->tmp1, this->tmp2,
 integer_cst 64: ptr1, this->tmp1, this->tmp2, 
 if_stmt : ptr1, this->tmp1, this->tmp2, 
 eq_expr : ptr1, this->tmp1, this->tmp2, 
+integer_cst 0: ptr1, this->tmp1, this->tmp2, 
 component_ref : ptr1, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, this->tmp1, this->tmp2, 
 parm_decl this: ptr1, this->tmp1, this->tmp2, 
@@ -1694,6 +1700,7 @@ addr_expr : ptr1, this->tmp1, this->tmp2,
 function_decl paranuckerInternalTest: ptr1, this->tmp1, this->tmp2, 
 if_stmt : ptr1, this->tmp1, this->tmp2, 
 eq_expr : ptr1, this->tmp1, this->tmp2, 
+integer_cst 0: ptr1, this->tmp1, this->tmp2, 
 test31.cpp: In member function 'void Object1::func7(Data1*)':
 test31.cpp:246:18: warning: Useless variable check 'ptr1'. It already was checked before
              if (!ptr1)
@@ -1886,6 +1893,7 @@ addr_expr :
 function_decl paranuckerInternalTest: 
 if_stmt : 
 ne_expr : 
+integer_cst 0: 
 test31.cpp:285:13: warning: Useless variable check 'this->tmp1'. It already was checked before
              if (tmp1)
              ^
@@ -4611,6 +4619,7 @@ addr_expr : ptr1, ptr2, this->tmp1, this->tmp2,
 function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
 if_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
 ne_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
+integer_cst 0: ptr1, ptr2, this->tmp1, this->tmp2, 
 component_ref : ptr1, ptr2, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, ptr2, this->tmp1, this->tmp2, 
 parm_decl this: ptr1, ptr2, this->tmp1, this->tmp2, 
@@ -4777,6 +4786,7 @@ addr_expr : ptr1, ptr2, this->tmp1, this->tmp2,
 function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
 if_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
 eq_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
+integer_cst 0: ptr1, ptr2, this->tmp1, this->tmp2, 
 parm_decl ptr1: ptr1, ptr2, this->tmp1, this->tmp2, 
 pointer_type : ptr1, ptr2, this->tmp1, this->tmp2, 
 record_type : ptr1, ptr2, this->tmp1, this->tmp2, 
@@ -4926,6 +4936,7 @@ function_decl paranuckerInternalTest: ptr2,
 if_stmt : ptr2, 
 truth_andif_expr : ptr2, 
 ne_expr : ptr2, 
+integer_cst 0: ptr2, 
 parm_decl ptr2: ptr2, 
 pointer_type : ptr2, 
 record_type : ptr2, 
@@ -4950,6 +4961,7 @@ type_decl Data1: ptr2,
 integer_cst 64: ptr2, 
 integer_cst 0: ptr2, 
 eq_expr : 
+integer_cst 10: 
 var_decl k: 
 integer_cst 32: 
 integer_type : 
@@ -5340,6 +5352,7 @@ addr_expr : ptr1, ptr2, this->tmp1, this->tmp2,
 function_decl paranuckerInternalTest: ptr1, ptr2, this->tmp1, this->tmp2, 
 if_stmt : ptr1, ptr2, this->tmp1, this->tmp2, 
 ne_expr : ptr1, ptr2, this->tmp1, this->tmp2, 
+integer_cst 0: ptr1, ptr2, this->tmp1, this->tmp2, 
 component_ref : ptr1, ptr2, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, ptr2, this->tmp1, this->tmp2, 
 parm_decl this: ptr1, ptr2, this->tmp1, this->tmp2, 

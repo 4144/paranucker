@@ -85,6 +85,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 while_stmt : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -166,6 +167,7 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 100: 
 ne_expr : 
+integer_cst 0: 
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -273,6 +275,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -437,6 +440,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 while_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -644,6 +648,7 @@ type_decl Data1:
 integer_cst 64: 
 if_stmt : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: 
 test33.cpp:91:9: warning: Useless variable check 'this->tmp2'. It already was checked before
          if (tmp2)
          ^

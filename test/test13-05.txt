@@ -191,13 +191,20 @@ function_decl func7:
 bind_expr : b, 
 statement_list : b, 
 decl_expr : b, 
-var_decl var3: b, 
-integer_cst 64: b, 
 pointer_plus_expr : b, 
 test13.c: In function 'func7':
 test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
      int *var3 = 12 + b;
                     ^
+parm_decl b: b, 
+pointer_type : b, 
+integer_type : b, 
+integer_cst 64: b, 
+integer_cst 48: b, 
+var_decl var3: b, 
+integer_cst 64: b, 
+pointer_plus_expr : b, 
+test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
 parm_decl b: b, 
 pointer_type : b, 
 integer_type : b, 
@@ -262,17 +269,34 @@ type_decl int: b,
 integer_cst 32: b, 
 integer_cst -2147483648: b, 
 integer_cst 2147483647: b, 
+pointer_plus_expr : b, 
+test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
+parm_decl b: b, 
+pointer_type : b, 
+integer_type : b, 
+type_decl int: b, 
+integer_cst 32: b, 
+integer_cst -2147483648: b, 
+integer_cst 2147483647: b, 
+integer_cst 64: b, 
+integer_cst 48: b, 
 function_decl func8: 
 bind_expr : bptr, 
 statement_list : bptr, 
 decl_expr : bptr, 
-var_decl var4: bptr, 
-integer_cst 64: bptr, 
 addr_expr : bptr, 
 test13.c: In function 'func8':
 test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
      int **var4 = &bptr;
                   ^
+parm_decl bptr: bptr, 
+pointer_type : bptr, 
+integer_type : bptr, 
+integer_cst 64: bptr, 
+var_decl var4: bptr, 
+integer_cst 64: bptr, 
+addr_expr : bptr, 
+test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
 parm_decl bptr: bptr, 
 pointer_type : bptr, 
 integer_type : bptr, 
@@ -338,3 +362,13 @@ type_decl int: bptr,
 integer_cst 32: bptr, 
 integer_cst -2147483648: bptr, 
 integer_cst 2147483647: bptr, 
+addr_expr : bptr, 
+test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
+parm_decl bptr: bptr, 
+pointer_type : bptr, 
+integer_type : bptr, 
+type_decl int: bptr, 
+integer_cst 32: bptr, 
+integer_cst -2147483648: bptr, 
+integer_cst 2147483647: bptr, 
+integer_cst 64: bptr, 

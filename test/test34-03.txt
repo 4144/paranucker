@@ -163,6 +163,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 while_stmt : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -259,6 +260,7 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 100: 
 ne_expr : 
+integer_cst 0: 
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -396,6 +398,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -609,6 +612,7 @@ test34.cpp: In member function 'void Object1::func3(Data1*)':
 test34.cpp:102:23: warning: Using field 'ptr1' without checking for null pointer
          if (ptr1->val == 100)
                        ^
+integer_cst 100: ptr1, 
 component_ref : ptr1, 
 indirect_ref : ptr1, 
 parm_decl ptr1: ptr1, 
@@ -833,6 +837,7 @@ test34.cpp: In member function 'void Object1::func4(Data1*)':
 test34.cpp:138:26: warning: Using field 'ptr1' without checking for null pointer
          while (ptr1->val == 100)
                           ^
+integer_cst 100: ptr1, 
 component_ref : ptr1, 
 indirect_ref : ptr1, 
 parm_decl ptr1: ptr1, 
@@ -981,6 +986,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 eq_expr : ptr1, 
 test34.cpp:138:26: warning: Using field 'ptr1' without checking for null pointer
+integer_cst 100: ptr1, 
 component_ref : ptr1, 
 indirect_ref : ptr1, 
 parm_decl ptr1: ptr1, 
@@ -1087,6 +1093,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -1143,6 +1150,7 @@ addr_expr :
 function_decl paranuckerInternalTest: 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -1358,6 +1366,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -1414,6 +1423,7 @@ addr_expr :
 function_decl paranuckerInternalTest: 
 while_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -1560,6 +1570,7 @@ test34.cpp: In member function 'void Object1::func6(Data1*)':
 test34.cpp:225:26: warning: Using field 'ptr1' without checking for null pointer
          while (ptr1->val == 100)
                           ^
+integer_cst 100: ptr1, 
 component_ref : ptr1, 
 indirect_ref : ptr1, 
 parm_decl ptr1: ptr1, 
@@ -1666,6 +1677,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -1723,6 +1735,7 @@ function_decl paranuckerInternalTest:
 while_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : 
+integer_cst 0: 
 test34.cpp: In member function 'void Object1::func7(Data1*)':
 test34.cpp:268:21: warning: Useless variable check 'ptr1'. It already was checked before
          while (ptr1 && ptr1->val == 100)
@@ -1751,6 +1764,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -1894,6 +1908,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -1918,6 +1933,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -2025,6 +2041,7 @@ function_decl paranuckerInternalTest: ptr1,
 while_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -2049,6 +2066,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -2192,6 +2210,7 @@ addr_expr :
 function_decl paranuckerInternalTest: 
 truth_andif_expr : 
 ne_expr : 
+integer_cst 0: 
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -2216,6 +2235,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -2396,6 +2416,7 @@ function_decl paranuckerInternalTest: ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -2420,6 +2441,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -2770,6 +2792,7 @@ function_decl paranuckerInternalTest: ptr1, this->tmp1,
 while_stmt : ptr1, this->tmp1, 
 truth_andif_expr : ptr1, this->tmp1, 
 ne_expr : ptr1, this->tmp1, 
+integer_cst 0: ptr1, this->tmp1, 
 parm_decl ptr1: ptr1, this->tmp1, 
 pointer_type : ptr1, this->tmp1, 
 record_type : ptr1, this->tmp1, 
@@ -2794,6 +2817,7 @@ type_decl Data1: ptr1, this->tmp1,
 integer_cst 64: ptr1, this->tmp1, 
 integer_cst 0: ptr1, this->tmp1, 
 eq_expr : 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -2972,6 +2996,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -2996,6 +3021,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -3257,6 +3283,7 @@ function_decl paranuckerInternalTest: ptr1, this->tmp1,
 while_stmt : ptr1, this->tmp1, 
 truth_andif_expr : ptr1, this->tmp1, 
 ne_expr : ptr1, this->tmp1, 
+integer_cst 0: ptr1, this->tmp1, 
 parm_decl ptr1: ptr1, this->tmp1, 
 pointer_type : ptr1, this->tmp1, 
 record_type : ptr1, this->tmp1, 
@@ -3281,6 +3308,7 @@ type_decl Data1: ptr1, this->tmp1,
 integer_cst 64: ptr1, this->tmp1, 
 integer_cst 0: ptr1, this->tmp1, 
 eq_expr : 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -3459,6 +3487,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -3535,6 +3564,7 @@ addr_expr :
 function_decl paranuckerInternalTest: 
 truth_andif_expr : 
 ne_expr : 
+integer_cst 0: 
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -3559,6 +3589,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -3820,6 +3851,7 @@ function_decl paranuckerInternalTest: ptr1, this->tmp1,
 while_stmt : ptr1, this->tmp1, 
 truth_andif_expr : ptr1, this->tmp1, 
 ne_expr : ptr1, this->tmp1, 
+integer_cst 0: ptr1, this->tmp1, 
 parm_decl ptr1: ptr1, this->tmp1, 
 pointer_type : ptr1, this->tmp1, 
 record_type : ptr1, this->tmp1, 
@@ -3844,6 +3876,7 @@ type_decl Data1: ptr1, this->tmp1,
 integer_cst 64: ptr1, this->tmp1, 
 integer_cst 0: ptr1, this->tmp1, 
 eq_expr : 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -4022,6 +4055,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -4098,6 +4132,7 @@ addr_expr :
 function_decl paranuckerInternalTest: 
 truth_andif_expr : 
 ne_expr : 
+integer_cst 0: 
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -4122,6 +4157,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -4383,6 +4419,7 @@ function_decl paranuckerInternalTest: ptr1, this->tmp1,
 while_stmt : ptr1, this->tmp1, 
 truth_andif_expr : ptr1, this->tmp1, 
 ne_expr : ptr1, this->tmp1, 
+integer_cst 0: ptr1, this->tmp1, 
 parm_decl ptr1: ptr1, this->tmp1, 
 pointer_type : ptr1, this->tmp1, 
 record_type : ptr1, this->tmp1, 
@@ -4407,6 +4444,7 @@ type_decl Data1: ptr1, this->tmp1,
 integer_cst 64: ptr1, this->tmp1, 
 integer_cst 0: ptr1, this->tmp1, 
 eq_expr : 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -4585,6 +4623,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -4661,6 +4700,7 @@ addr_expr :
 function_decl paranuckerInternalTest: 
 truth_andif_expr : 
 ne_expr : 
+integer_cst 0: 
 parm_decl ptr1: 
 pointer_type : 
 record_type : 
@@ -4685,6 +4725,7 @@ type_decl Data1:
 integer_cst 64: 
 integer_cst 0: 
 eq_expr : 
+integer_cst 100: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 

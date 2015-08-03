@@ -86,6 +86,7 @@ function_decl paranuckerInternalTest: ptr1,
 if_stmt : ptr1, 
 truth_orif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -110,6 +111,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 10: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -230,6 +232,7 @@ function_decl paranuckerInternalTest: ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -258,6 +261,7 @@ test30.cpp: In member function 'void Object1::func2(Data1*)':
 test30.cpp:69:32: warning: Using field 'ptr1' without checking for null pointer
          if (!ptr1 && ptr1->val == 10)
                                 ^
+integer_cst 10: ptr1, 
 component_ref : ptr1, 
 indirect_ref : ptr1, 
 parm_decl ptr1: ptr1, 
@@ -378,6 +382,7 @@ function_decl paranuckerInternalTest: ptr1,
 if_stmt : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -402,6 +407,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 eq_expr : 
+integer_cst 10: 
 component_ref : 
 indirect_ref : 
 parm_decl ptr1: 
@@ -521,6 +527,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 test30.cpp: In member function 'void Object1::func4(Data1*, Data1*)':
 test30.cpp:127:14: warning: Useless variable check 'ptr2'. It already was checked before
          if (!ptr2)

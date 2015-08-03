@@ -277,6 +277,7 @@ label_expr :
 label_decl : 
 if_stmt : 
 ne_expr : 
+integer_cst 0: 
 bit_and_expr : 
 parm_decl __in_chrg: 
 integer_type : 
@@ -500,6 +501,7 @@ label_expr :
 label_decl : 
 cond_expr : 
 ne_expr : 
+integer_cst 0: 
 bit_and_expr : 
 integer_cst 0: 
 integer_cst 1: 
@@ -1131,6 +1133,7 @@ integer_cst 1: ptr1,
 test39.cpp:96:15: warning: Using field 'ptr1' without checking for null pointer
          ptr1->ptrval = reinterpret_cast<Data1*>(1);
                ^
+integer_cst 1: ptr1, 
 cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
@@ -1281,6 +1284,7 @@ integer_cst 0: ptr1,
 test39.cpp:119:15: warning: Using field 'ptr1' without checking for null pointer
          ptr1->ptrval = 0;
                ^
+integer_cst 0: ptr1, 
 cleanup_point_expr : ptr1, ptr1->ptrval, 
 expr_stmt : ptr1, ptr1->ptrval, 
 call_expr : ptr1, ptr1->ptrval, 
@@ -2326,6 +2330,37 @@ test39.cpp:252:23: warning: Using field 'ptr1' without checking for null pointer
          if (ptr1->val == ptr2->val)
                        ^
 test39.cpp:252:23: warning: Using field 'ptr2' without checking for null pointer
+component_ref : ptr1, ptr2, 
+indirect_ref : ptr1, ptr2, 
+parm_decl ptr2: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
+field_decl ptrval: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+pointer_type : ptr1, ptr2, 
+record_type : ptr1, ptr2, 
+field_decl arr: ptr1, ptr2, 
+integer_cst 96: ptr1, ptr2, 
+array_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl Data1: ptr1, ptr2, 
+integer_cst 64: ptr1, ptr2, 
+field_decl val: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_type : ptr1, ptr2, 
+type_decl int: ptr1, ptr2, 
+integer_cst 32: ptr1, ptr2, 
+integer_cst -2147483648: ptr1, ptr2, 
+integer_cst 2147483647: ptr1, ptr2, 
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 

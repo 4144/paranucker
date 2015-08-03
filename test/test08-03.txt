@@ -2,6 +2,7 @@ function_decl func1:
 statement_list : ptr1, 
 if_stmt : ptr1, 
 eq_expr : ptr1, 
+integer_cst 0: ptr1, 
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 integer_type : ptr1, 
@@ -30,6 +31,7 @@ function_decl func2:
 statement_list : ptr2, 
 if_stmt : ptr2, 
 eq_expr : ptr2, 
+integer_cst 0: ptr2, 
 parm_decl ptr2: ptr2, 
 pointer_type : ptr2, 
 integer_type : ptr2, 
@@ -88,6 +90,7 @@ function_decl func3:
 statement_list : ptr3, 
 if_stmt : ptr3, 
 ne_expr : ptr3, 
+integer_cst 0: ptr3, 
 parm_decl ptr3: ptr3, 
 pointer_type : ptr3, 
 integer_type : ptr3, 
@@ -120,6 +123,7 @@ function_decl func4:
 statement_list : ptr4, 
 if_stmt : ptr4, 
 ne_expr : ptr4, 
+integer_cst 0: ptr4, 
 parm_decl ptr4: ptr4, 
 pointer_type : ptr4, 
 integer_type : ptr4, 
@@ -175,6 +179,7 @@ function_decl func5:
 statement_list : ptr5, 
 if_stmt : ptr5, 
 eq_expr : ptr5, 
+integer_cst 0: ptr5, 
 parm_decl ptr5: ptr5, 
 pointer_type : ptr5, 
 integer_type : ptr5, 
@@ -217,6 +222,7 @@ function_decl func6:
 statement_list : ptr6, 
 if_stmt : ptr6, 
 ne_expr : ptr6, 
+integer_cst 0: ptr6, 
 parm_decl ptr6: ptr6, 
 pointer_type : ptr6, 
 integer_type : ptr6, 
@@ -228,6 +234,7 @@ integer_cst 64: ptr6,
 integer_cst 0: ptr6, 
 if_stmt : 
 eq_expr : 
+integer_cst 0: 
 test08.cpp: In member function 'void Object1::func6(int*)':
 test08.cpp:55:18: warning: Useless variable check 'ptr6'. It already was checked before
              if (!ptr6)
@@ -263,6 +270,7 @@ function_decl func7:
 statement_list : ptr7, 
 if_stmt : ptr7, 
 eq_expr : ptr7, 
+integer_cst 0: ptr7, 
 parm_decl ptr7: ptr7, 
 pointer_type : ptr7, 
 integer_type : ptr7, 
@@ -276,6 +284,7 @@ return_expr : ptr7,
 statement_list : 
 if_stmt : 
 eq_expr : 
+integer_cst 0: 
 test08.cpp: In member function 'void Object1::func7(int*)':
 test08.cpp:70:18: warning: Useless variable check 'ptr7'. It already was checked before
              if (!ptr7)
