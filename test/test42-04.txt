@@ -1,8 +1,12 @@
 test42.cpp: In member function 'void Object1::func1(Data1*) const':
-test42.cpp:62:24: warning: Using variable 'this->tmp1' without checking for null pointer
+test42.cpp:68:24: warning: Using variable 'this->tmp1' without checking for null pointer
          tmp1->val = 100;
                         ^
 test42.cpp: In member function 'void Object1::func3(Data1*) const':
-test42.cpp:72:25: warning: Using variable 'gptr1' without checking for null pointer
+test42.cpp:78:25: warning: Using variable 'gptr1' without checking for null pointer
          gptr1->val = 100;
                          ^
+test42.cpp: In member function 'void Object1::func5(Data1*) const':
+test42.cpp:88:23: warning: Using variable 'this->tmp1' without checking for null pointer
+         tmp1->getData2();
+                       ^

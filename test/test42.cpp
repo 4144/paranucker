@@ -19,6 +19,12 @@ struct Data1
     Data2 perm;
     int arr[3];
     virtual ~Data1();
+
+    Data1 *getData2()
+    {
+        return ptrval;
+    }
+
     virtual Data1 *getData3(int &k)
     {
         val = k;
@@ -45,7 +51,7 @@ class Object1
 {
     Data1 *tmp1;
     Data1 *tmp2;
-    Data2 *tmp3 __attribute__((nonnullpointer));
+    Data1 *tmp3 __attribute__((nonnullpointer));
 
     Data1 *getData1()
     {
@@ -72,10 +78,31 @@ class Object1
         gptr1->val = 100;
     }
 
-/*
     void func4(Data1 *ptr1) const
     {
         gptr2->val = 100;
+    }
+
+    void func5(Data1 *ptr1) const
+    {
+        tmp1->getData2();
+    }
+
+    void func6(Data1 *ptr1) const
+    {
+        tmp3->getData2();
+    }
+
+/*
+    broken for now
+    void func6(Data1 *ptr1) const
+    {
+        tmp3->getData2()->val = 100;
+    }
+
+    void func7(Data1 *ptr1) const
+    {
+        tmp1->getData2()->val = 100;
     }
 */
 };
