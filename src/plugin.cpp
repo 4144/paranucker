@@ -40,6 +40,9 @@ Command command = Command::DetectNullPointers;
 std::map<tree, Node*> foundNodesMap;
 std::map<Node*, Node*> updateNodesMap;
 
+// copy/paste from plugin.h look like again guard header issue.
+extern void register_attribute (const struct attribute_spec *attr);
+
 Command operator |(const Command &cmd1, const Command &cmd2)
 {
     return static_cast<Command>(static_cast<int>(cmd1)
@@ -58,6 +61,26 @@ static void pre_generic(void *gcc_data,
         Analysis::startWalkTree(node);
     }
     Generic::cleanAllNodes(node);
+}
+
+static tree handle_nonnull_attribute(tree *node A_UNUSED,
+                                     tree name A_UNUSED,
+                                     tree args A_UNUSED,
+                                     int flags A_UNUSED,
+                                     bool *no_add_attrs A_UNUSED)
+{
+    return NULL_TREE;
+}
+
+static struct attribute_spec nonnull_attr =
+{
+    "nonnullpointer", 0, 0, true,  false, false, handle_nonnull_attribute, false
+};
+
+static void register_attributes(void *event_data A_UNUSED,
+                                void *data A_UNUSED)
+{
+    register_attribute (&nonnull_attr);
 }
 
 int plugin_init (struct plugin_name_args *plugin_info,
@@ -121,6 +144,11 @@ int plugin_init (struct plugin_name_args *plugin_info,
     register_callback(plugin_info->base_name,
         PLUGIN_PRE_GENERICIZE,
         &pre_generic,
+        0);
+
+    register_callback(plugin_info->base_name,
+        PLUGIN_ATTRIBUTES,
+        &register_attributes,
         0);
 
     return 0;
