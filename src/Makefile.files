@@ -18,6 +18,7 @@ SRC = analysis/analysis.cpp \
       analysis/reports.h \
       analysis/statement.cpp \
       analysis/statement.h \
+      analysis/varitem.h \
       analysis/walkitem.h \
       nodes/base/cst.h \
       nodes/base/decl.h \

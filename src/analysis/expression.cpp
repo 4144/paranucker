@@ -28,6 +28,7 @@
 #include "analysis/function.h"
 #include "analysis/reports.h"
 #include "analysis/statement.h"
+#include "analysis/varitem.h"
 #include "analysis/walkitem.h"
 
 #include "nodes/expr/addr_expr.h"
@@ -72,14 +73,14 @@ namespace Analysis
 {
 
 // return variable name if possible or empty string
-std::string getVariableName(Node *node)
+VarItem getVariableName(Node *node)
 {
     if (!node)
-        return "";
+        return VarItem();
 
     node = skipNop(node);
     if (!node)
-        return "";
+        return VarItem();
 
     if (node == PARM_DECL)
     {
@@ -87,22 +88,22 @@ std::string getVariableName(Node *node)
         if (skipNop(decl->declType) != nullptr &&
             skipNop(decl->declType) != POINTER_TYPE)
         {
-            return "";
+            return VarItem();
         }
-        return node->label;
+        return VarItem(node->label);
     }
     if (node == VAR_DECL)
     {
         VarDeclNode *var = static_cast<VarDeclNode*>(node);
         if (skipNop(var->varType) != POINTER_TYPE)
-            return "";
-        return node->label;
+            return VarItem();
+        return VarItem(node->label);
     }
     else if (node == COMPONENT_REF)
     {
         return getComponentRefVariable(node);
     }
-    return "";
+    return VarItem();
 }
 
 bool isPointerArg(Node *node)
@@ -136,9 +137,9 @@ bool isPointerArg(Node *node)
 }
 
 // return variable name in format object->field for component node
-std::string getComponentRefVariable(Node *node)
+VarItem getComponentRefVariable(Node *node)
 {
-    std::string str;
+    VarItem str;
     ComponentRefNode *const comp = static_cast<ComponentRefNode*>(skipNop(node));
     if (comp &&
         comp->object &&
@@ -181,23 +182,23 @@ std::string getComponentRefVariable(Node *node)
             {
                 if (!isValidVar(field->label))
                     return str;
-                str.append(ref->label).append("->").append(field->label);
+                str.name.append(ref->label).append("->").append(field->label);
             }
         }
     }
     return str;
 }
 
-bool isValidVar(const std::string &str)
+bool isValidVar(const VarItem &str)
 {
-    if (str.size() > 6 && str.substr(0, 6) == "_vptr.")
+    if (str.size() > 6 && str.name.substr(0, 6) == "_vptr.")
         return false;
     return true;
 }
 
-std::vector<std::string> getComponentRefParts(Node *node)
+std::vector<VarItem> getComponentRefParts(Node *node)
 {
-    std::vector<std::string> str;
+    std::vector<VarItem> str;
     ComponentRefNode *const comp = static_cast<ComponentRefNode*>(skipNop(node));
     if (comp &&
         comp->object &&
@@ -225,14 +226,14 @@ std::vector<std::string> getComponentRefParts(Node *node)
                 if (skipNop(parmDecl->declType) == nullptr ||
                     skipNop(parmDecl->declType) == POINTER_TYPE)
                 {
-                    str.push_back(ref->label);
+                    str.push_back(VarItem(ref->label));
                 }
             }
             if (ref == VAR_DECL)
             {
                 VarDeclNode *varDecl = static_cast<VarDeclNode*>(ref);
                 if (varDecl->varType == POINTER_TYPE)
-                    str.push_back(ref->label);
+                    str.push_back(VarItem(ref->label));
             }
             if (ref == PARM_DECL || ref == VAR_DECL)
             {
@@ -246,16 +247,16 @@ std::vector<std::string> getComponentRefParts(Node *node)
                 }
                 if (!isValidVar(field->label))
                     return str;
-                str.push_back(std::string(ref->label).append("->").append(field->label));
+                str.push_back(VarItem(std::string(ref->label).append("->").append(field->label)));
             }
         }
     }
     return str;
 }
 
-std::vector<std::string> getComponentRefLeftParts(Node *node)
+std::vector<VarItem> getComponentRefLeftParts(Node *node)
 {
-    std::vector<std::string> str;
+    std::vector<VarItem> str;
     ComponentRefNode *const comp = static_cast<ComponentRefNode*>(skipNop(node));
     if (comp &&
         comp->object &&
@@ -281,7 +282,7 @@ std::vector<std::string> getComponentRefLeftParts(Node *node)
                 return str;
             if (ref == PARM_DECL || ref == VAR_DECL)
             {
-                str.push_back(ref->label);
+                str.push_back(VarItem(ref->label));
             }
         }
     }
@@ -297,8 +298,8 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
     Node *arg = skipNop(node->args[0]);
     if (arg)
     {
-        std::string var1 = getVariableName(arg);
-        std::string var2 = getVariableName(node->args[1]);
+        VarItem var1 = getVariableName(arg);
+        VarItem var2 = getVariableName(node->args[1]);
 
         Node *arg0 = arg;
         if (arg == COMPONENT_REF)
@@ -323,10 +324,10 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
                 wi);
 
             if (!var1.empty() &&
-                isNotIn(var2, wi.needCheckNullVars) &&
-                isNotIn(var2, wi.knownVars))
+                isNotIn(var2.name, wi.needCheckNullVars) &&
+                isNotIn(var2.name, wi.knownVars))
             {
-                removeVar(wo, var1);
+                removeVar(wo, var1.name);
             }
         }
         else if (!var1.empty())
@@ -345,19 +346,19 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
                 handled = handleSetVarToFunction(var1, arg, arg1, wo);
                 // have var1 only (var1 = UNKNOWN)
                 if (!handled)
-                    removeVar(wo, var1);
+                    removeVar(wo, var1.name);
             }
             else
             {   // have var1 and var2 (var1 = var2)
-                if (isIn(var2, wi.knownVars))
+                if (isIn(var2.name, wi.knownVars))
                 {
-                    addLinkedVar(wo, var2, var1);
+                    addLinkedVar(wo, var2.name, var1.name);
                 }
                 // var2 not found in known checking pointer
-                else if (isNotIn(var2, wi.needCheckNullVars) &&
-                         isNotIn(var2, wi.knownVars))
+                else if (isNotIn(var2.name, wi.needCheckNullVars) &&
+                         isNotIn(var2.name, wi.knownVars))
                 {
-                    removeVar(wo, var1);
+                    removeVar(wo, var1.name);
                 }
             }
         }
@@ -435,25 +436,25 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
     WalkItem wo2 = wo;
     walkTree(node2, wi, wo2);
 
-    std::string var = getVariableName(node1);
+    VarItem var = getVariableName(node1);
     // if (var != 0)
     if (!var.empty() &&
         wo2.isNum &&
         wo2.num == 0)
     {
-        if (isIn(var, wi.needCheckNullVars) ||
-            isNotIn(var, wi.knownVars))
+        if (isIn(var.name, wi.needCheckNullVars) ||
+            isNotIn(var.name, wi.knownVars))
         {
-            wo.checkedThenNonNullVars.insert(var);
-            wo.checkedElseNullVars.insert(var);
-            wo.knownNonNullVars.insert(var);
-            wo.knownVars.insert(var);
+            wo.checkedThenNonNullVars.insert(var.name);
+            wo.checkedElseNullVars.insert(var.name);
+            wo.knownNonNullVars.insert(var.name);
+            wo.knownVars.insert(var.name);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
             return;
         }
-        else if (isIn(var, wi.knownNonNullVars) ||
-                 isIn(var, wi.knownNullVars))
+        else if (isIn(var.name, wi.knownNonNullVars) ||
+                 isIn(var.name, wi.knownNullVars))
         {
             bool doReport(true);
             // exception for delete operator. it check for var != 0 before really delete
@@ -531,12 +532,12 @@ void analyseNeExpr(NeExprNode *node, const WalkItem &wi, WalkItem &wo)
                 }
             }
 
-            wo.checkedThenNonNullVars.insert(var);
-            wo.checkedElseNullVars.insert(var);
+            wo.checkedThenNonNullVars.insert(var.name);
+            wo.checkedElseNullVars.insert(var.name);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
             if (doReport)
-                reportUselessCheck(node, var);
+                reportUselessCheck(node, var.name);
             return;
         }
     }
@@ -561,34 +562,34 @@ void analyseEqExpr(EqExprNode *node, const WalkItem &wi, WalkItem &wo)
     WalkItem wo2 = wo;
     walkTree(node2, wi, wo2);
 
-    std::string var = getVariableName(node1);
+    VarItem var = getVariableName(node1);
     // if (var == 0)
     if (!var.empty() &&
         wo2.isNum &&
         wo2.num == 0)
     {
-        if (isIn(var, wi.needCheckNullVars) ||
-            isNotIn(var, wi.knownVars))
+        if (isIn(var.name, wi.needCheckNullVars) ||
+            isNotIn(var.name, wi.knownVars))
         {
-            wo.checkedThenNullVars.insert(var);
-            wo.checkedElseNonNullVars.insert(var);
-            wo.knownNullVars.insert(var);
-            wo.knownVars.insert(var);
+            wo.checkedThenNullVars.insert(var.name);
+            wo.checkedElseNonNullVars.insert(var.name);
+            wo.knownNullVars.insert(var.name);
+            wo.knownVars.insert(var.name);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
-            if (isIn(var, wi.knownNullVars) ||
-                isIn(var, wi.knownNonNullVars))
+            if (isIn(var.name, wi.knownNullVars) ||
+                isIn(var.name, wi.knownNonNullVars))
             {
-                reportUselessCheck(node, var);
+                reportUselessCheck(node, var.name);
             }
             return;
         }
-        else if (isIn(var, wi.knownNullVars) ||
-                 isIn(var, wi.knownNonNullVars))
+        else if (isIn(var.name, wi.knownNullVars) ||
+                 isIn(var.name, wi.knownNonNullVars))
         {
-            wo.checkedThenNullVars.insert(var);
-            wo.checkedElseNonNullVars.insert(var);
-            reportUselessCheck(node, var);
+            wo.checkedThenNullVars.insert(var.name);
+            wo.checkedElseNonNullVars.insert(var.name);
+            reportUselessCheck(node, var.name);
             wo.cleanExpr = true;
             wo.uselessExpr = false;
             return;
@@ -975,7 +976,7 @@ void handleSetVarDecl(Node *node,
     }
 }
 
-bool handleSetVarToFunctionBack(const std::string &var,
+bool handleSetVarToFunctionBack(const VarItem &var,
                                 Node *node2,
                                 WalkItem &wo)
 {
@@ -985,15 +986,15 @@ bool handleSetVarToFunctionBack(const std::string &var,
     if (wo2.isNum)
     {
         if (wo2.num == 0)
-            addNullVar(wo, var);
+            addNullVar(wo, var.name);
         else
-            addNonNullVar(wo, var);
+            addNonNullVar(wo, var.name);
         return true;
     }
     return false;
 }
 
-bool handleSetVarToFunction(const std::string &var,
+bool handleSetVarToFunction(const VarItem &var,
                             Node *node1,
                             Node *node2,
                             WalkItem &wo)
@@ -1009,8 +1010,8 @@ bool handleSetVarToFunction(const std::string &var,
 
     if (node2 == nullptr)
     {   // type *var;
-        if (isNotIn(var, wo.knownVars))
-            addUnknownVar(wo, var);
+        if (isNotIn(var.name, wo.knownVars))
+            addUnknownVar(wo, var.name);
         return true;
     }
 
@@ -1021,9 +1022,9 @@ bool handleSetVarToFunction(const std::string &var,
         {
             VarDeclNode *varDecl = static_cast<VarDeclNode*>(skipNop(addr->args[0]));
             if (skipNop(varDecl->varType) != POINTER_TYPE)
-                addNonNullVar(wo, var);
+                addNonNullVar(wo, var.name);
             else
-                addUnknownVar(wo, var);
+                addUnknownVar(wo, var.name);
             return true;
         }
     }
@@ -1074,7 +1075,7 @@ bool handleSetVarToFunction(const std::string &var,
         return false;
     }
     FunctionDeclNode *func = static_cast<FunctionDeclNode*>(skipNop(addr->args[0]));
-    removeVar(wo, var);
+    removeVar(wo, var.name);
 
     if (func->label != "__comp_ctor ")
     {
@@ -1098,11 +1099,11 @@ bool handleSetVarToFunction(const std::string &var,
         func->label == "operator new []" ||
         func->label == "__comp_ctor ")
     {   // function have attribute returns_nonnull. This mean result cant be null
-        addNonNullVar(wo, var);
+        addNonNullVar(wo, var.name);
     }
     else
     {   // function not have attribute returns_nonnull. This mean result can be null
-        addUnknownVar(wo, var);
+        addUnknownVar(wo, var.name);
     }
     return true;
 }
@@ -1113,8 +1114,8 @@ void handleSetVar(Node *node1,
                   WalkItem &wo)
 {
     // var1 = var2
-    const std::string var1 = getVariableName(node1);
-    const std::string var2 = getVariableName(node2);
+    const VarItem var1 = getVariableName(node1);
+    const VarItem var2 = getVariableName(node2);
     if (var1.empty())
         return;
     if (var2.empty())
@@ -1125,10 +1126,10 @@ void handleSetVar(Node *node1,
     }
     else
     {
-        if (isIn(var2, wi.knownVars))
-            addLinkedVar(wo, var2, var1);
+        if (isIn(var2.name, wi.knownVars))
+            addLinkedVar(wo, var2.name, var1.name);
         else
-            addUnknownVar(wo, var1);
+            addUnknownVar(wo, var1.name);
     }
 }
 

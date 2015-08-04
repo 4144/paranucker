@@ -24,6 +24,7 @@
 
 #include "analysis/analysis.h"
 #include "analysis/expression.h"
+#include "analysis/varitem.h"
 #include "analysis/walkitem.h"
 
 #include "nodes/base/node.h"
@@ -95,12 +96,12 @@ void reportParmDeclNullPointer(Node *mainNode,
             auto vars = getComponentRefParts(node);
             FOR_EACH (var, vars)
             {
-                if (isIn(var, wi.needCheckNullVars) ||
-                    isNotIn(var, wi.knownVars))
+                if (isIn(var.name, wi.needCheckNullVars) ||
+                    isNotIn(var.name, wi.knownVars))
                 {
                     Log::warn(findBackLocation(mainNode),
                         "Using variable '%s' without checking for null pointer",
-                        var);
+                        var.name);
                 }
             }
         }
@@ -120,11 +121,11 @@ void reportParmDeclLeftNullPointer(Node *mainNode,
             auto vars = getComponentRefLeftParts(node);
             FOR_EACH (var, vars)
             {
-                if (isIn(var, wi.needCheckNullVars))
+                if (isIn(var.name, wi.needCheckNullVars))
                 {
                     Log::warn(findBackLocation(mainNode),
                         "Using field '%s' without checking for null pointer",
-                        var);
+                        var.name);
                 }
             }
         }
@@ -144,11 +145,11 @@ void reportComponentRefNullPointer(Node *mainNode,
             auto vars = getComponentRefParts(node);
             FOR_EACH (var, vars)
             {
-                if (isIn(var, wi.needCheckNullVars))
+                if (isIn(var.name, wi.needCheckNullVars))
                 {
                     Log::warn(findBackLocation(mainNode),
                         "Using field '%s' without checking for null pointer",
-                        var);
+                        var.name);
                 }
             }
         }
@@ -185,8 +186,8 @@ void reportParmDeclAttrNullPointer(Node *mainNode,
         }
         else if (node == COMPONENT_REF)
         {
-            std::string var = getComponentRefVariable(node);
-            if (isIn(var, wi.needCheckNullVars))
+            VarItem var = getComponentRefVariable(node);
+            if (isIn(var.name, wi.needCheckNullVars))
                 reportPossibleNullPointer(mainNode, node->label);
         }
     }

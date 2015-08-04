@@ -42,6 +42,7 @@ struct TruthAndExprNode;
 struct TruthAndIfExprNode;
 struct TruthOrExprNode;
 struct TruthOrIfExprNode;
+struct VarItem;
 struct WalkItem;
 
 #include <vector>
@@ -95,18 +96,18 @@ namespace Analysis
                           const WalkItem &wi,
                           WalkItem &wo);
 
-    std::string getComponentRefVariable(Node *node);
+    VarItem getComponentRefVariable(Node *node);
 
-    std::vector<std::string> getComponentRefParts(Node *node);
+    std::vector<VarItem> getComponentRefParts(Node *node);
 
-    std::vector<std::string> getComponentRefLeftParts(Node *node);
+    std::vector<VarItem> getComponentRefLeftParts(Node *node);
 
-    bool handleSetVarToFunction(const std::string &var,
+    bool handleSetVarToFunction(const VarItem &var,
                                 Node *node1,
                                 Node *node2,
                                 WalkItem &wo);
 
-    bool isValidVar(const std::string &str);
+    bool isValidVar(const VarItem &str);
 }
 
 #endif // ANALYSIS_EXPRESSION_H
