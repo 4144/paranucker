@@ -1,16 +1,16 @@
 test08.cpp: In member function 'void Object1::func2(int*)':
-test08.cpp:20:20: warning: Using parameter 'ptr2' without checking for null pointer
+test08.cpp:20:20: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 200;
                     ^
 test08.cpp: In member function 'void Object1::func3(int*)':
-test08.cpp:28:20: warning: Using parameter 'ptr3' without checking for null pointer
+test08.cpp:28:20: warning: Using variable 'ptr3' without checking for null pointer
          *ptr3 = 300;
                     ^
 test08.cpp: In member function 'void Object1::func6(int*)':
 test08.cpp:55:18: warning: Useless variable check 'ptr6'. It already was checked before
              if (!ptr6)
                   ^
-test08.cpp:59:20: warning: Using parameter 'ptr6' without checking for null pointer
+test08.cpp:59:20: warning: Using variable 'ptr6' without checking for null pointer
          *ptr6 = 600;
                     ^
 test08.cpp: In member function 'void Object1::func7(int*)':

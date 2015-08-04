@@ -1,10 +1,10 @@
 test18.cpp: In function 'int func3(Data1*, Data1*)':
-test18.cpp:28:20: warning: Using parameter 'ptr1' without checking for null pointer
+test18.cpp:28:20: warning: Using variable 'ptr1' without checking for null pointer
      ptr1->val = 100;
                     ^
-test18.cpp:28:20: warning: Using field 'ptr1' without checking for null pointer
+test18.cpp:28:20: warning: Using variable 'ptr1' without checking for null pointer
 test18.cpp: In function 'void func4(Data1*, Data1*)':
-test18.cpp:40:20: warning: Using parameter 'ptr1' without checking for null pointer
+test18.cpp:40:20: warning: Using variable 'ptr1' without checking for null pointer
      ptr1->val = 100;
                     ^
-test18.cpp:40:20: warning: Using field 'ptr1' without checking for null pointer
+test18.cpp:40:20: warning: Using variable 'ptr1' without checking for null pointer

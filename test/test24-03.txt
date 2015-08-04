@@ -42,7 +42,7 @@ void_type : ptr1,
 type_decl void: ptr1, 
 integer_cst 64: ptr1, 
 test24.c: In function 'func1':
-test24.c:33:5: warning: Using parameter 'ptr1' without checking for null pointer
+test24.c:33:5: warning: Using variable 'ptr1' without checking for null pointer
      ptr1();
      ^
 block : ptr1, 
@@ -244,7 +244,7 @@ integer_cst 2: data, ptr1,
 integer_cst 1: data, ptr1, 
 test24.c:58:5: warning: Using variable 'data' without checking for null pointer
 test24.c:58:5: warning: Using variable 'data->fptr2' without checking for null pointer
-test24.c:58:5: warning: Using parameter 'ptr1' without checking for null pointer
+test24.c:58:5: warning: Using variable 'ptr1' without checking for null pointer
 parm_decl ptr1: data, ptr1, 
 pointer_type : data, ptr1, 
 record_type : data, ptr1, 
@@ -274,7 +274,7 @@ call_expr : data, ptr1,
 indirect_ref : data, ptr1, 
 pointer_plus_expr : data, ptr1, 
 test24.c: In function 'func6':
-test24.c:64:11: warning: Using parameter 'ptr1' without checking for null pointer
+test24.c:64:11: warning: Using variable 'ptr1' without checking for null pointer
      (*ptr1[1])(data);
            ^
 parm_decl ptr1: data, ptr1, 
@@ -403,7 +403,7 @@ integer_cst 32: w1, w2,
 integer_cst -2147483648: w1, w2, 
 integer_cst 2147483647: w1, w2, 
 test24.c: In function 'func7':
-test24.c:80:13: warning: Using parameter 'w1' without checking for null pointer
+test24.c:80:13: warning: Using variable 'w1' without checking for null pointer
          if ((*fptr[i])(w1,w2))
              ^
 parm_decl w1: w1, w2, 
@@ -531,7 +531,7 @@ call_expr : fptr,
 indirect_ref : fptr, 
 pointer_plus_expr : fptr, 
 test24.c: In function 'func8':
-test24.c:87:9: warning: Using parameter 'fptr' without checking for null pointer
+test24.c:87:9: warning: Using variable 'fptr' without checking for null pointer
      fptr[1]("", "");
          ^
 parm_decl fptr: fptr, 

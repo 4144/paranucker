@@ -27,7 +27,7 @@ integer_cst 64: ptr1, ptr2,
 integer_cst 0: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test15.c: In function 'func1':
-test15.c:7:15: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:7:15: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 400;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -41,7 +41,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 400: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:11:15: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:11:15: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 100;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -55,7 +55,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 100: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:13:15: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:13:15: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 200;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -69,7 +69,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 200: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:14:11: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:14:11: warning: Using variable 'ptr2' without checking for null pointer
      *ptr2 = 300;
            ^
 indirect_ref : ptr1, ptr2, 
@@ -113,7 +113,7 @@ integer_cst 0: ptr1, ptr2,
 statement_list : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test15.c: In function 'func2':
-test15.c:21:15: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:21:15: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 400;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -128,7 +128,7 @@ integer_cst 64: ptr1, ptr2,
 integer_cst 400: ptr1, ptr2, 
 return_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:26:15: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:26:15: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 100;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -142,7 +142,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 100: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:29:11: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:29:11: warning: Using variable 'ptr1' without checking for null pointer
      *ptr1 = 200;
            ^
 indirect_ref : ptr1, ptr2, 
@@ -156,7 +156,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 200: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:30:11: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:30:11: warning: Using variable 'ptr2' without checking for null pointer
      *ptr2 = 300;
            ^
 indirect_ref : ptr1, ptr2, 
@@ -241,7 +241,7 @@ integer_cst 64: ptr2,
 integer_cst 200: ptr2, 
 modify_expr : ptr1, ptr2, 
 test15.c: In function 'func3':
-test15.c:46:11: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:46:11: warning: Using variable 'ptr2' without checking for null pointer
      *ptr2 = 300;
            ^
 indirect_ref : ptr2, 
@@ -456,7 +456,7 @@ integer_cst 64:
 integer_cst 100: 
 modify_expr : ptr1, ptr2, 
 test15.c: In function 'func5':
-test15.c:77:11: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:77:11: warning: Using variable 'ptr1' without checking for null pointer
      *ptr1 = 200;
            ^
 indirect_ref : ptr1, ptr2, 
@@ -470,7 +470,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 200: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:78:11: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:78:11: warning: Using variable 'ptr2' without checking for null pointer
      *ptr2 = 300;
            ^
 indirect_ref : ptr1, ptr2, 
@@ -602,7 +602,7 @@ integer_cst 0: ptr1, ptr2,
 statement_list : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test15.c: In function 'func7':
-test15.c:101:15: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:101:15: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 100;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -616,7 +616,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 100: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:102:15: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:102:15: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 200;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -631,7 +631,7 @@ integer_cst 64: ptr1, ptr2,
 integer_cst 200: ptr1, ptr2, 
 return_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:109:11: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:109:11: warning: Using variable 'ptr1' without checking for null pointer
      *ptr1 = 300;
            ^
 indirect_ref : ptr1, ptr2, 
@@ -645,7 +645,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 300: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:110:11: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:110:11: warning: Using variable 'ptr2' without checking for null pointer
      *ptr2 = 400;
            ^
 indirect_ref : ptr1, ptr2, 
@@ -713,7 +713,7 @@ return_expr :
 statement_list : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test15.c: In function 'func8':
-test15.c:123:15: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:123:15: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 300;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -727,7 +727,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 300: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:124:15: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:124:15: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 400;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -794,7 +794,7 @@ integer_cst 0: ptr1, ptr2,
 statement_list : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test15.c: In function 'func9':
-test15.c:136:15: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:136:15: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 100;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -810,7 +810,7 @@ integer_cst 100: ptr1, ptr2,
 return_expr : ptr1, ptr2, 
 statement_list : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:141:15: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:141:15: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 200;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -912,7 +912,7 @@ return_expr :
 statement_list : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test15.c: In function 'func10':
-test15.c:159:15: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:159:15: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 300;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -926,7 +926,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 300: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:160:15: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:160:15: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 400;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -940,7 +940,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 400: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:163:11: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:163:11: warning: Using variable 'ptr1' without checking for null pointer
      *ptr1 = 500;
            ^
 indirect_ref : ptr1, ptr2, 
@@ -954,7 +954,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 500: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:164:11: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:164:11: warning: Using variable 'ptr2' without checking for null pointer
      *ptr2 = 600;
            ^
 indirect_ref : ptr1, ptr2, 
@@ -1021,7 +1021,7 @@ integer_cst 64: ptr2,
 integer_cst 100: ptr2, 
 modify_expr : ptr2, 
 test15.c: In function 'func11':
-test15.c:172:15: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:172:15: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 200;
                ^
 indirect_ref : ptr2, 
@@ -1037,7 +1037,7 @@ integer_cst 200: ptr2,
 return_expr : ptr2, 
 statement_list : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:177:15: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:177:15: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 300;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -1051,7 +1051,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 300: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:178:15: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:178:15: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 400;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -1065,7 +1065,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 400: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:181:11: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:181:11: warning: Using variable 'ptr1' without checking for null pointer
      *ptr1 = 500;
            ^
 indirect_ref : ptr1, ptr2, 
@@ -1079,7 +1079,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 500: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:182:11: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:182:11: warning: Using variable 'ptr2' without checking for null pointer
      *ptr2 = 600;
            ^
 indirect_ref : ptr1, ptr2, 
@@ -1123,7 +1123,7 @@ integer_cst 0: ptr1, ptr2,
 statement_list : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test15.c: In function 'func12':
-test15.c:189:15: warning: Using parameter 'ptr1' without checking for null pointer
+test15.c:189:15: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 100;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -1137,7 +1137,7 @@ integer_cst 2147483647: ptr1, ptr2,
 integer_cst 64: ptr1, ptr2, 
 integer_cst 100: ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:190:15: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:190:15: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 200;
                ^
 indirect_ref : ptr1, ptr2, 
@@ -1164,7 +1164,7 @@ integer_cst 2147483647: ptr2,
 integer_cst 64: ptr2, 
 integer_cst 300: ptr2, 
 modify_expr : ptr2, 
-test15.c:196:15: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:196:15: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 400;
                ^
 indirect_ref : ptr2, 
@@ -1189,7 +1189,7 @@ integer_cst 2147483647: ptr2,
 integer_cst 64: ptr2, 
 integer_cst 500: ptr2, 
 modify_expr : ptr1, ptr2, 
-test15.c:200:11: warning: Using parameter 'ptr2' without checking for null pointer
+test15.c:200:11: warning: Using variable 'ptr2' without checking for null pointer
      *ptr2 = 600;
            ^
 indirect_ref : ptr2, 

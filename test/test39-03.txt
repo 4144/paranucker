@@ -369,10 +369,10 @@ expr_stmt : ptr1,
 convert_expr : ptr1, 
 modify_expr : ptr1, 
 test39.cpp: In member function 'void Object1::func1(Data1*) const':
-test39.cpp:63:24: warning: Using parameter 'ptr1' without checking for null pointer
+test39.cpp:63:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 100;
                         ^
-test39.cpp:63:24: warning: Using field 'ptr1' without checking for null pointer
+test39.cpp:63:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, 
 indirect_ref : ptr1, 
 parm_decl ptr1: ptr1, 
@@ -437,10 +437,10 @@ cleanup_point_expr : ptr1,
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
-test39.cpp:73:22: warning: Using parameter 'ptr1' without checking for null pointer
+test39.cpp:73:22: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 0;
                       ^
-test39.cpp:73:22: warning: Using field 'ptr1' without checking for null pointer
+test39.cpp:73:22: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, 
 indirect_ref : ptr1, 
 parm_decl ptr1: ptr1, 
@@ -553,7 +553,7 @@ expr_stmt : ptr1,
 convert_expr : ptr1, 
 modify_expr : ptr1, 
 test39.cpp: In member function 'void Object1::func2(Data1*) const':
-test39.cpp:96:51: warning: Using parameter 'ptr1' without checking for null pointer
+test39.cpp:96:51: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->ptrval = reinterpret_cast<Data1*>(1);
                                                    ^
 component_ref : ptr1, 
@@ -569,7 +569,7 @@ pointer_type : ptr1,
 record_type : ptr1, 
 type_decl Data1: ptr1, 
 integer_cst 1: ptr1, 
-test39.cpp:96:15: warning: Using field 'ptr1' without checking for null pointer
+test39.cpp:96:15: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->ptrval = reinterpret_cast<Data1*>(1);
                ^
 integer_cst 1: ptr1, 
@@ -670,7 +670,7 @@ expr_stmt : ptr1,
 convert_expr : ptr1, 
 modify_expr : ptr1, 
 test39.cpp: In member function 'void Object1::func3(Data1*) const':
-test39.cpp:119:25: warning: Using parameter 'ptr1' without checking for null pointer
+test39.cpp:119:25: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->ptrval = 0;
                          ^
 component_ref : ptr1, 
@@ -686,7 +686,7 @@ pointer_type : ptr1,
 record_type : ptr1, 
 type_decl Data1: ptr1, 
 integer_cst 0: ptr1, 
-test39.cpp:119:15: warning: Using field 'ptr1' without checking for null pointer
+test39.cpp:119:15: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->ptrval = 0;
                ^
 integer_cst 0: ptr1, 
@@ -1328,7 +1328,7 @@ addr_expr : ptr1,
 function_decl paranuckerInternalTest: ptr1, 
 return_expr : ptr1, 
 init_expr : ptr1, 
-test39.cpp:238:22: warning: Using field 'ptr1' without checking for null pointer
+test39.cpp:238:22: warning: Using variable 'ptr1' without checking for null pointer
          return ptr1->val;
                       ^
 result_decl : ptr1, 
@@ -1427,10 +1427,10 @@ function_decl paranuckerInternalTest: ptr1, ptr2,
 if_stmt : ptr1, ptr2, 
 eq_expr : ptr1, ptr2, 
 test39.cpp: In member function 'void Object1::func7(Data1*, Data1*) const':
-test39.cpp:252:23: warning: Using field 'ptr1' without checking for null pointer
+test39.cpp:252:23: warning: Using variable 'ptr1' without checking for null pointer
          if (ptr1->val == ptr2->val)
                        ^
-test39.cpp:252:23: warning: Using field 'ptr2' without checking for null pointer
+test39.cpp:252:23: warning: Using variable 'ptr2' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr2: ptr1, ptr2, 

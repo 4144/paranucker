@@ -1,5 +1,5 @@
 test24.c: In function 'func1':
-test24.c:33:5: warning: Using parameter 'ptr1' without checking for null pointer
+test24.c:33:5: warning: Using variable 'ptr1' without checking for null pointer
      ptr1();
      ^
 test24.c: In function 'func3':
@@ -19,19 +19,19 @@ test24.c:58:5: warning: Using variable 'data' without checking for null pointer
 test24.c:58:5: warning: Using variable 'data->fptr2' without checking for null pointer
 test24.c:58:5: warning: Using variable 'data' without checking for null pointer
 test24.c:58:5: warning: Using variable 'data->fptr2' without checking for null pointer
-test24.c:58:5: warning: Using parameter 'ptr1' without checking for null pointer
+test24.c:58:5: warning: Using variable 'ptr1' without checking for null pointer
 test24.c: In function 'func6':
-test24.c:64:11: warning: Using parameter 'ptr1' without checking for null pointer
+test24.c:64:11: warning: Using variable 'ptr1' without checking for null pointer
      (*ptr1[1])(data);
            ^
 test24.c:64:5: warning: Using variable 'data' without checking for null pointer
      (*ptr1[1])(data);
      ^
 test24.c: In function 'func7':
-test24.c:80:13: warning: Using parameter 'w1' without checking for null pointer
+test24.c:80:13: warning: Using variable 'w1' without checking for null pointer
          if ((*fptr[i])(w1,w2))
              ^
 test24.c: In function 'func8':
-test24.c:87:9: warning: Using parameter 'fptr' without checking for null pointer
+test24.c:87:9: warning: Using variable 'fptr' without checking for null pointer
      fptr[1]("", "");
          ^

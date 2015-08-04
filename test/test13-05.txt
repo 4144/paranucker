@@ -2,7 +2,7 @@ function_decl func1:
 bind_expr : b, 
 modify_expr : b, 
 test13.c: In function 'func1':
-test13.c:12:8: warning: Using parameter 'b' without checking for null pointer
+test13.c:12:8: warning: Using variable 'b' without checking for null pointer
      *b = 100;
         ^
 indirect_ref : b, 
@@ -22,7 +22,7 @@ modify_expr : b,
 indirect_ref : b, 
 pointer_plus_expr : b, 
 test13.c: In function 'func2':
-test13.c:17:9: warning: Using parameter 'b' without checking for null pointer
+test13.c:17:9: warning: Using variable 'b' without checking for null pointer
      *(1 + b) = 200;
          ^
 parm_decl b: b, 
@@ -42,7 +42,7 @@ modify_expr : b,
 indirect_ref : b, 
 pointer_plus_expr : b, 
 test13.c: In function 'func3':
-test13.c:22:9: warning: Using parameter 'b' without checking for null pointer
+test13.c:22:9: warning: Using variable 'b' without checking for null pointer
      *(1 + (1 + b)) = 300;
          ^
 parm_decl b: b, 
@@ -72,7 +72,7 @@ modify_expr : b,
 indirect_ref : b, 
 pointer_plus_expr : b, 
 test13.c: In function 'func5':
-test13.c:28:12: warning: Using parameter 'b' without checking for null pointer
+test13.c:28:12: warning: Using variable 'b' without checking for null pointer
      *(var1 + b) = 400;
             ^
 parm_decl b: b, 
@@ -193,7 +193,7 @@ statement_list : b,
 decl_expr : b, 
 pointer_plus_expr : b, 
 test13.c: In function 'func7':
-test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
+test13.c:39:20: warning: Using variable 'b' without checking for null pointer
      int *var3 = 12 + b;
                     ^
 parm_decl b: b, 
@@ -204,7 +204,7 @@ integer_cst 48: b,
 var_decl var3: b, 
 integer_cst 64: b, 
 pointer_plus_expr : b, 
-test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
+test13.c:39:20: warning: Using variable 'b' without checking for null pointer
 parm_decl b: b, 
 pointer_type : b, 
 integer_type : b, 
@@ -221,7 +221,7 @@ indirect_ref : b,
 var_decl var3: b, 
 integer_cst 64: b, 
 pointer_plus_expr : b, 
-test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
+test13.c:39:20: warning: Using variable 'b' without checking for null pointer
 parm_decl b: b, 
 pointer_type : b, 
 integer_type : b, 
@@ -237,7 +237,7 @@ integer_cst 600: b,
 var_decl var3: b, 
 integer_cst 64: b, 
 pointer_plus_expr : b, 
-test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
+test13.c:39:20: warning: Using variable 'b' without checking for null pointer
 parm_decl b: b, 
 pointer_type : b, 
 integer_type : b, 
@@ -257,7 +257,7 @@ block : b,
 var_decl var3: b, 
 integer_cst 64: b, 
 pointer_plus_expr : b, 
-test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
+test13.c:39:20: warning: Using variable 'b' without checking for null pointer
 parm_decl b: b, 
 pointer_type : b, 
 integer_type : b, 
@@ -270,7 +270,7 @@ integer_cst 32: b,
 integer_cst -2147483648: b, 
 integer_cst 2147483647: b, 
 pointer_plus_expr : b, 
-test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
+test13.c:39:20: warning: Using variable 'b' without checking for null pointer
 parm_decl b: b, 
 pointer_type : b, 
 integer_type : b, 
@@ -286,7 +286,7 @@ statement_list : bptr,
 decl_expr : bptr, 
 addr_expr : bptr, 
 test13.c: In function 'func8':
-test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
+test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
      int **var4 = &bptr;
                   ^
 parm_decl bptr: bptr, 
@@ -296,7 +296,7 @@ integer_cst 64: bptr,
 var_decl var4: bptr, 
 integer_cst 64: bptr, 
 addr_expr : bptr, 
-test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
+test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
 parm_decl bptr: bptr, 
 pointer_type : bptr, 
 integer_type : bptr, 
@@ -314,7 +314,7 @@ indirect_ref : bptr,
 var_decl var4: bptr, 
 integer_cst 64: bptr, 
 addr_expr : bptr, 
-test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
+test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
 parm_decl bptr: bptr, 
 pointer_type : bptr, 
 integer_type : bptr, 
@@ -330,7 +330,7 @@ integer_cst 700: bptr,
 var_decl var4: bptr, 
 integer_cst 64: bptr, 
 addr_expr : bptr, 
-test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
+test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
 parm_decl bptr: bptr, 
 pointer_type : bptr, 
 integer_type : bptr, 
@@ -350,7 +350,7 @@ block : bptr,
 var_decl var4: bptr, 
 integer_cst 64: bptr, 
 addr_expr : bptr, 
-test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
+test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
 parm_decl bptr: bptr, 
 pointer_type : bptr, 
 integer_type : bptr, 
@@ -363,7 +363,7 @@ integer_cst 32: bptr,
 integer_cst -2147483648: bptr, 
 integer_cst 2147483647: bptr, 
 addr_expr : bptr, 
-test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
+test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
 parm_decl bptr: bptr, 
 pointer_type : bptr, 
 integer_type : bptr, 

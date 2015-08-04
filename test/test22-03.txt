@@ -9470,7 +9470,7 @@ bind_expr : ptr1,
 decl_expr : ptr1, 
 pointer_plus_expr : ptr1, 
 test22.cpp: In member function 'int Object1::func2(Data1*)':
-test22.cpp:45:28: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:45:28: warning: Using variable 'ptr1' without checking for null pointer
          Data1* ptr2 = ptr1 + 1;
                             ^
 parm_decl ptr1: ptr1, 
@@ -9480,7 +9480,7 @@ integer_cst 40: ptr1,
 var_decl ptr2: ptr1, 
 integer_cst 64: ptr1, 
 pointer_plus_expr : ptr1, 
-test22.cpp:45:28: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:45:28: warning: Using variable 'ptr1' without checking for null pointer
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 integer_cst 64: ptr1, 
@@ -9491,7 +9491,7 @@ type_decl Data1: ptr1,
 var_decl ptr2: ptr1, 
 integer_cst 64: ptr1, 
 pointer_plus_expr : ptr1, 
-test22.cpp:45:28: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:45:28: warning: Using variable 'ptr1' without checking for null pointer
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -9505,7 +9505,7 @@ block : ptr1,
 var_decl ptr2: ptr1, 
 integer_cst 64: ptr1, 
 pointer_plus_expr : ptr1, 
-test22.cpp:45:28: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:45:28: warning: Using variable 'ptr1' without checking for null pointer
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 integer_cst 64: ptr1, 
@@ -9514,7 +9514,7 @@ pointer_type : ptr1,
 record_type : ptr1, 
 type_decl Data1: ptr1, 
 pointer_plus_expr : ptr1, 
-test22.cpp:45:28: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:45:28: warning: Using variable 'ptr1' without checking for null pointer
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -9527,7 +9527,7 @@ statement_list : ptr1,
 decl_expr : ptr1, 
 addr_expr : ptr1, 
 test22.cpp: In member function 'int Object1::func3(Data1*)':
-test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:50:17: warning: Using variable 'ptr1' without checking for null pointer
          Data1** ptr2 = &ptr1;
                  ^
 parm_decl ptr1: ptr1, 
@@ -9537,7 +9537,7 @@ integer_cst 64: ptr1,
 var_decl ptr2: ptr1, 
 integer_cst 64: ptr1, 
 addr_expr : ptr1, 
-test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:50:17: warning: Using variable 'ptr1' without checking for null pointer
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -9556,7 +9556,7 @@ indirect_ref : ptr1,
 var_decl ptr2: ptr1, 
 integer_cst 64: ptr1, 
 addr_expr : ptr1, 
-test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:50:17: warning: Using variable 'ptr1' without checking for null pointer
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -9576,7 +9576,7 @@ integer_cst 10: ptr1,
 var_decl ptr2: ptr1, 
 integer_cst 64: ptr1, 
 addr_expr : ptr1, 
-test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:50:17: warning: Using variable 'ptr1' without checking for null pointer
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -9590,7 +9590,7 @@ block : ptr1,
 var_decl ptr2: ptr1, 
 integer_cst 64: ptr1, 
 addr_expr : ptr1, 
-test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:50:17: warning: Using variable 'ptr1' without checking for null pointer
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -9600,7 +9600,7 @@ pointer_type : ptr1,
 record_type : ptr1, 
 type_decl Data1: ptr1, 
 addr_expr : ptr1, 
-test22.cpp:50:17: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:50:17: warning: Using variable 'ptr1' without checking for null pointer
 parm_decl ptr1: ptr1, 
 pointer_type : ptr1, 
 record_type : ptr1, 
@@ -9615,7 +9615,7 @@ call_expr : ptr1,
 addr_expr : ptr1, 
 function_decl ftest1: ptr1, 
 test22.cpp: In member function 'void Object1::func4(Data1*)':
-test22.cpp:56:25: warning: Using parameter 'ptr1' without checking for null pointer
+test22.cpp:56:25: warning: Using variable 'ptr1' without checking for null pointer
          if (ptr1->ftest1() == 100)
                          ^
 parm_decl ptr1: ptr1, 

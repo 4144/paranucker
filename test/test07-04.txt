@@ -1,9 +1,9 @@
 test07.cpp: In member function 'void Object1::func2(int*)':
-test07.cpp:27:18: warning: Using parameter 'aptr' without checking for null pointer
+test07.cpp:27:18: warning: Using variable 'aptr' without checking for null pointer
          *aptr = 0;
                   ^
 test07.cpp: In member function 'void Object1::func5(Struct1*)':
-test07.cpp:43:22: warning: Using parameter 'sptr' without checking for null pointer
+test07.cpp:43:22: warning: Using variable 'sptr' without checking for null pointer
          sptr->num = 0;
                       ^
-test07.cpp:43:22: warning: Using field 'sptr' without checking for null pointer
+test07.cpp:43:22: warning: Using variable 'sptr' without checking for null pointer

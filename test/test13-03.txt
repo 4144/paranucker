@@ -1,17 +1,17 @@
 test13.c: In function 'func1':
-test13.c:12:8: warning: Using parameter 'b' without checking for null pointer
+test13.c:12:8: warning: Using variable 'b' without checking for null pointer
      *b = 100;
         ^
 test13.c: In function 'func2':
-test13.c:17:9: warning: Using parameter 'b' without checking for null pointer
+test13.c:17:9: warning: Using variable 'b' without checking for null pointer
      *(1 + b) = 200;
          ^
 test13.c: In function 'func3':
-test13.c:22:9: warning: Using parameter 'b' without checking for null pointer
+test13.c:22:9: warning: Using variable 'b' without checking for null pointer
      *(1 + (1 + b)) = 300;
          ^
 test13.c: In function 'func5':
-test13.c:28:12: warning: Using parameter 'b' without checking for null pointer
+test13.c:28:12: warning: Using variable 'b' without checking for null pointer
      *(var1 + b) = 400;
             ^
 test13.c: In function 'func6':
@@ -19,20 +19,20 @@ test13.c:34:11: warning: Using variable 'var2' without checking for null pointer
      *var2 = 500;
            ^
 test13.c: In function 'func7':
-test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
+test13.c:39:20: warning: Using variable 'b' without checking for null pointer
      int *var3 = 12 + b;
                     ^
-test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
-test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
-test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
-test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
-test13.c:39:20: warning: Using parameter 'b' without checking for null pointer
+test13.c:39:20: warning: Using variable 'b' without checking for null pointer
+test13.c:39:20: warning: Using variable 'b' without checking for null pointer
+test13.c:39:20: warning: Using variable 'b' without checking for null pointer
+test13.c:39:20: warning: Using variable 'b' without checking for null pointer
+test13.c:39:20: warning: Using variable 'b' without checking for null pointer
 test13.c: In function 'func8':
-test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
+test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
      int **var4 = &bptr;
                   ^
-test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
-test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
-test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
-test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
-test13.c:45:18: warning: Using parameter 'bptr' without checking for null pointer
+test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
+test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
+test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
+test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
+test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer

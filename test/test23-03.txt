@@ -9698,7 +9698,7 @@ call_expr : ptr1, this->dataptr,
 addr_expr : ptr1, this->dataptr, 
 function_decl ftest1: ptr1, this->dataptr, 
 test23.cpp: In member function 'void Object1::func3(Data1*)':
-test23.cpp:81:25: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:81:25: warning: Using variable 'ptr1' without checking for null pointer
              ptr1->ftest1();
                          ^
 parm_decl ptr1: ptr1, this->dataptr, 
@@ -9820,7 +9820,7 @@ call_expr : ptr1, this->dataptr,
 addr_expr : ptr1, this->dataptr, 
 function_decl ftest1: ptr1, this->dataptr, 
 test23.cpp: In member function 'void Object1::func5(Data1*)':
-test23.cpp:99:25: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:99:25: warning: Using variable 'ptr1' without checking for null pointer
              ptr1->ftest1();
                          ^
 parm_decl ptr1: ptr1, this->dataptr, 
@@ -9843,7 +9843,7 @@ void_type : ptr1,
 type_decl void: ptr1, 
 integer_cst 64: ptr1, 
 test23.cpp: In member function 'void Object1::func6(FuncPtr1)':
-test23.cpp:105:13: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:105:13: warning: Using variable 'ptr1' without checking for null pointer
          ptr1();
              ^
 function_decl func7: 
@@ -10013,7 +10013,7 @@ pointer_plus_expr : ptr1,
 indirect_ref : ptr1, 
 pointer_plus_expr : ptr1, 
 test23.cpp: In member function 'void Object1::func8(Data1*)':
-test23.cpp:117:28: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:117:28: warning: Using variable 'ptr1' without checking for null pointer
          (ptr1->*fptr2)(ptr1);
                             ^
 parm_decl ptr1: ptr1, 
@@ -10089,7 +10089,7 @@ pointer_type : ptr1,
 tree_list : ptr1, 
 integer_cst -1: ptr1, 
 pointer_plus_expr : ptr1, 
-test23.cpp:117:23: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:117:23: warning: Using variable 'ptr1' without checking for null pointer
          (ptr1->*fptr2)(ptr1);
                        ^
 parm_decl ptr1: ptr1, 
@@ -10316,7 +10316,7 @@ pointer_plus_expr : ptr1, ptr2,
 indirect_ref : ptr1, ptr2, 
 pointer_plus_expr : ptr1, ptr2, 
 test23.cpp: In member function 'void Object1::func10(Data1*, Data1*)':
-test23.cpp:128:28: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:128:28: warning: Using variable 'ptr1' without checking for null pointer
          (ptr1->*fptr2)(ptr2);
                             ^
 parm_decl ptr1: ptr1, ptr2, 
@@ -10392,7 +10392,7 @@ pointer_type : ptr1, ptr2,
 tree_list : ptr1, ptr2, 
 integer_cst -1: ptr1, ptr2, 
 pointer_plus_expr : ptr1, ptr2, 
-test23.cpp:128:23: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:128:23: warning: Using variable 'ptr1' without checking for null pointer
          (ptr1->*fptr2)(ptr2);
                        ^
 parm_decl ptr1: ptr1, ptr2, 

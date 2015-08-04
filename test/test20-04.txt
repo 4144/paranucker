@@ -2,7 +2,7 @@ test20.c: In function 'func2':
 test20.c:16:15: warning: Using variable 'ptr3' without checking for null pointer
      ptr3->val = 100;
                ^
-test20.c:16:15: warning: Using field 'ptr3' without checking for null pointer
+test20.c:16:15: warning: Using variable 'ptr3' without checking for null pointer
 test20.c: In function 'func4':
 test20.c:31:14: warning: Useless variable check 'ptr1'. It already was checked before
      else if (!ptr1 && ptr2)
@@ -11,22 +11,22 @@ test20.c: In function 'func6':
 test20.c:52:15: warning: Using variable 'ptr3' without checking for null pointer
      ptr3->val = 100;
                ^
-test20.c:52:15: warning: Using field 'ptr3' without checking for null pointer
+test20.c:52:15: warning: Using variable 'ptr3' without checking for null pointer
 test20.c: In function 'func7':
-test20.c:66:15: warning: Using parameter 'ptr1' without checking for null pointer
+test20.c:66:15: warning: Using variable 'ptr1' without checking for null pointer
      ptr1->val = 100;
                ^
-test20.c:66:15: warning: Using field 'ptr1' without checking for null pointer
+test20.c:66:15: warning: Using variable 'ptr1' without checking for null pointer
 test20.c:67:15: warning: Using variable 'ptr3' without checking for null pointer
      ptr3->val = 200;
                ^
-test20.c:67:15: warning: Using field 'ptr3' without checking for null pointer
+test20.c:67:15: warning: Using variable 'ptr3' without checking for null pointer
 test20.c: In function 'func8':
-test20.c:81:15: warning: Using parameter 'ptr1' without checking for null pointer
+test20.c:81:15: warning: Using variable 'ptr1' without checking for null pointer
      ptr1->val = 100;
                ^
-test20.c:81:15: warning: Using field 'ptr1' without checking for null pointer
+test20.c:81:15: warning: Using variable 'ptr1' without checking for null pointer
 test20.c:82:15: warning: Using variable 'ptr3' without checking for null pointer
      ptr3->val = 200;
                ^
-test20.c:82:15: warning: Using field 'ptr3' without checking for null pointer
+test20.c:82:15: warning: Using variable 'ptr3' without checking for null pointer

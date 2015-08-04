@@ -164,7 +164,7 @@ integer_cst 64: ptr1,
 integer_cst 0: ptr1, 
 eq_expr : ptr1, 
 test30.cpp: In member function 'void Object1::func2(Data1*)':
-test30.cpp:69:32: warning: Using field 'ptr1' without checking for null pointer
+test30.cpp:69:32: warning: Using variable 'ptr1' without checking for null pointer
          if (!ptr1 && ptr1->val == 10)
                                 ^
 integer_cst 10: ptr1, 

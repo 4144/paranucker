@@ -5,28 +5,28 @@ test23.cpp:55:24: warning: Using variable 'this->dataptr' without checking for n
 test23.cpp: In constructor 'Object1::Object1(Data1*)':
 test23.cpp:55:24: warning: Using variable 'this->dataptr' without checking for null pointer
 test23.cpp: In member function 'void Object1::func3(Data1*)':
-test23.cpp:81:25: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:81:25: warning: Using variable 'ptr1' without checking for null pointer
              ptr1->ftest1();
                          ^
 test23.cpp: In member function 'void Object1::func5(Data1*)':
-test23.cpp:99:25: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:99:25: warning: Using variable 'ptr1' without checking for null pointer
              ptr1->ftest1();
                          ^
 test23.cpp: In member function 'void Object1::func6(FuncPtr1)':
-test23.cpp:105:13: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:105:13: warning: Using variable 'ptr1' without checking for null pointer
          ptr1();
              ^
 test23.cpp: In member function 'void Object1::func8(Data1*)':
-test23.cpp:117:28: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:117:28: warning: Using variable 'ptr1' without checking for null pointer
          (ptr1->*fptr2)(ptr1);
                             ^
-test23.cpp:117:23: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:117:23: warning: Using variable 'ptr1' without checking for null pointer
          (ptr1->*fptr2)(ptr1);
                        ^
 test23.cpp: In member function 'void Object1::func10(Data1*, Data1*)':
-test23.cpp:128:28: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:128:28: warning: Using variable 'ptr1' without checking for null pointer
          (ptr1->*fptr2)(ptr2);
                             ^
-test23.cpp:128:23: warning: Using parameter 'ptr1' without checking for null pointer
+test23.cpp:128:23: warning: Using variable 'ptr1' without checking for null pointer
          (ptr1->*fptr2)(ptr2);
                        ^

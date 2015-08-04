@@ -401,10 +401,10 @@ expr_stmt : ptr1, this->tmp1,
 convert_expr : ptr1, this->tmp1, 
 modify_expr : ptr1, this->tmp1, 
 test27.cpp: In member function 'void Object1::func1(Data1*)':
-test27.cpp:55:28: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:55:28: warning: Using variable 'ptr1' without checking for null pointer
              ptr1->val = 300;
                             ^
-test27.cpp:55:28: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:55:28: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, this->tmp1, 
 indirect_ref : ptr1, this->tmp1, 
 parm_decl ptr1: ptr1, this->tmp1, 
@@ -453,10 +453,10 @@ cleanup_point_expr : ptr1, this->tmp1,
 expr_stmt : ptr1, this->tmp1, 
 convert_expr : ptr1, this->tmp1, 
 modify_expr : ptr1, this->tmp1, 
-test27.cpp:58:24: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:58:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 500;
                         ^
-test27.cpp:58:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:58:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, this->tmp1, 
 indirect_ref : ptr1, this->tmp1, 
 parm_decl ptr1: ptr1, this->tmp1, 
@@ -646,10 +646,10 @@ expr_stmt : ptr1, this->tmp1, this->tmp2,
 convert_expr : ptr1, this->tmp1, this->tmp2, 
 modify_expr : ptr1, this->tmp1, this->tmp2, 
 test27.cpp: In member function 'void Object1::func2(Data1*)':
-test27.cpp:74:28: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:74:28: warning: Using variable 'ptr1' without checking for null pointer
              ptr1->val = 400;
                             ^
-test27.cpp:74:28: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:74:28: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, this->tmp1, this->tmp2, 
 parm_decl ptr1: ptr1, this->tmp1, this->tmp2, 
@@ -727,10 +727,10 @@ cleanup_point_expr : ptr1, this->tmp1, this->tmp2,
 expr_stmt : ptr1, this->tmp1, this->tmp2, 
 convert_expr : ptr1, this->tmp1, this->tmp2, 
 modify_expr : ptr1, this->tmp1, this->tmp2, 
-test27.cpp:78:24: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:78:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 700;
                         ^
-test27.cpp:78:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:78:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, this->tmp1, this->tmp2, 
 indirect_ref : ptr1, this->tmp1, this->tmp2, 
 parm_decl ptr1: ptr1, this->tmp1, this->tmp2, 
@@ -928,10 +928,10 @@ expr_stmt : ptr1, ptr2,
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test27.cpp: In member function 'void Object1::func3(Data1*)':
-test27.cpp:108:24: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:108:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 100;
                         ^
-test27.cpp:108:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:108:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
@@ -1078,7 +1078,7 @@ modify_expr : ptr1, ptr2,
 test27.cpp:132:24: warning: Using variable 'ptr2' without checking for null pointer
          ptr2->val = 200;
                         ^
-test27.cpp:132:24: warning: Using field 'ptr2' without checking for null pointer
+test27.cpp:132:24: warning: Using variable 'ptr2' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 var_decl ptr2: ptr1, ptr2, 
@@ -1163,10 +1163,10 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test27.cpp:146:28: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:146:28: warning: Using variable 'ptr1' without checking for null pointer
              ptr1->val = 300;
                             ^
-test27.cpp:146:28: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:146:28: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
@@ -1296,10 +1296,10 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test27.cpp:170:24: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:170:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 400;
                         ^
-test27.cpp:170:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:170:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
@@ -1454,10 +1454,10 @@ expr_stmt : ptr1,
 convert_expr : ptr1, 
 modify_expr : ptr1, 
 test27.cpp: In member function 'void Object1::func4(Data1*)':
-test27.cpp:192:28: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:192:28: warning: Using variable 'ptr1' without checking for null pointer
              ptr1->val = 100;
                             ^
-test27.cpp:192:28: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:192:28: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, 
 indirect_ref : ptr1, 
 parm_decl ptr1: ptr1, 
@@ -1504,10 +1504,10 @@ cleanup_point_expr : ptr1, ptr2, this->tmp1,
 expr_stmt : ptr1, ptr2, this->tmp1, 
 convert_expr : ptr1, ptr2, this->tmp1, 
 modify_expr : ptr1, ptr2, this->tmp1, 
-test27.cpp:197:28: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:197:28: warning: Using variable 'ptr1' without checking for null pointer
              ptr1->val = 300;
                             ^
-test27.cpp:197:28: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:197:28: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, this->tmp1, 
 indirect_ref : ptr1, ptr2, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, this->tmp1, 
@@ -1556,10 +1556,10 @@ cleanup_point_expr : ptr1, ptr2, this->tmp1,
 expr_stmt : ptr1, ptr2, this->tmp1, 
 convert_expr : ptr1, ptr2, this->tmp1, 
 modify_expr : ptr1, ptr2, this->tmp1, 
-test27.cpp:200:24: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:200:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 500;
                         ^
-test27.cpp:200:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:200:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, this->tmp1, 
 indirect_ref : ptr1, ptr2, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, this->tmp1, 
@@ -1629,10 +1629,10 @@ expr_stmt : ptr1, ptr2, ptr3,
 convert_expr : ptr1, ptr2, ptr3, 
 modify_expr : ptr1, ptr2, ptr3, 
 test27.cpp: In member function 'void Object1::func5(Data1*, Data1*)':
-test27.cpp:207:24: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:207:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 100;
                         ^
-test27.cpp:207:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:207:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, ptr3, 
 indirect_ref : ptr1, ptr2, ptr3, 
 parm_decl ptr1: ptr1, ptr2, ptr3, 
@@ -1669,7 +1669,7 @@ modify_expr : ptr1, ptr2, ptr3,
 test27.cpp:209:24: warning: Using variable 'ptr2' without checking for null pointer
          ptr2->val = 200;
                         ^
-test27.cpp:209:24: warning: Using field 'ptr2' without checking for null pointer
+test27.cpp:209:24: warning: Using variable 'ptr2' without checking for null pointer
 component_ref : ptr1, ptr2, ptr3, 
 indirect_ref : ptr1, ptr2, ptr3, 
 var_decl ptr2: ptr1, ptr2, ptr3, 
@@ -1698,10 +1698,10 @@ cleanup_point_expr : ptr1, ptr2, ptr3,
 expr_stmt : ptr1, ptr2, ptr3, 
 convert_expr : ptr1, ptr2, ptr3, 
 modify_expr : ptr1, ptr2, ptr3, 
-test27.cpp:212:28: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:212:28: warning: Using variable 'ptr1' without checking for null pointer
              ptr1->val = 300;
                             ^
-test27.cpp:212:28: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:212:28: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, ptr3, 
 indirect_ref : ptr1, ptr2, ptr3, 
 parm_decl ptr1: ptr1, ptr2, ptr3, 
@@ -1735,10 +1735,10 @@ cleanup_point_expr : ptr1, ptr2, ptr3,
 expr_stmt : ptr1, ptr2, ptr3, 
 convert_expr : ptr1, ptr2, ptr3, 
 modify_expr : ptr1, ptr2, ptr3, 
-test27.cpp:215:24: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:215:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 400;
                         ^
-test27.cpp:215:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:215:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, ptr3, 
 indirect_ref : ptr1, ptr2, ptr3, 
 parm_decl ptr1: ptr1, ptr2, ptr3, 
@@ -1772,10 +1772,10 @@ cleanup_point_expr : ptr1, ptr2, ptr3,
 expr_stmt : ptr1, ptr2, ptr3, 
 convert_expr : ptr1, ptr2, ptr3, 
 modify_expr : ptr1, ptr2, ptr3, 
-test27.cpp:217:24: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:217:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 500;
                         ^
-test27.cpp:217:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:217:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, ptr3, 
 indirect_ref : ptr1, ptr2, ptr3, 
 parm_decl ptr1: ptr1, ptr2, ptr3, 
@@ -1809,10 +1809,10 @@ expr_stmt : ptr1, ptr3,
 convert_expr : ptr1, ptr3, 
 modify_expr : ptr1, ptr3, 
 test27.cpp: In member function 'void Object1::func6(Data1*, Data1*)':
-test27.cpp:222:24: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:222:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 100;
                         ^
-test27.cpp:222:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:222:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr3, 
 indirect_ref : ptr1, ptr3, 
 parm_decl ptr1: ptr1, ptr3, 
@@ -1924,10 +1924,10 @@ cleanup_point_expr : ptr1, ptr3,
 expr_stmt : ptr1, ptr3, 
 convert_expr : ptr1, ptr3, 
 modify_expr : ptr1, ptr3, 
-test27.cpp:230:24: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:230:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 400;
                         ^
-test27.cpp:230:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:230:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr3, 
 indirect_ref : ptr1, ptr3, 
 parm_decl ptr1: ptr1, ptr3, 
@@ -1968,7 +1968,7 @@ cleanup_point_expr : ptr1, ptr3,
 expr_stmt : ptr3, 
 convert_expr : ptr3, 
 modify_expr : ptr3, 
-test27.cpp:232:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:232:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 500;
                         ^
 component_ref : ptr3, 
@@ -2021,10 +2021,10 @@ expr_stmt : ptr1, ptr2, ptr3, this->tmp1,
 convert_expr : ptr1, ptr2, ptr3, this->tmp1, 
 modify_expr : ptr1, ptr2, ptr3, this->tmp1, 
 test27.cpp: In member function 'void Object1::func7(Data1*, Data1*)':
-test27.cpp:239:24: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:239:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 100;
                         ^
-test27.cpp:239:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:239:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, ptr3, this->tmp1, 
@@ -2061,7 +2061,7 @@ modify_expr : ptr1, ptr2, ptr3, this->tmp1,
 test27.cpp:241:24: warning: Using variable 'ptr2' without checking for null pointer
          ptr2->val = 200;
                         ^
-test27.cpp:241:24: warning: Using field 'ptr2' without checking for null pointer
+test27.cpp:241:24: warning: Using variable 'ptr2' without checking for null pointer
 component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 var_decl ptr2: ptr1, ptr2, ptr3, this->tmp1, 
@@ -2090,10 +2090,10 @@ cleanup_point_expr : ptr1, ptr2, ptr3, this->tmp1,
 expr_stmt : ptr1, ptr2, ptr3, this->tmp1, 
 convert_expr : ptr1, ptr2, ptr3, this->tmp1, 
 modify_expr : ptr1, ptr2, ptr3, this->tmp1, 
-test27.cpp:244:28: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:244:28: warning: Using variable 'ptr1' without checking for null pointer
              ptr1->val = 300;
                             ^
-test27.cpp:244:28: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:244:28: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, ptr3, this->tmp1, 
@@ -2127,10 +2127,10 @@ cleanup_point_expr : ptr1, ptr2, ptr3, this->tmp1,
 expr_stmt : ptr1, ptr2, ptr3, this->tmp1, 
 convert_expr : ptr1, ptr2, ptr3, this->tmp1, 
 modify_expr : ptr1, ptr2, ptr3, this->tmp1, 
-test27.cpp:247:24: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:247:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 400;
                         ^
-test27.cpp:247:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:247:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, ptr3, this->tmp1, 
@@ -2171,10 +2171,10 @@ cleanup_point_expr : ptr1, ptr2, ptr3, this->tmp1,
 expr_stmt : ptr1, ptr2, ptr3, this->tmp1, 
 convert_expr : ptr1, ptr2, ptr3, this->tmp1, 
 modify_expr : ptr1, ptr2, ptr3, this->tmp1, 
-test27.cpp:249:24: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:249:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 500;
                         ^
-test27.cpp:249:24: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:249:24: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, ptr3, this->tmp1, 
@@ -2281,7 +2281,7 @@ test27.cpp: In member function 'void Object1::func8(Data1*, Data1*)':
 test27.cpp:259:24: warning: Using variable 'ptr2' without checking for null pointer
          ptr2->val = 200;
                         ^
-test27.cpp:259:24: warning: Using field 'ptr2' without checking for null pointer
+test27.cpp:259:24: warning: Using variable 'ptr2' without checking for null pointer
 component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 var_decl ptr2: ptr1, ptr2, ptr3, this->tmp1, 
@@ -2310,10 +2310,10 @@ cleanup_point_expr : ptr1, ptr2, ptr3, this->tmp1,
 expr_stmt : ptr1, ptr2, ptr3, this->tmp1, 
 convert_expr : ptr1, ptr2, ptr3, this->tmp1, 
 modify_expr : ptr1, ptr2, ptr3, this->tmp1, 
-test27.cpp:262:28: warning: Using parameter 'ptr1' without checking for null pointer
+test27.cpp:262:28: warning: Using variable 'ptr1' without checking for null pointer
              ptr1->val = 300;
                             ^
-test27.cpp:262:28: warning: Using field 'ptr1' without checking for null pointer
+test27.cpp:262:28: warning: Using variable 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, ptr3, this->tmp1, 
 indirect_ref : ptr1, ptr2, ptr3, this->tmp1, 
 parm_decl ptr1: ptr1, ptr2, ptr3, this->tmp1, 

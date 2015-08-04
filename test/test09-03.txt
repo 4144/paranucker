@@ -154,7 +154,7 @@ expr_stmt : ptr1, ptr2,
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test09.cpp: In member function 'void Object1::func3(int*, int*)':
-test09.cpp:38:20: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:38:20: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 200;
                     ^
 indirect_ref : ptr1, ptr2, 
@@ -171,7 +171,7 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test09.cpp:39:20: warning: Using parameter 'ptr2' without checking for null pointer
+test09.cpp:39:20: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 300;
                     ^
 indirect_ref : ptr1, ptr2, 
@@ -216,7 +216,7 @@ expr_stmt : ptr1, ptr2,
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test09.cpp: In member function 'void Object1::func4(int*, int*)':
-test09.cpp:50:24: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:50:24: warning: Using variable 'ptr1' without checking for null pointer
              *ptr1 = 100;
                         ^
 indirect_ref : ptr1, ptr2, 
@@ -233,7 +233,7 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test09.cpp:53:20: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:53:20: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 200;
                     ^
 indirect_ref : ptr1, ptr2, 
@@ -250,7 +250,7 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test09.cpp:54:20: warning: Using parameter 'ptr2' without checking for null pointer
+test09.cpp:54:20: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 300;
                     ^
 indirect_ref : ptr1, ptr2, 
@@ -309,7 +309,7 @@ expr_stmt : ptr2,
 convert_expr : ptr2, 
 modify_expr : ptr2, 
 test09.cpp: In member function 'void Object1::func5(int*, int*)':
-test09.cpp:65:20: warning: Using parameter 'ptr2' without checking for null pointer
+test09.cpp:65:20: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 300;
                     ^
 indirect_ref : ptr2, 
@@ -382,7 +382,7 @@ expr_stmt : ptr2,
 convert_expr : ptr2, 
 modify_expr : ptr2, 
 test09.cpp: In member function 'void Object1::func6(int*, int*)':
-test09.cpp:80:20: warning: Using parameter 'ptr2' without checking for null pointer
+test09.cpp:80:20: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 300;
                     ^
 indirect_ref : ptr2, 
@@ -427,7 +427,7 @@ expr_stmt : ptr1,
 convert_expr : ptr1, 
 modify_expr : ptr1, 
 test09.cpp: In member function 'void Object1::func7(int*, int*)':
-test09.cpp:91:24: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:91:24: warning: Using variable 'ptr1' without checking for null pointer
              *ptr1 = 100;
                         ^
 indirect_ref : ptr1, 
@@ -444,7 +444,7 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
-test09.cpp:94:20: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:94:20: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 200;
                     ^
 indirect_ref : ptr1, 
@@ -503,7 +503,7 @@ expr_stmt : ptr1, ptr2,
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test09.cpp: In member function 'void Object1::func8(int*, int*)':
-test09.cpp:106:24: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:106:24: warning: Using variable 'ptr1' without checking for null pointer
              *ptr1 = 100;
                         ^
 indirect_ref : ptr1, ptr2, 
@@ -520,7 +520,7 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test09.cpp:109:20: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:109:20: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 200;
                     ^
 indirect_ref : ptr1, ptr2, 
@@ -537,7 +537,7 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test09.cpp:110:20: warning: Using parameter 'ptr2' without checking for null pointer
+test09.cpp:110:20: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 300;
                     ^
 indirect_ref : ptr1, ptr2, 
@@ -582,7 +582,7 @@ expr_stmt : ptr1, ptr2,
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test09.cpp: In member function 'void Object1::func9(int*, int*)':
-test09.cpp:121:24: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:121:24: warning: Using variable 'ptr1' without checking for null pointer
              *ptr1 = 100;
                         ^
 indirect_ref : ptr1, ptr2, 
@@ -599,7 +599,7 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test09.cpp:124:20: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:124:20: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 200;
                     ^
 indirect_ref : ptr1, ptr2, 
@@ -616,7 +616,7 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test09.cpp:125:20: warning: Using parameter 'ptr2' without checking for null pointer
+test09.cpp:125:20: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 300;
                     ^
 indirect_ref : ptr1, ptr2, 
@@ -714,7 +714,7 @@ expr_stmt : ptr1, ptr2,
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test09.cpp: In member function 'void Object1::func10(int*, int*)':
-test09.cpp:139:20: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:139:20: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 200;
                     ^
 indirect_ref : ptr1, ptr2, 
@@ -731,7 +731,7 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test09.cpp:140:20: warning: Using parameter 'ptr2' without checking for null pointer
+test09.cpp:140:20: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 300;
                     ^
 indirect_ref : ptr1, ptr2, 
@@ -800,7 +800,7 @@ expr_stmt : ptr1, ptr2,
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test09.cpp: In member function 'void Object1::func11(int*, int*)':
-test09.cpp:148:24: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:148:24: warning: Using variable 'ptr1' without checking for null pointer
              *ptr1 = 100;
                         ^
 indirect_ref : ptr1, ptr2, 
@@ -844,7 +844,7 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test09.cpp:151:20: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:151:20: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 200;
                     ^
 indirect_ref : ptr1, ptr2, 
@@ -861,7 +861,7 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test09.cpp:152:20: warning: Using parameter 'ptr2' without checking for null pointer
+test09.cpp:152:20: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 300;
                     ^
 indirect_ref : ptr1, ptr2, 
@@ -922,7 +922,7 @@ expr_stmt : ptr1, ptr2,
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
 test09.cpp: In member function 'void Object1::func12(int*, int*)':
-test09.cpp:159:24: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:159:24: warning: Using variable 'ptr1' without checking for null pointer
              *ptr1 = 100;
                         ^
 indirect_ref : ptr1, ptr2, 
@@ -953,7 +953,7 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test09.cpp:166:20: warning: Using parameter 'ptr1' without checking for null pointer
+test09.cpp:166:20: warning: Using variable 'ptr1' without checking for null pointer
          *ptr1 = 200;
                     ^
 indirect_ref : ptr1, ptr2, 
@@ -970,7 +970,7 @@ cleanup_point_expr : ptr1, ptr2,
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
-test09.cpp:167:20: warning: Using parameter 'ptr2' without checking for null pointer
+test09.cpp:167:20: warning: Using variable 'ptr2' without checking for null pointer
          *ptr2 = 300;
                     ^
 indirect_ref : ptr1, ptr2, 

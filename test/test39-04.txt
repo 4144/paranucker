@@ -1,35 +1,35 @@
 test39.cpp: In member function 'void Object1::func1(Data1*) const':
-test39.cpp:63:24: warning: Using parameter 'ptr1' without checking for null pointer
+test39.cpp:63:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 100;
                         ^
-test39.cpp:63:24: warning: Using field 'ptr1' without checking for null pointer
-test39.cpp:73:22: warning: Using parameter 'ptr1' without checking for null pointer
+test39.cpp:63:24: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:73:22: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 0;
                       ^
-test39.cpp:73:22: warning: Using field 'ptr1' without checking for null pointer
+test39.cpp:73:22: warning: Using variable 'ptr1' without checking for null pointer
 test39.cpp: In member function 'void Object1::func2(Data1*) const':
-test39.cpp:96:51: warning: Using parameter 'ptr1' without checking for null pointer
+test39.cpp:96:51: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->ptrval = reinterpret_cast<Data1*>(1);
                                                    ^
-test39.cpp:96:15: warning: Using field 'ptr1' without checking for null pointer
+test39.cpp:96:15: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->ptrval = reinterpret_cast<Data1*>(1);
                ^
 test39.cpp: In member function 'void Object1::func3(Data1*) const':
-test39.cpp:119:25: warning: Using parameter 'ptr1' without checking for null pointer
+test39.cpp:119:25: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->ptrval = 0;
                          ^
-test39.cpp:119:15: warning: Using field 'ptr1' without checking for null pointer
+test39.cpp:119:15: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->ptrval = 0;
                ^
 test39.cpp: In member function 'int Object1::func6(Data1*) const':
 test39.cpp:228:27: warning: Using variable 'ptr1' without checking for null pointer
          arr[1] = ptr1->val;
                            ^
-test39.cpp:238:22: warning: Using field 'ptr1' without checking for null pointer
+test39.cpp:238:22: warning: Using variable 'ptr1' without checking for null pointer
          return ptr1->val;
                       ^
 test39.cpp: In member function 'void Object1::func7(Data1*, Data1*) const':
-test39.cpp:252:23: warning: Using field 'ptr1' without checking for null pointer
+test39.cpp:252:23: warning: Using variable 'ptr1' without checking for null pointer
          if (ptr1->val == ptr2->val)
                        ^
-test39.cpp:252:23: warning: Using field 'ptr2' without checking for null pointer
+test39.cpp:252:23: warning: Using variable 'ptr2' without checking for null pointer

@@ -2,7 +2,7 @@ test19.cpp: In function 'int func2(Data1*, Data1*)':
 test19.cpp:16:20: warning: Using variable 'ptr3' without checking for null pointer
      ptr3->val = 100;
                     ^
-test19.cpp:16:20: warning: Using field 'ptr3' without checking for null pointer
+test19.cpp:16:20: warning: Using variable 'ptr3' without checking for null pointer
 test19.cpp: In function 'int func4(Data1*, Data1*)':
 test19.cpp:31:15: warning: Useless variable check 'ptr1'. It already was checked before
      else if (!ptr1 && ptr2)
@@ -11,22 +11,22 @@ test19.cpp: In function 'int func6(Data1*, Data1*)':
 test19.cpp:52:20: warning: Using variable 'ptr3' without checking for null pointer
      ptr3->val = 100;
                     ^
-test19.cpp:52:20: warning: Using field 'ptr3' without checking for null pointer
+test19.cpp:52:20: warning: Using variable 'ptr3' without checking for null pointer
 test19.cpp: In function 'int func7(Data1*, Data1*)':
-test19.cpp:66:20: warning: Using parameter 'ptr1' without checking for null pointer
+test19.cpp:66:20: warning: Using variable 'ptr1' without checking for null pointer
      ptr1->val = 100;
                     ^
-test19.cpp:66:20: warning: Using field 'ptr1' without checking for null pointer
+test19.cpp:66:20: warning: Using variable 'ptr1' without checking for null pointer
 test19.cpp:67:20: warning: Using variable 'ptr3' without checking for null pointer
      ptr3->val = 200;
                     ^
-test19.cpp:67:20: warning: Using field 'ptr3' without checking for null pointer
+test19.cpp:67:20: warning: Using variable 'ptr3' without checking for null pointer
 test19.cpp: In function 'int func8(Data1*, Data1*)':
-test19.cpp:81:20: warning: Using parameter 'ptr1' without checking for null pointer
+test19.cpp:81:20: warning: Using variable 'ptr1' without checking for null pointer
      ptr1->val = 100;
                     ^
-test19.cpp:81:20: warning: Using field 'ptr1' without checking for null pointer
+test19.cpp:81:20: warning: Using variable 'ptr1' without checking for null pointer
 test19.cpp:82:20: warning: Using variable 'ptr3' without checking for null pointer
      ptr3->val = 200;
                     ^
-test19.cpp:82:20: warning: Using field 'ptr3' without checking for null pointer
+test19.cpp:82:20: warning: Using variable 'ptr3' without checking for null pointer

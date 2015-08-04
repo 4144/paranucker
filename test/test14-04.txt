@@ -2,7 +2,7 @@ function_decl func1:
 bind_expr : a, 
 modify_expr : a, 
 test14.c: In function 'func1':
-test14.c:12:8: warning: Using parameter 'a' without checking for null pointer
+test14.c:12:8: warning: Using variable 'a' without checking for null pointer
      *a = 100;
         ^
 indirect_ref : a, 
@@ -125,7 +125,7 @@ integer_cst 64:
 integer_cst 500: 
 modify_expr : a, 
 test14.c: In function 'func5':
-test14.c:45:8: warning: Using parameter 'a' without checking for null pointer
+test14.c:45:8: warning: Using variable 'a' without checking for null pointer
      *a = 600;
         ^
 indirect_ref : a, 
@@ -252,7 +252,7 @@ integer_cst -2147483648: aptr,
 integer_cst 2147483647: aptr, 
 modify_expr : aptr, 
 test14.c: In function 'func7':
-test14.c:70:11: warning: Using parameter 'aptr' without checking for null pointer
+test14.c:70:11: warning: Using variable 'aptr' without checking for null pointer
      *aptr = 800;
            ^
 indirect_ref : aptr, 

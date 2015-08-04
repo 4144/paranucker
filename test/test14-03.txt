@@ -1,12 +1,12 @@
 test14.c: In function 'func1':
-test14.c:12:8: warning: Using parameter 'a' without checking for null pointer
+test14.c:12:8: warning: Using variable 'a' without checking for null pointer
      *a = 100;
         ^
 test14.c: In function 'func5':
-test14.c:45:8: warning: Using parameter 'a' without checking for null pointer
+test14.c:45:8: warning: Using variable 'a' without checking for null pointer
      *a = 600;
         ^
 test14.c: In function 'func7':
-test14.c:70:11: warning: Using parameter 'aptr' without checking for null pointer
+test14.c:70:11: warning: Using variable 'aptr' without checking for null pointer
      *aptr = 800;
            ^
