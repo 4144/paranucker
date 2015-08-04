@@ -152,6 +152,12 @@ std::string getComponentRefVariable(Node *node)
             FieldDeclNode *fieldDecl = static_cast<FieldDeclNode*>(field);
             if (fieldDecl->fieldType != POINTER_TYPE)
                 return str;
+            if (findTreeListPurpose(static_cast<TreeListNode*>(
+                skipNop(fieldDecl->attribute)),
+                "nonnullpointer"))
+            {
+                return str;
+            }
             IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
             Node *ref = skipNop(indirect->ref);
             if (ref && !isValidVar(ref->label))
@@ -204,6 +210,12 @@ std::vector<std::string> getComponentRefParts(Node *node)
         {
             FieldDeclNode *fieldDecl = static_cast<FieldDeclNode*>(field);
             IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
+            if (findTreeListPurpose(static_cast<TreeListNode*>(
+                skipNop(fieldDecl->attribute)),
+                "nonnullpointer"))
+            {
+                return str;
+            }
             Node *ref = skipNop(indirect->ref);
             if (ref && !isValidVar(ref->label))
                 return str;
@@ -254,9 +266,15 @@ std::vector<std::string> getComponentRefLeftParts(Node *node)
         if (object == INDIRECT_REF &&
             field == FIELD_DECL)
         {
-//            FieldDeclNode *fieldDecl = static_cast<FieldDeclNode*>(field);
+            FieldDeclNode *fieldDecl = static_cast<FieldDeclNode*>(field);
 //            if (fieldDecl->fieldType != POINTER_TYPE)
 //                return str;
+            if (findTreeListPurpose(static_cast<TreeListNode*>(
+                skipNop(fieldDecl->attribute)),
+                "nonnullpointer"))
+            {
+                return str;
+            }
             IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
             Node *ref = skipNop(indirect->ref);
             if (ref && !isValidVar(ref->label))
