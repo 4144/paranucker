@@ -25,12 +25,21 @@
 struct VarItem
 {
     VarItem() :
-        name()
+        name(),
+        isNonNull(false)
     {
     }
 
     VarItem(const std::string &name0) :
-        name(name0)
+        name(name0),
+        isNonNull(false)
+    {
+    }
+
+    VarItem(const std::string &name0,
+            const bool isNonNull0) :
+        name(name0),
+        isNonNull(isNonNull0)
     {
     }
 
@@ -41,6 +50,7 @@ struct VarItem
     { return name.size(); }
 
     std::string name;
+    bool isNonNull;
 };
 
 

@@ -96,8 +96,9 @@ void reportParmDeclNullPointer(Node *mainNode,
             auto vars = getComponentRefParts(node);
             FOR_EACH (var, vars)
             {
-                if (isIn(var.name, wi.needCheckNullVars) ||
-                    isNotIn(var.name, wi.knownVars))
+                if (!var.isNonNull &&
+                    (isIn(var.name, wi.needCheckNullVars) ||
+                    isNotIn(var.name, wi.knownVars)))
                 {
                     Log::warn(findBackLocation(mainNode),
                         "Using variable '%s' without checking for null pointer",
@@ -121,7 +122,8 @@ void reportParmDeclLeftNullPointer(Node *mainNode,
             auto vars = getComponentRefLeftParts(node);
             FOR_EACH (var, vars)
             {
-                if (isIn(var.name, wi.needCheckNullVars))
+                if (!var.isNonNull &&
+                    isIn(var.name, wi.needCheckNullVars))
                 {
                     Log::warn(findBackLocation(mainNode),
                         "Using field '%s' without checking for null pointer",
@@ -145,7 +147,8 @@ void reportComponentRefNullPointer(Node *mainNode,
             auto vars = getComponentRefParts(node);
             FOR_EACH (var, vars)
             {
-                if (isIn(var.name, wi.needCheckNullVars))
+                if (!var.isNonNull &&
+                    isIn(var.name, wi.needCheckNullVars))
                 {
                     Log::warn(findBackLocation(mainNode),
                         "Using field '%s' without checking for null pointer",
@@ -187,7 +190,7 @@ void reportParmDeclAttrNullPointer(Node *mainNode,
         else if (node == COMPONENT_REF)
         {
             VarItem var = getComponentRefVariable(node);
-            if (isIn(var.name, wi.needCheckNullVars))
+            if (!var.isNonNull && isIn(var.name, wi.needCheckNullVars))
                 reportPossibleNullPointer(mainNode, node->label);
         }
     }
