@@ -38,9 +38,11 @@ test12.cpp:28:35: warning: Using parameter 'ptr2' without checking for null poin
 test12.cpp:30:28: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->val = 200;
                             ^
+test12.cpp:30:28: warning: Using field 'ptr1' without checking for null pointer
 test12.cpp:34:28: warning: Using parameter 'ptr2' without checking for null pointer
              ptr2->val = 300;
                             ^
+test12.cpp:34:28: warning: Using field 'ptr2' without checking for null pointer
 test12.cpp: In member function 'void Object1::func5(Data1*, Data1*)':
 test12.cpp:40:41: warning: Using parameter 'ptr2' without checking for null pointer
          int tmp = (ptr1 ? ptr1 : ptr2)->val;

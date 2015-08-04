@@ -99,6 +99,7 @@ test16.c: In function 'func2':
 test16.c:26:15: warning: Using parameter 'ptr1' without checking for null pointer
      ptr1->val = 300;
                ^
+test16.c:26:15: warning: Using field 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
@@ -154,6 +155,7 @@ modify_expr : ptr1, ptr2,
 test16.c:36:15: warning: Using parameter 'ptr1' without checking for null pointer
      ptr1->val = 200;
                ^
+test16.c:36:15: warning: Using field 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
@@ -209,6 +211,7 @@ modify_expr : ptr1, ptr2,
 test16.c:46:15: warning: Using parameter 'ptr1' without checking for null pointer
      ptr1->val = 200;
                ^
+test16.c:46:15: warning: Using field 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
@@ -379,6 +382,7 @@ test16.c: In function 'func6':
 test16.c:67:15: warning: Using parameter 'ptr1' without checking for null pointer
      ptr1->val = 300;
                ^
+test16.c:67:15: warning: Using field 'ptr1' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr1: ptr1, ptr2, 
@@ -398,6 +402,7 @@ modify_expr : ptr1, ptr2,
 test16.c:68:15: warning: Using parameter 'ptr2' without checking for null pointer
      ptr2->val = 400;
                ^
+test16.c:68:15: warning: Using field 'ptr2' without checking for null pointer
 component_ref : ptr1, ptr2, 
 indirect_ref : ptr1, ptr2, 
 parm_decl ptr2: ptr1, ptr2, 

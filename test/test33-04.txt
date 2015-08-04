@@ -2,14 +2,17 @@ test33.cpp: In member function 'void Object1::func1(Data1*)':
 test33.cpp:46:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 200;
                         ^
+test33.cpp:46:24: warning: Using field 'ptr1' without checking for null pointer
 test33.cpp: In member function 'void Object1::func2(Data1*)':
 test33.cpp:67:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 200;
                         ^
+test33.cpp:67:24: warning: Using field 'ptr1' without checking for null pointer
 test33.cpp: In member function 'void Object1::func3(Data1*)':
 test33.cpp:82:28: warning: Using parameter 'ptr1' without checking for null pointer
              ptr1->val = 100;
                             ^
+test33.cpp:82:28: warning: Using field 'ptr1' without checking for null pointer
 test33.cpp:91:9: warning: Useless variable check 'this->tmp2'. It already was checked before
          if (tmp2)
          ^

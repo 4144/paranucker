@@ -67,12 +67,12 @@ class Object1
         tmp3->val = 100;
     }
 
-/*
     void func3(Data1 *ptr1) const
     {
         gptr1->val = 100;
     }
 
+/*
     void func4(Data1 *ptr1) const
     {
         gptr2->val = 100;

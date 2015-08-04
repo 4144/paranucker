@@ -195,3 +195,27 @@ integer_cst 32: ptr1,
 integer_cst -2147483648: ptr1, 
 integer_cst 2147483647: ptr1, 
 integer_cst 100: ptr1, 
+function_decl func3: 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+test42.cpp: In member function 'void Object1::func3(Data1*) const':
+test42.cpp:72:25: warning: Using field 'gptr1' without checking for null pointer
+         gptr1->val = 100;
+                         ^
+component_ref : ptr1, 
+indirect_ref : ptr1, 
+var_decl gptr1: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 100: ptr1, 

@@ -190,6 +190,7 @@ test34.cpp: In member function 'void Object1::func1(Data1*)':
 test34.cpp:60:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 200;
                         ^
+test34.cpp:60:24: warning: Using field 'ptr1' without checking for null pointer
 component_ref : ptr1, 
 indirect_ref : ptr1, 
 parm_decl ptr1: ptr1, 
@@ -349,6 +350,7 @@ test34.cpp: In member function 'void Object1::func2(Data1*)':
 test34.cpp:90:24: warning: Using parameter 'ptr1' without checking for null pointer
          ptr1->val = 200;
                         ^
+test34.cpp:90:24: warning: Using field 'ptr1' without checking for null pointer
 component_ref : ptr1, 
 indirect_ref : ptr1, 
 parm_decl ptr1: ptr1, 
