@@ -75,7 +75,7 @@ void reportParmDeclNullPointer(Node *mainNode,
                     isIn(node->label, wi.needCheckNullVars))
                 {
                     Log::warn(findBackLocation(mainNode),
-                        "Using parameter '%s' without checking for null pointer",
+                        "Using variable '%s' without checking for null pointer",
                         node->label);
                 }
             }
@@ -127,7 +127,7 @@ void reportParmDeclLeftNullPointer(Node *mainNode,
                     isNotIn(var.name, wi.knownVars)))
                 {
                     Log::warn(findBackLocation(mainNode),
-                        "Using field '%s' without checking for null pointer",
+                        "Using variable '%s' without checking for null pointer",
                         var.name);
                 }
             }
@@ -152,7 +152,7 @@ void reportComponentRefNullPointer(Node *mainNode,
                     isIn(var.name, wi.needCheckNullVars))
                 {
                     Log::warn(findBackLocation(mainNode),
-                        "Using field '%s' without checking for null pointer",
+                        "Using variable '%s' without checking for null pointer",
                         var.name);
                 }
             }
