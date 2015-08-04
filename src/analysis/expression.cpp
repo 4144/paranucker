@@ -302,6 +302,7 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
     {
         VarItem var1 = getVariableName(arg);
         VarItem var2 = getVariableName(node->args[1]);
+        //Log::log("analyseModifyExpr vars: %s, %s\n", var1.name.c_str(), var2.name.c_str());
 
         Node *arg0 = arg;
         if (arg == COMPONENT_REF)
@@ -370,6 +371,7 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
         }
         else
         {
+            reportParmDeclLeftNullPointer(node, node->args[0], wi);
             reportParmDeclNullPointer(node, node->args[1], wi);
         }
     }

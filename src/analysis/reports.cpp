@@ -123,7 +123,8 @@ void reportParmDeclLeftNullPointer(Node *mainNode,
             FOR_EACH (var, vars)
             {
                 if (!var.isNonNull &&
-                    isIn(var.name, wi.needCheckNullVars))
+                    (isIn(var.name, wi.needCheckNullVars) ||
+                    isNotIn(var.name, wi.knownVars)))
                 {
                     Log::warn(findBackLocation(mainNode),
                         "Using field '%s' without checking for null pointer",
