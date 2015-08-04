@@ -1,0 +1,4 @@
+test42.cpp: In member function 'void Object1::func1(Data1*) const':
+test42.cpp:62:24: warning: Using variable 'this->tmp1' without checking for null pointer
+         tmp1->val = 100;
+                        ^
