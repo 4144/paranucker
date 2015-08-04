@@ -177,6 +177,12 @@ VarItem getComponentRefVariable(Node *node)
                 VarDeclNode *varDecl = static_cast<VarDeclNode*>(ref);
                 if (varDecl->varType != POINTER_TYPE)
                     return str;
+                if (findTreeListPurpose(static_cast<TreeListNode*>(
+                    skipNop(varDecl->attribute)),
+                    "nonnullpointer"))
+                {
+                    str.isNonNull = true;
+                }
             }
             if (ref == PARM_DECL || ref == VAR_DECL)
             {
@@ -227,14 +233,21 @@ std::vector<VarItem> getComponentRefParts(Node *node)
                 if (skipNop(parmDecl->declType) == nullptr ||
                     skipNop(parmDecl->declType) == POINTER_TYPE)
                 {
-                    str.push_back(VarItem(ref->label, isNonNull));
+                    str.push_back(VarItem(ref->label, false));
                 }
             }
             if (ref == VAR_DECL)
             {
                 VarDeclNode *varDecl = static_cast<VarDeclNode*>(ref);
+                bool isNonNull2(false);
+                if (findTreeListPurpose(static_cast<TreeListNode*>(
+                    skipNop(varDecl->attribute)),
+                    "nonnullpointer"))
+                {
+                    isNonNull2 = true;
+                }
                 if (varDecl->varType == POINTER_TYPE)
-                    str.push_back(VarItem(ref->label, isNonNull));
+                    str.push_back(VarItem(ref->label, isNonNull2));
             }
             if (ref == PARM_DECL || ref == VAR_DECL)
             {
@@ -272,16 +285,20 @@ std::vector<VarItem> getComponentRefLeftParts(Node *node)
             bool isNonNull(false);
 //            if (fieldDecl->fieldType != POINTER_TYPE)
 //                return str;
-            if (findTreeListPurpose(static_cast<TreeListNode*>(
-                skipNop(fieldDecl->attribute)),
-                "nonnullpointer"))
-            {
-                isNonNull = true;
-            }
             IndirectRefNode *indirect = static_cast<IndirectRefNode*>(object);
             Node *ref = skipNop(indirect->ref);
             if (ref && !isValidVar(ref->label))
                 return str;
+            if (ref == VAR_DECL)
+            {
+                VarDeclNode *varDecl = static_cast<VarDeclNode*>(ref);
+                if (findTreeListPurpose(static_cast<TreeListNode*>(
+                    skipNop(varDecl->attribute)),
+                    "nonnullpointer"))
+                {
+                    isNonNull = true;
+                }
+            }
             if (ref == PARM_DECL || ref == VAR_DECL)
             {
                 str.push_back(VarItem(ref->label, isNonNull));
