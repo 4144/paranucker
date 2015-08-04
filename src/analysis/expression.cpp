@@ -1154,6 +1154,7 @@ void handleSetVar(Node *node1,
     // var1 = var2
     const VarItem var1 = getVariableName(node1);
     const VarItem var2 = getVariableName(node2);
+    //Log::log("handleSetVar vars: %s, %s\n", var1.name.c_str(), var2.name.c_str());
     if (var1.empty())
         return;
     if (var2.empty())
