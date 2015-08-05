@@ -289,6 +289,15 @@ std::vector<VarItem> getComponentRefLeftParts(Node *node)
             Node *ref = skipNop(indirect->ref);
             if (ref && !isValidVar(ref->label))
                 return str;
+            if (ref == PARM_DECL)
+            {
+                ParmDeclNode *parmDecl = static_cast<ParmDeclNode*>(ref);
+                if (skipNop(parmDecl->declType) != nullptr &&
+                    skipNop(parmDecl->declType) != POINTER_TYPE)
+                {
+                    return str;
+                }
+            }
             if (ref == VAR_DECL)
             {
                 VarDeclNode *varDecl = static_cast<VarDeclNode*>(ref);
@@ -298,6 +307,8 @@ std::vector<VarItem> getComponentRefLeftParts(Node *node)
                 {
                     isNonNull = true;
                 }
+                if (varDecl->varType != POINTER_TYPE)
+                    return str;
             }
             if (ref == PARM_DECL || ref == VAR_DECL)
             {
