@@ -179,13 +179,21 @@ void reportParmDeclAttrNullPointer(Node *mainNode,
         {
             if (node == PARM_DECL)
             {
-                if (isIn(node->label, wi.needCheckNullVars))
+                ParmDeclNode *parmDecl = static_cast<ParmDeclNode*>(node);
+                if (parmDecl->declType == POINTER_TYPE &&
+                    isIn(node->label, wi.needCheckNullVars))
+                {
                     reportPossibleNullPointer(mainNode, node->label);
+                }
             }
             else if (node == VAR_DECL)
             {
-                if (isIn(node->label, wi.needCheckNullVars))
+                VarDeclNode *varDecl = static_cast<VarDeclNode*>(node);
+                if (varDecl->varType == POINTER_TYPE &&
+                    isIn(node->label, wi.needCheckNullVars))
+                {
                     reportPossibleNullPointer(mainNode, node->label);
+                }
             }
         }
         else if (node == COMPONENT_REF)
