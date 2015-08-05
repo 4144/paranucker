@@ -104,24 +104,39 @@ class Object1
         ptr1.val = 200;
     }
 
-/*
     void func9(Data1 *ptr1) const
     {
         Data1 *val1;
         val1->val = 300;
     }
-*/
 
-/*
-    broken for now
-    void func6(Data1 *ptr1) const
+    void func10(Data1 &ptr1) const
+    {
+        if (ptr1.val == 100)
+            k = 100;
+    }
+
+    void func11(Data2 &ptr1) const
+    {
+        if (ptr1.val == 100)
+            k = 100;
+    }
+
+    int func12(Data2 &ptr1) const
+    {
+        const int &ref1 = ptr1.val;
+        return ref1;
+    }
+
+//    broken for now
+    void func13(Data1 *ptr1) const
     {
         tmp3->getData2()->val = 100;
     }
 
-    void func7(Data1 *ptr1) const
+//    broken for now
+    void func14(Data1 *ptr1) const
     {
         tmp1->getData2()->val = 100;
     }
-*/
 };

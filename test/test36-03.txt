@@ -565,13 +565,22 @@ statement_list :
 call_expr : 
 addr_expr : 
 function_decl __comp_dtor : 
+statement_list : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data3: 
+integer_cst 64: 
 label_expr : 
 label_decl : 
 call_expr : 
 addr_expr : 
 function_decl operator delete: 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data3: 
+integer_cst 64: 
 array_type : 
 pointer_type : 
 type_decl __vtbl_ptr_type: 
@@ -670,13 +679,22 @@ statement_list :
 call_expr : 
 addr_expr : 
 function_decl __comp_dtor : 
+statement_list : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data3: 
+integer_cst 64: 
 label_expr : 
 label_decl : 
 call_expr : 
 addr_expr : 
 function_decl operator delete: 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data3: 
+integer_cst 64: 
 array_type : 
 pointer_type : 
 type_decl __vtbl_ptr_type: 
@@ -1169,13 +1187,22 @@ statement_list :
 call_expr : 
 addr_expr : 
 function_decl __comp_dtor : 
+statement_list : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+integer_cst 64: 
 label_expr : 
 label_decl : 
 call_expr : 
 addr_expr : 
 function_decl operator delete: 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+integer_cst 64: 
 array_type : 
 pointer_type : 
 type_decl __vtbl_ptr_type: 
@@ -1248,13 +1275,22 @@ statement_list :
 call_expr : 
 addr_expr : 
 function_decl __comp_dtor : 
+statement_list : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+integer_cst 64: 
 label_expr : 
 label_decl : 
 call_expr : 
 addr_expr : 
 function_decl operator delete: 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+integer_cst 64: 
 array_type : 
 pointer_type : 
 type_decl __vtbl_ptr_type: 

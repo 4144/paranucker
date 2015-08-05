@@ -14,9 +14,11 @@ __comp_dtor :
 Data3: 
 __comp_dtor : 
 __deleting_dtor : 
+__comp_dtor : 
 __base_ctor : 
 __comp_dtor : 
 __deleting_dtor : 
+__comp_dtor : 
 __comp_ctor : 
 getData3: 
 getData1: 
@@ -28,9 +30,11 @@ func4:
 Data2: 
 __comp_dtor : 
 __deleting_dtor : 
+__comp_dtor : 
 __base_ctor : 
 __comp_dtor : 
 __deleting_dtor : 
+__comp_dtor : 
 __comp_ctor : 
 func5: 
 __comp_ctor : 

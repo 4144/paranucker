@@ -47,6 +47,8 @@ test12.cpp: In member function 'void Object1::func5(Data1*, Data1*)':
 test12.cpp:40:41: warning: Using variable 'ptr2' without checking for null pointer
          int tmp = (ptr1 ? ptr1 : ptr2)->val;
                                          ^
+test12.cpp:40:41: warning: Using variable 'ptr2' without checking for null pointer
+test12.cpp:40:41: warning: Using variable 'ptr2' without checking for null pointer
 test12.cpp: In member function 'void Object1::func7(Data1*, Data1*)':
 test12.cpp:50:13: warning: Using variable 'ptr2' without checking for null pointer
          int tmp = ptr1 ? ptr1->val : (!ptr2 ? ptr2->val : 0);

@@ -524,3 +524,282 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 integer_cst 200: 
+function_decl func9: 
+bind_expr : ptr1, 
+statement_list : ptr1, 
+decl_expr : ptr1, 
+var_decl val1: ptr1, val1, 
+integer_cst 64: ptr1, val1, 
+pointer_type : ptr1, val1, 
+record_type : ptr1, val1, 
+type_decl Data1: ptr1, val1, 
+cleanup_point_expr : ptr1, val1, 
+expr_stmt : ptr1, val1, 
+convert_expr : ptr1, val1, 
+modify_expr : ptr1, val1, 
+test42.cpp: In member function 'void Object1::func9(Data1*) const':
+test42.cpp:110:24: warning: Using variable 'val1' without checking for null pointer
+         val1->val = 300;
+                        ^
+test42.cpp:110:24: warning: Using variable 'val1' without checking for null pointer
+component_ref : ptr1, val1, 
+indirect_ref : ptr1, val1, 
+var_decl val1: ptr1, val1, 
+integer_cst 64: ptr1, val1, 
+pointer_type : ptr1, val1, 
+record_type : ptr1, val1, 
+type_decl Data1: ptr1, val1, 
+field_decl val: ptr1, val1, 
+integer_cst 32: ptr1, val1, 
+integer_type : ptr1, val1, 
+type_decl int: ptr1, val1, 
+integer_cst 32: ptr1, val1, 
+integer_cst -2147483648: ptr1, val1, 
+integer_cst 2147483647: ptr1, val1, 
+integer_cst 300: ptr1, val1, 
+var_decl val1: ptr1, 
+integer_cst 64: ptr1, val1, 
+pointer_type : ptr1, val1, 
+record_type : ptr1, val1, 
+type_decl Data1: ptr1, val1, 
+block : ptr1, val1, 
+var_decl val1: ptr1, val1, 
+integer_cst 64: ptr1, val1, 
+pointer_type : ptr1, val1, 
+record_type : ptr1, val1, 
+type_decl Data1: ptr1, val1, 
+function_decl func10: 
+if_stmt : 
+eq_expr : 
+integer_cst 100: 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+reference_type : 
+record_type : 
+type_decl Data1: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 100: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 100: 
+function_decl func11: 
+if_stmt : 
+eq_expr : 
+integer_cst 100: 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+reference_type : 
+record_type : 
+type_decl Data2: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 100: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+var_decl k: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 100: 
+function_decl func12: 
+bind_expr : 
+statement_list : 
+decl_expr : 
+var_decl ref1: 
+integer_cst 64: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+reference_type : 
+record_type : 
+type_decl Data2: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+reference_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+return_expr : 
+init_expr : 
+result_decl : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 32: 
+indirect_ref : 
+var_decl ref1: 
+integer_cst 64: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+reference_type : 
+record_type : 
+type_decl Data2: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+reference_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+var_decl ref1: 
+integer_cst 64: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+reference_type : 
+record_type : 
+type_decl Data2: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+reference_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+block : 
+var_decl ref1: 
+integer_cst 64: 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+reference_type : 
+record_type : 
+type_decl Data2: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+reference_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+function_decl func13: 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+component_ref : ptr1, 
+indirect_ref : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl getData2: ptr1, 
+component_ref : ptr1, 
+indirect_ref : ptr1, 
+parm_decl this: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Object1: ptr1, 
+integer_cst 64: ptr1, 
+field_decl tmp3: ptr1, 
+tree_list : ptr1, 
+identifier_node nonnullpointer: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 100: ptr1, 
+function_decl func14: 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+component_ref : ptr1, 
+indirect_ref : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl getData2: ptr1, 
+test42.cpp: In member function 'void Object1::func14(Data1*) const':
+test42.cpp:139:23: warning: Using variable 'this->tmp1' without checking for null pointer
+         tmp1->getData2()->val = 100;
+                       ^
+component_ref : ptr1, 
+indirect_ref : ptr1, 
+parm_decl this: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Object1: ptr1, 
+integer_cst 64: ptr1, 
+field_decl tmp1: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+integer_cst 100: ptr1, 

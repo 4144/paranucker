@@ -17,3 +17,9 @@ __comp_ctor :
 func7: pointer_type ptr1, 
 __comp_ctor : 
 func8: 
+func9: pointer_type ptr1, 
+func10: 
+func11: 
+func12: 
+func13: pointer_type ptr1, 
+func14: pointer_type ptr1, 

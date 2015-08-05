@@ -145,6 +145,8 @@ indirect_ref :
 var_decl ptr1: 
 integer_cst 64: 
 pointer_type : 
+record_type : 
+type_decl Data1: 
 field_decl val: 
 integer_cst 32: 
 integer_type : 
@@ -173,6 +175,8 @@ indirect_ref :
 var_decl ptr1: 
 integer_cst 64: 
 pointer_type : 
+record_type : 
+type_decl Data1: 
 field_decl val: 
 integer_cst 32: 
 integer_type : 
@@ -214,6 +218,8 @@ indirect_ref :
 var_decl ptr1: 
 integer_cst 64: 
 pointer_type : 
+record_type : 
+type_decl Data1: 
 field_decl val: 
 integer_cst 32: 
 integer_type : 
@@ -235,6 +241,8 @@ indirect_ref :
 var_decl ptr1: 
 integer_cst 64: 
 pointer_type : 
+record_type : 
+type_decl Data1: 
 field_decl val: 
 integer_cst 32: 
 integer_type : 
@@ -257,6 +265,8 @@ indirect_ref :
 var_decl ptr1: 
 integer_cst 64: 
 pointer_type : 
+record_type : 
+type_decl Data1: 
 field_decl val: 
 integer_cst 32: 
 integer_type : 
@@ -280,6 +290,8 @@ indirect_ref : ptr1, this->tmp2,
 var_decl ptr1: ptr1, this->tmp2, 
 integer_cst 64: ptr1, this->tmp2, 
 pointer_type : ptr1, this->tmp2, 
+record_type : ptr1, this->tmp2, 
+type_decl Data1: ptr1, this->tmp2, 
 field_decl val: ptr1, this->tmp2, 
 integer_cst 32: ptr1, this->tmp2, 
 integer_type : ptr1, this->tmp2, 
@@ -324,6 +336,8 @@ indirect_ref : ptr1, this->tmp2,
 var_decl ptr1: ptr1, this->tmp2, 
 integer_cst 64: ptr1, this->tmp2, 
 pointer_type : ptr1, this->tmp2, 
+record_type : ptr1, this->tmp2, 
+type_decl Data1: ptr1, this->tmp2, 
 field_decl val: ptr1, this->tmp2, 
 integer_cst 32: ptr1, this->tmp2, 
 integer_type : ptr1, this->tmp2, 

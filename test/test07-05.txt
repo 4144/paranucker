@@ -4759,6 +4759,10 @@ indirect_ref : __mem,
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
+type_decl _Atomic_word: __mem, 
+integer_cst 32: __mem, 
+integer_cst -2147483648: __mem, 
+integer_cst 2147483647: __mem, 
 integer_cst 64: __mem, 
 integer_type : __mem, 
 type_decl _Atomic_word: __mem, 
@@ -4810,6 +4814,10 @@ indirect_ref : __mem,
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
+type_decl _Atomic_word: __mem, 
+integer_cst 32: __mem, 
+integer_cst -2147483648: __mem, 
+integer_cst 2147483647: __mem, 
 integer_cst 64: __mem, 
 integer_type : __mem, 
 type_decl _Atomic_word: __mem, 
@@ -4839,6 +4847,10 @@ indirect_ref : __mem,
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
+type_decl _Atomic_word: __mem, 
+integer_cst 32: __mem, 
+integer_cst -2147483648: __mem, 
+integer_cst 2147483647: __mem, 
 integer_cst 64: __mem, 
 integer_type : __mem, 
 type_decl _Atomic_word: __mem, 
@@ -5013,6 +5025,10 @@ indirect_ref : __mem,
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
+type_decl _Atomic_word: __mem, 
+integer_cst 32: __mem, 
+integer_cst -2147483648: __mem, 
+integer_cst 2147483647: __mem, 
 integer_cst 64: __mem, 
 integer_type : __mem, 
 type_decl _Atomic_word: __mem, 
@@ -5064,6 +5080,10 @@ indirect_ref : __mem,
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
+type_decl _Atomic_word: __mem, 
+integer_cst 32: __mem, 
+integer_cst -2147483648: __mem, 
+integer_cst 2147483647: __mem, 
 integer_cst 64: __mem, 
 integer_type : __mem, 
 type_decl _Atomic_word: __mem, 
@@ -5093,6 +5113,10 @@ indirect_ref : __mem,
 parm_decl __mem: __mem, 
 pointer_type : __mem, 
 integer_type : __mem, 
+type_decl _Atomic_word: __mem, 
+integer_cst 32: __mem, 
+integer_cst -2147483648: __mem, 
+integer_cst 2147483647: __mem, 
 integer_cst 64: __mem, 
 integer_type : __mem, 
 type_decl _Atomic_word: __mem, 
@@ -6060,9 +6084,17 @@ plus_expr :
 component_ref : 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
 integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
 parm_decl __i: 
 integer_type : 
 type_decl ptrdiff_t: 
@@ -6118,9 +6150,17 @@ plus_expr :
 component_ref : 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
 integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
 parm_decl __i: 
 integer_type : 
 type_decl ptrdiff_t: 
@@ -6146,9 +6186,17 @@ plus_expr :
 component_ref : 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
 integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
 parm_decl __i: 
 integer_type : 
 type_decl ptrdiff_t: 
@@ -6168,9 +6216,17 @@ plus_expr :
 component_ref : 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
 integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
 parm_decl __i: 
 integer_type : 
 type_decl ptrdiff_t: 
@@ -6192,9 +6248,17 @@ plus_expr :
 component_ref : 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
 integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
 parm_decl __i: 
 integer_type : 
 type_decl ptrdiff_t: 
@@ -6219,9 +6283,17 @@ plus_expr :
 component_ref : 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
 integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
 parm_decl __i: 
 integer_type : 
 type_decl ptrdiff_t: 
@@ -6241,9 +6313,17 @@ plus_expr :
 component_ref : 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
 integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
 parm_decl __i: 
 integer_type : 
 type_decl ptrdiff_t: 
@@ -6302,9 +6382,17 @@ plus_expr :
 component_ref : 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
 integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
 parm_decl __i: 
 integer_type : 
 type_decl ptrdiff_t: 
@@ -6323,6 +6411,10 @@ plus_expr :
 component_ref : 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
 integer_type : 
@@ -6349,9 +6441,17 @@ plus_expr :
 component_ref : 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator_base: 
+integer_cst 64: 
 field_decl _M_offset: 
 integer_cst 32: 
 integer_type : 
+type_decl unsigned int: 
+integer_cst 32: 
+integer_cst 0: 
+integer_cst 4294967295: 
 parm_decl __i: 
 integer_type : 
 type_decl ptrdiff_t: 
@@ -7259,6 +7359,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl iterator: 
 cleanup_point_expr : 
@@ -7294,6 +7398,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl iterator: 
 var_decl __tmp: 
@@ -7302,6 +7410,7 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
+type_decl _Bit_iterator: 
 integer_cst 64: 
 record_type : 
 type_decl iterator: 
@@ -7310,6 +7419,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl iterator: 
 function_decl operator--: 
@@ -7351,6 +7464,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl iterator: 
 cleanup_point_expr : 
@@ -7386,6 +7503,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl iterator: 
 var_decl __tmp: 
@@ -7394,6 +7515,7 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
+type_decl _Bit_iterator: 
 integer_cst 64: 
 record_type : 
 type_decl iterator: 
@@ -7402,6 +7524,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl iterator: 
 function_decl operator+=: 
@@ -7483,6 +7609,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl iterator: 
 cleanup_point_expr : 
@@ -7506,6 +7636,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl iterator: 
 parm_decl __i: 
@@ -7521,6 +7655,7 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
+type_decl _Bit_iterator: 
 integer_cst 64: 
 record_type : 
 type_decl iterator: 
@@ -7529,6 +7664,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl iterator: 
 function_decl operator-: 
@@ -7539,6 +7678,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl iterator: 
 cleanup_point_expr : 
@@ -7562,6 +7705,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl iterator: 
 parm_decl __i: 
@@ -7577,6 +7724,7 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
+type_decl _Bit_iterator: 
 integer_cst 64: 
 record_type : 
 type_decl iterator: 
@@ -7585,6 +7733,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl iterator: 
 function_decl operator[]: 
@@ -8477,6 +8629,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
 cleanup_point_expr : 
@@ -8512,6 +8668,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
 var_decl __tmp: 
@@ -8520,6 +8680,7 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
+type_decl _Bit_const_iterator: 
 integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
@@ -8528,6 +8689,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
 function_decl operator--: 
@@ -8569,6 +8734,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
 cleanup_point_expr : 
@@ -8604,6 +8773,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
 var_decl __tmp: 
@@ -8612,6 +8785,7 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
+type_decl _Bit_const_iterator: 
 integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
@@ -8620,6 +8794,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
 function_decl operator+=: 
@@ -8701,6 +8879,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
 cleanup_point_expr : 
@@ -8724,6 +8906,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
 parm_decl __i: 
@@ -8739,6 +8925,7 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
+type_decl _Bit_const_iterator: 
 integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
@@ -8747,6 +8934,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
 function_decl operator-: 
@@ -8757,6 +8948,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
 cleanup_point_expr : 
@@ -8780,6 +8975,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
 parm_decl __i: 
@@ -8795,6 +8994,7 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
+type_decl _Bit_const_iterator: 
 integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
@@ -8803,6 +9003,10 @@ var_decl __tmp:
 integer_cst 128: 
 indirect_ref : 
 parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl _Bit_const_iterator: 
+integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
 function_decl operator[]: 
@@ -9839,6 +10043,11 @@ integer_cst 32: __first, __last,
 indirect_ref : __first, __last, 
 parm_decl __value: __first, __last, 
 reference_type : __first, __last, 
+integer_type : __first, __last, 
+type_decl int: __first, __last, 
+integer_cst 32: __first, __last, 
+integer_cst -2147483648: __first, __last, 
+integer_cst 2147483647: __first, __last, 
 integer_cst 64: __first, __last, 
 integer_type : __first, __last, 
 type_decl int: __first, __last, 
@@ -9901,6 +10110,11 @@ integer_cst 32: __first, __last,
 indirect_ref : __first, __last, 
 parm_decl __value: __first, __last, 
 reference_type : __first, __last, 
+integer_type : __first, __last, 
+type_decl int: __first, __last, 
+integer_cst 32: __first, __last, 
+integer_cst -2147483648: __first, __last, 
+integer_cst 2147483647: __first, __last, 
 integer_cst 64: __first, __last, 
 integer_type : __first, __last, 
 type_decl int: __first, __last, 
@@ -9929,6 +10143,11 @@ integer_cst 32: __first, __last,
 indirect_ref : __first, __last, 
 parm_decl __value: __first, __last, 
 reference_type : __first, __last, 
+integer_type : __first, __last, 
+type_decl int: __first, __last, 
+integer_cst 32: __first, __last, 
+integer_cst -2147483648: __first, __last, 
+integer_cst 2147483647: __first, __last, 
 integer_cst 64: __first, __last, 
 integer_type : __first, __last, 
 type_decl int: __first, __last, 
@@ -10184,12 +10403,18 @@ decl_expr :
 indirect_ref : 
 parm_decl __x: 
 reference_type : 
+pointer_type : 
+record_type : 
+type_decl Struct1: 
 integer_cst 64: 
 var_decl __x_copy: 
 integer_cst 64: 
 indirect_ref : 
 parm_decl __x: 
 reference_type : 
+pointer_type : 
+record_type : 
+type_decl Struct1: 
 integer_cst 64: 
 pointer_type : 
 record_type : 
@@ -10279,6 +10504,9 @@ integer_cst 64:
 indirect_ref : 
 parm_decl __x: 
 reference_type : 
+pointer_type : 
+record_type : 
+type_decl Struct1: 
 integer_cst 64: 
 pointer_type : 
 record_type : 
@@ -10290,6 +10518,7 @@ parm_decl __x:
 reference_type : 
 pointer_type : 
 record_type : 
+type_decl Struct1: 
 integer_cst 64: 
 pointer_type : 
 record_type : 
@@ -10300,6 +10529,9 @@ integer_cst 64:
 indirect_ref : 
 parm_decl __x: 
 reference_type : 
+pointer_type : 
+record_type : 
+type_decl Struct1: 
 integer_cst 64: 
 pointer_type : 
 record_type : 
@@ -10309,6 +10541,7 @@ parm_decl __x:
 reference_type : 
 pointer_type : 
 record_type : 
+type_decl Struct1: 
 integer_cst 64: 
 bind_expr : 
 statement_list : 
@@ -10524,6 +10757,7 @@ pointer_type : __new_finish, __new_start,
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 record_type : __new_finish, __new_start, 
+type_decl Struct1: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
@@ -10543,6 +10777,7 @@ pointer_type : __new_finish, __new_start,
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 record_type : __new_finish, __new_start, 
+type_decl Struct1: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
@@ -10619,6 +10854,7 @@ pointer_type : __new_finish, __new_start,
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 record_type : __new_finish, __new_start, 
+type_decl Struct1: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
@@ -10637,6 +10873,7 @@ pointer_type : __new_finish, __new_start,
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 record_type : __new_finish, __new_start, 
+type_decl Struct1: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
@@ -10686,6 +10923,7 @@ pointer_type : __new_finish, __new_start,
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 record_type : __new_finish, __new_start, 
+type_decl Struct1: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
@@ -10731,6 +10969,7 @@ pointer_type : __new_finish, __new_start,
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 record_type : __new_finish, __new_start, 
+type_decl Struct1: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
@@ -10796,6 +11035,7 @@ pointer_type : __new_start,
 type_decl pointer: __new_start, 
 pointer_type : __new_start, 
 record_type : __new_start, 
+type_decl Struct1: __new_start, 
 pointer_type : __new_start, 
 type_decl pointer: __new_start, 
 pointer_type : __new_start, 
@@ -11091,6 +11331,7 @@ pointer_type : __new_finish, __new_start,
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 record_type : __new_finish, __new_start, 
+type_decl Struct1: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
@@ -11178,6 +11419,7 @@ pointer_type : __new_finish, __new_start,
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 record_type : __new_finish, __new_start, 
+type_decl Struct1: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
@@ -11190,6 +11432,9 @@ integer_cst 64: __new_finish, __new_start,
 indirect_ref : __new_finish, __new_start, 
 parm_decl __x: __new_finish, __new_start, 
 reference_type : __new_finish, __new_start, 
+pointer_type : __new_finish, __new_start, 
+record_type : __new_finish, __new_start, 
+type_decl Struct1: __new_finish, __new_start, 
 integer_cst 64: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 record_type : __new_finish, __new_start, 
@@ -11224,6 +11469,7 @@ pointer_type : __new_finish, __new_start,
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 record_type : __new_finish, __new_start, 
+type_decl Struct1: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
@@ -11237,6 +11483,9 @@ integer_cst 64: __new_finish, __new_start,
 indirect_ref : __new_finish, __new_start, 
 parm_decl __x: __new_finish, __new_start, 
 reference_type : __new_finish, __new_start, 
+pointer_type : __new_finish, __new_start, 
+record_type : __new_finish, __new_start, 
+type_decl Struct1: __new_finish, __new_start, 
 integer_cst 64: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 record_type : __new_finish, __new_start, 
@@ -11271,6 +11520,7 @@ pointer_type : __new_finish, __new_start,
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 record_type : __new_finish, __new_start, 
+type_decl Struct1: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
 type_decl pointer: __new_finish, __new_start, 
 pointer_type : __new_finish, __new_start, 
@@ -12735,8 +12985,18 @@ exact_div_expr : __first, __last, __result,
 minus_expr : __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __last: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 integer_cst 8: __first, __last, __result, 
 integer_type : __first, __last, __result, 
 type_decl ptrdiff_t: __first, __last, __result, 
@@ -12752,8 +13012,18 @@ exact_div_expr : __first, __last, __result,
 minus_expr : __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __last: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 integer_cst 8: __first, __last, __result, 
 integer_type : __first, __last, __result, 
 type_decl ptrdiff_t: __first, __last, __result, 
@@ -12782,8 +13052,18 @@ exact_div_expr : __first, __last, __result,
 minus_expr : __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __last: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 integer_cst 8: __first, __last, __result, 
 integer_type : __first, __last, __result, 
 type_decl ptrdiff_t: __first, __last, __result, 
@@ -12806,8 +13086,18 @@ exact_div_expr : __first, __last, __result,
 minus_expr : __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __last: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 integer_cst 8: __first, __last, __result, 
 integer_type : __first, __last, __result, 
 type_decl ptrdiff_t: __first, __last, __result, 
@@ -12837,8 +13127,18 @@ exact_div_expr : __first, __last, __result,
 minus_expr : __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __last: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 integer_cst 8: __first, __last, __result, 
 integer_type : __first, __last, __result, 
 type_decl ptrdiff_t: __first, __last, __result, 
@@ -12854,11 +13154,15 @@ convert_expr : __first, __last, __result,
 parm_decl __last: __first, __last, __result, 
 pointer_type : __first, __last, __result, 
 pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
 integer_cst 64: __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
 pointer_type : __first, __last, __result, 
 pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
 integer_cst 64: __first, __last, __result, 
 integer_cst 8: __first, __last, __result, 
 integer_type : __first, __last, __result, 
@@ -12873,8 +13177,18 @@ exact_div_expr : __first, __last, __result,
 minus_expr : __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __last: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 integer_cst 8: __first, __last, __result, 
 integer_type : __first, __last, __result, 
 type_decl ptrdiff_t: __first, __last, __result, 
@@ -13231,8 +13545,18 @@ exact_div_expr : __first, __last, __result,
 minus_expr : __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __last: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 integer_cst 8: __first, __last, __result, 
 integer_type : __first, __last, __result, 
 type_decl ptrdiff_t: __first, __last, __result, 
@@ -13248,8 +13572,18 @@ exact_div_expr : __first, __last, __result,
 minus_expr : __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __last: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 integer_cst 8: __first, __last, __result, 
 integer_type : __first, __last, __result, 
 type_decl ptrdiff_t: __first, __last, __result, 
@@ -13284,8 +13618,18 @@ exact_div_expr : __first, __last, __result,
 minus_expr : __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __last: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 integer_cst 8: __first, __last, __result, 
 integer_type : __first, __last, __result, 
 type_decl ptrdiff_t: __first, __last, __result, 
@@ -13314,8 +13658,18 @@ exact_div_expr : __first, __last, __result,
 minus_expr : __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __last: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 integer_cst 8: __first, __last, __result, 
 integer_type : __first, __last, __result, 
 type_decl ptrdiff_t: __first, __last, __result, 
@@ -13331,11 +13685,15 @@ convert_expr : __first, __last, __result,
 parm_decl __last: __first, __last, __result, 
 pointer_type : __first, __last, __result, 
 pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
 integer_cst 64: __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
 pointer_type : __first, __last, __result, 
 pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
 integer_cst 64: __first, __last, __result, 
 integer_cst 8: __first, __last, __result, 
 integer_type : __first, __last, __result, 
@@ -13350,8 +13708,18 @@ exact_div_expr : __first, __last, __result,
 minus_expr : __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __last: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 convert_expr : __first, __last, __result, 
 parm_decl __first: __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+pointer_type : __first, __last, __result, 
+record_type : __first, __last, __result, 
+type_decl Struct1: __first, __last, __result, 
+integer_cst 64: __first, __last, __result, 
 integer_cst 8: __first, __last, __result, 
 integer_type : __first, __last, __result, 
 type_decl ptrdiff_t: __first, __last, __result, 
