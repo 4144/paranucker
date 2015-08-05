@@ -11,3 +11,9 @@ func3: pointer_type ptr1,
 func4: pointer_type ptr1, 
 func5: pointer_type ptr1, 
 func6: pointer_type ptr1, 
+Data1: 
+__base_ctor : 
+__comp_ctor : 
+func7: pointer_type ptr1, 
+__comp_ctor : 
+func8: 

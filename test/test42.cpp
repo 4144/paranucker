@@ -93,6 +93,25 @@ class Object1
         tmp3->getData2();
     }
 
+    void func7(Data1 *ptr1) const
+    {
+        Data1 val1;
+        val1.val = 100;
+    }
+
+    void func8(Data1 &ptr1) const
+    {
+        ptr1.val = 200;
+    }
+
+/*
+    void func9(Data1 *ptr1) const
+    {
+        Data1 *val1;
+        val1->val = 300;
+    }
+*/
+
 /*
     broken for now
     void func6(Data1 *ptr1) const
