@@ -60,19 +60,19 @@ void parseVarDeclNode(VarDeclNode *node)
             DECL_SIZE(node->gccNode),
             INTEGER_CST,
             "decl size 2",
-            3));
+            5));
 
         node->initial = createParseNode(
             node,
             DECL_INITIAL(node->gccNode),
             "initial 2",
-            3);
+            10);
 
         node->varType = static_cast<TypeNode*>(createParseNode(
             node,
             TREE_TYPE(node->gccNode),
             "var type 2",
-            3));
+            5));
 
         return;
     }
@@ -97,7 +97,7 @@ void parseVarDeclNode(VarDeclNode *node)
         node,
         DECL_INITIAL(node->gccNode),
         "initial",
-        5);
+        10);
 
     node->varType = static_cast<TypeNode*>(createParseNode(
         node,
