@@ -38,6 +38,10 @@ struct Data1
     {
         return &perm;
     }
+    virtual Data1 *getData6()
+    {
+        return 0;
+    }
 };
 
 int k;
@@ -139,4 +143,17 @@ class Object1
     {
         tmp1->getData2()->val = 100;
     }
+
+    void func15(Data1 *ptr1) const
+    {
+        if (ptr1 && ptr1->getData6() && k == 200)
+            ptr1->val = 100;
+    }
+
+    void func16(Data2 &ptr1) const
+    {
+        if (ptr1.ptrval)
+            ptr1.ptrval->val = 100;
+    }
+
 };

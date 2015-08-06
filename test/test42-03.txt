@@ -115,6 +115,15 @@ field_decl perm:
 integer_cst 256: 
 record_type : 
 type_decl Data2: 
+function_decl getData6: 
+return_expr : 
+init_expr : 
+result_decl : 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+integer_cst 64: 
+integer_cst 0: 
 function_decl getData1: 
 return_expr : 
 init_expr : 
@@ -161,7 +170,7 @@ expr_stmt : ptr1,
 convert_expr : ptr1, 
 modify_expr : ptr1, 
 test42.cpp: In member function 'void Object1::func1(Data1*) const':
-test42.cpp:68:24: warning: Using variable 'this->tmp1' without checking for null pointer
+test42.cpp:72:24: warning: Using variable 'this->tmp1' without checking for null pointer
          tmp1->val = 100;
                         ^
 component_ref : ptr1, 
@@ -221,7 +230,7 @@ expr_stmt : ptr1,
 convert_expr : ptr1, 
 modify_expr : ptr1, 
 test42.cpp: In member function 'void Object1::func3(Data1*) const':
-test42.cpp:78:25: warning: Using variable 'gptr1' without checking for null pointer
+test42.cpp:82:25: warning: Using variable 'gptr1' without checking for null pointer
          gptr1->val = 100;
                          ^
 component_ref : ptr1, 
@@ -269,7 +278,7 @@ call_expr : ptr1,
 addr_expr : ptr1, 
 function_decl getData2: ptr1, 
 test42.cpp: In member function 'void Object1::func5(Data1*) const':
-test42.cpp:88:23: warning: Using variable 'this->tmp1' without checking for null pointer
+test42.cpp:92:23: warning: Using variable 'this->tmp1' without checking for null pointer
          tmp1->getData2();
                        ^
 component_ref : ptr1, 
@@ -332,7 +341,7 @@ integer_cst 2147483647:
 pointer_plus_expr : 
 addr_expr : 
 var_decl _ZTV5Data1: 
-integer_cst 320: 
+integer_cst 384: 
 constructor : 
 array_type : 
 pointer_type : 
@@ -346,7 +355,7 @@ integer_cst 2147483647:
 integer_type : 
 integer_cst 64: 
 integer_cst 0: 
-integer_cst 4: 
+integer_cst 5: 
 integer_cst 0: 
 addr_expr : 
 var_decl _ZTI5Data1: 
@@ -359,6 +368,8 @@ addr_expr :
 function_decl __deleting_dtor : 
 addr_expr : 
 function_decl getData3: 
+addr_expr : 
+function_decl getData6: 
 array_type : 
 pointer_type : 
 type_decl __vtbl_ptr_type: 
@@ -371,7 +382,7 @@ integer_cst 2147483647:
 integer_type : 
 integer_cst 64: 
 integer_cst 0: 
-integer_cst 4: 
+integer_cst 5: 
 integer_cst 16: 
 block : 
 function_decl __base_ctor : 
@@ -401,7 +412,7 @@ integer_cst 2147483647:
 pointer_plus_expr : 
 addr_expr : 
 var_decl _ZTV5Data1: 
-integer_cst 320: 
+integer_cst 384: 
 constructor : 
 array_type : 
 pointer_type : 
@@ -415,7 +426,7 @@ integer_cst 2147483647:
 integer_type : 
 integer_cst 64: 
 integer_cst 0: 
-integer_cst 4: 
+integer_cst 5: 
 integer_cst 0: 
 addr_expr : 
 var_decl _ZTI5Data1: 
@@ -428,6 +439,8 @@ addr_expr :
 function_decl __deleting_dtor : 
 addr_expr : 
 function_decl getData3: 
+addr_expr : 
+function_decl getData6: 
 array_type : 
 pointer_type : 
 type_decl __vtbl_ptr_type: 
@@ -440,7 +453,7 @@ integer_cst 2147483647:
 integer_type : 
 integer_cst 64: 
 integer_cst 0: 
-integer_cst 4: 
+integer_cst 5: 
 integer_cst 16: 
 block : 
 function_decl __comp_ctor : 
@@ -538,10 +551,10 @@ expr_stmt : ptr1, val1,
 convert_expr : ptr1, val1, 
 modify_expr : ptr1, val1, 
 test42.cpp: In member function 'void Object1::func9(Data1*) const':
-test42.cpp:110:24: warning: Using variable 'val1' without checking for null pointer
+test42.cpp:114:24: warning: Using variable 'val1' without checking for null pointer
          val1->val = 300;
                         ^
-test42.cpp:110:24: warning: Using variable 'val1' without checking for null pointer
+test42.cpp:114:24: warning: Using variable 'val1' without checking for null pointer
 component_ref : ptr1, val1, 
 indirect_ref : ptr1, val1, 
 var_decl val1: ptr1, val1, 
@@ -780,7 +793,7 @@ call_expr : ptr1,
 addr_expr : ptr1, 
 function_decl getData2: ptr1, 
 test42.cpp: In member function 'void Object1::func14(Data1*) const':
-test42.cpp:139:23: warning: Using variable 'this->tmp1' without checking for null pointer
+test42.cpp:144:23: warning: Using variable 'this->tmp1' without checking for null pointer
          tmp1->getData2()->val = 100;
                        ^
 component_ref : ptr1, 
@@ -803,3 +816,125 @@ integer_cst 32: ptr1,
 integer_cst -2147483648: ptr1, 
 integer_cst 2147483647: ptr1, 
 integer_cst 100: ptr1, 
+function_decl func15: 
+if_stmt : ptr1, 
+cleanup_point_expr : ptr1, 
+truth_andif_expr : ptr1, 
+truth_andif_expr : ptr1, 
+ne_expr : ptr1, 
+integer_cst 0: ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+integer_cst 0: ptr1, 
+ne_expr : 
+integer_cst 0: 
+call_expr : 
+obj_type_ref : 
+indirect_ref : 
+pointer_plus_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+integer_cst 64: 
+field_decl _vptr.Data1: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 24: 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+integer_cst 64: 
+integer_cst 3: 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+integer_cst 64: 
+integer_cst 0: 
+eq_expr : 
+integer_cst 200: 
+var_decl k: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 200: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 100: 
+function_decl func16: 
+if_stmt : 
+ne_expr : 
+integer_cst 0: 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+reference_type : 
+record_type : 
+type_decl Data2: 
+integer_cst 64: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+integer_cst 0: 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+component_ref : 
+indirect_ref : 
+parm_decl ptr1: 
+reference_type : 
+record_type : 
+type_decl Data2: 
+integer_cst 64: 
+field_decl ptrval: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 100: 

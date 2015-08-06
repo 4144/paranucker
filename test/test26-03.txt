@@ -3475,59 +3475,48 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl __o: 
-reference_type : 
-record_type : 
-type_decl exception_ptr: 
-integer_cst 64: 
-field_decl _M_exception_object: 
-integer_cst 64: 
-pointer_type : 
-void_type : 
-type_decl void: 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl exception_ptr: 
-integer_cst 64: 
-field_decl _M_exception_object: 
-integer_cst 64: 
-pointer_type : 
-void_type : 
-type_decl void: 
-component_ref : 
-indirect_ref : 
-parm_decl __o: 
-reference_type : 
-record_type : 
-type_decl exception_ptr: 
-integer_cst 64: 
-field_decl _M_exception_object: 
-integer_cst 64: 
-pointer_type : 
-void_type : 
-type_decl void: 
-cleanup_point_expr : 
-expr_stmt : 
-convert_expr : 
-modify_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl __o: 
-reference_type : 
-record_type : 
-type_decl exception_ptr: 
-integer_cst 64: 
-field_decl _M_exception_object: 
-integer_cst 64: 
-pointer_type : 
-void_type : 
-type_decl void: 
-integer_cst 0: 
+component_ref : this->_M_exception_object, 
+indirect_ref : this->_M_exception_object, 
+parm_decl this: this->_M_exception_object, 
+pointer_type : this->_M_exception_object, 
+record_type : this->_M_exception_object, 
+type_decl exception_ptr: this->_M_exception_object, 
+integer_cst 64: this->_M_exception_object, 
+field_decl _M_exception_object: this->_M_exception_object, 
+integer_cst 64: this->_M_exception_object, 
+pointer_type : this->_M_exception_object, 
+void_type : this->_M_exception_object, 
+type_decl void: this->_M_exception_object, 
+component_ref : this->_M_exception_object, 
+indirect_ref : this->_M_exception_object, 
+parm_decl __o: this->_M_exception_object, 
+reference_type : this->_M_exception_object, 
+record_type : this->_M_exception_object, 
+type_decl exception_ptr: this->_M_exception_object, 
+integer_cst 64: this->_M_exception_object, 
+field_decl _M_exception_object: this->_M_exception_object, 
+integer_cst 64: this->_M_exception_object, 
+pointer_type : this->_M_exception_object, 
+void_type : this->_M_exception_object, 
+type_decl void: this->_M_exception_object, 
+cleanup_point_expr : this->_M_exception_object, 
+expr_stmt : this->_M_exception_object, 
+convert_expr : this->_M_exception_object, 
+modify_expr : this->_M_exception_object, 
+component_ref : this->_M_exception_object, 
+indirect_ref : this->_M_exception_object, 
+parm_decl __o: this->_M_exception_object, 
+reference_type : this->_M_exception_object, 
+record_type : this->_M_exception_object, 
+type_decl exception_ptr: this->_M_exception_object, 
+integer_cst 64: this->_M_exception_object, 
+field_decl _M_exception_object: this->_M_exception_object, 
+integer_cst 64: this->_M_exception_object, 
+pointer_type : this->_M_exception_object, 
+void_type : this->_M_exception_object, 
+type_decl void: this->_M_exception_object, 
+integer_cst 0: this->_M_exception_object, 
+integer_cst 0: this->_M_exception_object, 
 block : 
 function_decl __base_ctor : 
 must_not_throw_expr : 
@@ -3537,59 +3526,48 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl __o: 
-reference_type : 
-record_type : 
-type_decl exception_ptr: 
-integer_cst 64: 
-field_decl _M_exception_object: 
-integer_cst 64: 
-pointer_type : 
-void_type : 
-type_decl void: 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl exception_ptr: 
-integer_cst 64: 
-field_decl _M_exception_object: 
-integer_cst 64: 
-pointer_type : 
-void_type : 
-type_decl void: 
-component_ref : 
-indirect_ref : 
-parm_decl __o: 
-reference_type : 
-record_type : 
-type_decl exception_ptr: 
-integer_cst 64: 
-field_decl _M_exception_object: 
-integer_cst 64: 
-pointer_type : 
-void_type : 
-type_decl void: 
-cleanup_point_expr : 
-expr_stmt : 
-convert_expr : 
-modify_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl __o: 
-reference_type : 
-record_type : 
-type_decl exception_ptr: 
-integer_cst 64: 
-field_decl _M_exception_object: 
-integer_cst 64: 
-pointer_type : 
-void_type : 
-type_decl void: 
-integer_cst 0: 
+component_ref : this->_M_exception_object, 
+indirect_ref : this->_M_exception_object, 
+parm_decl this: this->_M_exception_object, 
+pointer_type : this->_M_exception_object, 
+record_type : this->_M_exception_object, 
+type_decl exception_ptr: this->_M_exception_object, 
+integer_cst 64: this->_M_exception_object, 
+field_decl _M_exception_object: this->_M_exception_object, 
+integer_cst 64: this->_M_exception_object, 
+pointer_type : this->_M_exception_object, 
+void_type : this->_M_exception_object, 
+type_decl void: this->_M_exception_object, 
+component_ref : this->_M_exception_object, 
+indirect_ref : this->_M_exception_object, 
+parm_decl __o: this->_M_exception_object, 
+reference_type : this->_M_exception_object, 
+record_type : this->_M_exception_object, 
+type_decl exception_ptr: this->_M_exception_object, 
+integer_cst 64: this->_M_exception_object, 
+field_decl _M_exception_object: this->_M_exception_object, 
+integer_cst 64: this->_M_exception_object, 
+pointer_type : this->_M_exception_object, 
+void_type : this->_M_exception_object, 
+type_decl void: this->_M_exception_object, 
+cleanup_point_expr : this->_M_exception_object, 
+expr_stmt : this->_M_exception_object, 
+convert_expr : this->_M_exception_object, 
+modify_expr : this->_M_exception_object, 
+component_ref : this->_M_exception_object, 
+indirect_ref : this->_M_exception_object, 
+parm_decl __o: this->_M_exception_object, 
+reference_type : this->_M_exception_object, 
+record_type : this->_M_exception_object, 
+type_decl exception_ptr: this->_M_exception_object, 
+integer_cst 64: this->_M_exception_object, 
+field_decl _M_exception_object: this->_M_exception_object, 
+integer_cst 64: this->_M_exception_object, 
+pointer_type : this->_M_exception_object, 
+void_type : this->_M_exception_object, 
+type_decl void: this->_M_exception_object, 
+integer_cst 0: this->_M_exception_object, 
+integer_cst 0: this->_M_exception_object, 
 block : 
 function_decl __comp_ctor : 
 statement_list : 
@@ -19221,59 +19199,44 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl : 
-reference_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl char: 
-integer_cst 8: 
-integer_cst -128: 
-integer_cst 127: 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl char: 
-integer_cst 8: 
-integer_cst -128: 
-integer_cst 127: 
-component_ref : 
-indirect_ref : 
-parm_decl : 
-reference_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl char: 
-integer_cst 8: 
-integer_cst -128: 
-integer_cst 127: 
-call_expr : 
-addr_expr : 
-function_decl __base_dtor : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
+component_ref : this->_M_p, 
+indirect_ref : this->_M_p, 
+parm_decl this: this->_M_p, 
+pointer_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Alloc_hider: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+pointer_type : this->_M_p, 
+integer_type : this->_M_p, 
+type_decl char: this->_M_p, 
+integer_cst 8: this->_M_p, 
+integer_cst -128: this->_M_p, 
+integer_cst 127: this->_M_p, 
+component_ref : this->_M_p, 
+indirect_ref : this->_M_p, 
+parm_decl : this->_M_p, 
+reference_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Alloc_hider: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+pointer_type : this->_M_p, 
+integer_type : this->_M_p, 
+type_decl char: this->_M_p, 
+integer_cst 8: this->_M_p, 
+integer_cst -128: this->_M_p, 
+integer_cst 127: this->_M_p, 
+call_expr : this->_M_p, 
+addr_expr : this->_M_p, 
+function_decl __base_dtor : this->_M_p, 
+parm_decl this: this->_M_p, 
+pointer_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Alloc_hider: this->_M_p, 
+integer_cst 64: this->_M_p, 
 block : 
 function_decl __base_ctor : 
 bind_expr : 
@@ -19300,59 +19263,44 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl : 
-reference_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl char: 
-integer_cst 8: 
-integer_cst -128: 
-integer_cst 127: 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl char: 
-integer_cst 8: 
-integer_cst -128: 
-integer_cst 127: 
-component_ref : 
-indirect_ref : 
-parm_decl : 
-reference_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl char: 
-integer_cst 8: 
-integer_cst -128: 
-integer_cst 127: 
-call_expr : 
-addr_expr : 
-function_decl __base_dtor : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
+component_ref : this->_M_p, 
+indirect_ref : this->_M_p, 
+parm_decl this: this->_M_p, 
+pointer_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Alloc_hider: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+pointer_type : this->_M_p, 
+integer_type : this->_M_p, 
+type_decl char: this->_M_p, 
+integer_cst 8: this->_M_p, 
+integer_cst -128: this->_M_p, 
+integer_cst 127: this->_M_p, 
+component_ref : this->_M_p, 
+indirect_ref : this->_M_p, 
+parm_decl : this->_M_p, 
+reference_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Alloc_hider: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+pointer_type : this->_M_p, 
+integer_type : this->_M_p, 
+type_decl char: this->_M_p, 
+integer_cst 8: this->_M_p, 
+integer_cst -128: this->_M_p, 
+integer_cst 127: this->_M_p, 
+call_expr : this->_M_p, 
+addr_expr : this->_M_p, 
+function_decl __base_dtor : this->_M_p, 
+parm_decl this: this->_M_p, 
+pointer_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Alloc_hider: this->_M_p, 
+integer_cst 64: this->_M_p, 
 block : 
 function_decl __comp_ctor : 
 statement_list : 
@@ -21678,59 +21626,44 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl : 
-reference_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl wchar_t: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl wchar_t: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-component_ref : 
-indirect_ref : 
-parm_decl : 
-reference_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl wchar_t: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-call_expr : 
-addr_expr : 
-function_decl __base_dtor : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
+component_ref : this->_M_p, 
+indirect_ref : this->_M_p, 
+parm_decl this: this->_M_p, 
+pointer_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Alloc_hider: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+pointer_type : this->_M_p, 
+integer_type : this->_M_p, 
+type_decl wchar_t: this->_M_p, 
+integer_cst 32: this->_M_p, 
+integer_cst -2147483648: this->_M_p, 
+integer_cst 2147483647: this->_M_p, 
+component_ref : this->_M_p, 
+indirect_ref : this->_M_p, 
+parm_decl : this->_M_p, 
+reference_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Alloc_hider: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+pointer_type : this->_M_p, 
+integer_type : this->_M_p, 
+type_decl wchar_t: this->_M_p, 
+integer_cst 32: this->_M_p, 
+integer_cst -2147483648: this->_M_p, 
+integer_cst 2147483647: this->_M_p, 
+call_expr : this->_M_p, 
+addr_expr : this->_M_p, 
+function_decl __base_dtor : this->_M_p, 
+parm_decl this: this->_M_p, 
+pointer_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Alloc_hider: this->_M_p, 
+integer_cst 64: this->_M_p, 
 block : 
 function_decl __base_ctor : 
 bind_expr : 
@@ -21757,59 +21690,44 @@ cleanup_point_expr :
 expr_stmt : 
 convert_expr : 
 init_expr : 
-component_ref : 
-indirect_ref : 
-parm_decl : 
-reference_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl wchar_t: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-component_ref : 
-indirect_ref : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl wchar_t: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-component_ref : 
-indirect_ref : 
-parm_decl : 
-reference_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
-field_decl _M_p: 
-integer_cst 64: 
-pointer_type : 
-integer_type : 
-type_decl wchar_t: 
-integer_cst 32: 
-integer_cst -2147483648: 
-integer_cst 2147483647: 
-call_expr : 
-addr_expr : 
-function_decl __base_dtor : 
-parm_decl this: 
-pointer_type : 
-record_type : 
-type_decl _Alloc_hider: 
-integer_cst 64: 
+component_ref : this->_M_p, 
+indirect_ref : this->_M_p, 
+parm_decl this: this->_M_p, 
+pointer_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Alloc_hider: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+pointer_type : this->_M_p, 
+integer_type : this->_M_p, 
+type_decl wchar_t: this->_M_p, 
+integer_cst 32: this->_M_p, 
+integer_cst -2147483648: this->_M_p, 
+integer_cst 2147483647: this->_M_p, 
+component_ref : this->_M_p, 
+indirect_ref : this->_M_p, 
+parm_decl : this->_M_p, 
+reference_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Alloc_hider: this->_M_p, 
+integer_cst 64: this->_M_p, 
+field_decl _M_p: this->_M_p, 
+integer_cst 64: this->_M_p, 
+pointer_type : this->_M_p, 
+integer_type : this->_M_p, 
+type_decl wchar_t: this->_M_p, 
+integer_cst 32: this->_M_p, 
+integer_cst -2147483648: this->_M_p, 
+integer_cst 2147483647: this->_M_p, 
+call_expr : this->_M_p, 
+addr_expr : this->_M_p, 
+function_decl __base_dtor : this->_M_p, 
+parm_decl this: this->_M_p, 
+pointer_type : this->_M_p, 
+record_type : this->_M_p, 
+type_decl _Alloc_hider: this->_M_p, 
+integer_cst 64: this->_M_p, 
 block : 
 function_decl __comp_ctor : 
 statement_list : 

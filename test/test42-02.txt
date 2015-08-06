@@ -3,6 +3,7 @@ getData2:
 getData3: 
 getData4: 
 getData5: 
+getData6: 
 getData1: 
 getData2: 
 func1: pointer_type ptr1, 
@@ -23,3 +24,5 @@ func11:
 func12: 
 func13: pointer_type ptr1, 
 func14: pointer_type ptr1, 
+func15: pointer_type ptr1, 
+func16: 

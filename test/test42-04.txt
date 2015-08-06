@@ -1,21 +1,21 @@
 test42.cpp: In member function 'void Object1::func1(Data1*) const':
-test42.cpp:68:24: warning: Using variable 'this->tmp1' without checking for null pointer
+test42.cpp:72:24: warning: Using variable 'this->tmp1' without checking for null pointer
          tmp1->val = 100;
                         ^
 test42.cpp: In member function 'void Object1::func3(Data1*) const':
-test42.cpp:78:25: warning: Using variable 'gptr1' without checking for null pointer
+test42.cpp:82:25: warning: Using variable 'gptr1' without checking for null pointer
          gptr1->val = 100;
                          ^
 test42.cpp: In member function 'void Object1::func5(Data1*) const':
-test42.cpp:88:23: warning: Using variable 'this->tmp1' without checking for null pointer
+test42.cpp:92:23: warning: Using variable 'this->tmp1' without checking for null pointer
          tmp1->getData2();
                        ^
 test42.cpp: In member function 'void Object1::func9(Data1*) const':
-test42.cpp:110:24: warning: Using variable 'val1' without checking for null pointer
+test42.cpp:114:24: warning: Using variable 'val1' without checking for null pointer
          val1->val = 300;
                         ^
-test42.cpp:110:24: warning: Using variable 'val1' without checking for null pointer
+test42.cpp:114:24: warning: Using variable 'val1' without checking for null pointer
 test42.cpp: In member function 'void Object1::func14(Data1*) const':
-test42.cpp:139:23: warning: Using variable 'this->tmp1' without checking for null pointer
+test42.cpp:144:23: warning: Using variable 'this->tmp1' without checking for null pointer
          tmp1->getData2()->val = 100;
                        ^
