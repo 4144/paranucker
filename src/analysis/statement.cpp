@@ -56,6 +56,16 @@ void analyseCondition(Node *node,
     condNode = skipNop(condNode);
     thenNode = skipNop(thenNode);
     elseNode = skipNop(elseNode);
+    Node *const parent = skipBackNop(node->parent);
+    bool report(true);
+
+    if (parent == INIT_EXPR && parent->parent)
+    {
+        if (skipBackNop(parent->parent) == RETURN_EXPR)
+        {
+            report = false;
+        }
+    }
 
     WalkItem wci = wi;
     WalkItem wco = wo;
@@ -76,9 +86,12 @@ void analyseCondition(Node *node,
     wo2 = wi2;
     Log::dumpWI(node, "wi2 then ", wi2);
 
-    reportParmDeclNullPointer(node,
-        thenNode,
-        wi2);
+    if (report)
+    {
+        reportParmDeclNullPointer(node,
+            thenNode,
+            wi2);
+    }
     reportParmDeclLeftNullPointer(node, thenNode, wi2);
     walkTree(thenNode, wi2, wo2);
     Log::dumpWI(node, "wo2 then ", wo2);
@@ -96,9 +109,12 @@ void analyseCondition(Node *node,
     wo3 = wi3;
     Log::dumpWI(node, "wi3 else ", wi3);
 
-    reportParmDeclNullPointer(node,
-        elseNode,
-        wi3);
+    if (report)
+    {
+        reportParmDeclNullPointer(node,
+            elseNode,
+            wi3);
+    }
     reportParmDeclLeftNullPointer(node, elseNode, wi3);
     walkTree(elseNode, wi3, wo3);
     Log::dumpWI(node, "wo3 else ", wo3);
