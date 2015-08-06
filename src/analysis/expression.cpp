@@ -163,20 +163,9 @@ VarItem getComponentRefVariable(Node *node)
             Node *ref = skipNop(indirect->ref);
             if (ref && !isValidVar(ref->label))
                 return str;
-            if (ref == PARM_DECL)
-            {
-                ParmDeclNode *decl = static_cast<ParmDeclNode*>(ref);
-                if (skipNop(decl->declType) != nullptr &&
-                    skipNop(decl->declType) != POINTER_TYPE)
-                {
-                    return str;
-                }
-            }
             if (ref == VAR_DECL)
             {
                 VarDeclNode *varDecl = static_cast<VarDeclNode*>(ref);
-                if (varDecl->varType != POINTER_TYPE)
-                    return str;
                 if (findTreeListPurpose(static_cast<TreeListNode*>(
                     skipNop(varDecl->attribute)),
                     "nonnullpointer"))
