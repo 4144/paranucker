@@ -46,7 +46,8 @@ TESTS39 = $(call TEST,39,5)
 TESTS40 = $(call TEST,40,5)
 TESTS41 = $(call TEST,41,5)
 TESTS42 = $(call TEST,42,5)
-TESTNUMBERS = 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42
+TESTS43 = $(call TEST,43,5)
+TESTNUMBERS = 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43
 ALLTESTS = $(foreach num,$(TESTNUMBERS),test$(num) ${TESTS$(num)})
 
 .PHONY: ${ALLTESTS} ${CRASHES} all crashes
@@ -524,6 +525,18 @@ test42-04:
 	$(call CMDXX,detectnullpointers,test42.cpp,test42-04.txt,-std=c++0x)
 test42-05:
 	$(call CMDXX,detectnullpointers,test42.cpp,test42-05.txt,-O2 -std=c++0x -Wall -Wnonnull)
+
+test43: ${TESTS43}
+test43-01:
+	$(call CMDXX,dump,test43.cpp,test43-01.txt,-std=c++0x)
+test43-02:
+	$(call CMDXX,findargs,test43.cpp,test43-02.txt,-std=c++0x)
+test43-03:
+	$(call CMDXX,dumpnullpointers,test43.cpp,test43-03.txt,-std=c++0x)
+test43-04:
+	$(call CMDXX,detectnullpointers,test43.cpp,test43-04.txt,-std=c++0x)
+test43-05:
+	$(call CMDXX,detectnullpointers,test43.cpp,test43-05.txt,-O2 -std=c++0x -Wall -Wnonnull)
 
 crashtest01:
 	$(call CMDXX,dump,crashtest01.h,crashtest01-01.txt)
