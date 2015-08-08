@@ -47,6 +47,8 @@ void parseVarDeclNode(VarDeclNode *node)
 
     if (isIn(node->gccNode, foundNodesMap))
     {
+        fillDeclAttributes(node);
+
         VarDeclNode *const oldNode = static_cast<VarDeclNode*>(
             foundNodesMap[node->gccNode]);
         if (node->parseChilds <= 0)
