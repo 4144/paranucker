@@ -1,3 +1,79 @@
+function_decl Data2: 
+bind_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+init_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+component_ref : 
+indirect_ref : 
+var_decl d1: 
+tree_list : 
+identifier_node nonnullpointer: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+block : 
+function_decl __base_ctor : 
+bind_expr : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+init_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+integer_cst 64: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+component_ref : 
+indirect_ref : 
+var_decl d1: 
+tree_list : 
+identifier_node nonnullpointer: 
+integer_cst 64: 
+pointer_type : 
+record_type : 
+type_decl Data2: 
+field_decl val: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+block : 
+function_decl __comp_ctor : 
+statement_list : 
 function_decl getData3: 
 return_expr : 
 init_expr : 
@@ -237,7 +313,7 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 pointer_plus_expr : ptr1, 
 test43.cpp: In member function 'Data1* Object1::func3(Data1*) const':
-test43.cpp:82:23: warning: Using variable 'this->tmp1' without checking for null pointer
+test43.cpp:88:23: warning: Using variable 'this->tmp1' without checking for null pointer
          return &tmp1[1];
                        ^
 component_ref : ptr1, 

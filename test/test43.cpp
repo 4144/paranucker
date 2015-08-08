@@ -1,8 +1,14 @@
 struct Data1;
 struct Data2;
 
+Data2 *d1 __attribute__((nonnullpointer));
+
 struct Data2
 {
+    Data2() :
+        val(d1->val)
+    {
+    }
     int val;
     Data1 *ptrval;
     int arr[3];
