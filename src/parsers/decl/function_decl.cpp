@@ -19,6 +19,8 @@
 
 #include "includes/parserincludes.h"
 
+#include "command.h"
+
 parserDefine(FunctionDecl);
 
 #include "parsers/base/decl.h"
@@ -34,6 +36,15 @@ void parseFunctionDeclNode(FunctionDeclNode *node)
     fillType(node);
     fillLocation(node);
     fillDeclLabel(node);
+
+    bool spoofCommand(false);
+    Command oldCommand = command;
+    if (!node->parent && !dumpFile.empty() && node->file == dumpFile)
+    {
+        spoofCommand = true;
+        enableCommand(Dump);
+        Log::log("start dump\n");
+    }
 
     Log::dump(node);
 
@@ -79,6 +90,12 @@ void parseFunctionDeclNode(FunctionDeclNode *node)
         node,
         DECL_FUNCTION_SPECIFIC_OPTIMIZATION(node->gccNode),
         "optiomisations");
+
+    if (spoofCommand)
+    {
+        command = oldCommand;
+        Log::log("end dump\n");
+    }
 }
 
 }

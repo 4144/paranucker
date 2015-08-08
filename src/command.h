@@ -23,6 +23,8 @@
 #define checkCommand(val) ((command & Command::val) == Command::val)
 #define disableCommand(val) command = static_cast<Command>(static_cast<int>( \
     command | Command::val) ^ static_cast<int>(Command::val))
+#define enableCommand(val) command = static_cast<Command>(static_cast<int>( \
+    command | Command::val))
 
 enum Command : int
 {
@@ -38,5 +40,6 @@ enum Command : int
 };
 
 extern Command command;
+extern std::string dumpFile;
 
 #endif  // COMMAND_H

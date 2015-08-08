@@ -39,6 +39,7 @@ struct Node;
 Command command = Command::DetectNullPointers;
 std::map<tree, Node*> foundNodesMap;
 std::map<Node*, Node*> updateNodesMap;
+std::string dumpFile;
 
 // copy/paste from plugin.h look like again guard header issue.
 extern void register_attribute (const struct attribute_spec *attr);
@@ -138,6 +139,10 @@ int plugin_init (struct plugin_name_args *plugin_info,
                     cmd.c_str());
                 return 0;
             }
+        }
+        if (!strcmp (argv[f].key, "specialdump"))
+        {
+            dumpFile = argv[f].value;
         }
     }
 
