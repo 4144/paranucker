@@ -1,4 +1,4 @@
 test43.cpp: In member function 'Data1* Object1::func3(Data1*) const':
-test43.cpp:88:23: warning: Using variable 'this->tmp1' without checking for null pointer
+test43.cpp:90:23: warning: Using variable 'this->tmp1' without checking for null pointer
          return &tmp1[1];
                        ^

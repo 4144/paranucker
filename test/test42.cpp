@@ -56,6 +56,8 @@ class Object1
     Data1 *tmp1;
     Data1 *tmp2;
     Data1 *tmp3 __attribute__((nonnullpointer));
+    int x;
+    int y;
 
     Data1 *getData1()
     {
@@ -156,4 +158,9 @@ class Object1
             ptr1.ptrval->val = 100;
     }
 
+    void func17(Data1 *ptr1)
+    {
+        x = gptr2->val;
+        y = gptr2->val;
+    }
 };

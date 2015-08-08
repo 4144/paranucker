@@ -170,7 +170,7 @@ expr_stmt : ptr1,
 convert_expr : ptr1, 
 modify_expr : ptr1, 
 test42.cpp: In member function 'void Object1::func1(Data1*) const':
-test42.cpp:72:24: warning: Using variable 'this->tmp1' without checking for null pointer
+test42.cpp:74:24: warning: Using variable 'this->tmp1' without checking for null pointer
          tmp1->val = 100;
                         ^
 component_ref : ptr1, 
@@ -230,7 +230,7 @@ expr_stmt : ptr1,
 convert_expr : ptr1, 
 modify_expr : ptr1, 
 test42.cpp: In member function 'void Object1::func3(Data1*) const':
-test42.cpp:82:25: warning: Using variable 'gptr1' without checking for null pointer
+test42.cpp:84:25: warning: Using variable 'gptr1' without checking for null pointer
          gptr1->val = 100;
                          ^
 component_ref : ptr1, 
@@ -278,7 +278,7 @@ call_expr : ptr1,
 addr_expr : ptr1, 
 function_decl getData2: ptr1, 
 test42.cpp: In member function 'void Object1::func5(Data1*) const':
-test42.cpp:92:23: warning: Using variable 'this->tmp1' without checking for null pointer
+test42.cpp:94:23: warning: Using variable 'this->tmp1' without checking for null pointer
          tmp1->getData2();
                        ^
 component_ref : ptr1, 
@@ -551,10 +551,10 @@ expr_stmt : ptr1, val1,
 convert_expr : ptr1, val1, 
 modify_expr : ptr1, val1, 
 test42.cpp: In member function 'void Object1::func9(Data1*) const':
-test42.cpp:114:24: warning: Using variable 'val1' without checking for null pointer
+test42.cpp:116:24: warning: Using variable 'val1' without checking for null pointer
          val1->val = 300;
                         ^
-test42.cpp:114:24: warning: Using variable 'val1' without checking for null pointer
+test42.cpp:116:24: warning: Using variable 'val1' without checking for null pointer
 component_ref : ptr1, val1, 
 indirect_ref : ptr1, val1, 
 var_decl val1: ptr1, val1, 
@@ -793,7 +793,7 @@ call_expr : ptr1,
 addr_expr : ptr1, 
 function_decl getData2: ptr1, 
 test42.cpp: In member function 'void Object1::func14(Data1*) const':
-test42.cpp:144:23: warning: Using variable 'this->tmp1' without checking for null pointer
+test42.cpp:146:23: warning: Using variable 'this->tmp1' without checking for null pointer
          tmp1->getData2()->val = 100;
                        ^
 component_ref : ptr1, 
@@ -938,3 +938,73 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 integer_cst 100: 
+function_decl func17: 
+statement_list : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+component_ref : ptr1, 
+indirect_ref : ptr1, 
+parm_decl this: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Object1: ptr1, 
+integer_cst 64: ptr1, 
+field_decl x: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+component_ref : ptr1, 
+indirect_ref : ptr1, 
+var_decl gptr2: ptr1, 
+tree_list : ptr1, 
+identifier_node nonnullpointer: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+component_ref : ptr1, 
+indirect_ref : ptr1, 
+parm_decl this: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Object1: ptr1, 
+integer_cst 64: ptr1, 
+field_decl y: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
+component_ref : ptr1, 
+indirect_ref : ptr1, 
+var_decl gptr2: ptr1, 
+tree_list : ptr1, 
+identifier_node nonnullpointer: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl val: ptr1, 
+integer_cst 32: ptr1, 
+integer_type : ptr1, 
+type_decl int: ptr1, 
+integer_cst 32: ptr1, 
+integer_cst -2147483648: ptr1, 
+integer_cst 2147483647: ptr1, 
