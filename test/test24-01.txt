@@ -192,9 +192,9 @@ function_decl func2 test24.c 36:6 2147483647
    decl_expr test24.c 38:14 2147483644 - statement
     var_decl fptr2 test24.c 38:14 2147483643 - operand
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
-     pointer_type 5 - var type 2
-      type_decl FuncPtr2 test24.c 4:16 4 - type name
+     integer_cst 64 15 - decl size 2
+     pointer_type 15 - var type 2
+      type_decl FuncPtr2 test24.c 4:16 14 - type name
       function_type 3 - nested type
        void_type 2 - function return type
         type_decl void 1 - type name
@@ -206,9 +206,9 @@ function_decl func2 test24.c 36:6 2147483647
    call_expr test24.c 39:5 2147483644 - statement
     var_decl fptr2 test24.c 38:14 2147483643 - function
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
-     pointer_type 5 - var type 2
-      type_decl FuncPtr2 test24.c 4:16 4 - type name
+     integer_cst 64 15 - decl size 2
+     pointer_type 15 - var type 2
+      type_decl FuncPtr2 test24.c 4:16 14 - type name
       function_type 3 - nested type
        void_type 2 - function return type
         type_decl void 1 - type name
@@ -226,9 +226,9 @@ function_decl func2 test24.c 36:6 2147483647
   block 2147483645 - operand
    var_decl fptr2 test24.c 38:14 2147483644 - block vars
    - isUsed: 1
-    integer_cst 64 5 - decl size 2
-    pointer_type 5 - var type 2
-     type_decl FuncPtr2 test24.c 4:16 4 - type name
+    integer_cst 64 15 - decl size 2
+    pointer_type 15 - var type 2
+     type_decl FuncPtr2 test24.c 4:16 14 - type name
      function_type 3 - nested type
       void_type 2 - function return type
        type_decl void 1 - type name
@@ -270,8 +270,8 @@ function_decl func3 test24.c 42:6 2147483647
    decl_expr test24.c 44:19 2147483644 - statement
     var_decl data test24.c 44:19 2147483643 - operand
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
-     pointer_type 5 - var type 2
+     integer_cst 64 15 - decl size 2
+     pointer_type 15 - var type 2
       record_type 3 - nested type
        identifier_node Data1 2 - type name
    call_expr test24.c 45:5 2147483644 - statement
@@ -279,8 +279,8 @@ function_decl func3 test24.c 42:6 2147483647
      indirect_ref test24.c 45:9 2147483642 - object
       var_decl data test24.c 44:19 2147483641 - ref
       - isUsed: 1
-       integer_cst 64 5 - decl size 2
-       pointer_type 5 - var type 2
+       integer_cst 64 15 - decl size 2
+       pointer_type 15 - var type 2
         record_type 3 - nested type
          identifier_node Data1 2 - type name
      field_decl fptr1 test24.c 11:14 2147483642 - field
@@ -305,8 +305,8 @@ function_decl func3 test24.c 42:6 2147483647
   block 2147483645 - operand
    var_decl data test24.c 44:19 2147483644 - block vars
    - isUsed: 1
-    integer_cst 64 5 - decl size 2
-    pointer_type 5 - var type 2
+    integer_cst 64 15 - decl size 2
+    pointer_type 15 - var type 2
      record_type 3 - nested type
       identifier_node Data1 2 - type name
 function_decl func4 test24.c 48:6 2147483647
@@ -342,8 +342,8 @@ function_decl func4 test24.c 48:6 2147483647
    decl_expr test24.c 50:19 2147483644 - statement
     var_decl ptr2 test24.c 50:19 2147483643 - operand
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
-     pointer_type 5 - var type 2
+     integer_cst 64 15 - decl size 2
+     pointer_type 15 - var type 2
       record_type 3 - nested type
        identifier_node Data1 2 - type name
    call_expr test24.c 51:5 2147483644 - statement
@@ -370,15 +370,15 @@ function_decl func4 test24.c 48:6 2147483647
           void_type 0 - value
     var_decl ptr2 test24.c 50:19 2147483643 - arg
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
-     pointer_type 5 - var type 2
+     integer_cst 64 15 - decl size 2
+     pointer_type 15 - var type 2
       record_type 3 - nested type
        identifier_node Data1 2 - type name
   block 2147483645 - operand
    var_decl ptr2 test24.c 50:19 2147483644 - block vars
    - isUsed: 1
-    integer_cst 64 5 - decl size 2
-    pointer_type 5 - var type 2
+    integer_cst 64 15 - decl size 2
+    pointer_type 15 - var type 2
      record_type 3 - nested type
       identifier_node Data1 2 - type name
 function_decl func5 test24.c 54:6 2147483647
@@ -414,8 +414,8 @@ function_decl func5 test24.c 54:6 2147483647
    decl_expr test24.c 56:19 2147483644 - statement
     var_decl data test24.c 56:19 2147483643 - operand
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
-     pointer_type 5 - var type 2
+     integer_cst 64 15 - decl size 2
+     pointer_type 15 - var type 2
       record_type 3 - nested type
        identifier_node Data1 2 - type name
    call_expr test24.c 58:5 2147483644 - statement
@@ -426,8 +426,8 @@ function_decl func5 test24.c 54:6 2147483647
       indirect_ref test24.c 58:11 2147483641 - object
        var_decl data test24.c 56:19 2147483640 - ref
        - isUsed: 1
-        integer_cst 64 5 - decl size 2
-        pointer_type 5 - var type 2
+        integer_cst 64 15 - decl size 2
+        pointer_type 15 - var type 2
          record_type 3 - nested type
           identifier_node Data1 2 - type name
       field_decl fptr2 test24.c 12:14 2147483641 - field
@@ -460,8 +460,8 @@ function_decl func5 test24.c 54:6 2147483647
   block 2147483645 - operand
    var_decl data test24.c 56:19 2147483644 - block vars
    - isUsed: 1
-    integer_cst 64 5 - decl size 2
-    pointer_type 5 - var type 2
+    integer_cst 64 15 - decl size 2
+    pointer_type 15 - var type 2
      record_type 3 - nested type
       identifier_node Data1 2 - type name
 function_decl func6 test24.c 61:6 2147483647
@@ -509,8 +509,8 @@ function_decl func6 test24.c 61:6 2147483647
    decl_expr test24.c 63:19 2147483644 - statement
     var_decl data test24.c 63:19 2147483643 - operand
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
-     pointer_type 5 - var type 2
+     integer_cst 64 15 - decl size 2
+     pointer_type 15 - var type 2
       record_type 3 - nested type
        identifier_node Data1 2 - type name
    call_expr test24.c 64:5 2147483644 - statement
@@ -531,15 +531,15 @@ function_decl func6 test24.c 61:6 2147483647
       integer_cst 8 2147483641 - operand
     var_decl data test24.c 63:19 2147483643 - arg
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
-     pointer_type 5 - var type 2
+     integer_cst 64 15 - decl size 2
+     pointer_type 15 - var type 2
       record_type 3 - nested type
        identifier_node Data1 2 - type name
   block 2147483645 - operand
    var_decl data test24.c 63:19 2147483644 - block vars
    - isUsed: 1
-    integer_cst 64 5 - decl size 2
-    pointer_type 5 - var type 2
+    integer_cst 64 15 - decl size 2
+    pointer_type 15 - var type 2
      record_type 3 - nested type
       identifier_node Data1 2 - type name
 function_decl test1 test24.c 67:5 2147483647
@@ -670,9 +670,9 @@ function_decl func7 test24.c 71:6 2147483647
   var_decl fptr test24.c 73:11 2147483645 - operand
   - isUsed: 1
    integer_cst 64 2147483644 - decl size
-   constructor 10 - initial
-    array_type 9 - constructor type
-     pointer_type 8 - element type
+   constructor 20 - initial
+    array_type 19 - constructor type
+     pointer_type 18 - element type
       function_type 3 - nested type
        integer_type 2 - function return type
        - precisionBits: 32
@@ -690,26 +690,26 @@ function_decl func7 test24.c 71:6 2147483647
         tree_list 1 - chain
          pointer_type 0 - value
          tree_list 0 - chain
-     integer_type 8 - domain
+     integer_type 18 - domain
      - precisionBits: 64
      - signed
-      integer_cst 64 7 - type size
-      integer_cst 0 7 - min value
-      integer_cst 0 7 - max value
-    integer_cst 0 9 - index
-    addr_expr test24.c 75:9 9 - value
-     function_decl test1 test24.c 67:5 8 - operand
+      integer_cst 64 17 - type size
+      integer_cst 0 17 - min value
+      integer_cst 0 17 - max value
+    integer_cst 0 19 - index
+    addr_expr test24.c 75:9 19 - value
+     function_decl test1 test24.c 67:5 18 - operand
      - isPublic: 1
-      function_type 7 - function type
-       integer_type 6 - function return type
+      function_type 17 - function type
+       integer_type 16 - function return type
        - precisionBits: 32
        - signed
-        type_decl int 5 - type name
-        integer_cst 32 5 - type size
-        integer_cst -2147483648 5 - min value
-        integer_cst 2147483647 5 - max value
-       tree_list 6 - arg types
-        pointer_type 5 - value
+        type_decl int 15 - type name
+        integer_cst 32 15 - type size
+        integer_cst -2147483648 15 - min value
+        integer_cst 2147483647 15 - max value
+       tree_list 16 - arg types
+        pointer_type 15 - value
          integer_type 3 - nested type
          - precisionBits: 8
          - isChar: 1
@@ -718,8 +718,8 @@ function_decl func7 test24.c 71:6 2147483647
           integer_cst 8 2 - type size
           integer_cst -128 2 - min value
           integer_cst 127 2 - max value
-        tree_list 5 - chain
-         pointer_type 4 - value
+        tree_list 15 - chain
+         pointer_type 14 - value
           integer_type 3 - nested type
           - precisionBits: 8
           - isChar: 1
@@ -728,21 +728,21 @@ function_decl func7 test24.c 71:6 2147483647
            integer_cst 8 2 - type size
            integer_cst -128 2 - min value
            integer_cst 127 2 - max value
-         tree_list 4 - chain
-          void_type 3 - value
-           type_decl void 2 - type name
-      result_decl test24.c 67:5 7 - function result
+         tree_list 14 - chain
+          void_type 13 - value
+           type_decl void 12 - type name
+      result_decl test24.c 67:5 17 - function result
       - isAutogenerated: 1
-       integer_type 6 - result type
+       integer_type 16 - result type
        - precisionBits: 32
        - signed
-        type_decl int 5 - type name
-        integer_cst 32 5 - type size
-        integer_cst -2147483648 5 - min value
-        integer_cst 2147483647 5 - max value
-       integer_cst 32 6 - decl size
-      parm_decl w1 test24.c 67:17 7 - argument
-       pointer_type 6 - decl type
+        type_decl int 15 - type name
+        integer_cst 32 15 - type size
+        integer_cst -2147483648 15 - min value
+        integer_cst 2147483647 15 - max value
+       integer_cst 32 16 - decl size
+      parm_decl w1 test24.c 67:17 17 - argument
+       pointer_type 16 - decl type
         integer_type 3 - nested type
         - precisionBits: 8
         - isChar: 1
@@ -751,9 +751,9 @@ function_decl func7 test24.c 71:6 2147483647
          integer_cst 8 2 - type size
          integer_cst -128 2 - min value
          integer_cst 127 2 - max value
-       integer_cst 64 6 - parm size
-      parm_decl w2 test24.c 67:27 7 - argument
-       pointer_type 6 - decl type
+       integer_cst 64 16 - parm size
+      parm_decl w2 test24.c 67:27 17 - argument
+       pointer_type 16 - decl type
         integer_type 3 - nested type
         - precisionBits: 8
         - isChar: 1
@@ -762,10 +762,10 @@ function_decl func7 test24.c 71:6 2147483647
          integer_cst 8 2 - type size
          integer_cst -128 2 - min value
          integer_cst 127 2 - max value
-       integer_cst 64 6 - parm size
-      bind_expr test24.c 68:1 7 - code
-       statement_list 6 - operand
-       block 6 - operand
+       integer_cst 64 16 - parm size
+      bind_expr test24.c 68:1 17 - code
+       statement_list 16 - operand
+       block 16 - operand
    array_type 2147483644 - var type
     pointer_type 2147483643 - element type
      function_type 3 - nested type
@@ -795,10 +795,10 @@ function_decl func7 test24.c 71:6 2147483647
    decl_expr test24.c 73:11 2147483644 - statement
     var_decl fptr test24.c 73:11 2147483643 - operand
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
-     constructor 10 - initial 2
-      array_type 9 - constructor type
-       pointer_type 8 - element type
+     integer_cst 64 15 - decl size 2
+     constructor 20 - initial 2
+      array_type 19 - constructor type
+       pointer_type 18 - element type
         function_type 3 - nested type
          integer_type 2 - function return type
          - precisionBits: 32
@@ -816,26 +816,26 @@ function_decl func7 test24.c 71:6 2147483647
           tree_list 1 - chain
            pointer_type 0 - value
            tree_list 0 - chain
-       integer_type 8 - domain
+       integer_type 18 - domain
        - precisionBits: 64
        - signed
-        integer_cst 64 7 - type size
-        integer_cst 0 7 - min value
-        integer_cst 0 7 - max value
-      integer_cst 0 9 - index
-      addr_expr test24.c 75:9 9 - value
-       function_decl test1 test24.c 67:5 8 - operand
+        integer_cst 64 17 - type size
+        integer_cst 0 17 - min value
+        integer_cst 0 17 - max value
+      integer_cst 0 19 - index
+      addr_expr test24.c 75:9 19 - value
+       function_decl test1 test24.c 67:5 18 - operand
        - isPublic: 1
-        function_type 7 - function type
-         integer_type 6 - function return type
+        function_type 17 - function type
+         integer_type 16 - function return type
          - precisionBits: 32
          - signed
-          type_decl int 5 - type name
-          integer_cst 32 5 - type size
-          integer_cst -2147483648 5 - min value
-          integer_cst 2147483647 5 - max value
-         tree_list 6 - arg types
-          pointer_type 5 - value
+          type_decl int 15 - type name
+          integer_cst 32 15 - type size
+          integer_cst -2147483648 15 - min value
+          integer_cst 2147483647 15 - max value
+         tree_list 16 - arg types
+          pointer_type 15 - value
            integer_type 3 - nested type
            - precisionBits: 8
            - isChar: 1
@@ -844,8 +844,8 @@ function_decl func7 test24.c 71:6 2147483647
             integer_cst 8 2 - type size
             integer_cst -128 2 - min value
             integer_cst 127 2 - max value
-          tree_list 5 - chain
-           pointer_type 4 - value
+          tree_list 15 - chain
+           pointer_type 14 - value
             integer_type 3 - nested type
             - precisionBits: 8
             - isChar: 1
@@ -854,21 +854,21 @@ function_decl func7 test24.c 71:6 2147483647
              integer_cst 8 2 - type size
              integer_cst -128 2 - min value
              integer_cst 127 2 - max value
-           tree_list 4 - chain
-            void_type 3 - value
-             type_decl void 2 - type name
-        result_decl test24.c 67:5 7 - function result
+           tree_list 14 - chain
+            void_type 13 - value
+             type_decl void 12 - type name
+        result_decl test24.c 67:5 17 - function result
         - isAutogenerated: 1
-         integer_type 6 - result type
+         integer_type 16 - result type
          - precisionBits: 32
          - signed
-          type_decl int 5 - type name
-          integer_cst 32 5 - type size
-          integer_cst -2147483648 5 - min value
-          integer_cst 2147483647 5 - max value
-         integer_cst 32 6 - decl size
-        parm_decl w1 test24.c 67:17 7 - argument
-         pointer_type 6 - decl type
+          type_decl int 15 - type name
+          integer_cst 32 15 - type size
+          integer_cst -2147483648 15 - min value
+          integer_cst 2147483647 15 - max value
+         integer_cst 32 16 - decl size
+        parm_decl w1 test24.c 67:17 17 - argument
+         pointer_type 16 - decl type
           integer_type 3 - nested type
           - precisionBits: 8
           - isChar: 1
@@ -877,9 +877,9 @@ function_decl func7 test24.c 71:6 2147483647
            integer_cst 8 2 - type size
            integer_cst -128 2 - min value
            integer_cst 127 2 - max value
-         integer_cst 64 6 - parm size
-        parm_decl w2 test24.c 67:27 7 - argument
-         pointer_type 6 - decl type
+         integer_cst 64 16 - parm size
+        parm_decl w2 test24.c 67:27 17 - argument
+         pointer_type 16 - decl type
           integer_type 3 - nested type
           - precisionBits: 8
           - isChar: 1
@@ -888,12 +888,12 @@ function_decl func7 test24.c 71:6 2147483647
            integer_cst 8 2 - type size
            integer_cst -128 2 - min value
            integer_cst 127 2 - max value
-         integer_cst 64 6 - parm size
-        bind_expr test24.c 68:1 7 - code
-         statement_list 6 - operand
-         block 6 - operand
-     array_type 5 - var type 2
-      pointer_type 4 - element type
+         integer_cst 64 16 - parm size
+        bind_expr test24.c 68:1 17 - code
+         statement_list 16 - operand
+         block 16 - operand
+     array_type 15 - var type 2
+      pointer_type 14 - element type
        function_type 3 - nested type
         integer_type 2 - function return type
         - precisionBits: 32
@@ -911,12 +911,12 @@ function_decl func7 test24.c 71:6 2147483647
          tree_list 1 - chain
           pointer_type 0 - value
           tree_list 0 - chain
-      integer_type 4 - domain
+      integer_type 14 - domain
       - precisionBits: 64
       - signed
-       integer_cst 64 3 - type size
-       integer_cst 0 3 - min value
-       integer_cst 0 3 - max value
+       integer_cst 64 13 - type size
+       integer_cst 0 13 - min value
+       integer_cst 0 13 - max value
    decl_expr test24.c 77:9 2147483644 - statement
     var_decl i test24.c 77:9 2147483643 - operand
     - isUsed: 1
@@ -931,14 +931,14 @@ function_decl func7 test24.c 71:6 2147483647
    modify_expr test24.c 78:11 2147483644 - statement
     var_decl i test24.c 77:9 2147483643 - operand
     - isUsed: 1
-     integer_cst 32 5 - decl size 2
-     integer_type 5 - var type 2
+     integer_cst 32 15 - decl size 2
+     integer_type 15 - var type 2
      - precisionBits: 32
      - signed
-      type_decl int 4 - type name
-      integer_cst 32 4 - type size
-      integer_cst -2147483648 4 - min value
-      integer_cst 2147483647 4 - max value
+      type_decl int 14 - type name
+      integer_cst 32 14 - type size
+      integer_cst -2147483648 14 - min value
+      integer_cst 2147483647 14 - max value
     integer_cst 0 2147483643 - operand
    goto_expr test24.c 78:5 2147483644 - statement
    label_expr 2147483644 - statement
@@ -952,10 +952,10 @@ function_decl func7 test24.c 71:6 2147483647
        integer_cst 8 2147483640 - element size
        var_decl fptr test24.c 73:11 2147483640 - operand
        - isUsed: 1
-        integer_cst 64 5 - decl size 2
-        constructor 10 - initial 2
-         array_type 9 - constructor type
-          pointer_type 8 - element type
+        integer_cst 64 15 - decl size 2
+        constructor 20 - initial 2
+         array_type 19 - constructor type
+          pointer_type 18 - element type
            function_type 3 - nested type
             integer_type 2 - function return type
             - precisionBits: 32
@@ -973,26 +973,26 @@ function_decl func7 test24.c 71:6 2147483647
              tree_list 1 - chain
               pointer_type 0 - value
               tree_list 0 - chain
-          integer_type 8 - domain
+          integer_type 18 - domain
           - precisionBits: 64
           - signed
-           integer_cst 64 7 - type size
-           integer_cst 0 7 - min value
-           integer_cst 0 7 - max value
-         integer_cst 0 9 - index
-         addr_expr test24.c 75:9 9 - value
-          function_decl test1 test24.c 67:5 8 - operand
+           integer_cst 64 17 - type size
+           integer_cst 0 17 - min value
+           integer_cst 0 17 - max value
+         integer_cst 0 19 - index
+         addr_expr test24.c 75:9 19 - value
+          function_decl test1 test24.c 67:5 18 - operand
           - isPublic: 1
-           function_type 7 - function type
-            integer_type 6 - function return type
+           function_type 17 - function type
+            integer_type 16 - function return type
             - precisionBits: 32
             - signed
-             type_decl int 5 - type name
-             integer_cst 32 5 - type size
-             integer_cst -2147483648 5 - min value
-             integer_cst 2147483647 5 - max value
-            tree_list 6 - arg types
-             pointer_type 5 - value
+             type_decl int 15 - type name
+             integer_cst 32 15 - type size
+             integer_cst -2147483648 15 - min value
+             integer_cst 2147483647 15 - max value
+            tree_list 16 - arg types
+             pointer_type 15 - value
               integer_type 3 - nested type
               - precisionBits: 8
               - isChar: 1
@@ -1001,8 +1001,8 @@ function_decl func7 test24.c 71:6 2147483647
                integer_cst 8 2 - type size
                integer_cst -128 2 - min value
                integer_cst 127 2 - max value
-             tree_list 5 - chain
-              pointer_type 4 - value
+             tree_list 15 - chain
+              pointer_type 14 - value
                integer_type 3 - nested type
                - precisionBits: 8
                - isChar: 1
@@ -1011,21 +1011,21 @@ function_decl func7 test24.c 71:6 2147483647
                 integer_cst 8 2 - type size
                 integer_cst -128 2 - min value
                 integer_cst 127 2 - max value
-              tree_list 4 - chain
-               void_type 3 - value
-                type_decl void 2 - type name
-           result_decl test24.c 67:5 7 - function result
+              tree_list 14 - chain
+               void_type 13 - value
+                type_decl void 12 - type name
+           result_decl test24.c 67:5 17 - function result
            - isAutogenerated: 1
-            integer_type 6 - result type
+            integer_type 16 - result type
             - precisionBits: 32
             - signed
-             type_decl int 5 - type name
-             integer_cst 32 5 - type size
-             integer_cst -2147483648 5 - min value
-             integer_cst 2147483647 5 - max value
-            integer_cst 32 6 - decl size
-           parm_decl w1 test24.c 67:17 7 - argument
-            pointer_type 6 - decl type
+             type_decl int 15 - type name
+             integer_cst 32 15 - type size
+             integer_cst -2147483648 15 - min value
+             integer_cst 2147483647 15 - max value
+            integer_cst 32 16 - decl size
+           parm_decl w1 test24.c 67:17 17 - argument
+            pointer_type 16 - decl type
              integer_type 3 - nested type
              - precisionBits: 8
              - isChar: 1
@@ -1034,9 +1034,9 @@ function_decl func7 test24.c 71:6 2147483647
               integer_cst 8 2 - type size
               integer_cst -128 2 - min value
               integer_cst 127 2 - max value
-            integer_cst 64 6 - parm size
-           parm_decl w2 test24.c 67:27 7 - argument
-            pointer_type 6 - decl type
+            integer_cst 64 16 - parm size
+           parm_decl w2 test24.c 67:27 17 - argument
+            pointer_type 16 - decl type
              integer_type 3 - nested type
              - precisionBits: 8
              - isChar: 1
@@ -1045,12 +1045,12 @@ function_decl func7 test24.c 71:6 2147483647
               integer_cst 8 2 - type size
               integer_cst -128 2 - min value
               integer_cst 127 2 - max value
-            integer_cst 64 6 - parm size
-           bind_expr test24.c 68:1 7 - code
-            statement_list 6 - operand
-            block 6 - operand
-        array_type 5 - var type 2
-         pointer_type 4 - element type
+            integer_cst 64 16 - parm size
+           bind_expr test24.c 68:1 17 - code
+            statement_list 16 - operand
+            block 16 - operand
+        array_type 15 - var type 2
+         pointer_type 14 - element type
           function_type 3 - nested type
            integer_type 2 - function return type
            - precisionBits: 32
@@ -1068,22 +1068,22 @@ function_decl func7 test24.c 71:6 2147483647
             tree_list 1 - chain
              pointer_type 0 - value
              tree_list 0 - chain
-         integer_type 4 - domain
+         integer_type 14 - domain
          - precisionBits: 64
          - signed
-          integer_cst 64 3 - type size
-          integer_cst 0 3 - min value
-          integer_cst 0 3 - max value
+          integer_cst 64 13 - type size
+          integer_cst 0 13 - min value
+          integer_cst 0 13 - max value
        var_decl i test24.c 77:9 2147483640 - operand
        - isUsed: 1
-        integer_cst 32 5 - decl size 2
-        integer_type 5 - var type 2
+        integer_cst 32 15 - decl size 2
+        integer_type 15 - var type 2
         - precisionBits: 32
         - signed
-         type_decl int 4 - type name
-         integer_cst 32 4 - type size
-         integer_cst -2147483648 4 - min value
-         integer_cst 2147483647 4 - max value
+         type_decl int 14 - type name
+         integer_cst 32 14 - type size
+         integer_cst -2147483648 14 - min value
+         integer_cst 2147483647 14 - max value
       - isUsed: 1
       parm_decl w1 test24.c 71:18 2147483641 - arg
        pointer_type 2147483640 - decl type
@@ -1113,14 +1113,14 @@ function_decl func7 test24.c 71:6 2147483647
    postincrement_expr test24.c 78:25 2147483644 - statement
     var_decl i test24.c 77:9 2147483643 - operand
     - isUsed: 1
-     integer_cst 32 5 - decl size 2
-     integer_type 5 - var type 2
+     integer_cst 32 15 - decl size 2
+     integer_type 15 - var type 2
      - precisionBits: 32
      - signed
-      type_decl int 4 - type name
-      integer_cst 32 4 - type size
-      integer_cst -2147483648 4 - min value
-      integer_cst 2147483647 4 - max value
+      type_decl int 14 - type name
+      integer_cst 32 14 - type size
+      integer_cst -2147483648 14 - min value
+      integer_cst 2147483647 14 - max value
     integer_cst 1 2147483643 - operand
    label_expr 2147483644 - statement
     label_decl 2147483643 - operand
@@ -1129,14 +1129,14 @@ function_decl func7 test24.c 71:6 2147483647
     le_expr test24.c 78:18 2147483643 - operand
      var_decl i test24.c 77:9 2147483642 - operand
      - isUsed: 1
-      integer_cst 32 5 - decl size 2
-      integer_type 5 - var type 2
+      integer_cst 32 15 - decl size 2
+      integer_type 15 - var type 2
       - precisionBits: 32
       - signed
-       type_decl int 4 - type name
-       integer_cst 32 4 - type size
-       integer_cst -2147483648 4 - min value
-       integer_cst 2147483647 4 - max value
+       type_decl int 14 - type name
+       integer_cst 32 14 - type size
+       integer_cst -2147483648 14 - min value
+       integer_cst 2147483647 14 - max value
      integer_cst 9 2147483642 - operand
     goto_expr 2147483643 - operand
     goto_expr 2147483643 - operand
@@ -1146,10 +1146,10 @@ function_decl func7 test24.c 71:6 2147483647
   block 2147483645 - operand
    var_decl fptr test24.c 73:11 2147483644 - block vars
    - isUsed: 1
-    integer_cst 64 5 - decl size 2
-    constructor 10 - initial 2
-     array_type 9 - constructor type
-      pointer_type 8 - element type
+    integer_cst 64 15 - decl size 2
+    constructor 20 - initial 2
+     array_type 19 - constructor type
+      pointer_type 18 - element type
        function_type 3 - nested type
         integer_type 2 - function return type
         - precisionBits: 32
@@ -1167,26 +1167,26 @@ function_decl func7 test24.c 71:6 2147483647
          tree_list 1 - chain
           pointer_type 0 - value
           tree_list 0 - chain
-      integer_type 8 - domain
+      integer_type 18 - domain
       - precisionBits: 64
       - signed
-       integer_cst 64 7 - type size
-       integer_cst 0 7 - min value
-       integer_cst 0 7 - max value
-     integer_cst 0 9 - index
-     addr_expr test24.c 75:9 9 - value
-      function_decl test1 test24.c 67:5 8 - operand
+       integer_cst 64 17 - type size
+       integer_cst 0 17 - min value
+       integer_cst 0 17 - max value
+     integer_cst 0 19 - index
+     addr_expr test24.c 75:9 19 - value
+      function_decl test1 test24.c 67:5 18 - operand
       - isPublic: 1
-       function_type 7 - function type
-        integer_type 6 - function return type
+       function_type 17 - function type
+        integer_type 16 - function return type
         - precisionBits: 32
         - signed
-         type_decl int 5 - type name
-         integer_cst 32 5 - type size
-         integer_cst -2147483648 5 - min value
-         integer_cst 2147483647 5 - max value
-        tree_list 6 - arg types
-         pointer_type 5 - value
+         type_decl int 15 - type name
+         integer_cst 32 15 - type size
+         integer_cst -2147483648 15 - min value
+         integer_cst 2147483647 15 - max value
+        tree_list 16 - arg types
+         pointer_type 15 - value
           integer_type 3 - nested type
           - precisionBits: 8
           - isChar: 1
@@ -1195,8 +1195,8 @@ function_decl func7 test24.c 71:6 2147483647
            integer_cst 8 2 - type size
            integer_cst -128 2 - min value
            integer_cst 127 2 - max value
-         tree_list 5 - chain
-          pointer_type 4 - value
+         tree_list 15 - chain
+          pointer_type 14 - value
            integer_type 3 - nested type
            - precisionBits: 8
            - isChar: 1
@@ -1205,21 +1205,21 @@ function_decl func7 test24.c 71:6 2147483647
             integer_cst 8 2 - type size
             integer_cst -128 2 - min value
             integer_cst 127 2 - max value
-          tree_list 4 - chain
-           void_type 3 - value
-            type_decl void 2 - type name
-       result_decl test24.c 67:5 7 - function result
+          tree_list 14 - chain
+           void_type 13 - value
+            type_decl void 12 - type name
+       result_decl test24.c 67:5 17 - function result
        - isAutogenerated: 1
-        integer_type 6 - result type
+        integer_type 16 - result type
         - precisionBits: 32
         - signed
-         type_decl int 5 - type name
-         integer_cst 32 5 - type size
-         integer_cst -2147483648 5 - min value
-         integer_cst 2147483647 5 - max value
-        integer_cst 32 6 - decl size
-       parm_decl w1 test24.c 67:17 7 - argument
-        pointer_type 6 - decl type
+         type_decl int 15 - type name
+         integer_cst 32 15 - type size
+         integer_cst -2147483648 15 - min value
+         integer_cst 2147483647 15 - max value
+        integer_cst 32 16 - decl size
+       parm_decl w1 test24.c 67:17 17 - argument
+        pointer_type 16 - decl type
          integer_type 3 - nested type
          - precisionBits: 8
          - isChar: 1
@@ -1228,9 +1228,9 @@ function_decl func7 test24.c 71:6 2147483647
           integer_cst 8 2 - type size
           integer_cst -128 2 - min value
           integer_cst 127 2 - max value
-        integer_cst 64 6 - parm size
-       parm_decl w2 test24.c 67:27 7 - argument
-        pointer_type 6 - decl type
+        integer_cst 64 16 - parm size
+       parm_decl w2 test24.c 67:27 17 - argument
+        pointer_type 16 - decl type
          integer_type 3 - nested type
          - precisionBits: 8
          - isChar: 1
@@ -1239,12 +1239,12 @@ function_decl func7 test24.c 71:6 2147483647
           integer_cst 8 2 - type size
           integer_cst -128 2 - min value
           integer_cst 127 2 - max value
-        integer_cst 64 6 - parm size
-       bind_expr test24.c 68:1 7 - code
-        statement_list 6 - operand
-        block 6 - operand
-    array_type 5 - var type 2
-     pointer_type 4 - element type
+        integer_cst 64 16 - parm size
+       bind_expr test24.c 68:1 17 - code
+        statement_list 16 - operand
+        block 16 - operand
+    array_type 15 - var type 2
+     pointer_type 14 - element type
       function_type 3 - nested type
        integer_type 2 - function return type
        - precisionBits: 32
@@ -1262,22 +1262,22 @@ function_decl func7 test24.c 71:6 2147483647
         tree_list 1 - chain
          pointer_type 0 - value
          tree_list 0 - chain
-     integer_type 4 - domain
+     integer_type 14 - domain
      - precisionBits: 64
      - signed
-      integer_cst 64 3 - type size
-      integer_cst 0 3 - min value
-      integer_cst 0 3 - max value
+      integer_cst 64 13 - type size
+      integer_cst 0 13 - min value
+      integer_cst 0 13 - max value
    var_decl i test24.c 77:9 2147483644 - block vars
    - isUsed: 1
-    integer_cst 32 5 - decl size 2
-    integer_type 5 - var type 2
+    integer_cst 32 15 - decl size 2
+    integer_type 15 - var type 2
     - precisionBits: 32
     - signed
-     type_decl int 4 - type name
-     integer_cst 32 4 - type size
-     integer_cst -2147483648 4 - min value
-     integer_cst 2147483647 4 - max value
+     type_decl int 14 - type name
+     integer_cst 32 14 - type size
+     integer_cst -2147483648 14 - min value
+     integer_cst 2147483647 14 - max value
 function_decl func8 test24.c 85:6 2147483647
 - isPublic: 1
  function_type 2147483646 - function type

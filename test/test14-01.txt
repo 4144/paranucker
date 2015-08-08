@@ -363,7 +363,7 @@ function_decl func6 test14.c 48:6 2147483647
     bind_expr test14.c 51:5 2147483643 - operand
      var_decl k test14.c 52:13 2147483642 - operand
       integer_cst 32 2147483641 - decl size
-      integer_cst 10 10 - initial
+      integer_cst 10 20 - initial
       integer_type 2147483641 - var type
       - precisionBits: 32
       - signed
@@ -374,27 +374,27 @@ function_decl func6 test14.c 48:6 2147483647
      statement_list 2147483642 - operand
       decl_expr test14.c 52:13 2147483641 - statement
        var_decl k test14.c 52:13 2147483640 - operand
-        integer_cst 32 5 - decl size 2
-        integer_cst 10 10 - initial 2
-        integer_type 5 - var type 2
+        integer_cst 32 15 - decl size 2
+        integer_cst 10 20 - initial 2
+        integer_type 15 - var type 2
         - precisionBits: 32
         - signed
-         type_decl int 4 - type name
-         integer_cst 32 4 - type size
-         integer_cst -2147483648 4 - min value
-         integer_cst 2147483647 4 - max value
+         type_decl int 14 - type name
+         integer_cst 32 14 - type size
+         integer_cst -2147483648 14 - min value
+         integer_cst 2147483647 14 - max value
       return_expr test14.c 53:9 2147483641 - statement
      block 2147483642 - operand
       var_decl k test14.c 52:13 2147483641 - block vars
-       integer_cst 32 5 - decl size 2
-       integer_cst 10 10 - initial 2
-       integer_type 5 - var type 2
+       integer_cst 32 15 - decl size 2
+       integer_cst 10 20 - initial 2
+       integer_type 15 - var type 2
        - precisionBits: 32
        - signed
-        type_decl int 4 - type name
-        integer_cst 32 4 - type size
-        integer_cst -2147483648 4 - min value
-        integer_cst 2147483647 4 - max value
+        type_decl int 14 - type name
+        integer_cst 32 14 - type size
+        integer_cst -2147483648 14 - min value
+        integer_cst 2147483647 14 - max value
    modify_expr test14.c 56:8 2147483644 - statement
     indirect_ref test14.c 56:5 2147483643 - operand
      - isUsed: 1
@@ -412,15 +412,15 @@ function_decl func6 test14.c 48:6 2147483647
   block 2147483645 - operand
    block 2147483644 - sub block
     var_decl k test14.c 52:13 2147483643 - block vars
-     integer_cst 32 5 - decl size 2
-     integer_cst 10 10 - initial 2
-     integer_type 5 - var type 2
+     integer_cst 32 15 - decl size 2
+     integer_cst 10 20 - initial 2
+     integer_type 15 - var type 2
      - precisionBits: 32
      - signed
-      type_decl int 4 - type name
-      integer_cst 32 4 - type size
-      integer_cst -2147483648 4 - min value
-      integer_cst 2147483647 4 - max value
+      type_decl int 14 - type name
+      integer_cst 32 14 - type size
+      integer_cst -2147483648 14 - min value
+      integer_cst 2147483647 14 - max value
 function_decl func7 test14.c 59:6 2147483647
 - isPublic: 1
  function_type 2147483646 - function type
@@ -474,7 +474,7 @@ function_decl func7 test14.c 59:6 2147483647
      bind_expr test14.c 64:9 2147483642 - operand
       var_decl k test14.c 65:17 2147483641 - operand
        integer_cst 32 2147483640 - decl size
-       integer_cst 10 10 - initial
+       integer_cst 10 20 - initial
        integer_type 2147483640 - var type
        - precisionBits: 32
        - signed
@@ -485,27 +485,27 @@ function_decl func7 test14.c 59:6 2147483647
       statement_list 2147483641 - operand
        decl_expr test14.c 65:17 2147483640 - statement
         var_decl k test14.c 65:17 2147483639 - operand
-         integer_cst 32 5 - decl size 2
-         integer_cst 10 10 - initial 2
-         integer_type 5 - var type 2
+         integer_cst 32 15 - decl size 2
+         integer_cst 10 20 - initial 2
+         integer_type 15 - var type 2
          - precisionBits: 32
          - signed
-          type_decl int 4 - type name
-          integer_cst 32 4 - type size
-          integer_cst -2147483648 4 - min value
-          integer_cst 2147483647 4 - max value
+          type_decl int 14 - type name
+          integer_cst 32 14 - type size
+          integer_cst -2147483648 14 - min value
+          integer_cst 2147483647 14 - max value
        return_expr test14.c 66:13 2147483640 - statement
       block 2147483641 - operand
        var_decl k test14.c 65:17 2147483640 - block vars
-        integer_cst 32 5 - decl size 2
-        integer_cst 10 10 - initial 2
-        integer_type 5 - var type 2
+        integer_cst 32 15 - decl size 2
+        integer_cst 10 20 - initial 2
+        integer_type 15 - var type 2
         - precisionBits: 32
         - signed
-         type_decl int 4 - type name
-         integer_cst 32 4 - type size
-         integer_cst -2147483648 4 - min value
-         integer_cst 2147483647 4 - max value
+         type_decl int 14 - type name
+         integer_cst 32 14 - type size
+         integer_cst -2147483648 14 - min value
+         integer_cst 2147483647 14 - max value
    modify_expr test14.c 70:11 2147483644 - statement
     indirect_ref test14.c 70:5 2147483643 - operand
      - isUsed: 1
@@ -523,15 +523,15 @@ function_decl func7 test14.c 59:6 2147483647
   block 2147483645 - operand
    block 2147483644 - sub block
     var_decl k test14.c 65:17 2147483643 - block vars
-     integer_cst 32 5 - decl size 2
-     integer_cst 10 10 - initial 2
-     integer_type 5 - var type 2
+     integer_cst 32 15 - decl size 2
+     integer_cst 10 20 - initial 2
+     integer_type 15 - var type 2
      - precisionBits: 32
      - signed
-      type_decl int 4 - type name
-      integer_cst 32 4 - type size
-      integer_cst -2147483648 4 - min value
-      integer_cst 2147483647 4 - max value
+      type_decl int 14 - type name
+      integer_cst 32 14 - type size
+      integer_cst -2147483648 14 - min value
+      integer_cst 2147483647 14 - max value
 function_decl func8 test14.c 73:6 2147483647
 - isPublic: 1
  function_type 2147483646 - function type
@@ -586,7 +586,7 @@ function_decl func8 test14.c 73:6 2147483647
       bind_expr test14.c 78:9 2147483641 - operand
        var_decl k test14.c 79:17 2147483640 - operand
         integer_cst 32 2147483639 - decl size
-        integer_cst 10 10 - initial
+        integer_cst 10 20 - initial
         integer_type 2147483639 - var type
         - precisionBits: 32
         - signed
@@ -597,19 +597,19 @@ function_decl func8 test14.c 73:6 2147483647
        statement_list 2147483640 - operand
         decl_expr test14.c 79:17 2147483639 - statement
          var_decl k test14.c 79:17 2147483638 - operand
-          integer_cst 32 5 - decl size 2
-          integer_cst 10 10 - initial 2
-          integer_type 5 - var type 2
+          integer_cst 32 15 - decl size 2
+          integer_cst 10 20 - initial 2
+          integer_type 15 - var type 2
           - precisionBits: 32
           - signed
-           type_decl int 4 - type name
-           integer_cst 32 4 - type size
-           integer_cst -2147483648 4 - min value
-           integer_cst 2147483647 4 - max value
+           type_decl int 14 - type name
+           integer_cst 32 14 - type size
+           integer_cst -2147483648 14 - min value
+           integer_cst 2147483647 14 - max value
         decl_expr test14.c 80:17 2147483639 - statement
          var_decl l test14.c 80:17 2147483638 - operand
           integer_cst 32 2147483637 - decl size
-          integer_cst 20 10 - initial
+          integer_cst 20 20 - initial
           integer_type 2147483637 - var type
           - precisionBits: 32
           - signed
@@ -619,25 +619,25 @@ function_decl func8 test14.c 73:6 2147483647
            integer_cst 2147483647 2147483636 - max value
        block 2147483640 - operand
         var_decl k test14.c 79:17 2147483639 - block vars
-         integer_cst 32 5 - decl size 2
-         integer_cst 10 10 - initial 2
-         integer_type 5 - var type 2
+         integer_cst 32 15 - decl size 2
+         integer_cst 10 20 - initial 2
+         integer_type 15 - var type 2
          - precisionBits: 32
          - signed
-          type_decl int 4 - type name
-          integer_cst 32 4 - type size
-          integer_cst -2147483648 4 - min value
-          integer_cst 2147483647 4 - max value
+          type_decl int 14 - type name
+          integer_cst 32 14 - type size
+          integer_cst -2147483648 14 - min value
+          integer_cst 2147483647 14 - max value
         var_decl l test14.c 80:17 2147483639 - block vars
-         integer_cst 32 5 - decl size 2
-         integer_cst 20 10 - initial 2
-         integer_type 5 - var type 2
+         integer_cst 32 15 - decl size 2
+         integer_cst 20 20 - initial 2
+         integer_type 15 - var type 2
          - precisionBits: 32
          - signed
-          type_decl int 4 - type name
-          integer_cst 32 4 - type size
-          integer_cst -2147483648 4 - min value
-          integer_cst 2147483647 4 - max value
+          type_decl int 14 - type name
+          integer_cst 32 14 - type size
+          integer_cst -2147483648 14 - min value
+          integer_cst 2147483647 14 - max value
      return_expr test14.c 82:9 2147483642 - statement
    modify_expr test14.c 85:11 2147483644 - statement
     indirect_ref test14.c 85:5 2147483643 - operand
@@ -656,22 +656,22 @@ function_decl func8 test14.c 73:6 2147483647
   block 2147483645 - operand
    block 2147483644 - sub block
     var_decl k test14.c 79:17 2147483643 - block vars
-     integer_cst 32 5 - decl size 2
-     integer_cst 10 10 - initial 2
-     integer_type 5 - var type 2
+     integer_cst 32 15 - decl size 2
+     integer_cst 10 20 - initial 2
+     integer_type 15 - var type 2
      - precisionBits: 32
      - signed
-      type_decl int 4 - type name
-      integer_cst 32 4 - type size
-      integer_cst -2147483648 4 - min value
-      integer_cst 2147483647 4 - max value
+      type_decl int 14 - type name
+      integer_cst 32 14 - type size
+      integer_cst -2147483648 14 - min value
+      integer_cst 2147483647 14 - max value
     var_decl l test14.c 80:17 2147483643 - block vars
-     integer_cst 32 5 - decl size 2
-     integer_cst 20 10 - initial 2
-     integer_type 5 - var type 2
+     integer_cst 32 15 - decl size 2
+     integer_cst 20 20 - initial 2
+     integer_type 15 - var type 2
      - precisionBits: 32
      - signed
-      type_decl int 4 - type name
-      integer_cst 32 4 - type size
-      integer_cst -2147483648 4 - min value
-      integer_cst 2147483647 4 - max value
+      type_decl int 14 - type name
+      integer_cst 32 14 - type size
+      integer_cst -2147483648 14 - min value
+      integer_cst 2147483647 14 - max value

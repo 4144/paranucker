@@ -345,14 +345,14 @@ function_decl func3 test15.c 33:6 2147483647
    decl_expr test15.c 35:9 2147483644 - statement
     var_decl c test15.c 35:9 2147483643 - operand
     - isUsed: 1
-     integer_cst 32 5 - decl size 2
-     integer_type 5 - var type 2
+     integer_cst 32 15 - decl size 2
+     integer_type 15 - var type 2
      - precisionBits: 32
      - signed
-      type_decl int 4 - type name
-      integer_cst 32 4 - type size
-      integer_cst -2147483648 4 - min value
-      integer_cst 2147483647 4 - max value
+      type_decl int 14 - type name
+      integer_cst 32 14 - type size
+      integer_cst -2147483648 14 - min value
+      integer_cst 2147483647 14 - max value
    cond_expr test15.c 36:8 2147483644 - statement
     truth_orif_expr test15.c 36:16 2147483643 - operand
      eq_expr test15.c 36:11 2147483642 - operand
@@ -368,14 +368,14 @@ function_decl func3 test15.c 33:6 2147483647
         integer_cst 2147483647 2147483639 - max value
       var_decl c test15.c 35:9 2147483641 - operand
       - isUsed: 1
-       integer_cst 32 5 - decl size 2
-       integer_type 5 - var type 2
+       integer_cst 32 15 - decl size 2
+       integer_type 15 - var type 2
        - precisionBits: 32
        - signed
-        type_decl int 4 - type name
-        integer_cst 32 4 - type size
-        integer_cst -2147483648 4 - min value
-        integer_cst 2147483647 4 - max value
+        type_decl int 14 - type name
+        integer_cst 32 14 - type size
+        integer_cst -2147483648 14 - min value
+        integer_cst 2147483647 14 - max value
      eq_expr test15.c 36:19 2147483642 - operand
       - isUsed: 1
       parm_decl ptr1 test15.c 33:17 2147483641 - operand
@@ -435,14 +435,14 @@ function_decl func3 test15.c 33:6 2147483647
   block 2147483645 - operand
    var_decl c test15.c 35:9 2147483644 - block vars
    - isUsed: 1
-    integer_cst 32 5 - decl size 2
-    integer_type 5 - var type 2
+    integer_cst 32 15 - decl size 2
+    integer_type 15 - var type 2
     - precisionBits: 32
     - signed
-     type_decl int 4 - type name
-     integer_cst 32 4 - type size
-     integer_cst -2147483648 4 - min value
-     integer_cst 2147483647 4 - max value
+     type_decl int 14 - type name
+     integer_cst 32 14 - type size
+     integer_cst -2147483648 14 - min value
+     integer_cst 2147483647 14 - max value
 function_decl func4 test15.c 49:6 2147483647
 - isPublic: 1
  function_type 2147483646 - function type
@@ -510,14 +510,14 @@ function_decl func4 test15.c 49:6 2147483647
    decl_expr test15.c 51:9 2147483644 - statement
     var_decl c test15.c 51:9 2147483643 - operand
     - isUsed: 1
-     integer_cst 32 5 - decl size 2
-     integer_type 5 - var type 2
+     integer_cst 32 15 - decl size 2
+     integer_type 15 - var type 2
      - precisionBits: 32
      - signed
-      type_decl int 4 - type name
-      integer_cst 32 4 - type size
-      integer_cst -2147483648 4 - min value
-      integer_cst 2147483647 4 - max value
+      type_decl int 14 - type name
+      integer_cst 32 14 - type size
+      integer_cst -2147483648 14 - min value
+      integer_cst 2147483647 14 - max value
    cond_expr test15.c 52:8 2147483644 - statement
     truth_orif_expr test15.c 52:25 2147483643 - operand
      truth_orif_expr test15.c 52:16 2147483642 - operand
@@ -534,14 +534,14 @@ function_decl func4 test15.c 49:6 2147483647
          integer_cst 2147483647 2147483638 - max value
        var_decl c test15.c 51:9 2147483640 - operand
        - isUsed: 1
-        integer_cst 32 5 - decl size 2
-        integer_type 5 - var type 2
+        integer_cst 32 15 - decl size 2
+        integer_type 15 - var type 2
         - precisionBits: 32
         - signed
-         type_decl int 4 - type name
-         integer_cst 32 4 - type size
-         integer_cst -2147483648 4 - min value
-         integer_cst 2147483647 4 - max value
+         type_decl int 14 - type name
+         integer_cst 32 14 - type size
+         integer_cst -2147483648 14 - min value
+         integer_cst 2147483647 14 - max value
       eq_expr test15.c 52:19 2147483641 - operand
        - isUsed: 1
        parm_decl ptr1 test15.c 49:17 2147483640 - operand
@@ -614,14 +614,14 @@ function_decl func4 test15.c 49:6 2147483647
   block 2147483645 - operand
    var_decl c test15.c 51:9 2147483644 - block vars
    - isUsed: 1
-    integer_cst 32 5 - decl size 2
-    integer_type 5 - var type 2
+    integer_cst 32 15 - decl size 2
+    integer_type 15 - var type 2
     - precisionBits: 32
     - signed
-     type_decl int 4 - type name
-     integer_cst 32 4 - type size
-     integer_cst -2147483648 4 - min value
-     integer_cst 2147483647 4 - max value
+     type_decl int 14 - type name
+     integer_cst 32 14 - type size
+     integer_cst -2147483648 14 - min value
+     integer_cst 2147483647 14 - max value
 function_decl func5 test15.c 65:6 2147483647
 - isPublic: 1
  function_type 2147483646 - function type
@@ -689,14 +689,14 @@ function_decl func5 test15.c 65:6 2147483647
    decl_expr test15.c 67:9 2147483644 - statement
     var_decl c test15.c 67:9 2147483643 - operand
     - isUsed: 1
-     integer_cst 32 5 - decl size 2
-     integer_type 5 - var type 2
+     integer_cst 32 15 - decl size 2
+     integer_type 15 - var type 2
      - precisionBits: 32
      - signed
-      type_decl int 4 - type name
-      integer_cst 32 4 - type size
-      integer_cst -2147483648 4 - min value
-      integer_cst 2147483647 4 - max value
+      type_decl int 14 - type name
+      integer_cst 32 14 - type size
+      integer_cst -2147483648 14 - min value
+      integer_cst 2147483647 14 - max value
    cond_expr test15.c 68:8 2147483644 - statement
     truth_orif_expr test15.c 68:24 2147483643 - operand
      truth_orif_expr test15.c 68:15 2147483642 - operand
@@ -739,25 +739,25 @@ function_decl func5 test15.c 65:6 2147483647
         integer_cst 2147483647 2147483639 - max value
       var_decl c test15.c 67:9 2147483641 - operand
       - isUsed: 1
-       integer_cst 32 5 - decl size 2
-       integer_type 5 - var type 2
+       integer_cst 32 15 - decl size 2
+       integer_type 15 - var type 2
        - precisionBits: 32
        - signed
-        type_decl int 4 - type name
-        integer_cst 32 4 - type size
-        integer_cst -2147483648 4 - min value
-        integer_cst 2147483647 4 - max value
+        type_decl int 14 - type name
+        integer_cst 32 14 - type size
+        integer_cst -2147483648 14 - min value
+        integer_cst 2147483647 14 - max value
     modify_expr test15.c 70:11 2147483643 - operand
      var_decl c test15.c 67:9 2147483642 - operand
      - isUsed: 1
-      integer_cst 32 5 - decl size 2
-      integer_type 5 - var type 2
+      integer_cst 32 15 - decl size 2
+      integer_type 15 - var type 2
       - precisionBits: 32
       - signed
-       type_decl int 4 - type name
-       integer_cst 32 4 - type size
-       integer_cst -2147483648 4 - min value
-       integer_cst 2147483647 4 - max value
+       type_decl int 14 - type name
+       integer_cst 32 14 - type size
+       integer_cst -2147483648 14 - min value
+       integer_cst 2147483647 14 - max value
      integer_cst 3 2147483642 - operand
     modify_expr test15.c 74:15 2147483643 - operand
      indirect_ref test15.c 74:9 2147483642 - operand
@@ -804,14 +804,14 @@ function_decl func5 test15.c 65:6 2147483647
   block 2147483645 - operand
    var_decl c test15.c 67:9 2147483644 - block vars
    - isUsed: 1
-    integer_cst 32 5 - decl size 2
-    integer_type 5 - var type 2
+    integer_cst 32 15 - decl size 2
+    integer_type 15 - var type 2
     - precisionBits: 32
     - signed
-     type_decl int 4 - type name
-     integer_cst 32 4 - type size
-     integer_cst -2147483648 4 - min value
-     integer_cst 2147483647 4 - max value
+     type_decl int 14 - type name
+     integer_cst 32 14 - type size
+     integer_cst -2147483648 14 - min value
+     integer_cst 2147483647 14 - max value
 function_decl func6 test15.c 81:6 2147483647
 - isPublic: 1
  function_type 2147483646 - function type

@@ -44,36 +44,36 @@ function_decl func1 test20.c 8:5 2147483647
   var_decl ptr3 test20.c 10:19 2147483645 - operand
    integer_cst 64 2147483644 - decl size
    - isUsed: 1
-   parm_decl ptr1 test20.c 8:25 10 - initial
-    pointer_type 9 - decl type
+   parm_decl ptr1 test20.c 8:25 20 - initial
+    pointer_type 19 - decl type
      record_type 3 - nested type
       identifier_node Data1 2 - type name
-    integer_cst 64 9 - parm size
+    integer_cst 64 19 - parm size
    pointer_type 2147483644 - var type
     record_type 3 - nested type
      identifier_node Data1 2 - type name
   decl_expr test20.c 10:19 2147483645 - operand
    var_decl ptr3 test20.c 10:19 2147483644 - operand
-    integer_cst 64 5 - decl size 2
+    integer_cst 64 15 - decl size 2
     - isUsed: 1
-    parm_decl ptr1 test20.c 8:25 10 - initial 2
-     pointer_type 9 - decl type
+    parm_decl ptr1 test20.c 8:25 20 - initial 2
+     pointer_type 19 - decl type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
-     integer_cst 64 9 - parm size
-    pointer_type 5 - var type 2
+     integer_cst 64 19 - parm size
+    pointer_type 15 - var type 2
      record_type 3 - nested type
       identifier_node Data1 2 - type name
   block 2147483645 - operand
    var_decl ptr3 test20.c 10:19 2147483644 - block vars
-    integer_cst 64 5 - decl size 2
+    integer_cst 64 15 - decl size 2
     - isUsed: 1
-    parm_decl ptr1 test20.c 8:25 10 - initial 2
-     pointer_type 9 - decl type
+    parm_decl ptr1 test20.c 8:25 20 - initial 2
+     pointer_type 19 - decl type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
-     integer_cst 64 9 - parm size
-    pointer_type 5 - var type 2
+     integer_cst 64 19 - parm size
+    pointer_type 15 - var type 2
      record_type 3 - nested type
       identifier_node Data1 2 - type name
 function_decl func2 test20.c 13:5 2147483647
@@ -123,11 +123,11 @@ function_decl func2 test20.c 13:5 2147483647
   - isUsed: 1
    integer_cst 64 2147483644 - decl size
    - isUsed: 1
-   parm_decl ptr1 test20.c 13:25 10 - initial
-    pointer_type 9 - decl type
+   parm_decl ptr1 test20.c 13:25 20 - initial
+    pointer_type 19 - decl type
      record_type 3 - nested type
       identifier_node Data1 2 - type name
-    integer_cst 64 9 - parm size
+    integer_cst 64 19 - parm size
    pointer_type 2147483644 - var type
     record_type 3 - nested type
      identifier_node Data1 2 - type name
@@ -135,14 +135,14 @@ function_decl func2 test20.c 13:5 2147483647
    decl_expr test20.c 15:19 2147483644 - statement
     var_decl ptr3 test20.c 15:19 2147483643 - operand
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
+     integer_cst 64 15 - decl size 2
      - isUsed: 1
-     parm_decl ptr1 test20.c 13:25 10 - initial 2
-      pointer_type 9 - decl type
+     parm_decl ptr1 test20.c 13:25 20 - initial 2
+      pointer_type 19 - decl type
        record_type 3 - nested type
         identifier_node Data1 2 - type name
-      integer_cst 64 9 - parm size
-     pointer_type 5 - var type 2
+      integer_cst 64 19 - parm size
+     pointer_type 15 - var type 2
       record_type 3 - nested type
        identifier_node Data1 2 - type name
    modify_expr test20.c 16:15 2147483644 - statement
@@ -150,14 +150,14 @@ function_decl func2 test20.c 13:5 2147483647
      indirect_ref test20.c 16:9 2147483642 - object
       var_decl ptr3 test20.c 15:19 2147483641 - ref
       - isUsed: 1
-       integer_cst 64 5 - decl size 2
+       integer_cst 64 15 - decl size 2
        - isUsed: 1
-       parm_decl ptr1 test20.c 13:25 10 - initial 2
-        pointer_type 9 - decl type
+       parm_decl ptr1 test20.c 13:25 20 - initial 2
+        pointer_type 19 - decl type
          record_type 3 - nested type
           identifier_node Data1 2 - type name
-        integer_cst 64 9 - parm size
-       pointer_type 5 - var type 2
+        integer_cst 64 19 - parm size
+       pointer_type 15 - var type 2
         record_type 3 - nested type
          identifier_node Data1 2 - type name
      field_decl val test20.c 3:9 2147483642 - field
@@ -174,14 +174,14 @@ function_decl func2 test20.c 13:5 2147483647
   block 2147483645 - operand
    var_decl ptr3 test20.c 15:19 2147483644 - block vars
    - isUsed: 1
-    integer_cst 64 5 - decl size 2
+    integer_cst 64 15 - decl size 2
     - isUsed: 1
-    parm_decl ptr1 test20.c 13:25 10 - initial 2
-     pointer_type 9 - decl type
+    parm_decl ptr1 test20.c 13:25 20 - initial 2
+     pointer_type 19 - decl type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
-     integer_cst 64 9 - parm size
-    pointer_type 5 - var type 2
+     integer_cst 64 19 - parm size
+    pointer_type 15 - var type 2
      record_type 3 - nested type
       identifier_node Data1 2 - type name
 function_decl func3 test20.c 19:5 2147483647
@@ -231,11 +231,11 @@ function_decl func3 test20.c 19:5 2147483647
   - isUsed: 1
    integer_cst 64 2147483644 - decl size
    - isUsed: 1
-   parm_decl ptr1 test20.c 19:25 10 - initial
-    pointer_type 9 - decl type
+   parm_decl ptr1 test20.c 19:25 20 - initial
+    pointer_type 19 - decl type
      record_type 3 - nested type
       identifier_node Data1 2 - type name
-    integer_cst 64 9 - parm size
+    integer_cst 64 19 - parm size
    pointer_type 2147483644 - var type
     record_type 3 - nested type
      identifier_node Data1 2 - type name
@@ -243,28 +243,28 @@ function_decl func3 test20.c 19:5 2147483647
    decl_expr test20.c 21:19 2147483644 - statement
     var_decl ptr3 test20.c 21:19 2147483643 - operand
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
+     integer_cst 64 15 - decl size 2
      - isUsed: 1
-     parm_decl ptr1 test20.c 19:25 10 - initial 2
-      pointer_type 9 - decl type
+     parm_decl ptr1 test20.c 19:25 20 - initial 2
+      pointer_type 19 - decl type
        record_type 3 - nested type
         identifier_node Data1 2 - type name
-      integer_cst 64 9 - parm size
-     pointer_type 5 - var type 2
+      integer_cst 64 19 - parm size
+     pointer_type 15 - var type 2
       record_type 3 - nested type
        identifier_node Data1 2 - type name
    cond_expr test20.c 22:8 2147483644 - statement
     ne_expr test20.c 22:9 2147483643 - operand
      var_decl ptr3 test20.c 21:19 2147483642 - operand
      - isUsed: 1
-      integer_cst 64 5 - decl size 2
+      integer_cst 64 15 - decl size 2
       - isUsed: 1
-      parm_decl ptr1 test20.c 19:25 10 - initial 2
-       pointer_type 9 - decl type
+      parm_decl ptr1 test20.c 19:25 20 - initial 2
+       pointer_type 19 - decl type
         record_type 3 - nested type
          identifier_node Data1 2 - type name
-       integer_cst 64 9 - parm size
-      pointer_type 5 - var type 2
+       integer_cst 64 19 - parm size
+      pointer_type 15 - var type 2
        record_type 3 - nested type
         identifier_node Data1 2 - type name
      integer_cst 0 2147483642 - operand
@@ -273,14 +273,14 @@ function_decl func3 test20.c 19:5 2147483647
       indirect_ref test20.c 23:13 2147483641 - object
        var_decl ptr3 test20.c 21:19 2147483640 - ref
        - isUsed: 1
-        integer_cst 64 5 - decl size 2
+        integer_cst 64 15 - decl size 2
         - isUsed: 1
-        parm_decl ptr1 test20.c 19:25 10 - initial 2
-         pointer_type 9 - decl type
+        parm_decl ptr1 test20.c 19:25 20 - initial 2
+         pointer_type 19 - decl type
           record_type 3 - nested type
            identifier_node Data1 2 - type name
-         integer_cst 64 9 - parm size
-        pointer_type 5 - var type 2
+         integer_cst 64 19 - parm size
+        pointer_type 15 - var type 2
          record_type 3 - nested type
           identifier_node Data1 2 - type name
       field_decl val test20.c 3:9 2147483641 - field
@@ -297,14 +297,14 @@ function_decl func3 test20.c 19:5 2147483647
   block 2147483645 - operand
    var_decl ptr3 test20.c 21:19 2147483644 - block vars
    - isUsed: 1
-    integer_cst 64 5 - decl size 2
+    integer_cst 64 15 - decl size 2
     - isUsed: 1
-    parm_decl ptr1 test20.c 19:25 10 - initial 2
-     pointer_type 9 - decl type
+    parm_decl ptr1 test20.c 19:25 20 - initial 2
+     pointer_type 19 - decl type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
-     integer_cst 64 9 - parm size
-    pointer_type 5 - var type 2
+     integer_cst 64 19 - parm size
+    pointer_type 15 - var type 2
      record_type 3 - nested type
       identifier_node Data1 2 - type name
 function_decl func4 test20.c 26:5 2147483647
@@ -355,11 +355,11 @@ function_decl func4 test20.c 26:5 2147483647
   - isUsed: 1
    integer_cst 64 2147483644 - decl size
    - isUsed: 1
-   parm_decl ptr1 test20.c 26:25 10 - initial
-    pointer_type 9 - decl type
+   parm_decl ptr1 test20.c 26:25 20 - initial
+    pointer_type 19 - decl type
      record_type 3 - nested type
       identifier_node Data1 2 - type name
-    integer_cst 64 9 - parm size
+    integer_cst 64 19 - parm size
    pointer_type 2147483644 - var type
     record_type 3 - nested type
      identifier_node Data1 2 - type name
@@ -367,28 +367,28 @@ function_decl func4 test20.c 26:5 2147483647
    decl_expr test20.c 28:19 2147483644 - statement
     var_decl ptr3 test20.c 28:19 2147483643 - operand
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
+     integer_cst 64 15 - decl size 2
      - isUsed: 1
-     parm_decl ptr1 test20.c 26:25 10 - initial 2
-      pointer_type 9 - decl type
+     parm_decl ptr1 test20.c 26:25 20 - initial 2
+      pointer_type 19 - decl type
        record_type 3 - nested type
         identifier_node Data1 2 - type name
-      integer_cst 64 9 - parm size
-     pointer_type 5 - var type 2
+      integer_cst 64 19 - parm size
+     pointer_type 15 - var type 2
       record_type 3 - nested type
        identifier_node Data1 2 - type name
    cond_expr test20.c 29:8 2147483644 - statement
     ne_expr test20.c 29:9 2147483643 - operand
      var_decl ptr3 test20.c 28:19 2147483642 - operand
      - isUsed: 1
-      integer_cst 64 5 - decl size 2
+      integer_cst 64 15 - decl size 2
       - isUsed: 1
-      parm_decl ptr1 test20.c 26:25 10 - initial 2
-       pointer_type 9 - decl type
+      parm_decl ptr1 test20.c 26:25 20 - initial 2
+       pointer_type 19 - decl type
         record_type 3 - nested type
          identifier_node Data1 2 - type name
-       integer_cst 64 9 - parm size
-      pointer_type 5 - var type 2
+       integer_cst 64 19 - parm size
+      pointer_type 15 - var type 2
        record_type 3 - nested type
         identifier_node Data1 2 - type name
      integer_cst 0 2147483642 - operand
@@ -397,14 +397,14 @@ function_decl func4 test20.c 26:5 2147483647
       indirect_ref test20.c 30:13 2147483641 - object
        var_decl ptr3 test20.c 28:19 2147483640 - ref
        - isUsed: 1
-        integer_cst 64 5 - decl size 2
+        integer_cst 64 15 - decl size 2
         - isUsed: 1
-        parm_decl ptr1 test20.c 26:25 10 - initial 2
-         pointer_type 9 - decl type
+        parm_decl ptr1 test20.c 26:25 20 - initial 2
+         pointer_type 19 - decl type
           record_type 3 - nested type
            identifier_node Data1 2 - type name
-         integer_cst 64 9 - parm size
-        pointer_type 5 - var type 2
+         integer_cst 64 19 - parm size
+        pointer_type 15 - var type 2
          record_type 3 - nested type
           identifier_node Data1 2 - type name
       field_decl val test20.c 3:9 2147483641 - field
@@ -459,14 +459,14 @@ function_decl func4 test20.c 26:5 2147483647
   block 2147483645 - operand
    var_decl ptr3 test20.c 28:19 2147483644 - block vars
    - isUsed: 1
-    integer_cst 64 5 - decl size 2
+    integer_cst 64 15 - decl size 2
     - isUsed: 1
-    parm_decl ptr1 test20.c 26:25 10 - initial 2
-     pointer_type 9 - decl type
+    parm_decl ptr1 test20.c 26:25 20 - initial 2
+     pointer_type 19 - decl type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
-     integer_cst 64 9 - parm size
-    pointer_type 5 - var type 2
+     integer_cst 64 19 - parm size
+    pointer_type 15 - var type 2
      record_type 3 - nested type
       identifier_node Data1 2 - type name
 function_decl func5 test20.c 35:5 2147483647
@@ -516,11 +516,11 @@ function_decl func5 test20.c 35:5 2147483647
   - isUsed: 1
    integer_cst 64 2147483644 - decl size
    - isUsed: 1
-   parm_decl ptr1 test20.c 35:25 10 - initial
-    pointer_type 9 - decl type
+   parm_decl ptr1 test20.c 35:25 20 - initial
+    pointer_type 19 - decl type
      record_type 3 - nested type
       identifier_node Data1 2 - type name
-    integer_cst 64 9 - parm size
+    integer_cst 64 19 - parm size
    pointer_type 2147483644 - var type
     record_type 3 - nested type
      identifier_node Data1 2 - type name
@@ -563,14 +563,14 @@ function_decl func5 test20.c 35:5 2147483647
    decl_expr test20.c 40:19 2147483644 - statement
     var_decl ptr3 test20.c 40:19 2147483643 - operand
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
+     integer_cst 64 15 - decl size 2
      - isUsed: 1
-     parm_decl ptr1 test20.c 35:25 10 - initial 2
-      pointer_type 9 - decl type
+     parm_decl ptr1 test20.c 35:25 20 - initial 2
+      pointer_type 19 - decl type
        record_type 3 - nested type
         identifier_node Data1 2 - type name
-      integer_cst 64 9 - parm size
-     pointer_type 5 - var type 2
+      integer_cst 64 19 - parm size
+     pointer_type 15 - var type 2
       record_type 3 - nested type
        identifier_node Data1 2 - type name
    modify_expr test20.c 42:15 2147483644 - statement
@@ -578,14 +578,14 @@ function_decl func5 test20.c 35:5 2147483647
      indirect_ref test20.c 42:9 2147483642 - object
       var_decl ptr3 test20.c 40:19 2147483641 - ref
       - isUsed: 1
-       integer_cst 64 5 - decl size 2
+       integer_cst 64 15 - decl size 2
        - isUsed: 1
-       parm_decl ptr1 test20.c 35:25 10 - initial 2
-        pointer_type 9 - decl type
+       parm_decl ptr1 test20.c 35:25 20 - initial 2
+        pointer_type 19 - decl type
          record_type 3 - nested type
           identifier_node Data1 2 - type name
-        integer_cst 64 9 - parm size
-       pointer_type 5 - var type 2
+        integer_cst 64 19 - parm size
+       pointer_type 15 - var type 2
         record_type 3 - nested type
          identifier_node Data1 2 - type name
      field_decl val test20.c 3:9 2147483642 - field
@@ -602,14 +602,14 @@ function_decl func5 test20.c 35:5 2147483647
   block 2147483645 - operand
    var_decl ptr3 test20.c 40:19 2147483644 - block vars
    - isUsed: 1
-    integer_cst 64 5 - decl size 2
+    integer_cst 64 15 - decl size 2
     - isUsed: 1
-    parm_decl ptr1 test20.c 35:25 10 - initial 2
-     pointer_type 9 - decl type
+    parm_decl ptr1 test20.c 35:25 20 - initial 2
+     pointer_type 19 - decl type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
-     integer_cst 64 9 - parm size
-    pointer_type 5 - var type 2
+     integer_cst 64 19 - parm size
+    pointer_type 15 - var type 2
      record_type 3 - nested type
       identifier_node Data1 2 - type name
 function_decl func6 test20.c 45:5 2147483647
@@ -659,11 +659,11 @@ function_decl func6 test20.c 45:5 2147483647
   - isUsed: 1
    integer_cst 64 2147483644 - decl size
    - isUsed: 1
-   parm_decl ptr1 test20.c 45:25 10 - initial
-    pointer_type 9 - decl type
+   parm_decl ptr1 test20.c 45:25 20 - initial
+    pointer_type 19 - decl type
      record_type 3 - nested type
       identifier_node Data1 2 - type name
-    integer_cst 64 9 - parm size
+    integer_cst 64 19 - parm size
    pointer_type 2147483644 - var type
     record_type 3 - nested type
      identifier_node Data1 2 - type name
@@ -706,14 +706,14 @@ function_decl func6 test20.c 45:5 2147483647
    decl_expr test20.c 50:19 2147483644 - statement
     var_decl ptr3 test20.c 50:19 2147483643 - operand
     - isUsed: 1
-     integer_cst 64 5 - decl size 2
+     integer_cst 64 15 - decl size 2
      - isUsed: 1
-     parm_decl ptr1 test20.c 45:25 10 - initial 2
-      pointer_type 9 - decl type
+     parm_decl ptr1 test20.c 45:25 20 - initial 2
+      pointer_type 19 - decl type
        record_type 3 - nested type
         identifier_node Data1 2 - type name
-      integer_cst 64 9 - parm size
-     pointer_type 5 - var type 2
+      integer_cst 64 19 - parm size
+     pointer_type 15 - var type 2
       record_type 3 - nested type
        identifier_node Data1 2 - type name
    modify_expr test20.c 52:15 2147483644 - statement
@@ -721,14 +721,14 @@ function_decl func6 test20.c 45:5 2147483647
      indirect_ref test20.c 52:9 2147483642 - object
       var_decl ptr3 test20.c 50:19 2147483641 - ref
       - isUsed: 1
-       integer_cst 64 5 - decl size 2
+       integer_cst 64 15 - decl size 2
        - isUsed: 1
-       parm_decl ptr1 test20.c 45:25 10 - initial 2
-        pointer_type 9 - decl type
+       parm_decl ptr1 test20.c 45:25 20 - initial 2
+        pointer_type 19 - decl type
          record_type 3 - nested type
           identifier_node Data1 2 - type name
-        integer_cst 64 9 - parm size
-       pointer_type 5 - var type 2
+        integer_cst 64 19 - parm size
+       pointer_type 15 - var type 2
         record_type 3 - nested type
          identifier_node Data1 2 - type name
      field_decl val test20.c 3:9 2147483642 - field
@@ -745,14 +745,14 @@ function_decl func6 test20.c 45:5 2147483647
   block 2147483645 - operand
    var_decl ptr3 test20.c 50:19 2147483644 - block vars
    - isUsed: 1
-    integer_cst 64 5 - decl size 2
+    integer_cst 64 15 - decl size 2
     - isUsed: 1
-    parm_decl ptr1 test20.c 45:25 10 - initial 2
-     pointer_type 9 - decl type
+    parm_decl ptr1 test20.c 45:25 20 - initial 2
+     pointer_type 19 - decl type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
-     integer_cst 64 9 - parm size
-    pointer_type 5 - var type 2
+     integer_cst 64 19 - parm size
+    pointer_type 15 - var type 2
      record_type 3 - nested type
       identifier_node Data1 2 - type name
 function_decl func7 test20.c 55:5 2147483647
@@ -812,14 +812,14 @@ function_decl func7 test20.c 55:5 2147483647
    decl_expr test20.c 57:9 2147483644 - statement
     var_decl c test20.c 57:9 2147483643 - operand
     - isUsed: 1
-     integer_cst 32 5 - decl size 2
-     integer_type 5 - var type 2
+     integer_cst 32 15 - decl size 2
+     integer_type 15 - var type 2
      - precisionBits: 32
      - signed
-      type_decl int 4 - type name
-      integer_cst 32 4 - type size
-      integer_cst -2147483648 4 - min value
-      integer_cst 2147483647 4 - max value
+      type_decl int 14 - type name
+      integer_cst 32 14 - type size
+      integer_cst -2147483648 14 - min value
+      integer_cst 2147483647 14 - max value
    cond_expr test20.c 58:8 2147483644 - statement
     ne_expr test20.c 58:11 2147483643 - operand
      var_decl k test20.c 6:5 2147483642 - operand
@@ -834,14 +834,14 @@ function_decl func7 test20.c 55:5 2147483647
        integer_cst 2147483647 2147483640 - max value
      var_decl c test20.c 57:9 2147483642 - operand
      - isUsed: 1
-      integer_cst 32 5 - decl size 2
-      integer_type 5 - var type 2
+      integer_cst 32 15 - decl size 2
+      integer_type 15 - var type 2
       - precisionBits: 32
       - signed
-       type_decl int 4 - type name
-       integer_cst 32 4 - type size
-       integer_cst -2147483648 4 - min value
-       integer_cst 2147483647 4 - max value
+       type_decl int 14 - type name
+       integer_cst 32 14 - type size
+       integer_cst -2147483648 14 - min value
+       integer_cst 2147483647 14 - max value
     cond_expr test20.c 60:12 2147483643 - operand
      eq_expr test20.c 60:13 2147483642 - operand
       - isUsed: 1
@@ -869,11 +869,11 @@ function_decl func7 test20.c 55:5 2147483647
     - isUsed: 1
      integer_cst 64 2147483642 - decl size
      - isUsed: 1
-     parm_decl ptr1 test20.c 55:25 10 - initial
-      pointer_type 9 - decl type
+     parm_decl ptr1 test20.c 55:25 20 - initial
+      pointer_type 19 - decl type
        record_type 3 - nested type
         identifier_node Data1 2 - type name
-      integer_cst 64 9 - parm size
+      integer_cst 64 19 - parm size
      pointer_type 2147483642 - var type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
@@ -902,14 +902,14 @@ function_decl func7 test20.c 55:5 2147483647
      indirect_ref test20.c 67:9 2147483642 - object
       var_decl ptr3 test20.c 64:19 2147483641 - ref
       - isUsed: 1
-       integer_cst 64 5 - decl size 2
+       integer_cst 64 15 - decl size 2
        - isUsed: 1
-       parm_decl ptr1 test20.c 55:25 10 - initial 2
-        pointer_type 9 - decl type
+       parm_decl ptr1 test20.c 55:25 20 - initial 2
+        pointer_type 19 - decl type
          record_type 3 - nested type
           identifier_node Data1 2 - type name
-        integer_cst 64 9 - parm size
-       pointer_type 5 - var type 2
+        integer_cst 64 19 - parm size
+       pointer_type 15 - var type 2
         record_type 3 - nested type
          identifier_node Data1 2 - type name
      field_decl val test20.c 3:9 2147483642 - field
@@ -926,24 +926,24 @@ function_decl func7 test20.c 55:5 2147483647
   block 2147483645 - operand
    var_decl c test20.c 57:9 2147483644 - block vars
    - isUsed: 1
-    integer_cst 32 5 - decl size 2
-    integer_type 5 - var type 2
+    integer_cst 32 15 - decl size 2
+    integer_type 15 - var type 2
     - precisionBits: 32
     - signed
-     type_decl int 4 - type name
-     integer_cst 32 4 - type size
-     integer_cst -2147483648 4 - min value
-     integer_cst 2147483647 4 - max value
+     type_decl int 14 - type name
+     integer_cst 32 14 - type size
+     integer_cst -2147483648 14 - min value
+     integer_cst 2147483647 14 - max value
    var_decl ptr3 test20.c 64:19 2147483644 - block vars
    - isUsed: 1
-    integer_cst 64 5 - decl size 2
+    integer_cst 64 15 - decl size 2
     - isUsed: 1
-    parm_decl ptr1 test20.c 55:25 10 - initial 2
-     pointer_type 9 - decl type
+    parm_decl ptr1 test20.c 55:25 20 - initial 2
+     pointer_type 19 - decl type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
-     integer_cst 64 9 - parm size
-    pointer_type 5 - var type 2
+     integer_cst 64 19 - parm size
+    pointer_type 15 - var type 2
      record_type 3 - nested type
       identifier_node Data1 2 - type name
 function_decl func8 test20.c 70:5 2147483647
@@ -1003,14 +1003,14 @@ function_decl func8 test20.c 70:5 2147483647
    decl_expr test20.c 72:9 2147483644 - statement
     var_decl c test20.c 72:9 2147483643 - operand
     - isUsed: 1
-     integer_cst 32 5 - decl size 2
-     integer_type 5 - var type 2
+     integer_cst 32 15 - decl size 2
+     integer_type 15 - var type 2
      - precisionBits: 32
      - signed
-      type_decl int 4 - type name
-      integer_cst 32 4 - type size
-      integer_cst -2147483648 4 - min value
-      integer_cst 2147483647 4 - max value
+      type_decl int 14 - type name
+      integer_cst 32 14 - type size
+      integer_cst -2147483648 14 - min value
+      integer_cst 2147483647 14 - max value
    cond_expr test20.c 73:8 2147483644 - statement
     ne_expr test20.c 73:11 2147483643 - operand
      var_decl k test20.c 6:5 2147483642 - operand
@@ -1025,14 +1025,14 @@ function_decl func8 test20.c 70:5 2147483647
        integer_cst 2147483647 2147483640 - max value
      var_decl c test20.c 72:9 2147483642 - operand
      - isUsed: 1
-      integer_cst 32 5 - decl size 2
-      integer_type 5 - var type 2
+      integer_cst 32 15 - decl size 2
+      integer_type 15 - var type 2
       - precisionBits: 32
       - signed
-       type_decl int 4 - type name
-       integer_cst 32 4 - type size
-       integer_cst -2147483648 4 - min value
-       integer_cst 2147483647 4 - max value
+       type_decl int 14 - type name
+       integer_cst 32 14 - type size
+       integer_cst -2147483648 14 - min value
+       integer_cst 2147483647 14 - max value
     cond_expr test20.c 75:12 2147483643 - operand
      ne_expr test20.c 75:13 2147483642 - operand
       - isUsed: 1
@@ -1060,11 +1060,11 @@ function_decl func8 test20.c 70:5 2147483647
     - isUsed: 1
      integer_cst 64 2147483642 - decl size
      - isUsed: 1
-     parm_decl ptr1 test20.c 70:25 10 - initial
-      pointer_type 9 - decl type
+     parm_decl ptr1 test20.c 70:25 20 - initial
+      pointer_type 19 - decl type
        record_type 3 - nested type
         identifier_node Data1 2 - type name
-      integer_cst 64 9 - parm size
+      integer_cst 64 19 - parm size
      pointer_type 2147483642 - var type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
@@ -1093,14 +1093,14 @@ function_decl func8 test20.c 70:5 2147483647
      indirect_ref test20.c 82:9 2147483642 - object
       var_decl ptr3 test20.c 79:19 2147483641 - ref
       - isUsed: 1
-       integer_cst 64 5 - decl size 2
+       integer_cst 64 15 - decl size 2
        - isUsed: 1
-       parm_decl ptr1 test20.c 70:25 10 - initial 2
-        pointer_type 9 - decl type
+       parm_decl ptr1 test20.c 70:25 20 - initial 2
+        pointer_type 19 - decl type
          record_type 3 - nested type
           identifier_node Data1 2 - type name
-        integer_cst 64 9 - parm size
-       pointer_type 5 - var type 2
+        integer_cst 64 19 - parm size
+       pointer_type 15 - var type 2
         record_type 3 - nested type
          identifier_node Data1 2 - type name
      field_decl val test20.c 3:9 2147483642 - field
@@ -1117,23 +1117,23 @@ function_decl func8 test20.c 70:5 2147483647
   block 2147483645 - operand
    var_decl c test20.c 72:9 2147483644 - block vars
    - isUsed: 1
-    integer_cst 32 5 - decl size 2
-    integer_type 5 - var type 2
+    integer_cst 32 15 - decl size 2
+    integer_type 15 - var type 2
     - precisionBits: 32
     - signed
-     type_decl int 4 - type name
-     integer_cst 32 4 - type size
-     integer_cst -2147483648 4 - min value
-     integer_cst 2147483647 4 - max value
+     type_decl int 14 - type name
+     integer_cst 32 14 - type size
+     integer_cst -2147483648 14 - min value
+     integer_cst 2147483647 14 - max value
    var_decl ptr3 test20.c 79:19 2147483644 - block vars
    - isUsed: 1
-    integer_cst 64 5 - decl size 2
+    integer_cst 64 15 - decl size 2
     - isUsed: 1
-    parm_decl ptr1 test20.c 70:25 10 - initial 2
-     pointer_type 9 - decl type
+    parm_decl ptr1 test20.c 70:25 20 - initial 2
+     pointer_type 19 - decl type
       record_type 3 - nested type
        identifier_node Data1 2 - type name
-     integer_cst 64 9 - parm size
-    pointer_type 5 - var type 2
+     integer_cst 64 19 - parm size
+    pointer_type 15 - var type 2
      record_type 3 - nested type
       identifier_node Data1 2 - type name
