@@ -411,8 +411,10 @@ void analyseModifyExpr(ModifyExprNode *node, const WalkItem &wi, WalkItem &wo)
         }
         else
         {
-            reportParmDeclLeftNullPointer(node, node->args[0], wi);
-            reportParmDeclNullPointer(node, node->args[1], wi);
+            if (var1.empty() || !var1.isNonNull)
+                reportParmDeclLeftNullPointer(node, node->args[0], wi);
+            if (var2.empty() || !var2.isNonNull)
+                reportParmDeclNullPointer(node, node->args[1], wi);
         }
     }
 }
