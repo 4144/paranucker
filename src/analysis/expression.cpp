@@ -163,6 +163,16 @@ VarItem getComponentRefVariable(Node *node)
             Node *ref = skipNop(indirect->ref);
             if (ref && !isValidVar(ref->label))
                 return str;
+            if (ref == PARM_DECL)
+            {
+                ParmDeclNode *parmDecl = static_cast<ParmDeclNode*>(ref);
+                if (findTreeListPurpose(static_cast<TreeListNode*>(
+                    skipNop(parmDecl->attribute)),
+                    "nonnullpointer"))
+                {
+                    str.isNonNull = true;
+                }
+            }
             if (ref == VAR_DECL)
             {
                 VarDeclNode *varDecl = static_cast<VarDeclNode*>(ref);
@@ -219,10 +229,17 @@ std::vector<VarItem> getComponentRefParts(Node *node)
             if (ref == PARM_DECL)
             {
                 ParmDeclNode *parmDecl = static_cast<ParmDeclNode*>(ref);
+                bool isNonNull2(false);
+                if (findTreeListPurpose(static_cast<TreeListNode*>(
+                    skipNop(parmDecl->attribute)),
+                    "nonnullpointer"))
+                {
+                    isNonNull2 = true;
+                }
                 if (skipNop(parmDecl->declType) == nullptr ||
                     skipNop(parmDecl->declType) == POINTER_TYPE)
                 {
-                    str.push_back(VarItem(ref->label, false));
+                    str.push_back(VarItem(ref->label, isNonNull2));
                 }
             }
             if (ref == VAR_DECL)
@@ -281,6 +298,12 @@ std::vector<VarItem> getComponentRefLeftParts(Node *node)
             if (ref == PARM_DECL)
             {
                 ParmDeclNode *parmDecl = static_cast<ParmDeclNode*>(ref);
+                if (findTreeListPurpose(static_cast<TreeListNode*>(
+                    skipNop(parmDecl->attribute)),
+                    "nonnullpointer"))
+                {
+                    isNonNull = true;
+                }
                 if (skipNop(parmDecl->declType) != nullptr &&
                     skipNop(parmDecl->declType) != POINTER_TYPE)
                 {
