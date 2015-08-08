@@ -981,7 +981,8 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
         VarItem var = getVariableName(node2);
         if (enableCheck)
         {
-            reportParmDeclNullPointer(node, node2, wi);
+            if (!var.isNonNull)
+                reportParmDeclNullPointer(node, node2, wi);
             enableCheck = false;
         }
         else
