@@ -34,5 +34,3 @@ test05.cpp:45:11: warning: Using variable 'bptr' without checking for null point
 test05.cpp:45:11: warning: Using variable 'bptr' without checking for null pointer
 test05.cpp:45:11: warning: Using variable 'bptr' without checking for null pointer
 test05.cpp:45:11: warning: Using variable 'bptr' without checking for null pointer
-test05.cpp:45:11: warning: Using variable 'bptr' without checking for null pointer
-test05.cpp:45:11: warning: Using variable 'bptr' without checking for null pointer

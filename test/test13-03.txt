@@ -34,5 +34,3 @@ test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
 test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
 test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
 test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
-test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer
-test13.c:45:18: warning: Using variable 'bptr' without checking for null pointer

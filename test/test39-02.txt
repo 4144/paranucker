@@ -15,3 +15,5 @@ func4:
 func5: 
 func6: pointer_type ptr1, 
 func7: pointer_type ptr1, pointer_type ptr2, 
+func8: pointer_type ptr1, 
+func9: pointer_type ptr1, 

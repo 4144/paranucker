@@ -1,49 +1,63 @@
 test39.cpp: In member function 'void Object1::func1(Data1*) const':
-test39.cpp:63:24: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:69:24: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 100;
                         ^
-test39.cpp:63:24: warning: Using variable 'ptr1' without checking for null pointer
-test39.cpp:73:22: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:69:24: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:79:22: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->val = 0;
                       ^
-test39.cpp:73:22: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:79:22: warning: Using variable 'ptr1' without checking for null pointer
 test39.cpp: In member function 'void Object1::func2(Data1*) const':
-test39.cpp:96:51: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:102:51: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->ptrval = reinterpret_cast<Data1*>(1);
                                                    ^
-test39.cpp:96:15: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:102:15: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->ptrval = reinterpret_cast<Data1*>(1);
                ^
 test39.cpp: In member function 'void Object1::func3(Data1*) const':
-test39.cpp:119:25: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:125:25: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->ptrval = 0;
                          ^
-test39.cpp:119:15: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:125:15: warning: Using variable 'ptr1' without checking for null pointer
          ptr1->ptrval = 0;
                ^
 test39.cpp: In member function 'void Object1::func4() const':
-test39.cpp:152:16: warning: unused variable 'ptr1' [-Wunused-variable]
+test39.cpp:158:16: warning: unused variable 'ptr1' [-Wunused-variable]
          Data1 *ptr1 = &data2;
                 ^
 test39.cpp: In member function 'void Object1::func5() const':
-test39.cpp:175:15: warning: unused variable 'data2' [-Wunused-variable]
+test39.cpp:181:15: warning: unused variable 'data2' [-Wunused-variable]
          Data1 data2;
                ^
-test39.cpp:195:16: warning: unused variable 'ptr1' [-Wunused-variable]
+test39.cpp:201:16: warning: unused variable 'ptr1' [-Wunused-variable]
          Data1 *ptr1 = reinterpret_cast<Data1*>(&data1);
                 ^
 test39.cpp: In member function 'int Object1::func6(Data1*) const':
-test39.cpp:218:13: warning: variable 'arr' set but not used [-Wunused-but-set-variable]
+test39.cpp:224:13: warning: variable 'arr' set but not used [-Wunused-but-set-variable]
          int arr[10];
              ^
-test39.cpp:228:27: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:234:27: warning: Using variable 'ptr1' without checking for null pointer
          arr[1] = ptr1->val;
                            ^
-test39.cpp:238:22: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:244:22: warning: Using variable 'ptr1' without checking for null pointer
          return ptr1->val;
                       ^
 test39.cpp: In member function 'void Object1::func7(Data1*, Data1*) const':
-test39.cpp:252:23: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:258:23: warning: Using variable 'ptr1' without checking for null pointer
          if (ptr1->val == ptr2->val)
                        ^
-test39.cpp:252:23: warning: Using variable 'ptr2' without checking for null pointer
+test39.cpp:258:23: warning: Using variable 'ptr2' without checking for null pointer
+test39.cpp: In member function 'DArr* Object1::func8(Data1*) const':
+test39.cpp:293:35: warning: Using variable 'ptr1' without checking for null pointer
+         DArr *ptr2 = &ptr1->parr[0];    // here also need check parr
+                                   ^
+test39.cpp:293:35: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:293:35: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:293:35: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp: In member function 'int* Object1::func9(Data1*) const':
+test39.cpp:319:34: warning: Using variable 'ptr1' without checking for null pointer
+         int *ptr2 = &ptr1->parr[0].z;   // here also need check parr
+                                  ^
+test39.cpp:319:34: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:319:34: warning: Using variable 'ptr1' without checking for null pointer
+test39.cpp:319:34: warning: Using variable 'ptr1' without checking for null pointer

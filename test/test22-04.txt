@@ -13,8 +13,6 @@ test22.cpp:50:17: warning: Using variable 'ptr1' without checking for null point
 test22.cpp:50:17: warning: Using variable 'ptr1' without checking for null pointer
 test22.cpp:50:17: warning: Using variable 'ptr1' without checking for null pointer
 test22.cpp:50:17: warning: Using variable 'ptr1' without checking for null pointer
-test22.cpp:50:17: warning: Using variable 'ptr1' without checking for null pointer
-test22.cpp:50:17: warning: Using variable 'ptr1' without checking for null pointer
 test22.cpp: In member function 'void Object1::func4(Data1*)':
 test22.cpp:56:25: warning: Using variable 'ptr1' without checking for null pointer
          if (ptr1->ftest1() == 100)
