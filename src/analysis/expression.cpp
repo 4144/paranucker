@@ -1078,12 +1078,22 @@ bool handleSetVarToFunction(const VarItem &var,
 
     if (node2 == ADDR_EXPR)
     {
+        if (node1 == VAR_DECL)
+        {
+            // var = &expr;
+            VarDeclNode *varDecl = static_cast<VarDeclNode*>(node1);
+            if (skipNop(varDecl->varType) == POINTER_TYPE)
+            {
+                addNonNullVar(wo, var.name);
+                return true;
+            }
+        }
         AddrExprNode *addr = static_cast<AddrExprNode*>(node2);
         if (!addr->args.empty() && skipNop(addr->args[0]) == VAR_DECL)
         {
-            VarDeclNode *varDecl = static_cast<VarDeclNode*>(skipNop(addr->args[0]));
             if (!var.isNonNull)
             {
+                VarDeclNode *varDecl = static_cast<VarDeclNode*>(skipNop(addr->args[0]));
                 if (skipNop(varDecl->varType) != POINTER_TYPE)
                     addNonNullVar(wo, var.name);
                 else
