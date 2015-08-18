@@ -428,7 +428,22 @@ void analysePointerPlusExpr(PointerPlusExprNode *node,
         return;
 
     VarItem var = getVariableName(node->args[0]);
-    reportParmDeclNullPointer(node, node->args[0], wi);
+    if (!var.empty())
+    {
+        if (!var.isNonNull &&
+            isNotIn(var.name, wi.knownNonNullVars))
+        {
+            reportParmDeclNullPointer(node, node->args[0], wi);
+        }
+        else if (var.isNonNull)
+        {
+            addNonNullVar(wo, var.name);
+        }
+        else
+        {
+            addUnknownVar(wo, var.name);
+        }
+    }
 }
 
 void analyseAddrExpr(AddrExprNode *node,
