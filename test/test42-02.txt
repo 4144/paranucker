@@ -27,3 +27,5 @@ func14: pointer_type ptr1,
 func15: pointer_type ptr1, 
 func16: 
 func17: pointer_type ptr1, 
+func18: pointer_type ptr1, 
+func19: pointer_type ptr1, 

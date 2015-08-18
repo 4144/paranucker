@@ -163,4 +163,18 @@ class Object1
         x = gptr2->val;
         y = gptr2->val;
     }
+
+    void func18(Data1 *ptr1) const
+    {
+        if (gptr1 && gptr1->getData6())
+            gptr1->val = 100;
+    }
+
+    void func19(Data1 *ptr1) const
+    {
+//        if (gptr1 && gptr1->getData6() && k == 200)
+        if (gptr1 && gptr1->getData6())
+            gptr1->val = 100;
+    }
+
 };
