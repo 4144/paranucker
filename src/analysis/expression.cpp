@@ -32,6 +32,7 @@
 #include "analysis/walkitem.h"
 
 #include "nodes/expr/addr_expr.h"
+#include "nodes/expr/aggrinit_expr.h"
 #include "nodes/expr/bind_expr.h"
 #include "nodes/expr/call_expr.h"
 #include "nodes/expr/cleanuppoint_expr.h"
@@ -1073,6 +1074,10 @@ bool handleSetVarToFunction(const VarItem &var,
                             Node *node2,
                             WalkItem &wo)
 {
+    //if (node1)
+    //    Log::log("node1=%s\n", node1->nodeTypeName.c_str());
+    //if (node2)
+    //    Log::log("node2=%s\n", node2->nodeTypeName.c_str());
     if (var.isNonNull)
         return false;
     node1 = skipNop(node1);
@@ -1149,14 +1154,39 @@ bool handleSetVarToFunction(const VarItem &var,
             node2 = comp->args[0];
         }
 
-        if (node2 != CALL_EXPR)
+        if (skipNop(node2) == INIT_EXPR)
+        {
+            InitExprNode *init = static_cast<InitExprNode*>(skipNop(node2));
+            if (!init || init->args.size() < 2)
+                return handleSetVarToFunctionBack(var, node2, wo);
+            node2 = init->args[1];
+        }
+        node2 = skipNop(node2);
+        if (node2 == CONSTRUCTOR)
+        {
+            addNonNullVar(wo, var.name);
+            return true;
+        }
+        if (node2 != CALL_EXPR && node2 != AGGR_INIT_EXPR)
             return handleSetVarToFunctionBack(var, node2, wo);
     }
 
-    CallExprNode *call = static_cast<CallExprNode*>(node2);
-    if (!call || skipNop(call->function) != ADDR_EXPR)
-        return handleSetVarToFunctionBack(var, node2, wo);
-    AddrExprNode *addr = static_cast<AddrExprNode*>(skipNop(call->function));
+    AddrExprNode *addr = nullptr;
+    if (node2 == CALL_EXPR)
+    {
+        CallExprNode *call = static_cast<CallExprNode*>(node2);
+        if (!call || skipNop(call->function) != ADDR_EXPR)
+            return handleSetVarToFunctionBack(var, node2, wo);
+        addr = static_cast<AddrExprNode*>(skipNop(call->function));
+    }
+    else if (node2 == AGGR_INIT_EXPR)
+    {
+        AggrInitExprNode *aggr = static_cast<AggrInitExprNode*>(node2);
+        if (skipNop(aggr->function) != ADDR_EXPR)
+            return handleSetVarToFunctionBack(var, node2, wo);
+        addr = static_cast<AddrExprNode*>(skipNop(aggr->function));
+    }
+
     if (!addr ||
         addr->args.empty() ||
         skipNop(addr->args[0]) != FUNCTION_DECL)
@@ -1182,6 +1212,7 @@ bool handleSetVarToFunction(const VarItem &var,
             return false;
     }
 
+    //Log::log("func->label='%s'\n", func->label.c_str());
     if (findTreeListPurpose(static_cast<TreeListNode*>(func->functionType->attribute),
         "returns_nonnull") ||
         func->label == "operator new" ||
@@ -1189,10 +1220,12 @@ bool handleSetVarToFunction(const VarItem &var,
         func->label == "__comp_ctor ")
     {   // function have attribute returns_nonnull. This mean result cant be null
         addNonNullVar(wo, var.name);
+        //Log::log("add non null var: %s\n", var.name.c_str());
     }
     else
     {   // function not have attribute returns_nonnull. This mean result can be null
         addUnknownVar(wo, var.name);
+        //Log::log("add unknown var: %s\n", var.name.c_str());
     }
     return true;
 }
