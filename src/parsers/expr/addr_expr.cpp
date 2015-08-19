@@ -48,7 +48,7 @@ void parseAddrExprNode(AddrExprNode *node)
             node,
             gccNode,
             "operand",
-            20));
+            50));
     }
     else
     {
