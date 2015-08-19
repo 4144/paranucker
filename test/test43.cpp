@@ -64,6 +64,7 @@ class Object1
     Data1 *tmp3 __attribute__((nonnullpointer));
     int x;
     int y;
+    static Data1 *garr1[10];
 
     Data1 *getData1()
     {
@@ -94,5 +95,13 @@ class Object1
     {
         x = tmp3->val;
         y = tmp3->arr[0];
+    }
+
+    void func5()
+    {
+        int idx = 5;
+        Data1 *const ptr1 = garr1[idx];
+        if (ptr1)
+            ptr1->val = 100;
     }
 };

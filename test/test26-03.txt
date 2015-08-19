@@ -4405,6 +4405,7 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
+type_decl exception: 
 integer_cst 64: 
 field_decl _vptr.exception: 
 integer_cst 64: 
@@ -4413,6 +4414,10 @@ pointer_type :
 type_decl __vtbl_ptr_type: 
 function_type : 
 integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 pointer_plus_expr : 
 addr_expr : 
 var_decl _ZTVSt9exception: 
@@ -4420,10 +4425,23 @@ integer_cst 320:
 constructor : 
 array_type : 
 pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
 integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
 integer_cst 0: 
 addr_expr : 
 var_decl _ZTISt9exception: 
+integer_cst 128: 
+record_type : 
+type_decl __class_type_info_pseudo: 
 addr_expr : 
 function_decl __comp_dtor : 
 addr_expr : 
@@ -4435,6 +4453,10 @@ pointer_type :
 type_decl __vtbl_ptr_type: 
 function_type : 
 integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 integer_type : 
 integer_cst 64: 
 integer_cst 0: 
@@ -4676,6 +4698,7 @@ indirect_ref :
 parm_decl this: 
 pointer_type : 
 record_type : 
+type_decl exception: 
 integer_cst 64: 
 field_decl _vptr.exception: 
 integer_cst 64: 
@@ -4684,6 +4707,10 @@ pointer_type :
 type_decl __vtbl_ptr_type: 
 function_type : 
 integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 pointer_plus_expr : 
 addr_expr : 
 var_decl _ZTVSt9exception: 
@@ -4691,10 +4718,23 @@ integer_cst 320:
 constructor : 
 array_type : 
 pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
 integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 4: 
 integer_cst 0: 
 addr_expr : 
 var_decl _ZTISt9exception: 
+integer_cst 128: 
+record_type : 
+type_decl __class_type_info_pseudo: 
 addr_expr : 
 function_decl __comp_dtor : 
 addr_expr : 
@@ -4706,6 +4746,10 @@ pointer_type :
 type_decl __vtbl_ptr_type: 
 function_type : 
 integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 integer_type : 
 integer_cst 64: 
 integer_cst 0: 
