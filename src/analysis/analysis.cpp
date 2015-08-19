@@ -158,8 +158,9 @@ int findBackLocation(Node *node)
 // skip all child nodes and return non nop child
 Node *skipNop(Node *node)
 {
-    while (node &&
-           (node == NOP_EXPR || node == NON_LVALUE_EXPR))
+    while (node == NOP_EXPR ||
+           node == NON_LVALUE_EXPR ||
+           node == CLEANUP_POINT_EXPR)
     {
         NopExprNode *nop = static_cast<NopExprNode*>(node);
         if (nop && !nop->args.empty())
@@ -173,7 +174,9 @@ Node *skipNop(Node *node)
 // skip all parent nop nodes and return first non nop parent
 Node *skipBackNop(Node *node)
 {
-    while (node && node == NOP_EXPR)
+    while (node == NOP_EXPR ||
+           node == NON_LVALUE_EXPR ||
+           node == CLEANUP_POINT_EXPR)
     {
         node = node->parent;
     }
