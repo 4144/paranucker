@@ -104,4 +104,10 @@ class Object1
         if (ptr1)
             ptr1->val = 100;
     }
+
+    void func6(Data1 *ptr1)
+    {
+        Data1 var1;
+        var1.ptrval = ptr1;
+    }
 };

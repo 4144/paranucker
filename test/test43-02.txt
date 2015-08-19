@@ -14,3 +14,10 @@ func2: pointer_type ptr1,
 func3: pointer_type ptr1, 
 func4: pointer_type ptr1, 
 func5: 
+Data1: 
+__comp_ctor : 
+__base_ctor : 
+__comp_ctor : 
+__comp_ctor : 
+func6: pointer_type ptr1, 
+__comp_ctor : 

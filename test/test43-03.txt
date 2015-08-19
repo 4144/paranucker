@@ -596,3 +596,246 @@ integer_cst 2147483647:
 pointer_type : 
 record_type : 
 type_decl Data1: 
+function_decl Data1: 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+integer_cst 64: 
+field_decl _vptr.Data1: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+pointer_plus_expr : 
+addr_expr : 
+var_decl _ZTV5Data1: 
+integer_cst 384: 
+constructor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 5: 
+integer_cst 0: 
+addr_expr : 
+var_decl _ZTI5Data1: 
+integer_cst 128: 
+record_type : 
+type_decl __class_type_info_pseudo: 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+function_decl __deleting_dtor : 
+addr_expr : 
+function_decl getData3: 
+addr_expr : 
+function_decl getData6: 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 5: 
+integer_cst 16: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl __comp_ctor : 
+statement_list : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+integer_cst 64: 
+field_decl perm: 
+integer_cst 256: 
+record_type : 
+type_decl Data2: 
+block : 
+function_decl __base_ctor : 
+bind_expr : 
+statement_list : 
+cleanup_point_expr : 
+expr_stmt : 
+convert_expr : 
+modify_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+integer_cst 64: 
+field_decl _vptr.Data1: 
+integer_cst 64: 
+pointer_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+pointer_plus_expr : 
+addr_expr : 
+var_decl _ZTV5Data1: 
+integer_cst 384: 
+constructor : 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 5: 
+integer_cst 0: 
+addr_expr : 
+var_decl _ZTI5Data1: 
+integer_cst 128: 
+record_type : 
+type_decl __class_type_info_pseudo: 
+addr_expr : 
+function_decl __comp_dtor : 
+addr_expr : 
+function_decl __deleting_dtor : 
+addr_expr : 
+function_decl getData3: 
+addr_expr : 
+function_decl getData6: 
+array_type : 
+pointer_type : 
+type_decl __vtbl_ptr_type: 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 5: 
+integer_cst 16: 
+cleanup_point_expr : 
+expr_stmt : 
+call_expr : 
+addr_expr : 
+function_decl __comp_ctor : 
+statement_list : 
+addr_expr : 
+component_ref : 
+indirect_ref : 
+parm_decl this: 
+pointer_type : 
+record_type : 
+type_decl Data1: 
+integer_cst 64: 
+field_decl perm: 
+integer_cst 256: 
+record_type : 
+type_decl Data2: 
+block : 
+function_decl __comp_ctor : 
+statement_list : 
+function_decl func6: 
+bind_expr : ptr1, 
+statement_list : ptr1, 
+decl_expr : ptr1, 
+var_decl var1: ptr1, 
+integer_cst 576: ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl __comp_ctor : ptr1, 
+statement_list : ptr1, 
+addr_expr : ptr1, 
+var_decl var1: ptr1, 
+integer_cst 576: ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+cleanup_stmt : ptr1, 
+statement_list : ptr1, 
+cleanup_point_expr : ptr1, 
+expr_stmt : ptr1, 
+convert_expr : ptr1, 
+modify_expr : ptr1, 
+component_ref : ptr1, 
+var_decl var1: ptr1, 
+integer_cst 576: ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+field_decl ptrval: ptr1, 
+integer_cst 64: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+parm_decl ptr1: ptr1, 
+pointer_type : ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+integer_cst 64: ptr1, 
+call_expr : ptr1, 
+addr_expr : ptr1, 
+function_decl __comp_dtor : ptr1, 
+addr_expr : ptr1, 
+var_decl var1: ptr1, 
+integer_cst 576: ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+var_decl var1: ptr1, 
+integer_cst 576: ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+var_decl var1: ptr1, 
+integer_cst 576: ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
+block : ptr1, 
+var_decl var1: ptr1, 
+integer_cst 576: ptr1, 
+record_type : ptr1, 
+type_decl Data1: ptr1, 
