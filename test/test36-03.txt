@@ -32,7 +32,6 @@ must_not_throw_expr :
 statement_list : 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -123,7 +122,6 @@ integer_cst 2147483647:
 integer_cst 32: 
 integer_cst 1: 
 integer_cst 0: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -138,7 +136,6 @@ must_not_throw_expr :
 statement_list : 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -223,7 +220,6 @@ bit_and_expr :
 integer_cst 0: 
 integer_cst 1: 
 integer_cst 0: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -282,7 +278,6 @@ must_not_throw_expr :
 statement_list : 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -373,7 +368,6 @@ integer_cst 2147483647:
 integer_cst 32: 
 integer_cst 1: 
 integer_cst 0: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -388,7 +382,6 @@ must_not_throw_expr :
 statement_list : 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -473,7 +466,6 @@ bit_and_expr :
 integer_cst 0: 
 integer_cst 1: 
 integer_cst 0: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -510,7 +502,6 @@ integer_cst 64:
 function_decl Data3: 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -595,7 +586,6 @@ integer_cst 64:
 integer_cst 0: 
 integer_cst 3: 
 integer_cst 16: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 init_expr : 
@@ -624,7 +614,6 @@ block :
 function_decl __base_ctor : 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -709,7 +698,6 @@ integer_cst 64:
 integer_cst 0: 
 integer_cst 3: 
 integer_cst 16: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 init_expr : 
@@ -806,7 +794,6 @@ integer_cst 64: ptr1,
 pointer_type : ptr1, 
 record_type : ptr1, 
 type_decl Data1: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 init_expr : ptr1, 
@@ -819,53 +806,43 @@ call_expr :
 addr_expr : 
 function_decl operator new: 
 integer_cst 32: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
@@ -889,7 +866,6 @@ integer_cst 64: ptr1,
 pointer_type : ptr1, 
 record_type : ptr1, 
 type_decl Data1: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 init_expr : ptr1, 
@@ -902,53 +878,43 @@ call_expr :
 addr_expr : 
 function_decl operator new []: 
 integer_cst 320: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
@@ -975,7 +941,6 @@ type_decl int: ptr1,
 integer_cst 32: ptr1, 
 integer_cst -2147483648: ptr1, 
 integer_cst 2147483647: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 init_expr : ptr1, 
@@ -991,53 +956,43 @@ call_expr :
 addr_expr : 
 function_decl operator new []: 
 integer_cst 40: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
@@ -1060,7 +1015,6 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 function_decl func4: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -1080,59 +1034,48 @@ call_expr :
 addr_expr : 
 function_decl operator new: 
 integer_cst 32: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
 function_decl Data2: 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -1220,7 +1163,6 @@ integer_cst 16:
 block : 
 function_decl __base_ctor : 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -1310,7 +1252,6 @@ function_decl __comp_ctor :
 statement_list : 
 function_decl func5: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -1361,52 +1302,42 @@ integer_cst 64:
 pointer_type : 
 void_type : 
 type_decl void: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -1420,7 +1351,6 @@ integer_cst 64: ptr1,
 pointer_type : ptr1, 
 record_type : ptr1, 
 type_decl Data1: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 init_expr : ptr1, 
@@ -1432,42 +1362,34 @@ type_decl Data1: ptr1,
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl getData4: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
@@ -1482,47 +1404,38 @@ record_type : ptr1,
 type_decl Data1: ptr1, 
 integer_cst 0: ptr1, 
 statement_list : ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
 function_decl paranuckerInternalTest: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -1535,93 +1448,75 @@ call_expr : ptr1,
 addr_expr : ptr1, 
 function_decl operator new: ptr1, 
 integer_cst 32: ptr1, 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
@@ -1637,53 +1532,43 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 10: 
 return_expr : 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 convert_expr : 
 modify_expr : 
 component_ref : 
@@ -1701,48 +1586,39 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 integer_cst 100: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
@@ -1759,7 +1635,6 @@ record_type :
 type_decl Data1: 
 function_decl func7: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -1811,57 +1686,46 @@ integer_cst 64:
 pointer_type : 
 void_type : 
 type_decl void: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 call_expr : 
@@ -1879,52 +1743,42 @@ integer_cst 64:
 pointer_type : 
 record_type : 
 type_decl Data3: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl paranuckerInternalTest: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 

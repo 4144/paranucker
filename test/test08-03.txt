@@ -13,8 +13,7 @@ integer_cst 2147483647: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 return_expr : ptr1, 
-cleanup_point_expr : ptr1, 
-expr_stmt : 
+expr_stmt : ptr1, 
 convert_expr : 
 modify_expr : 
 indirect_ref : 
@@ -41,7 +40,6 @@ integer_cst -2147483648: ptr2,
 integer_cst 2147483647: ptr2, 
 integer_cst 64: ptr2, 
 integer_cst 0: ptr2, 
-cleanup_point_expr : ptr2, 
 expr_stmt : ptr2, 
 convert_expr : ptr2, 
 modify_expr : ptr2, 
@@ -60,7 +58,6 @@ integer_cst 32: ptr2,
 integer_cst -2147483648: ptr2, 
 integer_cst 2147483647: ptr2, 
 integer_cst 0: ptr2, 
-cleanup_point_expr : ptr2, 
 expr_stmt : ptr2, 
 convert_expr : ptr2, 
 modify_expr : ptr2, 
@@ -93,7 +90,6 @@ integer_cst 2147483647: ptr3,
 integer_cst 64: ptr3, 
 integer_cst 0: ptr3, 
 return_expr : 
-cleanup_point_expr : ptr3, 
 expr_stmt : ptr3, 
 convert_expr : ptr3, 
 modify_expr : ptr3, 
@@ -125,7 +121,6 @@ integer_cst -2147483648: ptr4,
 integer_cst 2147483647: ptr4, 
 integer_cst 64: ptr4, 
 integer_cst 0: ptr4, 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -145,8 +140,7 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 0: 
 return_expr : ptr4, 
-cleanup_point_expr : ptr4, 
-expr_stmt : 
+expr_stmt : ptr4, 
 convert_expr : 
 modify_expr : 
 indirect_ref : 
@@ -174,7 +168,6 @@ integer_cst 2147483647: ptr5,
 integer_cst 64: ptr5, 
 integer_cst 0: ptr5, 
 return_expr : ptr5, 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -188,8 +181,7 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 64: 
 integer_cst 501: 
-cleanup_point_expr : ptr5, 
-expr_stmt : 
+expr_stmt : ptr5, 
 convert_expr : 
 modify_expr : 
 indirect_ref : 
@@ -233,7 +225,6 @@ integer_cst 2147483647:
 integer_cst 64: 
 integer_cst 0: 
 return_expr : 
-cleanup_point_expr : ptr6, 
 expr_stmt : ptr6, 
 convert_expr : ptr6, 
 modify_expr : ptr6, 
@@ -283,7 +274,6 @@ integer_cst 2147483647:
 integer_cst 64: 
 integer_cst 0: 
 return_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -297,8 +287,7 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 64: 
 integer_cst 701: 
-cleanup_point_expr : ptr7, 
-expr_stmt : 
+expr_stmt : ptr7, 
 convert_expr : 
 modify_expr : 
 indirect_ref : 

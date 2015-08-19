@@ -10,7 +10,6 @@ function_decl __comp_ctor :
 statement_list : 
 function_decl Data1: 
 bind_expr : ptr0, 
-cleanup_point_expr : ptr0, 
 expr_stmt : ptr0, 
 convert_expr : ptr0, 
 init_expr : ptr0, 
@@ -31,10 +30,9 @@ pointer_type : ptr0, this->ptrval,
 record_type : ptr0, this->ptrval, 
 type_decl Data1: ptr0, this->ptrval, 
 integer_cst 64: ptr0, this->ptrval, 
-block : ptr0, this->ptrval, 
+block : ptr0, 
 function_decl __base_ctor : 
 bind_expr : ptr0, 
-cleanup_point_expr : ptr0, 
 expr_stmt : ptr0, 
 convert_expr : ptr0, 
 init_expr : ptr0, 
@@ -55,7 +53,7 @@ pointer_type : ptr0, this->ptrval,
 record_type : ptr0, this->ptrval, 
 type_decl Data1: ptr0, this->ptrval, 
 integer_cst 64: ptr0, this->ptrval, 
-block : ptr0, this->ptrval, 
+block : ptr0, 
 function_decl __comp_ctor : 
 statement_list : ptr0, 
 function_decl ftest1: 
@@ -115,7 +113,6 @@ integer_cst 2147483647:
 integer_cst 32: 
 integer_cst 0: 
 function_decl func1: 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 call_expr : ptr1, 
@@ -128,7 +125,6 @@ type_decl Object1: ptr1,
 integer_cst 64: ptr1, 
 integer_cst 0: ptr1, 
 function_decl func2: 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 call_expr : ptr1, 
@@ -150,7 +146,6 @@ type_decl Data1: ptr1,
 integer_cst 64: ptr1, 
 function_decl func3: 
 statement_list : ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -168,7 +163,6 @@ record_type : ptr1,
 type_decl Data1: ptr1, 
 integer_cst 1: ptr1, 
 integer_cst 1: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 call_expr : ptr1, 

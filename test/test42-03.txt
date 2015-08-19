@@ -40,7 +40,6 @@ record_type :
 type_decl Data1: 
 function_decl getData3: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -165,7 +164,6 @@ pointer_type :
 record_type : 
 type_decl Data1: 
 function_decl func1: 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -196,7 +194,6 @@ integer_cst -2147483648: ptr1,
 integer_cst 2147483647: ptr1, 
 integer_cst 100: ptr1, 
 function_decl func2: 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -225,7 +222,6 @@ integer_cst -2147483648: ptr1,
 integer_cst 2147483647: ptr1, 
 integer_cst 100: ptr1, 
 function_decl func3: 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -249,7 +245,6 @@ integer_cst -2147483648: ptr1,
 integer_cst 2147483647: ptr1, 
 integer_cst 100: ptr1, 
 function_decl func4: 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -271,7 +266,6 @@ integer_cst -2147483648: ptr1,
 integer_cst 2147483647: ptr1, 
 integer_cst 100: ptr1, 
 function_decl func5: 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 call_expr : ptr1, 
@@ -294,7 +288,6 @@ pointer_type : ptr1,
 record_type : ptr1, 
 type_decl Data1: ptr1, 
 function_decl func6: 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 call_expr : ptr1, 
@@ -316,7 +309,6 @@ record_type : ptr1,
 type_decl Data1: ptr1, 
 function_decl Data1: 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -387,7 +379,6 @@ integer_cst 16:
 block : 
 function_decl __base_ctor : 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -466,7 +457,6 @@ var_decl val1: ptr1,
 integer_cst 576: ptr1, 
 record_type : ptr1, 
 type_decl Data1: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
@@ -479,7 +469,6 @@ record_type : ptr1,
 type_decl Data1: ptr1, 
 cleanup_stmt : ptr1, 
 statement_list : ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -518,7 +507,6 @@ integer_cst 576: ptr1,
 record_type : ptr1, 
 type_decl Data1: ptr1, 
 function_decl func8: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -546,7 +534,6 @@ integer_cst 64: ptr1, val1,
 pointer_type : ptr1, val1, 
 record_type : ptr1, val1, 
 type_decl Data1: ptr1, val1, 
-cleanup_point_expr : ptr1, val1, 
 expr_stmt : ptr1, val1, 
 convert_expr : ptr1, val1, 
 modify_expr : ptr1, val1, 
@@ -600,7 +587,6 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 integer_cst 100: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -631,7 +617,6 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 integer_cst 100: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -751,7 +736,6 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 function_decl func13: 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -783,7 +767,6 @@ integer_cst -2147483648: ptr1,
 integer_cst 2147483647: ptr1, 
 integer_cst 100: ptr1, 
 function_decl func14: 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -818,7 +801,6 @@ integer_cst 2147483647: ptr1,
 integer_cst 100: ptr1, 
 function_decl func15: 
 if_stmt : ptr1, 
-cleanup_point_expr : ptr1, 
 truth_andif_expr : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
@@ -876,7 +858,6 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 integer_cst 200: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -912,7 +893,6 @@ pointer_type :
 record_type : 
 type_decl Data1: 
 integer_cst 0: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -940,7 +920,6 @@ integer_cst 2147483647:
 integer_cst 100: 
 function_decl func17: 
 statement_list : ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -974,7 +953,6 @@ type_decl int: ptr1,
 integer_cst 32: ptr1, 
 integer_cst -2147483648: ptr1, 
 integer_cst 2147483647: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -1010,7 +988,6 @@ integer_cst -2147483648: ptr1,
 integer_cst 2147483647: ptr1, 
 function_decl func18: 
 if_stmt : ptr1, 
-cleanup_point_expr : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
 integer_cst 0: ptr1, 
@@ -1057,7 +1034,6 @@ pointer_type : ptr1,
 record_type : ptr1, 
 type_decl Data1: ptr1, 
 integer_cst 0: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -1078,7 +1054,6 @@ integer_cst 2147483647: ptr1,
 integer_cst 100: ptr1, 
 function_decl func19: 
 if_stmt : ptr1, 
-cleanup_point_expr : ptr1, 
 truth_andif_expr : ptr1, 
 ne_expr : ptr1, 
 integer_cst 0: ptr1, 
@@ -1125,7 +1100,6 @@ pointer_type : ptr1,
 record_type : ptr1, 
 type_decl Data1: ptr1, 
 integer_cst 0: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 

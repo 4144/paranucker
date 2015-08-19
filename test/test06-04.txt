@@ -1,5 +1,4 @@
 function_decl func1: 
-cleanup_point_expr : a, 
 expr_stmt : a, 
 convert_expr : a, 
 modify_expr : a, 
@@ -31,7 +30,6 @@ integer_cst 2147483647: a,
 integer_cst 64: a, 
 integer_cst 0: a, 
 return_expr : a, 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -60,8 +58,7 @@ integer_cst 2147483647: a,
 integer_cst 64: a, 
 integer_cst 0: a, 
 return_expr : a, 
-cleanup_point_expr : a, 
-expr_stmt : 
+expr_stmt : a, 
 convert_expr : 
 modify_expr : 
 indirect_ref : 
@@ -87,7 +84,6 @@ integer_cst -2147483648: a,
 integer_cst 2147483647: a, 
 integer_cst 64: a, 
 integer_cst 0: a, 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -115,7 +111,6 @@ integer_cst -2147483648: a,
 integer_cst 2147483647: a, 
 integer_cst 64: a, 
 integer_cst 0: a, 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -129,7 +124,6 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 64: 
 integer_cst 500: 
-cleanup_point_expr : a, 
 expr_stmt : a, 
 convert_expr : a, 
 modify_expr : a, 
@@ -165,7 +159,6 @@ integer_cst 64: a,
 integer_cst 0: a, 
 bind_expr : a, 
 statement_list : a, 
-cleanup_point_expr : a, 
 decl_expr : a, 
 var_decl k: a, 
 integer_cst 32: a, 
@@ -203,8 +196,7 @@ type_decl int:
 integer_cst 32: 
 integer_cst -2147483648: 
 integer_cst 2147483647: 
-cleanup_point_expr : a, 
-expr_stmt : 
+expr_stmt : a, 
 convert_expr : 
 modify_expr : 
 indirect_ref : 
@@ -250,7 +242,6 @@ integer_cst 64: aptr,
 integer_cst 0: aptr, 
 bind_expr : aptr, 
 statement_list : aptr, 
-cleanup_point_expr : aptr, 
 decl_expr : aptr, 
 var_decl k: aptr, 
 integer_cst 32: aptr, 
@@ -311,7 +302,6 @@ type_decl int: aptr,
 integer_cst 32: aptr, 
 integer_cst -2147483648: aptr, 
 integer_cst 2147483647: aptr, 
-cleanup_point_expr : aptr, 
 expr_stmt : aptr, 
 convert_expr : aptr, 
 modify_expr : aptr, 
@@ -365,7 +355,6 @@ if_stmt : aptr,
 integer_cst 0: aptr, 
 bind_expr : aptr, 
 statement_list : aptr, 
-cleanup_point_expr : aptr, 
 decl_expr : aptr, 
 var_decl k: aptr, 
 integer_cst 32: aptr, 
@@ -375,7 +364,6 @@ type_decl int: aptr,
 integer_cst 32: aptr, 
 integer_cst -2147483648: aptr, 
 integer_cst 2147483647: aptr, 
-cleanup_point_expr : aptr, 
 decl_expr : aptr, 
 var_decl l: aptr, 
 integer_cst 32: aptr, 
@@ -468,8 +456,7 @@ type_decl int:
 integer_cst 32: 
 integer_cst -2147483648: 
 integer_cst 2147483647: 
-cleanup_point_expr : aptr, 
-expr_stmt : 
+expr_stmt : aptr, 
 convert_expr : 
 modify_expr : 
 indirect_ref : 

@@ -28,8 +28,7 @@ integer_cst -2147483648: ptr2,
 integer_cst 2147483647: ptr2, 
 integer_cst 100: ptr2, 
 return_expr : ptr1, ptr2, 
-cleanup_point_expr : ptr1, ptr2, 
-expr_stmt : ptr2, 
+expr_stmt : ptr1, ptr2, 
 convert_expr : ptr2, 
 modify_expr : ptr2, 
 component_ref : ptr2, 
@@ -77,7 +76,6 @@ integer_cst -2147483648: ptr2,
 integer_cst 2147483647: ptr2, 
 integer_cst 100: ptr2, 
 statement_list : ptr2, 
-cleanup_point_expr : ptr2, 
 expr_stmt : ptr2, 
 convert_expr : ptr2, 
 modify_expr : ptr2, 
@@ -97,7 +95,6 @@ integer_cst -2147483648: ptr2,
 integer_cst 2147483647: ptr2, 
 integer_cst 200: ptr2, 
 return_expr : ptr2, 
-cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
@@ -155,7 +152,6 @@ integer_cst -2147483648: ptr1, ptr2,
 integer_cst 2147483647: ptr1, ptr2, 
 integer_cst 100: ptr1, ptr2, 
 return_expr : ptr1, ptr2, 
-cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
@@ -212,7 +208,6 @@ integer_cst -2147483648: ptr1, ptr2,
 integer_cst 2147483647: ptr1, ptr2, 
 integer_cst 100: ptr1, ptr2, 
 return_expr : ptr1, ptr2, 
-cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
@@ -292,8 +287,7 @@ integer_cst -2147483648:
 integer_cst 2147483647: 
 integer_cst 200: 
 return_expr : ptr1, ptr2, 
-cleanup_point_expr : ptr1, ptr2, 
-expr_stmt : 
+expr_stmt : ptr1, ptr2, 
 convert_expr : 
 modify_expr : 
 component_ref : 
@@ -311,8 +305,7 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 integer_cst 300: 
-cleanup_point_expr : ptr1, ptr2, 
-expr_stmt : 
+expr_stmt : ptr1, ptr2, 
 convert_expr : 
 modify_expr : 
 component_ref : 
@@ -387,7 +380,6 @@ integer_cst -2147483648: ptr1,
 integer_cst 2147483647: ptr1, 
 integer_cst 200: ptr1, 
 return_expr : ptr1, ptr2, 
-cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 
@@ -411,7 +403,6 @@ integer_cst 32: ptr1, ptr2,
 integer_cst -2147483648: ptr1, ptr2, 
 integer_cst 2147483647: ptr1, ptr2, 
 integer_cst 300: ptr1, ptr2, 
-cleanup_point_expr : ptr1, ptr2, 
 expr_stmt : ptr1, ptr2, 
 convert_expr : ptr1, ptr2, 
 modify_expr : ptr1, ptr2, 

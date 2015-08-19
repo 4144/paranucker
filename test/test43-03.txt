@@ -1,6 +1,5 @@
 function_decl Data2: 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 init_expr : 
@@ -37,7 +36,6 @@ integer_cst 2147483647:
 block : 
 function_decl __base_ctor : 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 init_expr : 
@@ -116,7 +114,6 @@ record_type :
 type_decl Data1: 
 function_decl getData3: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -331,7 +328,6 @@ type_decl Data1: ptr1,
 integer_cst 72: ptr1, 
 function_decl func4: 
 statement_list : ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -372,7 +368,6 @@ type_decl int: ptr1,
 integer_cst 32: ptr1, 
 integer_cst -2147483648: ptr1, 
 integer_cst 2147483647: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 
@@ -425,7 +420,6 @@ integer_cst 0: ptr1,
 function_decl func5: 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 decl_expr : 
 var_decl idx: 
 integer_cst 32: 
@@ -513,7 +507,6 @@ pointer_type :
 record_type : 
 type_decl Data1: 
 integer_cst 0: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -599,7 +592,6 @@ type_decl Data1:
 function_decl Data1: 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -667,7 +659,6 @@ integer_cst 64:
 integer_cst 0: 
 integer_cst 5: 
 integer_cst 16: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -689,7 +680,6 @@ block :
 function_decl __base_ctor : 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -757,7 +747,6 @@ integer_cst 64:
 integer_cst 0: 
 integer_cst 5: 
 integer_cst 16: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -786,7 +775,6 @@ var_decl var1: ptr1,
 integer_cst 576: ptr1, 
 record_type : ptr1, 
 type_decl Data1: ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 call_expr : ptr1, 
 addr_expr : ptr1, 
@@ -799,7 +787,6 @@ record_type : ptr1,
 type_decl Data1: ptr1, 
 cleanup_stmt : ptr1, 
 statement_list : ptr1, 
-cleanup_point_expr : ptr1, 
 expr_stmt : ptr1, 
 convert_expr : ptr1, 
 modify_expr : ptr1, 

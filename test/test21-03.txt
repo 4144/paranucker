@@ -1,5 +1,4 @@
 function_decl __iter_less_iter: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -15,7 +14,6 @@ constructor :
 record_type : 
 type_decl _Iter_less_iter: 
 function_decl __iter_less_val: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -31,7 +29,6 @@ constructor :
 record_type : 
 type_decl _Iter_less_val: 
 function_decl __iter_comp_val: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -47,7 +44,6 @@ constructor :
 record_type : 
 type_decl _Iter_less_val: 
 function_decl __val_less_iter: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -63,7 +59,6 @@ constructor :
 record_type : 
 type_decl _Val_less_iter: 
 function_decl __val_comp_iter: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -79,7 +74,6 @@ constructor :
 record_type : 
 type_decl _Val_less_iter: 
 function_decl __iter_equal_to_iter: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -95,7 +89,6 @@ constructor :
 record_type : 
 type_decl _Iter_equal_to_iter: 
 function_decl __iter_equal_to_val: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -111,7 +104,6 @@ constructor :
 record_type : 
 type_decl _Iter_equal_to_val: 
 function_decl __iter_comp_val: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -291,7 +283,6 @@ integer_cst :
 function_decl exception: 
 eh_spec_block : 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -361,7 +352,6 @@ block :
 function_decl __base_ctor : 
 eh_spec_block : 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -434,14 +424,12 @@ function_decl bad_exception:
 eh_spec_block : 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
 eh_spec_block : 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -522,7 +510,6 @@ record_type :
 type_decl exception: 
 cleanup_stmt : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -613,14 +600,12 @@ function_decl __base_ctor :
 eh_spec_block : 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
 eh_spec_block : 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -701,7 +686,6 @@ record_type :
 type_decl exception: 
 try_catch_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -794,14 +778,12 @@ function_decl bad_alloc:
 eh_spec_block : 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
 eh_spec_block : 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -882,7 +864,6 @@ record_type :
 type_decl exception: 
 cleanup_stmt : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -973,14 +954,12 @@ function_decl __base_ctor :
 eh_spec_block : 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
 eh_spec_block : 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -1061,7 +1040,6 @@ record_type :
 type_decl exception: 
 try_catch_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -1187,7 +1165,6 @@ statement_list :
 function_decl _Bit_reference: 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -1214,7 +1191,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -1243,7 +1219,6 @@ block : __x,
 function_decl __base_ctor : 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -1270,7 +1245,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -1301,7 +1275,6 @@ statement_list : __x,
 function_decl _Bit_reference: 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 init_expr : 
@@ -1322,7 +1295,6 @@ integer_cst 64: this->_M_p,
 integer_cst 0: this->_M_p, 
 integer_cst : this->_M_p, 
 integer_cst 0: this->_M_p, 
-cleanup_point_expr : this->_M_p, 
 expr_stmt : this->_M_p, 
 convert_expr : this->_M_p, 
 init_expr : this->_M_p, 
@@ -1345,7 +1317,6 @@ block :
 function_decl __base_ctor : 
 bind_expr : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 init_expr : 
@@ -1366,7 +1337,6 @@ integer_cst 64: this->_M_p,
 integer_cst 0: this->_M_p, 
 integer_cst : this->_M_p, 
 integer_cst 0: this->_M_p, 
-cleanup_point_expr : this->_M_p, 
 expr_stmt : this->_M_p, 
 convert_expr : this->_M_p, 
 init_expr : this->_M_p, 
@@ -1439,7 +1409,6 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 integer_cst 8: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -1490,7 +1459,6 @@ type_decl _Bit_type:
 integer_cst 64: 
 integer_cst 0: 
 integer_cst : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -1555,7 +1523,6 @@ record_type :
 type_decl _Bit_reference: 
 integer_cst 64: 
 function_decl operator=: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -1583,7 +1550,6 @@ record_type :
 type_decl _Bit_reference: 
 integer_cst 64: 
 function_decl operator==: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -1618,7 +1584,6 @@ record_type :
 type_decl _Bit_reference: 
 integer_cst 64: 
 function_decl operator<: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -1645,7 +1610,6 @@ record_type :
 type_decl _Bit_reference: 
 integer_cst 64: 
 function_decl flip: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -1709,7 +1673,6 @@ statement_list :
 function_decl _Bit_iterator_base: 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
@@ -1722,7 +1685,6 @@ pointer_type : __x,
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -1749,7 +1711,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -1778,7 +1739,6 @@ block : __x,
 function_decl __base_ctor : 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
@@ -1791,7 +1751,6 @@ pointer_type : __x,
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -1818,7 +1777,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -1848,7 +1806,6 @@ function_decl __comp_ctor :
 statement_list : __x, 
 function_decl _M_bump_up: 
 if_stmt : 
-cleanup_point_expr : 
 eq_expr : 
 integer_cst 63: 
 postincrement_expr : 
@@ -1869,7 +1826,6 @@ integer_cst 4294967295:
 integer_cst 1: 
 integer_cst 63: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -1888,7 +1844,6 @@ integer_cst 32:
 integer_cst 0: 
 integer_cst 4294967295: 
 integer_cst 0: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 preincrement_expr : 
@@ -1910,7 +1865,6 @@ integer_cst :
 integer_cst 8: 
 function_decl _M_bump_down: 
 if_stmt : 
-cleanup_point_expr : 
 eq_expr : 
 integer_cst 0: 
 postdecrement_expr : 
@@ -1931,7 +1885,6 @@ integer_cst 4294967295:
 integer_cst 1: 
 integer_cst 0: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -1950,7 +1903,6 @@ integer_cst 32:
 integer_cst 0: 
 integer_cst 4294967295: 
 integer_cst 63: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 predecrement_expr : 
@@ -2003,7 +1955,6 @@ type_decl difference_type:
 integer_cst 64: 
 integer_cst -0: 
 integer_cst 4294967295: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -2072,7 +2023,6 @@ integer_cst 4294967295:
 integer_cst 64: 
 integer_cst 8: 
 pointer_plus_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -2169,7 +2119,6 @@ integer_cst -0:
 integer_cst 4294967295: 
 integer_cst 0: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -2233,7 +2182,6 @@ integer_cst 64:
 integer_cst -0: 
 integer_cst 4294967295: 
 integer_cst 64: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 predecrement_expr : 
@@ -2253,7 +2201,6 @@ integer_cst 64:
 integer_cst 0: 
 integer_cst : 
 integer_cst 8: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -2573,7 +2520,6 @@ integer_cst 32:
 integer_cst 0: 
 integer_cst 4294967295: 
 function_decl operator!=: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -2596,7 +2542,6 @@ record_type :
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 function_decl operator>: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -2618,7 +2563,6 @@ record_type :
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 function_decl operator<=: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -2641,7 +2585,6 @@ record_type :
 type_decl _Bit_iterator_base: 
 integer_cst 64: 
 function_decl operator>=: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -2740,14 +2683,12 @@ integer_cst 0:
 integer_cst 4294967295: 
 function_decl _Bit_iterator: 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
@@ -2760,7 +2701,6 @@ pointer_type : __x,
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -2787,7 +2727,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -2830,14 +2769,12 @@ integer_cst 0:
 block : 
 function_decl __base_ctor : 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
@@ -2850,7 +2787,6 @@ pointer_type : __x,
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -2877,7 +2813,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -2922,14 +2857,12 @@ function_decl __comp_ctor :
 statement_list : 
 function_decl _Bit_iterator: 
 bind_expr : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
@@ -2942,7 +2875,6 @@ pointer_type : __x,
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -2969,7 +2901,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -3025,14 +2956,12 @@ integer_cst 32: __x,
 block : __x, 
 function_decl __base_ctor : 
 bind_expr : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
@@ -3045,7 +2974,6 @@ pointer_type : __x,
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -3072,7 +3000,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -3129,7 +3056,6 @@ block : __x,
 function_decl __comp_ctor : 
 statement_list : __x, 
 function_decl _M_const_cast: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -3148,7 +3074,6 @@ record_type :
 type_decl _Bit_iterator: 
 integer_cst 64: 
 function_decl operator*: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -3218,7 +3143,6 @@ record_type :
 type_decl reference: 
 function_decl operator++: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -3261,7 +3185,6 @@ type_decl _Bit_iterator:
 integer_cst 64: 
 record_type : 
 type_decl iterator: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -3278,7 +3201,6 @@ field_decl :
 integer_cst 96: 
 record_type : 
 type_decl _Bit_iterator_base: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -3323,7 +3245,6 @@ record_type :
 type_decl iterator: 
 function_decl operator--: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -3366,7 +3287,6 @@ type_decl _Bit_iterator:
 integer_cst 64: 
 record_type : 
 type_decl iterator: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -3383,7 +3303,6 @@ field_decl :
 integer_cst 96: 
 record_type : 
 type_decl _Bit_iterator_base: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -3428,7 +3347,6 @@ record_type :
 type_decl iterator: 
 function_decl operator+=: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -3466,7 +3384,6 @@ type_decl _Bit_iterator:
 integer_cst 64: 
 function_decl operator-=: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 call_expr : 
@@ -3511,7 +3428,6 @@ type_decl _Bit_iterator:
 integer_cst 64: 
 record_type : 
 type_decl iterator: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -3580,7 +3496,6 @@ type_decl _Bit_iterator:
 integer_cst 64: 
 record_type : 
 type_decl iterator: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -3636,7 +3551,6 @@ integer_cst 64:
 record_type : 
 type_decl iterator: 
 function_decl operator[]: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -3673,7 +3587,6 @@ integer_cst -0:
 integer_cst 4294967295: 
 integer_cst 64: 
 function_decl operator+: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -3703,14 +3616,12 @@ integer_cst 4294967295:
 integer_cst 64: 
 function_decl _Bit_const_iterator: 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
@@ -3723,7 +3634,6 @@ pointer_type : __x,
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -3750,7 +3660,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -3793,14 +3702,12 @@ integer_cst 0:
 block : 
 function_decl __base_ctor : 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
@@ -3813,7 +3720,6 @@ pointer_type : __x,
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -3840,7 +3746,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -3885,14 +3790,12 @@ function_decl __comp_ctor :
 statement_list : 
 function_decl _Bit_const_iterator: 
 bind_expr : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
@@ -3905,7 +3808,6 @@ pointer_type : __x,
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -3932,7 +3834,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -3988,14 +3889,12 @@ integer_cst 32: __x,
 block : __x, 
 function_decl __base_ctor : 
 bind_expr : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
 function_decl __base_ctor : __x, 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
@@ -4008,7 +3907,6 @@ pointer_type : __x,
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -4035,7 +3933,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -4093,14 +3990,12 @@ function_decl __comp_ctor :
 statement_list : __x, 
 function_decl _Bit_const_iterator: 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
@@ -4113,7 +4008,6 @@ pointer_type : __x,
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -4140,7 +4034,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -4222,14 +4115,12 @@ integer_cst 4294967295:
 block : 
 function_decl __base_ctor : 
 bind_expr : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
 function_decl __base_ctor : 
 bind_expr : __x, 
 statement_list : __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 call_expr : __x, 
 addr_expr : __x, 
@@ -4242,7 +4133,6 @@ pointer_type : __x,
 record_type : __x, 
 type_decl _Bit_iterator_base: __x, 
 integer_cst 64: __x, 
-cleanup_point_expr : __x, 
 expr_stmt : __x, 
 convert_expr : __x, 
 init_expr : __x, 
@@ -4269,7 +4159,6 @@ integer_cst 64: __x, this->_M_p,
 integer_cst 0: __x, this->_M_p, 
 integer_cst : __x, this->_M_p, 
 integer_cst 64: __x, this->_M_p, 
-cleanup_point_expr : __x, this->_M_p, 
 expr_stmt : __x, this->_M_p, 
 convert_expr : __x, this->_M_p, 
 init_expr : __x, this->_M_p, 
@@ -4352,7 +4241,6 @@ block :
 function_decl __comp_ctor : 
 statement_list : 
 function_decl _M_const_cast: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -4419,7 +4307,6 @@ integer_cst 128:
 record_type : 
 type_decl _Bit_iterator: 
 function_decl operator*: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -4488,7 +4375,6 @@ integer_cst 0:
 integer_cst 4294967295: 
 function_decl operator++: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -4531,7 +4417,6 @@ type_decl _Bit_const_iterator:
 integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -4548,7 +4433,6 @@ field_decl :
 integer_cst 96: 
 record_type : 
 type_decl _Bit_iterator_base: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -4593,7 +4477,6 @@ record_type :
 type_decl const_iterator: 
 function_decl operator--: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -4636,7 +4519,6 @@ type_decl _Bit_const_iterator:
 integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -4653,7 +4535,6 @@ field_decl :
 integer_cst 96: 
 record_type : 
 type_decl _Bit_iterator_base: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -4698,7 +4579,6 @@ record_type :
 type_decl const_iterator: 
 function_decl operator+=: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -4736,7 +4616,6 @@ type_decl _Bit_const_iterator:
 integer_cst 64: 
 function_decl operator-=: 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 call_expr : 
@@ -4781,7 +4660,6 @@ type_decl _Bit_const_iterator:
 integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -4850,7 +4728,6 @@ type_decl _Bit_const_iterator:
 integer_cst 64: 
 record_type : 
 type_decl const_iterator: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -4906,7 +4783,6 @@ integer_cst 64:
 record_type : 
 type_decl const_iterator: 
 function_decl operator[]: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -4938,7 +4814,6 @@ integer_cst -0:
 integer_cst 4294967295: 
 integer_cst 64: 
 function_decl operator+: 
-cleanup_point_expr : 
 return_expr : 
 init_expr : 
 result_decl : 
@@ -4968,7 +4843,6 @@ integer_cst 4294967295:
 integer_cst 64: 
 function_decl __fill_bvector: 
 for_stmt : 
-cleanup_point_expr : 
 convert_expr : 
 call_expr : 
 addr_expr : 
@@ -4978,7 +4852,6 @@ parm_decl __first:
 record_type : 
 type_decl _Bit_iterator: 
 integer_cst 128: 
-cleanup_point_expr : 
 call_expr : 
 addr_expr : 
 function_decl operator!=: 
@@ -5002,7 +4875,6 @@ field_decl :
 integer_cst 96: 
 record_type : 
 type_decl _Bit_iterator_base: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 call_expr : 
@@ -5088,7 +4960,6 @@ integer_cst 64:
 integer_cst 0: 
 integer_cst : 
 statement_list : 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -5149,7 +5020,6 @@ type_decl bool:
 integer_cst 64: 
 integer_cst -1: 
 integer_cst 0: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -5205,7 +5075,6 @@ reference_type :
 boolean_type : 
 type_decl bool: 
 integer_cst 64: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -5259,7 +5128,6 @@ reference_type :
 boolean_type : 
 type_decl bool: 
 integer_cst 64: 
-cleanup_point_expr : 
 expr_stmt : 
 call_expr : 
 addr_expr : 
@@ -5291,7 +5159,6 @@ integer_cst 64:
 function_decl func1: 
 bind_expr : ptr1, 
 statement_list : ptr1, 
-cleanup_point_expr : ptr1, 
 decl_expr : ptr1, 
 var_decl tmpvar: ptr1, 
 integer_cst 32: ptr1, 
@@ -5404,7 +5271,6 @@ type_decl Data1:
 function_decl func2: 
 bind_expr : ptr1, 
 statement_list : ptr1, 
-cleanup_point_expr : ptr1, 
 decl_expr : ptr1, 
 var_decl attempts: ptr1, 
 integer_cst 32: ptr1, 
@@ -5639,7 +5505,6 @@ integer_cst 2147483647:
 function_decl func4: 
 bind_expr : ptr1, 
 statement_list : ptr1, 
-cleanup_point_expr : ptr1, 
 decl_expr : ptr1, 
 integer_cst 0: ptr1, 
 var_decl ptr2: ptr1, ptr2, 
@@ -5797,7 +5662,6 @@ integer_cst 0: ptr1, ptr2,
 function_decl func5: 
 bind_expr : ptr1, 
 statement_list : ptr1, 
-cleanup_point_expr : ptr1, 
 decl_expr : ptr1, 
 integer_cst 0: ptr1, 
 var_decl ptr2: ptr1, ptr2, 
@@ -6203,7 +6067,6 @@ integer_cst 0: ptr1, ptr2,
 function_decl func6: 
 bind_expr : ptr1, 
 statement_list : ptr1, 
-cleanup_point_expr : ptr1, 
 decl_expr : ptr1, 
 integer_cst 0: ptr1, 
 var_decl ptr2: ptr1, ptr2, 
@@ -6242,7 +6105,6 @@ integer_cst 32:
 integer_cst -2147483648: 
 integer_cst 2147483647: 
 integer_cst 10: 
-cleanup_point_expr : 
 expr_stmt : 
 convert_expr : 
 modify_expr : 
@@ -6282,7 +6144,6 @@ record_type : ptr1, ptr2,
 type_decl Data1: ptr1, ptr2, 
 integer_cst 0: ptr1, ptr2, 
 function_decl fill: 
-cleanup_point_expr : __first, __last, 
 expr_stmt : __first, __last, 
 call_expr : __first, __last, 
 addr_expr : __first, __last, 
@@ -6319,7 +6180,6 @@ integer_cst -2147483648: __first, __last,
 integer_cst 2147483647: __first, __last, 
 integer_cst 64: __first, __last, 
 function_decl __niter_base: 
-cleanup_point_expr : __it, 
 return_expr : __it, 
 init_expr : __it, 
 result_decl : __it, 
@@ -6363,7 +6223,6 @@ integer_cst 32: __first, __last,
 integer_cst -2147483648: __first, __last, 
 integer_cst 2147483647: __first, __last, 
 for_stmt : __first, __last, 
-cleanup_point_expr : __first, __last, 
 convert_expr : __first, __last, 
 preincrement_expr : __first, __last, 
 parm_decl __first: __first, __last, 
@@ -6400,7 +6259,6 @@ integer_cst 64: __first, __last,
 integer_cst 0: __first, __last, 
 integer_cst : __first, __last, 
 integer_cst 64: __first, __last, 
-cleanup_point_expr : __first, __last, 
 expr_stmt : __first, __last, 
 convert_expr : __first, __last, 
 modify_expr : __first, __last, 
