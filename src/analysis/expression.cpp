@@ -979,7 +979,9 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
                     }
                 }
             }
-            reportParmDeclNullPointer(node, function, wi);
+            VarItem var = getVariableName(function);
+            if (!var.isNonNull)
+                reportParmDeclNullPointer(node, function, wi);
             if (!getVariableName(function).empty())
                 enableCheck = false;
         }
