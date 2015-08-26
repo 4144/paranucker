@@ -1,0 +1,8 @@
+before_script:
+  - gcc --version
+  - uname -a
+
+job1:
+  stage: build
+  script:
+    - ./build.sh
