@@ -1,8 +1,25 @@
-before_script:
-  - gcc --version
-  - uname -a
+stages:
+  - build
+  - success
+  - failure
 
 job1:
   stage: build
+  image: debian:unstable
   script:
+    - ./ci/install.sh
     - ./build.sh
+
+success:
+  stage: success
+  script:
+  - echo "do nothing"
+  image: debian:unstable
+  when: on_success
+
+failure:
+  stage: failure
+  script:
+  - echo "do nothing"
+  image: debian:unstable
+  when: on_failure
