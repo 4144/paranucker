@@ -27,4 +27,4 @@ function aptget_install {
 
 aptget_update
 aptget_install gcc g++ gcc-5 g++-5 gcc-5-plugin-dev \
-    make autoconf automake autopoint
+    make autoconf automake autopoint libtool
