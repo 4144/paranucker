@@ -44,7 +44,7 @@ namespace Generic
 
     Node *createParseNode(Node *parent,
                           tree gccNode,
-                          std::string tag = "",
+                          const std::string& tag = "",
                           int parseChilds = INT_MAX);
 
     Node *createParseNode(Node *parent,

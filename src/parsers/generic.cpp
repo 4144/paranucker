@@ -35,7 +35,7 @@ namespace Generic
 
 Node *createParseNode(Node *parent,
                       tree gccNode,
-                      std::string tag,
+                      const std::string& tag,
                       int parseChilds)
 {
     return createParseNode(parent,
