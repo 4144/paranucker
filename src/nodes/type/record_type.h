@@ -25,6 +25,7 @@
 #include "nodes/base/decl.h"
 
 #include <string>
+#include <vector>
 
 struct RecordTypeNode : public TypeNode
 {

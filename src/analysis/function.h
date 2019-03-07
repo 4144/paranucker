@@ -23,6 +23,7 @@
 #include "includes.h"
 
 #include <set>
+#include <vector>
 
 struct FunctionDeclNode;
 struct TreeListNode;

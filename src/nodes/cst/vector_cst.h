@@ -23,7 +23,6 @@
 #include "nodes/base/cst.h"
 
 #include <vector>
-
 #include <string>
 
 struct VectorCstNode : public CstNode
