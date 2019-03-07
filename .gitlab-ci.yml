@@ -5,7 +5,7 @@ stages:
 
 job1:
   stage: build
-  image: debian:unstable
+  image: ubuntu:cosmic
   script:
     - ./ci/install.sh
     - ./build.sh
