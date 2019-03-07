@@ -23,6 +23,7 @@
 #include "includes.h"
 
 #include <string>
+#include <vector>
 
 extern int allocations;
 
