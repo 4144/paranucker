@@ -8,7 +8,12 @@ job1:
   image: ubuntu:cosmic
   script:
     - ./ci/install.sh
+    - ${CC} --version
+    - ${CXX} --version
     - ./build.sh
+  variables:
+    CC: gcc-5
+    CXX: g++-5
 
 success:
   stage: success
