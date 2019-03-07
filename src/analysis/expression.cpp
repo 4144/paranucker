@@ -41,6 +41,7 @@
 #include "nodes/expr/convert_expr.h"
 #include "nodes/expr/decl_expr.h"
 #include "nodes/expr/eq_expr.h"
+#include "nodes/expr/goto_expr.h"
 #include "nodes/expr/init_expr.h"
 #include "nodes/expr/modify_expr.h"
 #include "nodes/expr/ne_expr.h"
@@ -681,6 +682,8 @@ void analyseOrCondition(Node *node, Node *node1, Node *node2, const WalkItem &wi
         wo1.checkedElseNonNullVars.end());
     wi2.knownVars.insert(wo1.checkedElseNullVars.begin(),
         wo1.checkedElseNullVars.end());
+//    FOR_EACH(it, wi2.knownNonNullVars)
+//        Log::log("known non null: %s\n", it.c_str());
     Log::dumpWI(node, "wi2 ", wi2);
     walkTree(node2, wi2, wo2);
     Log::dumpWI(node, "wo2 ", wo2);
@@ -980,7 +983,7 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
                 }
             }
             VarItem var = getVariableName(function);
-            if (!var.isNonNull)
+            if (!var.isNonNull && isNotIn(var.name, wo2.knownNonNullVars))
                 reportParmDeclNullPointer(node, function, wi);
             if (!getVariableName(function).empty())
                 enableCheck = false;
@@ -1001,7 +1004,7 @@ void analyseCallExpr(CallExprNode *node, const WalkItem &wi, WalkItem &wo)
         VarItem var = getVariableName(node2);
         if (enableCheck)
         {
-            if (!var.isNonNull)
+            if (!var.isNonNull && isNotIn(var.name, wo2.knownNonNullVars))
                 reportParmDeclNullPointer(node, node2, wi);
             enableCheck = false;
         }
@@ -1270,6 +1273,13 @@ void analyseInitExpr(InitExprNode* node,
     handleSetVar(node->args[0], node->args[1], wi, wo);
     reportParmDeclLeftNullPointer(node, node->args[0], wi);
     reportParmDeclLeftNullPointer(node, node->args[1], wi);
+}
+
+void analyseGotoExpr(GotoExprNode *node,
+                     const WalkItem &wi,
+                     WalkItem &wo)
+{
+    wo.isContinued = true;
 }
 
 }

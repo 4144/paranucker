@@ -469,128 +469,128 @@ integer_cst 64: w1, w2,
 integer_cst 0: w1, w2, 
 goto_expr : w1, w2, 
 postincrement_expr : w1, w2, 
-var_decl i: w1, w2, 
-integer_cst 32: w1, w2, 
-integer_type : w1, w2, 
-type_decl int: w1, w2, 
-integer_cst 32: w1, w2, 
-integer_cst -2147483648: w1, w2, 
-integer_cst 2147483647: w1, w2, 
-integer_cst 1: w1, w2, 
+var_decl i: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 1: 
 label_expr : w1, w2, 
-label_decl : w1, w2, 
+label_decl : 
 cond_expr : w1, w2, 
-le_expr : w1, w2, 
-var_decl i: w1, w2, 
-integer_cst 32: w1, w2, 
-integer_type : w1, w2, 
-type_decl int: w1, w2, 
-integer_cst 32: w1, w2, 
-integer_cst -2147483648: w1, w2, 
-integer_cst 2147483647: w1, w2, 
-integer_cst 9: w1, w2, 
+le_expr : 
+var_decl i: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+integer_cst 9: 
 goto_expr : w1, w2, 
 goto_expr : w1, w2, 
 label_expr : w1, w2, 
-label_decl : w1, w2, 
+label_decl : 
 var_decl fptr: w1, w2, 
-integer_cst 64: w1, w2, 
-constructor : w1, w2, 
-array_type : w1, w2, 
-pointer_type : w1, w2, 
-function_type : w1, w2, 
-integer_type : w1, w2, 
-type_decl int: w1, w2, 
-integer_cst 32: w1, w2, 
-integer_cst -2147483648: w1, w2, 
-integer_cst 2147483647: w1, w2, 
-tree_list : w1, w2, 
-pointer_type : w1, w2, 
-integer_type : w1, w2, 
-tree_list : w1, w2, 
-pointer_type : w1, w2, 
-tree_list : w1, w2, 
-integer_type : w1, w2, 
-integer_cst 64: w1, w2, 
-integer_cst 0: w1, w2, 
-integer_cst 0: w1, w2, 
-integer_cst 0: w1, w2, 
-addr_expr : w1, w2, 
-function_decl test1: w1, w2, 
+integer_cst 64: 
+constructor : 
+array_type : 
+pointer_type : 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+tree_list : 
+pointer_type : 
+integer_type : 
+tree_list : 
+pointer_type : 
+tree_list : 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 0: 
+integer_cst 0: 
+addr_expr : 
+function_decl test1: 
 bind_expr : w1, w2, 
-statement_list : w1, w2, 
+statement_list : 
+block : 
+array_type : 
+pointer_type : 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+tree_list : 
+pointer_type : 
+integer_type : 
+tree_list : 
+pointer_type : 
+tree_list : 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 0: 
 block : w1, w2, 
-array_type : w1, w2, 
-pointer_type : w1, w2, 
-function_type : w1, w2, 
-integer_type : w1, w2, 
-type_decl int: w1, w2, 
-integer_cst 32: w1, w2, 
-integer_cst -2147483648: w1, w2, 
-integer_cst 2147483647: w1, w2, 
-tree_list : w1, w2, 
-pointer_type : w1, w2, 
-integer_type : w1, w2, 
-tree_list : w1, w2, 
-pointer_type : w1, w2, 
-tree_list : w1, w2, 
-integer_type : w1, w2, 
-integer_cst 64: w1, w2, 
-integer_cst 0: w1, w2, 
-integer_cst 0: w1, w2, 
-block : w1, w2, 
-var_decl fptr: w1, w2, 
-integer_cst 64: w1, w2, 
-constructor : w1, w2, 
-array_type : w1, w2, 
-pointer_type : w1, w2, 
-function_type : w1, w2, 
-integer_type : w1, w2, 
-type_decl int: w1, w2, 
-integer_cst 32: w1, w2, 
-integer_cst -2147483648: w1, w2, 
-integer_cst 2147483647: w1, w2, 
-tree_list : w1, w2, 
-pointer_type : w1, w2, 
-integer_type : w1, w2, 
-tree_list : w1, w2, 
-pointer_type : w1, w2, 
-tree_list : w1, w2, 
-integer_type : w1, w2, 
-integer_cst 64: w1, w2, 
-integer_cst 0: w1, w2, 
-integer_cst 0: w1, w2, 
-integer_cst 0: w1, w2, 
-addr_expr : w1, w2, 
-function_decl test1: w1, w2, 
+var_decl fptr: 
+integer_cst 64: 
+constructor : 
+array_type : 
+pointer_type : 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+tree_list : 
+pointer_type : 
+integer_type : 
+tree_list : 
+pointer_type : 
+tree_list : 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 0: 
+integer_cst 0: 
+addr_expr : 
+function_decl test1: 
 bind_expr : w1, w2, 
-statement_list : w1, w2, 
-block : w1, w2, 
-array_type : w1, w2, 
-pointer_type : w1, w2, 
-function_type : w1, w2, 
-integer_type : w1, w2, 
-type_decl int: w1, w2, 
-integer_cst 32: w1, w2, 
-integer_cst -2147483648: w1, w2, 
-integer_cst 2147483647: w1, w2, 
-tree_list : w1, w2, 
-pointer_type : w1, w2, 
-integer_type : w1, w2, 
-tree_list : w1, w2, 
-pointer_type : w1, w2, 
-tree_list : w1, w2, 
-integer_type : w1, w2, 
-integer_cst 64: w1, w2, 
-integer_cst 0: w1, w2, 
-integer_cst 0: w1, w2, 
-var_decl i: w1, w2, 
-integer_cst 32: w1, w2, 
-integer_type : w1, w2, 
-type_decl int: w1, w2, 
-integer_cst 32: w1, w2, 
-integer_cst -2147483648: w1, w2, 
-integer_cst 2147483647: w1, w2, 
+statement_list : 
+block : 
+array_type : 
+pointer_type : 
+function_type : 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
+tree_list : 
+pointer_type : 
+integer_type : 
+tree_list : 
+pointer_type : 
+tree_list : 
+integer_type : 
+integer_cst 64: 
+integer_cst 0: 
+integer_cst 0: 
+var_decl i: 
+integer_cst 32: 
+integer_type : 
+type_decl int: 
+integer_cst 32: 
+integer_cst -2147483648: 
+integer_cst 2147483647: 
 function_decl func8: 
 bind_expr : fptr, 
 call_expr : fptr, 

@@ -30,6 +30,7 @@ struct CompoundExprNode;
 struct CondExprNode;
 struct DeclExprNode;
 struct EqExprNode;
+struct GotoExprNode;
 struct InitExprNode;
 struct ModifyExprNode;
 struct NeExprNode;
@@ -87,6 +88,10 @@ namespace Analysis
 
     void analyseInitExpr(InitExprNode* node, const WalkItem &wi, WalkItem &wo);
 
+    void analyseGotoExpr(GotoExprNode *node,
+                         const WalkItem &wi,
+                         WalkItem &wo);
+
     void handleSetVar(Node *node1,
                       Node *node2,
                       const WalkItem &wi,
@@ -108,6 +113,8 @@ namespace Analysis
                                 WalkItem &wo);
 
     bool isValidVar(const VarItem &str);
+
+    VarItem getVariableName(Node *node);
 }
 
 #endif // ANALYSIS_EXPRESSION_H

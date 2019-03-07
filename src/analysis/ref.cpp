@@ -24,6 +24,7 @@
 
 #include "analysis/analysis.h"
 #include "analysis/reports.h"
+#include "analysis/varitem.h"
 #include "analysis/walkitem.h"
 
 #include "nodes/expr/addr_expr.h"
@@ -68,10 +69,25 @@ void analyseArrayRef(ArrayRefNode *node,
     if (node->args.empty() || checkCommand(FindArgs))
         return;
 
+//    if (isIn("cell", wi.knownNonNullVars))
+//        Log::log("cell ok1\n");
+//    else
+//        Log::log("cell not ok1\n");
+
+//    Log::log("array start\n");
     FOR_EACH(it, node->args)
     {
-        reportParmDeclNullPointer(node, it, wi);
+        VarItem var = getVariableName(it);
+        if (!var.isNonNull && isNotIn(var.name, wo.knownNonNullVars))
+            reportParmDeclNullPointer(node, it, wi);
     }
+
+//    if (isIn("cell", wi.knownNonNullVars))
+//        Log::log("cell ok1\n");
+//    else
+//        Log::log("cell not ok1\n");
+
+//    Log::log("array end\n");
 }
 
 }
