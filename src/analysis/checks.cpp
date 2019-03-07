@@ -67,8 +67,8 @@ std::string mergeCollection(const std::set<std::string> &col)
 
 void reportCollections(Node *node,
                        const std::string &name,
-                       std::set<std::string> col1,
-                       std::set<std::string> col2)
+                       const std::set<std::string>& col1,
+                       const std::set<std::string>& col2)
 {
     std::string str1 = mergeCollection(col1);
     std::string str2 = mergeCollection(col2);

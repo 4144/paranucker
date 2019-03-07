@@ -214,8 +214,8 @@ void reportWrongCheck(Node *node)
 
 void reportCollectionsDifferent(Node *node,
                                 const std::string &name,
-                                std::string str1,
-                                std::string str2)
+                                const std::string& str1,
+                                const std::string& str2)
 {
     std::string str = "internal collections '%s' is different.\nwant: " +
         str2 +
